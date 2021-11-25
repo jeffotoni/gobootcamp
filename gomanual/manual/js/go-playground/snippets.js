@@ -39,7 +39,7 @@
           'runEl':    $('.run', el),
           'fmtEl':    $('.fmt', el),
           'shareEl':  $('.share', el),
-          'theme':    'material',
+          'theme':    'juejin',
           'shareOpenNewWindow': true,
           'shareRedirect': 'https://play.golang.org/p/',
         });
