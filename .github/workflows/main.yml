@@ -1,11 +1,22 @@
+uses: lbertenasco/s3-deploy@v1
+with:
+    folder: build
+    bucket: ${{ secrets.S3_BUCKET }}
+    dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+    invalidation: / *
 name: gobootcamp workflow for S3 Deploy
-on: [push]
+on: 
+  push: 
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
   run:
     runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
     steps:
         - uses: actions/checkout@v2
 
@@ -16,7 +27,7 @@ jobs:
           run: yarn build
 
         - name: Deploy
-          uses: reggionick/s3-deploy@v3
+          uses: lbertenasco/s3-deploy@v1
           with:
             folder: build
             bucket: ${{ secrets.S3_BUCKET }}
