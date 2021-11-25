@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Goroutines - Go Bootcamp</title>
+    <title>Goroutines 200 - Go Bootcamp</title>
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -36,66 +37,66 @@
 
 <body class="d-flex flex-column h-100">
 
-	<!-- Cabecalho -->
-	<header>
-		<div class="main-header">
-			<div class="container text-center">
-				<a href="../index.html">
-					<img class="main-header-logo" src="../img/go-logo-white.png" alt="" />
-					<span class="main-header-title">Bootcamp</span>
-				</a>
-			</div>
-		</div>
-	</header>
-	<!-- Cabecalho Fim -->
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../index.html">
+                    <img class="main-header-logo" src="../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
 
-	<main class="content-page">
-		<div class="container-fluid">
-			<div class="row">
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
 
-				<!--- Coluna Esquerda --->
-				<div class="col-12 col-lg-6 column-text px-0">
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
 
-					<!--- Page title --->
-					<div class="main-title">Goroutines</div>
-					<!--- Page title Fim --->
+                    <!--- Page title --->
+                    <div class="main-title">Goroutines 200</div>
+                    <!--- Page title Fim --->
 
 
-					<div class="content-height">
-						<p>A goroutine is a lightweight thread managed by the Go runtime.</p>
+                    <div class="content-height">
+                        <p>A goroutine is a lightweight thread managed by the Go runtime.</p>
 
-						<p>starts a new goroutine running</p>
+                        <p>starts a new goroutine running</p>
 
-						<p>The evaluation of f, x, y, and z happens in the current goroutine and the execution of f happens in the new goroutine.</p>
+                        <p>The evaluation of f, x, y, and z happens in the current goroutine and the execution of f happens in the new goroutine.</p>
 
-						<p>Goroutines run in the same address space, so access to shared memory must be synchronized. The sync package provides useful primitives, although you won't need them much in Go as there are other primitives. (See the next slide.)</p>
+                        <p>Goroutines run in the same address space, so access to shared memory must be synchronized. The sync package provides useful primitives, although you won't need them much in Go as there are other primitives. (See the next slide.)</p>
 
-					</div>
-					
+                    </div>
 
-					<div class="pages-menu">
-						
-						<a class="pages-menu-link link-back" href="../index.html">
-							<i class="fa fa-chevron-left"></i> &nbsp; <span>Equivalent Binary Trees</span>
-						</a>
 
-						<img src="../img/gopher-docker.png" alt="" />
+                    <div class="pages-menu">
 
-						<a class="pages-menu-link link-forward" href="../page-1.html">
-							<span>Web Crawler</span> &nbsp; <i class="fa fa-chevron-right"></i>
-						</a>
+                        <a class="pages-menu-link link-back" href="../index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Equivalent Binary Trees</span>
+                        </a>
 
-					</div>
+                        <img src="../img/gopher-docker.png" alt="" />
 
-				</div>
-				<!--- Coluna Esquerda Fim --->
+                        <a class="pages-menu-link link-forward" href="../page-1.html">
+                            <span>Web Crawler</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
 
-				<!--- Coluna Direita --->
-				<div class="col-12 col-lg-6 column-code px-0">
+                    </div>
 
-					<div class="code-filename">goroutines.go</div>
+                </div>
+                <!--- Coluna Esquerda Fim --->
 
-					<textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code px-0">
+
+                    <div class="code-filename">goroutines.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main
 
 import (
@@ -116,21 +117,21 @@ func main() {
 }
 					</textarea>
 
-					<img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
-					
-				</div>
-				<!--- Coluna Direita Fim --->
+                    <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
 
-			</div>
-		</div>
-	</main>
+                </div>
+                <!--- Coluna Direita Fim --->
 
-	<!-- Rodape -->
-	<footer class="footer">
-		<div class="main-footer">
-			<div class="container text-center">
-				
-				<span>by <a href="#" target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; <a href="#" target="_blank">source</a> &nbsp; | &nbsp; <a href="#" target="_blank">license</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="#" target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; <a href="#" target="_blank">source</a> &nbsp; | &nbsp; <a href="#" target="_blank">license</a>
 
 			</div>
 		</div>	
