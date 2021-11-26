@@ -1,6 +1,3 @@
 {
-    "name": "gobootcamp-s3-static",
-    "scripts": {
-        "build": "babel src -d lib"
-    }
+    "name": "gobootcamp-s3-static"
 }
