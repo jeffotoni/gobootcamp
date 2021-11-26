@@ -1,6 +1,6 @@
 ## Go BootCamp
 
-Este material tem o objetivo de colaborar com a comunidade como uma fonte de aprendizado na linguagem Go. Um material que aborda o que precisamos saber para iniciarmos a programação na linguagem Go 😍.
+Este material tem o objetivo de contribuir para o aprendizado da linguagem de programação Go😍 colaborando com a comunidade como uma fonte de aprendizado na linguagem Go. Um material que aborda o que precisamos saber para iniciarmos a programação na linguagem Go 😍.
 
 O conteúdo visa o nível básico do aluno muitos exemplos práticos foram feitos com riqueza de detalhes para tornar a vida mais fácil de quem está iniciando na linguagem.
 
