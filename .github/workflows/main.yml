@@ -1,7 +1,10 @@
-- name: Deploy to AWS
-  uses: onramper/action-deploy-aws-static-site@v1
-  with:
-    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    domain: ${{ secrets.S3_BUCKET }}
-    publish_dir: ./gomanual
+name: Deploy to AWS
+on: [push]
+steps:
+ - name: Deploy to AWS
+   uses: onramper/action-deploy-aws-static-site@v1
+   with:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      domain: ${{ secrets.S3_BUCKET }}
+      publish_dir: ./gomanual
