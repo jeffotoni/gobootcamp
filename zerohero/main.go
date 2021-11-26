@@ -46,6 +46,8 @@ type Image struct {
 // RATE LIMIT
 // CACHE
 // INSTRUMENTACAO
+// BANCO DE DADOS
+// GERAÇÃO DE LOGS SAÍDA
 
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
