@@ -21,4 +21,6 @@ jobs:
 
     - name: Deploy static site to S3 bucket
       run: aws s3 cp ./gomanual/manual/ s3://${{ secrets.S3_BUCKET }}/ --recursive
+      
+    - name: Invalid distribution CloudFront
       run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
