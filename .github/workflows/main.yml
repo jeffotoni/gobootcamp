@@ -14,7 +14,9 @@ jobs:
           run: yarn
 
         - name: Build
-          run: yarn build
+          run:
+             cd spacebar/spacebar 
+             yarn build
 
         - name: Deploy
           uses: lbertenasco/s3-deploy@v1
