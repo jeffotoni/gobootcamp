@@ -6,6 +6,40 @@ import (
 	"runtime"
 )
 
+type ZeroHero struct {
+	ID         string     `json:"id"`
+	Response   string     `json:"response"`
+	Name       string     `json:"name"`
+	Powerstats Powerstats `json:"powerstats"`
+	Biography  Biography  `json:"biography"`
+	Work       Work       `json:"work"`
+	Image      Image      `json:"image"`
+}
+type Powerstats struct {
+	Intelligence string `json:"intelligence"`
+	Strength     string `json:"strength"`
+	Speed        string `json:"speed"`
+	Durability   string `json:"durability"`
+	Power        string `json:"power"`
+	Combat       string `json:"combat"`
+}
+type Biography struct {
+	FullName        string   `json:"full-name"`
+	AlterEgos       string   `json:"alter-egos"`
+	Aliases         []string `json:"aliases"`
+	PlaceOfBirth    string   `json:"place-of-birth"`
+	FirstAppearance string   `json:"first-appearance"`
+	Publisher       string   `json:"publisher"`
+	Alignment       string   `json:"alignment"`
+}
+type Work struct {
+	Occupation string `json:"occupation"`
+	Base       string `json:"base"`
+}
+type Image struct {
+	URL string `json:"url"`
+}
+
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 	mux := http.NewServeMux()
