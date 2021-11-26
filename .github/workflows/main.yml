@@ -1,10 +1,29 @@
-name: Deploy to AWS
-on: [push]
-steps:
- - name: Deploy to AWS
-   uses: onramper/action-deploy-aws-static-site@v1
-   with:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      domain: ${{ secrets.S3_BUCKET }}
-      publish_dir: ./gomanual
+name: "Deploy To S3" #set whatever name you want to your github job
+
+on: # set the events you would like to trigger this job
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: # Build the project
+
+      - name: Deploy application to AWS S3 and invalidate cloudfront cache
+        uses: techmmunity/action-deploy-static-webapp-aws@1.0.0
+        id: deploy
+        with:
+          build_path: './gomanual/manual'
+          bucket_name: ${{ secrets.S3_BUCKET }}
+          bucket_key: '' # Optional
+          distribution_invalidation_path: '/*'
+        env:
+          DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          AWS_REGION: ${{ secrets.S3_BUCKET_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
