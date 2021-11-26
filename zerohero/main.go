@@ -40,6 +40,13 @@ type Image struct {
 	URL string `json:"url"`
 }
 
+// JWT
+// CORS
+// LOGGER
+// RATE LIMIT
+// CACHE
+// INSTRUMENTACAO
+
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 	mux := http.NewServeMux()
