@@ -1,3 +1,6 @@
 {
-    "name": "gobootcamp-s3-static"
+    "name": "gobootcamp-s3-static",
+    "scripts": {
+        "build-project": "node build-project.js"
+    }
 }
