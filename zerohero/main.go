@@ -6,6 +6,7 @@ import (
 	"runtime"
 )
 
+//////////// lapidar struct
 type ZeroHero struct {
 	ID         string     `json:"id"`
 	Response   string     `json:"response"`
