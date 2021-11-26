@@ -1,31 +1,17 @@
-name: Deploy
-
+name: Test Run
 on:
-  push:
-    branches:
-      - main            # could be 'master' on older repos
+  push
 jobs:
-  deploy:
+  lambda:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@master
+      - run: cd gomanual/manual
+      - uses: stcalica/s3-upload@master
         with:
-          node-version: 14
-      - name: Build
-        run: |
-          npm ci
-          npm run build
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
-      - name: Deploy
-        uses: jonelantha/gatsby-s3-action@v1
-        with:
-          dest-s3-bucket: ${{ secrets.S3_BUCKET }}
+          bucket: ${{ secrets.S3_BUCKET }}
+          package: /
+          key: 
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
+          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
