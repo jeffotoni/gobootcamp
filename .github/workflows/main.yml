@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - run: cd gomanual/manual
+      -  run: echo "<html><head><title>GH Actions Test</title></head><body><h1>YO THIS WORKS!</h1></body></html>" > jeffotoni.html
       - uses: stcalica/s3-upload@master
         with:
           bucket: ${{ secrets.S3_BUCKET }}
-          package: /
-          key: 
+          package: jeffotoni.html
+          key: jeffotoni
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
           AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
