@@ -1,19 +1,13 @@
 #!/bin/bash
 ##### @jeffotoni
-DIR=/opt/gobootcamp/v1
-DIR2=/opt/gobootcamp
+DIR=$GOPATH/bin
 EXEC=gobootcamp
 ZSHRC=$HOME/.zshrc
 BASHRC=$HOME/.bashrc
 
-sudo rm -rf $DIR
-sudo mkdir -p $DIR
-sudo wget -c "https://github.com/jeffotoni/gobootcamp/blob/main/install/v1/gobootcamp?raw=true" -P "$DIR"
+wget -c "https://github.com/jeffotoni/gobootcamp/blob/main/install/v1/gobootcamp" -P "$DIR"
 echo "..."
 sleep 1
-sudo chmod 755 -R $DIR2
-sudo rm -f /usr/bin/$EXEC
-sudo ln -s $DIR/$EXEC /usr/bin/$EXEC
 
 if [ -e "$ZSHRC" ] ; then
 echo "\033[0;32m#########################################################\033[0m"
