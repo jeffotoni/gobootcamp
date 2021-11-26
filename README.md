@@ -4,7 +4,7 @@ Este material tem o objetivo de contribuir para o aprendizado da linguagem de pr
 
 O conteúdo visa o nível básico do aluno muitos exemplos práticos foram feitos com riqueza de detalhes para tornar a vida mais fácil de quem está iniciando na linguagem.
 
-Se você conhece pouco e quase nada a programação não será problema, todo o manual foi feito para o nível inicial ao avançado Tentaremos melhorar o material o tempo todo para que possamos ter uma referência quando se trata de Go 😍.
+Se você conhece pouco e quase nada a programação não será problema, todo o manual foi feito para o nível inicial ao avançado.
 
 Espero que gostem e possam servir de base para aprendizado e ajudar vários Esquilos possíveis.
 
