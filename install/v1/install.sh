@@ -6,7 +6,7 @@ ZSHRC=$HOME/.zshrc
 BASHRC=$HOME/.bashrc
 
 rm -f $DIR/bin/$EXEC
-wget -c "https://github.com/jeffotoni/gobootcamp/blob/main/install/v1/gobootcamp" -P "$DIR"
+wget -c "https://github.com/jeffotoni/gobootcamp/raw/main/install/v1/gobootcamp" -P "$DIR"
 echo "..."
 sleep 1
 chmod 755 $DIR/$EXEC

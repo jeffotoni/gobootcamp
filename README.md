@@ -13,7 +13,7 @@ Existem milhares de referências hoje em relação ao Golang, vamos começar do 
 Todo manual foi baseado nestes sites apresetados acima, ele encontra-se aqui [gobootcamp](https://gobootcamp.jeffotoni.com/)
 
 
-## Instalar manual localmente
+## Executar o manual localmente
 
 Você poderá instalar o manual em sua máquina local, vamos fazer clone do projeto e executá-lo localmente. 
 
@@ -29,3 +29,13 @@ Run Server: http://localhost:8181
 Agora basta acessar o link para acessar o manual localmente, desta forma você consegue alterar o manual seja para colaborar enviando um PR (Pull request) com melhorias ou novos temas como fazer um fork para seu uso pessoal 😊.
 
 - ![gobootcamp](img/gobootcamp1.jpg?raw=true "gobootcamp")
+
+
+## Instalar o manual localmente
+
+Caso queira somente instalar o manual também será possível rodando script abaixo.
+
+```bash
+$ sh -c "$(wget https://raw.githubusercontent.com/jeffotoni/gobootcamp/main/install/v1/install.sh -O -)"
+
+```
