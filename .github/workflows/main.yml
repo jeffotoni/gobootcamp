@@ -1,11 +1,35 @@
-name: Example workflow for S3 Deploy
-- uses: compeon/deploy-s3
-  with:
-    bucket: ${{ secrets.S3_BUCKET }}
-    source: gomanual/manual/
-    cloudfront-distribution: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-    cloudfront-invalidate-paths: /
+name: Deploy
 
+on:
+  push:
+    branches:
+      - main            # could be 'master' on older repos
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+      - name: Deploy
+        uses: jonelantha/gatsby-s3-action@v1
+        with:
+          dest-s3-bucket: ${{ secrets.S3_BUCKET }}
+          
 # name: Example workflow for S3 Deploy
 # on: [push]
 # jobs:
