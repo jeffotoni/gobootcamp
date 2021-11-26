@@ -11,3 +11,21 @@ Espero que gostem e possam servir de base para aprendizado e ajudar vários Esqu
 Existem milhares de referências hoje em relação ao Golang, vamos começar do início e não podíamos deixar de falar do [Golang Tour](https://go.dev/tour/welcome/1), [Play Golang](https://go.dev/play) ou [Play Go Space](https://goplay.space/) são formas online de brincarmos com a linguagem Go, lindo não é ? 😊
 
 Todo manual foi baseado nestes sites apresetados acima, ele encontra-se aqui [gobootcamp](https://gobootcamp.jeffotoni.com/)
+
+
+## Instalar manual localmente
+
+Você poderá instalar o manual em sua máquina local, vamos fazer clone do projeto e executá-lo localmente. 
+
+_Observação_ 
+_É necessário o Go instalado na máquina._
+
+```bash
+$ git clone https://github.com/jeffotoni/gobootcamp
+$ cd gomanual
+$ go run main.go
+Run Server: http://localhost:8181
+```
+Agora basta acessar o link para acessar o manual localmente, desta forma você consegue alterar o manual seja para colaborar enviando um PR (Pull request) com melhorias ou novos temas como fazer um fork para seu uso pessoal 😊.
+
+- ![gobootcamp](img/gobootcamp1.jpg?raw=true "gobootcamp")
