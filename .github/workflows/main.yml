@@ -6,9 +6,8 @@ jobs:
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
     steps:
-        - uses: actions/checkout@v1
+        - uses: actions/checkout@v2
 
         - name: Install dependencies
           run: yarn
@@ -17,9 +16,13 @@ jobs:
           run: yarn build
 
         - name: Deploy
-          uses: lbertenasco/s3-deploy@v1
+          uses: reggionick/s3-deploy@v3
           with:
             folder: build
             bucket: ${{ secrets.S3_BUCKET }}
+            bucket-region: ${{ secrets.S3_BUCKET_REGION }}
             dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-            invalidation: / *
+            invalidation: /
+            delete-removed: true
+            no-cache: true
+            private: true

@@ -1,41 +1,53 @@
 {
-    "name": "github-actions-s3-cloudfront-deploy",
-    "version": "1.2.4",
-    "description": "Github Actions S3 and CloudFront Deploy",
-    "main": "index.js",
+    "name": "s3-deploy",
+    "version": "1.4.0",
+    "description": "NodeJS bash utility for deploying files to Amazon S3",
     "scripts": {
-        "start": "env-cmd node index.js",
-        "lint": "eslint index.js",
-        "package": "ncc build index.js -o dist",
-        "build": "babel src -d lib"
+        "test": "mocha",
+        "lint": "./node_modules/.bin/eslint src test",
+        "prepublishOnly": "npm install && npm run lint && npm test",
+        "prepare": "babel src --out-dir dist",
+        "coverage": "babel-node node_modules/.bin/isparta cover --report html node_modules/.bin/_mocha",
+        "release": "npm run prepublishOnly",
+        "npmrc": "printf \"//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN\" > .npmrc"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lbertenasco/s3-deploy.git"
+        "url": "https://github.com/import-io/s3-deploy.git"
     },
-    "keywords": [
-        "GitHub",
-        "Actions",
-        "JavaScript",
-        "S3",
-        "CloudFront",
-        "Upload"
-    ],
-    "author": "Luciano Bertenasco (lbertenasco)",
+    "author": "Dominik Deren (@domderen)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/lbertenasco/s3-deploy/issues"
+        "url": "https://github.com/import-io/s3-deploy/issues"
     },
-    "homepage": "https://github.com/lbertenasco/s3-deploy#readme",
+    "homepage": "https://github.com/import-io/s3-deploy#readme",
     "dependencies": {
-        "@actions/core": "^1.2.4",
-        "@actions/exec": "^1.0.4"
+        "aws-sdk": "^2.334.0",
+        "babel-polyfill": "^6.26.0",
+        "co": "^4.5.4",
+        "co-fs-extra": "^1.0.1",
+        "glob": "^7.1.3",
+        "globrex": "^0.1.1",
+        "lodash": "^4.17.11",
+        "mime": "^1.4.1",
+        "minimist": "^1.1.1"
     },
     "devDependencies": {
-        "@zeit/ncc": "^0.22.3",
-        "env-cmd": "^10.1.0",
-        "eslint": "^7.3.1",
-        "jest": "^26.1.0",
-        "prettier": "^2.0.5"
+        "aws-sdk-mock": "^4.3.0",
+        "babel-cli": "^6.6.5",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.4",
+        "babel-plugin-espower": "^3.0.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "chai": "^4.2.0",
+        "chai-spies": "^1.0.0",
+        "eslint": "^5.9.0",
+        "eslint-plugin-babel": "^5.3.0",
+        "mocha": "^5.2.0"
+    },
+    "bin": {
+        "s3-deploy": "bin/s3-deploy"
     }
 }
