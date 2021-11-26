@@ -1,7 +1,6 @@
 {
-    "name": "s3 static page",
+    "name": "gobootcamp-s3-static",
     "scripts": {
-        "build": "babel src -d lib",
-        "prebuild": "jest"
+        "build": "babel src -d lib"
     }
 }
