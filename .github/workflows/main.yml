@@ -1,28 +1,36 @@
 name: Example workflow for S3 Deploy
-on: [push]
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-    steps:
-        - uses: actions/checkout@v1
+- uses: compeon/deploy-s3
+  with:
+    bucket: ${{ secrets.S3_BUCKET }}
+    source: gomanual/manual/
+    cloudfront-distribution: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+    cloudfront-invalidate-paths: /
 
-        - name: Install dependencies
-          run: yarn
+# name: Example workflow for S3 Deploy
+# on: [push]
+# jobs:
+#   run:
+#     runs-on: ubuntu-latest
+#     env:
+#       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#       AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+#     steps:
+#         - uses: actions/checkout@v1
 
-        - name: Build
-          run: yarn build
+#         - name: Install dependencies
+#           run: yarn
 
-        - name: Deploy
-          uses: lbertenasco/s3-deploy@v1
-          with:
-            folder: gomanual/manual
-            bucket: ${{ secrets.S3_BUCKET }}
-            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-            invalidation: / *
+#         - name: Build
+#           run: yarn build
+
+#         - name: Deploy
+#           uses: lbertenasco/s3-deploy@v1
+#           with:
+#             folder: gomanual/manual
+#             bucket: ${{ secrets.S3_BUCKET }}
+#             dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+#             invalidation: / *
 
 # name: "Deploy To S3" #set whatever name you want to your github job
 
