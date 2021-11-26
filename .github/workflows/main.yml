@@ -1,4 +1,4 @@
-name: Upload Website
+name: Deploy gobootcamp to S3
 
 on:
   push:
