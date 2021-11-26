@@ -8,7 +8,7 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
     steps:
-        - uses: actions/checkout@v1.2.4
+        - uses: actions/checkout@v1
 
         - name: Install dependencies
           run: yarn
