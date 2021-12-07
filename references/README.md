@@ -1,17 +1,44 @@
 # Referencias
 
-## Grupos no Linkedin
+# Grupos no Linkedin
 
-## Grupos Telegram
+* 
 
-## Grupos no Slack
+***
 
-## Grupos no Discord
+# Grupos Telegram
 
-## Cursos Online Gratuitos
+* **Let's Gophers** <https://t.me/letsgophers>
+```
+Aprendendo Go do básico ao avançado.
+```
+* **Go Brasil** <https://t.me/go_br>
+```
+Vamos falar de Go (linguagem)
+```
+* **Go BH** <https://t.me/go_bh>
+```
+Vamos falar de Go (linguagem)
+```
+***
 
-## Encontros Go
+# Grupos no Slack
 
-## Materias Interessantes
+* **Slack Gophers** <https://gophers.slack.com/>
+***
 
-## Awesome 
+# Grupos no Discord
+
+* **Discord Gophers** <https://discord.com/invite/9eDnTMnK>
+```
+This server is intended for Google Go (golang) programming discussion.
+```
+***
+
+# Cursos Online Gratuitos
+
+# Encontros Go
+
+# Materias Interessantes
+
+# Awesome 
