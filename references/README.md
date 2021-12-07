@@ -1,7 +1,7 @@
 ## Referências
 
 Alguns dos conteúdos que consideramos que seria interessante para os amantes da *Linguagem Go* e para os que estão iniciando neste universo apaixonante de *Golang* ❤️. 
-
+***
 ## Grupos no Linkedin
 
 ![go-br](https://user-images.githubusercontent.com/31008900/145086015-0c73488a-33e0-47b1-af7a-a218e788b9c5.png)
@@ -56,12 +56,12 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 ## Meetups Go
 
 * **[]()**
-* **[]()**
-
+***
 
 ## Materias Interessantes
 
 * **[Github - gopherconbr](https://github.com/gopherconbr/gopherconbr.org)**
+***
 
 ## Awesome Go
 
@@ -85,37 +85,30 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 ```
 Um pouco do porque a linguagem Go surgiu, sua sintaxe e algumas áreas onde Go é mais aplicado... 
 ```
-
 * **[Go é orientado a objetos?](https://jeffotoni.medium.com/go-%C3%A9-orientada-a-objetos-f600d226b1f6)**
 ```
 Um assunto que tornou-se recorrente em listas de discussões, MeetUp, grupos etc... 
 ```
-
 * **[Porque amamos Go! ❤️](https://jeffotoni.medium.com/porque-amamos-go-ea27ec919c53)**
 ```
 Go foi projetado pelo Google em 2007 para melhorar a produtividade de programação em uma era de multicore... 
 ```
-
 * **[GoLang - Simplificando a complexidade “O Inicio”](https://jeffotoni.medium.com/golang-simplificando-a-complexidade-o-inicio-145371d67711)**
 ```
 Existem inúmeras linguagens de programação e cada uma nasceu com um propósito... 
 ```
-
 * **[Um Pouco Sobre Goroutines em Go!](https://www.linkedin.com/pulse/goroutines-e-concorr%C3%AAncia-jefferson-otoni-lima/)**
 ```
 Go é uma linguagem multiparadigma e dentre os mais relevantes é o paradigma concorrente.... 
 ```
-
 * **[Tipos de aplicações usando Go](https://www.linkedin.com/pulse/tipos-de-aplica%C3%A7%C3%B5es-usando-go-jefferson-otoni-lima/)**
 ```
 Go é uma linguagem de uso geral, com propósito de facilitar a resolução de problemas.... 
 ```
-
 * **[Para quem curte DigitalOcean](https://www.linkedin.com/pulse/para-quem-curte-digital-ocean-jefferson-otoni-lima/)**
 ```
 O Docker é uma ferramenta de containerização utilizada para fornecer às aplicações um sistema de arquivos.... 
 ```
-
 * **[No caminho para o Go 2.0](https://www.linkedin.com/pulse/caminho-para-o-go-20-jefferson-otoni-lima/)**
 ```
 Go está na versão 1.12.7 e caminhando para versão 2.0, este post é para apresentar um pouco deste caminho.... 
