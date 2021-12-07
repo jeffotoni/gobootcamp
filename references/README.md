@@ -8,15 +8,15 @@
 
 # Grupos Telegram
 
-* **Let's Gophers** <https://t.me/letsgophers>
+* **[Let's Gophers](https://t.me/letsgophers)**
 ```
 Aprendendo Go do básico ao avançado.
 ```
-* **Go Brasil** <https://t.me/go_br>
+* **[Go Brasil](https://t.me/go_br)**
 ```
 Vamos falar de Go (linguagem)
 ```
-* **Go BH** <https://t.me/go_bh>
+* **[Go BH](https://t.me/go_bh)**
 ```
 Vamos falar de Go (linguagem)
 ```
@@ -24,12 +24,12 @@ Vamos falar de Go (linguagem)
 
 # Grupos no Slack
 
-* **Slack Gophers** <https://gophers.slack.com/>
+* **[Slack Gophers](https://gophers.slack.com/)**
 ***
 
 # Grupos no Discord
 
-* **Discord Gophers** <https://discord.com/invite/9eDnTMnK>
+* **[Discord Gophers](https://discord.com/invite/9eDnTMnK)**
 ```
 This server is intended for Google Go (golang) programming discussion.
 ```
@@ -42,3 +42,4 @@ This server is intended for Google Go (golang) programming discussion.
 # Materias Interessantes
 
 # Awesome 
+
