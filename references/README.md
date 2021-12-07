@@ -15,19 +15,12 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 
 ![go](https://user-images.githubusercontent.com/31008900/145082563-9dbfe808-ee4e-460a-8334-cba36deb5220.png)
 * **[Let's Gophers](https://t.me/letsgophers)**
-```
-Aprendendo Go do básico ao avançado.
-```
+
 ![go-br](https://user-images.githubusercontent.com/31008900/145082658-cfb3ed7a-38c3-4def-9668-5e6ce17b8019.png)
 * **[Go Brasil](https://t.me/go_br)**
-```
-Vamos falar de Go (linguagem)
-```
+
 ![go-bh](https://user-images.githubusercontent.com/31008900/145082708-267eb39f-1f22-47c7-b124-d16d8d949e61.png)
 * **[Go BH](https://t.me/go_bh)**
-```
-Vamos falar de Go (linguagem)
-```
 ***
 
 ## Grupos no Slack
@@ -52,7 +45,7 @@ Vamos falar de Go (linguagem)
 
 * **[Grupo de estudos de golang - Cesar Gimenes](https://www.youtube.com/channel/UCxRoRvJi7NbC2boKAV70t_g)**
 * **[Aprenda Go - Ellen Korbes](https://www.youtube.com/channel/UCxD5EE0H7qOhRr0tIVsOZPQ)**
-* **[Justforfunc: Programming in Go](https://www.youtube.com/c/JustForFunc/videos)**
+* **[Justforfunc: Programming in Go - Francesc Campoy](https://www.youtube.com/c/JustForFunc/videos)**
 ***
 
 ## Eventos Go
