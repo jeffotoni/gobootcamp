@@ -1,24 +1,29 @@
 # Referencias
 
+Alguns dos conteúdos que consideramos que seria interessante para os amantes da *Linguagem Go* e para os que estão iniciando neste universo apaixonante de *Golang* ❤️. 
+
 ## Grupos no Linkedin
 
-* 
+![go-br](https://user-images.githubusercontent.com/31008900/145086015-0c73488a-33e0-47b1-af7a-a218e788b9c5.png)
+* **[Golang Nuts](https://www.linkedin.com/groups/3712244/)**
 
+
+* **[GO - GoLang Brasil](https://www.linkedin.com/groups/12444017/)**
 ***
 
 ## Grupos Telegram
 
-![letsgophers](https://user-images.githubusercontent.com/31008900/145058054-26f81daf-c22d-4bde-9341-698041db5244.png)
+![go](https://user-images.githubusercontent.com/31008900/145082563-9dbfe808-ee4e-460a-8334-cba36deb5220.png)
 * **[Let's Gophers](https://t.me/letsgophers)**
 ```
 Aprendendo Go do básico ao avançado.
 ```
-![go-brasil](https://user-images.githubusercontent.com/31008900/145058207-7f19846f-14ad-4cfc-9809-1812b5e38acf.png)
+![go-br](https://user-images.githubusercontent.com/31008900/145082658-cfb3ed7a-38c3-4def-9668-5e6ce17b8019.png)
 * **[Go Brasil](https://t.me/go_br)**
 ```
 Vamos falar de Go (linguagem)
 ```
-![go-bh](https://user-images.githubusercontent.com/31008900/145058453-f9953ac7-564f-4c36-bad7-3e10bcb4171b.png)
+![go-bh](https://user-images.githubusercontent.com/31008900/145082708-267eb39f-1f22-47c7-b124-d16d8d949e61.png)
 * **[Go BH](https://t.me/go_bh)**
 ```
 Vamos falar de Go (linguagem)
@@ -27,13 +32,13 @@ Vamos falar de Go (linguagem)
 
 ## Grupos no Slack
 
-![slack](https://user-images.githubusercontent.com/31008900/145057862-1329f6b0-4bb3-494a-8f37-cfcbf5190a58.png)
+![slack](https://user-images.githubusercontent.com/31008900/145082751-d624dca7-0261-48cb-a0d6-7dc9eeebfc6f.png)
 * **[Slack Gophers](https://gophers.slack.com/)**
 ***
 
 ## Grupos no Discord
 
-![discord](https://user-images.githubusercontent.com/31008900/145058607-5141301f-07de-40a8-a834-27198fe9e213.png)
+![discord](https://user-images.githubusercontent.com/31008900/145082782-af7cbb5a-dbcb-42a7-b030-945ec7e7e2dd.png)
 * **[Discord Gophers](https://discord.com/invite/9eDnTMnK)**
 ```
 This server is intended for Google Go (golang) programming discussion.
@@ -42,9 +47,25 @@ This server is intended for Google Go (golang) programming discussion.
 
 ## Cursos Online Gratuitos
 
-## Encontros Go
+* **[Grupo de estudos de golang](https://www.youtube.com/channel/UCxRoRvJi7NbC2boKAV70t_g)**
+* **[Aprenda Go](https://www.youtube.com/channel/UCxD5EE0H7qOhRr0tIVsOZPQ)**
+* **[Eliseu Codinhoto](https://www.youtube.com/c/EliseuCodinhoto/videos)**
+* **[Justforfunc: Programming in Go](https://www.youtube.com/c/JustForFunc/videos)**
+***
+
+## Eventos Go
+
+* **[GopherCon Brasil 2022](https://gopherconbr.org/)**
+***
+
+## Meetups Go
+
+* **[GopherCon Brasil 2022](https://gopherconbr.org/)**
+
 
 ## Materias Interessantes
+
+* **[Github - gopherconbr](https://github.com/gopherconbr/gopherconbr.org)**
 
 ## Awesome Go
 
