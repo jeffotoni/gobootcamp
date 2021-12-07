@@ -1,4 +1,4 @@
-# Referencias
+## Referencias
 
 Alguns dos conteúdos que consideramos que seria interessante para os amantes da *Linguagem Go* e para os que estão iniciando neste universo apaixonante de *Golang* ❤️. 
 
@@ -7,7 +7,7 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 ![go-br](https://user-images.githubusercontent.com/31008900/145086015-0c73488a-33e0-47b1-af7a-a218e788b9c5.png)
 * **[Golang Nuts](https://www.linkedin.com/groups/3712244/)**
 
-
+![go-linke](https://user-images.githubusercontent.com/31008900/145089344-8eb54445-9909-44eb-910c-e2a54445b3e3.png)
 * **[GO - GoLang Brasil](https://www.linkedin.com/groups/12444017/)**
 ***
 
@@ -39,10 +39,13 @@ Vamos falar de Go (linguagem)
 ## Grupos no Discord
 
 ![discord](https://user-images.githubusercontent.com/31008900/145082782-af7cbb5a-dbcb-42a7-b030-945ec7e7e2dd.png)
-* **[Discord Gophers](https://discord.com/invite/9eDnTMnK)**
-```
-This server is intended for Google Go (golang) programming discussion.
-```
+* **[Discord Gophers](https://discord.gg/wGdtwgAK)**
+
+![go-br-discord](https://user-images.githubusercontent.com/31008900/145087301-39f72870-5961-4af9-b850-4bd8c6bf47ad.png)
+* **[Go Br](https://discord.gg/AEWFttuS)**
+
+![fiber](https://user-images.githubusercontent.com/31008900/145087957-bc373fca-1f92-4fad-ae86-0d122a8e3617.png)
+* **[Go Fiber](https://discord.com/invite/bSnH7db)**
 ***
 
 ## Cursos Online Gratuitos
