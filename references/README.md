@@ -64,10 +64,13 @@ This server is intended for Google Go (golang) programming discussion.
 
 ## Artigos
 
+![primeiros-passos-em-go](https://user-images.githubusercontent.com/31008900/145066821-3a8b7d62-56e5-4d47-8ae1-4b29a55fdb12.png)
 * **[Primeiros passos em Go](https://jeffotoni.medium.com/primeiros-passos-em-go-e1e28b7ff5d3)**
 ```
 Um pouco do porque a linguagem Go surgiu, sua sintaxe e algumas áreas onde Go é mais aplicado. 
 ```
+
+![go-orientado-a-objetos](https://user-images.githubusercontent.com/31008900/145066376-47227605-312e-46e7-bb91-bce24befa164.png)
 * **[Go é orientado a objetos?](https://jeffotoni.medium.com/go-%C3%A9-orientada-a-objetos-f600d226b1f6)**
 ```
 Um assunto que tornou-se recorrente em listas de discussões, MeetUp, grupos etc. 
