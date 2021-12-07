@@ -1,4 +1,4 @@
-## Referencias
+## Referências
 
 Alguns dos conteúdos que consideramos que seria interessante para os amantes da *Linguagem Go* e para os que estão iniciando neste universo apaixonante de *Golang* ❤️. 
 
@@ -135,4 +135,29 @@ O Docker é uma ferramenta de containerização utilizada para fornecer às apli
 ```
 Go está na versão 1.12.7 e caminhando para versão 2.0, este post é para apresentar um pouco deste caminho.... 
 ```
+***
+
+## Slides
+
+* **[Organizando seu projeto Go](https://speakerdeck.com/jeffotoni/organizando-seu-projeto-go)**
+* **[Primeiros passos em Go](https://speakerdeck.com/jeffotoni/primeiros-passos-em-go)**
+* **[Go - Iniciando e porque usar](https://speakerdeck.com/jeffotoni/go-iniciando-e-por-que-usar)**
+* **[Explorando Kafka e Go](https://speakerdeck.com/jeffotoni/kafka-e-go)**
+* **[Escalando um app Go usando Serveless e kafka](https://speakerdeck.com/jeffotoni/escalando-um-app-go-usando-serverless-e-kafka)**
+* **[gRPC e Go - Um passo antes](https://speakerdeck.com/jeffotoni/grpc-e-go-um-passo-antes)**
+* **[gRPC e Go - Porque e quando usar](https://speakerdeck.com/jeffotoni/grpc-e-go-porque-e-quando-usar)**
+* **[Porque usar Go](https://speakerdeck.com/jeffotoni/porque-usar-go)**
+* **[Construindo APIs RPC e gRPC](https://speakerdeck.com/jeffotoni/construindo-apis-rpc-e-grpc)**
+* **[Performance em Go](https://speakerdeck.com/jeffotoni/performance-em-go)**
+* **[Overview on Go](https://speakerdeck.com/jeffotoni/overview-on-go)**
+* **[Performance em Go](https://speakerdeck.com/jeffotoni/performance-em-go)**
+* **[OpenFaaS vc AWS Lambda](https://speakerdeck.com/jeffotoni/openfaas-vs-aws-lambda)**
+* **[Go for DevOps - TDC 2019](https://speakerdeck.com/jeffotoni/tdc-2019-bh)**
+* **[Desktop e Go](https://speakerdeck.com/jeffotoni/desktop-e-go)**
+* **[Godo e DigitalOcean](https://speakerdeck.com/jeffotoni/godo-e-digitalocean)**
+* **[Lambda & Golang](https://speakerdeck.com/jeffotoni/lambda-and-golang)**
+* **[Golang além do Hello World](https://speakerdeck.com/jeffotoni/golang-alem-do-hello-world)**
+* **[Serveless & Go](https://speakerdeck.com/jeffotoni/serverless-and-go)**
+* **[Rest, Sockets & Golang](https://speakerdeck.com/jeffotoni/rest-sockets-and-golang)**
+* **[API Rest & uploads escritos em Go](https://speakerdeck.com/jeffotoni/api-rest-and-uploads-escrito-em-go)**
 ***
