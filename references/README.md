@@ -1,5 +1,7 @@
 # Referencias
 
+## Grupos no Linkedin
+
 ## Grupos Telegram
 
 ## Grupos no Slack
@@ -10,6 +12,6 @@
 
 ## Encontros Go
 
-## Materias interessantes
+## Materias Interessantes
 
-
+## Awesome 
