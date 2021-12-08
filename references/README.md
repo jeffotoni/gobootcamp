@@ -2,6 +2,10 @@
 
 Alguns dos conteúdos que consideramos que seria interessante para os amantes da *Linguagem Go* e para os que estão iniciando neste universo apaixonante de *Golang* ❤️. 
 ***
+
+## Personalize seu Go
+* **[Personalize seu Go](https://gopherize.me/)**
+
 ## Grupos no Linkedin
 
 ![go-br](https://user-images.githubusercontent.com/31008900/145086015-0c73488a-33e0-47b1-af7a-a218e788b9c5.png)
@@ -52,6 +56,22 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 
 * **[GopherCon Brasil 2022](https://gopherconbr.org/)**
 ***
+
+## Books Go
+
+* **[talks Go](https://github.com/gobelohorizonte/gotalks)**
+* **[Go Examplos](https://github.com/jeffotoni/goexample)**
+* **[Go Compilation](https://github.com/jeffotoni/gocompilation)**
+* **[Workshop DevOps Go](https://github.com/jeffotoni/goworkshopdevops)**
+* **[Curso Go](https://github.com/jeffotoni/codenation.dev)**
+* **[Wiki Books](https://github.com/golang/go/wiki/Books)**
+* **[Go bootcamp](https://www.golangbootcamp.com/book/)**
+* **[Essencial Go](https://www.programming-books.io/essential/go/)**
+* **[Golang Book](https://www.golang-book.com/)**
+* **[Astaxie Book](https://astaxie.gitbooks.io/build-web-application-with-golang/content/pt-br/)**
+* **[Go by Example](https://gobyexample.com/)**
+***
+
 
 ## Meetups Go
 
@@ -117,6 +137,8 @@ Go está na versão 1.12.7 e caminhando para versão 2.0, este post é para apre
 
 ## Slides
 
+* **[REST, Sockets em Golang -  Xml-RPC e WebSocket](https://go-talks.appspot.com/github.com/gobelohorizonte/gotalks/restful.slide#1)**
+* **[Do Zero ao Deploy](https://go-talks.appspot.com/github.com/gobelohorizonte/gotalks/restful.slide#1)**
 * **[Organizando seu projeto Go](https://speakerdeck.com/jeffotoni/organizando-seu-projeto-go)**
 * **[Primeiros passos em Go](https://speakerdeck.com/jeffotoni/primeiros-passos-em-go)**
 * **[Go - Iniciando e porque usar](https://speakerdeck.com/jeffotoni/go-iniciando-e-por-que-usar)**
