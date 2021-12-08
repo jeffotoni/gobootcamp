@@ -44,7 +44,7 @@ _É necessário o Go instalado na máquina._
 ```bash
 $ git clone https://github.com/jeffotoni/gobootcamp
 $ cd gomanual
-$ go run main.go
+$ go run .
 Run Server: http://localhost:8181
 ```
 Agora basta acessar o link para acessar o manual localmente, desta forma você consegue alterar o manual seja para colaborar enviando um PR (Pull request) com melhorias ou novos temas como fazer um fork para seu uso pessoal 😊.

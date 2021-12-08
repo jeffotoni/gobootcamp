@@ -2,7 +2,7 @@ FROM golang:1.17 as builder
 WORKDIR /go/src/gobootcampmanual
 COPY . .
 ENV GO111MODULE=on
-RUN CGO_ENABLED=0 go build --trimpath -ldflags="-s -w" -o gobootcampmanual main.go
+RUN CGO_ENABLED=0 go build --trimpath -ldflags="-s -w -X main.version=docker" -o gobootcampmanual main.go
 RUN cp gobootcampmanual /go/bin/gobootcampmanual
 
 FROM alpine:latest as builder2

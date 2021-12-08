@@ -3,7 +3,7 @@
 
 GOPRIVATE=github.com/jeffotoni/gobootcamp
 
-build:
+install:
 	@echo "########## Compilando nosso gobootcamp ... "
 	@cp -r ../../gomanual/manual .
 	CGO_ENABLED=0 GOOS=linux go build --trimpath -ldflags="-s -w" -o gobootcamp main.go
