@@ -14,6 +14,15 @@ Criamos esta página para ajuda-lo a encontrar com mais facilidade alguns links 
 
 Todo manual foi baseado nestas referências apresetados acima, ele encontra-se aqui [gobootcamp](https://gobootcamp.jeffotoni.com/).
 
+## Instalar com Docker
+
+Você pode instalar gobootcampmanual com docker.
+
+```bash
+$  docker run --rm --name gobootcampmanual -it \
+-p 8080:8080 jeffotoni/gobootcampmanual:latest
+```
+
 ## Instalar o manual localmente
 
 Para instalar o manual e executar localmente basta rodar o script abaixo. Seu $GOPATH tem que está configurado.

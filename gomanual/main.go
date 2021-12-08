@@ -8,12 +8,14 @@ import (
 )
 
 var (
-	HTTP_PORT = "0.0.0.0:8181"
-	HOST      = "http://localhost:" + HTTP_PORT + "/manual"
+	HTTP_PORT = "0.0.0.0:8080"
+	HOST      = "http://localhost:8080"
+	//HOST      = "http://localhost:8080/manual"
 )
 
 // go:embed manual
 // var res embed.FS
+
 func main() {
 	// fs := http.FileServer(http.FS(res))
 	// http.Handle("/manual/", http.StripPrefix("/", fs))
@@ -26,7 +28,7 @@ func main() {
 		log.Println(err)
 		return
 	}
-	println("Run Server:", HOST)
+	println("\u001b[93mRun Server:", HOST, "\u001b[0m")
 	http.ListenAndServe(HTTP_PORT, nil)
 }
 
