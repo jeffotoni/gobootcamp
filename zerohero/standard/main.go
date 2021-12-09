@@ -316,6 +316,7 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 	defer cancel2()
 
 	zh.UUID = uuid.New().String()
+	zh.Name = strings.ToLower(zh.Name)
 	result, err := collection.InsertOne(ctx, zh, options.InsertOne())
 	if err != nil {
 		//log.Println("Error collection InsertOne:", err)
@@ -333,7 +334,7 @@ func FindOne(name string, collname string) (zh ZeroHero, err error) {
 	collection = session.Database(MgoDb).Collection(collname)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel()
-
+	name = strings.ToLower(name)
 	err = collection.FindOne(ctx, bson.M{"name": name}).Decode(&zh)
 	if err != nil {
 		if err == mongo.ErrNoDocuments {
@@ -349,7 +350,7 @@ func DeleteOne(name string, collname string) (err error) {
 	collection = session.Database(MgoDb).Collection(collname)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel()
-
+	name = strings.ToLower(name)
 	res, err := collection.DeleteOne(ctx, bson.M{"name": name})
 	if err != nil {
 		return
@@ -367,6 +368,8 @@ func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
 	ctx, cancel2 := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel2()
 
+	name = strings.ToLower(name)
+
 	var zht ZeroHero
 	err = collection.FindOne(
 		ctx,
@@ -378,6 +381,7 @@ func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
 	}
 
 	zh.UUID = zht.UUID
+	zh.Name = zht.Name
 	filter := bson.M{"_id": zh.UUID}
 	update := bson.M{"$set": zh}
 	res, err := collection.UpdateOne(ctx, filter, update, options.Update().SetUpsert(true))

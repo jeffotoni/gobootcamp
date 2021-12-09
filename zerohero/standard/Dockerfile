@@ -4,7 +4,7 @@
 FROM golang:1.17.0 AS builder
 WORKDIR /go/src/main
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o zerohero
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w -X main.ambiente=docker" -o zerohero
 
 FROM alpine:latest as builder2
 RUN apk add --no-cache upx
