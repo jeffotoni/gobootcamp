@@ -1,0 +1,334 @@
+[
+   {
+      "response":"success",
+      "id":"69",
+      "name":"Batman",
+      "powerstats":{
+         "intelligence":"81",
+         "strength":"40",
+         "speed":"29",
+         "durability":"55",
+         "power":"63",
+         "combat":"90"
+      },
+      "biography":{
+         "full-name":"Terry McGinnis",
+         "alter-egos":"No alter egos found.",
+         "aliases":[
+            "Batman II",
+            "The Tomorrow Knight",
+            "The second Dark Knight",
+            "The Dark Knight of Tomorrow",
+            "Batman Beyond"
+         ],
+         "place-of-birth":"Gotham City, 25th Century",
+         "first-appearance":"Batman Beyond #1",
+         "publisher":"DC Comics",
+         "alignment":"good"
+      },
+      "appearance":{
+         "gender":"Male",
+         "race":"Human",
+         "height":[
+            "5'10",
+            "178 cm"
+         ],
+         "weight":[
+            "170 lb",
+            "77 kg"
+         ],
+         "eye-color":"Blue",
+         "hair-color":"Black"
+      },
+      "work":{
+         "occupation":"-",
+         "base":"21st Century Gotham City"
+      },
+      "connections":{
+         "group-affiliation":"Batman Family, Justice League Unlimited",
+         "relatives":"Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinnis (mother), Matt McGinnis (brother)"
+      },
+      "image":{
+         "url":"https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"
+      }
+   },
+   {
+      "response":"success",
+      "id":"346",
+      "name":"Iron Man",
+      "powerstats":{
+         "intelligence":"100",
+         "strength":"85",
+         "speed":"58",
+         "durability":"85",
+         "power":"100",
+         "combat":"64"
+      },
+      "biography":{
+         "full-name":"Tony Stark",
+         "alter-egos":"No alter egos found.",
+         "aliases":[
+            "Iron Knight",
+            "Hogan Potts",
+            "Spare Parts Man",
+            "Cobalt Man II",
+            "Crimson Dynamo",
+            "Ironman"
+         ],
+         "place-of-birth":"Long Island, New York",
+         "first-appearance":"Tales of Suspence #39 (March, 1963)",
+         "publisher":"Marvel Comics",
+         "alignment":"good"
+      },
+      "appearance":{
+         "gender":"Male",
+         "race":"Human",
+         "height":[
+            "6'6",
+            "198 cm"
+         ],
+         "weight":[
+            "425 lb",
+            "191 kg"
+         ],
+         "eye-color":"Blue",
+         "hair-color":"Black"
+      },
+      "work":{
+         "occupation":"Inventor, Industrialist; former United States Secretary of Defense",
+         "base":"Seattle, Washington"
+      },
+      "connections":{
+         "group-affiliation":"Avengers, Illuminati, Stark Resilient; formerly S.H.I.E.L.D., leader of Stark Enterprises, the Pro-Registration Superhero Unit, New Avengers, Mighty Avengers, Hellfire Club, Force Works, Avengers West Coast, United States Department of Defense.",
+         "relatives":"Howard Anthony Stark (father, deceased), Maria Stark (mother, deceased), Morgan Stark (cousin), Isaac Stark (ancestor)"
+      },
+      "image":{
+         "url":"https://www.superherodb.com/pictures2/portraits/10/100/85.jpg"
+      }
+   },
+   {
+      "response":"success",
+      "id":"643",
+      "name":"Supergirl",
+      "powerstats":{
+         "intelligence":"94",
+         "strength":"100",
+         "speed":"100",
+         "durability":"100",
+         "power":"100",
+         "combat":"75"
+      },
+      "biography":{
+         "full-name":"Kara Zor-El",
+         "alter-egos":"No alter egos found.",
+         "aliases":[
+            "Linda Lang",
+            "Kara-El",
+            "Kara Kent",
+            "Flamebird",
+            "Trinity Child",
+            "Teen of Tomorrow",
+            "The Girl of Steel",
+            "The Maid of Might",
+            "The Princess of Power",
+            "Mighty Maid",
+            "Claire Connors",
+            "Bluebird"
+         ],
+         "place-of-birth":"Argo City, Krypton",
+         "first-appearance":"Superman/Batman #8 (May, 2004)",
+         "publisher":"DC Comics",
+         "alignment":"good"
+      },
+      "appearance":{
+         "gender":"Female",
+         "race":"Kryptonian",
+         "height":[
+            "5'5",
+            "165 cm"
+         ],
+         "weight":[
+            "120 lb",
+            "54 kg"
+         ],
+         "eye-color":"Blue",
+         "hair-color":"Blond"
+      },
+      "work":{
+         "occupation":"Intern, Adventurer, Student, Crime-Fighter",
+         "base":"Metropolis"
+      },
+      "connections":{
+         "group-affiliation":"Formerly Justice League of America, Supermen of America, Justice League of Amazons, Kent Family, Superman Family, Kryptonian Science Guild, Teen Titans, Legion of Super-Heroes, Outsiders",
+         "relatives":"Zor-El (father), Allura In-Ze (mother), Jor-El II (uncle, deceased), Lara Lor-Van (aunt, deceased), Kal-El (Superman,Clark Kent, cousin), Lois Lane (cousin-in-law), Jonathan Kent (adopted uncle), Martha Kent (adopted aunt), Kon-El (Superboy, Conner Kent, clone cousin, deceased), Nim-El (uncle), Dondra Klu-Ta (aunt), Don-El (cousin), Jor-El I (praternal grandfather, deceased), Nimda An-Dor (paternal grandmother, deceased), Lar-Van (maternal grandfather, deceased), Lara Rok-Var (maternal grandmother, deceased), Val-El, Sul-El, Tala-El, Hatu-El, Gam-El (ancestors, deceased)"
+      },
+      "image":{
+         "url":"https://www.superherodb.com/pictures2/portraits/10/100/790.jpg"
+      }
+   },
+   {
+      "response":"success",
+      "id":"275",
+      "name":"Gamora",
+      "powerstats":{
+         "intelligence":"75",
+         "strength":"85",
+         "speed":"42",
+         "durability":"85",
+         "power":"53",
+         "combat":"100"
+      },
+      "biography":{
+         "full-name":"Gamora Zen Whoberi Ben Titan",
+         "alter-egos":"No alter egos found.",
+         "aliases":[
+            "The Deadliest Woman In The Universe",
+            "The Most Dangerous Woman in the Galaxy"
+         ],
+         "place-of-birth":"Planet Zen Whoberi, Silican System, Milky Way",
+         "first-appearance":"Strange Tales #180 (June, 1975)",
+         "publisher":"Marvel Comics",
+         "alignment":"good"
+      },
+      "appearance":{
+         "gender":"Female",
+         "race":"Zen-Whoberian",
+         "height":[
+            "6'0",
+            "183 cm"
+         ],
+         "weight":[
+            "170 lb",
+            "77 kg"
+         ],
+         "eye-color":"Yellow",
+         "hair-color":"Black"
+      },
+      "work":{
+         "occupation":"Assassin, mercenary, adventurer",
+         "base":"C.I.T.T.; formerly Godthab Omega, Monster Island, Sanctuary II and the pocket-dimension within the Soul Gem; Earth-7528"
+      },
+      "connections":{
+         "group-affiliation":"Guardians of the Galaxy ; formerly Phalanx's Selects, Graces (Leader), Infinity Watch ; United Front ; former minion of Thanos; ally of Adam Warlock and Pip the Troll",
+         "relatives":"Thanos (foster father), Thane (foster brother), Unnamed former Symbiote"
+      },
+      "image":{
+         "url":"https://www.superherodb.com/pictures2/portraits/10/100/65.jpg"
+      }
+   },
+   {
+      "response":"success",
+      "id":"620",
+      "name":"Spider-Man",
+      "powerstats":{
+         "intelligence":"90",
+         "strength":"55",
+         "speed":"67",
+         "durability":"75",
+         "power":"74",
+         "combat":"85"
+      },
+      "biography":{
+         "full-name":"Peter Parker",
+         "alter-egos":"No alter egos found.",
+         "aliases":[
+            "Spiderman",
+            "Bag-Man",
+            "Black Marvel",
+            "Captain Universe",
+            "Dusk",
+            "Green Hood",
+            "Hornet",
+            "Mad Dog 336",
+            "Peter Palmer",
+            "Prodigy",
+            "Ricochet",
+            "Scarlet Spider",
+            "Spider-Boy",
+            "Spider-Hulk",
+            "Spider-Morphosis"
+         ],
+         "place-of-birth":"New York, New York",
+         "first-appearance":"Amazing Fantasy #15",
+         "publisher":"Marvel Comics",
+         "alignment":"good"
+      },
+      "appearance":{
+         "gender":"Male",
+         "race":"Human",
+         "height":[
+            "5'10",
+            "178 cm"
+         ],
+         "weight":[
+            "165 lb",
+            "74 kg"
+         ],
+         "eye-color":"Hazel",
+         "hair-color":"Brown"
+      },
+      "work":{
+         "occupation":"Freelance photographer, teacher",
+         "base":"New York, New York"
+      },
+      "connections":{
+         "group-affiliation":"Member of the Avengers, formerly member of Outlaws, alternate Fantastic Four",
+         "relatives":"Richard Parker (father, deceased), Mary Parker(mother, deceased), Benjamin Parker (uncle, deceased), May Parker (aunt), Mary Jane Watson-Parker (wife), May Parker (daughter, allegedly deceased)"
+      },
+      "image":{
+         "url":"https://www.superherodb.com/pictures2/portraits/10/100/133.jpg"
+      }
+   },
+   {
+      "response":"success",
+      "id":"156",
+      "name":"Captain Marvel",
+      "powerstats":{
+         "intelligence":"88",
+         "strength":"100",
+         "speed":"88",
+         "durability":"95",
+         "power":"100",
+         "combat":"75"
+      },
+      "biography":{
+         "full-name":"Billy Batson",
+         "alter-egos":"No alter egos found.",
+         "aliases":[
+            "The World's Mightiest Mortal",
+            "The Big Red Cheese",
+            "Captain Thunder",
+            "Shazam"
+         ],
+         "place-of-birth":"Fawcett City, United States",
+         "first-appearance":"Whiz Comics no. 2 (1940)",
+         "publisher":"DC Comics",
+         "alignment":"good"
+      },
+      "appearance":{
+         "gender":"Male",
+         "race":"Human",
+         "height":[
+            "6'4",
+            "193 cm"
+         ],
+         "weight":[
+            "225 lb",
+            "101 kg"
+         ],
+         "eye-color":"Blue",
+         "hair-color":"Black"
+      },
+      "work":{
+         "occupation":"-",
+         "base":"-"
+      },
+      "connections":{
+         "group-affiliation":"Marvel Family, Justice Society of America",
+         "relatives":"C.C. Batson (father, deceased), Marilyn Batson (mother, deceased), Ebenezer Batson (uncle), Mary Batson (Mary Marvel, sister)"
+      },
+      "image":{
+         "url":"https://www.superherodb.com/pictures2/portraits/10/100/278.jpg"
+      }
+   }
+]
