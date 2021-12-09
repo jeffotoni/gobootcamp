@@ -1,0 +1,57 @@
+{
+   "response":"success",
+   "id":"414",
+   "name":"Loki",
+   "powerstats":{
+      "intelligence":"88",
+      "strength":"63",
+      "speed":"46",
+      "durability":"85",
+      "power":"100",
+      "combat":"60"
+   },
+   "biography":{
+      "full-name":"Loki Laufeyson",
+      "alter-egos":"No alter egos found.",
+      "aliases":[
+         "God of Mischief",
+         "Gem-Keeper",
+         "Walter Lawson",
+         "Lester",
+         "Loren Olsen",
+         "Tyfon",
+         "Father Williams",
+         "Willie",
+         "Tso Zhung; has also impersonated hundreds of others."
+      ],
+      "place-of-birth":"Jotunheim, Asgard",
+      "first-appearance":"Journey into Mystery Vol. 1 #85",
+      "publisher":"Marvel Comics",
+      "alignment":"bad"
+   },
+   "appearance":{
+      "gender":"Male",
+      "race":"Asgardian",
+      "height":[
+         "6'4",
+         "193 cm"
+      ],
+      "weight":[
+         "525 lb",
+         "236 kg"
+      ],
+      "eye-color":"Green",
+      "hair-color":"Black"
+   },
+   "work":{
+      "occupation":"God of evil; former god of mischief and madness",
+      "base":"Asgard"
+   },
+   "connections":{
+      "group-affiliation":"Asgardians, Karnilla, Enchantress, Skurge the Executioner, Cobra, Mister Hyde, Absorbing Man, Igron, Tyr, Lorelei, Hela, Ulik, Frost Giants, Storm Giants (former), Dormammu, \"Acts of Vengeance\" prime movers (Dr. Doom, Magneto, Red Skull, Mandari",
+      "relatives":"Laufey (father, deceased), Farbauti (mother, deceased), Sigyn (wife, deceased), Odin (foster father, deceased), Frigga (foster mother, deceased), Thor, Vidar (foster brothers, deceased), Hela,Fenris (Wolf), Jordmungand (Midgard Serpent) (children, deceased), Arkin (cousin, deceased)"
+   },
+   "image":{
+      "url":"https://www.superherodb.com/pictures2/portraits/10/100/928.jpg"
+   }
+}
