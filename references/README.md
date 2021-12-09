@@ -6,6 +6,11 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 ## Personalize seu Go
 * **[Personalize seu Go](https://gopherize.me/)**
 
+## Json to Struct Go
+
+* **[json para struct](https://mholt.github.io/json-to-go/)**
+* * **[json para map](https://rodrigo-brito.github.io/json-to-go-map/)**
+  
 ## Grupos no Linkedin
 
 ![go-br](https://user-images.githubusercontent.com/31008900/145086015-0c73488a-33e0-47b1-af7a-a218e788b9c5.png)
