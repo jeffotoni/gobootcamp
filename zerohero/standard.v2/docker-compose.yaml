@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  # zerohero:
+  #   build:
+  #     context: .
+  #     dockerfile: ./Dockerfile
+  #   container_name: zerohero.api
+  #   hostname: zeroheroapi
+  #   domainname: zeroheroapi.local.com
+  #   environment:
+  #     - "TZ=America/Sao_Paulo"
+  #     - MONGODB_URI=mongodb.local.com:27017
+  #   networks:
+  #     - mongo-compose-network
+  #   ports:
+  #     - 8080:8080
+  #   depends_on:
+  #   - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    hostname: mongodb
+    domainname: mongodb.local.com
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: senha123
+      MONGO_INITDB_DATABASE: zerohero
+      MONGO_DATA_DIR: /data/db
+      MONGO_LOG_DIR: /dev/null
+    ports:
+      - "27017:27017"
+    networks:
+        mongo-compose-network:
+          aliases:
+              - mongodb.local.com
+
+networks:
+    mongo-compose-network:
+      driver: bridge
