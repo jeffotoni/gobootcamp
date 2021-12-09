@@ -17,52 +17,50 @@ import (
 )
 
 type ZeroHero struct {
-	ID         string `json:"id" bson:"_id"`
 	Response   string `json:"response"`
-	ResultsFor string `json:"results-for"`
-	Results    []struct {
-		ID         string `json:"id"`
-		Name       string `json:"name"`
-		Powerstats struct {
-			Intelligence string `json:"intelligence"`
-			Strength     string `json:"strength"`
-			Speed        string `json:"speed"`
-			Durability   string `json:"durability"`
-			Power        string `json:"power"`
-			Combat       string `json:"combat"`
-		} `json:"powerstats"`
-		Biography struct {
-			FullName        string   `json:"full-name"`
-			AlterEgos       string   `json:"alter-egos"`
-			Aliases         []string `json:"aliases"`
-			PlaceOfBirth    string   `json:"place-of-birth"`
-			FirstAppearance string   `json:"first-appearance"`
-			Publisher       string   `json:"publisher"`
-			Alignment       string   `json:"alignment"`
-		} `json:"biography"`
-		Appearance struct {
-			Gender    string   `json:"gender"`
-			Race      string   `json:"race"`
-			Height    []string `json:"height"`
-			Weight    []string `json:"weight"`
-			EyeColor  string   `json:"eye-color"`
-			HairColor string   `json:"hair-color"`
-		} `json:"appearance"`
-		Work struct {
-			Occupation string `json:"occupation"`
-			Base       string `json:"base"`
-		} `json:"work"`
-		Connections struct {
-			GroupAffiliation string `json:"group-affiliation"`
-			Relatives        string `json:"relatives"`
-		} `json:"connections"`
-		Image struct {
-			URL string `json:"url"`
-		} `json:"image"`
-	} `json:"results"`
+	ID         string `json:"id"`
+	UUID       string `json:"uuid,omitempty" bson:"_id"`
+	Name       string `json:"name"`
+	Powerstats struct {
+		Intelligence string `json:"intelligence"`
+		Strength     string `json:"strength"`
+		Speed        string `json:"speed"`
+		Durability   string `json:"durability"`
+		Power        string `json:"power"`
+		Combat       string `json:"combat"`
+	} `json:"powerstats"`
+	Biography struct {
+		FullName        string   `json:"full-name"`
+		AlterEgos       string   `json:"alter-egos"`
+		Aliases         []string `json:"aliases"`
+		PlaceOfBirth    string   `json:"place-of-birth"`
+		FirstAppearance string   `json:"first-appearance"`
+		Publisher       string   `json:"publisher"`
+		Alignment       string   `json:"alignment"`
+	} `json:"biography"`
+	Appearance struct {
+		Gender    string   `json:"gender"`
+		Race      string   `json:"race"`
+		Height    []string `json:"height"`
+		Weight    []string `json:"weight"`
+		EyeColor  string   `json:"eye-color"`
+		HairColor string   `json:"hair-color"`
+	} `json:"appearance"`
+	Work struct {
+		Occupation string `json:"occupation"`
+		Base       string `json:"base"`
+	} `json:"work"`
+	Connections struct {
+		GroupAffiliation string `json:"group-affiliation"`
+		Relatives        string `json:"relatives"`
+	} `json:"connections"`
+	Image struct {
+		URL string `json:"url"`
+	} `json:"image"`
 }
 
 var (
+	ambiente     string
 	session      *mongo.Client
 	collection   *mongo.Collection
 	err          error
@@ -74,10 +72,18 @@ var (
 	mgoUriDocker = "mongodb.local.com:27017"
 	port         = "27017"
 	mgoOptions   = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
-	connectStr   = "mongodb://" + user + ":" + senha + "@" + mgoUriDocker + "/" + MgoDb + "?" + mgoOptions
+	connectStr   = "mongodb://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
 
 func init() {
+	// capturando ambiente atraves da compilacao
+	// ela ira fazer com que nosso servico comunique com
+	// mongo dentro do container
+	if ambiente == "docker" {
+		println("ambiente docker....")
+		connectStr = "mongodb://" + user + ":" + senha + "@" + mgoUriDocker + "/" + MgoDb + "?" + mgoOptions
+	}
+
 	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
 	if err != nil {
 		log.Println("error connect:", err)
@@ -302,7 +308,7 @@ func Put(w http.ResponseWriter, r *http.Request) {
 
 // InsertOne criar doc em mongodb
 // criar o index para deixar unique o campo no banco
-// db.heros.createIndex( { "resultsfor": 1 }, { unique: true } )
+// db.heros.createIndex( { "name": 1 }, { unique: true } )
 func (zh ZeroHero) InsertOne(collname string) (err error) {
 	collection = session.Database(MgoDb).Collection(collname)
 
@@ -328,7 +334,7 @@ func FindOne(name string, collname string) (zh ZeroHero, err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel()
 
-	err = collection.FindOne(ctx, bson.M{"resultsfor": name}).Decode(&zh)
+	err = collection.FindOne(ctx, bson.M{"name": name}).Decode(&zh)
 	if err != nil {
 		if err == mongo.ErrNoDocuments {
 			return
@@ -344,7 +350,7 @@ func DeleteOne(name string, collname string) (err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel()
 
-	res, err := collection.DeleteOne(ctx, bson.M{"resultsfor": name})
+	res, err := collection.DeleteOne(ctx, bson.M{"name": name})
 	if err != nil {
 		return
 	}
@@ -364,7 +370,7 @@ func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
 	var zht ZeroHero
 	err = collection.FindOne(
 		ctx,
-		bson.M{"resultsfor": bson.M{"$eq": name}},
+		bson.M{"name": bson.M{"$eq": name}},
 	).Decode(&zht)
 
 	if err != nil {
