@@ -57,8 +57,10 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 * **[GopherCon Brasil 2022](https://gopherconbr.org/)**
 ***
 
-## Books Go
+## Books e Tours
 
+* **[Go tour list](https://go.dev/tour/list)**
+* **[Go tour welcome](https://go.dev/tour/welcome/1)**
 * **[talks Go](https://github.com/gobelohorizonte/gotalks)**
 * **[Go Examplos](https://github.com/jeffotoni/goexample)**
 * **[Go Compilation](https://github.com/jeffotoni/gocompilation)**
@@ -70,6 +72,7 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 * **[Golang Book](https://www.golang-book.com/)**
 * **[Astaxie Book](https://astaxie.gitbooks.io/build-web-application-with-golang/content/pt-br/)**
 * **[Go by Example](https://gobyexample.com/)**
+* **[Go Web Example](https://gowebexamples.com/templates)**
 ***
 
 

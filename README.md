@@ -10,9 +10,14 @@ Espero que gostem e possam servir de base para aprendizado e ajudar vários Goph
 
 Existem milhares de referências hoje em relação ao Golang, vamos começar do início e não podíamos deixar de falar do [Golang Tour](https://go.dev/tour/welcome/1), [Play Golang](https://go.dev/play) ou [Play Go Space](https://goplay.space/) são formas online de brincarmos com a linguagem Go, lindo não é ? 😊
 
-Criamos esta página para ajuda-lo a encontrar com mais facilidade alguns links que acreditamos ser essenciais para o aprendizado da linguagem Go: [referencias Go](https://github.com/jeffotoni/gobootcamp/tree/main/references).
+Criamos esta página para ajuda-lo a encontrar com mais facilidade alguns links que acreditamos ser essenciais para o aprendizado da linguagem Go: 
+* **[referencias Go](https://github.com/jeffotoni/gobootcamp/tree/main/references)**
 
-Todo manual foi baseado nestas referências apresetados acima, ele encontra-se aqui [gobootcamp](https://gobootcamp.jeffotoni.com/).
+Criamos um roadmap Go para facilitar a visão macro quando formos aprender Go.
+* **[roadmap Go](roadmap/goroadmap.png)**
+
+Todo manual foi baseado nestas referências apresetados acima, ele encontra-se aqui: 
+* **[gobootcamp](https://gobootcamp.jeffotoni.com/)**
 
 ## Instalar com Docker
 
