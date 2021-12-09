@@ -1,0 +1,50 @@
+{
+  "response": "success",
+  "id": "63",
+  "name": "Batgirl",
+  "powerstats": {
+    "intelligence": "88",
+    "strength": "11",
+    "speed": "33",
+    "durability": "40",
+    "power": "34",
+    "combat": "90"
+  },
+  "biography": {
+    "full-name": "Barbara Gordon",
+    "alter-egos": "Oracle",
+    "aliases": [
+      "Oracle",
+      "Bluebelle"
+    ],
+    "place-of-birth": "-",
+    "first-appearance": "Detective Comics #359",
+    "publisher": "Oracle",
+    "alignment": "good"
+  },
+  "appearance": {
+    "gender": "Female",
+    "race": "Human",
+    "height": [
+      "5'7",
+      "170 cm"
+    ],
+    "weight": [
+      "126 lb",
+      "57 kg"
+    ],
+    "eye-color": "Green",
+    "hair-color": "Red"
+  },
+  "work": {
+    "occupation": "-",
+    "base": "Gotham City, formerly Metropolis, Platinum Flats"
+  },
+  "connections": {
+    "group-affiliation": "-",
+    "relatives": "James Gordon (father) � Barbara Eileen (mother) � James Gordon, Jr. (brother)"
+  },
+  "image": {
+    "url": "https://www.superherodb.com/pictures2/portraits/10/100/1111.jpg"
+  }
+}
