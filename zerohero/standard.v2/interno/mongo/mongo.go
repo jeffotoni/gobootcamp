@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"log"
+	"strings"
 	"time"
 
 	"github.com/google/uuid"
@@ -13,49 +14,46 @@ import (
 )
 
 type ZeroHero struct {
-	ID         string `json:"id" bson:"_id"`
 	Response   string `json:"response"`
-	ResultsFor string `json:"results-for"`
-	Results    []struct {
-		ID         string `json:"id"`
-		Name       string `json:"name"`
-		Powerstats struct {
-			Intelligence string `json:"intelligence"`
-			Strength     string `json:"strength"`
-			Speed        string `json:"speed"`
-			Durability   string `json:"durability"`
-			Power        string `json:"power"`
-			Combat       string `json:"combat"`
-		} `json:"powerstats"`
-		Biography struct {
-			FullName        string   `json:"full-name"`
-			AlterEgos       string   `json:"alter-egos"`
-			Aliases         []string `json:"aliases"`
-			PlaceOfBirth    string   `json:"place-of-birth"`
-			FirstAppearance string   `json:"first-appearance"`
-			Publisher       string   `json:"publisher"`
-			Alignment       string   `json:"alignment"`
-		} `json:"biography"`
-		Appearance struct {
-			Gender    string   `json:"gender"`
-			Race      string   `json:"race"`
-			Height    []string `json:"height"`
-			Weight    []string `json:"weight"`
-			EyeColor  string   `json:"eye-color"`
-			HairColor string   `json:"hair-color"`
-		} `json:"appearance"`
-		Work struct {
-			Occupation string `json:"occupation"`
-			Base       string `json:"base"`
-		} `json:"work"`
-		Connections struct {
-			GroupAffiliation string `json:"group-affiliation"`
-			Relatives        string `json:"relatives"`
-		} `json:"connections"`
-		Image struct {
-			URL string `json:"url"`
-		} `json:"image"`
-	} `json:"results"`
+	ID         string `json:"id"`
+	UUID       string `json:"uuid,omitempty" bson:"_id"`
+	Name       string `json:"name"`
+	Powerstats struct {
+		Intelligence string `json:"intelligence"`
+		Strength     string `json:"strength"`
+		Speed        string `json:"speed"`
+		Durability   string `json:"durability"`
+		Power        string `json:"power"`
+		Combat       string `json:"combat"`
+	} `json:"powerstats"`
+	Biography struct {
+		FullName        string   `json:"full-name"`
+		AlterEgos       string   `json:"alter-egos"`
+		Aliases         []string `json:"aliases"`
+		PlaceOfBirth    string   `json:"place-of-birth"`
+		FirstAppearance string   `json:"first-appearance"`
+		Publisher       string   `json:"publisher"`
+		Alignment       string   `json:"alignment"`
+	} `json:"biography"`
+	Appearance struct {
+		Gender    string   `json:"gender"`
+		Race      string   `json:"race"`
+		Height    []string `json:"height"`
+		Weight    []string `json:"weight"`
+		EyeColor  string   `json:"eye-color"`
+		HairColor string   `json:"hair-color"`
+	} `json:"appearance"`
+	Work struct {
+		Occupation string `json:"occupation"`
+		Base       string `json:"base"`
+	} `json:"work"`
+	Connections struct {
+		GroupAffiliation string `json:"group-affiliation"`
+		Relatives        string `json:"relatives"`
+	} `json:"connections"`
+	Image struct {
+		URL string `json:"url"`
+	} `json:"image"`
 }
 
 var (
@@ -101,14 +99,15 @@ func init() {
 
 // InsertOne criar doc em mongodb
 // criar o index para deixar unique o campo no banco
-// db.heros.createIndex( { "resultsfor": 1 }, { unique: true } )
+// db.heros.createIndex( { "name": 1 }, { unique: true } )
 func (zh ZeroHero) InsertOne(collname string) (err error) {
 	collection = session.Database(MgoDb).Collection(collname)
 
 	ctx, cancel2 := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel2()
 
-	zh.ID = uuid.New().String()
+	zh.UUID = uuid.New().String()
+	zh.Name = strings.ToLower(zh.Name)
 	result, err := collection.InsertOne(ctx, zh, options.InsertOne())
 	if err != nil {
 		//log.Println("Error collection InsertOne:", err)
@@ -126,8 +125,8 @@ func FindOne(name string, collname string) (zh ZeroHero, err error) {
 	collection = session.Database(MgoDb).Collection(collname)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel()
-
-	err = collection.FindOne(ctx, bson.M{"resultsfor": name}).Decode(&zh)
+	name = strings.ToLower(name)
+	err = collection.FindOne(ctx, bson.M{"name": name}).Decode(&zh)
 	if err != nil {
 		if err == mongo.ErrNoDocuments {
 			return
@@ -142,8 +141,8 @@ func DeleteOne(name string, collname string) (err error) {
 	collection = session.Database(MgoDb).Collection(collname)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel()
-
-	res, err := collection.DeleteOne(ctx, bson.M{"resultsfor": name})
+	name = strings.ToLower(name)
+	res, err := collection.DeleteOne(ctx, bson.M{"name": name})
 	if err != nil {
 		return
 	}
@@ -160,18 +159,21 @@ func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
 	ctx, cancel2 := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel2()
 
+	name = strings.ToLower(name)
+
 	var zht ZeroHero
 	err = collection.FindOne(
 		ctx,
-		bson.M{"resultsfor": bson.M{"$eq": name}},
+		bson.M{"name": bson.M{"$eq": name}},
 	).Decode(&zht)
 
 	if err != nil {
 		return err
 	}
 
-	zh.ID = zht.ID
-	filter := bson.M{"_id": zh.ID}
+	zh.UUID = zht.UUID
+	zh.Name = zht.Name
+	filter := bson.M{"_id": zh.UUID}
 	update := bson.M{"$set": zh}
 	res, err := collection.UpdateOne(ctx, filter, update, options.Update().SetUpsert(true))
 	if err != nil {
