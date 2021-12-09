@@ -315,7 +315,7 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 	ctx, cancel2 := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel2()
 
-	zh.ID = uuid.New().String()
+	zh.UUID = uuid.New().String()
 	result, err := collection.InsertOne(ctx, zh, options.InsertOne())
 	if err != nil {
 		//log.Println("Error collection InsertOne:", err)
@@ -377,8 +377,8 @@ func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
 		return err
 	}
 
-	zh.ID = zht.ID
-	filter := bson.M{"_id": zh.ID}
+	zh.UUID = zht.UUID
+	filter := bson.M{"_id": zh.UUID}
 	update := bson.M{"$set": zh}
 	res, err := collection.UpdateOne(ctx, filter, update, options.Update().SetUpsert(true))
 	if err != nil {
