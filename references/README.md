@@ -66,7 +66,8 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 
 * **[Go tour list](https://go.dev/tour/list)**
 * **[Go tour welcome](https://go.dev/tour/welcome/1)**
-* **[talks Go](https://github.com/gobelohorizonte/gotalks)**
+* **[Talks Go](https://github.com/gobelohorizonte/gotalks)**
+* **[Exercism](https://exercism.org/tracks/go)**
 * **[Go Examplos](https://github.com/jeffotoni/goexample)**
 * **[Go Compilation](https://github.com/jeffotoni/gocompilation)**
 * **[Workshop DevOps Go](https://github.com/jeffotoni/goworkshopdevops)**
