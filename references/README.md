@@ -62,7 +62,7 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 * **[GopherCon Brasil 2022](https://gopherconbr.org/)**
 ***
 
-## Books e Tours
+## Books, exercícios e Tours
 
 * **[Go tour list](https://go.dev/tour/list)**
 * **[Go tour welcome](https://go.dev/tour/welcome/1)**
