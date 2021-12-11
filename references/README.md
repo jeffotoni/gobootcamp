@@ -96,10 +96,12 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 
 ## Awesome Go
 
-* **[Awesome Go](https://go.libhunt.com/)**
+* **[Awesome Go libhunt](https://go.libhunt.com/)**
 * **[Awesome Go Fork](https://ma124.github.io/awesome-go-fork/)**
 * **[Awesome Go - Nouney](https://github.com/nouney/awesome-go)**
 * **[Golang Libraries - Dreadl0ck](https://github.com/dreadl0ck/golang-libs)**
+* **[Awesome Go avelino](https://github.com/avelino/awesome-go)**
+* **[Awesome Go Site](https://awesome-go.com/)**
 ***
 
 ## Podcast
