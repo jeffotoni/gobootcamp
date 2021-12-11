@@ -6,6 +6,7 @@ import (
 	"errors"
 	"log"
 	"net/http"
+	"os"
 	"runtime"
 	"strings"
 	"time"
@@ -120,18 +121,23 @@ type Image struct {
 }
 
 var (
-	ambiente     string
-	session      *mongo.Client
-	collection   *mongo.Collection
-	err          error
-	MgoDb        = "zerohero"
-	CollHeros    = "heros"
-	user         = "root"
-	senha        = "senha123"
-	mgoUri       = "127.0.0.1:27017"
+	ambiente   string
+	session    *mongo.Client
+	collection *mongo.Collection
+	err        error
+	MgoDb      = "zerohero"
+	CollHeros  = "heros"
+
+	// user         = "root"
+	// senha        = "senha123"
+	// mgoUri       = "127.0.0.1:27017"
+
+	user   = os.Getenv("MGO_USER")
+	senha  = os.Getenv("MGO_PASSWORD")
+	mgoUri = os.Getenv("MGO_HOST")
+
 	mgoUriDocker = "mongodb.local.com:27017"
-	port         = "27017"
-	mgoOptions   = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+	mgoOptions   = "retryWrites=true&w=majority"
 	connectStr   = "mongodb://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
 
@@ -139,10 +145,10 @@ func init() {
 	// capturando ambiente atraves da compilacao
 	// ela ira fazer com que nosso servico comunique com
 	// mongo dentro do container
-	if ambiente == "docker" {
-		println("ambiente docker....")
-		connectStr = "mongodb://" + user + ":" + senha + "@" + mgoUriDocker + "/" + MgoDb + "?" + mgoOptions
-	}
+	// if ambiente == "docker" {
+	// 	println("ambiente docker....")
+	// 	connectStr = "mongodb://" + user + ":" + senha + "@" + mgoUriDocker + "/" + MgoDb + "?" + mgoOptions
+	// }
 
 	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
 	if err != nil {
