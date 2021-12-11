@@ -58,7 +58,7 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 ***
 
 ## Eventos Go
-
+* **[GopherCon 2021](https://www.youtube.com/watch?v=35eIxI_n5ZM)** 
 * **[GopherCon Brasil 2022](https://gopherconbr.org/)**
 ***
 
@@ -81,15 +81,17 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 * **[Go Web Example](https://gowebexamples.com/templates)**
 ***
 
-
-## Meetups Go
-
-* **[]()**
-***
-
 ## Materias Interessantes
 
 * **[Github - gopherconbr](https://github.com/gopherconbr/gopherconbr.org)**
+***
+
+## Patterns
+
+* **[design-patterns adapter](https://refactoring.guru/pt-br/design-patterns/adapter/go/example)**
+* **[design-patterns Factory Method](https://refactoring.guru/pt-br/design-patterns/factory-method/go/example)**
+* **[Bridge](https://refactoring.guru/pt-br/design-patterns/bridge/go/example)**
+* **[Builder](https://refactoring.guru/pt-br/design-patterns/builder/go/example)**
 ***
 
 ## Awesome Go
