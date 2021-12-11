@@ -153,6 +153,11 @@ func init() {
 	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
 	if err != nil {
 		log.Println("error connect:", err)
+		println("Configura as variaveis.....")
+		println("MGO_USER=root")
+		println("MGO_PASSWORD=senha123")
+		println("MGO_HOST=localhost:27017")
+		println("...........................")
 		return
 	}
 
