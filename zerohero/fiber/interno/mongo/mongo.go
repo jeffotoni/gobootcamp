@@ -7,53 +7,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/google/uuid"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
-
-// type ZeroHero struct {
-// 	Response   string `json:"response"`
-// 	ID         string `json:"id"`
-// 	UUID       string `json:"uuid,omitempty" bson:"_id"`
-// 	Name       string `json:"name"`
-// 	Powerstats struct {
-// 		Intelligence string `json:"intelligence"`
-// 		Strength     string `json:"strength"`
-// 		Speed        string `json:"speed"`
-// 		Durability   string `json:"durability"`
-// 		Power        string `json:"power"`
-// 		Combat       string `json:"combat"`
-// 	} `json:"powerstats"`
-// 	Biography struct {
-// 		FullName        string   `json:"full-name"`
-// 		AlterEgos       string   `json:"alter-egos"`
-// 		Aliases         []string `json:"aliases"`
-// 		PlaceOfBirth    string   `json:"place-of-birth"`
-// 		FirstAppearance string   `json:"first-appearance"`
-// 		Publisher       string   `json:"publisher"`
-// 		Alignment       string   `json:"alignment"`
-// 	} `json:"biography"`
-// 	Appearance struct {
-// 		Gender    string   `json:"gender"`
-// 		Race      string   `json:"race"`
-// 		Height    []string `json:"height"`
-// 		Weight    []string `json:"weight"`
-// 		EyeColor  string   `json:"eye-color"`
-// 		HairColor string   `json:"hair-color"`
-// 	} `json:"appearance"`
-// 	Work struct {
-// 		Occupation string `json:"occupation"`
-// 		Base       string `json:"base"`
-// 	} `json:"work"`
-// 	Connections struct {
-// 		GroupAffiliation string `json:"group-affiliation"`
-// 		Relatives        string `json:"relatives"`
-// 	} `json:"connections"`
-// 	Image struct {
-// 		URL string `json:"url"`
-// 	} `json:"image"`
-// }
 
 type ZeroHero struct {
 	Response    string      `json:"response"`
@@ -160,7 +118,6 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 
 	result, err := collection.InsertOne(ctx, zh, options.InsertOne())
 	if err != nil {
-		//log.Println("Error collection InsertOne:", err)
 		return
 	}
 
@@ -189,34 +146,33 @@ func FindOne(name, fatia string, collname string) (mzh map[string]interface{}, e
 	switch fatia {
 	case "image":
 		mzh1 := make(map[string]interface{}, 1)
-		mzh1["image"] = zh.Image
+		mzh1[fatia] = zh.Image
 		mzh = mzh1
 	case "powerstats":
 		mzh1 := make(map[string]interface{}, 1)
-		mzh1["powerstats"] = zh.Powerstats
+		mzh1[fatia] = zh.Powerstats
 		mzh = mzh1
 	case "biography":
 		mzh1 := make(map[string]interface{}, 1)
-		mzh1["biography"] = zh.Biography
+		mzh1[fatia] = zh.Biography
 		mzh = mzh1
 	case "appearance":
 		mzh1 := make(map[string]interface{}, 1)
-		mzh1["appearance"] = zh.Appearance
+		mzh1[fatia] = zh.Appearance
 		mzh = mzh1
 	case "work":
 		mzh1 := make(map[string]interface{}, 1)
-		mzh1["work"] = zh.Work
+		mzh1[fatia] = zh.Work
 		mzh = mzh1
 	case "connections":
 		mzh1 := make(map[string]interface{}, 1)
-		mzh1["connections"] = zh.Connections
+		mzh1[fatia] = zh.Connections
 		mzh = mzh1
 	default:
 		mzh1 := make(map[string]interface{}, 1)
 		mzh1["zerohero"] = zh
 		mzh = mzh1
 	}
-
 	return
 }
 
@@ -244,7 +200,6 @@ func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
 	defer cancel2()
 
 	name = strings.ToLower(name)
-	name = strings.ReplaceAll(name, " ", "")
 
 	var zht ZeroHero
 	err = collection.FindOne(

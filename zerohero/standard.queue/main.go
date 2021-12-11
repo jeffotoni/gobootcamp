@@ -293,7 +293,7 @@ func Post(w http.ResponseWriter, r *http.Request) {
 	}
 	if len(zh.Response) == 0 {
 		w.WriteHeader(http.StatusBadRequest)
-		jsonstr := `{"msg":"error ID required"}`
+		jsonstr := `{"msg":"error Response required"}`
 		w.Write([]byte(jsonstr))
 		return
 	}
@@ -424,6 +424,11 @@ func Put(w http.ResponseWriter, r *http.Request) {
 	rup := r.URL.Path
 	lastInd := strings.LastIndex(rup, "/")
 	name := rup[lastInd+1:]
+
+	if len(zh.Name) > 0 {
+		zh.Name = strings.ToLower(zh.Name)
+		zh.Name = strings.ReplaceAll(zh.Name, " ", "")
+	}
 
 	err = zh.UpdateOne(name, CollHeros)
 	if err != nil {

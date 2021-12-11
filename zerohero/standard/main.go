@@ -386,6 +386,8 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 
 	zh.UUID = uuid.New().String()
 	zh.Name = strings.ToLower(zh.Name)
+	zh.Name = strings.ReplaceAll(zh.Name, " ", "")
+
 	result, err := collection.InsertOne(ctx, zh, options.InsertOne())
 	if err != nil {
 		//log.Println("Error collection InsertOne:", err)

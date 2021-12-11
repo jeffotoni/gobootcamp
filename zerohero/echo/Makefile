@@ -8,5 +8,5 @@ build:
 
 docker:
 	@echo "--------------------------------------------------------------------------------------"
-	docker build -f Dockerfile -t jeffotoni/zeroherost:latest .
-	docker run --rm --name zeroherost -it -p 8080:8080 jeffotoni/zeroherost:latest
+	docker build -f Dockerfile -t jeffotoni/zeroheroecho:latest .
+	docker run --rm --name zeroheroecho -it -p 8080:8080 jeffotoni/zeroheroecho:latest
