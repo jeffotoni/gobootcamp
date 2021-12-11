@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"runtime"
 
-	ha "interno/handler"
+	h "interno/handler"
 	mw "interno/middleware"
 )
 
@@ -18,8 +18,14 @@ func main() {
 			w.Write([]byte("pong😍"))
 		})
 
-	mux.HandleFunc("/api/v1/zerohero", mw.Use(ha.Service, mw.Logger()))
-	mux.HandleFunc("/", mw.Use(ha.Service, mw.Logger()))
+	mux.HandleFunc("/", mw.Use(h.Service, mw.Logger()))
+	// mux.HandleFunc(":name", mw.Use(ha.Service, mw.Logger()))
+	// mux.HandleFunc(":name/powerstats", mw.Use(ha.Service, mw.Logger()))
+	// mux.HandleFunc(":name/biography", mw.Use(ha.Service, mw.Logger()))
+	// mux.HandleFunc(":name/appearance", mw.Use(ha.Service, mw.Logger()))
+	// mux.HandleFunc(":name/work", mw.Use(ha.Service, mw.Logger()))
+	// mux.HandleFunc(":name/connections", mw.Use(ha.Service, mw.Logger()))
+	// mux.HandleFunc(":name/image", mw.Use(ha.Service, mw.Logger()))
 
 	server := &http.Server{
 		Addr:    "0.0.0.0:8080",

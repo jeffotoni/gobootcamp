@@ -16,47 +16,107 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+var (
+	pathNames = map[string]string{
+		"image":       "image",
+		"powerstats":  "powerstats",
+		"biography":   "biography",
+		"appearance":  "appearance",
+		"work":        "work",
+		"connections": "connections",
+	}
+)
+
+// type ZeroHero struct {
+// 	Response   string `json:"response"`
+// 	ID         string `json:"id"`
+// 	UUID       string `json:"uuid,omitempty" bson:"_id"`
+// 	Name       string `json:"name"`
+// 	Powerstats struct {
+// 		Intelligence string `json:"intelligence"`
+// 		Strength     string `json:"strength"`
+// 		Speed        string `json:"speed"`
+// 		Durability   string `json:"durability"`
+// 		Power        string `json:"power"`
+// 		Combat       string `json:"combat"`
+// 	} `json:"powerstats"`
+// 	Biography struct {
+// 		FullName        string   `json:"full-name"`
+// 		AlterEgos       string   `json:"alter-egos"`
+// 		Aliases         []string `json:"aliases"`
+// 		PlaceOfBirth    string   `json:"place-of-birth"`
+// 		FirstAppearance string   `json:"first-appearance"`
+// 		Publisher       string   `json:"publisher"`
+// 		Alignment       string   `json:"alignment"`
+// 	} `json:"biography"`
+// 	Appearance struct {
+// 		Gender    string   `json:"gender"`
+// 		Race      string   `json:"race"`
+// 		Height    []string `json:"height"`
+// 		Weight    []string `json:"weight"`
+// 		EyeColor  string   `json:"eye-color"`
+// 		HairColor string   `json:"hair-color"`
+// 	} `json:"appearance"`
+// 	Work struct {
+// 		Occupation string `json:"occupation"`
+// 		Base       string `json:"base"`
+// 	} `json:"work"`
+// 	Connections struct {
+// 		GroupAffiliation string `json:"group-affiliation"`
+// 		Relatives        string `json:"relatives"`
+// 	} `json:"connections"`
+// 	Image struct {
+// 		URL string `json:"url"`
+// 	} `json:"image"`
+// }
+
 type ZeroHero struct {
-	Response   string `json:"response"`
-	ID         string `json:"id"`
-	UUID       string `json:"uuid,omitempty" bson:"_id"`
-	Name       string `json:"name"`
-	Powerstats struct {
-		Intelligence string `json:"intelligence"`
-		Strength     string `json:"strength"`
-		Speed        string `json:"speed"`
-		Durability   string `json:"durability"`
-		Power        string `json:"power"`
-		Combat       string `json:"combat"`
-	} `json:"powerstats"`
-	Biography struct {
-		FullName        string   `json:"full-name"`
-		AlterEgos       string   `json:"alter-egos"`
-		Aliases         []string `json:"aliases"`
-		PlaceOfBirth    string   `json:"place-of-birth"`
-		FirstAppearance string   `json:"first-appearance"`
-		Publisher       string   `json:"publisher"`
-		Alignment       string   `json:"alignment"`
-	} `json:"biography"`
-	Appearance struct {
-		Gender    string   `json:"gender"`
-		Race      string   `json:"race"`
-		Height    []string `json:"height"`
-		Weight    []string `json:"weight"`
-		EyeColor  string   `json:"eye-color"`
-		HairColor string   `json:"hair-color"`
-	} `json:"appearance"`
-	Work struct {
-		Occupation string `json:"occupation"`
-		Base       string `json:"base"`
-	} `json:"work"`
-	Connections struct {
-		GroupAffiliation string `json:"group-affiliation"`
-		Relatives        string `json:"relatives"`
-	} `json:"connections"`
-	Image struct {
-		URL string `json:"url"`
-	} `json:"image"`
+	Response    string      `json:"response"`
+	ID          string      `json:"id"`
+	UUID        string      `json:"uuid,omitempty" bson:"_id"`
+	Name        string      `json:"name"`
+	Powerstats  Powerstats  `json:"powerstats"`
+	Biography   Biography   `json:"biography"`
+	Appearance  Appearance  `json:"appearance"`
+	Work        Work        `json:"work"`
+	Connections Connections `json:"connections"`
+	Image       Image       `json:"image"`
+}
+type Powerstats struct {
+	Intelligence string `json:"intelligence"`
+	Strength     string `json:"strength"`
+	Speed        string `json:"speed"`
+	Durability   string `json:"durability"`
+	Power        string `json:"power"`
+	Combat       string `json:"combat"`
+}
+type Biography struct {
+	FullName        string   `json:"full-name"`
+	AlterEgos       string   `json:"alter-egos"`
+	Aliases         []string `json:"aliases"`
+	PlaceOfBirth    string   `json:"place-of-birth"`
+	FirstAppearance string   `json:"first-appearance"`
+	Publisher       string   `json:"publisher"`
+	Alignment       string   `json:"alignment"`
+}
+type Appearance struct {
+	Gender    string   `json:"gender"`
+	Race      string   `json:"race"`
+	Height    []string `json:"height"`
+	Weight    []string `json:"weight"`
+	EyeColor  string   `json:"eye-color"`
+	HairColor string   `json:"hair-color"`
+}
+type Work struct {
+	Occupation string `json:"occupation"`
+	Base       string `json:"base"`
+}
+type Connections struct {
+	GroupAffiliation string `json:"group-affiliation"`
+	Relatives        string `json:"relatives"`
+}
+type Image struct {
+	URL string `json:"url"`
 }
 
 var (
@@ -225,7 +285,16 @@ func Get(w http.ResponseWriter, r *http.Request) {
 	lastInd := strings.LastIndex(rup, "/")
 	name := rup[lastInd+1:]
 
-	hero, err := FindOne(name, CollHeros)
+	_, ok := pathNames[name]
+	fatia := ""
+	if ok {
+		fatia = name
+		split := strings.Split(rup, "/")
+		if len(split) > 2 {
+			name = split[1]
+		}
+	}
+	hero, err := FindOne(name, fatia, CollHeros)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
 		jsonstr := `{"msg":"` + err.Error() + `"}`
@@ -330,11 +399,13 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 }
 
 // FindOne responsavel por buscar nosso do heros
-func FindOne(name string, collname string) (zh ZeroHero, err error) {
+func FindOne(name, fatia string, collname string) (mzh map[string]interface{}, err error) {
+	mzh = nil
 	collection = session.Database(MgoDb).Collection(collname)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel()
 	name = strings.ToLower(name)
+	var zh ZeroHero
 	err = collection.FindOne(ctx, bson.M{"name": name}).Decode(&zh)
 	if err != nil {
 		if err == mongo.ErrNoDocuments {
@@ -342,6 +413,38 @@ func FindOne(name string, collname string) (zh ZeroHero, err error) {
 		}
 		return
 	}
+
+	switch fatia {
+	case "image":
+		mzh1 := make(map[string]interface{}, 1)
+		mzh1["image"] = zh.Image
+		mzh = mzh1
+	case "powerstats":
+		mzh1 := make(map[string]interface{}, 1)
+		mzh1["powerstats"] = zh.Powerstats
+		mzh = mzh1
+	case "biography":
+		mzh1 := make(map[string]interface{}, 1)
+		mzh1["biography"] = zh.Biography
+		mzh = mzh1
+	case "appearance":
+		mzh1 := make(map[string]interface{}, 1)
+		mzh1["appearance"] = zh.Appearance
+		mzh = mzh1
+	case "work":
+		mzh1 := make(map[string]interface{}, 1)
+		mzh1["work"] = zh.Work
+		mzh = mzh1
+	case "connections":
+		mzh1 := make(map[string]interface{}, 1)
+		mzh1["connections"] = zh.Connections
+		mzh = mzh1
+	default:
+		mzh1 := make(map[string]interface{}, 1)
+		mzh1["zerohero"] = zh
+		mzh = mzh1
+	}
+
 	return
 }
 

@@ -8,6 +8,17 @@ import (
 	mgo "interno/mongo"
 )
 
+var (
+	pathNames = map[string]string{
+		"image":       "image",
+		"powerstats":  "powerstats",
+		"biography":   "biography",
+		"appearance":  "appearance",
+		"work":        "work",
+		"connections": "connections",
+	}
+)
+
 func Service(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodPost:
@@ -63,12 +74,20 @@ func Get(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(jsonstr))
 		return
 	}
-
 	rup := r.URL.Path
 	lastInd := strings.LastIndex(rup, "/")
 	name := rup[lastInd+1:]
 
-	hero, err := mgo.FindOne(name, mgo.CollHeros)
+	_, ok := pathNames[name]
+	fatia := ""
+	if ok {
+		fatia = name
+		split := strings.Split(rup, "/")
+		if len(split) > 2 {
+			name = split[1]
+		}
+	}
+	hero, err := mgo.FindOne(name, fatia, mgo.CollHeros)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
 		jsonstr := `{"msg":"` + err.Error() + `"}`
@@ -101,7 +120,6 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 	rup := r.URL.Path
 	lastInd := strings.LastIndex(rup, "/")
 	name := rup[lastInd+1:]
-
 	err := mgo.DeleteOne(name, mgo.CollHeros)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
