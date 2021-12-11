@@ -6,7 +6,7 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 ## Personalize seu Go
 * **[Personalize seu Go](https://gopherize.me/)**
 
-## Json to Struct Go
+## Json to Struct and Json to  Map Go
 
 * **[json para struct](https://mholt.github.io/json-to-go/)**
 * * **[json para map](https://rodrigo-brito.github.io/json-to-go-map/)**
@@ -82,7 +82,7 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 ***
 
 ## Materias Interessantes
-
+* **[Usegolang](https://www.usegolang.com/#sample)
 * **[Github - gopherconbr](https://github.com/gopherconbr/gopherconbr.org)**
 ***
 
@@ -112,6 +112,7 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 
 ## Artigos
 
+* **[Posts Go Calhoun](https://www.calhoun.io/)**
 * **[Primeiros passos em Go](https://jeffotoni.medium.com/primeiros-passos-em-go-e1e28b7ff5d3)**
 ```
 Um pouco do porque a linguagem Go surgiu, sua sintaxe e algumas áreas onde Go é mais aplicado... 
