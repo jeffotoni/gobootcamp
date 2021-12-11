@@ -1,25 +1,25 @@
 version: '3'
 
 services:
-  # zerohero:
-  #   build:
-  #     context: .
-  #     dockerfile: ./Dockerfile
-  #   container_name: zerohero.api
-  #   hostname: zeroheroapi
-  #   domainname: zeroheroapi.local.com
-  #   environment:
-  #     - "TZ=America/Sao_Paulo"
-  #     - MONGODB_URI=mongodb.local.com:27017
-  #   networks:
-  #     netgoservice:
-  #         aliases:
-  #             - zerohero.local.com
-  #   ports:
-  #     - 8081:8081
-  #   depends_on:
-  #   - mongo
-  #   - kubemq
+  zerohero:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: zerohero.api
+    hostname: zeroheroapi
+    domainname: zeroheroapi.local.com
+    environment:
+      - "TZ=America/Sao_Paulo"
+      - MONGODB_URI=mongodb.local.com:27017
+    networks:
+      netgoservice:
+          aliases:
+              - zerohero.local.com
+    ports:
+      - 8081:8081
+    depends_on:
+    - mongo
+    - kubemq
   kubemq:
     image: kubemq/kubemq:latest
     container_name: kubemq
