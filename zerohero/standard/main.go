@@ -135,10 +135,11 @@ var (
 	user   = os.Getenv("MGO_USER")
 	senha  = os.Getenv("MGO_PASSWORD")
 	mgoUri = os.Getenv("MGO_HOST")
+	mgoSrv = os.Getenv("MGO_SRV")
 
-	mgoUriDocker = "mongodb.local.com:27017"
-	mgoOptions   = "retryWrites=true&w=majority"
-	connectStr   = "mongodb://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
+	//mgoUriDocker = "mongodb.local.com:27017"
+	mgoOptions = "retryWrites=true&w=majority"
+	connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
 
 func init() {
@@ -149,7 +150,6 @@ func init() {
 	// 	println("ambiente docker....")
 	// 	connectStr = "mongodb://" + user + ":" + senha + "@" + mgoUriDocker + "/" + MgoDb + "?" + mgoOptions
 	// }
-
 	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
 	if err != nil {
 		log.Println("error connect:", err)
