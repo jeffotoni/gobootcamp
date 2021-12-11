@@ -65,14 +65,14 @@
                     <div class="content-height">
                         <p>A goroutine is a lightweight thread managed by the Go runtime.</p>
 
-						<pre><code class="language-go">go f(x, y, z)
+                        <pre><code class="language-go">go f(x, y, z)
 // println("...")
 go f(x, y, z)
 </code></pre>
 
                         <p>starts a new goroutine running</p>
 
-						<pre><code class="language-go">f(x, y, z)</code></pre>
+                        <pre><code class="language-go">f(x, y, z)</code></pre>
 
                         <p>The evaluation of f, x, y, and z happens in the current goroutine and the execution of f happens in the new goroutine.</p>
 
@@ -138,12 +138,17 @@ func main() {
         <div class="main-footer">
             <div class="container text-center">
 
-                <span>by <a href="https://jeffotoni.com/" target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; <a href="#" target="_blank">source</a> &nbsp; | &nbsp; <a href="#" target="_blank">license</a>
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
 
-			</div>
-		</div>	
-	</footer>
-	<!-- Rodape Fim -->
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
 
 
     <!-- jQuery -->
@@ -166,4 +171,5 @@ func main() {
     <script src="../plugins/prism/prism.js"></script>
 
 </body>
+
 </html>

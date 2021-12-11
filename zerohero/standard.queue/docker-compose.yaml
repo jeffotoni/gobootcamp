@@ -1,0 +1,62 @@
+version: '3'
+
+services:
+  zerohero:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: zerohero.api
+    hostname: zeroheroapi
+    domainname: zeroheroapi.local.com
+    environment:
+      - "TZ=America/Sao_Paulo"
+      - MONGODB_URI=mongodb.local.com:27017
+    networks:
+      netgoservice:
+          aliases:
+              - zerohero.local.com
+    ports:
+      - 8081:8081
+    depends_on:
+    - mongo
+    - kubemq
+  kubemq:
+    image: kubemq/kubemq:latest
+    container_name: kubemq
+    hostname: kubemq
+    domainname: kubemq.local.com
+    ports:
+      - "8080:8080"
+      - "9090:9090"
+      - "50000:50000"
+    environment:
+      - KUBEMQ_HOST=kubemq
+      - KUBEMQ_TOKEN="token12345609"
+    networks:
+        netgoservice:
+          aliases:
+              - kubemq.local.com
+    volumes:
+      - kubemq_vol:/store
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    hostname: mongodb
+    domainname: mongodb.local.com
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: senha123
+      MONGO_INITDB_DATABASE: zerohero
+      MONGO_DATA_DIR: /data/db
+      MONGO_LOG_DIR: /dev/null
+    ports:
+      - "27017:27017"
+    networks:
+        netgoservice:
+          aliases:
+              - mongodb.local.com
+networks:
+    netgoservice:
+      driver: bridge
+volumes:
+  kubemq_vol:

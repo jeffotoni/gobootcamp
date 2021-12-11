@@ -6,12 +6,27 @@ O conteúdo visa o nível básico do aluno muitos exemplos práticos foram feito
 
 Se você conhece pouco e quase nada a programação não será problema, todo o manual foi feito para o nível inicial ao avançado.
 
-Espero que gostem e possam servir de base para aprendizado e ajudar vários Esquilos possíveis.
+Espero que gostem e possam servir de base para aprendizado e ajudar vários Gophers possíveis.
 
 Existem milhares de referências hoje em relação ao Golang, vamos começar do início e não podíamos deixar de falar do [Golang Tour](https://go.dev/tour/welcome/1), [Play Golang](https://go.dev/play) ou [Play Go Space](https://goplay.space/) são formas online de brincarmos com a linguagem Go, lindo não é ? 😊
 
-Todo manual foi baseado nestes sites apresetados acima, ele encontra-se aqui [gobootcamp](https://gobootcamp.jeffotoni.com/)
+Criamos esta página para ajuda-lo a encontrar com mais facilidade alguns links que acreditamos ser essenciais para o aprendizado da linguagem Go: 
+* **[referencias Go](https://github.com/jeffotoni/gobootcamp/tree/main/references)**
 
+Criamos um roadmap Go para facilitar a visão macro quando formos aprender Go.
+* **[roadmap Go](roadmap/goroadmap.png)**
+
+Todo manual foi baseado nestas referências apresetados acima, ele encontra-se aqui: 
+* **[gobootcamp](https://gobootcamp.jeffotoni.com/)**
+
+## Instalar com Docker
+
+Você pode instalar gobootcampmanual com docker.
+
+```bash
+$  docker run --rm --name gobootcampmanual -it \
+-p 8080:8080 jeffotoni/gobootcampmanual:latest
+```
 
 ## Instalar o manual localmente
 
@@ -34,7 +49,7 @@ _É necessário o Go instalado na máquina._
 ```bash
 $ git clone https://github.com/jeffotoni/gobootcamp
 $ cd gomanual
-$ go run main.go
+$ go run .
 Run Server: http://localhost:8181
 ```
 Agora basta acessar o link para acessar o manual localmente, desta forma você consegue alterar o manual seja para colaborar enviando um PR (Pull request) com melhorias ou novos temas como fazer um fork para seu uso pessoal 😊.
