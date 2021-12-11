@@ -12,11 +12,32 @@ services:
   #     - "TZ=America/Sao_Paulo"
   #     - MONGODB_URI=mongodb.local.com:27017
   #   networks:
-  #     - netgoservice
+  #     netgoservice:
+  #         aliases:
+  #             - zerohero.local.com
   #   ports:
-  #     - 8080:8080
+  #     - 8081:8081
   #   depends_on:
   #   - mongo
+  #   - kubemq
+  kubemq:
+    image: kubemq/kubemq:latest
+    container_name: kubemq
+    hostname: kubemq
+    domainname: kubemq.local.com
+    ports:
+      - "8080:8080"
+      - "9090:9090"
+      - "50000:50000"
+    environment:
+      - KUBEMQ_HOST=kubemq
+      - KUBEMQ_TOKEN="token12345609"
+    networks:
+        netgoservice:
+          aliases:
+              - kubemq.local.com
+    volumes:
+      - kubemq_vol:/store
   mongo:
     image: mongo:latest
     container_name: mongodb
@@ -34,7 +55,8 @@ services:
         netgoservice:
           aliases:
               - mongodb.local.com
-
 networks:
     netgoservice:
       driver: bridge
+volumes:
+  kubemq_vol:
