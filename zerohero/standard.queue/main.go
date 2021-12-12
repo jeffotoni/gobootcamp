@@ -31,48 +31,20 @@ var (
 	}
 )
 
-// type ZeroHero struct {
-// 	Response   string `json:"response"`
-// 	ID         string `json:"id"`
-// 	UUID       string `json:"uuid,omitempty" bson:"_id"`
-// 	Name       string `json:"name"`
-// 	Powerstats struct {
-// 		Intelligence string `json:"intelligence"`
-// 		Strength     string `json:"strength"`
-// 		Speed        string `json:"speed"`
-// 		Durability   string `json:"durability"`
-// 		Power        string `json:"power"`
-// 		Combat       string `json:"combat"`
-// 	} `json:"powerstats"`
-// 	Biography struct {
-// 		FullName        string   `json:"full-name"`
-// 		AlterEgos       string   `json:"alter-egos"`
-// 		Aliases         []string `json:"aliases"`
-// 		PlaceOfBirth    string   `json:"place-of-birth"`
-// 		FirstAppearance string   `json:"first-appearance"`
-// 		Publisher       string   `json:"publisher"`
-// 		Alignment       string   `json:"alignment"`
-// 	} `json:"biography"`
-// 	Appearance struct {
-// 		Gender    string   `json:"gender"`
-// 		Race      string   `json:"race"`
-// 		Height    []string `json:"height"`
-// 		Weight    []string `json:"weight"`
-// 		EyeColor  string   `json:"eye-color"`
-// 		HairColor string   `json:"hair-color"`
-// 	} `json:"appearance"`
-// 	Work struct {
-// 		Occupation string `json:"occupation"`
-// 		Base       string `json:"base"`
-// 	} `json:"work"`
-// 	Connections struct {
-// 		GroupAffiliation string `json:"group-affiliation"`
-// 		Relatives        string `json:"relatives"`
-// 	} `json:"connections"`
-// 	Image struct {
-// 		URL string `json:"url"`
-// 	} `json:"image"`
-// }
+// cache memory
+// ristreto
+///////
+var (
+	once      sync.Once
+	cacheOnce *ristretto.Cache
+	//err              error
+	NumCounters      int64 = 1e7     // Num keys to track frequency of (30M).
+	MaxCost          int64 = 1 << 30 // Maximum cost of cache (2GB).
+	BufferItems      int64 = 64      // Number of keys per Get buffer.
+	NumCPU           int   = runtime.NumCPU()
+	TimeOutSearchCep int   = 15     // secouds
+	TTlCache         int   = 172800 // secouds => 2 days
+)
 
 type ZeroHero struct {
 	Response    string      `json:"response"`
@@ -124,19 +96,27 @@ type Image struct {
 }
 
 var (
-	ambiente       string
-	session        *mongo.Client
-	collection     *mongo.Collection
-	err            error
-	MgoDb          = "zerohero"
-	CollHeros      = "heros"
-	user           = "root"
-	senha          = "senha123"
-	mgoUri         = "127.0.0.1:27017"
-	mgoUriDocker   = "mongodb.local.com:27017"
-	port           = "27017"
-	mgoOptions     = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
-	connectStr     = "mongodb://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
+	ambiente   string
+	session    *mongo.Client
+	collection *mongo.Collection
+	err        error
+	MgoDb      = "zerohero"
+	CollHeros  = "heros"
+
+	user   = "root"
+	senha  = "senha123"
+	mgoUri = "localhost:27017"
+	mgoSrv = "mongodb"
+
+	//user   = os.Getenv("MGO_USER")
+	//senha  = os.Getenv("MGO_PASSWORD")
+	//mgoUri = os.Getenv("MGO_HOST")
+	//mgoSrv = os.Getenv("MGO_SRV")
+
+	//mgoUriDocker = "mongodb.local.com:27017"
+	mgoOptions = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+	connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
+
 	kubemqHost     = "localhost"
 	kubemqPort     = 50000
 	kubemqChannel  = "channel_zerohero"
@@ -144,15 +124,6 @@ var (
 )
 
 func init() {
-	// capturando ambiente atraves da compilacao
-	// ela ira fazer com que nosso servico comunique com
-	// mongo dentro do container
-	if ambiente == "docker" {
-		kubemqHost = "kubemq.local.com"
-		println("ambiente docker....")
-		connectStr = "mongodb://" + user + ":" + senha + "@" + mgoUriDocker + "/" + MgoDb + "?" + mgoOptions
-	}
-
 	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
 	if err != nil {
 		log.Println("error connect:", err)
@@ -245,14 +216,47 @@ func Use(f http.HandlerFunc, middlewares ...Middleware) http.HandlerFunc {
 }
 
 func Service(w http.ResponseWriter, r *http.Request) {
+	split := strings.Split(r.URL.Path, "/")
 	switch r.Method {
 	case http.MethodPost:
+		if len(split) > 2 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Post(w, r)
 	case http.MethodGet:
+		if len(split) < 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Get(w, r)
 	case http.MethodDelete:
+		if len(split) != 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Delete(w, r)
 	case http.MethodPut:
+		if len(split) != 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Put(w, r)
 	default:
 		http.NotFound(w, r)
@@ -326,16 +330,20 @@ func Get(w http.ResponseWriter, r *http.Request) {
 	lastInd := strings.LastIndex(rup, "/")
 	name := rup[lastInd+1:]
 
-	_, ok := pathNames[name]
 	fatia := ""
+	_, ok := pathNames[name]
 	if ok {
 		fatia = name
 		split := strings.Split(rup, "/")
 		if len(split) > 2 {
-			name = split[1]
+			name = split[2]
+		} else {
+			w.WriteHeader(http.StatusNotFound)
+			return
 		}
 	}
-	key := name + fatia
+
+	key := name + "-" + fatia
 	// check em cache primeiro
 	heroStr := RistretoGet(key)
 	if len(heroStr) == 0 {
@@ -465,12 +473,15 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 }
 
 // FindOne responsavel por buscar nosso do heros
-func FindOne(name, fatia string, collname string) (mzh map[string]interface{}, err error) {
+func FindOne(name, fatia string, collname string) (mzh interface{}, err error) {
 	mzh = nil
 	collection = session.Database(MgoDb).Collection(collname)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
 	defer cancel()
+
 	name = strings.ToLower(name)
+	name = strings.ReplaceAll(name, " ", "")
+
 	var zh ZeroHero
 	err = collection.FindOne(ctx, bson.M{"name": name}).Decode(&zh)
 	if err != nil {
@@ -482,33 +493,19 @@ func FindOne(name, fatia string, collname string) (mzh map[string]interface{}, e
 
 	switch fatia {
 	case "image":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Image
-		mzh = mzh1
+		mzh = zh.Image
 	case "powerstats":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Powerstats
-		mzh = mzh1
+		mzh = zh.Powerstats
 	case "biography":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Biography
-		mzh = mzh1
+		mzh = zh.Biography
 	case "appearance":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Appearance
-		mzh = mzh1
+		mzh = zh.Appearance
 	case "work":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Work
-		mzh = mzh1
+		mzh = zh.Work
 	case "connections":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Connections
-		mzh = mzh1
+		mzh = zh.Connections
 	default:
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1["zerohero"] = zh
-		mzh = mzh1
+		mzh = zh
 	}
 	return
 }
@@ -651,21 +648,6 @@ func worker() {
 		}
 	}
 }
-
-// cache memory
-// ristreto
-///////
-var (
-	once      sync.Once
-	cacheOnce *ristretto.Cache
-	//err              error
-	NumCounters      int64 = 1e7     // Num keys to track frequency of (30M).
-	MaxCost          int64 = 1 << 30 // Maximum cost of cache (2GB).
-	BufferItems      int64 = 64      // Number of keys per Get buffer.
-	NumCPU           int   = runtime.NumCPU()
-	TimeOutSearchCep int   = 15     // secouds
-	TTlCache         int   = 172800 // secouds => 2 days
-)
 
 func RistretoRun() *ristretto.Cache {
 	once.Do(func() {

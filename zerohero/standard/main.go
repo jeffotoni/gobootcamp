@@ -189,23 +189,46 @@ func Use(f http.HandlerFunc, middlewares ...Middleware) http.HandlerFunc {
 
 func Service(w http.ResponseWriter, r *http.Request) {
 	split := strings.Split(r.URL.Path, "/")
-	if len(split) < 3 {
-		http.NotFound(w, r)
-		return
-	}
-	if split[1] != "api" {
-		http.NotFound(w, r)
-		return
-	}
-
 	switch r.Method {
 	case http.MethodPost:
+		if len(split) > 2 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Post(w, r)
 	case http.MethodGet:
+		if len(split) < 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Get(w, r)
 	case http.MethodDelete:
+		if len(split) != 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Delete(w, r)
 	case http.MethodPut:
+		if len(split) != 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Put(w, r)
 	default:
 		http.NotFound(w, r)

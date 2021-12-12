@@ -20,14 +20,47 @@ var (
 )
 
 func Service(w http.ResponseWriter, r *http.Request) {
+	split := strings.Split(r.URL.Path, "/")
 	switch r.Method {
 	case http.MethodPost:
+		if len(split) > 2 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Post(w, r)
 	case http.MethodGet:
+		if len(split) < 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Get(w, r)
 	case http.MethodDelete:
+		if len(split) != 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Delete(w, r)
 	case http.MethodPut:
+		if len(split) != 3 {
+			http.NotFound(w, r)
+			return
+		}
+		if split[1] != "api" {
+			http.NotFound(w, r)
+			return
+		}
 		Put(w, r)
 	default:
 		http.NotFound(w, r)
@@ -74,6 +107,7 @@ func Get(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(jsonstr))
 		return
 	}
+
 	rup := r.URL.Path
 	lastInd := strings.LastIndex(rup, "/")
 	name := rup[lastInd+1:]
@@ -84,9 +118,13 @@ func Get(w http.ResponseWriter, r *http.Request) {
 		fatia = name
 		split := strings.Split(rup, "/")
 		if len(split) > 2 {
-			name = split[1]
+			name = split[2]
+		} else {
+			w.WriteHeader(http.StatusNotFound)
+			return
 		}
 	}
+
 	hero, err := mgo.FindOne(name, fatia, mgo.CollHeros)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
