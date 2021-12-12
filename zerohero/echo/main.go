@@ -63,14 +63,14 @@ type Image struct {
 func main() {
 	e := echo.New()
 	e.GET("/ping", Ping)
-	e.POST("/", Post)
-	e.PUT("/", Put)
-	e.DELETE("/", Delete)
-	e.GET("/:name", Get)
-	e.GET("/:name/:fatia", GetHero)
+	e.POST("/api", Post)
+	e.PUT("/api/:name", Put)
+	e.DELETE("/api/:name", Delete)
+	e.GET("/api/:name", Get)
+	e.GET("/api/:name/:fatia", Get)
 
 	e.Logger.SetLevel(log.INFO)
-	e.Start("0.0.0.0:8081")
+	e.Start("0.0.0.0:8080")
 }
 
 func Ping(c echo.Context) (err error) {
@@ -101,16 +101,10 @@ func Delete(c echo.Context) (err error) {
 }
 
 func Get(c echo.Context) (err error) {
-	return c.JSON(http.StatusCreated, Response{
-		Msg: `get`,
-	})
-}
-
-func GetHero(c echo.Context) (err error) {
 	name := c.Param("name")
 	fatia := c.Param("fatia")
 	println("name:", name, " fatia:", fatia)
 	return c.JSON(http.StatusCreated, Response{
-		Msg: `getHero`,
+		Msg: `get`,
 	})
 }

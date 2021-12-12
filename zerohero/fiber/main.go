@@ -1,37 +1,38 @@
 package main
 
 import (
-  "os"
+  "time"
 
   "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/logger"
+  "github.com/gofiber/fiber/v2/middleware/cache"
 
   h "interno/handler"
+  mw "interno/middleware"
 )
-
-//Logger log
-func Logger(app *fiber.App) {
-  //app.Use(mw.Logger("${time} ${method} ${path} - ${ip} - ${status} - ${latency}\n"))
-  app.Use(logger.New(logger.Config{
-    Format:     "${pid} ${time} ${method} ${path} - ${ip} - ${status} - ${latency}\n",
-    TimeFormat: "02-Jan-2006 15:04:05",
-    Output:     os.Stdout,
-  }))
-  return
-}
 
 func main() {
   app := fiber.New(
     fiber.Config{
       BodyLimit: 10 * 1024 * 1024,
     })
-  Logger(app)
-  app.Get("/ping", h.Ping)
-  app.Post("/", h.Post)
-  app.Put("/", h.Put)
-  app.Delete("/", h.Delete)
-  app.Get("/:name", h.Get)
-  app.Get("/:name/:fatia", h.GetHero)
 
-  app.Listen(":8081")
+  mw.Logger(app)
+  app.Get("/ping", h.Ping)
+  app.Post("/api", h.Post)
+  app.Put("/api", h.Put)
+  app.Delete("/api/:name", h.Delete)
+
+  //app.Use(cache.New())
+  app.Use(cache.New(cache.Config{
+    Next: func(c *fiber.Ctx) bool {
+      println("cache...")
+      return c.Query("refresh") == "true"
+    },
+    Expiration:   10 * time.Second,
+    CacheControl: true,
+  }))
+  app.Get("/api/:name/:fatia", h.Get)
+  app.Get("/api/:name", h.Get)
+
+  app.Listen("0.0.0.0:8080")
 }

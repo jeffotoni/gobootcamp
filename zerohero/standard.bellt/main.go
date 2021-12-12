@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -15,17 +16,8 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-)
 
-var (
-	pathNames = map[string]string{
-		"image":       "image",
-		"powerstats":  "powerstats",
-		"biography":   "biography",
-		"appearance":  "appearance",
-		"work":        "work",
-		"connections": "connections",
-	}
+	"github.com/GuilhermeCaruso/bellt"
 )
 
 type ZeroHero struct {
@@ -135,20 +127,14 @@ func init() {
 
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
-	mux := http.NewServeMux()
-	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
-		w.WriteHeader(http.StatusOK)
-		w.Write([]byte("pong😍"))
-	})
-
-	mux.HandleFunc("/", Use(Service, Logger()))
-
-	server := &http.Server{
-		Addr:    "0.0.0.0:8080",
-		Handler: mux,
-	}
+	b := bellt.NewRouter()
+	b.HandleFunc("/api/{name}", Use(Get, Logger()), "GET")
+	b.HandleFunc("/api/{name}/{fatia}", Get, "GET")
+	b.HandleFunc("/api", Post, "POST")
+	//b.HandleFunc("/api", Put, "PUT")
+	//b.HandleFunc("/api", Delete, "DELETE")
 	log.Println("\033[1;44mRunning on http://0.0.0.0:8080 (Press CTRL+C to quit)\033[0m")
-	log.Fatal(server.ListenAndServe())
+	log.Fatal(http.ListenAndServe("0.0.0.0:8080", nil))
 }
 
 type Middleware func(http.HandlerFunc) http.HandlerFunc
@@ -187,31 +173,6 @@ func Use(f http.HandlerFunc, middlewares ...Middleware) http.HandlerFunc {
 	return f
 }
 
-func Service(w http.ResponseWriter, r *http.Request) {
-	split := strings.Split(r.URL.Path, "/")
-	if len(split) < 3 {
-		http.NotFound(w, r)
-		return
-	}
-	if split[1] != "api" {
-		http.NotFound(w, r)
-		return
-	}
-
-	switch r.Method {
-	case http.MethodPost:
-		Post(w, r)
-	case http.MethodGet:
-		Get(w, r)
-	case http.MethodDelete:
-		Delete(w, r)
-	case http.MethodPut:
-		Put(w, r)
-	default:
-		http.NotFound(w, r)
-	}
-}
-
 func Post(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	defer r.Body.Close()
@@ -245,6 +206,9 @@ func Post(w http.ResponseWriter, r *http.Request) {
 
 func Get(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
+	rv := bellt.RouteVariables(r)
+	name := fmt.Sprintf("%s", rv.GetVar("name"))
+	fatia := fmt.Sprintf("%s", rv.GetVar("fatia"))
 
 	if http.MethodGet != strings.ToUpper(r.Method) {
 		w.WriteHeader(http.StatusMethodNotAllowed)
@@ -253,22 +217,6 @@ func Get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	rup := r.URL.Path
-	lastInd := strings.LastIndex(rup, "/")
-	name := rup[lastInd+1:]
-
-	_, ok := pathNames[name]
-	fatia := ""
-	if ok {
-		fatia = name
-		split := strings.Split(rup, "/")
-		if len(split) > 2 {
-			name = split[2]
-		} else {
-			w.WriteHeader(http.StatusNotFound)
-			return
-		}
-	}
 	hero, err := FindOne(name, fatia, CollHeros)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -365,7 +313,6 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 
 	result, err := collection.InsertOne(ctx, zh, options.InsertOne())
 	if err != nil {
-		//log.Println("Error collection InsertOne:", err)
 		return
 	}
 

@@ -45,25 +45,50 @@ func Post(c *fiber.Ctx) (err error) {
 	return c.Status(201).JSON(zh)
 }
 
-func Put(c *fiber.Ctx) error {
+func Put(c *fiber.Ctx) (err error) {
 	c.Set("Content-Type", "application/json")
-	return c.Status(200).SendString(`{"msg":"put"}`)
+	var Response Response
+	if len(c.Body()) == 0 {
+		return c.Status(400).SendString(`{"msg":"error Body required"}`)
+	}
+	var zh mgo.ZeroHero
+	err = c.BodyParser(&zh)
+	if err != nil {
+		Response.Msg = err.Error()
+		return c.Status(400).JSON(Response)
+	}
+
+	name := c.Params("name")
+	err = zh.UpdateOne(name, mgo.CollHeros)
+	if err != nil {
+		Response.Msg = err.Error()
+		return c.Status(400).JSON(Response)
+	}
+	return c.Status(200).SendString(``)
 }
 
-func Delete(c *fiber.Ctx) error {
+func Delete(c *fiber.Ctx) (err error) {
 	c.Set("Content-Type", "application/json")
-	return c.Status(200).SendString(`{"msg":"delete"}`)
+	var Response Response
+	name := c.Params("name")
+	err = mgo.DeleteOne(name, mgo.CollHeros)
+	if err != nil {
+		Response.Msg = err.Error()
+		return c.Status(400).JSON(Response)
+	}
+	return c.Status(204).SendString("")
 }
 
-func Get(c *fiber.Ctx) error {
+func Get(c *fiber.Ctx) (err error) {
 	c.Set("Content-Type", "application/json")
-	println("param:", c.Params("name"))
-	return c.Status(200).SendString(`{"msg":"Get"}`)
-}
+	var Response Response
+	name := c.Params("name")
+	fatia := c.Params("fatia")
 
-func GetHero(c *fiber.Ctx) error {
-	c.Set("Content-Type", "application/json")
-	println("param1:", c.Params("name"))
-	println("param2:", c.Params("fatia"))
-	return c.Status(200).SendString(`{"msg":"GetHero"}`)
+	hero, err := mgo.FindOne(name, fatia, mgo.CollHeros)
+	if err != nil {
+		Response.Msg = err.Error()
+		return c.Status(400).JSON(Response)
+	}
+	return c.Status(200).JSON(&hero)
 }

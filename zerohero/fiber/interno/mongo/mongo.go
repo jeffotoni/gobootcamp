@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"log"
+	"os"
 	"strings"
 	"time"
 
@@ -63,33 +64,40 @@ type Image struct {
 }
 
 var (
-	ambiente     string
-	session      *mongo.Client
-	collection   *mongo.Collection
-	err          error
-	MgoDb        = "zerohero"
-	CollHeros    = "heros"
-	user         = "root"
-	senha        = "senha123"
-	mgoUri       = "127.0.0.1:27017"
+	ambiente   string
+	session    *mongo.Client
+	collection *mongo.Collection
+	err        error
+	MgoDb      = "zerohero"
+	CollHeros  = "heros"
+
+	// user         = "root"
+	// senha        = "senha123"
+	// mgoUri       = "127.0.0.1:27017"
+
+	user   = os.Getenv("MGO_USER")
+	senha  = os.Getenv("MGO_PASSWORD")
+	mgoUri = os.Getenv("MGO_HOST")
+	mgoSrv = os.Getenv("MGO_SRV")
+
 	mgoUriDocker = "mongodb.local.com:27017"
 	port         = "27017"
-	mgoOptions   = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
-	connectStr   = "mongodb://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
+	mgoOptions   = "retryWrites=true&w=majority"
+	connectStr   = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
 
 func init() {
 	// capturando ambiente atraves da compilacao
 	// ela ira fazer com que nosso servico comunique com
 	// mongo dentro do container
-	if ambiente == "docker" {
-		println("ambiente docker....")
-		connectStr = "mongodb://" + user + ":" + senha + "@" + mgoUriDocker + "/" + MgoDb + "?" + mgoOptions
-	}
-
 	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
 	if err != nil {
 		log.Println("error connect:", err)
+		println("Configura as variaveis.....")
+		println("MGO_USER=root")
+		println("MGO_PASSWORD=senha123")
+		println("MGO_HOST=localhost:27017")
+		println("...........................")
 		return
 	}
 
@@ -128,7 +136,7 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 }
 
 // FindOne responsavel por buscar nosso do heros
-func FindOne(name, fatia string, collname string) (mzh map[string]interface{}, err error) {
+func FindOne(name, fatia string, collname string) (mzh interface{}, err error) {
 	mzh = nil
 	collection = session.Database(MgoDb).Collection(collname)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
@@ -145,33 +153,19 @@ func FindOne(name, fatia string, collname string) (mzh map[string]interface{}, e
 
 	switch fatia {
 	case "image":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Image
-		mzh = mzh1
+		mzh = zh.Image
 	case "powerstats":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Powerstats
-		mzh = mzh1
+		mzh = zh.Powerstats
 	case "biography":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Biography
-		mzh = mzh1
+		mzh = zh.Biography
 	case "appearance":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Appearance
-		mzh = mzh1
+		mzh = zh.Appearance
 	case "work":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Work
-		mzh = mzh1
+		mzh = zh.Work
 	case "connections":
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1[fatia] = zh.Connections
-		mzh = mzh1
+		mzh = zh.Connections
 	default:
-		mzh1 := make(map[string]interface{}, 1)
-		mzh1["zerohero"] = zh
-		mzh = mzh1
+		mzh = zh
 	}
 	return
 }

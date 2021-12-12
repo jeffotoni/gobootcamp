@@ -15,17 +15,8 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-)
 
-var (
-	pathNames = map[string]string{
-		"image":       "image",
-		"powerstats":  "powerstats",
-		"biography":   "biography",
-		"appearance":  "appearance",
-		"work":        "work",
-		"connections": "connections",
-	}
+	"github.com/gorilla/mux"
 )
 
 type ZeroHero struct {
@@ -100,9 +91,6 @@ var (
 )
 
 func init() {
-	// capturando ambiente atraves da compilacao
-	// ela ira fazer com que nosso servico comunique com
-	// mongo dentro do container
 	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
 	if err != nil {
 		log.Println("error connect:", err)
@@ -135,81 +123,42 @@ func init() {
 
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
-	mux := http.NewServeMux()
-	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+	r := mux.NewRouter()
+	r.Use(Logger)
+	r.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("pong😍"))
 	})
-
-	mux.HandleFunc("/", Use(Service, Logger()))
+	r.HandleFunc("/api/{name}", Get).Methods("GET")
+	r.HandleFunc("/api/{name}/{fatia}", Get).Methods("GET")
+	r.HandleFunc("/api", Post).Methods("POST")
+	r.HandleFunc("/api/{name}", Put).Methods("PUT")
+	r.HandleFunc("/api/{name}", Delete).Methods("DELETE")
 
 	server := &http.Server{
 		Addr:    "0.0.0.0:8080",
-		Handler: mux,
+		Handler: r,
 	}
 	log.Println("\033[1;44mRunning on http://0.0.0.0:8080 (Press CTRL+C to quit)\033[0m")
 	log.Fatal(server.ListenAndServe())
 }
 
-type Middleware func(http.HandlerFunc) http.HandlerFunc
+func Logger(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		start := time.Now()
+		defer func() {
+			log.Printf(
+				"\033[5m%s \033[0;103m%s\033[0m \033[0;93m%s\033[0m \033[1;44m%s \033[0m%s \033[1;44m%s\033[0m",
+				r.Method,
+				r.RequestURI,
+				r.RemoteAddr,
+				r.Header.Get("User-Agent"),
+				r.URL.Path,
+				time.Since(start))
+		}()
 
-func Logger() Middleware {
-
-	// Create a new Middleware
-	return func(f http.HandlerFunc) http.HandlerFunc {
-
-		// Define the http.HandlerFunc
-		return func(w http.ResponseWriter, r *http.Request) {
-
-			// Do middleware things
-			start := time.Now()
-			defer func() {
-				log.Printf(
-					"\033[5m%s \033[0;103m%s\033[0m \033[0;93m%s\033[0m \033[1;44m%s \033[0m%s \033[1;44m%s\033[0m",
-					r.Method,
-					r.RequestURI,
-					r.RemoteAddr,
-					r.Header.Get("User-Agent"),
-					r.URL.Path,
-					time.Since(start))
-			}()
-			// Call the next middleware/handler in chain
-			f(w, r)
-		}
-	}
-}
-
-// Use applies middlewares to a http.HandlerFunc
-func Use(f http.HandlerFunc, middlewares ...Middleware) http.HandlerFunc {
-	for _, m := range middlewares {
-		f = m(f)
-	}
-	return f
-}
-
-func Service(w http.ResponseWriter, r *http.Request) {
-	split := strings.Split(r.URL.Path, "/")
-	if len(split) < 3 {
-		http.NotFound(w, r)
-		return
-	}
-	if split[1] != "api" {
-		http.NotFound(w, r)
-		return
-	}
-
-	switch r.Method {
-	case http.MethodPost:
-		Post(w, r)
-	case http.MethodGet:
-		Get(w, r)
-	case http.MethodDelete:
-		Delete(w, r)
-	case http.MethodPut:
-		Put(w, r)
-	default:
-		http.NotFound(w, r)
-	}
+		next.ServeHTTP(w, r)
+	})
 }
 
 func Post(w http.ResponseWriter, r *http.Request) {
@@ -245,30 +194,15 @@ func Post(w http.ResponseWriter, r *http.Request) {
 
 func Get(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-
 	if http.MethodGet != strings.ToUpper(r.Method) {
 		w.WriteHeader(http.StatusMethodNotAllowed)
 		jsonstr := `{"msg":"O método permitido é Get!"}`
 		w.Write([]byte(jsonstr))
 		return
 	}
+	name := mux.Vars(r)["name"]
+	fatia := mux.Vars(r)["fatia"]
 
-	rup := r.URL.Path
-	lastInd := strings.LastIndex(rup, "/")
-	name := rup[lastInd+1:]
-
-	_, ok := pathNames[name]
-	fatia := ""
-	if ok {
-		fatia = name
-		split := strings.Split(rup, "/")
-		if len(split) > 2 {
-			name = split[2]
-		} else {
-			w.WriteHeader(http.StatusNotFound)
-			return
-		}
-	}
 	hero, err := FindOne(name, fatia, CollHeros)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -299,10 +233,7 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	rup := r.URL.Path
-	lastInd := strings.LastIndex(rup, "/")
-	name := rup[lastInd+1:]
-
+	name := mux.Vars(r)["name"]
 	err = DeleteOne(name, CollHeros)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -334,10 +265,7 @@ func Put(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	rup := r.URL.Path
-	lastInd := strings.LastIndex(rup, "/")
-	name := rup[lastInd+1:]
-
+	name := mux.Vars(r)["name"]
 	err = zh.UpdateOne(name, CollHeros)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -345,7 +273,6 @@ func Put(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(jsonstr))
 		return
 	}
-
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte(""))
 }
