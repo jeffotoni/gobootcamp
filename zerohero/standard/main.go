@@ -183,14 +183,13 @@ func init() {
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 	mux := http.NewServeMux()
-	mux.HandleFunc("/ping",
-		func(w http.ResponseWriter, r *http.Request) {
-			w.WriteHeader(http.StatusOK)
-			w.Write([]byte("pong😍"))
-		})
+	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("pong😍"))
+	})
 
-	mux.HandleFunc("/api/v1/zerohero", Use(Service, Logger()))
-	mux.HandleFunc("/", Use(Service, Logger()))
+	mux.HandleFunc("/api", Use(Service, Logger()))
+	mux.HandleFunc("/", http.NotFound)
 
 	server := &http.Server{
 		Addr:    "0.0.0.0:8080",
