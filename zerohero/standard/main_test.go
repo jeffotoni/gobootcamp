@@ -3,19 +3,37 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"fmt"
 	"io"
+	"log"
+	"net/http"
 	"net/http/httptest"
 	"os"
+	"strings"
 	"testing"
 
 	"github.com/go-playground/assert/v2"
 )
+
+var pathFile = "../json"
 
 // go test -v -run ^TestZeroHeroHandlers$
 // go test -v -run ^TestZeroHeroHandlers$ --count=10
 
 // go test -coverprofile coverage.out
 // go tool cover -html=coverage.out
+
+// go test -bench . -benchmem
+
+// openFileBuffer
+// openFileBuffer(file string) *bytes.Buffer , error
+func openFileBuffer(file string) (*bytes.Buffer, error) {
+	dat, err := os.ReadFile(pathFile + "/" + file + ".json")
+	if err != nil {
+		return bytes.NewBuffer([]byte("")), err
+	}
+	return bytes.NewBuffer(dat), nil
+}
 
 // TestZeroHeroHandlers
 func TestZeroHeroHandlers(t *testing.T) {
@@ -40,13 +58,13 @@ func TestZeroHeroHandlers(t *testing.T) {
 				ctype:  "application/json",
 				Header: nil,
 				url:    "/api",
-				body: func() (buff *bytes.Buffer) {
-					dat, err := os.ReadFile("../json/batgirl.json")
+				body: func() (dat *bytes.Buffer) {
+					dat, err := openFileBuffer("batgirl")
 					if err != nil {
 						t.Errorf("Error ReadFile batgirl:%s", err)
-						return nil
+						return
 					}
-					return bytes.NewBuffer(dat)
+					return
 				},
 			},
 			want: 201,
@@ -59,13 +77,13 @@ func TestZeroHeroHandlers(t *testing.T) {
 				ctype:  "application/json",
 				Header: nil,
 				url:    "/api",
-				body: func() (buff *bytes.Buffer) {
-					dat, err := os.ReadFile("../json/hulk.json")
+				body: func() (dat *bytes.Buffer) {
+					dat, err := openFileBuffer("hulk")
 					if err != nil {
 						t.Errorf("Error ReadFile hulk:%s", err)
-						return nil
+						return
 					}
-					return bytes.NewBuffer(dat)
+					return
 				},
 			},
 			want: 201,
@@ -78,13 +96,13 @@ func TestZeroHeroHandlers(t *testing.T) {
 				ctype:  "application/json",
 				Header: nil,
 				url:    "/apix",
-				body: func() *bytes.Buffer {
-					dat, err := os.ReadFile("../json/batgirl.json")
+				body: func() (dat *bytes.Buffer) {
+					dat, err := openFileBuffer("batgirl")
 					if err != nil {
-						t.Errorf("Error ReadFile:%s", err)
-						return nil
+						t.Errorf("Error ReadFile batgirl:%s", err)
+						return
 					}
-					return bytes.NewBuffer(dat)
+					return
 				},
 			},
 			want: 404,
@@ -320,7 +338,7 @@ func TestInsertOne(t *testing.T) {
 			args: args{
 				collname: CollHeros,
 				zerohero: func() (zh ZeroHero) {
-					dat, err := os.ReadFile("../json/hulk.json")
+					dat, err := os.ReadFile(pathFile + "/hulk.json")
 					if err != nil {
 						t.Errorf("Error ReadFile hulk:%s", err)
 						return
@@ -403,7 +421,7 @@ func TestUpdateOne(t *testing.T) {
 				name:     "hulk",
 				collname: CollHeros,
 				zerohero: func() (zh ZeroHero) {
-					dat, err := os.ReadFile("../json/hulk.json")
+					dat, err := os.ReadFile(pathFile + "/hulk.json")
 					if err != nil {
 						t.Errorf("Error ReadFile hulk:%s", err)
 						return
@@ -455,5 +473,107 @@ func TestDeleteOne(t *testing.T) {
 				t.Errorf("DeleteOne() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})
+	}
+}
+
+// BenchmarkZeroHero
+// BenchmarkZeroHero(b *testing.B)
+func BenchmarkZeroHeroGetHulk(b *testing.B) {
+	route := http.NewServeMux()
+	//route.HandleFunc("/api", Service)
+	// route.HandleFunc("/", Use(Service, Logger()))
+	//route.HandleFunc("/", Use(Service))
+	route.HandleFunc("/", Service)
+
+	for n := 0; n < b.N; n++ {
+		w := httptest.NewRecorder()
+		//req := httptest.NewRequest("POST", "/api/hulk", bytes.NewBuffer([]byte(jsonExample)))
+		req := httptest.NewRequest("GET", "/api/hulk", nil)
+		req.Header.Set("Content-Type", "application/json")
+		route.ServeHTTP(w, req)
+		resp := w.Result()
+		defer resp.Body.Close()
+		//var zh ZeroHero
+		// json.NewDecoder(resp.Body).Decode(&zh)
+		// b, err := ioutil.ReadAll(resp.Body)
+		// if err != nil {
+		// 	log.Printf("Error %s", err.Error())
+		// 	continue
+		// }
+		// println(string(b))
+		// println(resp.StatusCode)
+	}
+}
+
+// BenchmarkZeroHero
+// BenchmarkZeroHero(b *testing.B)
+func BenchmarkZeroHeroPostHulk(b *testing.B) {
+	buffer, err := openFileBuffer("hulk")
+	if err != nil {
+		log.Println("error openfile ", err.Error())
+		return
+	}
+
+	route := http.NewServeMux()
+	route.HandleFunc("/", Service)
+
+	for n := 0; n < b.N; n++ {
+		w := httptest.NewRecorder()
+		req := httptest.NewRequest("POST", "/api", buffer)
+		req.Header.Set("Content-Type", "application/json")
+		route.ServeHTTP(w, req)
+		resp := w.Result()
+		defer resp.Body.Close()
+		//var zh ZeroHero
+		// json.NewDecoder(resp.Body).Decode(&zh)
+		// b, err := ioutil.ReadAll(resp.Body)
+		// if err != nil {
+		// 	log.Printf("Error %s", err.Error())
+		// 	continue
+		// }
+		// println(string(b))
+		// println(resp.StatusCode)
+	}
+}
+
+var str, longStr string = "string_jeffotoni", `qwertyuiopqwertyuiopqwertyuio
+qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop`
+
+const cStr = "string_jeffotoni"
+
+// BenchmarkConcatStringPlus
+func BenchmarkConcatStringPlus(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		_ = "string_jeffotoni" + str
+	}
+}
+
+// BenchmarkConcatStringPlusLong
+func BenchmarkConcatStringPlusLong(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		_ = "string_jeffotoni" + longStr
+	}
+}
+
+// BenchmarkJoinLong
+func BenchmarkJoinLong(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		_ = strings.Join([]string{"string_jeffotoni%s", longStr}, "")
+	}
+}
+
+// BenchmarkLongSprintfLong
+func BenchmarkLongSprintfLong(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		_ = fmt.Sprintf("string_jeffotoni%s", longStr)
+	}
+}
+
+// BenchmarkLongBuilder
+func BenchmarkLongBuilder(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		var b strings.Builder
+		b.WriteString("string_jeffotoni")
+		b.WriteString(longStr)
 	}
 }

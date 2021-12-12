@@ -6,9 +6,9 @@ import (
 	"errors"
 	"log"
 	"net/http"
+	"os"
 	"runtime"
 	"strings"
-	"sync"
 	"time"
 
 	"github.com/google/uuid"
@@ -91,17 +91,37 @@ var (
 	mgoSrv     = "mongodb"
 	mgoOptions = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
 
-	// user       = os.Getenv("MGO_USER")
-	// senha      = os.Getenv("MGO_PASSWORD")
-	// mgoUri     = os.Getenv("MGO_HOST")
-	// mgoSrv     = os.Getenv("MGO_SRV")
-	// mgoOptions = os.Getenv("MGO_OPTS")
-
 	//mgoOptions = "retryWrites=true&w=majority"
 	//mgoUriDocker = "mongodb.local.com:27017"
 
 	connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
+
+func init() {
+	runtime.GOMAXPROCS(runtime.NumCPU())
+	if ambiente == "cloudrun" {
+		user = os.Getenv("MGO_USER")
+		senha = os.Getenv("MGO_PASSWORD")
+		mgoUri = os.Getenv("MGO_HOST")
+		mgoSrv = os.Getenv("MGO_SRV")
+		mgoOptions = os.Getenv("MGO_OPTS")
+		connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
+	}
+	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
+	if err != nil {
+		log.Println("error connect:", err)
+		return
+	}
+
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*10))
+	defer cancel()
+
+	err := session.Connect(ctx)
+	if err != nil {
+		log.Println("Error client.Connect:", err)
+		return
+	}
+}
 
 // JWT
 // CORS
@@ -149,49 +169,18 @@ func Use(f http.HandlerFunc, middlewares ...Middleware) http.HandlerFunc {
 	return f
 }
 
-var (
-	serverMux *http.ServeMux
-	once      sync.Once
-)
-
-func mux() *http.ServeMux {
-	once.Do(func() {
-		if serverMux == nil {
-			serverMux = http.NewServeMux()
-		}
-	})
-	return serverMux
-}
-
-func init() {
-	runtime.GOMAXPROCS(runtime.NumCPU())
-	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
-	if err != nil {
-		log.Println("error connect:", err)
-		return
-	}
-
-	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*10))
-	defer cancel()
-
-	err := session.Connect(ctx)
-	if err != nil {
-		log.Println("Error client.Connect:", err)
-		return
-	}
-}
-
 func main() {
-	mux().HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+	mux := http.NewServeMux()
+	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("pong😍"))
 	})
 
-	mux().HandleFunc("/", Use(Service, Logger()))
+	mux.HandleFunc("/", Use(Service, Logger()))
 
 	s := &http.Server{
 		Addr:    "0.0.0.0:8080",
-		Handler: mux(),
+		Handler: mux,
 	}
 	log.Println("\033[1;44mRunning on http://0.0.0.0:8080 (Press CTRL+C to quit)\033[0m")
 	log.Fatal(s.ListenAndServe())
