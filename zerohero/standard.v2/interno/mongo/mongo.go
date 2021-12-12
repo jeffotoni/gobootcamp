@@ -4,7 +4,6 @@ import (
 	"context"
 	"errors"
 	"log"
-	"os"
 	"strings"
 	"time"
 
@@ -71,22 +70,21 @@ var (
 	MgoDb      = "zerohero"
 	CollHeros  = "heros"
 
-	// user         = "root"
-	// senha        = "senha123"
-	// mgoUri       = "127.0.0.1:27017"
+	user       = "root"
+	senha      = "senha123"
+	mgoUri     = "localhost:27017"
+	mgoSrv     = "mongodb"
+	mgoOptions = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
 
-	user   = os.Getenv("MGO_USER")
-	senha  = os.Getenv("MGO_PASSWORD")
-	mgoUri = os.Getenv("MGO_HOST")
-	mgoSrv = os.Getenv("MGO_SRV")
+	// user       = os.Getenv("MGO_USER")
+	// senha      = os.Getenv("MGO_PASSWORD")
+	// mgoUri     = os.Getenv("MGO_HOST")
+	// mgoSrv     = os.Getenv("MGO_SRV")
+	// mgoOptions = os.Getenv("MGO_OPTS")
 
-	mgoUriDocker = "mongodb.local.com:27017"
-	port         = "27017"
+	//mgoOptions = "retryWrites=true&w=majority"
+	//mgoUriDocker = "mongodb.local.com:27017"
 
-	// mgoOptions   = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
-	// connectStr   = "mongodb://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
-
-	mgoOptions = "retryWrites=true&w=majority"
 	connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
 

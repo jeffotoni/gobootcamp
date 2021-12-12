@@ -6,9 +6,9 @@ import (
 	"errors"
 	"log"
 	"net/http"
-	"os"
 	"runtime"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/google/uuid"
@@ -85,44 +85,23 @@ var (
 	MgoDb      = "zerohero"
 	CollHeros  = "heros"
 
-	// user         = "root"
-	// senha        = "senha123"
-	// mgoUri       = "127.0.0.1:27017"
+	user       = "root"
+	senha      = "senha123"
+	mgoUri     = "localhost:27017"
+	mgoSrv     = "mongodb"
+	mgoOptions = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
 
-	user   = os.Getenv("MGO_USER")
-	senha  = os.Getenv("MGO_PASSWORD")
-	mgoUri = os.Getenv("MGO_HOST")
-	mgoSrv = os.Getenv("MGO_SRV")
+	// user       = os.Getenv("MGO_USER")
+	// senha      = os.Getenv("MGO_PASSWORD")
+	// mgoUri     = os.Getenv("MGO_HOST")
+	// mgoSrv     = os.Getenv("MGO_SRV")
+	// mgoOptions = os.Getenv("MGO_OPTS")
 
+	//mgoOptions = "retryWrites=true&w=majority"
 	//mgoUriDocker = "mongodb.local.com:27017"
-	mgoOptions = "retryWrites=true&w=majority"
+
 	connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
-
-func init() {
-	// capturando ambiente atraves da compilacao
-	// ela ira fazer com que nosso servico comunique com
-	// mongo dentro do container
-	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
-	if err != nil {
-		log.Println("error connect:", err)
-		println("Configura as variaveis.....")
-		println("MGO_USER=root")
-		println("MGO_PASSWORD=senha123")
-		println("MGO_HOST=localhost:27017")
-		println("...........................")
-		return
-	}
-
-	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*10))
-	defer cancel()
-
-	err := session.Connect(ctx)
-	if err != nil {
-		log.Println("Error client.Connect:", err)
-		return
-	}
-}
 
 // JWT
 // CORS
@@ -132,25 +111,8 @@ func init() {
 // INSTRUMENTACAO
 // BANCO DE DADOS
 // GERAÇÃO DE LOGS SAÍDA
-
-func main() {
-	runtime.GOMAXPROCS(runtime.NumCPU())
-	mux := http.NewServeMux()
-	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
-		w.WriteHeader(http.StatusOK)
-		w.Write([]byte("pong😍"))
-	})
-
-	mux.HandleFunc("/", Use(Service, Logger()))
-
-	server := &http.Server{
-		Addr:    "0.0.0.0:8080",
-		Handler: mux,
-	}
-	log.Println("\033[1;44mRunning on http://0.0.0.0:8080 (Press CTRL+C to quit)\033[0m")
-	log.Fatal(server.ListenAndServe())
-}
-
+// Basic Auth
+// Key Auth
 type Middleware func(http.HandlerFunc) http.HandlerFunc
 
 func Logger() Middleware {
@@ -185,6 +147,54 @@ func Use(f http.HandlerFunc, middlewares ...Middleware) http.HandlerFunc {
 		f = m(f)
 	}
 	return f
+}
+
+var (
+	serverMux *http.ServeMux
+	once      sync.Once
+)
+
+func mux() *http.ServeMux {
+	once.Do(func() {
+		if serverMux == nil {
+			serverMux = http.NewServeMux()
+		}
+	})
+	return serverMux
+}
+
+func init() {
+	runtime.GOMAXPROCS(runtime.NumCPU())
+	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
+	if err != nil {
+		log.Println("error connect:", err)
+		return
+	}
+
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*10))
+	defer cancel()
+
+	err := session.Connect(ctx)
+	if err != nil {
+		log.Println("Error client.Connect:", err)
+		return
+	}
+}
+
+func main() {
+	mux().HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("pong😍"))
+	})
+
+	mux().HandleFunc("/", Use(Service, Logger()))
+
+	s := &http.Server{
+		Addr:    "0.0.0.0:8080",
+		Handler: mux(),
+	}
+	log.Println("\033[1;44mRunning on http://0.0.0.0:8080 (Press CTRL+C to quit)\033[0m")
+	log.Fatal(s.ListenAndServe())
 }
 
 func Service(w http.ResponseWriter, r *http.Request) {
