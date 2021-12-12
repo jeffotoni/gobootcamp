@@ -443,7 +443,8 @@ func FindOne(name, fatia string, collname string) (mzh interface{}, err error) {
 	return
 }
 
-// DeleteOne responsavel por deletar nosso do heros
+// DeleteOne Function responsavel por deletar nosso do heros
+// DeleteOne(name string, collname string) (err error)
 func DeleteOne(name string, collname string) (err error) {
 	collection = session.Database(MgoDb).Collection(collname)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))

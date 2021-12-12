@@ -14,6 +14,9 @@ import (
 // go test -v -run ^TestZeroHeroHandlers$
 // go test -v -run ^TestZeroHeroHandlers$ --count=10
 
+// go test -coverprofile coverage.out
+// go tool cover -html=coverage.out
+
 // TestZeroHeroHandlers
 func TestZeroHeroHandlers(t *testing.T) {
 	type args struct {
@@ -150,6 +153,48 @@ func TestZeroHeroHandlers(t *testing.T) {
 				ctype:  "application/json",
 				Header: nil,
 				url:    "/api/batgirl/biography",
+				body: func() *bytes.Buffer {
+					return bytes.NewBuffer([]byte(""))
+				},
+			},
+			want: 200,
+			show: true,
+		},
+		{
+			name: "test_service_get",
+			args: args{
+				method: "GET",
+				ctype:  "application/json",
+				Header: nil,
+				url:    "/api/batgirl/image",
+				body: func() *bytes.Buffer {
+					return bytes.NewBuffer([]byte(""))
+				},
+			},
+			want: 200,
+			show: true,
+		},
+		{
+			name: "test_service_get",
+			args: args{
+				method: "GET",
+				ctype:  "application/json",
+				Header: nil,
+				url:    "/api/batgirl/appearance",
+				body: func() *bytes.Buffer {
+					return bytes.NewBuffer([]byte(""))
+				},
+			},
+			want: 200,
+			show: true,
+		},
+		{
+			name: "test_service_get",
+			args: args{
+				method: "GET",
+				ctype:  "application/json",
+				Header: nil,
+				url:    "/api/batgirl/connections",
 				body: func() *bytes.Buffer {
 					return bytes.NewBuffer([]byte(""))
 				},
@@ -340,36 +385,6 @@ func TestFindOne(t *testing.T) {
 	}
 }
 
-// TestDeleteOne remove mongodb
-func TestDeleteOne(t *testing.T) {
-	type args struct {
-		name     string
-		collname string
-	}
-	tests := []struct {
-		name    string
-		args    args
-		wantErr bool
-	}{
-		// TODO: Add test cases.
-		{
-			name: "test_deleteOne",
-			args: args{
-				name:     "hulk",
-				collname: CollHeros,
-			},
-			wantErr: false,
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if err := DeleteOne(tt.args.name, tt.args.collname); (err != nil) != tt.wantErr {
-				t.Errorf("DeleteOne() error = %v, wantErr %v", err, tt.wantErr)
-			}
-		})
-	}
-}
-
 func TestUpdateOne(t *testing.T) {
 	type args struct {
 		name     string
@@ -408,6 +423,36 @@ func TestUpdateOne(t *testing.T) {
 			zh := tt.args.zerohero()
 			if err := zh.UpdateOne(tt.args.name, tt.args.collname); (err != nil) != tt.wantErr {
 				t.Errorf("ZeroHero.UpdateOne() error = %v, wantErr %v", err, tt.wantErr)
+			}
+		})
+	}
+}
+
+// TestDeleteOne remove mongodb
+func TestDeleteOne(t *testing.T) {
+	type args struct {
+		name     string
+		collname string
+	}
+	tests := []struct {
+		name    string
+		args    args
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+		{
+			name: "test_deleteOne",
+			args: args{
+				name:     "hulk",
+				collname: CollHeros,
+			},
+			wantErr: false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if err := DeleteOne(tt.args.name, tt.args.collname); (err != nil) != tt.wantErr {
+				t.Errorf("DeleteOne() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})
 	}
