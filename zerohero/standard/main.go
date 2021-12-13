@@ -393,7 +393,6 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 
 	result, err := collection.InsertOne(ctx, zh, options.InsertOne())
 	if err != nil {
-		//log.Println("Error collection InsertOne:", err)
 		return
 	}
 

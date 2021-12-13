@@ -85,6 +85,7 @@ var (
 )
 
 func init() {
+	println("version:", ambiente)
 	runtime.GOMAXPROCS(runtime.NumCPU())
 	if ambiente == "cloudrun" {
 		user = os.Getenv("MGO_USER")

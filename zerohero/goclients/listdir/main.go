@@ -4,6 +4,7 @@ import (
     "bytes"
     "context"
     "encoding/json"
+    "fmt"
     "io/ioutil"
     "log"
     "net/http"
@@ -50,8 +51,8 @@ func main() {
 readloop:
     for {
         select {
-        case _ = <-chann:
-            // fmt.Printf("result=%#v", res)
+        case res := <-chann:
+            fmt.Printf("result=%#v\n", res)
         case _ = <-readDone:
             close(chann)
             end = time.Since(start).String()
@@ -86,14 +87,14 @@ func Process(file string, chann chan string, wg *sync.WaitGroup) {
             log.Println("error:", err)
             return
         }
-        insertOne(file, dat)
-        //InsertOnePkg(file, dat)
+        //insertOne(file, dat)
+        InsertOnePkg(file, dat)
         chann <- file
     }
 }
 
 func insertOne(name string, dat []byte) {
-    ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second)*5)
+    ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second)*30)
     defer cancel()
 
     req, err := http.NewRequestWithContext(ctx, "POST", "http://localhost:8080/api", bytes.NewBuffer(dat))
