@@ -3,18 +3,23 @@ package main
 import (
     "bytes"
     "context"
-    "fmt"
+    "encoding/json"
     "io/ioutil"
     "log"
     "net/http"
     "os"
     "sync"
     "time"
+
+    mgo "github.com/jeffotoni/gobootcamp/zerohero/core/mongo"
 )
 
 var dir string = "../../json"
 
 func main() {
+    start := time.Now()
+    end := ""
+    println("start:", start.Format("2006-01-02 15:04:05"))
     files, err := ioutil.ReadDir(dir)
     if err != nil {
         log.Fatal(err)
@@ -45,26 +50,31 @@ func main() {
 readloop:
     for {
         select {
-        case res := <-chann:
-            fmt.Printf("result=%#v", res)
+        case _ = <-chann:
+            // fmt.Printf("result=%#v", res)
         case _ = <-readDone:
             close(chann)
+            end = time.Since(start).String()
             break readloop
         }
     }
-    println("done")
+
+    println("done:", end)
 }
 
 func Process(file string, chann chan string, wg *sync.WaitGroup) {
     defer wg.Done()
-    namefile := dir + "/" + file
-    dat, err := os.ReadFile(namefile)
-    if err != nil {
-        log.Println("error:", err)
-        return
+    if file != "populate" {
+        namefile := dir + "/" + file
+        dat, err := os.ReadFile(namefile)
+        if err != nil {
+            log.Println("error:", err)
+            return
+        }
+        insertOne(file, dat)
+        //InsertOnePkg(file, dat)
+        chann <- file
     }
-    insertOne(file, dat)
-    chann <- file
 }
 
 func insertOne(name string, dat []byte) {
@@ -89,5 +99,19 @@ func insertOne(name string, dat []byte) {
         log.Println("error status diferente 200:", resp.StatusCode)
         return
     }
-    println("==> sucesso: [status]:", resp.StatusCode, " heroi:", name)
+    // println("==> sucesso: [status]:", resp.StatusCode, " heroi:", name)
+}
+
+func InsertOnePkg(file string, dat []byte) {
+    var zh mgo.ZeroHero
+    err := json.Unmarshal(dat, &zh)
+    if err != nil {
+        log.Println(err)
+        return
+    }
+    err = zh.InsertOne("heros")
+    if err != nil {
+        log.Println(err)
+        return
+    }
 }
