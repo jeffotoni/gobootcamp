@@ -78,6 +78,9 @@ var (
 	mgoSrv     = "mongodb"
 	mgoOptions = "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
 
+	//mgoOptions = "retryWrites=true&w=majority"
+	//mgoUriDocker = "mongodb.local.com:27017"
+
 	connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
 

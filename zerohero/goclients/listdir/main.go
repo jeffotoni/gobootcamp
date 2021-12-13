@@ -8,26 +8,63 @@ import (
     "log"
     "net/http"
     "os"
+    "sync"
     "time"
 )
 
+var dir string = "../../json"
+
 func main() {
-    var dir string = "../../json"
     files, err := ioutil.ReadDir(dir)
     if err != nil {
         log.Fatal(err)
     }
 
+    var wg sync.WaitGroup
+    chann := make(chan string, len(files))
+    readDone := make(chan bool)
     for _, f := range files {
-        fmt.Println(f.Name())
-        namefile := dir + "/" + f.Name()
-        dat, err := os.ReadFile(namefile)
-        if err != nil {
-            log.Println("error:", err)
-            continue
-        }
-        insertOne(f.Name(), dat)
+        wg.Add(1)
+        go Process(f.Name(), chann, &wg)
     }
+
+    // for v := range chann {
+    //     fmt.Println("channel:", v)
+    // }
+
+    // for i := 0; i < len(files); i++ {
+    //     fmt.Println(<-chann)
+    //     //time.Sleep(time.Millisecond * 50)
+    // }
+
+    go func() {
+        wg.Wait()
+        readDone <- true
+    }()
+
+readloop:
+    for {
+        select {
+        case res := <-chann:
+            fmt.Printf("result=%#v", res)
+        case _ = <-readDone:
+            close(chann)
+            break readloop
+        }
+    }
+    println("done")
+}
+
+func Process(file string, chann chan string, wg *sync.WaitGroup) {
+    defer wg.Done()
+    namefile := dir + "/" + file
+    dat, err := os.ReadFile(namefile)
+    if err != nil {
+        log.Println("error:", err)
+        return
+    }
+    insertOne(file, dat)
+    chann <- file
 }
 
 func insertOne(name string, dat []byte) {
@@ -52,5 +89,5 @@ func insertOne(name string, dat []byte) {
         log.Println("error status diferente 200:", resp.StatusCode)
         return
     }
-    println("Criado com sucesso: [status]:", resp.StatusCode, " heroi:", name)
+    println("==> sucesso: [status]:", resp.StatusCode, " heroi:", name)
 }
