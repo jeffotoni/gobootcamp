@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/rs/cors"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
@@ -179,9 +180,10 @@ func main() {
 	//mux.HandleFunc("/", Use(Service, Logger()))
 	mux.HandleFunc("/", Service)
 
+	handler := cors.Default().Handler(mux)
 	s := &http.Server{
 		Addr:           "0.0.0.0:8080",
-		Handler:        mux,
+		Handler:        handler,
 		ReadTimeout:    10 * time.Second,
 		WriteTimeout:   10 * time.Second,
 		MaxHeaderBytes: 1 << 20, // 1MB
