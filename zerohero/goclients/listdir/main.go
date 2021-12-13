@@ -17,6 +17,19 @@ import (
 
 var dir string = "../../json"
 
+func init() {
+    var c = mgo.Config{
+        Srv:     os.Getenv("MGO_SRV"),
+        DB:      os.Getenv("MGO_DB"),
+        Host:    os.Getenv("MGO_HOST"),
+        User:    os.Getenv("MGO_USER"),
+        Pass:    os.Getenv("MGO_PASS"),
+        Options: os.Getenv("MGO_OPTS"),
+    }
+
+    c.Connect()
+}
+
 func main() {
     start := time.Now()
     end := ""
@@ -87,8 +100,8 @@ func Process(file string, chann chan string, wg *sync.WaitGroup) {
             log.Println("error:", err)
             return
         }
-        insertOne(file, dat)
-        //InsertOnePkg(file, dat)
+        //insertOne(file, dat)
+        InsertOnePkg(file, dat)
         chann <- file
     }
 }
@@ -126,17 +139,6 @@ func InsertOnePkg(file string, dat []byte) {
         log.Println(err)
         return
     }
-
-    var c = mgo.Config{
-        Srv:     os.Getevn("MGO_SRV"),
-        DB:      os.Getevn("MGO_DB"),
-        Host:    os.Getevn("MGO_HOST"),
-        User:    os.Getevn("MGO_USER"),
-        Pass:    os.Getevn("MGO_PASS"),
-        Options: os.Getevn("MGO_OPTS"),
-    }
-
-    c.Connect()
     err = zh.InsertOne("heros")
     if err != nil {
         log.Println(err)

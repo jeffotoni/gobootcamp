@@ -2,7 +2,7 @@ module listdir
 
 go 1.17
 
-require github.com/jeffotoni/gobootcamp/zerohero/core/mongo v0.0.0-20211213143511-e3178c0a231e
+require github.com/jeffotoni/gobootcamp/zerohero/core/mongo v0.0.0-20211213152949-61e42398308b
 
 require (
 	github.com/go-stack/stack v1.8.0 // indirect
