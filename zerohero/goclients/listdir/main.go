@@ -62,6 +62,21 @@ readloop:
     println("done:", end)
 }
 
+func isDir(path string) (b bool) {
+    fileInfo, err := os.Stat(path)
+    if err != nil {
+        // error handling
+        return
+    }
+    if fileInfo.IsDir() {
+        // is a directory
+        return true
+    } else {
+        return
+        // is not a directory
+    }
+}
+
 func Process(file string, chann chan string, wg *sync.WaitGroup) {
     defer wg.Done()
     if file != "populate" {
