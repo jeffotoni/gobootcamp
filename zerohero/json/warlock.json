@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'2'",
+                     "188 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "240 lb",
+                     "108 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Him",
+                     "(in an alternate future) the Magus"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #66",
+              "full-name": "Adam Warlock",
+              "place-of-birth": "The Beehive, Shard Island, Atlantic Ocean",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Infinity Watch, (as the Magus) head of Universal Church of Truth in an alternate future",
+              "relatives": "-"
+       },
+       "id": "705",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/154.jpg"
+       },
+       "name": "Warlock",
+       "powerstats": {
+              "combat": "95",
+              "durability": "95",
+              "intelligence": "88",
+              "power": "71",
+              "speed": "79",
+              "strength": "36"
+       },
+       "response": "success",
+       "work": {
+              "base": "Counter-Earth, later mobile",
+              "occupation": "Avenger, savior of worlds"
+       }
+}

@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "4'8",
+                     "142 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "100 lb",
+                     "45 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Franklin Benjamin",
+                     "Tattletale",
+                     "Psi-Lord",
+                     "Ego-Spawn",
+                     "Avatar"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four Annual #6",
+              "full-name": "Franklin  Richards",
+              "place-of-birth": "New York, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Future Foundation; formerly Power Pack, Generation X, Daydreamers",
+              "relatives": "Reed Richards (Mister Fantastic, father), Susan Storm Richards (Invisible Woman, mother), Valeria Richards (sister), Jonathan Storm (Human Torch, uncle), Nathaniel Richards (paternal grandfather), Franklin Storm (maternal grandfather, deceased), Evelyn Richards, Mary Storm (grandmothers (paternal and maternal respectively), deceased), Benjamin J. Grimm (Thing, godfather), Alicia Masters (godmother)."
+       },
+       "id": "269",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/63.jpg"
+       },
+       "name": "Franklin Richards",
+       "powerstats": {
+              "combat": "50",
+              "durability": "60",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "50",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "Baxter Building, New York, New York (formerly) Four Freedoms Plaza; Pier 4; Massachusetts Academy",
+              "occupation": "Student"
+       }
+}

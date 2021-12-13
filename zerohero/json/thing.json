@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human / Radiation",
+              "weight": [
+                     "500 lb",
+                     "225 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Blackbeard the Pirate",
+                     "Grim Ben",
+                     "Dr. Josiah Verpoorteen"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #1 (November, 1961)",
+              "full-name": "Ben Grimm",
+              "place-of-birth": "New York City, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Fantastic Four formerly Avengers West Coast, Unlimited Class Wrestling Federation, Thunderiders",
+              "relatives": "Daniel (father, deceased), Elsie (mother, deceased), Daniel Jr. (brother, deceased), Jacob ('Jake,' uncle), Alyce (aunt, deceased), Pentunia ('Penny,' aunt, Jacob's second wife)"
+       },
+       "id": "658",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/139.jpg"
+       },
+       "name": "Thing",
+       "powerstats": {
+              "combat": "80",
+              "durability": "100",
+              "intelligence": "75",
+              "power": "38",
+              "speed": "21",
+              "strength": "84"
+       },
+       "response": "success",
+       "work": {
+              "base": "Baxter Building, New York City, New York (formerly) Four Freedoms Plaza, Pier Four;",
+              "occupation": "Adventurer, former Air Force test pilot"
+       }
+}

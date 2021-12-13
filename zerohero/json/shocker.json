@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #46",
+              "full-name": "Herman Schultz",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Masters of Evil, Sinister Syndicate, Sinister Seven, Sinister Twelve",
+              "relatives": "Mr. \u0026 Mrs. Schultz (parents)"
+       },
+       "id": "591",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/19.jpg"
+       },
+       "name": "Shocker",
+       "powerstats": {
+              "combat": "56",
+              "durability": "70",
+              "intelligence": "63",
+              "power": "79",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City, New York",
+              "occupation": "Professional thief, hired assassin"
+       }
+}

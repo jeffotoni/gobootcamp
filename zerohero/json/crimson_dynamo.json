@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "230 lb",
+                     "104 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Krashni Denamit"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Tales of Suspense #46 (Oct 1963)",
+              "full-name": "Anton Vanko",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "190",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1093.jpg"
+       },
+       "name": "Crimson Dynamo",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "65"
+       },
+       "response": "success",
+       "work": {
+              "base": "Stark Industries plant, Long Island, New York",
+              "occupation": "Scientist"
+       }
+}

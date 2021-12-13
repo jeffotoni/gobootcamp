@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'",
+                     "183 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Giant-Man",
+                     "Black Goliath"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(As Foster) Avengers #32 (1966); (as Black Goliath) Luke Cage, Power Man #24 (1975); (as Giant-Man) Marvel Two-in-One #55 (1979); (as Goliath) Thing #1 (2006)",
+              "full-name": "William Barrett Foster",
+              "place-of-birth": "Watts, Los Angeles, California",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Secret Avengers, former Avengers associate, formerly Stark West, Project: PEGASUS, \"Defenders for a Day,\" Champions (of Los Angeles) (unofficial), Circus of Crime, U.S. military",
+              "relatives": "Claire Temple (ex-wife)"
+       },
+       "id": "293",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/879.jpg"
+       },
+       "name": "Goliath IV",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Biochemist, inventor, research scientist, adventurer; (formerly) circus performer, soldier"
+       }
+}

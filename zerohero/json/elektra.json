@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "130 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Erynys (evil self)"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Daredevil #168",
+              "full-name": "Elektra Natchios",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "S.H.I.E.L.D.; formerly Thunderbolts, Hand, Chaste, Heroes For Hire, Code Red, partner of Daredevil and Deadpool",
+              "relatives": "Hugo Kostas Natchios (father, deceased), Christina Natchios (mother, deceased), Orestez Natchios (older brother), Demetrios Natchios (Uncle), Alexia Natchios (Aunt)"
+       },
+       "id": "238",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/625.jpg"
+       },
+       "name": "Elektra",
+       "powerstats": {
+              "combat": "100",
+              "durability": "28",
+              "intelligence": "63",
+              "power": "59",
+              "speed": "30",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Assassin, adventurer, mercenary, former student, dancer"
+       }
+}

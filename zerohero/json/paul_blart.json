@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "260 lb",
+                     "117 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Mall Cop"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Paul Blart",
+              "place-of-birth": "-",
+              "publisher": "Sony Pictures"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "510",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10479.jpg"
+       },
+       "name": "Paul Blart",
+       "powerstats": {
+              "combat": "5",
+              "durability": "50",
+              "intelligence": "8",
+              "power": "7",
+              "speed": "21",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

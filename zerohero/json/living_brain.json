@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Yellow",
+              "gender": "-",
+              "hair-color": "-",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "800 lb",
+                     "360 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #8 (1964)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "409",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1037.jpg"
+       },
+       "name": "Living Brain",
+       "powerstats": {
+              "combat": "28",
+              "durability": "56",
+              "intelligence": "75",
+              "power": "31",
+              "speed": "35",
+              "strength": "53"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Robot"
+       }
+}

@@ -1,0 +1,57 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "240 lb",
+                     "108 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Dell Rusk",
+                     "Bettman P. Lyles",
+                     "the Agent of a Thousand Faces",
+                     "The Man",
+                     "Cyrus Fenton",
+                     "Teacher",
+                     "Tod March",
+                     "John Smith",
+                     "Aleksander Lukin."
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Captain America Comics #1 (1941), (modern) Tales of Suspense #66 (1965)",
+              "full-name": "Johann Shmidt",
+              "place-of-birth": "An unidentified village in Germany",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Special operative in the government of Germany's Third Reich, former leader of most currently active Nazi subversives throughout the world, former ally of THEM and A.I.M., former leader of the Nevada-based fragment of Hydra, leader of the People's Militia",
+              "relatives": "Hermann Shmidt (father, deceased), Martha Shmidt (mother, deceased), Sinthea Shmidt (Mother Superior/Sin, daughter)"
+       },
+       "id": "550",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1392.jpg"
+       },
+       "name": "Red Skull",
+       "powerstats": {
+              "combat": "80",
+              "durability": "14",
+              "intelligence": "75",
+              "power": "19",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

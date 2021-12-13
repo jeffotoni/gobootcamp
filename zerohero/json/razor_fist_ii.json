@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "260 lb",
+                     "117 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Razorfist"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Master of Kung Fu I#105 (October, 1981)",
+              "full-name": "Douglas Scott",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "S.H.I.E.L.D. Deltite Conspiracy, Leader of a band of followers (Anton, Lulu, Mary, Perkins, Piranha Tots, Samantha, others), Architect, Batroc, Bobcat, Brothers Grimm, Bullet Biker, Crossfire, Death-Throws, Inquisitor, Mad Dog, Roche, Sapphire Styx, Shoc",
+              "relatives": "William Scott (aka Razor-Fist III, brother, deceased)"
+       },
+       "id": "544",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/935.jpg"
+       },
+       "name": "Razor-Fist II",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "the House of Razor, unrevealed location. Formerly, Roche's estate, Madripoor. Formerly, Carlton Velcro's mansion on an island in the Marquesas",
+              "occupation": "Mercenary, assassin, bodyguard, enforcer"
+       }
+}

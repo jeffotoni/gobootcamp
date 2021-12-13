@@ -1,55 +1,55 @@
 {
-   "response":"success",
-   "id":"644",
-   "name":"Superman",
-   "powerstats":{
-      "intelligence":"94",
-      "strength":"100",
-      "speed":"100",
-      "durability":"100",
-      "power":"100",
-      "combat":"85"
-   },
-   "biography":{
-      "full-name":"Clark Kent",
-      "alter-egos":"Superman Prime One-Million",
-      "aliases":[
-         "Clark Joseph Kent",
-         "The Man of Steel",
-         "the Man of Tomorrow",
-         "the Last Son of Krypton",
-         "Big Blue",
-         "the Metropolis Marvel",
-         "the Action Ace"
-      ],
-      "place-of-birth":"Krypton",
-      "first-appearance":"ACTION COMICS #1",
-      "publisher":"Superman Prime One-Million",
-      "alignment":"good"
-   },
-   "appearance":{
-      "gender":"Male",
-      "race":"Kryptonian",
-      "height":[
-         "6'3",
-         "191 cm"
-      ],
-      "weight":[
-         "225 lb",
-         "101 kg"
-      ],
-      "eye-color":"Blue",
-      "hair-color":"Black"
-   },
-   "work":{
-      "occupation":"Reporter for the Daily Planet and novelist",
-      "base":"Metropolis"
-   },
-   "connections":{
-      "group-affiliation":"Justice League of America, The Legion of Super-Heroes (pre-Crisis as Superboy); Justice Society of America (pre-Crisis Earth-2 version); All-Star Squadron (pre-Crisis Earth-2 version)",
-      "relatives":"Lois Lane (wife), Jor-El (father, deceased), Lara (mother, deceased), Jonathan Kent (adoptive father), Martha Kent (adoptive mother), Seyg-El (paternal grandfather, deceased), Zor-El (uncle, deceased), Alura (aunt, deceased), Supergirl (Kara Zor-El, cousin), Superboy (Kon-El/Conner Kent, partial clone)"
-   },
-   "image":{
-      "url":"https://www.superherodb.com/pictures2/portraits/10/100/791.jpg"
-   }
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "Kryptonian",
+              "weight": [
+                     "225 lb",
+                     "101 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Clark Joseph Kent",
+                     "The Man of Steel",
+                     "the Man of Tomorrow",
+                     "the Last Son of Krypton",
+                     "Big Blue",
+                     "the Metropolis Marvel",
+                     "the Action Ace"
+              ],
+              "alignment": "good",
+              "alter-egos": "Superman Prime One-Million",
+              "first-appearance": "ACTION COMICS #1",
+              "full-name": "Clark Kent",
+              "place-of-birth": "Krypton",
+              "publisher": "Superman Prime One-Million"
+       },
+       "connections": {
+              "group-affiliation": "Justice League of America, The Legion of Super-Heroes (pre-Crisis as Superboy); Justice Society of America (pre-Crisis Earth-2 version); All-Star Squadron (pre-Crisis Earth-2 version)",
+              "relatives": "Lois Lane (wife), Jor-El (father, deceased), Lara (mother, deceased), Jonathan Kent (adoptive father), Martha Kent (adoptive mother), Seyg-El (paternal grandfather, deceased), Zor-El (uncle, deceased), Alura (aunt, deceased), Supergirl (Kara Zor-El, cousin), Superboy (Kon-El/Conner Kent, partial clone)"
+       },
+       "id": "644",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/791.jpg"
+       },
+       "name": "Superman",
+       "powerstats": {
+              "combat": "85",
+              "durability": "100",
+              "intelligence": "94",
+              "power": "100",
+              "speed": "100",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "Metropolis",
+              "occupation": "Reporter for the Daily Planet and novelist"
+       }
 }

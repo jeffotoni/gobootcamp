@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Bucket-Head",
+                     "Edge-Man",
+                     "Powell"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Darkhawk #1 (March, 1991)",
+              "full-name": "Christopher Powell",
+              "place-of-birth": "Queens, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "formerly Loners, New Warriors, Avengers West Coast (reservist), Secret Defenders (founder)",
+              "relatives": "Michael Powell (father), Grace Powell (mother), Jonathon and Jason Powell (brothers)"
+       },
+       "id": "202",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/53.jpg"
+       },
+       "name": "Darkhawk",
+       "powerstats": {
+              "combat": "64",
+              "durability": "70",
+              "intelligence": "50",
+              "power": "74",
+              "speed": "33",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "Los Angeles, California; formerly New York City and Avengers Compound",
+              "occupation": "Retired Superhero"
+       }
+}

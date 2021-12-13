@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "8'0",
+                     "244 cm"
+              ],
+              "race": "Xenomorph XX121",
+              "weight": [
+                     "375 lb",
+                     "169 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Alien (1979)",
+              "full-name": "Xenomorph",
+              "place-of-birth": "Your chest :)",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Alien Queen (mother)"
+       },
+       "id": "18",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10449.jpg"
+       },
+       "name": "Alien",
+       "powerstats": {
+              "combat": "60",
+              "durability": "90",
+              "intelligence": "50",
+              "power": "57",
+              "speed": "42",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

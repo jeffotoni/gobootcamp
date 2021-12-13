@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'7",
+                     "201 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "480 lb",
+                     "216 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Beta Ray Thor",
+                     "Simon Walters"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Thor #337",
+              "full-name": "Beta Ray Bill (translation of his Korbinite name)",
+              "place-of-birth": "Burning Galaxy",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "ally of the Asgardians, Thor Corps, Star Masters",
+              "relatives": "-"
+       },
+       "id": "79",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/28.jpg"
+       },
+       "name": "Beta Ray Bill",
+       "powerstats": {
+              "combat": "84",
+              "durability": "95",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "35",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "currently New York City, formerly Asgard, formerly the fleet of Korbinite ships.",
+              "occupation": "Guardian of the Korbinite race"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "CAPTAIN ATOM Vol. 1 #83 (1966) (Published by Charlton Comics)",
+              "full-name": "Theodore Kord",
+              "place-of-birth": "Chicago, Illinois",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Justice League of America; formerly the L.A.W.; formerly Super Buddies",
+              "relatives": "Jarvis Kord (uncle)"
+       },
+       "id": "125",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1008.jpg"
+       },
+       "name": "Blue Beetle II",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "45"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Inventor, President of Kord Omniversal, Crimefighter"
+       }
+}

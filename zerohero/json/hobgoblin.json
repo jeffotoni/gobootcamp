@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Grey",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "185 lb",
+                     "83 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Roderick Kingsley",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Daniel Kingsley (brother)"
+       },
+       "id": "328",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/896.jpg"
+       },
+       "name": "Hobgoblin",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "53"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Fashion designer"
+       }
+}

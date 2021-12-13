@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "Human / Radiation",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Invisible Girl"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "FANTASTIC FOUR #1",
+              "full-name": "Susan Storm Richards",
+              "place-of-birth": "Glenville, Long Island, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Fantastic Four, formerly; Secret Avengers, Avengers, Brides of Set, Pawns of Death",
+              "relatives": "Reed Richards (Mister Fantastic, husband), Franklin Richards (son), Valeria Richards (daughter), Johnny Storm (Human Torch, brother), Franklin Storm (father, deceased), Mary Storm (mother, deceased), Marygay Jewel Dinkins (aunt), \"Bones\" (cousin), Evelyn Richards (mother-in-law, deceased), Nathaniel Richards (father-in-law), Cassandra Richards (Warlord, mother-in-law, deceased), unnamed child of Nathaniel Richards (brother-in-law), Tara Richards (Huntara, sister-in-law), Kristoff Vernard (alleged brother-in-law), Lyja (sister-in-law)"
+       },
+       "id": "344",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/620.jpg"
+       },
+       "name": "Invisible Woman",
+       "powerstats": {
+              "combat": "56",
+              "durability": "85",
+              "intelligence": "88",
+              "power": "93",
+              "speed": "27",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Pier Four, New York City",
+              "occupation": "Member of the Fantastic Four, financial manager for Fantastic Four Inc, occasional model and actress"
+       }
+}

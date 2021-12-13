@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "220 lb",
+                     "99 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Avengers #195",
+              "full-name": "Tony Masters",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Mercedes Merced (wife), Jeanne Foucault (Finesse, alleged daughter)"
+       },
+       "id": "653",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/21.jpg"
+       },
+       "name": "Taskmaster",
+       "powerstats": {
+              "combat": "100",
+              "durability": "20",
+              "intelligence": "75",
+              "power": "63",
+              "speed": "50",
+              "strength": "12"
+       },
+       "response": "success",
+       "work": {
+              "base": "Bagalia; A.I.M Island, Taskmaster's Academy",
+              "occupation": "Sheriff, Assassin, Mercenary; formerly Military Trainer, Combat Instructor, Head of Initiative training camp"
+       }
+}

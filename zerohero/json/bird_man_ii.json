@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Daredevil #157 (March, 1979)",
+              "full-name": "Achille DiBacco",
+              "place-of-birth": "The Bar with No Name, Medina County, Ohio",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Ani-Men",
+              "relatives": "-"
+       },
+       "id": "90",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1504.jpg"
+       },
+       "name": "Bird-Man II",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Black",
+              "gender": "Male",
+              "hair-color": "Blue",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Heralds of Galactus",
+              "relatives": "-"
+       },
+       "id": "252",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1051.jpg"
+       },
+       "name": "Fallen One II",
+       "powerstats": {
+              "combat": "56",
+              "durability": "100",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "83",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

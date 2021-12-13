@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "194 lb",
+                     "87 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Void",
+                     "Bob",
+                     "Golden Guardian of Good",
+                     "John Victor Williams",
+                     "Scout"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Sentry #1 (September, 2000)",
+              "full-name": "Robert Reynolds",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Horsemen of Death, Osborn's Avengers, Mighty Avengers, New Avengers, partner of Scout",
+              "relatives": "Lindy Reynolds (wife, deceased), Mrs. Reynolds (mother)"
+       },
+       "id": "583",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/447.jpg"
+       },
+       "name": "Sentry",
+       "powerstats": {
+              "combat": "40",
+              "durability": "84",
+              "intelligence": "75",
+              "power": "100",
+              "speed": "100",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "The Watchtower (on top of Stark Tower, where it was formerly located before all memory of him disappeared)",
+              "occupation": "-"
+       }
+}

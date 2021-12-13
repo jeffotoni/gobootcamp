@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Fastest Man Alive",
+                     "The Scarlet Speedster; formerly",
+                     "Kid Flash I"
+              ],
+              "alignment": "good",
+              "alter-egos": "Speed Demon",
+              "first-appearance": "Flash #110 (January, 1960)",
+              "full-name": "Wally West",
+              "place-of-birth": "Blue Valley, Nebraska",
+              "publisher": "Speed Demon"
+       },
+       "connections": {
+              "group-affiliation": "Flash Family, Justice League of America, Titans; formerly Teen Titans",
+              "relatives": "Rudolph and Mary West (parents), Ira West (grandfather), Iris Allen (aunt), Barry Allen (Flash II, uncle), Linda Park West (wife), Jai and Iris West (twin children)"
+       },
+       "id": "266",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/690.jpg"
+       },
+       "name": "Flash III",
+       "powerstats": {
+              "combat": "32",
+              "durability": "60",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "100",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Keystone City, Kansas",
+              "occupation": "Adventurer, Mechanic for the KCPD"
+       }
+}

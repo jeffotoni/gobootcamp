@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Black",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Element Man"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Brave and the Bold #57",
+              "full-name": "Rex Mason",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Outsiders, formerly Doom Patrol, Justice League Europe, Seven Soldiers of Victory",
+              "relatives": "Unnamed parents (deceased), Sapphire Stagg Mason (wife), Joseph (son), Simon Stagg (father-in-law)"
+       },
+       "id": "446",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/738.jpg"
+       },
+       "name": "Metamorpho",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "82"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, former Soldier of Fortune"
+       }
+}

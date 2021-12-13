@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "197 lb",
+                     "89 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Monarch",
+                     "Extant"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Showcase #75 (June, 1968)",
+              "full-name": "Henry Hall",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Black Lantern Corps, Teen Titans, Hawk and Dove, Titans West",
+              "relatives": "Don Hall (brother, deceased), Irwin Hall (father), Rae Penfield (mother), James Penfield (uncle)"
+       },
+       "id": "312",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1382.jpg"
+       },
+       "name": "Hawk",
+       "powerstats": {
+              "combat": "42",
+              "durability": "95",
+              "intelligence": "38",
+              "power": "43",
+              "speed": "35",
+              "strength": "38"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

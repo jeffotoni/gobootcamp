@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "106 lb",
+                     "48 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Mutant Messiah",
+                     "Messiah Child",
+                     "Hub",
+                     "Throat Slicer",
+                     "Little Girl",
+                     "Little Momma"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men Vol 2 #205 (2008)",
+              "full-name": "Hope Summers",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, formerly Cable",
+              "relatives": "Louise Spalding (mother, deceased), unknown biological father, Mrs. Spalding (maternal grandmother), Cable (adoptive father, deceased), Hope (adoptive mother, deceased), Cyclops (adoptive grandfather), Red Queen / Phoenix (adoptive grandmothers, deceased?), X-Man (adoptive uncle), Marvel Girl (adoptive aunt), Havok (adoptive granduncle), Vulcan (adoptive granduncle, deceased), Deathbird (adoptive grandaunt)"
+       },
+       "id": "330",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1351.jpg"
+       },
+       "name": "Hope Summers",
+       "powerstats": {
+              "combat": "75",
+              "durability": "32",
+              "intelligence": "63",
+              "power": "93",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

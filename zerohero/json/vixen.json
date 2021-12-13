@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Amber",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "140 lb",
+                     "63 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Action Comics #521 (July, 1981)",
+              "full-name": "Mari McCabe",
+              "place-of-birth": "Zambesi",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Suicide Squad, Checkmate, Ultramarines, Birds of Prey, Justice League of America",
+              "relatives": "Reverend Richard Jiwe (father, deceased), Jeanne-Mari Jiwe (mother, deceased), General Mustapha Maksai (uncle, deceased), Tantu (ancestor)"
+       },
+       "id": "699",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10109.jpg"
+       },
+       "name": "Vixen",
+       "powerstats": {
+              "combat": "25",
+              "durability": "50",
+              "intelligence": "50",
+              "power": "62",
+              "speed": "50",
+              "strength": "38"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former Model"
+       }
+}

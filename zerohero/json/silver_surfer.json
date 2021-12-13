@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Alien",
+              "weight": [
+                     "225 lb",
+                     "101 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four, Vol. 1 #48",
+              "full-name": "Norrin Radd",
+              "place-of-birth": "Zenn-La",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Former member of Defenders, former member of the Star Masters",
+              "relatives": "Jartran Radd (father, deceased), Elmar Radd (mother, deceased)"
+       },
+       "id": "598",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/127.jpg"
+       },
+       "name": "Silver Surfer",
+       "powerstats": {
+              "combat": "32",
+              "durability": "90",
+              "intelligence": "56",
+              "power": "100",
+              "speed": "100",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "mobile throughout the universe",
+              "occupation": "Adventurer, formerly Galactus' Herald"
+       }
+}

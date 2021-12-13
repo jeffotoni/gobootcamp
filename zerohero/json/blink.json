@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Magenta",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "125 lb",
+                     "56 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Uncanny X-Men #317 (October, 1994)",
+              "full-name": "Clarice Ferguson",
+              "place-of-birth": "Bahamas",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "New Mutants; formerly X-Men, Selene's Inner Circle",
+              "relatives": "Apocalypse (ancestor, deceased);Margaret Slade (ancestor, deceased);Hamilton Slade (distant relative, deceased);Frederick Slade (great-great-grandfather);Ms. Ferguson (great-great-grandmother, deceased);Chamber (distant cousin);Clan Akkaba (relatives)"
+       },
+       "id": "115",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/35.jpg"
+       },
+       "name": "Blink",
+       "powerstats": {
+              "combat": "64",
+              "durability": "28",
+              "intelligence": "50",
+              "power": "77",
+              "speed": "20",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "Jean Grey School for Higher Learning, Salem Center, Westchester County, New York; formerly Black Rome, Necrosha",
+              "occupation": "Adventurer, freedom fighter"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Purple",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Atlantean",
+              "weight": [
+                     "160 lb",
+                     "72 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Aquaman #22 (August, 1965)",
+              "full-name": "Hila",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Mera (twin sister), Aquaman (brother-in-law)"
+       },
+       "id": "602",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1387.jpg"
+       },
+       "name": "Siren",
+       "powerstats": {
+              "combat": "60",
+              "durability": "60",
+              "intelligence": "56",
+              "power": "92",
+              "speed": "79",
+              "strength": "62"
+       },
+       "response": "success",
+       "work": {
+              "base": "formely Atlantis",
+              "occupation": "-"
+       }
+}

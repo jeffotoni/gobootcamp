@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Heroes S01E01",
+              "full-name": "Nathan Petrelli",
+              "place-of-birth": "-",
+              "publisher": "NBC - Heroes"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Angela Petrelli (mother), unnamed father (deceased), Peter Petrelli (younger brother), Simon Petrelli (son), Monty Petrelli (son), Claire Bennet (daughter)"
+       },
+       "id": "486",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/949.jpg"
+       },
+       "name": "Nathan Petrelli",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mansion in Hyde Park, NY",
+              "occupation": "formerly a U.S. Congressman, formerly a district attorney, formerly a Navy officer"
+       }
+}

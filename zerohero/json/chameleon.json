@@ -1,0 +1,58 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Dr. Ashley Kafka",
+                     "Dr. Turner",
+                     "J. Jonah Jameson",
+                     "Torpedo",
+                     "Rick Jones",
+                     "Dr. Henry Pym",
+                     "Peter Parker",
+                     "Captain George Stacy",
+                     "Dr. Robert Bruce Banner",
+                     "General"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #1",
+              "full-name": "Dmitri Anatoly Smerdyakov Kravinoff",
+              "place-of-birth": "Russia",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "The Exterminators; formerly Sinister Six, Sinister Twelve",
+              "relatives": "Kravinoff Patriarch (father, deceased), mother (unnamed), Sergei Kravinoff (Kraven I, half-brother, deceased), Vladimir Kravinoff (The Grim Hunter, nephew, deceased), Alyosha Kravinoff (Kraven the Hunter, nephew), Ned Tannengarden (nephew, deceased)"
+       },
+       "id": "170",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/660.jpg"
+       },
+       "name": "Chameleon",
+       "powerstats": {
+              "combat": "28",
+              "durability": "28",
+              "intelligence": "88",
+              "power": "28",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

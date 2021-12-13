@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "185 lb",
+                     "83 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Hank Pym"
+              ],
+              "alignment": "good",
+              "alter-egos": "Ant-Man, Giant-Man, Goliath, Wasp II",
+              "first-appearance": "(as Pym) TALES TO ASTONISH #27, (as Ant-Man) TALES TO ASTONISH #35, (as Giant-Man) TALES TO ASTONISH #49, (as Goliath) AVENGERS #28, (as Yellowjacket) AVENGERS #59",
+              "full-name": "Hank Pym",
+              "place-of-birth": "Elmsford, New York",
+              "publisher": "Ant-Man"
+       },
+       "connections": {
+              "group-affiliation": "The Avengers, The West Coast Avengers, Secret Defenders",
+              "relatives": "Maria Trovaya (first wife, deceased), Janet Van Dyne a.k.a. The Wasp (second wife, divorced), Ultron (creation, \"son\"), Jocasta (\"first daughter-in-law\"), Alkhema (\"second daughter-in-law\"), Vision (\"grandson\"), Scarlet Witch (former granddaughter-in-law), Victor Mancha (\"grandson\")"
+       },
+       "id": "726",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/70.jpg"
+       },
+       "name": "Yellowjacket",
+       "powerstats": {
+              "combat": "14",
+              "durability": "28",
+              "intelligence": "88",
+              "power": "12",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Avengers Mansion, New York City, New York, (formerly)Avengers Compound, Los Angeles, California",
+              "occupation": "Adventurer, Biochemist, former manager of Avengers Compound"
+       }
+}

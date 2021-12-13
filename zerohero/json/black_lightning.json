@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Black Lightning #1 (April 1977)",
+              "full-name": "Jefferson Pierce",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League of America (current), formerly Presidential Cabinet, The Outsiders (sporadically), Batman's Brother Eye attack group",
+              "relatives": "Unnamed father (deceased), Lynn Stewart (ex-wife), Joanna Pierce (niece, deceased), Anissa Pierce (Thunder, daughter), Jennifer Pierce (Lightning, daughter)"
+       },
+       "id": "103",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1128.jpg"
+       },
+       "name": "Black Lightning",
+       "powerstats": {
+              "combat": "75",
+              "durability": "28",
+              "intelligence": "50",
+              "power": "70",
+              "speed": "53",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "Chicago, Illinois; Metropolis, The Hall \u0026 The JLA Watchtower",
+              "occupation": "Crime Fighter, High School teacher, Former gold-medal-winning Olympic Decathlete, formerly Secretary of Education under Presidents Pete Ross and Lex Luthor."
+       }
+}

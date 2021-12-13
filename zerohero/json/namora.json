@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "189 lb",
+                     "85 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Sub-Mariner",
+                     "Avenging Daughter",
+                     "the Sea Beauty"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Mystery Comics #82 (1947)",
+              "full-name": "Aquaria Nautica Neptunia",
+              "place-of-birth": "Unnamed Atlantean outpost",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Agents of Atlas, Long-time ally of Namor; Monster Hunters, Invaders, All Winners Squad; At one time or another was partnered with FBI Agent Jimmy Woo, Sun Girl, Venus, Golden Girl, Hulk",
+              "relatives": "Namor (cousin), Talan (husband, deceased), Namorita (\"daughter\" cloned)"
+       },
+       "id": "483",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1364.jpg"
+       },
+       "name": "Namora",
+       "powerstats": {
+              "combat": "64",
+              "durability": "42",
+              "intelligence": "50",
+              "power": "48",
+              "speed": "42",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

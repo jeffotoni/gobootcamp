@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "225 lb",
+                     "101 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Kymaera",
+                     "Hard"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "SUB-MARINER Vol. 2 #50 (1972)",
+              "full-name": "Namorita Prentiss",
+              "place-of-birth": "Atlantis Outskirts",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Council of Three, New Warriors, Fantastic Four, Soldiers of Misfortune, Water Children",
+              "relatives": "Namora (mother); Talan (father, deceased); Namor, Byrrah, Dara, Arkus (first cousins once removed); Fen (great-aunt, deceased); Thakorr (great-grandfather, deceased); Korra (great-grandmother, presumed deceased); large extended family; Betty Prentiss (legal guardian, deceased)"
+       },
+       "id": "484",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/106.jpg"
+       },
+       "name": "Namorita",
+       "powerstats": {
+              "combat": "70",
+              "durability": "70",
+              "intelligence": "50",
+              "power": "37",
+              "speed": "47",
+              "strength": "72"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile, formerly New Warriors headquarters and Atlantis",
+              "occupation": "Superhero, formerly Leader of Atlantis"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man Vol 3 #4",
+              "full-name": "Cindy Moon",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Black Cat's Gang, Fact Channel News; formerly Spider-Army, partner of Spider-Man, Ezekiel Sims",
+              "relatives": "Albert Moon. Sr. (father, estranged), unnamed mother (estranged), Albert Moon, Jr. (brother, estranged), Spider-Man (Peter Parker, bit by same spider)"
+       },
+       "id": "595",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10495.jpg"
+       },
+       "name": "Silk",
+       "powerstats": {
+              "combat": "65",
+              "durability": "70",
+              "intelligence": "75",
+              "power": "71",
+              "speed": "71",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "Sims Tower, Times Square, Manhattan, New York City, New York; formerly Sims Tower, Times Square, Manhattan, New York City, New York, Earth-3145; Central Park, Manhattan, New York City, New York, Earth-13",
+              "occupation": "Vigilante, intern at Fact Channel News, adventurer; former student"
+       }
+}

@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "White",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "215 lb",
+                     "97 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Tem Borjigin",
+                     "Gene Kahn",
+                     "Master Khan",
+                     "Zhang Tong",
+                     "Mandy"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Tales of Suspense #50 (February, 1964)",
+              "full-name": "Khan",
+              "place-of-birth": "China",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "current CEO of Prometheus Corporation; has employed the Avatars, Living Laser, Power Man, Swordsman, Enchantress, Executioner, Sandman, and Ladykiller.",
+              "relatives": "Unidentified father, mother, paternal aunt (all deceased). Mei-Ling (fianc�e, deceased), Temujin (son), Genghis Khan (alleged ancestor, deceased)"
+       },
+       "id": "430",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1175.jpg"
+       },
+       "name": "Mandarin",
+       "powerstats": {
+              "combat": "95",
+              "durability": "28",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "23",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "Prometheus Corporation; formerly Dragon of Heaven; Palace of the Star Dragon in the Valley of Spirits.",
+              "occupation": "Would-be conqueror; former janitor, businessman and crimelord, government administrator"
+       }
+}

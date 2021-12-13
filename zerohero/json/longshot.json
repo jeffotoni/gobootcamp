@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "80 lb",
+                     "36 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Lost Messiah",
+                     "The Lucky One"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Longshot #1 (September, 1985)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Factor Investigations; rebel forces on his homeworld; formerly Exiles; X-Men",
+              "relatives": "Arize (creator), Alison Blaire (Dazzler) (wife), Gaveedra Seven (Shatterstar) (alleged son)"
+       },
+       "id": "415",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1531.jpg"
+       },
+       "name": "Longshot",
+       "powerstats": {
+              "combat": "70",
+              "durability": "10",
+              "intelligence": "50",
+              "power": "71",
+              "speed": "27",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "X-Factor Investigations Headquarters, New York City, New York; formerly Detroit, Michigan; mobile; Xavier's School for Gifted Youngsters, Salem Center, Westchester County, New York; Mojoverse; Cooterman's Creek, Australian Outback, Australia; Alcatraz I",
+              "occupation": "freedom fighter, stuntman rebel, adventurer"
+       }
+}

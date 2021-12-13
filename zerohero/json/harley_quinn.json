@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "140 lb",
+                     "63 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Harleen Quinzel",
+                     "Harl",
+                     "Cupid of Crime",
+                     "Jane Wisakedjak",
+                     "Elise Archer",
+                     "Pumpkin Pooh"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman: Harley Quinn (October, 1999)",
+              "full-name": "Harley Quinn",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly The Quintets, The Joker, Poison Ivy, Secret Six",
+              "relatives": "Barry Quinzel (brother), Sharon Quinzel (mother), Nick Quinzel (father), Jenny Quinzel (niece), Nicky Quinzel (nephew)"
+       },
+       "id": "309",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/701.jpg"
+       },
+       "name": "Harley Quinn",
+       "powerstats": {
+              "combat": "80",
+              "durability": "65",
+              "intelligence": "88",
+              "power": "55",
+              "speed": "33",
+              "strength": "12"
+       },
+       "response": "success",
+       "work": {
+              "base": "Gotham City",
+              "occupation": "Psychiatrist"
+       }
+}

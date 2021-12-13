@@ -1,0 +1,63 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Matt",
+                     "Jack Batlin",
+                     "Kingpin of Crime",
+                     "Laurent LeVasseur",
+                     "Michael \"Mike\" Murdock",
+                     "Scarlet Swashbuckler",
+                     "Nameless One",
+                     "Kingpin of Hell's Kitchen",
+                     "The Man Without Fear",
+                     "The Guardian Devil",
+                     "DD",
+                     "Red",
+                     "Hornhead",
+                     "Cooper Peyton",
+                     "Captain Universe"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Daredevil #1 (April, 1964)",
+              "full-name": "Matt Murdock",
+              "place-of-birth": "New York City, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "none; Formerly: partner of Black Widow (Natasha Romanoff), Defenders, S.H.I.E.L.D., Marvel Knights, Secret Avengers (Civil War), Hand leader.",
+              "relatives": "Jonathan \"Battling Jack\" Murdock (Father, deceased), Maggie Murdock (aka Sister Maggie, Mother), Milla Donovan (ex-wife)"
+       },
+       "id": "201",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/52.jpg"
+       },
+       "name": "Daredevil",
+       "powerstats": {
+              "combat": "100",
+              "durability": "35",
+              "intelligence": "75",
+              "power": "61",
+              "speed": "25",
+              "strength": "13"
+       },
+       "response": "success",
+       "work": {
+              "base": "Hell's Kitchen, New York, New York, Shadowland (formerly)",
+              "occupation": "Adventurer, vigilante, Attorney at Law"
+       }
+}

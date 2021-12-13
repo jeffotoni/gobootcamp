@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Purple",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Rodian",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Greedo",
+              "place-of-birth": "Rodia",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "297",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10468.jpg"
+       },
+       "name": "Greedo",
+       "powerstats": {
+              "combat": "40",
+              "durability": "15",
+              "intelligence": "38",
+              "power": "31",
+              "speed": "13",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Bounty Hunter"
+       }
+}

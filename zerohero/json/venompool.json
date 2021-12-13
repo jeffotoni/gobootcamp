@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "7'5",
+                     "226 cm"
+              ],
+              "race": "Symbiote",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Deadpool"
+              ],
+              "alignment": "-",
+              "alter-egos": "Deadpool, Evil Deadpool",
+              "first-appearance": "What If? Iron Man: Demon in an Armor #1 (February, 2011)",
+              "full-name": "Wade Wilson",
+              "place-of-birth": "-",
+              "publisher": "Deadpool"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "690",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10618.jpg"
+       },
+       "name": "Venompool",
+       "powerstats": {
+              "combat": "100",
+              "durability": "100",
+              "intelligence": "69",
+              "power": "100",
+              "speed": "63",
+              "strength": "57"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Conqueror; Adventurer"
+       }
+}

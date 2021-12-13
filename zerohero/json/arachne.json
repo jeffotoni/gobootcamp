@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "140 lb",
+                     "63 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Spider-Woman",
+                     "Madame Web"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Super Heroes Secret Wars #6",
+              "full-name": "Julia Carpenter",
+              "place-of-birth": "Los Angeles, California",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Omega Flight, formerly Commission on Superhuman Activities , Freedom Force , Avengers , Secret Defenders , Force Works , Queen�s Vengeance , West Coast Avengers, Secret Avengers (Civil War)",
+              "relatives": "Rachel Carpenter (daughter), Walter Cornwall (father), Elizabeth Cornwall (mother), Larry Carpenter (ex-husband, deceased)"
+       },
+       "id": "39",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/882.jpg"
+       },
+       "name": "Arachne",
+       "powerstats": {
+              "combat": "70",
+              "durability": "70",
+              "intelligence": "50",
+              "power": "71",
+              "speed": "50",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile; formerly Denver, Colorado; formerly Avengers Compound, Los Angeles, California",
+              "occupation": "Adventurer, fugitive, former government agent"
+       }
+}

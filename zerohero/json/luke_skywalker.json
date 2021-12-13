@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "170 lb",
+                     "77 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "General Skywalker",
+                     "Master Luke",
+                     "Jedi"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Star Wars: Episode IV - A New Hope (1977)",
+              "full-name": "Luke Skywalker",
+              "place-of-birth": "Tatooine",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "Alliance to Restore the Republic, Jedi Order, Alliance of Free Planets, Bright Tree Village, New Republic, New Jedi Order",
+              "relatives": "Darth Vader (father), Princes Leia (Sister), Yoda (Master), Obi-Wan Kenobi (Master)"
+       },
+       "id": "418",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10447.jpg"
+       },
+       "name": "Luke Skywalker",
+       "powerstats": {
+              "combat": "100",
+              "durability": "25",
+              "intelligence": "69",
+              "power": "100",
+              "speed": "42",
+              "strength": "38"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

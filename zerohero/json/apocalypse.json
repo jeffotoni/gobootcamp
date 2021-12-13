@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "7'0",
+                     "213 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "300 lb",
+                     "135 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Eternal One",
+                     "the High Lord",
+                     "Set",
+                     "Huitxilopochti",
+                     "Sauru",
+                     "Kali-Ma"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Factor #5 (June, 1986)",
+              "full-name": "En Sabah Nur",
+              "place-of-birth": "Akkaba, Egypt",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Clan Akkaba, employer of Apocalypse's Horsemen, Dark Riders, former employer of the Alliance of Evil, 198",
+              "relatives": "Baal of the Crimson Sands (adopted father, deceased)"
+       },
+       "id": "35",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/852.jpg"
+       },
+       "name": "Apocalypse",
+       "powerstats": {
+              "combat": "60",
+              "durability": "100",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "33",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "Celestial Ship, mobile",
+              "occupation": "Student; formerly Conqueror; Scientist"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "7'0",
+                     "213 cm"
+              ],
+              "race": "Android",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Kaytoo Esso",
+                     "Kay-Tuesso"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Rogue One: A Star Wars Story (2016)",
+              "full-name": "",
+              "place-of-birth": "Galactic Empire",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "378",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10643.jpg"
+       },
+       "name": "K-2SO",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

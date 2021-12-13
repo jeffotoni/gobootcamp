@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'2",
+                     "157 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "125 lb",
+                     "56 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Spiderman"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Ultimate Comics Fallout #4 (October, 2011)",
+              "full-name": "Miles Morales",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "622",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10647.jpg"
+       },
+       "name": "Spider-Man",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "58"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Student, adventurer, vigilante"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "121 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Shueisha"
+       },
+       "connections": {
+              "group-affiliation": "Team 7",
+              "relatives": "-"
+       },
+       "id": "485",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1540.jpg"
+       },
+       "name": "Naruto Uzumaki",
+       "powerstats": {
+              "combat": "100",
+              "durability": "80",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "32",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "Konohagakure",
+              "occupation": "-"
+       }
+}

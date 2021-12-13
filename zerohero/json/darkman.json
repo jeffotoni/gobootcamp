@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Darkman (August 24, 1990)",
+              "full-name": "Peyton Westlake",
+              "place-of-birth": "-",
+              "publisher": "Universal Studios"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Julie Hastings (girlfriend)"
+       },
+       "id": "203",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1126.jpg"
+       },
+       "name": "Darkman",
+       "powerstats": {
+              "combat": "28",
+              "durability": "85",
+              "intelligence": "75",
+              "power": "12",
+              "speed": "23",
+              "strength": "14"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Scientist"
+       }
+}

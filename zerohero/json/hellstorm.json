@@ -1,0 +1,55 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "6'1'",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Antichrist",
+                     "Black Halo",
+                     "the Devil",
+                     "King of Hell",
+                     "Prince of Lies",
+                     "Satan",
+                     "Son of Satan."
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(as Hellstorm) West Coast Avengers (second series) #14",
+              "full-name": "Daimon Hellstrom",
+              "place-of-birth": "Greentown, Massachusetts",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Hell-Lords; formerly Hellstrom and Hellstrom, Paranormal Investigation, member of the Defenders",
+              "relatives": "Hellcat (Patricia Walker, wife, deceased), Marduk Kurios (father (and son), aka Satan), Victoria Wingate Hellstrom (mother, deceased), Satana (sister), Jaine Cutter (consort)"
+       },
+       "id": "324",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/80.jpg"
+       },
+       "name": "Hellstorm",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "56"
+       },
+       "response": "success",
+       "work": {
+              "base": "Hell, formerly San Francisco, California",
+              "occupation": "Ruler of Hell, former Demonologist, occult investigator, exorcist and priest"
+       }
+}

@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Green",
+              "height": [
+                     "6'5",
+                     "196 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "192 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Red Hood I",
+                     "Clown Prince of Crime",
+                     "Harlequin of Hate",
+                     "Jack Napier",
+                     "Joe Kerr",
+                     "Mr. J"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman #1 (Spring 1940)",
+              "full-name": "Jack Napier",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Black Glove, Injustice Gang, Injustice League, Joker League of Anarchy",
+              "relatives": "Jeannie (wife, deceased); Unborn son (deceased); Melvin Reipan (cousin, deceased)"
+       },
+       "id": "370",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/719.jpg"
+       },
+       "name": "Joker",
+       "powerstats": {
+              "combat": "70",
+              "durability": "60",
+              "intelligence": "100",
+              "power": "43",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Arkham Asylum, Gotham City; Ha-Hacienda",
+              "occupation": "-"
+       }
+}

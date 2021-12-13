@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "115 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Kasumi",
+                     "various mundane persona,"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman: Legends of the Dark Knight #120",
+              "full-name": "Cassandra Cain",
+              "place-of-birth": "League of Assassins (exact base is unknown)",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Titans East, League of Assassins, Batman Family, Justice League Elite, Young Justice",
+              "relatives": "David Cain (father), Lady Shiva (mother), Carolyn (aunt, deceased), Annalea (sibling, deceased), 'The Mad Dog' (sibling)"
+       },
+       "id": "66",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1113.jpg"
+       },
+       "name": "Batgirl IV",
+       "powerstats": {
+              "combat": "100",
+              "durability": "56",
+              "intelligence": "69",
+              "power": "46",
+              "speed": "27",
+              "strength": "12"
+       },
+       "response": "success",
+       "work": {
+              "base": "Gotham City; Bl�dhaven; Tibet; New York City",
+              "occupation": "-"
+       }
+}

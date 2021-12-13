@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "265 lb",
+                     "119 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Morrie"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #212 (January, 1981)",
+              "full-name": "Morris Bench",
+              "place-of-birth": "Bronx, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Member of the Masters of Evil; formerly Sinister Syndicate; Frightful Four, Sinister Six, Sinister Twelve",
+              "relatives": "-"
+       },
+       "id": "337",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1451.jpg"
+       },
+       "name": "Hydro-Man",
+       "powerstats": {
+              "combat": "50",
+              "durability": "80",
+              "intelligence": "38",
+              "power": "66",
+              "speed": "25",
+              "strength": "13"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Professional Criminal; former crewman of cargo ship"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "140 lb",
+                     "63 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Samuel Sterns",
+              "place-of-birth": "Boise, Idaho",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Leader of Freehold",
+              "relatives": "-"
+       },
+       "id": "401",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/885.jpg"
+       },
+       "name": "Leader",
+       "powerstats": {
+              "combat": "42",
+              "durability": "14",
+              "intelligence": "100",
+              "power": "59",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

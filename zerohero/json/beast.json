@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blue",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "402 lb",
+                     "181 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Dr. McCoy",
+                     "Hanko",
+                     "Kreature",
+                     "Mutate #666",
+                     "Magilla Gorilla",
+                     "Golden Armed Boy"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-MEN Vol. 1 #1, (in furry ape form) AMAZING ADVENTURES #11, (in current feline form) NEW X-MEN Vol. 1 #114",
+              "full-name": "Henry Philip McCoy",
+              "place-of-birth": "Dunfee, Illinois",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Secret Avengers, S.W.O.R.D.; formerly X-Men (founding member); X-Club (founding member); Initiative; 198; X-Treme X-Men; Acolytes (while mind-controlled); Queen's Vengeance; X-Factor/X-Terminators (founding member); Rejects; Defenders, Avengers",
+              "relatives": "Sadie McCoy (paternal grandmother), Norton McCoy (father), Edna McCoy (mother), Robert McCoy (paternal great-uncle), John McCoy (uncle)"
+       },
+       "id": "75",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/27.jpg"
+       },
+       "name": "Beast",
+       "powerstats": {
+              "combat": "85",
+              "durability": "60",
+              "intelligence": "94",
+              "power": "43",
+              "speed": "38",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier Institute, Salem Center, Westchester County, New York",
+              "occupation": "Biochemist, formerly Xavier Institute for Higher Learning science and math Instructor, mutant activist, college lecturer, researcher, professional wrestler"
+       }
+}

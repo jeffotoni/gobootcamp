@@ -1,0 +1,63 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "310 lb",
+                     "140 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Satan; Mephistopheles",
+                     "Lord of Evil",
+                     "Prince of Devils",
+                     "Prince of Lies",
+                     "Lord of the Lower Depths",
+                     "Satan",
+                     "Beelzebub",
+                     "the Devil",
+                     "Maya",
+                     "Lucifer",
+                     "Nick Scratch",
+                     "the Friend",
+                     "Legion",
+                     "numerous others; impersonated Don Blake",
+                     "many others"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "",
+              "place-of-birth": "Hell",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Hell-lords, Lords of the Splinter Realms; formerly manipulator of the Six-Fingered Hand",
+              "relatives": "Blackheart (son), Mephista (daughter); presumptive relationship to other Hell-lords; quasi-paternal relationship to Mikal Drakonmegas (Hellfire) and Daimon (Hellstorm) and Satana Hellstrom; formerly engaged to unidentified demoness"
+       },
+       "id": "443",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1322.jpg"
+       },
+       "name": "Mephisto",
+       "powerstats": {
+              "combat": "42",
+              "durability": "95",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "35",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Lord of a realm of Hell"
+       }
+}

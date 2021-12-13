@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "135 lb",
+                     "61 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Cat #1",
+              "full-name": "Shirlee Bryant",
+              "place-of-birth": "Chicago, Illinois",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "163",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/904.jpg"
+       },
+       "name": "Cat",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "Chicago, Illinois",
+              "occupation": "Model"
+       }
+}

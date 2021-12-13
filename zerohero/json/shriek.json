@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Yellow / Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "115 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Sandra Deel"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Frances Louise Barrison",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Carnage Family",
+              "relatives": "Carnage (adopted husband), Carrion (Malcolm McBride) and Demogoblin (adopted sons), Doppelganger (adopted pet)"
+       },
+       "id": "592",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1319.jpg"
+       },
+       "name": "Shriek",
+       "powerstats": {
+              "combat": "42",
+              "durability": "28",
+              "intelligence": "50",
+              "power": "45",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former partner of Carnage, Carrion (Malcolm McBride), Demogoblin and Doppelganger). Before she became Shriek, she was a rock band groupie and drug dealer."
+       }
+}

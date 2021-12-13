@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "-",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Living Planet"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "THOR #132",
+              "full-name": "Ego",
+              "place-of-birth": "The Black Galaxy",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Inapplicable"
+       },
+       "id": "235",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/6.jpg"
+       },
+       "name": "Ego",
+       "powerstats": {
+              "combat": "28",
+              "durability": "99",
+              "intelligence": "88",
+              "power": "71",
+              "speed": "83",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile",
+              "occupation": "Inapplicable"
+       }
+}

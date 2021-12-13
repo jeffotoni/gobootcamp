@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Female",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Ice Queen"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Tracy Strauss",
+              "place-of-birth": "Beverly Hills, CA",
+              "publisher": "NBC - Heroes"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Niki Sanders (estranged triplet sister, deceased), Barbara (estranged triplet sister), W. Strauss (father), Rebecca Rosenthal (mother)"
+       },
+       "id": "673",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1312.jpg"
+       },
+       "name": "Tracy Strauss",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former aide to Senator Nathan Petrelli, Former Pinehearst consultant, former political adviser to Governor Robert Malden"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Spirit of Vengeance"
+              ],
+              "alignment": "good",
+              "alter-egos": "Spectre",
+              "first-appearance": "More Fun Comics #52 (February 1940)",
+              "full-name": "Aztar",
+              "place-of-birth": "-",
+              "publisher": "Spectre"
+       },
+       "connections": {
+              "group-affiliation": "The Presence",
+              "relatives": "-"
+       },
+       "id": "59",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1012.jpg"
+       },
+       "name": "Aztar",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "98"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

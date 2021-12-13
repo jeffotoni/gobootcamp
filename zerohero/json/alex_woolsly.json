@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Heroes S02E16 - Building 26",
+              "full-name": "Alex Woolsly",
+              "place-of-birth": "-",
+              "publisher": "NBC - Heroes"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Mr. Woolsly, Mrs. Woolsly, sister"
+       },
+       "id": "16",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1309.jpg"
+       },
+       "name": "Alex Woolsly",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "37"
+       },
+       "response": "success",
+       "work": {
+              "base": "Costa Verde, CA",
+              "occupation": "Employee at Sam's Comics"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "119 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Civil War: Front Line #3 (September, 2006)",
+              "full-name": "Roberto Velasquez",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Captain America, Pro-Registration forces",
+              "relatives": "-"
+       },
+       "id": "62",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/229.jpg"
+       },
+       "name": "Bantam",
+       "powerstats": {
+              "combat": "56",
+              "durability": "54",
+              "intelligence": "25",
+              "power": "21",
+              "speed": "23",
+              "strength": "53"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, boxing trainer, former boxer"
+       }
+}

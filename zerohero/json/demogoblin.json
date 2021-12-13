@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Demon",
+              "weight": [
+                     "210 lb",
+                     "95 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Jason Macendale Jr"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Web of Spider-Man #86 (March, 1992)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "217",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1515.jpg"
+       },
+       "name": "Demogoblin",
+       "powerstats": {
+              "combat": "60",
+              "durability": "35",
+              "intelligence": "50",
+              "power": "67",
+              "speed": "42",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City",
+              "occupation": "Demonic Redeemer"
+       }
+}

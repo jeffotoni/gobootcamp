@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'11",
+                     "211 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "425 lb",
+                     "191 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Arkady Rossovich",
+                     "Vasyliev Arkady"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Arkady Gregorivich",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Red Mafia (kingpin); former employee of Sabretooth, The General, Ivan Pushkin, and Matsu'o Tsurayaba; formerly KGB",
+              "relatives": "-"
+       },
+       "id": "500",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/208.jpg"
+       },
+       "name": "Omega Red",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "61"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Crimelord; former mercenary, KGB agent"
+       }
+}

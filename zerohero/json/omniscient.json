@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "145 lb",
+                     "65 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Team Epic Episode 101",
+              "full-name": "Omniscient is the closest English word that compares to his alien tongue.",
+              "place-of-birth": "Another Unknown World",
+              "publisher": "Team Epic TV"
+       },
+       "connections": {
+              "group-affiliation": "Team Epic",
+              "relatives": "-"
+       },
+       "id": "501",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1003.jpg"
+       },
+       "name": "Omniscient",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Toronto, Canada",
+              "occupation": "Superhero, Grade 9 physics teacher"
+       }
+}

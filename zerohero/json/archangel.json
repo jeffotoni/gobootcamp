@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "150 lb",
+                     "68 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "War",
+                     "Dark Angel",
+                     "Death",
+                     "Avenging Angel"
+              ],
+              "alignment": "good",
+              "alter-egos": "Angel",
+              "first-appearance": "X-Men #1 (September, 1963)",
+              "full-name": "Warren Kenneth Worthington III",
+              "place-of-birth": "Centerport, Long Island, New York",
+              "publisher": "Angel"
+       },
+       "connections": {
+              "group-affiliation": "X-Men (founding member); X-Force; Mutantes Sans Fronti�res; Hellfire Club; formerly X-Club (founding member); Death's champions; Secret Defenders; X-Factor/X-Terminators (founding member); Horsemen of Apocalypse; Defenders; Champions of Los Angeles (fou",
+              "relatives": "Wallace Worthington (paternal ancestor, deceased), Warren Worthington Sr. (paternal grandfather, deceased), Warren Worthington Jr. (father, deceased), Kathryn Worthington (mother, deceased), Burt Worthington (paternal uncle), Mimi (maternal aunt), unnamed distant cousin"
+       },
+       "id": "40",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/838.jpg"
+       },
+       "name": "Archangel",
+       "powerstats": {
+              "combat": "42",
+              "durability": "64",
+              "intelligence": "63",
+              "power": "35",
+              "speed": "58",
+              "strength": "13"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, Chairman \u0026 principal stockholder of Worthington Industries, Multi-Millionaire, Heir, former terrorist"
+       }
+}

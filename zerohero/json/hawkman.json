@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "195 lb",
+                     "88 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "FLASH COMICS #1 (January 1940)",
+              "full-name": "Carter Hall",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice Society of America, Justice League of America, All-Star Squadron",
+              "relatives": "Shiera Sanders Hall (wife, deceased; soul currently inhabiting the body of Kendra Saunders), Hector Hall (son, deceased), Daniel Hall (grandson), Lyta Trevor Hall (daughter-in-law, deceased)"
+       },
+       "id": "316",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/839.jpg"
+       },
+       "name": "Hawkman",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "66"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Gold",
+              "gender": "Male",
+              "hair-color": "Gold",
+              "height": [
+                     "6'5",
+                     "196 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "550 lb",
+                     "248 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #28 (1965)",
+              "full-name": "Mark Raxton",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Exterminators",
+              "relatives": "Doris Raxton (mother), Liz Allan Osborn (step-sister), Harry Osborn (Green Goblin II , step-brother-in-law, deceased), Norman Osborn Jr. (Green Goblin I, step-nephew)"
+       },
+       "id": "467",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/411.jpg"
+       },
+       "name": "Molten Man",
+       "powerstats": {
+              "combat": "56",
+              "durability": "84",
+              "intelligence": "50",
+              "power": "53",
+              "speed": "23",
+              "strength": "73"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Security guard for Osborn industries, former criminal, lab assistant"
+       }
+}

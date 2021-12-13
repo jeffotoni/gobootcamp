@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Kurr",
+              "place-of-birth": "-",
+              "publisher": "Image Comics"
+       },
+       "connections": {
+              "group-affiliation": "Liberty League, Chicago Police Department, Special Operations Strikeforce (S.O.S.)",
+              "relatives": "-"
+       },
+       "id": "575",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1117.jpg"
+       },
+       "name": "Savage Dragon",
+       "powerstats": {
+              "combat": "72",
+              "durability": "85",
+              "intelligence": "63",
+              "power": "66",
+              "speed": "54",
+              "strength": "70"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

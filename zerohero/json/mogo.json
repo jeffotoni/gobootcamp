@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Planet",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Green Lantern Vol 2 #188 (May, 1985)",
+              "full-name": "Mogo",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Green Lantern Corps",
+              "relatives": "-"
+       },
+       "id": "464",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1432.jpg"
+       },
+       "name": "Mogo",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Sector 2261",
+              "occupation": "Green Lantern"
+       }
+}

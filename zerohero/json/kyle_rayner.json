@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Ion",
+                     "Kyle Vasquez",
+                     "Parallax",
+                     "Torch Bearer",
+                     "Honor Guard",
+                     "The Last Green Lantern"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Green Lantern Vol 3 #48",
+              "full-name": "Kyle Rayner",
+              "place-of-birth": "North Hollywood, Los Angeles, California",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Green Lantern Corps, New Guardians, formerly Challengers From Beyond, Sinestro Corps, Justice League of America, Blue Lantern Corps, Titans",
+              "relatives": "Aaron Rayner (father), Maura Rayner (mother, deceased), Zachary Rayner (uncle, deceased), Roderick \"Snowy\" Rayner (grandfather, deceased), unnamed maternal great-grandfather (deceased), Kathleen (aunt), Cary Wren (descendant)"
+       },
+       "id": "397",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1409.jpg"
+       },
+       "name": "Kyle Rayner",
+       "powerstats": {
+              "combat": "60",
+              "durability": "60",
+              "intelligence": "69",
+              "power": "100",
+              "speed": "50",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "Oa,formerly New York City, Los Angeles",
+              "occupation": "Green Lantern, Adventurer, Artist"
+       }
+}

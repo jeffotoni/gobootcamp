@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Cyborg",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Clarissa Whyte"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Jamie Sommers",
+              "place-of-birth": "-",
+              "publisher": ""
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "87",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10648.jpg"
+       },
+       "name": "Bionic Woman",
+       "powerstats": {
+              "combat": "40",
+              "durability": "40",
+              "intelligence": "56",
+              "power": "20",
+              "speed": "33",
+              "strength": "37"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

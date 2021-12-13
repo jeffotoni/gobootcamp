@@ -1,0 +1,59 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'5",
+                     "196 cm"
+              ],
+              "race": "Demi-God",
+              "weight": [
+                     "325 lb",
+                     "146 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Spider-Herc",
+                     "The Lion of Olympus",
+                     "The Defender of Olympus",
+                     "The Scion of Olympus",
+                     "Prince of Power",
+                     "Alcaeus",
+                     "Herakles",
+                     "Herc",
+                     "Harry Cleese",
+                     "Victor Tegler",
+                     "Agent 74"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Heracles",
+              "place-of-birth": "Thebes, Greece",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly God Squad, Council of Godheads, Olympia Corp., Mighty Avengers, Renegades, Secret Avengers, Avengers, Champions of Los Angeles, Defenders, Heroes for Hire, Damage Control, Olympian Gods, Argonauts, Defenders for a Day",
+              "relatives": "-"
+       },
+       "id": "325",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/78.jpg"
+       },
+       "name": "Hercules",
+       "powerstats": {
+              "combat": "100",
+              "durability": "85",
+              "intelligence": "63",
+              "power": "89",
+              "speed": "46",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "Brooklyn; formerly Infinite Avengers Mansion, Mount Olympus, Avengers Mansion, Hydrobase",
+              "occupation": "Adventurer, Olympian God of Strength and Labor, later Olympian God of Heroes"
+       }
+}

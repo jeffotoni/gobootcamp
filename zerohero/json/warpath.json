@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "7'2",
+                     "218 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "350 lb",
+                     "158 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Thunderbird"
+              ],
+              "alignment": "good",
+              "alter-egos": "Thunderbird II",
+              "first-appearance": "New Mutants #16 (June, 1984)",
+              "full-name": "James Proudstar",
+              "place-of-birth": "Camp Verde, Arizona",
+              "publisher": "Thunderbird II"
+       },
+       "connections": {
+              "group-affiliation": "X-Men (Team Cyclops), Security Recon; formerly X-Force (Strike Team), X-Corporation, X-Force, New Mutants, Hellions",
+              "relatives": "Thunderbird (John Proudstar, brother, deceased), Maria Proudstar (mother, deceased), Neal Proudstar (father, deceased)"
+       },
+       "id": "707",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/541.jpg"
+       },
+       "name": "Warpath",
+       "powerstats": {
+              "combat": "84",
+              "durability": "70",
+              "intelligence": "38",
+              "power": "26",
+              "speed": "47",
+              "strength": "72"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer"
+       }
+}

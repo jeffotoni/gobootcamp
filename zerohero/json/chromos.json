@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Red / Grey",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Team Epic Episode 101",
+              "full-name": "Bernard Embers",
+              "place-of-birth": "London, England",
+              "publisher": "Team Epic TV"
+       },
+       "connections": {
+              "group-affiliation": "The Guardian Villain�s Ward (G.V.W.), Villain�s Equity (V.E.), and A.S.C. (Anti-Super Conspirators)",
+              "relatives": "Hi-Jaq (daughter), Exile (son)"
+       },
+       "id": "175",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1001.jpg"
+       },
+       "name": "Chromos",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Toronto, Canada",
+              "occupation": "Bar owner and Entertainer, President of V.E., Lieutenant in the G.V.W."
+       }
+}

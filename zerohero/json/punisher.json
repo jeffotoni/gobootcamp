@@ -1,0 +1,68 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0'",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Big Nothing",
+                     "Major Bateman",
+                     "Ted Bishop",
+                     "Cliff Callador",
+                     "Castigo",
+                     "Chaloner",
+                     "Fred D'Amato",
+                     "Eastman",
+                     "Charles Fort",
+                     "Frank Loomis",
+                     "McRook",
+                     "Melchior",
+                     "Joe Rainey",
+                     "Frank Rook",
+                     "Richard Rook",
+                     "Tony Knowlen Ross",
+                     "Francis Stronghold",
+                     "Johnny Tower",
+                     "Dmitri Velikoff",
+                     "Fra"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "AMAZING SPIDER-MAN #129",
+              "full-name": "Frank Castle",
+              "place-of-birth": "Queens, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "None; Formerly Secret Avengers, Daredevil's Unnamed Super-Hero Team, Green Berets, U.S. Marine Corps",
+              "relatives": "Maria Castle (Wife, deceased), Christie Castle (Daughter, deceased), Frank Castle Junior (Son, deceased), Mario Castle (Father, deceased), Louisa Castle (Mother, deceased), Rocco Castiglione (Uncle, deceased), Esmerelda Castiglione (Aunt, deceased), Michael Castle (Brother, stillborn, deceased)."
+       },
+       "id": "530",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/112.jpg"
+       },
+       "name": "Punisher",
+       "powerstats": {
+              "combat": "100",
+              "durability": "45",
+              "intelligence": "69",
+              "power": "42",
+              "speed": "21",
+              "strength": "16"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile, usually in New York City",
+              "occupation": "Former United States Marine turned professional vigilante"
+       }
+}

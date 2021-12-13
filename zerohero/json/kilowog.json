@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "7'8",
+                     "234 cm"
+              ],
+              "race": "Bolovaxian",
+              "weight": [
+                     "720 lb",
+                     "324 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Kilo Wog",
+                     "Green Lantern 674.1",
+                     "Dark Lantern",
+                     "The Green Lantern drill sergeant",
+                     "\"Poozer\"",
+                     "Lantern"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Green Lantern Corps #201 (June, 1986)",
+              "full-name": "",
+              "place-of-birth": "Bolovax Vik",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Green Lantern Corps; formerly New Guardians, Justice League International",
+              "relatives": "-"
+       },
+       "id": "388",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1428.jpg"
+       },
+       "name": "Kilowog",
+       "powerstats": {
+              "combat": "80",
+              "durability": "42",
+              "intelligence": "81",
+              "power": "100",
+              "speed": "53",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "Oa, formerly Earth, Bolovax Vik",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Eternal",
+              "weight": [
+                     "460 lb",
+                     "207 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Mark Milton",
+                     "Zhib-Ran",
+                     "Mr. Kant",
+                     "Marcus Milton"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Avengers #85",
+              "full-name": "Mark Milton",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Squadron Supreme, (Formerly) Star Masters, ally of Exiles",
+              "relatives": "Mr. and Mrs. Hamilton (foster parents)"
+       },
+       "id": "338",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1286.jpg"
+       },
+       "name": "Hyperion",
+       "powerstats": {
+              "combat": "80",
+              "durability": "95",
+              "intelligence": "88",
+              "power": "87",
+              "speed": "100",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer; (Formerly) Cartoonist, government agent"
+       }
+}

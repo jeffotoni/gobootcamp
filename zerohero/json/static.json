@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "140 lb",
+                     "63 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Sparky",
+                     "Virg",
+                     "V",
+                     "V-Man"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Static #1 (June, 1993)",
+              "full-name": "Virgil Hawkins",
+              "place-of-birth": "Paris Island, Dakota City",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Shadow Cabinet, Heroes, Teen Titans",
+              "relatives": "Robert Hawkins (father), Jean Hawkins (mother), Sharon Hawkins (sister), Homer Hawkins (grandfather), Teshom� Hawkins (uncle, deceased),"
+       },
+       "id": "634",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1471.jpg"
+       },
+       "name": "Static",
+       "powerstats": {
+              "combat": "40",
+              "durability": "50",
+              "intelligence": "69",
+              "power": "90",
+              "speed": "42",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "Titans Tower, formerly Abandoned Gas Station of Solitude, Dakota City",
+              "occupation": "Student"
+       }
+}

@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Yellow",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Dread One",
+                     "Eater of Souls",
+                     "Lord of Chaos",
+                     "Lord of Darkness",
+                     "the Great Enigma",
+                     "Flyx"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Strange Tales #126 (1964)",
+              "full-name": "Dormammu",
+              "place-of-birth": "Faltine Dimension",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Lords of the Splinter Realms, Lords of the Netherworlds; allied with Umar, Loki, Doctor Doom, Underchild, others",
+              "relatives": "Sinifer (parent/genitor), Umar (sister), Clea (niece), Doctor Strange (nephew-in-law), Satannish (alleged offspring)"
+       },
+       "id": "232",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1359.jpg"
+       },
+       "name": "Dormammu",
+       "powerstats": {
+              "combat": "80",
+              "durability": "100",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "83",
+              "strength": "95"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Despot, conqueror"
+       }
+}

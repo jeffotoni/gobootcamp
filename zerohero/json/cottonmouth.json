@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "220 lb",
+                     "99 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Quincy McIver"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Captain America #310 (October, 1985)",
+              "full-name": "Burchell Clemens",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Serpent Society",
+              "relatives": "-"
+       },
+       "id": "188",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10452.jpg"
+       },
+       "name": "Cottonmouth",
+       "powerstats": {
+              "combat": "25",
+              "durability": "10",
+              "intelligence": "50",
+              "power": "27",
+              "speed": "8",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Serpent Citadel",
+              "occupation": "Professional criminal"
+       }
+}

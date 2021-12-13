@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Hank Pym"
+              ],
+              "alignment": "good",
+              "alter-egos": "Ant-Man, Giant-Man, Wasp II, Yellowjacket",
+              "first-appearance": "-",
+              "full-name": "Hank Pym",
+              "place-of-birth": "-",
+              "publisher": "Ant-Man"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "292",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/846.jpg"
+       },
+       "name": "Goliath",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

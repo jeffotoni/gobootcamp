@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'11'",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "155 lb",
+                     "70 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "GIANT-SIZE FANTASTIC FOUR #4",
+              "full-name": "James Arthur",
+              "place-of-birth": "Los Alamos, New Mexico",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Factor Investigations (formerly) X-Factor, Fallen Angels, X-Corps, X-Corporation",
+              "relatives": "Dr. Daniel Madrox (father, deceased), Joan Madrox (mother, deceased)"
+       },
+       "id": "478",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/104.jpg"
+       },
+       "name": "Multiple Man",
+       "powerstats": {
+              "combat": "62",
+              "durability": "70",
+              "intelligence": "63",
+              "power": "28",
+              "speed": "23",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City",
+              "occupation": "Private investigator (formerly) Farmer, Adventurer"
+       }
+}

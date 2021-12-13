@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "-",
+              "hair-color": "Brown",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "138 lb",
+                     "62 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men #65 (1997)",
+              "full-name": "Dr. Cecilia Reyes",
+              "place-of-birth": "Place of birth unknown",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men",
+              "relatives": "-"
+       },
+       "id": "166",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/43.jpg"
+       },
+       "name": "Cecilia Reyes",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Salem Center",
+              "occupation": "Doctor in private practice"
+       }
+}

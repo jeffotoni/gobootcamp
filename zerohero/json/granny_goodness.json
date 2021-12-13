@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "White",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "256 lb",
+                     "115 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Athena"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "",
+              "place-of-birth": "Apokolips",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Female Furies, Darkseid's Elite",
+              "relatives": "-"
+       },
+       "id": "295",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1344.jpg"
+       },
+       "name": "Granny Goodness",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "96"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "7'",
+                     "213 cm"
+              ],
+              "race": "Human / Altered",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Blue 1",
+                     "Sierra 117",
+                     "Spartan 117",
+                     "Demon"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "John-117",
+              "place-of-birth": "Elysium City, Eridanus II",
+              "publisher": "Microsoft"
+       },
+       "connections": {
+              "group-affiliation": "United Nations Space Command, Navy",
+              "relatives": "-"
+       },
+       "id": "435",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1110.jpg"
+       },
+       "name": "Master Chief",
+       "powerstats": {
+              "combat": "100",
+              "durability": "80",
+              "intelligence": "75",
+              "power": "69",
+              "speed": "35",
+              "strength": "73"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Master Chief Petty Officer of the Navy"
+       }
+}

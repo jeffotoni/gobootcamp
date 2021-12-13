@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(original version) King Solomon's Mines; (this version) League of Extraordinary Gentlemen #1 (America's Best Comics)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Wildstorm"
+       },
+       "connections": {
+              "group-affiliation": "League of Extraordinary Gentlemen",
+              "relatives": "-"
+       },
+       "id": "19",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/630.jpg"
+       },
+       "name": "Allan Quatermain",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "The Secret Wing of the British Museum, London",
+              "occupation": "(former) hunter; (current) agent of the British government"
+       }
+}

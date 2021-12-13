@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "-",
+              "hair-color": "No Hair",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Fixer"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(as Fixer) STRANGE TALES #141",
+              "full-name": "Paul Norbert Ebersol",
+              "place-of-birth": "Dayton, Ohio",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "formerly Thunderbolts, Redeemers",
+              "relatives": "No known relatives"
+       },
+       "id": "262",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/9.jpg"
+       },
+       "name": "Fixer",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mount Charteris",
+              "occupation": "Criminal inventor"
+       }
+}

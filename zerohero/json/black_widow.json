@@ -1,0 +1,59 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Auburn",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "131 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Yelena Belova",
+                     "Natasha Romanoff",
+                     "Natasha",
+                     "Tasha",
+                     "Madame Natasha",
+                     "Nancy Rushman",
+                     "Laura Matthers",
+                     "Nadine Roman",
+                     "\"Oktober\"",
+                     "Black Pearl",
+                     "Ebon Flame"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Tales of Suspense #52",
+              "full-name": "Natasha Romanoff",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Secret Avengers; formerly Thunderbolts (as Yelena Belova), Nick Fury, Mighty Avengers, S.H.I.E.L.D., Avengers, Champions of Los Angeles, Lady Liberators, KGB, \"Marvel Knights\", partner of Daredevil, Hawkeye, Boris Turgenov, Logan",
+              "relatives": "Unnamed parents (presumed deceased); Alexi Shostakov (Red Guardian, estranged husband); Vindiktor (alleged brother, deceased)"
+       },
+       "id": "107",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/248.jpg"
+       },
+       "name": "Black Widow",
+       "powerstats": {
+              "combat": "100",
+              "durability": "30",
+              "intelligence": "75",
+              "power": "36",
+              "speed": "33",
+              "strength": "13"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile",
+              "occupation": "Adventurer, Intelligence agent, former ballerina"
+       }
+}

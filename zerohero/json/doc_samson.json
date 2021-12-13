@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Green",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "Human / Radiation",
+              "weight": [
+                     "380 lb",
+                     "171 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Incredible Hulk #141 (July, 1971)",
+              "full-name": "Leonard Samson",
+              "place-of-birth": "Tulsa, Oklahoma",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Leonard Skivorski (father); Ricky Myers (son);"
+       },
+       "id": "221",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/54.jpg"
+       },
+       "name": "Doc Samson",
+       "powerstats": {
+              "combat": "70",
+              "durability": "80",
+              "intelligence": "75",
+              "power": "36",
+              "speed": "33",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "Psychiatrist, teacher, adventurer, former special consultant to Gamma Base",
+              "occupation": "Psychiatrist, teacher, adventurer, former special consultant to Gamma Base"
+       }
+}

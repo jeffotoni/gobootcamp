@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Exiles #1",
+              "full-name": "Kevin Sydney",
+              "place-of-birth": "Pittsburgh, Pennsylvania",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Exiles; (Formerly) X-Men, New Mutants, Avengers all of his home reality",
+              "relatives": "Unnamed mother (deceased), Unnamed father"
+       },
+       "id": "473",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/102.jpg"
+       },
+       "name": "Morph",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "40"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile",
+              "occupation": "Adventurer, reality traveler"
+       }
+}

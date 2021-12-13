@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "210 lb",
+                     "95 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Rhodey",
+                     "Iron Man",
+                     "Jim Rhodes"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Iron Man #118 (1979)",
+              "full-name": "James Rupert Rhodes",
+              "place-of-birth": "Philadelphia, Pennsylvania",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Initiative; formerly: Sentinel Squad O*N*E, Office of National Emergency (O*N*E), Crew, Secret Defenders, Worldwatch, Stark Enterprises, Force Works, West Coast Avengers, U.S. Marine Corps",
+              "relatives": "David Rhodes (father), Roberta Rhodes (mother), Jeanette Rhodes (sister, deceased), Josh (uncle, last name unrevealed), unnamed alleged son"
+       },
+       "id": "703",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/536.jpg"
+       },
+       "name": "War Machine",
+       "powerstats": {
+              "combat": "85",
+              "durability": "100",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "63",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Initiative instructor, adventurer, government agent; formerly: Sentinel Squad O*N*E combat instructor, soldier, pilot"
+       }
+}

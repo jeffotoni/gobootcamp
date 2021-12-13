@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'1",
+                     "155 cm"
+              ],
+              "race": "Mutant / Clone",
+              "weight": [
+                     "110 lb",
+                     "50 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Laura Logan",
+                     "Laura Howlett",
+                     "Laura X",
+                     "Talon",
+                     "Wolverine",
+                     "X23"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "NYX #3",
+              "full-name": "Laura Kinney",
+              "place-of-birth": "The Facility, location unrevealed",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "New X-Men, formerly Xavier Institute Student Body, The Facility",
+              "relatives": "Sarah Kinney (surrogate mother, deceased), James Howlett (Wolverine, genetic progenitor)"
+       },
+       "id": "723",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/565.jpg"
+       },
+       "name": "X-23",
+       "powerstats": {
+              "combat": "95",
+              "durability": "100",
+              "intelligence": "75",
+              "power": "55",
+              "speed": "42",
+              "strength": "24"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile. Formerly Avengers Mansion, New York City and Avengers Compound",
+              "occupation": "Adventurer, Student, former; Assassin, Prostitute"
+       }
+}

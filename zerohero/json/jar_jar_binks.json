@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Yellow",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Gungan",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Jar Jar Binks",
+              "place-of-birth": "Naboo",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "354",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10563.jpg"
+       },
+       "name": "Jar Jar Binks",
+       "powerstats": {
+              "combat": "15",
+              "durability": "10",
+              "intelligence": "10",
+              "power": "21",
+              "speed": "33",
+              "strength": "6"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

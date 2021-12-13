@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "White / Red",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #30 (2001)",
+              "full-name": "Morlun",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "472",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1171.jpg"
+       },
+       "name": "Morlun",
+       "powerstats": {
+              "combat": "56",
+              "durability": "42",
+              "intelligence": "63",
+              "power": "74",
+              "speed": "35",
+              "strength": "60"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Grey",
+              "gender": "Male",
+              "hair-color": "White",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Creator",
+                     "Erik Magnus Lehnsherr",
+                     "Michael Xavier",
+                     "White Pilgrim",
+                     "Erik the RedThe Master of Magnetism"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-MEN Vol. 1 #1",
+              "full-name": "Erik Magnus Lensherr",
+              "place-of-birth": "Unrevealed, probably somewhere in Northern Europe",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Currently None, formerly Brotherhood of Evil Mutants I and II, X-Men, teacher of the New Mutants, Lords Cardinal of the Hellfire Club, leader of the Acolytes",
+              "relatives": "Magda (wife, deceased), Anya (daughter, deceased), Pietro Maximoff (Quicksilver, son), Wanda Maximoff (Scarlet Witch, daughter), Lorna Dane (Polaris, daughter), Joseph (clone, deceased), Luna (granddaughter)"
+       },
+       "id": "423",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/12.jpg"
+       },
+       "name": "Magneto",
+       "powerstats": {
+              "combat": "80",
+              "durability": "84",
+              "intelligence": "88",
+              "power": "91",
+              "speed": "27",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "Currently unrevealed, formerly Asteroid M; various hidden bases on Earth including one in Antarctica; an island in the Bermuda Triangle; Professor Xavier's School for Gifted Youngsters, Salem Center, Westchester County, New York",
+              "occupation": "Currently Revolutionary and Conqueror, formerly Volunteer Orderly, Secret Agent"
+       }
+}

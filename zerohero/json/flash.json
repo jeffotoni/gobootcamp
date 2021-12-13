@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Brown / White",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "179 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Jay Garrick",
+                     "Siegfreid the Speedster"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Flash Comics #1 (January 1940)",
+              "full-name": "Jay Garrick",
+              "place-of-birth": "Hibbardsville, Kansas",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice Society of America, Flash Family; formerly All-Star Squadron",
+              "relatives": "Joseph Garrick (father), Joan Williams (wife), Arthur Williams (father-in-law), unnamed adopted son (deceased), Bart Allen (Flash II, ward)"
+       },
+       "id": "263",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/891.jpg"
+       },
+       "name": "Flash",
+       "powerstats": {
+              "combat": "32",
+              "durability": "50",
+              "intelligence": "63",
+              "power": "68",
+              "speed": "100",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Keystone City, Kansas",
+              "occupation": "Research Scientist, part-time Director of Garrick Laboratories"
+       }
+}

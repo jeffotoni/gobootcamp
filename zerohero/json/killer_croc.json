@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "8'0",
+                     "244 cm"
+              ],
+              "race": "Metahuman",
+              "weight": [
+                     "790 lb",
+                     "356 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman #357 (March, 1983)",
+              "full-name": "Waylon Jones",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Secret Society of Super-Villains",
+              "relatives": "-"
+       },
+       "id": "386",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/723.jpg"
+       },
+       "name": "Killer Croc",
+       "powerstats": {
+              "combat": "60",
+              "durability": "90",
+              "intelligence": "19",
+              "power": "53",
+              "speed": "35",
+              "strength": "53"
+       },
+       "response": "success",
+       "work": {
+              "base": "Gotham City",
+              "occupation": "-"
+       }
+}

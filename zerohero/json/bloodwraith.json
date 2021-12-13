@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "100'0",
+                     "30.5 meters"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Black Wraith",
+                     "Blood Wraith"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(Dolan) Black Knight #2 (1990); (Bloodwraith) Avengers Annual #22 (1993)",
+              "full-name": "Sean Dolan",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "122",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/186.jpg"
+       },
+       "name": "Bloodwraith",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "72"
+       },
+       "response": "success",
+       "work": {
+              "base": "Slorenia",
+              "occupation": "Former squire"
+       }
+}

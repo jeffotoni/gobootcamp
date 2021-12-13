@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Yellow",
+              "gender": "Male",
+              "hair-color": "Auburn",
+              "height": [
+                     "5'2",
+                     "157 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "115 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Impulse",
+                     "Kid Flash II"
+              ],
+              "alignment": "good",
+              "alter-egos": "Impulse, Kid Flash II",
+              "first-appearance": "(as Impulse) Flash v.2 #91 (June 1994)* (as Kid Flash) Teen Titans v.3 #4 (December 2003)",
+              "full-name": "Bartholomew Allen II",
+              "place-of-birth": "-",
+              "publisher": "Impulse"
+       },
+       "connections": {
+              "group-affiliation": "Flash Family, Teen Titans, Legion of Super-Heroes; formerly Young Justice",
+              "relatives": "Barry Allen (Flash II, grandfather), Iris West Allen (grandmother), Don Allen (father), Meloni Thawne (mother), President Thawne (grandfather), Dawn Allen (aunt), Jenni Ognats (cousin), Thaddeus Thawne (clone), Owen Mercer (half-brother), Max Crandall (guardian)"
+       },
+       "id": "267",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/893.jpg"
+       },
+       "name": "Flash IV",
+       "powerstats": {
+              "combat": "48",
+              "durability": "32",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "100",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Los Angeles, California (previously Manchester, Alabama, briefly Denver, Colorado, then Keystone City, Kansas)",
+              "occupation": "Police trainee"
+       }
+}

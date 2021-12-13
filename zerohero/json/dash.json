@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "4'0",
+                     "122 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "60 lb",
+                     "27 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Fastest Kid on Earth",
+                     "The Dash"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Incredibles (Movies, 2004)",
+              "full-name": "Dashiell Robert Parr",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Incredible Family (genetic member), National Supers Agency (ties), Edna Mode (receives costumes and gadgets from her), Frozone (long-time friend), Mirage (ally)",
+              "relatives": "Robert Parr (Mr Incredible, father), Helen Parr (Elastigirl, mother), Violet Parr(Violet, sister), , Jack-jack (brother)"
+       },
+       "id": "209",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/824.jpg"
+       },
+       "name": "Dash",
+       "powerstats": {
+              "combat": "30",
+              "durability": "60",
+              "intelligence": "25",
+              "power": "20",
+              "speed": "92",
+              "strength": "12"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

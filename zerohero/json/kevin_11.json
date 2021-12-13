@@ -1,0 +1,58 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Kevin 11,000",
+                     "Curtis",
+                     "Osmosian",
+                     "Kev",
+                     "Kevin Ethan",
+                     "Levin",
+                     "Ultimate Kevin",
+                     "Doofus",
+                     "An Empty Shell",
+                     "Kevin E. Levin"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Ben 10 S01",
+              "full-name": "Kevin Ethan Levin",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Mrs. Levin (mother), Devlin Levin (alternate future son), Ben Tennyson (Ben 10, best friend), Harvey Hackett (Stepfather), Gwen Tennyson(girlfriend)"
+       },
+       "id": "382",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1408.jpg"
+       },
+       "name": "Kevin 11",
+       "powerstats": {
+              "combat": "40",
+              "durability": "14",
+              "intelligence": "25",
+              "power": "100",
+              "speed": "12",
+              "strength": "7"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "195 lb",
+                     "88 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Warrior of Two Worlds",
+                     "Savior of Rann"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Outsiders #6 (April, 1986)",
+              "full-name": "Adam Strange",
+              "place-of-birth": "Chicago, Illinois",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Omega Men, L.E.G.I.O.N., R.E.B.E.L.S., formerly Seven Soldiers of Victory",
+              "relatives": "Alanna Strange (wife); Aleea Strange (daughter); Sardath (father-in-law); Janey Strange (sister); Todd Strange (brother, deceased); Bantteir (mother-in-law); Adam Strange II (descendent)"
+       },
+       "id": "8",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/626.jpg"
+       },
+       "name": "Adam Strange",
+       "powerstats": {
+              "combat": "50",
+              "durability": "40",
+              "intelligence": "69",
+              "power": "37",
+              "speed": "33",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Rann, Alpha Centauri System",
+              "occupation": "Adventurer, archaelogist, ambassador"
+       }
+}

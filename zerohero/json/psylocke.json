@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Purple",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "155 lb",
+                     "70 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Betsy",
+                     "Captain Britain",
+                     "Lady Mandarin"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Captain Britain #8 (December, 1976) / New Mutants Annual #2 (October, 1986) (US)",
+              "full-name": "Elizabeth Braddock",
+              "place-of-birth": "Braddock Manor, England",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, formerly agent of S.T.R.I.K.E., ally of R.C.X., partner of Captain U.K.",
+              "relatives": "John Braddock (ancestor, possibly grandfather); Sir James Braddock (father, deceased); Lady Elizabeth Braddock (mother, deceased); Brian Braddock (Captain Britain) (twin brother); Jamie Braddock (brother, deceased); Meggan Braddock (sister-in-law);"
+       },
+       "id": "529",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/114.jpg"
+       },
+       "name": "Psylocke",
+       "powerstats": {
+              "combat": "90",
+              "durability": "40",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "25",
+              "strength": "33"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier Institute, Salem Center, Westchester County, New York formerly Braddock Manor, United Kingdom; Australian Outback",
+              "occupation": "Adventurer, formerly a STRIKE operative, fashion model"
+       }
+}

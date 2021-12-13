@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Orange",
+              "height": [
+                     "10'",
+                     "305 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "2000 lb",
+                     "900 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Box",
+                     "Wanda Langkowski"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Walter Langkowski",
+              "place-of-birth": "Edmonton, Alberta, Canada",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Omega Flight; formerly Alpha Flight, Beta Flight, Gamma Flight, Howling Commandos",
+              "relatives": "Veronica Langkowsi (ex-wife), unidentified son, Lillian von Loont (Gilded Lily, great-aunt, deceased)"
+       },
+       "id": "573",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/863.jpg"
+       },
+       "name": "Sasquatch",
+       "powerstats": {
+              "combat": "42",
+              "durability": "56",
+              "intelligence": "75",
+              "power": "15",
+              "speed": "23",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, bio-physicist, government operative; former college lecturer, professional football player"
+       }
+}

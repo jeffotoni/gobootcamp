@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'5'",
+                     "196 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "260 lb",
+                     "117 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "FANTASTIC FOUR #50",
+              "full-name": "Wyatt Wingfoot",
+              "place-of-birth": "Keewazi Reservation, Oklahoma",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Ally and companion of the Fantastic Four",
+              "relatives": "Will Wingfoot (father, deceased), Chief Silent Fox (grandfather, deceased)"
+       },
+       "id": "722",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/164.jpg"
+       },
+       "name": "Wyatt Wingfoot",
+       "powerstats": {
+              "combat": "56",
+              "durability": "1",
+              "intelligence": "10",
+              "power": "1",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Fantastic Four headquarters, New York City, and Keewazi Reservation, Oklahoma",
+              "occupation": "Occasional adventurer"
+       }
+}

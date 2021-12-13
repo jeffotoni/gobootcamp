@@ -1,0 +1,55 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Yellow",
+              "height": [
+                     "2'7'",
+                     "79 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "40 lb",
+                     "18 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Duckman",
+                     "Iron Duck",
+                     "Pondhopper",
+                     "Shang-Op",
+                     "Cheap Ducktective",
+                     "Duckboy",
+                     "Dark Mallard of the Night"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "FEAR #19",
+              "full-name": "Howard (Last name unrevealed)",
+              "place-of-birth": "New Stork, New Stork, Duckworld",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "No known group affiliation",
+              "relatives": "(according to one account) Ronald (father), Henrietta (mother), Theresa (sister), Orville (brother)"
+       },
+       "id": "331",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/82.jpg"
+       },
+       "name": "Howard the Duck",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "44"
+       },
+       "response": "success",
+       "work": {
+              "base": "Cleveland, Ohio",
+              "occupation": "Many and various, including former candidate for the United States presidency but usually unemployed"
+       }
+}

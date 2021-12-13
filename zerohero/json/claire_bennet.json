@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Vivian Lewis",
+                     "Claire Butler"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Heroes S01E01",
+              "full-name": "Claire Bennet",
+              "place-of-birth": "-",
+              "publisher": "NBC - Heroes"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Adoptive parents: Sandra Bennet, Noah Bennet, Biological parents: Meredith Gordon, Nathan Petrelli, Younger adoptive brother: Lyle Bennet,  Younger half brothers: Simon Petrelli, Monty Petrelli"
+       },
+       "id": "178",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/941.jpg"
+       },
+       "name": "Claire Bennet",
+       "powerstats": {
+              "combat": "28",
+              "durability": "100",
+              "intelligence": "38",
+              "power": "90",
+              "speed": "12",
+              "strength": "9"
+       },
+       "response": "success",
+       "work": {
+              "base": "formerly Odessa, TX, Costa Verde, CA",
+              "occupation": "High school student, cheerleader"
+       }
+}

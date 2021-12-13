@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Penance",
+                     "Masked Marvel"
+              ],
+              "alignment": "good",
+              "alter-egos": "Penance II",
+              "first-appearance": "Amazing Spider-Man Annual #22, (chronologically) Speedball #1",
+              "full-name": "Robert Baldwin",
+              "place-of-birth": "Springdale, Connecticut",
+              "publisher": "Penance II"
+       },
+       "connections": {
+              "group-affiliation": "New Warriors",
+              "relatives": "Maddie Baldwin (mother), Justin Baldwin (father)"
+       },
+       "id": "614",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/132.jpg"
+       },
+       "name": "Speedball",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile; formerly New Warriors Headquarters",
+              "occupation": "Student, superhero"
+       }
+}

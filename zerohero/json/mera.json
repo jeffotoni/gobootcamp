@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Atlantean",
+              "weight": [
+                     "160 lb",
+                     "72 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Queen of Atlantis",
+                     "Aquawoman",
+                     "Aquagirl",
+                     "Water-Woman"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Aquaman #11 (October, 1963)",
+              "full-name": "Mera",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Aquaman Family; formerly Red Lantern Corps",
+              "relatives": "Aquaman (husband); Aquababy (son, deceased); A.J. (son); Siren (Hila, twin sister)"
+       },
+       "id": "444",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1388.jpg"
+       },
+       "name": "Mera",
+       "powerstats": {
+              "combat": "80",
+              "durability": "60",
+              "intelligence": "56",
+              "power": "92",
+              "speed": "79",
+              "strength": "62"
+       },
+       "response": "success",
+       "work": {
+              "base": "Atlantis",
+              "occupation": "Former queen of Atlantis; Former queen of Dimension Aqua"
+       }
+}

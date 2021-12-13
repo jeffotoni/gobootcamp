@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Aquaman #23 (October, 1965)",
+              "full-name": "Arthur Curry, Jr.",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Aquaman Family",
+              "relatives": "Aquaman (Orin/Arthur Curry) (father); Mera (mother); Koryak (half-brother); A.J. (half-brother); Atlan (grandfather); Tom Curry (adoptive grandfather, deceased); Orm Marius (uncle); Kordax (ancestor, deceased); Arthur Joseph Curry (adoptive cousin)"
+       },
+       "id": "36",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1389.jpg"
+       },
+       "name": "Aquababy",
+       "powerstats": {
+              "combat": "14",
+              "durability": "14",
+              "intelligence": "10",
+              "power": "37",
+              "speed": "12",
+              "strength": "16"
+       },
+       "response": "success",
+       "work": {
+              "base": "Atlantis",
+              "occupation": "-"
+       }
+}

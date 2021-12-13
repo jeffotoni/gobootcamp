@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "MicahSanders500"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Micah Sanders",
+              "place-of-birth": "-",
+              "publisher": "NBC - Heroes"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Niki Sanders (Mother), DL Hawkins (Father), Paulette Hawkins (paternal grandmother), Hal Sanders (maternal grandfather), Nana Dawson (Guardian)\nNana Dawson (Great-aunt), Monica Dawson (Cousin), Damon Dawson (Cousin)"
+       },
+       "id": "449",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/951.jpg"
+       },
+       "name": "Micah Sanders",
+       "powerstats": {
+              "combat": "14",
+              "durability": "14",
+              "intelligence": "63",
+              "power": "57",
+              "speed": "12",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "New Orleans, LA",
+              "occupation": "Elementary school student"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "148 lb",
+                     "67 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The New Teen Titans #14 (December 1981)",
+              "full-name": "Emil LaSalle",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Brotherhood of Evil, The Society",
+              "relatives": "-"
+       },
+       "id": "706",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1353.jpg"
+       },
+       "name": "Warp",
+       "powerstats": {
+              "combat": "50",
+              "durability": "28",
+              "intelligence": "38",
+              "power": "85",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

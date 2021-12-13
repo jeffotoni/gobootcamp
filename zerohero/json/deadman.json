@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "201 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Strange Adventures #205 (October, 1967)",
+              "full-name": "Boston Brand",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "White Lantern Corps, formerly Sentinels of Magic, Seven Soldiers of Victory, Justice League of Apostles",
+              "relatives": "Cleveland Brand (twin brother, deceased), Lita Brand (niece), Unnamed parents"
+       },
+       "id": "212",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1472.jpg"
+       },
+       "name": "Deadman",
+       "powerstats": {
+              "combat": "42",
+              "durability": "100",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "33",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile, Realm of the Just Dead",
+              "occupation": "Wandering Spirit, Former Circus Aerialist"
+       }
+}

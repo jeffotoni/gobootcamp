@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "125 lb",
+                     "56 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Alvin Draper",
+                     "Batman",
+                     "Robin",
+                     "Timothy Wayne",
+                     "Time Drake"
+              ],
+              "alignment": "good",
+              "alter-egos": "Robin III",
+              "first-appearance": "Batman #436 (August, 1989)",
+              "full-name": "Tim Drake",
+              "place-of-birth": "Gotham City",
+              "publisher": "Robin III"
+       },
+       "connections": {
+              "group-affiliation": "Teen Titans, Batman Family, Batman Inc., Wayne Enterprises; formerly Young Justice",
+              "relatives": "Jack Drake (father, deceased), Janet Drake (mother, deceased), Dana Winters Drake (step-mother, status unknown), Bruce Wayne (adoptive father), Damian Wayne (adoptive brother), Dick Grayson (adoptive brother), Jason Todd (adoptive brother), Cassandra Cain (adoptive sister)"
+       },
+       "id": "549",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10009.jpg"
+       },
+       "name": "Red Robin",
+       "powerstats": {
+              "combat": "80",
+              "durability": "32",
+              "intelligence": "81",
+              "power": "29",
+              "speed": "27",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "Gotham City; Titans Tower, San Francisco",
+              "occupation": "-"
+       }
+}

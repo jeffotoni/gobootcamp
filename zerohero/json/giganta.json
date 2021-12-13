@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "205",
+                     "62.5 meters"
+              ],
+              "race": "null",
+              "weight": [
+                     "1400 lb",
+                     "630 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Wonder Woman (Volume 1) #9 (1944)",
+              "full-name": "Doris Zuel",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "The Injustice League, formerly The Society, Villainy, Inc., The Legion of Doom",
+              "relatives": "-"
+       },
+       "id": "284",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1376.jpg"
+       },
+       "name": "Giganta",
+       "powerstats": {
+              "combat": "42",
+              "durability": "85",
+              "intelligence": "81",
+              "power": "32",
+              "speed": "23",
+              "strength": "89"
+       },
+       "response": "success",
+       "work": {
+              "base": "Ivy Town",
+              "occupation": "Criminal, former Scientist, Professor at Ivy University"
+       }
+}

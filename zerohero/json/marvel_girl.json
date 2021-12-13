@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'7'",
+                     "170 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "125 lb",
+                     "56 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Rachel Grey",
+                     "formerly Phoenix",
+                     "Mother Askani",
+                     "Bright Lady",
+                     "Aly'zrn Summerset"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "UNCANNY X-MEN #141",
+              "full-name": "Rachel Anne Summers",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Starjammers, formerly X-Men, former servant of Elias Bogan, formerly Clan Askani (leader), Excalibur, former servant of Ahab",
+              "relatives": "Scott Summers (Cyclops, alternate timeline father, deceased in own time), Jean Grey-Summers (Phoenix, alternate timeline mother, deceased in own time), Alex Summers (Havok, alternate timeline uncle), Franklin Richards (alternate future husband), Jonathan Reed Richards (Hyperstorm, alternate future son), David Richards (alternate future son)"
+       },
+       "id": "433",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/94.jpg"
+       },
+       "name": "Marvel Girl",
+       "powerstats": {
+              "combat": "80",
+              "durability": "42",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "47",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier Institute of Higher Learning, Salem Center, Westchester County, New York (formerly) Braddock Lighthouse, England",
+              "occupation": "Adventurer"
+       }
+}

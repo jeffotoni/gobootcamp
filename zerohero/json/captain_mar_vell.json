@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'2'",
+                     "188 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "240 lb",
+                     "108 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Captain Marvel",
+                     "Dr. Walter Lawson"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "MARVEL SUPERHEROES #18",
+              "full-name": "Mar-Vell",
+              "place-of-birth": "The city of Rad-Nam on the planet Kree-Lar in the Kree Galaxy (Greater Magellanic Cloud)",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Avengers",
+              "relatives": "Mar-Vell (father-deceased), Elysius (mother-deceased)"
+       },
+       "id": "155",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/654.jpg"
+       },
+       "name": "Captain Mar-vell",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Captain in the Kree space fleet, later adventurer, later \"Protector of the Universe\""
+       }
+}

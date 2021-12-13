@@ -1,0 +1,58 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Auburn",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "185 lb",
+                     "83 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Normie",
+                     "Green Goblin",
+                     "Goblin Lord",
+                     "Overlord",
+                     "the Goblin",
+                     "\"Gobby\"",
+                     "Scrier",
+                     "Commander Osborn",
+                     "Director Osborn",
+                     "Iron Patriot"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #14 (July, 1964)",
+              "full-name": "Norman Osborn",
+              "place-of-birth": "Hartford, Connecticut",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "H.A.M.M.E.R., leader of the Dark Avengers; formerly Thunderbolts, The Cabal; Former leader of the Sinister Twelve, partner of Mendell Stromm, Crime Master, employer of the Enforcers, Hellfire Club",
+              "relatives": "Alton Osborn, Sr. (paternal great-grandfather, deceased);Alton Osborn, Jr. (paternal grandfather, deceased);Amberson Osborn (father, deceased);Emily Osborn (wife, deceased);Gabriel Stacy (son);Sarah Stacy (daughter);Harry Osborn (Green Goblin II, son);Liz Allan (ex-daughter-in-law);Normie Osborn (grandson);Stanley Osborn (grandson);"
+       },
+       "id": "299",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/579.jpg"
+       },
+       "name": "Green Goblin",
+       "powerstats": {
+              "combat": "50",
+              "durability": "60",
+              "intelligence": "100",
+              "power": "48",
+              "speed": "38",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "H.A.M.M.E.R. base; formerly Avengers Tower, New York City, New York",
+              "occupation": "Professional criminal, owner and president of Osborn Industries"
+       }
+}

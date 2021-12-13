@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "5'1",
+                     "155 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "145 lb",
+                     "65 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Lightning Boy",
+                     "Live Wire"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Teen Titans/Legion Special #1",
+              "full-name": "Garth Ranzz",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Legion of Super-Heroes",
+              "relatives": "-"
+       },
+       "id": "407",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1177.jpg"
+       },
+       "name": "Lightning Lad",
+       "powerstats": {
+              "combat": "42",
+              "durability": "28",
+              "intelligence": "38",
+              "power": "60",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Earth, 31st century",
+              "occupation": "Legionnaire"
+       }
+}

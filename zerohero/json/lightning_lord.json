@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "210 lb",
+                     "95 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Supergirl and the Legion of Super-Heroes #25 (Feb. 2007)",
+              "full-name": "Mekt Ranzz",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "The Wanderers, former ally of the Legion of Super-Heroes.",
+              "relatives": "-"
+       },
+       "id": "408",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1179.jpg"
+       },
+       "name": "Lightning Lord",
+       "powerstats": {
+              "combat": "42",
+              "durability": "42",
+              "intelligence": "44",
+              "power": "66",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

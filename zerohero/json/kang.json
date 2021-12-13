@@ -1,0 +1,56 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "230 lb",
+                     "104 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Blue Man",
+                     "Victor Timely",
+                     "Blue Totem",
+                     "Scarlet Centurion",
+                     "Rama-Tut",
+                     "King of Kings",
+                     "Master of Men",
+                     "Lord of the Seven Suns"
+              ],
+              "alignment": "bad",
+              "alter-egos": "Iron Lad",
+              "first-appearance": "(As Rama-Tut) Fantastic Four #19 (1963); (as Kang) Avengers #8 (1964)",
+              "full-name": "Nathaniel Richards",
+              "place-of-birth": "Other Earth, 31st century",
+              "publisher": "Iron Lad"
+       },
+       "connections": {
+              "group-affiliation": "Formerly the Council of Kangs, Cross-Time Kangs",
+              "relatives": "Cassandra Richards, their unnamed son, and matriarch of the Eyriennes; Tara Richards, Reed Richards ( Mister Fantastic ), Franklin Richards, Valeria Richards (all ancestors); various Eyriennes (common ancestry); Victor Von Doom (Doctor Doom, alleged ancestor); Ramades (son), Marcus Kang I-XXIII (sons, deceased); Immortus, Iron Lad, and numerous other alternate dimensional counterparts and their offspring"
+       },
+       "id": "379",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1053.jpg"
+       },
+       "name": "Kang",
+       "powerstats": {
+              "combat": "70",
+              "durability": "70",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "58",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

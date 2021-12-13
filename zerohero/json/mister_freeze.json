@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Mister Zero",
+                     "Doctor Zero",
+                     "Doctor Schimmell"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman #121 (Feb. 1959)",
+              "full-name": "Victor Fries",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Assorted Batman rogues, The Society",
+              "relatives": "Nora Fries (wife, deceased, then resurrected as Lazara), Charles (Father) and Lorraine Fries (Mother)"
+       },
+       "id": "457",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/742.jpg"
+       },
+       "name": "Mister Freeze",
+       "powerstats": {
+              "combat": "28",
+              "durability": "70",
+              "intelligence": "75",
+              "power": "37",
+              "speed": "12",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

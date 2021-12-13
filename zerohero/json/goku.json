@@ -1,55 +1,55 @@
 {
-   "response":"success",
-   "id":"289",
-   "name":"Goku",
-   "powerstats":{
-      "intelligence":"56",
-      "strength":"100",
-      "speed":"75",
-      "durability":"90",
-      "power":"100",
-      "combat":"100"
-   },
-   "biography":{
-      "full-name":"Kakarot",
-      "alter-egos":"No alter egos found.",
-      "aliases":[
-         "Ultimate Defender",
-         "Sayain Monkey",
-         "Super Sayain",
-         "Z-Fighter",
-         "Son-Goku",
-         "Lower-Class Sayain",
-         "Goku Son"
-      ],
-      "place-of-birth":"-",
-      "first-appearance":"Dragon Ball #1",
-      "publisher":"Shueisha",
-      "alignment":"good"
-   },
-   "appearance":{
-      "gender":"Male",
-      "race":"Saiyan",
-      "height":[
-         "5'9",
-         "175 cm"
-      ],
-      "weight":[
-         "137 lb",
-         "62 kg"
-      ],
-      "eye-color":"-",
-      "hair-color":"-"
-   },
-   "work":{
-      "occupation":"-",
-      "base":"-"
-   },
-   "connections":{
-      "group-affiliation":"Saiyajin, Son family, Z-Fighters",
-      "relatives":"-"
-   },
-   "image":{
-      "url":"https://www.superherodb.com/pictures2/portraits/10/100/1284.jpg"
-   }
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Saiyan",
+              "weight": [
+                     "137 lb",
+                     "62 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Ultimate Defender",
+                     "Sayain Monkey",
+                     "Super Sayain",
+                     "Z-Fighter",
+                     "Son-Goku",
+                     "Lower-Class Sayain",
+                     "Goku Son"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Dragon Ball #1",
+              "full-name": "Kakarot",
+              "place-of-birth": "-",
+              "publisher": "Shueisha"
+       },
+       "connections": {
+              "group-affiliation": "Saiyajin, Son family, Z-Fighters",
+              "relatives": "-"
+       },
+       "id": "289",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1284.jpg"
+       },
+       "name": "Goku",
+       "powerstats": {
+              "combat": "100",
+              "durability": "90",
+              "intelligence": "56",
+              "power": "100",
+              "speed": "75",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
 }

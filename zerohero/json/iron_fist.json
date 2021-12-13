@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Daredevil",
+                     "Daniel Thomas Rand",
+                     "the Living Weapon",
+                     "Young Dragon",
+                     "Danny Rand"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Premiere #15 (May 1974)",
+              "full-name": "Danny Rand",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "New Avengers, Heroes for Hire, Inc., Secret Defenders, Defenders, Misty Knight, Luke Cage",
+              "relatives": "Wendell Rand-K'ai (father, deceased), Heather Duncan Rand (mother, deceased), Yu-Ti (adopted uncle), Miranda Rand-K'ai (half-sister), Lord Tuan (adopted paternal grandfather, deceased), Lady Ming (adopted paternal grandmother, deceased), Thomas Duncan (maternal grandfather)"
+       },
+       "id": "345",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1120.jpg"
+       },
+       "name": "Iron Fist",
+       "powerstats": {
+              "combat": "100",
+              "durability": "50",
+              "intelligence": "75",
+              "power": "95",
+              "speed": "33",
+              "strength": "55"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York",
+              "occupation": "Adventurer; formerly co-owner of Rand-Meachum, Inc., bodyguard, private investigator, research assistant, warrior"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Ungaran",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Lagzia"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Showcase #22 (October, 1959)",
+              "full-name": "",
+              "place-of-birth": "Ungara",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Green Lantern Corps, Black Lantern Corps",
+              "relatives": "Amon Sur (son), Arin Sur (sister), Thaal Sinestro (brother-in-law), Soranik Natu (niece)"
+       },
+       "id": "3",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1460.jpg"
+       },
+       "name": "Abin Sur",
+       "powerstats": {
+              "combat": "65",
+              "durability": "64",
+              "intelligence": "50",
+              "power": "99",
+              "speed": "53",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "Oa",
+              "occupation": "Green Lantern, former history professor"
+       }
+}

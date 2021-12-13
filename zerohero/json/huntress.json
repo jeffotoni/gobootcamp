@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "130 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Batgirl",
+                     "Sicilian",
+                     "Mafia Princess"
+              ],
+              "alignment": "good",
+              "alter-egos": "Batgirl III",
+              "first-appearance": "Huntress #1 (April 1989)",
+              "full-name": "Helena Rosa Bertinelli",
+              "place-of-birth": "-",
+              "publisher": "Batgirl III"
+       },
+       "connections": {
+              "group-affiliation": "Batman Family, Birds of Prey, formerly Checkmate, Justice League of America, Outsiders",
+              "relatives": "Giuseppe Bertinelli (great-grandfather; deceased), Alfredo Bertinelli (grandfather; deceased), Franco Bertinelli (father; deceased), Maria Panessa Bertinelli (mother; deceased), Santo Cassamento (biological father; deceased), Pino Bertinelli (brother; deceased), Freddy Caldone (cousin; deceased), Tomaso Panessa (uncle), Graziella Panessa (aunt), Monica Simonetta Panessa (cousin), Claudio Panessa (cousin; deceased)"
+       },
+       "id": "334",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/707.jpg"
+       },
+       "name": "Huntress",
+       "powerstats": {
+              "combat": "95",
+              "durability": "28",
+              "intelligence": "69",
+              "power": "34",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile; primarily Gotham City and Metropolis",
+              "occupation": "Vigilante; High school English teacher"
+       }
+}

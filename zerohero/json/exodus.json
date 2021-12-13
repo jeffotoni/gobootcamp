@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "195 lb",
+                     "88 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Paris Bennet"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Factor #92 (July, 1993)",
+              "full-name": "Bennet du Paris",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Acolytes, formerly Brotherhood and Marauders",
+              "relatives": "-"
+       },
+       "id": "249",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1517.jpg"
+       },
+       "name": "Exodus",
+       "powerstats": {
+              "combat": "70",
+              "durability": "28",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "28",
+              "strength": "81"
+       },
+       "response": "success",
+       "work": {
+              "base": "Currently mobile, Formerly Avalon",
+              "occupation": "Terrorist, would-be conqueror, Former leader of the Acolytes, Crusader"
+       }
+}

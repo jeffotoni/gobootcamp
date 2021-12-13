@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Silver",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Pietro Frank",
+                     "Gypsy Davey",
+                     "Mateo Maximoff"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-MEN Vol. 1 #4",
+              "full-name": "Pietro Django Maximoff",
+              "place-of-birth": "Wundagore Mountain, Transia (in Eastern Europe)",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Avengers, unofficial member of the Royal Family of the Inhumans, (former) Brotherhood of Evil Mutants I, X-Factor II",
+              "relatives": "Wanda Maximoff (Scarlet Witch, sister), Magnus (Magneto, father), Magda (mother, deceased), Django Maximoff (adoptive father), Marya Maximoff (adoptive mother, deceased), Crystal (wife), Maximoff, Luna (daughter), Medusa (sister-in-law), Black Bolt, Gorgon, Karnak, Triton, Maximus (cousins by marriage), Vision (ex-brother-in-law)"
+       },
+       "id": "536",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/115.jpg"
+       },
+       "name": "Quicksilver",
+       "powerstats": {
+              "combat": "56",
+              "durability": "60",
+              "intelligence": "63",
+              "power": "81",
+              "speed": "100",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "Currently a castle on the Hudson River in upstate New York that is owned by the High Evolutionary; (former) Transia; Avengers Mansion, Manhattan; Avengers Compound, Palos Verdes, California; X-Factor headquarters, Washington D. C.",
+              "occupation": "(current) Adventurer, (former) Terrorist, officer of the Inhumans militia, United States government operative"
+       }
+}

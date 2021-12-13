@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red / White",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "145 lb",
+                     "65 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Screaming Mimi",
+                     "Mimi Schwartz",
+                     "Margie Green"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Melissa Joan Gold",
+              "place-of-birth": "Shoshoni, Wyoming",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Thunderbolts, Masters of Evil, Unlimited Class Wrestling Federation, Grapplers",
+              "relatives": "Mimi Gold (mother), Mr. Gold (father)"
+       },
+       "id": "610",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/131.jpg"
+       },
+       "name": "Songbird",
+       "powerstats": {
+              "combat": "56",
+              "durability": "42",
+              "intelligence": "75",
+              "power": "55",
+              "speed": "27",
+              "strength": "36"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer; former criminal and wrestler"
+       }
+}

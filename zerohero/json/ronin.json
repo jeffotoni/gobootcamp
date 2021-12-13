@@ -1,0 +1,60 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "230 lb",
+                     "104 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Formerly Hawkeye",
+                     "the Marksman",
+                     "'Br'er Hawkeye'",
+                     "Superhuman Cellblock Prisoner 334556",
+                     "Longbow",
+                     "Goliath",
+                     "Father Time",
+                     "Louis",
+                     "Robin Hood",
+                     "the Hawkeye Kid",
+                     "Golden Archer",
+                     "'Purple Man'; impersonated Constrictor \u0026 Dreadknight"
+              ],
+              "alignment": "good",
+              "alter-egos": "Goliath, Hawkeye",
+              "first-appearance": "-",
+              "full-name": "Clint Barton",
+              "place-of-birth": "Waverly, Iowa",
+              "publisher": "Goliath"
+       },
+       "connections": {
+              "group-affiliation": "Avengers; formerly founding member of Avengers West Coast and first chairman, Thunderbolts, S.H.I.E.L.D. (unofficial), Chain Gang 421-011, Shadows, Great Lakes Avengers, Cross Technological Enterprises, Defenders, Carson Carnival of Traveling Wonders, Ti",
+              "relatives": "Harold Barton (father), Edith Barton (mother), Charles Bernard \"Barney\" Barton (brother), Barbara Morse 'Bobbi' Barton (Mockingbird, wife), Brett Barton (ancestor), Mack Barton (ancestor); all deceased"
+       },
+       "id": "568",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1202.jpg"
+       },
+       "name": "Ronin",
+       "powerstats": {
+              "combat": "80",
+              "durability": "10",
+              "intelligence": "56",
+              "power": "13",
+              "speed": "21",
+              "strength": "12"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Outlaw adventurer, revolutionary; former professional super hero, fugitive, unnoficial S.H.I.E.L.D. operative, federal inmate, CTE security chief, ranch hand, archery tutor, carnival performer, roustabout, butcher shop worker"
+       }
+}

@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Black",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "28'9",
+                     "876 cm"
+              ],
+              "race": "Cosmic Entity",
+              "weight": [
+                     "36400 lb",
+                     "16 tons"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Maker",
+                     "Devourer of Worlds",
+                     "Eater-of-Worlds",
+                     "Ravager of Worlds"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #48 (March 1966)",
+              "full-name": "Galan",
+              "place-of-birth": "(Galan) Taa; (Galactus) the Cosmic Egg",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Heralds of Galactus; formerly God Squad",
+              "relatives": "Galan (\"father\"), Galacta (daughter)"
+       },
+       "id": "273",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/862.jpg"
+       },
+       "name": "Galactus",
+       "powerstats": {
+              "combat": "50",
+              "durability": "100",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "83",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "Worldship (aka Taa II); though he is generally mobile throughout the universe via his spherical starship in search of suitable planets to consume.",
+              "occupation": "Planet Devourer, Third Force of the Universe - balance between Eternity and Death, Nullifying Abraxas' Influence on the Multiverse, Third Face of the Living Tribunal - representing Equity"
+       }
+}

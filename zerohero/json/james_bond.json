@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "007",
+                     "Commander Bond"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Casino Royale, 1953 novel",
+              "full-name": "James Bond",
+              "place-of-birth": "-",
+              "publisher": "Titan Books"
+       },
+       "connections": {
+              "group-affiliation": "Secret Intelligence Service, MI6, C.I.A., Royal Navy",
+              "relatives": "Andrew Bond (father), Monique Delacroix (mother)"
+       },
+       "id": "352",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10404.jpg"
+       },
+       "name": "James Bond",
+       "powerstats": {
+              "combat": "90",
+              "durability": "35",
+              "intelligence": "88",
+              "power": "25",
+              "speed": "17",
+              "strength": "13"
+       },
+       "response": "success",
+       "work": {
+              "base": "London",
+              "occupation": "00 Agent"
+       }
+}

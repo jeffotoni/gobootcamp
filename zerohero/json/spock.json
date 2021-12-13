@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human-Vulcan",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Star Trek S01E01: The Man Trap",
+              "full-name": "S'chn T'gai Spock",
+              "place-of-birth": "-",
+              "publisher": "Star Trek"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "627",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10566.jpg"
+       },
+       "name": "Spock",
+       "powerstats": {
+              "combat": "40",
+              "durability": "40",
+              "intelligence": "81",
+              "power": "56",
+              "speed": "17",
+              "strength": "18"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

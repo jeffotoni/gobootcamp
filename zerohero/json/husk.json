@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "128 lb",
+                     "58 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Hayseed"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Rom Annual #3 (November, 1984)",
+              "full-name": "Paige Elisabeth Guthrie",
+              "place-of-birth": "Cumberland, Kentucky",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, X-Corp, Generation X",
+              "relatives": "Thomas Zebulon Guthrie (father,deceased),Lucinda Guthrie (mother),Samuel Zachery Guthrie (brother,Cannonball),Joshua 'Jay' Guthrie (brother,Icarus),Joella Guthrie (sister),Elizabeth Guthrie (sister),Melody Guthrie (sister),Jeb Guthrie (brother),Lewis Guth"
+       },
+       "id": "335",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/84.jpg"
+       },
+       "name": "Husk",
+       "powerstats": {
+              "combat": "64",
+              "durability": "78",
+              "intelligence": "63",
+              "power": "48",
+              "speed": "35",
+              "strength": "63"
+       },
+       "response": "success",
+       "work": {
+              "base": "Base of operations unknown; formerly Xavier Institute, Salem Center, Westchester County, New York",
+              "occupation": "Adventurer; formerly student, activist"
+       }
+}

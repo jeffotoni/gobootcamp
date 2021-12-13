@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Silk Sister",
+                     "Sara Lance"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Birds of Prey #1",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "711",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10542.jpg"
+       },
+       "name": "White Canary",
+       "powerstats": {
+              "combat": "90",
+              "durability": "15",
+              "intelligence": "63",
+              "power": "49",
+              "speed": "33",
+              "strength": "7"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

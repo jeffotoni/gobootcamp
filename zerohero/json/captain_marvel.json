@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Human-Kree",
+              "weight": [
+                     "165 lb",
+                     "74 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Ace",
+                     "Binary",
+                     "Lady Marvel",
+                     "Warbird",
+                     "others used during her espionage career"
+              ],
+              "alignment": "good",
+              "alter-egos": "Binary, Warbird",
+              "first-appearance": "Ms. Marvel #1",
+              "full-name": "Carol Danvers",
+              "place-of-birth": "Boston, Massachusetts",
+              "publisher": "Binary"
+       },
+       "connections": {
+              "group-affiliation": "currently Avengers, former companion to the X-Men (as Carol Danvers), former member of the Starjammers (as Binary), Former Avenger (as Ms. Marvel)",
+              "relatives": "Marie Danvers (mother), Joseph Danvers, Sr. (father), Joseph Danvers, Jr. (brother), Steve Danvers (brother, deceased), Marcus Immortus (Danvers) (\"son\", deceased)"
+       },
+       "id": "157",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/103.jpg"
+       },
+       "name": "Captain Marvel",
+       "powerstats": {
+              "combat": "90",
+              "durability": "95",
+              "intelligence": "84",
+              "power": "100",
+              "speed": "71",
+              "strength": "88"
+       },
+       "response": "success",
+       "work": {
+              "base": "Avengers Mansion",
+              "occupation": "Former National Aeronautics and Space Administration security Chief, former magazine editor, former freelance writer, former military intelligence officer."
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "-",
+              "hair-color": "Blond",
+              "height": [
+                     "5'9'",
+                     "175 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "150 lb",
+                     "68 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "New Mutants (Vol. 1) #13",
+              "full-name": "Douglas Aaron Ramsey",
+              "place-of-birth": "Place of birth unknown",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "New Mutants",
+              "relatives": "Phillip Ramsey (father), Sheila Ramsey (mother)"
+       },
+       "id": "197",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/168.jpg"
+       },
+       "name": "Cypher",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "44"
+       },
+       "response": "success",
+       "work": {
+              "base": "Professor Charles Xavier's School for Gifted Youngsters, Salem Center, Westchester County, New York",
+              "occupation": "Student, Adventurer"
+       }
+}

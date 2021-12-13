@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "181 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Formerly Samson Guthry",
+                     "Sam Guthrie",
+                     "Jet-Ass"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Graphic Novel #4 (1982)",
+              "full-name": "Samuel Zachery Guthrie",
+              "place-of-birth": "Cumberland County, Kentucky",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, formerly X.S.E., Mutant Liberation Front, X-Treme X-Men, X-Corporation, X-Force, New Mutants, Hellions, Hellfire Club",
+              "relatives": "Thomas Zebulon (father, deceased), Lucinda (mother), Lucas Bartholemew (uncle), Paige (Husk, sister), Joshua \"Jay\" (Icarus, brother, deceased), Joelle (sister), Elizabeth (sister), Melody (Aero, sister), Jebediah (brother), Lewis (brother), two other unnamed siblings, Ray Jr. (adopted brother)"
+       },
+       "id": "148",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/272.jpg"
+       },
+       "name": "Cannonball",
+       "powerstats": {
+              "combat": "56",
+              "durability": "99",
+              "intelligence": "50",
+              "power": "94",
+              "speed": "67",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, peacekeeper, former student, mercenary, miner"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(As Urich) Web of Spider-Man #125 (1995); (as Green Goblin) Green Goblin #1 (1995)",
+              "full-name": "Phillip Benjamin Urich",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Arnold Urich (father), Mindy Urich (mother), Kenneth Urich (brother), Ben Urich (uncle), Doris Urich (aunt)"
+       },
+       "id": "302",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/75.jpg"
+       },
+       "name": "Green Goblin IV",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "College student, former vigilante, intern at Daily Bugle"
+       }
+}

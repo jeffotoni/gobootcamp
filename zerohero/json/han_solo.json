@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "176 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Star Wars: Episode IV - A New Hope (1977)",
+              "full-name": "Han Solo",
+              "place-of-birth": "Corellia",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "307",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10456.jpg"
+       },
+       "name": "Han Solo",
+       "powerstats": {
+              "combat": "60",
+              "durability": "20",
+              "intelligence": "50",
+              "power": "43",
+              "speed": "17",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

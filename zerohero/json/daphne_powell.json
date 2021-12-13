@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Female",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "No Ordinary Family S01E01 (2010)",
+              "full-name": "Daphne Powell",
+              "place-of-birth": "-",
+              "publisher": "ABC Studios"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Jim Powell and Stephanie Powell (parents), JJ Powell (brother)"
+       },
+       "id": "200",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1356.jpg"
+       },
+       "name": "Daphne Powell",
+       "powerstats": {
+              "combat": "10",
+              "durability": "10",
+              "intelligence": "38",
+              "power": "56",
+              "speed": "8",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Student"
+       }
+}

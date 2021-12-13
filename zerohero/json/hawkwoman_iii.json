@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "145 lb",
+                     "65 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Shayera Thal",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "319",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1130.jpg"
+       },
+       "name": "Hawkwoman III",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "92"
+       },
+       "response": "success",
+       "work": {
+              "base": "Detroit; Thanagar",
+              "occupation": "Police Officer"
+       }
+}

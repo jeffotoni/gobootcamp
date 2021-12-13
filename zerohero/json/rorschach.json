@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "140 lb",
+                     "63 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Watchmen #1 (September, 1986)",
+              "full-name": "Walter Joseph Kovacs",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Crimebusters",
+              "relatives": "-"
+       },
+       "id": "569",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/771.jpg"
+       },
+       "name": "Rorschach",
+       "powerstats": {
+              "combat": "80",
+              "durability": "20",
+              "intelligence": "75",
+              "power": "23",
+              "speed": "29",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Vigilante, former garment worker"
+       }
+}

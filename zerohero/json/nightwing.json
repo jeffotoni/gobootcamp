@@ -1,0 +1,58 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Freddie Dinardo",
+                     "Freddy Loyd",
+                     "The Target",
+                     "Renegade",
+                     "The Worlds Greatest Acrobat",
+                     "The Aerial Avenger",
+                     "Pixie Boots",
+                     "The Boy / Teen Wonder",
+                     "The Worlds Greatest Detective",
+                     "The Caped Crusader"
+              ],
+              "alignment": "good",
+              "alter-egos": "Batman II, Robin",
+              "first-appearance": "as Dick Grayson and Robin) Detective Comics #38, (as Nightwing) Tales of the Teen Titans #44, (as Batman) Batman #512",
+              "full-name": "Dick Grayson",
+              "place-of-birth": "Gotham City",
+              "publisher": "Batman II"
+       },
+       "connections": {
+              "group-affiliation": "Batman Family and the JLA; formerly the Teen Titans, the New Titans, the Titans and the Outsiders",
+              "relatives": "John Grayson (father, deceased), Mary Grayson (mother, deceased), Bruce Wayne / Batman (adoptive father), Damian Wayne / Robin (foster brother), Jason Todd / Red Hood (adoptive brother), Tim Drake / Red Robin (adoptive brother), Cassandra Cain / Batgirl IV (adoptive sister)"
+       },
+       "id": "491",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/851.jpg"
+       },
+       "name": "Nightwing",
+       "powerstats": {
+              "combat": "100",
+              "durability": "28",
+              "intelligence": "88",
+              "power": "36",
+              "speed": "33",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "Wayne Tower, Gotham City; formerly the Batcave; formerly Bludhaven; formerly New York City",
+              "occupation": "Vigilante and detective, former police officer, former Circus Acrobat"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Jessica",
+                     "Gina"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Heroes S01E01 - Genesis",
+              "full-name": "Nicole Sanders",
+              "place-of-birth": "-",
+              "publisher": "NBC - Heroes"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "DL Hawkins (husband), Hal Sanders (father), Micah Sanders (son), Jessica Sanders (sister,deceased), Monica Dawson (cousin-in-law), Damon Dawson (cousin-in-law), Paulette Hawkins (mother-in-law)"
+       },
+       "id": "492",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/952.jpg"
+       },
+       "name": "Niki Sanders",
+       "powerstats": {
+              "combat": "56",
+              "durability": "28",
+              "intelligence": "63",
+              "power": "37",
+              "speed": "35",
+              "strength": "52"
+       },
+       "response": "success",
+       "work": {
+              "base": "Las Vegas, NV",
+              "occupation": "Former casino worker and online webcam operator; currently an agent of the Company"
+       }
+}

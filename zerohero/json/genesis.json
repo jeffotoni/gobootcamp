@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "191 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Tolliver"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "As Tolliver, mentioned) New Mutants #98 (1991), (as Tolliver, seen) X-Force #5 (1991), (as Genesis) Cable #18 (1994)",
+              "full-name": "Tyler Dayspring",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Dark Riders (leader), former servant of Stryfe, formerly New Canaanites, Clan Chosen",
+              "relatives": "Nathan Christopher Summers (Cable, adopted father), Aliya Jenskot (mother, deceased), Stryfe (cloned uncle, deceased), Rachel Summers (Marvel Girl, alternate timeline aunt), Scott Summers (Cyclops, grandfather), Madelyne Pryor-Summers (grandmother, deceased), Alexander Summers (Havok, great-uncle), Gabriel Summers (Vulcan, great-uncle), Christopher Summers (Corsair, great-grandfather), Katherine Anne Summers (great-grandmother, deceased), Philip Summers (great-great-grandfather), Deborah Summers (great-great-grandmother)"
+       },
+       "id": "279",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1055.jpg"
+       },
+       "name": "Genesis",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "68"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former would-be world conqueror, arms dealer, soldier, freedom fighter"
+       }
+}

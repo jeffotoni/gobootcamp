@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Cyborg",
+              "weight": [
+                     "128 lb",
+                     "58 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Ana Cortes"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Alpha Flight Vol. 1 #33 (1985)",
+              "full-name": "Yuriko Oyama",
+              "place-of-birth": "Osaka, Japan",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Ally of Reverend William Stryker, former employee of Sabretooth, formerly Reavers",
+              "relatives": "Kenji Oyama (Lord Dark Wind, father, deceased), two unnamed brothers (deceased)"
+       },
+       "id": "400",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/810.jpg"
+       },
+       "name": "Lady Deathstrike",
+       "powerstats": {
+              "combat": "90",
+              "durability": "85",
+              "intelligence": "63",
+              "power": "48",
+              "speed": "42",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

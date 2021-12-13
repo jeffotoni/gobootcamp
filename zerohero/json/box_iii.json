@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "-",
+              "hair-color": "Blond",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "245 lb",
+                     "110 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Box III",
+                     "Wanda"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "First appearance unknown",
+              "full-name": "Dr. Walter Langowski",
+              "place-of-birth": "British Columbia",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Alpha Flight",
+              "relatives": "No known relatives"
+       },
+       "id": "134",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/37.jpg"
+       },
+       "name": "Box III",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Base of operations unknown",
+              "occupation": "Physics professor, former NFL player"
+       }
+}

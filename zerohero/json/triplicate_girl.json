@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Purple",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "130 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Duo Damsel",
+                     "Una",
+                     "Triad"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Teen Titans/Legion Special #1",
+              "full-name": "Luornu Durgo",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Legion of Super-Heroes",
+              "relatives": "-"
+       },
+       "id": "676",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1185.jpg"
+       },
+       "name": "Triplicate Girl",
+       "powerstats": {
+              "combat": "42",
+              "durability": "42",
+              "intelligence": "63",
+              "power": "44",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Earth, 31st century",
+              "occupation": "-"
+       }
+}

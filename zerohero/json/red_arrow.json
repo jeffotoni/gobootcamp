@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "185 lb",
+                     "83 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Arsenal",
+                     "Speedy"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(as Speedy) More Fun Comics # 73(Nov. 1941); (as Arsenal) The New Titans # 99 (July 1993); (as Red Arrow) Justice League of America Vol. 2 # 7 (May 2007)",
+              "full-name": "Roy Harper",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Titans, Justice League of America, formerly Outsiders, Teen Titans, Checkmate, Central Bureau of Investigations",
+              "relatives": "Roy William Harper, Sr. (father, deceased); Brave Bow (adoptive father, deceased); Oliver \"Ollie\" Queen (Green Arrow - adoptive father); Jim Harper (Guardian- great-uncle); Lian Harper (daughter), Vandal Savage (ancestor)"
+       },
+       "id": "545",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1013.jpg"
+       },
+       "name": "Red Arrow",
+       "powerstats": {
+              "combat": "80",
+              "durability": "20",
+              "intelligence": "63",
+              "power": "23",
+              "speed": "25",
+              "strength": "16"
+       },
+       "response": "success",
+       "work": {
+              "base": "The Hall \u0026 JLA Watchtower; New York City; formerly Titans Tower, Station Markovia, and Gabriel's Horn",
+              "occupation": "Adventurer; intelligence agent; musician"
+       }
+}

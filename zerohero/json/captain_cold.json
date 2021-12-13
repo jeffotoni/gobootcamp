@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Citizen Cold",
+                     "Kid Kold",
+                     "Len Snart",
+                     "Leonard Snart",
+                     "Leonards Wynters",
+                     "The Man Who Mastered Absolute Zero"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Flash Vol 4 #6 (April, 2012)",
+              "full-name": "Leonard Snart",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League, Rogues; formerly Secret Society of Super-Villains, Injustice League",
+              "relatives": "Lisa Snart (sister)"
+       },
+       "id": "152",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/653.jpg"
+       },
+       "name": "Captain Cold",
+       "powerstats": {
+              "combat": "20",
+              "durability": "20",
+              "intelligence": "50",
+              "power": "28",
+              "speed": "17",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Professional Criminal"
+       }
+}

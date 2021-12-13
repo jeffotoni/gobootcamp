@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Human-Vuldarian",
+              "weight": [
+                     "210 lb",
+                     "95 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Green Lantern",
+                     "Red Lantern",
+                     "Warrior"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Green Lantern Vol 2 #59",
+              "full-name": "Guy Gardner",
+              "place-of-birth": "Baltimore, Maryland",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Green Lantern Corps, Formerly Justice League of America",
+              "relatives": "-"
+       },
+       "id": "305",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/700.jpg"
+       },
+       "name": "Guy Gardner",
+       "powerstats": {
+              "combat": "64",
+              "durability": "64",
+              "intelligence": "38",
+              "power": "100",
+              "speed": "53",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "Formerly New York City; currently Oa",
+              "occupation": "Former High School gym teacher; former bar owner; currently Honor guard of the Green Lantern Corps"
+       }
+}

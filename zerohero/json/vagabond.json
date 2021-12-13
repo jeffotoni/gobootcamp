@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Strawberry Blond",
+              "height": [
+                     "5'6'",
+                     "168 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(as Lyons) CAPTAIN AMERICA #325, (as Vagabond) CAPTAIN AMERICA #342",
+              "full-name": "Priscilla Lyons",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Former partner of Nomad",
+              "relatives": "Phil (brother)"
+       },
+       "id": "682",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/145.jpg"
+       },
+       "name": "Vagabond",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile",
+              "occupation": "Adventurer"
+       }
+}

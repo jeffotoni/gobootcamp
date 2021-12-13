@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Bat-Devil; Bat-Ghost"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman #672 (February, 2008)",
+              "full-name": "Michael Washington Lane",
+              "place-of-birth": "Gotham City",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Order of St. Dumas; formerly Gotham City Police Department; Three Ghosts of Batman",
+              "relatives": "Mitchell Lane (father; deceased), Barbara Lane (mother; deceased), Marion Lane (brother; deceased), Gwendolyn Lane (sister; deceased), Chante Coles (wife; deceased), Henry Mitchell Lane (son; deceased), Jenny Lane (Sister-in-law)"
+       },
+       "id": "58",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1532.jpg"
+       },
+       "name": "Azrael",
+       "powerstats": {
+              "combat": "80",
+              "durability": "20",
+              "intelligence": "63",
+              "power": "35",
+              "speed": "17",
+              "strength": "18"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former Police Officer, vigilante"
+       }
+}

@@ -1,49 +1,49 @@
 {
-   "response":"success",
-   "id":"44",
-   "name":"Ariel",
-   "powerstats":{
-      "intelligence":"50",
-      "strength":"10",
-      "speed":"12",
-      "durability":"14",
-      "power":"94",
-      "combat":"28"
-   },
-   "biography":{
-      "full-name":"Ariel",
-      "alter-egos":"No alter egos found.",
-      "aliases":[
-         "-"
-      ],
-      "place-of-birth":"-",
-      "first-appearance":"Fallen Angels #1 (1987)",
-      "publisher":"Marvel Comics",
-      "alignment":"good"
-   },
-   "appearance":{
-      "gender":"Female",
-      "race":"null",
-      "height":[
-         "5'5",
-         "165 cm"
-      ],
-      "weight":[
-         "130 lb",
-         "59 kg"
-      ],
-      "eye-color":"Purple",
-      "hair-color":"Pink"
-   },
-   "work":{
-      "occupation":"Leader, refugee alien; former alien mutant-hunter and hedonist",
-      "base":"-"
-   },
-   "connections":{
-      "group-affiliation":"X-Men, Formerly Fallen Angels",
-      "relatives":"-"
-   },
-   "image":{
-      "url":"https://www.superherodb.com/pictures2/portraits/10/100/1348.jpg"
-   }
+       "appearance": {
+              "eye-color": "Purple",
+              "gender": "Female",
+              "hair-color": "Pink",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "130 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fallen Angels #1 (1987)",
+              "full-name": "Ariel",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, Formerly Fallen Angels",
+              "relatives": "-"
+       },
+       "id": "44",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1348.jpg"
+       },
+       "name": "Ariel",
+       "powerstats": {
+              "combat": "28",
+              "durability": "14",
+              "intelligence": "50",
+              "power": "94",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Leader, refugee alien; former alien mutant-hunter and hedonist"
+       }
 }

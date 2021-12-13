@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "7'6",
+                     "229 cm"
+              ],
+              "race": "Czarnian",
+              "weight": [
+                     "640 lb",
+                     "288 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Main Man",
+                     "The 'Bo",
+                     "Master Frag",
+                     "Mister Machete",
+                     "Popebo; He-Who-Devours-Your-Entrails-And-Thoroughly-Enjoys-It"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Omega Men # 3",
+              "full-name": "Lobo",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly LEGION, Young Justice; First Celestial Church of the Triple Fish-God",
+              "relatives": "Slobo (clone)"
+       },
+       "id": "413",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1127.jpg"
+       },
+       "name": "Lobo",
+       "powerstats": {
+              "combat": "85",
+              "durability": "100",
+              "intelligence": "94",
+              "power": "100",
+              "speed": "54",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile throughout several galaxies",
+              "occupation": "Assassin, Bounty Hunter, Priest"
+       }
+}
