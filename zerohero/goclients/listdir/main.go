@@ -127,19 +127,19 @@ func InsertOnePkg(file string, dat []byte) {
         return
     }
 
-    // var c = mgo.Config{
-    //     Srv:     "mongodb+srv",
-    //     DB:      "zerohero",
-    //     Host:    "cluster0.nefud.mongodb.net",
-    //     User:    "zerohero",
-    //     Pass:    "blhyoWnZdbRex2x0",
-    //     Options: "retryWrites=true&w=majority",
-    // }
+    var c = mgo.Config{
+        Srv:     os.Getevn("MGO_SRV"),
+        DB:      os.Getevn("MGO_DB"),
+        Host:    os.Getevn("MGO_HOST"),
+        User:    os.Getevn("MGO_USER"),
+        Pass:    os.Getevn("MGO_PASS"),
+        Options: os.Getevn("MGO_OPTS"),
+    }
 
-    // c.Connect()
-    // err = zh.InsertOne("heros")
-    // if err != nil {
-    //     log.Println(err)
-    //     return
-    // }
+    c.Connect()
+    err = zh.InsertOne("heros")
+    if err != nil {
+        log.Println(err)
+        return
+    }
 }
