@@ -1,4 +1,4 @@
-package mongo
+package main
 
 import (
 	"context"
@@ -134,7 +134,6 @@ func New(srv, host, db, user, pass, options string) Config {
 func (c Config) Connect() (*mongo.Collection, context.Context) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*8))
 	defer cancel()
-
 	once.Do(func() {
 		if session == nil {
 			//if session == nil {
@@ -182,7 +181,7 @@ func (zh ZeroHero) InsertOne(c Config) (err error) {
 }
 
 // FindOne responsavel por buscar nosso do heros
-func FindOne(name, fatia string, collname string) (mzh interface{}, err error) {
+func FindOne(name, fatia string, c Config) (mzh interface{}, err error) {
 	collectionx, _ := c.Connect()
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*10))
 	defer cancel()
@@ -219,7 +218,7 @@ func FindOne(name, fatia string, collname string) (mzh interface{}, err error) {
 }
 
 // DeleteOne responsavel por deletar nosso do heros
-func DeleteOne(name string, collname string) (err error) {
+func DeleteOne(name string, c Config) (err error) {
 	collectionx, _ := c.Connect()
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*10))
 	defer cancel()
@@ -238,7 +237,7 @@ func DeleteOne(name string, collname string) (err error) {
 }
 
 // UpdateOne responsavel por atualizar nosso do heros
-func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
+func (zh ZeroHero) UpdateOne(name string, c Config) (err error) {
 	collectionx, _ := c.Connect()
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*10))
 	defer cancel()
