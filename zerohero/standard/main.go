@@ -176,7 +176,8 @@ func main() {
 		w.Write([]byte("pong😍"))
 	})
 
-	mux.HandleFunc("/", Use(Service, Logger()))
+	//mux.HandleFunc("/", Use(Service, Logger()))
+  mux.HandleFunc("/", Service)
 
 	s := &http.Server{
 		Addr:    "0.0.0.0:8080",

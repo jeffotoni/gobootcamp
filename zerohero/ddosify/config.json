@@ -1,0 +1,38 @@
+{
+    "request_count": 5000,
+    "load_type": "linear",
+    "duration": 20,
+    "proxy": "",
+    "output": "stdout",
+    "steps": [{
+            "id": 1,
+            "url": "http://localhost:8080/api",
+            "protocol": "http",
+            "method": "POST",
+            "headers": {
+                "ContenType": "application/json"
+            },
+            "payload_file": "json/loki.json",
+            "timeout": 3,
+            "auth": {
+                "username": "",
+                "password": ""
+            },
+            "others": {
+                "keep-alive": true,
+                "disableCompression": false,
+                "h2": true,
+                "disable-redirect": true
+            }
+        },
+        {
+            "id": 2,
+            "url": "http://localhost:8080/api/loki",
+            "method": "GET",
+            "headers": {
+                "ContenType": "application/json"
+            },
+            "timeout": 2
+        }
+    ]
+}
