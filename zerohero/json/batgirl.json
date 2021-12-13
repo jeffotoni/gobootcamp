@@ -1,50 +1,50 @@
 {
-  "response": "success",
-  "id": "63",
-  "name": "Batgirl",
-  "powerstats": {
-    "intelligence": "88",
-    "strength": "11",
-    "speed": "33",
-    "durability": "40",
-    "power": "34",
-    "combat": "90"
-  },
-  "biography": {
-    "full-name": "Barbara Gordon",
-    "alter-egos": "Oracle",
-    "aliases": [
-      "Oracle",
-      "Bluebelle"
-    ],
-    "place-of-birth": "-",
-    "first-appearance": "Detective Comics #359",
-    "publisher": "Oracle",
-    "alignment": "good"
-  },
-  "appearance": {
-    "gender": "Female",
-    "race": "Human",
-    "height": [
-      "5'7",
-      "170 cm"
-    ],
-    "weight": [
-      "126 lb",
-      "57 kg"
-    ],
-    "eye-color": "Green",
-    "hair-color": "Red"
-  },
-  "work": {
-    "occupation": "-",
-    "base": "Gotham City, formerly Metropolis, Platinum Flats"
-  },
-  "connections": {
-    "group-affiliation": "-",
-    "relatives": "James Gordon (father) � Barbara Eileen (mother) � James Gordon, Jr. (brother)"
-  },
-  "image": {
-    "url": "https://www.superherodb.com/pictures2/portraits/10/100/1111.jpg"
-  }
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Female",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Bette Kane",
+                     "Bat-Girl"
+              ],
+              "alignment": "good",
+              "alter-egos": "Hawkfire",
+              "first-appearance": "Batman #139",
+              "full-name": "Mary Elizabeth Kane",
+              "place-of-birth": "-",
+              "publisher": "Hawkfire"
+       },
+       "connections": {
+              "group-affiliation": "Former associated partner of Batman and Robin of Earth-One; Partner of Katherine Kane",
+              "relatives": "Katherine Kane (Batwoman I,  Aunt)"
+       },
+       "id": "64",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/638.jpg"
+       },
+       "name": "Batgirl",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "27"
+       },
+       "response": "success",
+       "work": {
+              "base": "Gotham City",
+              "occupation": "Crime-fighter"
+       }
 }

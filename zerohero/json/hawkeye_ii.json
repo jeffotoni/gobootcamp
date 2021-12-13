@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "126 lb",
+                     "57 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Kate Bishop"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Young Avengers #1 (April, 2005)",
+              "full-name": "Katherine Elizabeth Bishop",
+              "place-of-birth": "New York City, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Young Avengers, partner of Hawkeye (Clint Barton); formerly Secret Avengers",
+              "relatives": "Derek Bishop (father); Eleanor Bishop (mother, deceased); Susan Bishop (sister);"
+       },
+       "id": "314",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10043.jpg"
+       },
+       "name": "Hawkeye II",
+       "powerstats": {
+              "combat": "50",
+              "durability": "10",
+              "intelligence": "50",
+              "power": "24",
+              "speed": "8",
+              "strength": "6"
+       },
+       "response": "success",
+       "work": {
+              "base": "Bishop Publishing, New York City, New York",
+              "occupation": "Student; Adventurer; Fugitive"
+       }
+}

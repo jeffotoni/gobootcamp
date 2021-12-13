@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human / Radiation",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Mr Fantastic"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "FANTASTIC FOUR #1",
+              "full-name": "Reed Richards",
+              "place-of-birth": "Central City, California",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Fantastic Four",
+              "relatives": "Nathaniai (father), Evelyn (mother, deceased), Susan Storm - Invisible Woman (wife), Franklin (son), Johnny Storm - Human Torch (brother-inlaw), Cassandra (stepmother, deceased), Immortus (father's descendant, see Immortus, Kang, Rama-Tut)."
+       },
+       "id": "456",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/408.jpg"
+       },
+       "name": "Mister Fantastic",
+       "powerstats": {
+              "combat": "64",
+              "durability": "70",
+              "intelligence": "100",
+              "power": "33",
+              "speed": "18",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City",
+              "occupation": "Scientist, adventurer"
+       }
+}

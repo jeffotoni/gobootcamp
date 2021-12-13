@@ -1,0 +1,56 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "White",
+              "height": [
+                     "6'8",
+                     "203 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "350 lb",
+                     "158 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Chosen One",
+                     "Soldier X",
+                     "Nathan Dayspring",
+                     "Askani'son",
+                     "Nathan Dayspring Summers",
+                     "Nathan Winters",
+                     "The Traveller",
+                     "The Saviour"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "New Mutants #86 (as Cable)",
+              "full-name": "Nathan Summers",
+              "place-of-birth": "Unrevealed location in the 20th Century United States",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Force, (former) X-Men, Clan Askani, Clan Chosen, Six Pack (formerly Wild Pack II)",
+              "relatives": "Scott Summers (Cyclops, father), Madelyne Pryor-Summers (Goblin Queen, mother, deceased), Jean Grey (Phoenix, stepmother), Alexander Summers (Havok, uncle), Christopher Summers (Corsair, paternal grandfather), Katherine Anne Summers (paternal grandmother, deceased), Philip Summers (great-grandfather), Deborah Summers (great-grandmother), Jenskot (Aliya, wife, deceased), Tyler (Genesis, son, deceased), Stryfe (clone, deceased), Gabriel Summers (Vulcan, uncle)"
+       },
+       "id": "145",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/40.jpg"
+       },
+       "name": "Cable",
+       "powerstats": {
+              "combat": "80",
+              "durability": "56",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "23",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "The Xavier Institute, Salem Center, Westchester County, New York",
+              "occupation": "(current) Adventurer, (former) freedom fighter, United States government agent, mercenary, combat instructor for X-Force"
+       }
+}

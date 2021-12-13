@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Yellow",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "7'0",
+                     "213 cm"
+              ],
+              "race": "Human / Radiation",
+              "weight": [
+                     "1400 lb",
+                     "630 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Rulk",
+                     "Hulk",
+                     "Thunderbolt",
+                     "General Ross"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Incredible Hulk #1 (May, 1962)(as General Ross), Hulk Vol 2 #1 (March, 2008) (as Red Hulk)",
+              "full-name": "Thaddeus E. Ross",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Code Red, AIM; Formerly Offenders",
+              "relatives": "-"
+       },
+       "id": "547",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1342.jpg"
+       },
+       "name": "Red Hulk",
+       "powerstats": {
+              "combat": "75",
+              "durability": "85",
+              "intelligence": "50",
+              "power": "82",
+              "speed": "47",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Lieutenant general in US Air Force"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Uncanny X-Men #107",
+              "full-name": "Christopher Summers",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Starjammers (leader), formerly N.A.S.A, U.S.A.F.",
+              "relatives": "Philip Summers (father), Deborah Summers (mother), Katherine Anne Summers (wife, deceased), Hepzibah (mate), Scott Summers (Cyclops, son), Alexander Summers (Havok, son), Gabriel Summers (Vulcan, son), Madelyne Pryor-Summers (daughter-in-law, deceased), Jean Grey-Summers (Phoenix, daughter-in-law), Nathan Christopher Summers (Cable, grandson), Stryfe (clone grandson, deceased), Tyler Dayspring (Genesis, great-grandson, deceased), Rachel Grey (Marvel Girl, alternate timeline granddaughter)"
+       },
+       "id": "187",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/49.jpg"
+       },
+       "name": "Corsair",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "16"
+       },
+       "response": "success",
+       "work": {
+              "base": "The Starjammer, Mobile",
+              "occupation": "Pirate, former pilot"
+       }
+}

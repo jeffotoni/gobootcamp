@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "135 lb",
+                     "61 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "She-Thing"
+              ],
+              "alignment": "good",
+              "alter-egos": "She-Thing",
+              "first-appearance": "-",
+              "full-name": "Sharon Ventura",
+              "place-of-birth": "Pullman, Washington",
+              "publisher": "She-Thing"
+       },
+       "connections": {
+              "group-affiliation": "Former member of the Fantastic Four, Frightful Four, Unlimited Class Wrestling Federation, Thunderiders",
+              "relatives": "-"
+       },
+       "id": "477",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/897.jpg"
+       },
+       "name": "Ms Marvel II",
+       "powerstats": {
+              "combat": "56",
+              "durability": "84",
+              "intelligence": "38",
+              "power": "11",
+              "speed": "23",
+              "strength": "63"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Wanderer, former adventurer, wrestler, stunt woman, scuba diver, motorcycle performer"
+       }
+}

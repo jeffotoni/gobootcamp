@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "Luke Cage",
+              "first-appearance": "-",
+              "full-name": "Luke Cage",
+              "place-of-birth": "-",
+              "publisher": "Luke Cage"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "525",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1016.jpg"
+       },
+       "name": "Power Man",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "82"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

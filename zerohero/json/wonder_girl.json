@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "Demi-God",
+              "weight": [
+                     "114 lb",
+                     "51 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Cassandra Sandsmark",
+                     "Cassie",
+                     "Helen Troy",
+                     "Wonder Woman",
+                     "Cassie Sandsmark"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Wonder Woman (vol. 2) #105 (January 1996)",
+              "full-name": "Cassandra Elizabeth Sandsmark",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Teen Titans, Young Justice, Themyscira",
+              "relatives": "-"
+       },
+       "id": "718",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1497.jpg"
+       },
+       "name": "Wonder Girl",
+       "powerstats": {
+              "combat": "60",
+              "durability": "80",
+              "intelligence": "75",
+              "power": "39",
+              "speed": "25",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

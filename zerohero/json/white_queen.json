@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'10'",
+                     "178 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "144 lb",
+                     "65 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "White Queen"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "UNCANNY X-MEN #129",
+              "full-name": "Emma Grace Frost",
+              "place-of-birth": "Boston, Massachusetts",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men formerly Generation X headmistress, Hellions controller, Hellfire Club Inner Circle",
+              "relatives": "Winston (father), Hazel (mother), Cordelia (sister), Adrienne (sister, deceased), Christian (brother), Steven (brother-in-law, deceased), Jocasta (cousin)"
+       },
+       "id": "712",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/157.jpg"
+       },
+       "name": "White Queen",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier Institute, Salem Center, Westchester, New York; formerly Massachusetts Academy",
+              "occupation": "Co-Headmistress of Xavier Institute, Chairperson of the Board and Chief Executive of Frost International"
+       }
+}

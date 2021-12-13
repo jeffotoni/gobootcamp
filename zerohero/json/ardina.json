@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Female",
+              "hair-color": "Orange",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Alien",
+              "weight": [
+                     "218 lb",
+                     "98 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Order #4",
+              "full-name": "Ardina",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Norrin Radd (Silver Surfer, clonal source), Clea (creator)"
+       },
+       "id": "42",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10132.jpg"
+       },
+       "name": "Ardina",
+       "powerstats": {
+              "combat": "25",
+              "durability": "80",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "100",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Amber",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "380 lb",
+                     "171 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Slasher",
+                     "El Tigre"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Iron Fist #14 (August, 1977)",
+              "full-name": "Victor Creed",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Weapon X, Marauders, Brotherhood of Evil Mutants",
+              "relatives": "Grayden Creed (son; deceased)"
+       },
+       "id": "570",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/17.jpg"
+       },
+       "name": "Sabretooth",
+       "powerstats": {
+              "combat": "100",
+              "durability": "90",
+              "intelligence": "56",
+              "power": "50",
+              "speed": "38",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "mobile",
+              "occupation": "mercenary, professional criminal, assassin, serial killer"
+       }
+}

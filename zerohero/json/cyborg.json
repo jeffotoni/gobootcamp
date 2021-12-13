@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "Cyborg",
+              "weight": [
+                     "385 lb",
+                     "173 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Cyberion Technis",
+                     "Omegadrome",
+                     "Planet Cyberion"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "DC Comics Presents #26 (October, 1980)",
+              "full-name": "Victor Stone",
+              "place-of-birth": "New York City, New York",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League; formerly Teen Titans, Titans, Titans East, New Teen Titans",
+              "relatives": "Silas Stone (father), Elinore Stone (mother), Tucker Stone (grandfather), Maude Stone (grandmother)"
+       },
+       "id": "194",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1204.jpg"
+       },
+       "name": "Cyborg",
+       "powerstats": {
+              "combat": "64",
+              "durability": "85",
+              "intelligence": "75",
+              "power": "71",
+              "speed": "42",
+              "strength": "53"
+       },
+       "response": "success",
+       "work": {
+              "base": "San Francisco",
+              "occupation": "Adventurer, Teen Titan"
+       }
+}

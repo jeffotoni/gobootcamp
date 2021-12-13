@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "135 lb",
+                     "61 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Chay-Ara; Sheila Carr; Lady Celia Penbrook",
+                     "Kate Manser; Shiera Sanders"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "JSA Secret Files #1 (August 1999)",
+              "full-name": "Kendra Saunders",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League of America, formerly a member of the JSA, Birds of Prey",
+              "relatives": "Michael Saunders (father, deceased); Trina Saunders (mother, deceased); Cyril \"Speed\" Saunders (grandfather); Mia Saunders (daughter); Shiera Hall (Hawkgirl, great-aunt, deceased); Carter Hall (Hawkman, great-uncle); Hector Hall (Dr. Fate, 2nd cousin); Northwind (cousin through adoption); Hippolyta Hall (Fury, cousin through marriage); Sandman (Daniel Hall, 3rd cousin), Death, Destiny, Destruction, Delirium, Desire (3rd cousins)"
+       },
+       "id": "315",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/703.jpg"
+       },
+       "name": "Hawkgirl",
+       "powerstats": {
+              "combat": "72",
+              "durability": "99",
+              "intelligence": "50",
+              "power": "96",
+              "speed": "53",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "St. Roch, Louisiana, JLA Watchtower; formerly Manhattan, New York (as a member of the JSA)",
+              "occupation": "Adventurer, Film School Student, Temp Curator of the Stonechat Museum"
+       }
+}

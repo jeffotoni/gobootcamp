@@ -1,0 +1,58 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Dom",
+                     "Samantha Wu",
+                     "Tamara Winter",
+                     "Elena Vladescu",
+                     "Jessica Marie Costello",
+                     "Luisa Mendoza",
+                     "Beatrice",
+                     "Christina Elizabeth Alioso",
+                     "Priscilla Sutherland",
+                     "Hope Eldridge"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Force #8 (March, 1992)",
+              "full-name": "Neena Thurman",
+              "place-of-birth": "Project: Armageddon base, Everglades, Florida",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men; formerly X-Force; 198; X-Corporation; The Underground; X-Force; Six Pack",
+              "relatives": "Beatrice (mother), Lazarus (brother), Milo Thurman (husband, deceased)"
+       },
+       "id": "227",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/902.jpg"
+       },
+       "name": "Domino",
+       "powerstats": {
+              "combat": "74",
+              "durability": "28",
+              "intelligence": "63",
+              "power": "49",
+              "speed": "27",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

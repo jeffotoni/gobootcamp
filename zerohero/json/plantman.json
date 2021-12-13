@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Grey",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "193 lb",
+                     "87 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Blackheath"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Strange Tales #113 (October, 1963)",
+              "full-name": "Samuel Smithers",
+              "place-of-birth": "London, England",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Thunderbolts (as Blackheath), Crime Wave, Defenders (Villains) , New Enforcers, former associate of the Maggia under Count Nefaria, ally of Wizard.",
+              "relatives": "-"
+       },
+       "id": "518",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10487.jpg"
+       },
+       "name": "Plantman",
+       "powerstats": {
+              "combat": "25",
+              "durability": "55",
+              "intelligence": "63",
+              "power": "61",
+              "speed": "25",
+              "strength": "60"
+       },
+       "response": "success",
+       "work": {
+              "base": "A submarine somewhere in the Atlantic Ocean, formerly London, United Kingdom",
+              "occupation": "Professional Criminal, formerly Gardner"
+       }
+}

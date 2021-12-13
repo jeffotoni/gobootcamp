@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "1000",
+                     "304.8 meters"
+              ],
+              "race": "Frost Giant",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Aurgelmir"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "JOURNEY INTO MYSTERY #97",
+              "full-name": "Ymir",
+              "place-of-birth": "Niffleheim",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Utgard-Loki, Loki, and the race of Frost Giants (descendants)"
+       },
+       "id": "728",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/179.jpg"
+       },
+       "name": "Ymir",
+       "powerstats": {
+              "combat": "28",
+              "durability": "100",
+              "intelligence": "50",
+              "power": "98",
+              "speed": "27",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "Niffleheim",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "2'4",
+                     "71 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "30 lb",
+                     "14 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Incredibles (Movie, 2004)",
+              "full-name": "Jack-Jack Parr",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Incredible Family (genetic member), National Supers Agency (ties), Edna Mode (receives costumes and gadgets from her), Frozone (long-time friend)",
+              "relatives": "Robert Parr(Mr Incredible, father), Helen Parr (Elastigirl, mother), Violet Parr(Violet, sister), Dashiell Parr (Dash, brother)"
+       },
+       "id": "351",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/871.jpg"
+       },
+       "name": "Jack-Jack",
+       "powerstats": {
+              "combat": "6",
+              "durability": "80",
+              "intelligence": "6",
+              "power": "100",
+              "speed": "67",
+              "strength": "34"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

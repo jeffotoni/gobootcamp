@@ -1,0 +1,57 @@
+{
+       "appearance": {
+              "eye-color": "Black",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "Symbiote",
+              "weight": [
+                     "260 lb",
+                     "117 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Eddie",
+                     "Sister Edwina",
+                     "\"Ed\"",
+                     "Edwin Brock",
+                     "Venom",
+                     "Lethal Protector",
+                     "998th",
+                     "Anti-Venom",
+                     "White Venom"
+              ],
+              "alignment": "good",
+              "alter-egos": "Anti-Venom, Venom",
+              "first-appearance": "Venom Vol 2 #17",
+              "full-name": "Eddie Brock",
+              "place-of-birth": "San Francisco, California",
+              "publisher": "Anti-Venom"
+       },
+       "connections": {
+              "group-affiliation": "Formerly; temporary partner of Agent Venom, Savage Six, Sinister Six, Revengers, former partner of Vengeance, Spider-Man, Scarlet Spider. Volunteer at F.E.A.S.T.",
+              "relatives": "Carl Brock (father, estranged), Janine Brock (mother, deceased), Mary Brock (sister), Ann Weying (ex-wife, deceased), Symbiotes' relatives: Anti-Venom Symbiote (former symbiote, uncle and former brother, deceased), Venom Symbiote (former symbiote, grandfather, former brother), Agony, Phage, Riot, Lasher (uncles, former sons), Scorn (sister, former niece), Carnage (father, former son), Scream (aunt, former daughter, deceased), Hybrid (uncle, former son, deceased)"
+       },
+       "id": "672",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10494.jpg"
+       },
+       "name": "Toxin",
+       "powerstats": {
+              "combat": "70",
+              "durability": "85",
+              "intelligence": "75",
+              "power": "97",
+              "speed": "42",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York, New York",
+              "occupation": "Vigilante; former symbiote hunter, shelter attendant, government operative, journalist for the Daily Globe"
+       }
+}

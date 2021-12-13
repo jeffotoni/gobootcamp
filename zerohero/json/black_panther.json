@@ -1,0 +1,55 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Mr. Okonkwo",
+                     "The Man Without Fear",
+                     "Luke Charles",
+                     "Black Leopard",
+                     "the Client",
+                     "Coal Tiger",
+                     "has impersonated Daredevil and others on occasion"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four Vol. 1 #52 (1966)",
+              "full-name": "T'Challa",
+              "place-of-birth": "Wakanda, Africa",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Fantastic Four, Secret Avengers, Avengers, Pendragons, Queen's Vengeance, former Fantastic Force financier",
+              "relatives": "Bashenga (paternal ancestor, deceased), Azzuri the Wise (paternal grandfather, deceased), Nanali (paternal grandmother, deceased), Chanda (paternal grandfather, presumably deceased), T�Chaka (father, deceased), S'Yan (uncle, deceased), N�Yami (mother, deceased), Ramonda (stepmother), Hunter (adopted brother), Jakarra (half-brother), Shuri (sister), Ororo Munroe (wife), Joshua Itobo, Ishanta, Zuni, M'Koni, T'Shan (cousins), Wheeler (cousin by marriage, deceased), Billy Wheeler (1st cousin once removed)"
+       },
+       "id": "106",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/247.jpg"
+       },
+       "name": "Black Panther",
+       "powerstats": {
+              "combat": "100",
+              "durability": "60",
+              "intelligence": "88",
+              "power": "41",
+              "speed": "30",
+              "strength": "16"
+       },
+       "response": "success",
+       "work": {
+              "base": "Wakanda, Mobile",
+              "occupation": "King and Chieftain of Wakanda, scientist; former school teacher"
+       }
+}

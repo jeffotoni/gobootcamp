@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "God / Eternal",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Green Man",
+                     "Swampy",
+                     "the Weed",
+                     "Le Bon Gumbo",
+                     "Smalsh-Yegger (on Rann)"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Swamp Thing #1 (November, 1972)",
+              "full-name": "Alec Holland",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "formerly (Parliament of Trees; Parliament of Stones, Parliament of Flames, Parliament of Waves, and Parliament of Vapors), The Parliament of Worlds",
+              "relatives": "Larry Holland (father, deceased); Alice Holland (mother, deceased); Edward Holland (brother); Linda Holland (first wife, deceased); Abigail Holland (second wife); Tef� Holland (daughter); Gregori Arcane (father-in-law, deceased)"
+       },
+       "id": "645",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/792.jpg"
+       },
+       "name": "Swamp Thing",
+       "powerstats": {
+              "combat": "55",
+              "durability": "100",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "25",
+              "strength": "95"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Planet Elemental, former Biochemist"
+       }
+}

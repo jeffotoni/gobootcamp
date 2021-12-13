@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "156 lb",
+                     "70 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "West Coast Avengers Vol 2 #46",
+              "full-name": "Craig Hollis",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "475",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10794.jpg"
+       },
+       "name": "Mr Immortal",
+       "powerstats": {
+              "combat": "30",
+              "durability": "100",
+              "intelligence": "50",
+              "power": "69",
+              "speed": "8",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

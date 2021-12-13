@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'11'",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Ms. Marvel",
+                     "Binary"
+              ],
+              "alignment": "good",
+              "alter-egos": "Binary, Captain Marvel",
+              "first-appearance": "(as Carol Danvers) MARVEL SUPER HEROES #13, (as Ms. Marvel) MS. MARVEL #1, (as Binary) X-MEN # 164, AVENGERS Vol. 3, # 4",
+              "full-name": "Carol Danvers",
+              "place-of-birth": "Boston, Massachusetts",
+              "publisher": "Binary"
+       },
+       "connections": {
+              "group-affiliation": "currently Avengers, former companion to the X-Men (as Carol Danvers), former member of the Starjammers (as Binary), Former Avenger (as Ms. Marvel)",
+              "relatives": "Joseph (father), Marie (mother), Steve (brother, deceased),"
+       },
+       "id": "704",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/153.jpg"
+       },
+       "name": "Warbird",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Avengers Mansion",
+              "occupation": "Former National Aeronautics and Space Administration security Chief, former magazine editor, former freelance writer, former military intelligence officer."
+       }
+}

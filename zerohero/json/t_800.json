@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Cyborg",
+              "weight": [
+                     "390 lb",
+                     "176 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Terminator"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Terminator (1984)",
+              "full-name": "Cyberdyne Systems Series 800 Terminator Model 101",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Skynet",
+              "relatives": "-"
+       },
+       "id": "650",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10409.jpg"
+       },
+       "name": "T-800",
+       "powerstats": {
+              "combat": "65",
+              "durability": "60",
+              "intelligence": "75",
+              "power": "73",
+              "speed": "17",
+              "strength": "34"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Assassin"
+       }
+}

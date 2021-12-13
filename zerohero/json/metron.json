@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "New Gods vol. 1 #1 (February-March, 1971)",
+              "full-name": "Metron",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "New Gods",
+              "relatives": "-"
+       },
+       "id": "448",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/841.jpg"
+       },
+       "name": "Metron",
+       "powerstats": {
+              "combat": "28",
+              "durability": "56",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "47",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Supertown, New Genesis",
+              "occupation": "Scientist, seeker of knowledge"
+       }
+}

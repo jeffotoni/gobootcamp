@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "110 lb",
+                     "50 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Anodyne",
+                     "Maddie",
+                     "Lyne",
+                     "Red",
+                     "Madelyne Pryor-Summers"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Uncanny X-Men #168",
+              "full-name": "Madelyne Jennifer Pryor",
+              "place-of-birth": "Created in Sinister's Labs, Nebraska",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Former ally of X-Men, partner of N'Astirh",
+              "relatives": "Mister Sinister (creator), Jean Grey (Phoenix, genetic template), Scott Summers (Cyclops, husband), Nathan Christopher Summers (Cable, son), Christopher Summers (Corsair, father-in-law), Alex Summers (Havok, brother-in-law)"
+       },
+       "id": "286",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1054.jpg"
+       },
+       "name": "Goblin Queen",
+       "powerstats": {
+              "combat": "56",
+              "durability": "28",
+              "intelligence": "75",
+              "power": "65",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile; formerly Anchorage, Alaska; Reaver Base, Australian Outback, Australia; Empire State Building, New York, New York",
+              "occupation": "-"
+       }
+}

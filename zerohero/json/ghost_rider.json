@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Demon",
+              "weight": [
+                     "220 lb",
+                     "99 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Spotlight #5 (August, 1972)",
+              "full-name": "Johnny Blaze",
+              "place-of-birth": "Waukegan, Illinois",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Quentin Carnival Formerly Midnight Sons, Legion of Monsters, The Champions",
+              "relatives": "Barton (father, deceased), Clara (mother, deceased), Craig \"Crash\" Simpson (stepfather, deceased), Mona Simpson (stepmother, deceased), Roxanne Simpson (wife)"
+       },
+       "id": "280",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/67.jpg"
+       },
+       "name": "Ghost Rider",
+       "powerstats": {
+              "combat": "60",
+              "durability": "100",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "25",
+              "strength": "55"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile, Quentin Carnival",
+              "occupation": "Former stunt motorcyclist"
+       }
+}

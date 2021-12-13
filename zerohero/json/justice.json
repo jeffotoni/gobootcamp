@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Hazel",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Marvel Boy",
+                     "Manglin' John Mahoney",
+                     "Astounding Astrovik",
+                     "Superhuman Penitentiary Prisoner 344678",
+                     "\"Super Tights\""
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Giant-Size Defenders #5 (July, 1975)",
+              "full-name": "Vance Astrovik",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "New Warriors; formerly Avengers Academy, Initiative, partner of Firestar, Avengers, Triune Understanding, Unlimited Class Wrestling Federation, Taskmaster's Circus, Secret Avengers (Civil War)",
+              "relatives": "Jerzy Astroyevicht (aka Jerry Astrovik; paternal grandfather); Katerina Astroyevicht (aka Katerina Astrovik; paternal grandmother); Arnold Astrovik (father, deceased); Norma Astrovik (mother);"
+       },
+       "id": "376",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/88.jpg"
+       },
+       "name": "Justice",
+       "powerstats": {
+              "combat": "30",
+              "durability": "70",
+              "intelligence": "50",
+              "power": "55",
+              "speed": "33",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile, formerly New Warriors and Avengers Headquarters, Camp Hammond",
+              "occupation": "Adventurer"
+       }
+}

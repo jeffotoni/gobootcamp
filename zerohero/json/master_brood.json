@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Brood"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Team Epic Episode 101",
+              "full-name": "Currently Colin Wood",
+              "place-of-birth": "Perhaps England",
+              "publisher": "Team Epic TV"
+       },
+       "connections": {
+              "group-affiliation": "Team Epic",
+              "relatives": "Deceased"
+       },
+       "id": "434",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/958.jpg"
+       },
+       "name": "Master Brood",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Toronto, Canada",
+              "occupation": "-"
+       }
+}

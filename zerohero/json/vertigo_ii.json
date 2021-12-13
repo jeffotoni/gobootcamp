@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Silver",
+              "height": [
+                     "5'6'",
+                     "168 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "115 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "Blaquesmith",
+              "first-appearance": "MARVEL FANFARE #1",
+              "full-name": "-",
+              "place-of-birth": "The Savage Land",
+              "publisher": "Blaquesmith"
+       },
+       "connections": {
+              "group-affiliation": "Former member of the Savage Land Mutates, later a member of the Marauders",
+              "relatives": "-"
+       },
+       "id": "691",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/149.jpg"
+       },
+       "name": "Vertigo II",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Formerly the Savage Land, now mobile",
+              "occupation": "Assassin"
+       }
+}

@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "225 lb",
+                     "101 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Jake Lockley",
+                     "Steven Grant",
+                     "Yitzak Topol",
+                     "Fist of Khonshu",
+                     "Crescent Crusader",
+                     "Lunar Legionnaire"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Werewolf by Night #32 (August, 1975)",
+              "full-name": "Marc Spector",
+              "place-of-birth": "Chicago, Illinois",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Secret Avengers; formerly: US Marine Corps, Central Intelligence Agency (CIA), partner of Jean-Paul du Champ, partner of Raoul Bushman, partner of Midnight, West Coast Avengers, Marvel Knights, Defenders",
+              "relatives": "Shadowknight (Randall Spector) (brother, deceased), Elias (father, deceased), Seth Phalkon (alleged great-great-grandfather)"
+       },
+       "id": "470",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/415.jpg"
+       },
+       "name": "Moon Knight",
+       "powerstats": {
+              "combat": "75",
+              "durability": "42",
+              "intelligence": "50",
+              "power": "28",
+              "speed": "23",
+              "strength": "36"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City; formerly Spector Mansion, Long Island, Avengers Compound, California",
+              "occupation": "Adventurer, entrepreneur; former prize fighter, spy, soldier, mercenary, cab driver"
+       }
+}

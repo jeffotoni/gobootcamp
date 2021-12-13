@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Green",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Alicia Masters",
+                     "Lyja The Lazerfist",
+                     "Laura Green"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #265 (as Alicia), Fantastic Four #357 (as Lyja)",
+              "full-name": "Lyja",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Former lover of Paibok, Former ally of the Fantastic Four, Former wife of the Human Torch",
+              "relatives": "Johnny Storm - Human Torch (ex-husband), Susan Storm - Invisible Woman (ex-sister-in-law)"
+       },
+       "id": "420",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1017.jpg"
+       },
+       "name": "Lyja",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former Skrull Liason Officer"
+       }
+}

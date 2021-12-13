@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "178 lb",
+                     "80 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Police Comics #1 (August, 1941)",
+              "full-name": "Patrick O'Brian",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "The FBI; formerly the Justice League of America; the All-Star Squadron and the Freedom Fighters",
+              "relatives": "Offspring (son)"
+       },
+       "id": "520",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/756.jpg"
+       },
+       "name": "Plastic Man",
+       "powerstats": {
+              "combat": "56",
+              "durability": "100",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "23",
+              "strength": "63"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Government Agent"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "160 lb",
+                     "72 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Brave New World #1",
+              "full-name": "Ryan Choi",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Lighter Than Air Society",
+              "relatives": "Professor Choi (father); mother (deceased); sister (unnamed); Jia Choi (descendent)."
+       },
+       "id": "55",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/940.jpg"
+       },
+       "name": "Atom IV",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Ivy Town",
+              "occupation": "Professor of nuclear physics at Ivy University"
+       }
+}

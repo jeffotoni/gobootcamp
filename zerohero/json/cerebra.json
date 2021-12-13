@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Female",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men 2099 #1 (October, 1993)",
+              "full-name": "Shakti Haddad",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men (2099), Halo City Protectorate, X-Nation",
+              "relatives": "Zail Haddad (father)"
+       },
+       "id": "168",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1512.jpg"
+       },
+       "name": "Cerebra",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "57"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

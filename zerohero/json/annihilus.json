@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Living Death That Walks",
+                     "Lord of the Negative Zone"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four Annual #6 (1968)",
+              "full-name": "Annihilus",
+              "place-of-birth": "Planet of Arthros, Sector 17A, Negative Zone",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Sometime ally of Blastaar",
+              "relatives": "Annihilus is a series of clonal scions"
+       },
+       "id": "29",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1307.jpg"
+       },
+       "name": "Annihilus",
+       "powerstats": {
+              "combat": "64",
+              "durability": "56",
+              "intelligence": "75",
+              "power": "59",
+              "speed": "47",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Conqueror, scavenger"
+       }
+}

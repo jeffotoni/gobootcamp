@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Myrmidon",
+                     "Scott Edward Harris Lang"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Avengers Vol 1 #181 (March, 1979)",
+              "full-name": "Scott Lang",
+              "place-of-birth": "Coral Gables, Florida",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Ant-Man Security Solutions; formerly Future Foundation (leader), Fantastic Four (leader), Defenders, Avengers, Heroes For Hire, Stark Industries",
+              "relatives": "Cassandra Eleanor Lang (daughter), Ruth (sister), Carl (brother-in-law), Peggy Rae (ex-wife)"
+       },
+       "id": "31",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/166.jpg"
+       },
+       "name": "Ant-Man II",
+       "powerstats": {
+              "combat": "30",
+              "durability": "40",
+              "intelligence": "75",
+              "power": "53",
+              "speed": "17",
+              "strength": "18"
+       },
+       "response": "success",
+       "work": {
+              "base": "South Beach, Miami, Florida; formerly Farmingdale, Long Island, New York",
+              "occupation": "Electronics Technician,"
+       }
+}

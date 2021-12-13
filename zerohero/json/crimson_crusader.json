@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Strawberry Blond",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "ClanDestine #1 (1994)",
+              "full-name": "Rory Destine",
+              "place-of-birth": "Ravenscroft, England",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "ClanDestine",
+              "relatives": "Adam Destine (father), unnamed genie (mother), Albert Destine (brother), Samantha Destine (Argent, sister), William Destine (Cap'n Oz, brother), Kay Cera (Cuckoo, sister), Florence Destine (sister, deceased), Gracie Destine (sister, deceased), Dominic Destine (Hex, brother), Pandora Destine (Imp, sister), Maurice Destine (brother, deceased), Newton Destine (brother), Vincent Destine (brother, deceased), Walter Destine (Wallop, brother)"
+       },
+       "id": "189",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/303.jpg"
+       },
+       "name": "Crimson Crusader",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "58"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Inhuman",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #45 (December, 1965)",
+              "full-name": "Triton",
+              "place-of-birth": "Island of Attilan, Atlantic Ocean",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Inhuman Royal Family, Universal Inhumans, Royal Guard, New Inhuman Elite; formerly Shi'ar Army Elite Corps \u0026 Imperial Guard[citation needed], Namor's Deep Six",
+              "relatives": "Mander, Azur (parents, deceased), Karnak (brother, deceased), Magnar, Zeta (paternal grandparents), Kobar, La (maternal grandparents), Rynda (paternal aunt), Ambur (maternal aunt) ,Black Bolt, Maximus, Medusa, Crystal (cousins)"
+       },
+       "id": "677",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/513.jpg"
+       },
+       "name": "Triton",
+       "powerstats": {
+              "combat": "55",
+              "durability": "65",
+              "intelligence": "56",
+              "power": "35",
+              "speed": "50",
+              "strength": "63"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "150 lb",
+                     "68 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Formerly Death",
+                     "Dark Angel",
+                     "Angel",
+                     "Avenging Angel",
+                     "Archangel"
+              ],
+              "alignment": "good",
+              "alter-egos": "Archangel",
+              "first-appearance": "X-Men #54-56 (1969)",
+              "full-name": "Warren Kenneth Worthington III",
+              "place-of-birth": "Centerport, Long Island, New York",
+              "publisher": "Archangel"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, Mutantes Sans Fronti�res, Hellfire Club; formerly Secret Defenders, X-Factor/X-Terminators, Horsemen of Apocalypse, Defenders, Death's champions, Champions of Los Angeles",
+              "relatives": "Warren Kenneth Worthington Sr. (grandfather, deceased), Warren Kenneth Worthington Jr. (father, deceased), Kathryn Worthington (mother, deceased), Burtram \"Burt\" Worthington (Dazzler, paternal uncle), unnamed cousin"
+       },
+       "id": "24",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/829.jpg"
+       },
+       "name": "Angel",
+       "powerstats": {
+              "combat": "42",
+              "durability": "64",
+              "intelligence": "63",
+              "power": "28",
+              "speed": "46",
+              "strength": "13"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, chairman \u0026 principal stockholder of Worthington Industries, former terrorist"
+       }
+}

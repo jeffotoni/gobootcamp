@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "-",
+              "hair-color": "White",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Clea",
+              "place-of-birth": "The Dark Dimension",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Dormammu (uncle), Umar (mother)"
+       },
+       "id": "179",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/45.jpg"
+       },
+       "name": "Clea",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "39"
+       },
+       "response": "success",
+       "work": {
+              "base": "Base of operations unknown",
+              "occupation": "Former ruler and Sorceress Supreme of the Dark Dimension; former apprentice of Doctor Strange"
+       }
+}

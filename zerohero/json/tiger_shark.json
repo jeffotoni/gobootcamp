@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Grey",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "450 lb",
+                     "203 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Arlys Tigershark"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Sub-Mariner #5 (September, 1968)",
+              "full-name": "Todd Arliss",
+              "place-of-birth": "Pasadena, California",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Villains for Hire, Lethal Legion, Dr. Dorcas; Masters of Evil; Namor's Deep Six; Attuma's Deep Six; Offenders",
+              "relatives": "Diane Newell (sister); Mara (wife, deceased); Walter Newell (brother-in-law);"
+       },
+       "id": "666",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10047.jpg"
+       },
+       "name": "Tiger Shark",
+       "powerstats": {
+              "combat": "28",
+              "durability": "70",
+              "intelligence": "38",
+              "power": "51",
+              "speed": "46",
+              "strength": "72"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

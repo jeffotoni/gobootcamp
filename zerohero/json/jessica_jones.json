@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "124 lb",
+                     "56 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Knightress",
+                     "Madeline",
+                     "Jewel",
+                     "Power Woman"
+              ],
+              "alignment": "good",
+              "alter-egos": "Power Woman",
+              "first-appearance": "Amazing Spider-Man #4 (September, 1963)",
+              "full-name": "Jessica Campbell Jones Cage",
+              "place-of-birth": "Forrest Hills, New York City",
+              "publisher": "Power Woman"
+       },
+       "connections": {
+              "group-affiliation": "Formerly New Avengers, Daily Bugle, Alias Investigations",
+              "relatives": "unnamed mother (deceased); Dave Cambell (father, deceased); Phillip Cambell (brother, deceased); unnamed adoptive mother; unnamed adoptive father; unnamed adoptive sister; Jenny (adoptive aunt); Luke Cage (husband); Danielle Cage (daughter);"
+       },
+       "id": "361",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10403.jpg"
+       },
+       "name": "Jessica Jones",
+       "powerstats": {
+              "combat": "55",
+              "durability": "70",
+              "intelligence": "56",
+              "power": "18",
+              "speed": "50",
+              "strength": "44"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Special Consultant to \"The Pulse\", a Daily Bugle supplement; formerly private investigator, adventurer, short-time vigilante"
+       }
+}

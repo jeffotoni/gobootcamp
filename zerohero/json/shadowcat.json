@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Hazel",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "110 lb",
+                     "50 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Kitty Pryde",
+                     "Ariel",
+                     "Sprite",
+                     "Cat"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men #129 (January, 1980)",
+              "full-name": "Kitty Pryde",
+              "place-of-birth": "Deerfield, Illinois",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men (New Charles Xavier School member), X-Men (Past) (tutor); formerly X-Men, Murder Circus (brainwashed), Lights (liaison), Paladins Squad, S.H.I.E.L.D., Gladiators, Excalibur (founding member), New Mutants, Knights of Wundagore",
+              "relatives": "Kate (maternal great-grandmother), Samuel Prydeman (paternal grandfather, deceased), Chava Rosanoff (paternal great-aunt, deceased), Mr. Rosanoff (paternal great-uncle, apparently deceased), Nina (aunt), Carmen Pryde (father, deceased), Theresa Pryde (mother), Kenny (cousin)"
+       },
+       "id": "586",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/122.jpg"
+       },
+       "name": "Shadowcat",
+       "powerstats": {
+              "combat": "70",
+              "durability": "25",
+              "intelligence": "88",
+              "power": "69",
+              "speed": "21",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier Insitute for Higher Learning, Salem Center, New York, formerly Muir Island off the coast of Scotland, formerly Excalibur's Lighthouse, formerly Braddock Manor, England",
+              "occupation": "Teacher, Adventurer, former student"
+       }
+}

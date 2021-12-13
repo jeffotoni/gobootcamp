@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Grey",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "215 lb",
+                     "97 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Demon's Head"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman #232 (June, 1971)",
+              "full-name": "Ra's Al Ghul",
+              "place-of-birth": "Egypt",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "League of Assassins",
+              "relatives": "The Sensei (father), White Ghost (Dusan al Ghul) (son), Talia al Ghul (daughter), Nyssa Raatko (daughter), Robin V (Damian Wayne) (grandson)"
+       },
+       "id": "538",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/761.jpg"
+       },
+       "name": "Ra's Al Ghul",
+       "powerstats": {
+              "combat": "100",
+              "durability": "42",
+              "intelligence": "100",
+              "power": "27",
+              "speed": "32",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "mobile",
+              "occupation": "Eco Terrorist, Businessman, Cult Leader"
+       }
+}

@@ -1,0 +1,55 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "God / Eternal",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Spirit of Vengeance",
+                     "Wrath of God",
+                     "Spirit of Redemption",
+                     "Raguel",
+                     "James Corrigan",
+                     "Hal Jordan",
+                     "Cripus Allen"
+              ],
+              "alignment": "good",
+              "alter-egos": "Aztar",
+              "first-appearance": "More Fun Comics #52 (February, 1940)",
+              "full-name": "Aztar",
+              "place-of-birth": "-",
+              "publisher": "Aztar"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "613",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/784.jpg"
+       },
+       "name": "Spectre",
+       "powerstats": {
+              "combat": "70",
+              "durability": "100",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "100",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

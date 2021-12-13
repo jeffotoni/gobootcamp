@@ -1,0 +1,60 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Asgardian",
+              "weight": [
+                     "317 lb",
+                     "143 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Asgard Lass",
+                     "the Designate",
+                     "the Destroyer",
+                     "Hammerette",
+                     "Hammer Girl",
+                     "Hammer Lass",
+                     "Tara Olson",
+                     "Spirit of the Jewel",
+                     "the Supreme",
+                     "Thoreta",
+                     "Thorita",
+                     "Thor Lass"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Thor, Volume 2, #22; (as Thor Girl) Thor, Volume 2, #33",
+              "full-name": "Tarene",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Ally of the Asgardians",
+              "relatives": "-"
+       },
+       "id": "660",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1296.jpg"
+       },
+       "name": "Thor Girl",
+       "powerstats": {
+              "combat": "70",
+              "durability": "84",
+              "intelligence": "75",
+              "power": "100",
+              "speed": "70",
+              "strength": "83"
+       },
+       "response": "success",
+       "work": {
+              "base": "Camp Hammond; FormerlyNew York City, Formerly Asgard",
+              "occupation": "-"
+       }
+}

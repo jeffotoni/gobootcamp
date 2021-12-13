@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "135 lb",
+                     "61 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Brainiac 5's primary invention is his personal force-shield generator. Brainiac 5 re-discovered the technical process behind original Brainiac's force-shield belt, which is capable of generating a virtually impervious field of protection. The belt must be",
+              "full-name": "Querl Dox",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Legion of Super-Heroes",
+              "relatives": "Unnamed mother, Brainiac (ancestor)"
+       },
+       "id": "137",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1183.jpg"
+       },
+       "name": "Brainiac 5",
+       "powerstats": {
+              "combat": "32",
+              "durability": "28",
+              "intelligence": "100",
+              "power": "60",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

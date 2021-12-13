@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "White",
+              "height": [
+                     "2'2",
+                     "66 cm"
+              ],
+              "race": "Yoda's species",
+              "weight": [
+                     "38 lb",
+                     "17 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+              "full-name": "Yoda",
+              "place-of-birth": "-",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "Jedi Order, Jedi High Counsl, Galactic Republic",
+              "relatives": "Master: N'Kata Del Gormo, Apprentices: Dooku, Cin Drallig, Ikrit, Rahm Kota, Ki-Adi-Mundi, Oppo Rancisis, Luke Skywalker"
+       },
+       "id": "729",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10454.jpg"
+       },
+       "name": "Yoda",
+       "powerstats": {
+              "combat": "90",
+              "durability": "25",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "33",
+              "strength": "52"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

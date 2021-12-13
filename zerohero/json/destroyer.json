@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "850 lb",
+                     "383 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Journey into Mystery #118 (1965)",
+              "full-name": "",
+              "place-of-birth": "Created in Asgard",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "218",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1294.jpg"
+       },
+       "name": "Destroyer",
+       "powerstats": {
+              "combat": "70",
+              "durability": "98",
+              "intelligence": "50",
+              "power": "85",
+              "speed": "58",
+              "strength": "95"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

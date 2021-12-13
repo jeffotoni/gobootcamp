@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'9'",
+                     "175 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "165 lb",
+                     "74 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Neal Shaara",
+              "place-of-birth": "Bangladesh",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "None; formerly X-Men, X-Corporation",
+              "relatives": "Sanjit (brother,deceased)"
+       },
+       "id": "663",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/141.jpg"
+       },
+       "name": "Thunderbird III",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer"
+       }
+}

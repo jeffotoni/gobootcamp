@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "52 #7 (June, 2006)",
+              "full-name": "Katherine Rebecca Kane",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Batman Family (unofficially), D.E.O, Unknowns",
+              "relatives": "Jacob Kane (father), Gabi Kane (mother; deceased), Beth Kane (twin sister), Mary Elizabeth \"Bette\" Kane (cousin), Catherine Hamilton-Kane (stepmother), Philip Kane (uncle), Kane Family"
+       },
+       "id": "73",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10234.jpg"
+       },
+       "name": "Batwoman V",
+       "powerstats": {
+              "combat": "80",
+              "durability": "25",
+              "intelligence": "81",
+              "power": "27",
+              "speed": "29",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "Gotham City",
+              "occupation": "-"
+       }
+}

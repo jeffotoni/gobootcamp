@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Luke Cage, Hero for Hire#1 (1972)",
+              "full-name": "Willis Stryker",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Syndicate, formerly Bloods",
+              "relatives": "-"
+       },
+       "id": "219",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1404.jpg"
+       },
+       "name": "Diamondback",
+       "powerstats": {
+              "combat": "60",
+              "durability": "28",
+              "intelligence": "44",
+              "power": "45",
+              "speed": "23",
+              "strength": "16"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Criminal"
+       }
+}

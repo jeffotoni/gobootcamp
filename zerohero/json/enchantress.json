@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "126 lb",
+                     "57 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Anita Soulfeeda",
+                     "Soulsinger"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Strange Adventures #187",
+              "full-name": "June Moone",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Forgotten Villains, Sentinels of Magic, Shadowpact, Suicide Squad",
+              "relatives": "-"
+       },
+       "id": "242",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/687.jpg"
+       },
+       "name": "Enchantress",
+       "powerstats": {
+              "combat": "40",
+              "durability": "60",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "25",
+              "strength": "14"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Artist; Magician"
+       }
+}

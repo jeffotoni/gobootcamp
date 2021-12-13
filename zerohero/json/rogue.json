@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Brown / White",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Anna Raven",
+                     "Doctor Kellogg",
+                     "Mutate 9602",
+                     "Irene Adler",
+                     "Miss Smith"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Avengers Annual #10 (1981)",
+              "full-name": "Anna Marie",
+              "place-of-birth": "Caldecott County, Mississippi",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, formerly X-Treme Sanctions Executive, X-Treme X-Men, Brotherhood of Evil Mutants",
+              "relatives": "Owen (father), Priscilla (mother), Carrie (aunt), Raven Darkh�lme (Mystique, foster mother), Kurt Wagner (Nightcrawler, foster brother), Graydon Creed (foster brother, deceased)"
+       },
+       "id": "567",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/831.jpg"
+       },
+       "name": "Rogue",
+       "powerstats": {
+              "combat": "80",
+              "durability": "28",
+              "intelligence": "75",
+              "power": "80",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, former mechanic, waitress, terrorist"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Carrie Kelley",
+              "place-of-birth": "Gotham City",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "565",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10394.jpg"
+       },
+       "name": "Robin VI",
+       "powerstats": {
+              "combat": "70",
+              "durability": "20",
+              "intelligence": "50",
+              "power": "17",
+              "speed": "25",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

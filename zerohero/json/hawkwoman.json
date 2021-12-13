@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Shayera Hall",
+                     "Hawkgirl"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Brave and the Bold #34 (February-March 1961)",
+              "full-name": "Shayera Hol",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League of America",
+              "relatives": "-"
+       },
+       "id": "317",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/702.jpg"
+       },
+       "name": "Hawkwoman",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "96"
+       },
+       "response": "success",
+       "work": {
+              "base": "Midway City, Michigan; Justice League Satellite I",
+              "occupation": "-"
+       }
+}

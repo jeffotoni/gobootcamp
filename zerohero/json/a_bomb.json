@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Yellow",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'8",
+                     "203 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "980 lb",
+                     "441 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Rick Jones"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Hulk Vol 2 #2 (April, 2008) (as A-Bomb)",
+              "full-name": "Richard Milhouse Jones",
+              "place-of-birth": "Scarsdale, Arizona",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Hulk Family; Excelsior (sponsor), Avengers (honorary member); formerly partner of the Hulk, Captain America and Captain Marvel; Teen Brigade; ally of Rom",
+              "relatives": "Marlo Chandler-Jones (wife); Polly (aunt); Mrs. Chandler (mother-in-law); Keith Chandler, Ray Chandler, three unidentified others (brothers-in-law); unidentified father (deceased); Jackie Shorr (alleged mother; unconfirmed)"
+       },
+       "id": "1",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10060.jpg"
+       },
+       "name": "A-Bomb",
+       "powerstats": {
+              "combat": "64",
+              "durability": "80",
+              "intelligence": "38",
+              "power": "24",
+              "speed": "17",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Musician, adventurer, author; formerly talk show host"
+       }
+}

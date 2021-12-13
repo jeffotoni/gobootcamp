@@ -1,0 +1,56 @@
+{
+       "appearance": {
+              "eye-color": "Yellow",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Neyaphem",
+              "weight": [
+                     "149 lb",
+                     "67 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Semihazah",
+                     "Duma",
+                     "Keriel",
+                     "Mastema",
+                     "Beliar",
+                     "Gadreel",
+                     "Beelzebub",
+                     "Satan"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Uncanny X-Men #428 (2003)",
+              "full-name": "",
+              "place-of-birth": "Isla des Demonas, Caribbean Sea",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Kurt Wagner (Nightcrawler, son), Nils Styger (Abyss, son), Kiwi Black (son), numberous other offspring (deceased)"
+       },
+       "id": "57",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1481.jpg"
+       },
+       "name": "Azazel",
+       "powerstats": {
+              "combat": "80",
+              "durability": "95",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "47",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "Brimstone Dimension; formerly La Isla des Demonas, Bermuda",
+              "occupation": "Leader of the Neyaphem"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Star Wars : Rogue One (2016)",
+              "full-name": "Jyn Erso",
+              "place-of-birth": "-",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "377",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10562.jpg"
+       },
+       "name": "Jyn Erso",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Atlantean",
+              "weight": [
+                     "325 lb",
+                     "146 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Dweller in the Depths",
+                     "Swimmer",
+                     "Waterbearer",
+                     "Mental Man",
+                     "Aquaboy",
+                     "Water Wraith"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "More Fun Comics #73 (November, 1941)",
+              "full-name": "Orin",
+              "place-of-birth": "Atlantis",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League, Aquaman Family, Atlantean Royal Family; formerly Black Lantern Corps, Justice League International, Justice League Detroit, U.N.",
+              "relatives": "Koryak (son), Arthur Curry, Jr. (son), A.J. (son), Orm Marius (half-brother), Debbie Perkins (half-sister), Drin (adopted brother), Atlanna (mother), Atlan (father), Atlena (aunt), Porm (adopted mother), Tom Curry (adopted father), Mera (wife), Hila (sister-in-law), Haumond (uncle), Kraken (uncle), Honsu (grandfather), Lorelei (grandmother), Manu (ancestor), Nala (ancestor), Fatima (ancestor), Kalunga (ancestor), Gana (ancestor), Fiona (ancestor), Regin (ancestor), Kordax (ancestor), Bazil (ancestor), Cora (ancestor), Illya (ancestor), Dardanus (ancestor), Alloroc (ancestor), Cole (ancestor), Narmea (ancestor), Orin (ancestor), Loma (ancestor), Shalako (ancestor), Thorvall (ancestor)"
+       },
+       "id": "38",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/634.jpg"
+       },
+       "name": "Aquaman",
+       "powerstats": {
+              "combat": "80",
+              "durability": "80",
+              "intelligence": "81",
+              "power": "100",
+              "speed": "79",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "Atlantean Royal Palace; Poseidonis, Atlantis",
+              "occupation": "Protector of the Seas and Oceans, King of Poseidonis"
+       }
+}

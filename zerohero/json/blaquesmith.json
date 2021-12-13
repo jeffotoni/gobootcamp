@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Black",
+              "gender": "-",
+              "hair-color": "No Hair",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "Vertigo II",
+              "first-appearance": "-",
+              "full-name": "-",
+              "place-of-birth": "-",
+              "publisher": "Vertigo II"
+       },
+       "connections": {
+              "group-affiliation": "Clan Askani/Clan Chosen",
+              "relatives": "-"
+       },
+       "id": "113",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/34.jpg"
+       },
+       "name": "Blaquesmith",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Baltimore, Maryland",
+              "occupation": "Inventor"
+       }
+}

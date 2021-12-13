@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Green Lantern",
+                     "Power Ring"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Green Lantern Vol 5 #20 (July, 2013)",
+              "full-name": "Jessica Cruz",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Sara Cruz (sister)"
+       },
+       "id": "360",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10650.jpg"
+       },
+       "name": "Jessica Cruz",
+       "powerstats": {
+              "combat": "55",
+              "durability": "50",
+              "intelligence": "56",
+              "power": "100",
+              "speed": "46",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

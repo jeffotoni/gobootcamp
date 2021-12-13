@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Blackwing",
+                     "Joe Manfredi",
+                     "Joe Silvermane",
+                     "Guiseppi Manfredi"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Daredevil #118 (February, 1975)",
+              "full-name": "Joseph Manfredi",
+              "place-of-birth": "Professional Criminal",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Heavy Mettle; (formerly) Masters of Evil, Skeleton Crew, Circus of Crime; (formerly) division leader of Hydra",
+              "relatives": "Silvio Manfredi (Silvermane, father), Caterina Manfredi (mother, deceased)"
+       },
+       "id": "110",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/249.jpg"
+       },
+       "name": "Blackwing",
+       "powerstats": {
+              "combat": "56",
+              "durability": "32",
+              "intelligence": "38",
+              "power": "20",
+              "speed": "35",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Auburn",
+              "height": [
+                     "12'",
+                     "366 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "1050 lb",
+                     "473 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Grimfang",
+                     "Mutate #490"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Graphic Novel #4: New Mutants",
+              "full-name": "Rahne Sinclair",
+              "place-of-birth": "Somewhere in Ross and Cromarty, Scotland",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "(current) X-Factor Investigations, (former) X-Factor, New Mutants, Hellions, Excalibur",
+              "relatives": "Reverand Craig (father), Moira MacTaggert (surrogate mother, deceased)"
+       },
+       "id": "716",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/160.jpg"
+       },
+       "name": "Wolfsbane",
+       "powerstats": {
+              "combat": "42",
+              "durability": "42",
+              "intelligence": "38",
+              "power": "26",
+              "speed": "35",
+              "strength": "16"
+       },
+       "response": "success",
+       "work": {
+              "base": "(current) X-Factor Investigations, New York City (former)Professor Xavier's School of Gifted Youngsters, Salem Center, Westchester County, New York; Muir Island, Scotland; X-Factor headquarters, Embassy Row, Washington, D.C.; X-Factor Headquarters, New Yo",
+              "occupation": "Teacher"
+       }
+}

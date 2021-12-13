@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "210 lb",
+                     "95 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Dreadpool"
+              ],
+              "alignment": "bad",
+              "alter-egos": "Deadpool, Venompool",
+              "first-appearance": "Deadpool Vol 2 #44 (December, 2011)",
+              "full-name": "Wade Wilson",
+              "place-of-birth": "-",
+              "publisher": "Deadpool"
+       },
+       "connections": {
+              "group-affiliation": "Evil Deadpool Corps",
+              "relatives": "-"
+       },
+       "id": "247",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10090.jpg"
+       },
+       "name": "Evil Deadpool",
+       "powerstats": {
+              "combat": "100",
+              "durability": "100",
+              "intelligence": "69",
+              "power": "100",
+              "speed": "50",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Mercenary, Assasin"
+       }
+}

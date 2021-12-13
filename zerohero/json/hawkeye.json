@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "230 lb",
+                     "104 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Ronin",
+                     "Goliath",
+                     "Golden Archer",
+                     "the Marksman",
+                     "Father Time",
+                     "Longbow"
+              ],
+              "alignment": "good",
+              "alter-egos": "Goliath, Ronin",
+              "first-appearance": "Tales of Suspense #57 (September, 1964)",
+              "full-name": "Clint Barton",
+              "place-of-birth": "Waverly, Iowa",
+              "publisher": "Goliath"
+       },
+       "connections": {
+              "group-affiliation": "Avengers, Thunderbolts, Avengers West Coast, Great Lakes Avengers, Shadows, Chain Gang, former partner of the Black Widow",
+              "relatives": "Harold Barton (father, deceased), Edith Barton (mother, deceased), Bernard Barton (brother, deceased), Barbara Morse (wife, deceased)"
+       },
+       "id": "313",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/73.jpg"
+       },
+       "name": "Hawkeye",
+       "powerstats": {
+              "combat": "80",
+              "durability": "10",
+              "intelligence": "56",
+              "power": "29",
+              "speed": "21",
+              "strength": "12"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer"
+       }
+}

@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'",
+                     "183 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Prof",
+                     "Dr. X",
+                     "Professor Xavier",
+                     "formerly Prisoner M-13"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men #1 (September, 1963)",
+              "full-name": "Charles Francis Xavier",
+              "place-of-birth": "New York, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly X-Men (founder; formerly teacher \u0026 leader), Illuminati, Genoshan Excalibur, Brotherhood of Evil Mutants (leader), Cadre K, Generation X (founder), Starjammers, The Twelve, New Mutants (founder, teacher \u0026 leader), United States Army, X-Corporation",
+              "relatives": "Brian Xavier (father, deceased), Sharon Xavier (mother, deceased), Cassandra Nova (sister), Kurt Marko (stepfather, deceased), Cain Marko (Juggernaut, stepbrother), Lilandra (ex-wife), David Charles Haller (Legion, son, deceased)"
+       },
+       "id": "527",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/113.jpg"
+       },
+       "name": "Professor X",
+       "powerstats": {
+              "combat": "32",
+              "durability": "14",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "12",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "Formerly Utopia, San Francisco Bay, California; Genosha; Xavier Institute, Salem Center, Westchester County, New York; Imperial Palace, Chandilar, Shi'ar Empire; Columbia University, Manhattan, New York City, New York",
+              "occupation": "Mutant leader, mutant rights activist, geneticist, teacher, adventurer, heir, formerly headmaster, soldier (US Army)"
+       }
+}

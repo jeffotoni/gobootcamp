@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "132 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Wanda Frank",
+                     "Wanda Magnus",
+                     "Ana Maximoff",
+                     "Gypsy Witch",
+                     "The Witch"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Uncanny X-Men #4 (March, 1964)",
+              "full-name": "Wanda Maximoff",
+              "place-of-birth": "Wundagore Mountain, Transia",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "None, Formerly Avengers, Avengers West Coast, Force Works, Queen's Vengeance, Secret Defenders, Lady Liberators, Brotherhood of Evil Mutants",
+              "relatives": "Pietro (Quicksilver, twin brother), Magnus (Magneto, father), Magda Lehnsherr (mother, deceased), Anya (half-sister, deceased), Lorna Dane (Polaris, half-sister), Vision (estranged husband), Django Maximoff (foster father, deceased), Marya Maximoff (foster mother, deceased), Crystal (sister-in-law), Luna (niece), Tommy \u0026 Billy (reincarnated sons), Talia Wagner (Nocturne, alternate reality daughter)"
+       },
+       "id": "579",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/444.jpg"
+       },
+       "name": "Scarlet Witch",
+       "powerstats": {
+              "combat": "80",
+              "durability": "70",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "29",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile; formerly The Works; Avengers Compound, California; Avengers Mansion, New York",
+              "occupation": "Adventurer; formerly witchcraft tutor, housewife, terrorist"
+       }
+}

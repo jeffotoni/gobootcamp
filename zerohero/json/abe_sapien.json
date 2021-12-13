@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "Icthyo Sapien",
+              "weight": [
+                     "145 lb",
+                     "65 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Langdon Everett Caul",
+                     "Abraham Sapien",
+                     "Langdon Caul"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Hellboy: Seed of Destruction (1993)",
+              "full-name": "Abraham Sapien",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Bureau for Paranormal Research and Defense",
+              "relatives": "Edith Howard (wife, deceased)"
+       },
+       "id": "2",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/956.jpg"
+       },
+       "name": "Abe Sapien",
+       "powerstats": {
+              "combat": "85",
+              "durability": "65",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "35",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Paranormal Investigator"
+       }
+}

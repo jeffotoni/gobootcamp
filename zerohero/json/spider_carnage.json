@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Symbiote",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "Scarlet Spider",
+              "first-appearance": "-",
+              "full-name": "Benjamin Reilly",
+              "place-of-birth": "-",
+              "publisher": "Scarlet Spider"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "617",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/957.jpg"
+       },
+       "name": "Spider-Carnage",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "69"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

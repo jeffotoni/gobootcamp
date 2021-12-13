@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'7",
+                     "201 cm"
+              ],
+              "race": "Martian",
+              "weight": [
+                     "300 lb",
+                     "135 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "ohn Jones; J'Onn J'Onzz (alternate spelling); Big Green Buddy; J.J.; Jolly Green Giant; Light to the Light; Manhunter; Manhunter from Mars; Son of Mars; Bronze Wraith",
+                     "Bloodwynd",
+                     "many others"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Detective Comics #225 (1955)",
+              "full-name": "J'onn J'onzz",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Darkstars, Justice League of Aliens, Justice League Of America, Justice League Task Force, Justice League Unlimited, Martians, Outsiders",
+              "relatives": "M'yrnn J'onzz (father, deceased); Sha'sheen J'onzz (mother, deceased); M'yri'ah (wife, deceased); K'hym (daughter, deceased); Ma'alefa'ak (twin brother); D'all (father-in-law, deceased); J'ahrl J'onzz (ancestor, deceased)"
+       },
+       "id": "432",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/733.jpg"
+       },
+       "name": "Martian Manhunter",
+       "powerstats": {
+              "combat": "85",
+              "durability": "100",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "92",
+              "strength": "95"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

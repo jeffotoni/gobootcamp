@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "179 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Death",
+                     "Le Diable Blanc",
+                     "formerly Robert Lord",
+                     "Cajun"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(as Gambit) Uncanny X-Men #266 (1990), (as Death) X-Men #184 (2006)",
+              "full-name": "Remy Etienne LeBeau",
+              "place-of-birth": "New Orleans, Louisiana",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men (Team Wolverine); formerly Marauders, Horsemen of Apocalypse, Chevaliers, X-Treme X-Men, Thieves \u0026 Unified Guild's of New Orleans, Crimson Pirates",
+              "relatives": "Jean-Luc LeBeau (father), Belladonna (aka Bella Donna Boudreaux) (wife, separated)"
+       },
+       "id": "274",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/64.jpg"
+       },
+       "name": "Gambit",
+       "powerstats": {
+              "combat": "84",
+              "durability": "28",
+              "intelligence": "63",
+              "power": "55",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "(current) Xavier Institute, Salem Center, Westchester County, New York; (former) New Orleans, Louisiana; Paris, France; Cairo, Illinois;",
+              "occupation": "Jean Grey School for Higher Learning, Salem Center, Westchester County, New York; formerly Utopia, San Francisco Bay, California; Xavier Institute, Salem Center, Westchester County, New York; New Orleans; Paris; Cairo; Illinois"
+       }
+}

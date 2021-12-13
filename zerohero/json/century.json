@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "White",
+              "height": [
+                     "6'7",
+                     "201 cm"
+              ],
+              "race": "Alien",
+              "weight": [
+                     "215 lb",
+                     "97 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Force Works #1 (July, 1994)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Force Works",
+              "relatives": "-"
+       },
+       "id": "167",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1511.jpg"
+       },
+       "name": "Century",
+       "powerstats": {
+              "combat": "100",
+              "durability": "64",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "53",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Tracker, adventurer"
+       }
+}

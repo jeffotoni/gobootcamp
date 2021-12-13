@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Silver",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Human / Radiation",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Monarch",
+                     "Allen Adam",
+                     "Cameron Scott"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Captain Atom #1",
+              "full-name": "Nathaniel Adam",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League, Extreme Justice, Super Buddies, Living Assault Weapons, Monarch's Army, United States Air Force",
+              "relatives": "Angela Adam Eiling (wife, deceased), Peggy Eiling (daughter), Randy Eiling (son), Bette Sans Souci (ex-wife, divorced)"
+       },
+       "id": "150",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1007.jpg"
+       },
+       "name": "Captain Atom",
+       "powerstats": {
+              "combat": "80",
+              "durability": "90",
+              "intelligence": "81",
+              "power": "100",
+              "speed": "83",
+              "strength": "93"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former Soldier"
+       }
+}

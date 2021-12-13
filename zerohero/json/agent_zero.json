@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "230 lb",
+                     "104 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Maverick"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Christoph Nord",
+              "place-of-birth": "Unrevealed location in former East Germany",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Weapon X, Weapon Plus, Team X, Cell Six, former bodyguard of Psi-Borg, former agent of Major Barrington",
+              "relatives": "Unidentified parents (deceased), Andreas Nord (brother, deceased), Ginetta Lucia Barsalini (wife, deceased), unnamed child (deceased)"
+       },
+       "id": "11",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/396.jpg"
+       },
+       "name": "Agent Zero",
+       "powerstats": {
+              "combat": "95",
+              "durability": "80",
+              "intelligence": "75",
+              "power": "72",
+              "speed": "38",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Mercenary, former government operative, freedom fighter"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Human-Spartoi",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Starlord"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Preview #4 (January, 1976)",
+              "full-name": "Peter Jason Quill",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Guardians of the Galaxy (leader); formerly unnamed commando team, United Front, Imperial Guard, partner of Ship, NASA",
+              "relatives": "Eson (grandfather, deceased), Gareth (great-uncle, deceased), Jason of Sparta (father), Meredith Quill (mother, deceased), Victoria (half-sister), Kip Holm (adopted brother), Sandy (adopted sister in-law), Alain (adopted niece), Rhys, Robyn (adopted nephews), Kitty Pryde (fiance), Unnamed former Symbiote"
+       },
+       "id": "630",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10015.jpg"
+       },
+       "name": "Star-Lord",
+       "powerstats": {
+              "combat": "70",
+              "durability": "50",
+              "intelligence": "69",
+              "power": "25",
+              "speed": "33",
+              "strength": "20"
+       },
+       "response": "success",
+       "work": {
+              "base": "C.I.T.T.; formerly Kree space; Hala, Daedalus 5",
+              "occupation": "Adventurer; Royal Prince of Spartax"
+       }
+}

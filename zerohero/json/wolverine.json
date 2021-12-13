@@ -1,0 +1,60 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'3",
+                     "160 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "300 lb",
+                     "135 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Weapon X",
+                     "Weapon Ten",
+                     "Death",
+                     "Mutate 9601",
+                     "Jim Logan",
+                     "Emilio Garra",
+                     "Weapon Chi",
+                     "Experiment X",
+                     "Agent Ten",
+                     "Peter Richards",
+                     "Mai kethLogan",
+                     "Mr. Patch"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Incredible Hulk Vol. 2 #180",
+              "full-name": "Logan",
+              "place-of-birth": "Alberta, Canada",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, formerly Horsemen of Apocalypse, Fantastic Four, Secret Defenders, Clan Yashida, Department H, Alpha Flight, Department K, Team X, Team_Weapon_X, Devil's Brigade, Canadian Army",
+              "relatives": "John Howlett Sr. (father, deceased), Elizabeth Howlett (mother, deceased), John Howlett Jr. (brother, allegedly deceased), Viper (ex-wife), Amiko (foster daughter), Erista (son), X-23 (clone)"
+       },
+       "id": "717",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/161.jpg"
+       },
+       "name": "Wolverine",
+       "powerstats": {
+              "combat": "100",
+              "durability": "100",
+              "intelligence": "63",
+              "power": "89",
+              "speed": "50",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier Institute, Salem Center, Westchester County, New York; Avengers Tower, New York City",
+              "occupation": "Adventurer, instructor, former bartender, bouncer, spy, government operative, mercenary, soldier, sailor, miner"
+       }
+}

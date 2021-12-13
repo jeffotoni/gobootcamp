@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'4",
+                     "163 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "124 lb",
+                     "56 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Max"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "New X-Men: Academy X #1",
+              "full-name": "Maxwell Jordan",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Corsairs",
+              "relatives": "-"
+       },
+       "id": "537",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/830.jpg"
+       },
+       "name": "Quill",
+       "powerstats": {
+              "combat": "14",
+              "durability": "14",
+              "intelligence": "38",
+              "power": "23",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "X-Mansion",
+              "occupation": "-"
+       }
+}

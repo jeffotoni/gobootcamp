@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "7'0",
+                     "213 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "500 lb",
+                     "225 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "the Vagornus Koth; the Swamp Walker; Mr. Salad; Walking Mulch Heap"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Savage Tales #1 (May, 1971)",
+              "full-name": "Dr. Theodore Sallis",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Thunderbolts, Legion of Monsters, Daydreamers",
+              "relatives": "Ellen Brandt (ex-wife) Job Burke (son)"
+       },
+       "id": "428",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/382.jpg"
+       },
+       "name": "Man-Thing",
+       "powerstats": {
+              "combat": "40",
+              "durability": "100",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "8",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "Man-Thing's Swamp, Citrusville, Florida",
+              "occupation": "-"
+       }
+}

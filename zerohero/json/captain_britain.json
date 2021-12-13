@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "257 lb",
+                     "116 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Britannic",
+                     "Black Bishop",
+                     "Jungle Man",
+                     "King of Otherworld",
+                     "Merlinson"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Captain Britain #1 (October, 1976)",
+              "full-name": "Brian Braddock",
+              "place-of-birth": "Braddock Manor, England",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Braddock Academy, Captain Britain Corps, MI-13; formerly Excalibur, Hellfire Club (London Branch), Secret Avengers, Court of Otherworld, Knights of Pendragon's ally, Future Iron Man's Team",
+              "relatives": "John Braddock (ancestor, possibly grandfather), James Braddock, Sr. (father, deceased), Lady Elizabeth Braddock (mother, deceased), James Braddock, Jr. (brother), Elizabeth Braddock (twin sister), Meggan (wife), William Puceanu (father-in-law)"
+       },
+       "id": "151",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/276.jpg"
+       },
+       "name": "Captain Britain",
+       "powerstats": {
+              "combat": "80",
+              "durability": "60",
+              "intelligence": "75",
+              "power": "31",
+              "speed": "50",
+              "strength": "77"
+       },
+       "response": "success",
+       "work": {
+              "base": "Lighthouse, Earth Orbit; Starlight Citadel, Otherworld; formerly Braddock Manor; Braddock Lighthouse, England; New York City (during exchange trip, specifically Peter Parker's Manhattan apartment); flat near Thames University, London",
+              "occupation": "Adventurer, formerly King of Otherworld, scientist"
+       }
+}

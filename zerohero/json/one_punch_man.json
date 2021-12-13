@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "154 lb",
+                     "69 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Caped Baldy"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "One Punch - Chapter 1, Volume 1",
+              "full-name": "Saitama",
+              "place-of-birth": "-",
+              "publisher": "Shueisha"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Genos (partner)"
+       },
+       "id": "502",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10522.jpg"
+       },
+       "name": "One Punch Man",
+       "powerstats": {
+              "combat": "50",
+              "durability": "95",
+              "intelligence": "38",
+              "power": "55",
+              "speed": "83",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "Z-City",
+              "occupation": "Superhero, Sensei"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "165 lb",
+                     "74 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-MEN (first series) #169",
+              "full-name": "Callisto",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Excalibur, Morlocks, Gene Nation",
+              "relatives": "-"
+       },
+       "id": "146",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/271.jpg"
+       },
+       "name": "Callisto",
+       "powerstats": {
+              "combat": "85",
+              "durability": "42",
+              "intelligence": "63",
+              "power": "52",
+              "speed": "23",
+              "strength": "53"
+       },
+       "response": "success",
+       "work": {
+              "base": "The Xavier Institute, Salem Center, Westchester County, New York State, (former) The Alley (beneath Manhattan's surface), X-Factor I's sentient starship",
+              "occupation": "-"
+       }
+}

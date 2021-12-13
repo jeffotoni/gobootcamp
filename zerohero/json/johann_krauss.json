@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "B.P.R.D. - Hollow Earth and Other Stories (2003)",
+              "full-name": "Johann Krauss",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Bureau for Paranormal Research and Defense",
+              "relatives": "-"
+       },
+       "id": "366",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1121.jpg"
+       },
+       "name": "Johann Krauss",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "30"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

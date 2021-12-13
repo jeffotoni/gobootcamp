@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "201 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Green Lantern"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Green Lantern Vol 2 #87",
+              "full-name": "John Stewart",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Green Lantern Corps, formerly Justice League of America, Darkstars",
+              "relatives": "Roy Stewart (grandfather, deceased), Addie Stewart (grandmother, deceased), Loretta Stewart (aunt, deceased), Katma Tui (wife, deceased)"
+       },
+       "id": "368",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/873.jpg"
+       },
+       "name": "John Stewart",
+       "powerstats": {
+              "combat": "65",
+              "durability": "64",
+              "intelligence": "56",
+              "power": "100",
+              "speed": "42",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "Detroit, Michigan · Oa · formerly New York City",
+              "occupation": "Architect"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "185 lb",
+                     "83 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Human Zoo; A-Man; The Man with Animal Powers"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Strange Adventures #180 (September, 1965)",
+              "full-name": "Bernhard Baker",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Animal Masters, Forgotten Heroes, Justice League of America, Justice League Europe",
+              "relatives": "Ellen Frazier (wife), Cliff Baker (son), Maxine Baker (daughter), unnamed second daughter, Frank Baker, Jr. (father), Phyllis Baker (mother), unnamed sister, Frank, Sr (grandfather), Teddy (great grandfather), Sherman (great-great grandfather), Jack (great-great-great grandfather), Mary Frazier (mother-in-law), Dudley (uncle-in-law), Annie Cassidy (mother of second daughter), Lucy Cassidy (half-sister of second daughter)"
+       },
+       "id": "28",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/632.jpg"
+       },
+       "name": "Animal Man",
+       "powerstats": {
+              "combat": "80",
+              "durability": "85",
+              "intelligence": "56",
+              "power": "73",
+              "speed": "47",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "San Diego, California",
+              "occupation": "-"
+       }
+}

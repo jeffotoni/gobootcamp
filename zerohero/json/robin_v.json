@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "4'6",
+                     "137 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "84 lb",
+                     "38 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Batman",
+                     "Damian al Ghul",
+                     "Ibn al Xu'ffasch",
+                     "Redbird"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman: Son of the Demon",
+              "full-name": "Damian Wayne",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Batman Family, Batman Inc., Wayne Enterprises; formerly Teen Titans, League of Assassins",
+              "relatives": "Talia al Ghul (mother),\nBruce Wayne (Batman, father),\nRa's Al Ghul (maternal grandfather),\nMelisande (maternal grandmother),\nThomas Wayne (paternal grandfather),\nMartha Wayne (paternal grandmother),\nSensei (great-grandfather),\nSimon Hurt (ancestor),\nNyssa Raatko (aunt, deceased),\nDusan al Ghul (White Ghost, uncle, deceased),\nRichard Grayson (Nightwing, adoptive brother),\nTim Drake (Red Robin, adoptive brother),\nCassandra Cain (Batgirl IV, adoptive sister),\nJason Todd (Red Hood, adoptive brother), \nPatrick Wayne (great-grandfather, deceased); \nCharles Wayne (great-great-grandfather, deceased);\nConstance Wayne (great-great-grandmother, deceased); \nAlan Wayne (ancestor, deceased); \nSolomon Wayne (ancestor, deceased); \nDarius Wayne (ancestor, deceased); \nJoshua Wayne (ancestor, deceased)"
+       },
+       "id": "564",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1473.jpg"
+       },
+       "name": "Robin V",
+       "powerstats": {
+              "combat": "65",
+              "durability": "16",
+              "intelligence": "69",
+              "power": "29",
+              "speed": "33",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "Gotham City",
+              "occupation": "-"
+       }
+}

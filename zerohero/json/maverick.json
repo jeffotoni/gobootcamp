@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "244 lb",
+                     "110 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Chris",
+                     "Bolt"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men Unlimited #8 (1995)",
+              "full-name": "Christopher Bradley",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "(As Maverick) Formerly Gene Nation, Cable�s Underground; (as Bolt) formerly New Warriors",
+              "relatives": "Robert Bradley (Frank Johnson, father), Marion Bradley (Rose Johnson, mother), Catherine Bradley (Jennifer Johnson, sister)"
+       },
+       "id": "438",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/257.jpg"
+       },
+       "name": "Maverick",
+       "powerstats": {
+              "combat": "85",
+              "durability": "42",
+              "intelligence": "63",
+              "power": "60",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Mercenary; former adventurer, student"
+       }
+}

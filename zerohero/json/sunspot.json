@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "brown",
+              "gender": "Male",
+              "hair-color": "black",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "170 lb",
+                     "77 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Robert DaCosta",
+                     "Bobby; Black Rook",
+                     "Black King",
+                     "Reignfire"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Graphic Novel #4 (October, 1982)",
+              "full-name": "Roberto DaCosta",
+              "place-of-birth": "Rio de Janeiro, Brazil",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Avengers; formerly X-Men, New Mutants, Young X-Men, X-Corporation (Los Angeles branch), MLF, X-Force, Fallen Angels, Hellfire Club, Bratpack",
+              "relatives": "Emmanuel da Costa (father, deceased), Nina da Costa (mother), Reignfire (genetic copy, deceased)"
+       },
+       "id": "640",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/138.jpg"
+       },
+       "name": "Sunspot",
+       "powerstats": {
+              "combat": "70",
+              "durability": "25",
+              "intelligence": "63",
+              "power": "90",
+              "speed": "35",
+              "strength": "63"
+       },
+       "response": "success",
+       "work": {
+              "base": "1128 Mission Street, San Francisco, California",
+              "occupation": "Adventurer, businessman"
+       }
+}

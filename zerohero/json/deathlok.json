@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Grey",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Cyborg",
+              "weight": [
+                     "395 lb",
+                     "178 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Demolisher"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Astonishing Tales #25 (August, 1974)",
+              "full-name": "Luther Manning",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Former member of the CIA, Project: Alpha-Mech, US Army, ally of Godwulf's Redeemers",
+              "relatives": "Janice (Wife, seperated), Richard (son)"
+       },
+       "id": "215",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1304.jpg"
+       },
+       "name": "Deathlok",
+       "powerstats": {
+              "combat": "60",
+              "durability": "70",
+              "intelligence": "69",
+              "power": "40",
+              "speed": "30",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York area",
+              "occupation": "-"
+       }
+}

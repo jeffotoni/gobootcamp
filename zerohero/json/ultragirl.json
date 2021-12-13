@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "233 lb",
+                     "105 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Suzy Sherman",
+                     "Ultra-Girl"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Tsu-Zana",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Initiative, New Warriors",
+              "relatives": "Toby Sherman (father)"
+       },
+       "id": "679",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1295.jpg"
+       },
+       "name": "Ultragirl",
+       "powerstats": {
+              "combat": "80",
+              "durability": "70",
+              "intelligence": "50",
+              "power": "35",
+              "speed": "35",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Model"
+       }
+}

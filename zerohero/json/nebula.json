@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Luphomoid",
+              "weight": [
+                     "185 lb",
+                     "83 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Avengers #257 (July, 1985)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Graces, United Front, former leader of a mercenary band",
+              "relatives": "-"
+       },
+       "id": "487",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10632.jpg"
+       },
+       "name": "Nebula",
+       "powerstats": {
+              "combat": "60",
+              "durability": "50",
+              "intelligence": "63",
+              "power": "42",
+              "speed": "13",
+              "strength": "52"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue / White",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'1",
+                     "155 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Deadly Hands of Kung Fu #22 (March, 1976)",
+              "full-name": "Jonathan Hart",
+              "place-of-birth": "New Haven, Connecticut",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Avengers, Defenders for a Day",
+              "relatives": "Philip (father, deceased), Marie (mother)"
+       },
+       "id": "350",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/86.jpg"
+       },
+       "name": "Jack of Hearts",
+       "powerstats": {
+              "combat": "30",
+              "durability": "30",
+              "intelligence": "63",
+              "power": "77",
+              "speed": "100",
+              "strength": "55"
+       },
+       "response": "success",
+       "work": {
+              "base": "Avengers Mansion",
+              "occupation": "Adventurer"
+       }
+}

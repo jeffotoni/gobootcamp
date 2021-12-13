@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "190 lb",
+                     "86 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Pendragon",
+                     "Gann Josin",
+                     "Eobar Garrington"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Avengers #47 (1967)",
+              "full-name": "Dane Whitman",
+              "place-of-birth": "Gloucester, Massachusetts",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "MI-13; formerly Avengers, Masters of Evil (as a mole), Excalibur, Heroes for Hire, Ultraforce (in the Ultraverse), Defenders, Knights of Wundagore, Queen's Vengeance, King Richard's Army",
+              "relatives": "Nathan Garrett (Black Knight II, uncle, deceased); Sir Percy of Scandia (Black Knight), Sir Raston, Eobar Garrington (Black Knights of past eras, ancestors, deceased); Lady Rosamund, Edward, Geoffrey (ancestral relations, presumed deceased); Dafydd ap Iowerth, Arthur Pendragon, Mordred the Evil, Morgan Le Fay (distant ancestral relations)"
+       },
+       "id": "102",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/246.jpg"
+       },
+       "name": "Black Knight III",
+       "powerstats": {
+              "combat": "70",
+              "durability": "70",
+              "intelligence": "63",
+              "power": "43",
+              "speed": "8",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, scientist; former crusader"
+       }
+}

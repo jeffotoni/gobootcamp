@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "White",
+              "height": [
+                     "0'25",
+                     "64 cm"
+              ],
+              "race": "Kryptonian",
+              "weight": [
+                     "40 lb",
+                     "18 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Adventure Comics #210 (March, 1955)",
+              "full-name": "Krypto the Superdog",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Superman",
+              "relatives": "-"
+       },
+       "id": "396",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/725.jpg"
+       },
+       "name": "Krypto",
+       "powerstats": {
+              "combat": "40",
+              "durability": "90",
+              "intelligence": "9",
+              "power": "82",
+              "speed": "100",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "Smallville, Kansas",
+              "occupation": "-"
+       }
+}

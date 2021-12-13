@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Auburn",
+              "height": [
+                     "5'4",
+                     "163 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "110 lb",
+                     "50 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Pixie"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "TALES TO ASTONISH #44",
+              "full-name": "Janet Van Dyne",
+              "place-of-birth": "Cresskill, New Jersey",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Avengers",
+              "relatives": "Vernon Van Dyne (father, deceased), unnamed mother (deceased), Henry \"Hank\" Pym (ex-husband)"
+       },
+       "id": "708",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/155.jpg"
+       },
+       "name": "Wasp",
+       "powerstats": {
+              "combat": "42",
+              "durability": "52",
+              "intelligence": "63",
+              "power": "29",
+              "speed": "58",
+              "strength": "17"
+       },
+       "response": "success",
+       "work": {
+              "base": "Avengers Mansion",
+              "occupation": "Adventurer, fashion designer, independently wealthy socialite"
+       }
+}

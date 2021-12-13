@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "God / Eternal",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Superman #30",
+              "full-name": "Mr. Mxyzptlk",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "459",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/744.jpg"
+       },
+       "name": "Mister Mxyzptlk",
+       "powerstats": {
+              "combat": "50",
+              "durability": "100",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "100",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

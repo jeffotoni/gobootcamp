@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Bown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Green Lantern",
+                     "White Lantern"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The New 52: FCBD Special Edition #1 (June, 2012)",
+              "full-name": "Simoon Baz",
+              "place-of-birth": "Dearborn, Michigan",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Sira Baz (sister), Farid Amar (nephew), Nazir Amar (brother in-law)"
+       },
+       "id": "600",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10649.jpg"
+       },
+       "name": "Simon Baz",
+       "powerstats": {
+              "combat": "60",
+              "durability": "55",
+              "intelligence": "56",
+              "power": "100",
+              "speed": "42",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

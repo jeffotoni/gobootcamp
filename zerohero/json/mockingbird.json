@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "135 lb",
+                     "61 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Barbara Morse-Barton",
+                     "Roberta Morse",
+                     "Agent 19",
+                     "Huntress",
+                     "Bobbi Van Dyne; once posed as Shooting Star"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Astonishing Tales #6 (June, 1971)",
+              "full-name": "Barbara Morse",
+              "place-of-birth": "San Diego, California",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "World Counterterrorism Agency; formerly Secret Avengers, New Avengers, West Coast Avengers, Avengers, Great Lakes Avengers, S.H.I.E.L.D.; partner of Hawkeye; associate of Dr. Wilma Calvin",
+              "relatives": "Susan Morse (mother); Ben Morse (brother); Hawkeye (Clint Barton) (ex-husband)"
+       },
+       "id": "462",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1328.jpg"
+       },
+       "name": "Mockingbird",
+       "powerstats": {
+              "combat": "95",
+              "durability": "20",
+              "intelligence": "75",
+              "power": "48",
+              "speed": "38",
+              "strength": "31"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City, New York",
+              "occupation": "Adventurer; former counter-terrorist agent, private investigator, government operative, S.H.I.E.L.D. agent, biologist"
+       }
+}

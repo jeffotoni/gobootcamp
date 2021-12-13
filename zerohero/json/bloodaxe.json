@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "7'2",
+                     "218 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "1100 lb",
+                     "495 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(as Jackie Lukus) Thor #392 (as Bloodaxe) Thor #449",
+              "full-name": "Jackie Lukus",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "120",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1509.jpg"
+       },
+       "name": "Bloodaxe",
+       "powerstats": {
+              "combat": "84",
+              "durability": "80",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "33",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Architect, former vigilante"
+       }
+}

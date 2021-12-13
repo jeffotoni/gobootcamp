@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Violet",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "4'6",
+                     "137 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "90 lb",
+                     "41 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Vi (nickname)",
+                     "The Queen of the Unseen",
+                     "Invisagirl (InvisaVi)"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Incredibles (Movies, 2004)",
+              "full-name": "Violet Parr",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Incredible Family, National Supers Agency",
+              "relatives": "Robert Parr (Mr Incredible, father), Helen Parr (Elastigirl, mother), Dashiel Parr(Dash, brother), Jack-jack (brother)"
+       },
+       "id": "696",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/825.jpg"
+       },
+       "name": "Violet Parr",
+       "powerstats": {
+              "combat": "15",
+              "durability": "50",
+              "intelligence": "56",
+              "power": "79",
+              "speed": "13",
+              "strength": "9"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

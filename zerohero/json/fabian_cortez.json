@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "-",
+              "hair-color": "Brown",
+              "height": [
+                     "6'5",
+                     "196 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "214 lb",
+                     "96 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men (Vol. 2) #1",
+              "full-name": "Fabian Cortez",
+              "place-of-birth": "Place of birth unknown",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Acolytes at time of death; Formerly Upstarts",
+              "relatives": "Annemarie Cortez (sister, deceased)"
+       },
+       "id": "250",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/24.jpg"
+       },
+       "name": "Fabian Cortez",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Genosha at time of death; Formerly Asteroid M",
+              "occupation": "Unknown"
+       }
+}

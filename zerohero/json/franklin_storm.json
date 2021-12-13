@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "-",
+              "hair-color": "Grey",
+              "height": [
+                     "6'2'",
+                     "188 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "205 lb",
+                     "92 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Franklin Storm was erroneously believed to be the first Invincible Man"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "FANTASTIC FOUR #31",
+              "full-name": "Dr. Franklin Storm",
+              "place-of-birth": "Place of birth unknown",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Mary Storm (wife, deceased), Susan Storm Richards (Invisible Woman, daughter), Jonathan Storm (Human Torch, son), Franklin Richards (grandson), Reed Richards (Mister Fantastic, son-in-law)"
+       },
+       "id": "270",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/170.jpg"
+       },
+       "name": "Franklin Storm",
+       "powerstats": {
+              "combat": "10",
+              "durability": "1",
+              "intelligence": "38",
+              "power": "0",
+              "speed": "1",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Inapplicable",
+              "occupation": "Surgeon"
+       }
+}

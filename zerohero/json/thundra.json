@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "7'2",
+                     "218 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "350 lb",
+                     "158 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #129 (December, 1972)",
+              "full-name": "Thundra",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Lady Liberators; Empress of the Sisterhood; formerly Frightful Four, Fantastic Four, former agent of Roxxon Oil Corporation",
+              "relatives": "Superia (alleged ancestor), Arkon (consort) Lyra (alternate reality daughter)"
+       },
+       "id": "665",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/508.jpg"
+       },
+       "name": "Thundra",
+       "powerstats": {
+              "combat": "54",
+              "durability": "64",
+              "intelligence": "38",
+              "power": "26",
+              "speed": "32",
+              "strength": "81"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile; United Sisterhood Republic of North America",
+              "occupation": "Ruler, warrior"
+       }
+}

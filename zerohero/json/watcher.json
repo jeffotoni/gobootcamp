@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #13 (April, 1963)",
+              "full-name": "Uatu",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "The Watchers, Friend and Ally of the Fantastic Four, among other Earth heroes",
+              "relatives": "Ikor (father); Aron (nephew); Qyre, Zoma (cousins)"
+       },
+       "id": "709",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/516.jpg"
+       },
+       "name": "Watcher",
+       "powerstats": {
+              "combat": "56",
+              "durability": "89",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "67",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

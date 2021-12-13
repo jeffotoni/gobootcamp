@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Grey",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'",
+                     "183 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "170 lb",
+                     "77 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Colossal Boy (mostly known as Colossal Boy",
+                     "although he dislikes that name himself)"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Teen Titans/Legion Special #1 (2004)",
+              "full-name": "Gim Allon",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Legion of Super-Heroes",
+              "relatives": "-"
+       },
+       "id": "451",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1181.jpg"
+       },
+       "name": "Micro Lad",
+       "powerstats": {
+              "combat": "32",
+              "durability": "28",
+              "intelligence": "38",
+              "power": "44",
+              "speed": "27",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "United Planets, 31st century",
+              "occupation": "-"
+       }
+}

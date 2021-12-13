@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "185 lb",
+                     "83 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Jean-Paul Martin"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men #120 (1979)",
+              "full-name": "Jean-Paul Beaubier",
+              "place-of-birth": "Montreal, Qu�bec, Canada",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "None, formerly Hydra, Xavier Institute Faculty/Alpha Squadron (teacher/advisor), X-Men, Alpha Flight, Front de Lib�ration du Qu�bec/Cell Combattre",
+              "relatives": "Jean-Baptiste Beaubier (father, deceased), unnamed mother (deceased), Louis Martin (adoptive father, deceased), unnamed adoptive mother (deceased), Jeanne-Marie Beaubier (Aurora, sister), Joanne Beaubier (adopted daughter, deceased)"
+       },
+       "id": "495",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1287.jpg"
+       },
+       "name": "Northstar",
+       "powerstats": {
+              "combat": "70",
+              "durability": "56",
+              "intelligence": "50",
+              "power": "65",
+              "speed": "83",
+              "strength": "18"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former terrorist, adventurer, teacher, businessman, novelist, professional skier, trapeze artist, thief"
+       }
+}

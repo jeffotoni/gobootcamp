@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "181 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Bob",
+                     "agent of Hydra",
+                     "Bob",
+                     "agent of A.I.M"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Cable \u0026 Deadpool #38 (May, 2007)",
+              "full-name": "Bob",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "A.I.M., Deadpool; formerly Agency X, Hydra",
+              "relatives": "Allison (ex-wife); Terry and Howie (sons)"
+       },
+       "id": "10",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10255.jpg"
+       },
+       "name": "Agent Bob",
+       "powerstats": {
+              "combat": "20",
+              "durability": "5",
+              "intelligence": "10",
+              "power": "5",
+              "speed": "13",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile; formerly Manhattan, Hellcarrier",
+              "occupation": "Mercenary, janitor; former pirate, terrorist"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Demon",
+              "weight": [
+                     "452 lb",
+                     "203 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Demon"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Demon #1 (September, 1972)",
+              "full-name": "Jason Blood",
+              "place-of-birth": "Hell",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Justice League of America, Spirit Squad",
+              "relatives": "Belial (father), Raan va Daath (mother), Merlin (half Brother)"
+       },
+       "id": "246",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10429.jpg"
+       },
+       "name": "Etrigan",
+       "powerstats": {
+              "combat": "50",
+              "durability": "100",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "17",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "Hell",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Hazel",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "5'57",
+                     "297 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Star Wars: Episode VII - The Force Awakens (2015)",
+              "full-name": "",
+              "place-of-birth": "Jakku",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "Resistence",
+              "relatives": "-"
+       },
+       "id": "555",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10561.jpg"
+       },
+       "name": "Rey",
+       "powerstats": {
+              "combat": "35",
+              "durability": "10",
+              "intelligence": "63",
+              "power": "87",
+              "speed": "21",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "Jakku",
+              "occupation": "Scavenger"
+       }
+}

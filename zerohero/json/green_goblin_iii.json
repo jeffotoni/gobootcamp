@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'",
+                     "183 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "195 lb",
+                     "88 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "As Dr. Barton Hamilton in Amazing Spider-Man #167 as Green Goblin III in Amazing Spider-Man #176",
+              "full-name": "Barton Hamilton",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "301",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/351.jpg"
+       },
+       "name": "Green Goblin III",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Psychiatrist"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Locutus"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Star Trek: The Next Generation (1987)",
+              "full-name": "Jean-Luc Picard",
+              "place-of-birth": "La Barre, France, Earth",
+              "publisher": "Star Trek"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Maurice Picard (father), Yvette Picard (mother), Robert Picard (brother), Shinzon (clone)"
+       },
+       "id": "357",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10567.jpg"
+       },
+       "name": "Jean-Luc Picard",
+       "powerstats": {
+              "combat": "65",
+              "durability": "30",
+              "intelligence": "75",
+              "power": "26",
+              "speed": "17",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Commanding officer USS Enterprise (NCC-1701-E)"
+       }
+}

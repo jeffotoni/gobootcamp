@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "220 lb",
+                     "99 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Spectacular Spider-Man #243 (1997)",
+              "full-name": "Alyosha Kravinoff",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly the Sinister Six",
+              "relatives": "Sergei Kravinoff (Kraven the Hunter, father, deceased), unidentified mother, Vladimir Kravinoff (Grim Hunter, half-brother, deceased), Nedrocci Tannengarden (half-brother, deceased), Dmitri Smerdyakov"
+       },
+       "id": "394",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1034.jpg"
+       },
+       "name": "Kraven II",
+       "powerstats": {
+              "combat": "85",
+              "durability": "28",
+              "intelligence": "50",
+              "power": "43",
+              "speed": "23",
+              "strength": "34"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "400 lb",
+                     "180 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Savior",
+                     "Son of Hulk",
+                     "WorldBreaker",
+                     "Long Hair",
+                     "Little Monster",
+                     "Conan"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "World War Hulk #5, 2007",
+              "full-name": "",
+              "place-of-birth": "Sakaar",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Morris Walters (granduncle), Elaine Banner-Walters (paternal grandaunt, deceased), Brian Banner (paternal grandfather, deceased), Rebecca Banner (paternal grandmother, deceased), She-Hulk (1st cousin once removed), Hulk (father), Caiera the Oldstrong (mother, deceased), Hiro-Kala (Twin brother), Lyra (half-sister)"
+       },
+       "id": "605",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1341.jpg"
+       },
+       "name": "Skaar",
+       "powerstats": {
+              "combat": "85",
+              "durability": "90",
+              "intelligence": "50",
+              "power": "69",
+              "speed": "27",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Warrior"
+       }
+}

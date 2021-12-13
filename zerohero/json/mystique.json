@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Yellow (without irises)",
+              "gender": "Female",
+              "hair-color": "Red / Orange",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Mallory Brickman"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(as Raven Darkholme) MS. MARVEL #16, (as Mystique) MS. MARVEL #18",
+              "full-name": "Raven Darkholme",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Founder and leader of the third Brotherhood of Evil Mutants, now known as Freedom Force; X-Factor, X-Men",
+              "relatives": "Rogue (unofficial foster daughter), Ralph Brickman (husband), Gloria Brickman (daughter), Graydon Creed (son, deceased)"
+       },
+       "id": "480",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/817.jpg"
+       },
+       "name": "Mystique",
+       "powerstats": {
+              "combat": "74",
+              "durability": "64",
+              "intelligence": "75",
+              "power": "64",
+              "speed": "23",
+              "strength": "12"
+       },
+       "response": "success",
+       "work": {
+              "base": "Arlington, Virginia",
+              "occupation": "Special operative for Germany and the United States governments, (former) German Freedom Fighter, special operative in the Weapon X Project Team"
+       }
+}

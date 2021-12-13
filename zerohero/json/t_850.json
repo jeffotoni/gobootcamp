@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Cyborg",
+              "weight": [
+                     "440 lb",
+                     "198 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Terminator"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Terminator 3: Rise of the Machines (2003)",
+              "full-name": "Cyberdyne Systems Series 850 Terminator",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Skynet",
+              "relatives": "-"
+       },
+       "id": "651",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10410.jpg"
+       },
+       "name": "T-850",
+       "powerstats": {
+              "combat": "75",
+              "durability": "90",
+              "intelligence": "75",
+              "power": "83",
+              "speed": "25",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Assassin"
+       }
+}

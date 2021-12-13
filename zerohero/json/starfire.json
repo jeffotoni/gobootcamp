@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Auburn",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Tamaranean",
+              "weight": [
+                     "158 lb",
+                     "71 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Princess Koriand'r",
+                     "Kory Anders",
+                     "Nova"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "DC Comics Presents #26 (October, 1980)",
+              "full-name": "Koriand'r",
+              "place-of-birth": "Tamaran",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly R.E.B.E.L.S., Justice League of America, Teen Titans, Outsiders",
+              "relatives": "King Myand'r (father), Queen Luand'r (mother), Queen Komand'r (sister, Blackfire), Ryand'r (brother), Prince Karras (husband, deceased), Ph'yzzon (husband, deceased)"
+       },
+       "id": "632",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/786.jpg"
+       },
+       "name": "Starfire",
+       "powerstats": {
+              "combat": "70",
+              "durability": "85",
+              "intelligence": "50",
+              "power": "59",
+              "speed": "33",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "Formerly Titans Island, New York City; Titans Tower, San Francisco",
+              "occupation": "Model"
+       }
+}

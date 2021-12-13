@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "7'0",
+                     "213 cm"
+              ],
+              "race": "Yautja",
+              "weight": [
+                     "520 lb",
+                     "234 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Hunters",
+                     "Yautja",
+                     "Hish"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Predator (1987)",
+              "full-name": "Yautja",
+              "place-of-birth": "Yautja Prime",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "526",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10448.jpg"
+       },
+       "name": "Predator",
+       "powerstats": {
+              "combat": "90",
+              "durability": "85",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "25",
+              "strength": "30"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

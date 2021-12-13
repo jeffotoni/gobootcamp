@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "225 lb",
+                     "101 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Giant-Size X-Men #1 (1975)",
+              "full-name": "John Proudstar",
+              "place-of-birth": "Camp Verde, Arizona",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men, formerly US Marine Corp",
+              "relatives": "Unidentified grandfather (deceased), Neal Proudstar (father, deceased), Maria Proudstar (mother, deceased), James Proudstar (Warpath, brother)"
+       },
+       "id": "661",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/611.jpg"
+       },
+       "name": "Thunderbird",
+       "powerstats": {
+              "combat": "70",
+              "durability": "32",
+              "intelligence": "50",
+              "power": "13",
+              "speed": "27",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier's School for Gifted Youngsters, Salem Center, Westchester County, New York",
+              "occupation": "Former adventurer, student, Marine"
+       }
+}

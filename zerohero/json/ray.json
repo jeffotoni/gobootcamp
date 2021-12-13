@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Male",
+              "hair-color": "Red",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "155 lb",
+                     "70 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Ray #1",
+              "full-name": "Ray Terrill",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Freedom Fighters, formerly Justice League of America, Justice League Task Force, Young Justice, JSA Reserves, Forgotten Heroes, Justice League Internationa",
+              "relatives": "Happy Terrill (father), Nadine Terrill (mother), Joshua Terrill (Spitfire, brother), Thomas Terrill (uncle/foster father, deceased), Hank Terrill (cousin)"
+       },
+       "id": "543",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10204.jpg"
+       },
+       "name": "Ray",
+       "powerstats": {
+              "combat": "20",
+              "durability": "100",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "92",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Philadelphia, Pennsylvania",
+              "occupation": "Freelance Computer Programmer and Software Designer"
+       }
+}

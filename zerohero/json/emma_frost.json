@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'10'",
+                     "178 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "144 lb",
+                     "65 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Storm",
+                     "White Queen"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "UNCANNY X-MEN #132",
+              "full-name": "Emma Frost",
+              "place-of-birth": "Boston, Massachusetts",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Active member of the X-Men, Instructor for Generation X, The Inner Circle of the Hellfire Club",
+              "relatives": "Winston Frost (father), Hazel Frost (mother), Christian Frost (brother) Adrienne Frost (sister, deceased,) Cordelia Frost (sister)"
+       },
+       "id": "241",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/325.jpg"
+       },
+       "name": "Emma Frost",
+       "powerstats": {
+              "combat": "42",
+              "durability": "90",
+              "intelligence": "75",
+              "power": "100",
+              "speed": "35",
+              "strength": "63"
+       },
+       "response": "success",
+       "work": {
+              "base": "(current) Emma Frost operates from the Massachusetts Academy, Snow Valley, Massachusetts, (former) Hellfire Club mansion in New York City, a home in the Berkshire Mountains in Massachusetts (near the Massachusetts Academy), and places of residence in vari",
+              "occupation": "-"
+       }
+}

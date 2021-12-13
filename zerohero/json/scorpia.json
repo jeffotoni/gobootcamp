@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Spider-Man: Power of Terror limited series #2 (1995)",
+              "full-name": "Elaine Coll",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Hells Kitchen Mob; formerly Sinister Seven, allied with Silvermane",
+              "relatives": "Vincent Coll (grandfather, deceased)"
+       },
+       "id": "580",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1123.jpg"
+       },
+       "name": "Scorpia",
+       "powerstats": {
+              "combat": "28",
+              "durability": "28",
+              "intelligence": "38",
+              "power": "34",
+              "speed": "42",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Professional criminal"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Auburn",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Cat",
+                     "Greer Sorenson"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Cat #1",
+              "full-name": "Greer Grant Nelson",
+              "place-of-birth": "Presumably Chicago Illinois USA",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Avengers",
+              "relatives": "Mr. Grant (father), Mrs. Grant (mother, deceased), William Nelson (husband, deceased)"
+       },
+       "id": "667",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/42.jpg"
+       },
+       "name": "Tigra",
+       "powerstats": {
+              "combat": "90",
+              "durability": "38",
+              "intelligence": "63",
+              "power": "33",
+              "speed": "53",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City, New York USA",
+              "occupation": "Laboratory assistant, model, adventurer, NYC police"
+       }
+}

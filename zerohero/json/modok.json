@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Male",
+              "hair-color": "Brownn",
+              "height": [
+                     "12'0",
+                     "366 cm"
+              ],
+              "race": "Cyborg",
+              "weight": [
+                     "750 lb",
+                     "338 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "M.O.D.O.K.",
+                     "Mental Organism Designed Only for Killing"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Tales of Suspense #93",
+              "full-name": "George Tarleton",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "M.O.D.O.K. Superior (clone), Head Case (son), Number None (son)"
+       },
+       "id": "463",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10438.jpg"
+       },
+       "name": "MODOK",
+       "powerstats": {
+              "combat": "15",
+              "durability": "25",
+              "intelligence": "100",
+              "power": "79",
+              "speed": "25",
+              "strength": "18"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Would-be conqueror, AIM leader, terrorist; former AIM agent, technician"
+       }
+}

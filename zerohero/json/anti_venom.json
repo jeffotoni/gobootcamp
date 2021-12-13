@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "7'6",
+                     "229 cm"
+              ],
+              "race": "Symbiote",
+              "weight": [
+                     "795 lb",
+                     "358 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Eddie",
+                     "Edwin Brock",
+                     "Venom",
+                     "Lethal Protector",
+                     "White Venom",
+                     "998th"
+              ],
+              "alignment": "-",
+              "alter-egos": "Toxin, Venom",
+              "first-appearance": "Amazing Spider-Man #569 (as Anti-Venom)",
+              "full-name": "Eddie Brock",
+              "place-of-birth": "San Francisco, California",
+              "publisher": "Toxin"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Carl Brock (father, estranged), Janine Brock (mother, deceased), Mary Brock (sister), Ann Weying (ex-wife, deceased), Symbiotes' relatives: Toxin Symbiote (current symbiote, former grandson), Venom Symbiote (former symbiote, grandfather, former brother), Agony, Phage, Riot, Lasher (uncles, former sons), Scorn (sister, former niece), Carnage (father, former son), Scream (aunt, former daughter, deceased), Hybrid (uncle, former son, deceased)"
+       },
+       "id": "34",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1485.jpg"
+       },
+       "name": "Anti-Venom",
+       "powerstats": {
+              "combat": "84",
+              "durability": "90",
+              "intelligence": "75",
+              "power": "96",
+              "speed": "65",
+              "strength": "60"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York, New York",
+              "occupation": "Vigilante; former journalist for the Daily Globe"
+       }
+}

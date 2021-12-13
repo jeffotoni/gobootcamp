@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Boom-Boom",
+                     "Boomer",
+                     "Meltdown",
+                     "Mutate #35",
+                     "Time Bomb",
+                     "Nancy Forrester"
+              ],
+              "alignment": "good",
+              "alter-egos": "Boom-Boom",
+              "first-appearance": "-",
+              "full-name": "Tabitha Smith",
+              "place-of-birth": "Roanoke, Virginia",
+              "publisher": "Boom-Boom"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Nextwave, X-Force, Genoshan Mutates, New Mutants, X-Terminators, X-Factor (trainee), Fallen Angels",
+              "relatives": "Martin Louis Smith (father), Mandy Smith (step-mother), Wanda Jo Bialowsky-Smith (step-mother)"
+       },
+       "id": "442",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/258.jpg"
+       },
+       "name": "Meltdown",
+       "powerstats": {
+              "combat": "64",
+              "durability": "42",
+              "intelligence": "38",
+              "power": "62",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, former student, thief"
+       }
+}

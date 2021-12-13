@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "160 lb",
+                     "72 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Queen Maxima",
+                     "Empress of the Almeracian Empire"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "",
+              "place-of-birth": "Almerac",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League Task Force, Extreme Justice",
+              "relatives": "-"
+       },
+       "id": "439",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1168.jpg"
+       },
+       "name": "Maxima",
+       "powerstats": {
+              "combat": "75",
+              "durability": "56",
+              "intelligence": "75",
+              "power": "81",
+              "speed": "35",
+              "strength": "90"
+       },
+       "response": "success",
+       "work": {
+              "base": "Imperial Royal Palace",
+              "occupation": "Adventurer, Queen of the Almerac Empire"
+       }
+}

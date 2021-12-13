@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "119 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "What If? Vol 2 #105 (February, 1998)",
+              "full-name": "May 'Mayday' Parker",
+              "place-of-birth": "New York City, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "618",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/480.jpg"
+       },
+       "name": "Spider-Girl",
+       "powerstats": {
+              "combat": "75",
+              "durability": "65",
+              "intelligence": "63",
+              "power": "53",
+              "speed": "60",
+              "strength": "38"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City, New York",
+              "occupation": "-"
+       }
+}

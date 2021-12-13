@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Amon Tomaz",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Isis (Sister, deceased), Black Adam (Brother-in-Law)"
+       },
+       "id": "506",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1165.jpg"
+       },
+       "name": "Osiris",
+       "powerstats": {
+              "combat": "42",
+              "durability": "95",
+              "intelligence": "75",
+              "power": "65",
+              "speed": "60",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "Shiruta, Kahndaq",
+              "occupation": "-"
+       }
+}

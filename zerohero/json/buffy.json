@@ -1,0 +1,57 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'2",
+                     "157 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "115 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Anne",
+                     "The Chosen One",
+                     "The Vampire Slayer",
+                     "The Slayer",
+                     "Buff",
+                     "B",
+                     "The Buffster",
+                     "Belinda",
+                     "Joan"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Dark Horse Presents 1998 Annual",
+              "full-name": "Buffy Anne Summers",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Slayer Army, Scooby Gang, (formerly) The Initiative, Watchers Council",
+              "relatives": "Joyce Summers (mother, deceased) ; Hank Summers (father) ; Dawn Summers (sister) ; Celia (cousin, deceased) ; Arlene (aunt)"
+       },
+       "id": "140",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10430.jpg"
+       },
+       "name": "Buffy",
+       "powerstats": {
+              "combat": "60",
+              "durability": "70",
+              "intelligence": "63",
+              "power": "48",
+              "speed": "42",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Slayer ; (formerly) Waitress ; DoubleMeat Palace employee ; Sunnydale High Counselor"
+       }
+}

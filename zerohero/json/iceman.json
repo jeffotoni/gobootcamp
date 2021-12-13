@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "145 lb",
+                     "65 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Bobby Drake",
+                     "Mister Friese",
+                     "Drake Roberts",
+                     "Rampage",
+                     "Frozen One",
+                     "Iceface"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men #1",
+              "full-name": "Bobby Drake",
+              "place-of-birth": "Fort Washington, Long Island, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men (Jean Grey School member, founding member); formerly Murder Circus (brainwashed), Excelsiors (squad leader), The Twelve, X-Factor/X-Terminators (founding member), Chosen (Dualers), Secret Defenders, Defenders, Champions (founder and founding member)",
+              "relatives": "William Robert Drake (father), Madeline Beatrice Bass Drake (mother), Mary (cousin), Joel (cousin), Anne (aunt)"
+       },
+       "id": "339",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/816.jpg"
+       },
+       "name": "Iceman",
+       "powerstats": {
+              "combat": "64",
+              "durability": "100",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "53",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, formerly teacher, accountant, student"
+       }
+}

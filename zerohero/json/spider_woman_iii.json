@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Female",
+              "hair-color": "Brown",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "123 lb",
+                     "55 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(cameo) Spectacular Spider-Man #263 (1998); (full) Amazing Spider-Man #441 (1998)",
+              "full-name": "Martha Franklin",
+              "place-of-birth": "Rochester, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Gathering of the Five",
+              "relatives": "Jeremy Franklin (father, deceased), Bernice Franklin (mother, deceased), J. Jonah Jameson (foster father), Marla Madison (foster mother)"
+       },
+       "id": "625",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/482.jpg"
+       },
+       "name": "Spider-Woman III",
+       "powerstats": {
+              "combat": "28",
+              "durability": "42",
+              "intelligence": "50",
+              "power": "60",
+              "speed": "27",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

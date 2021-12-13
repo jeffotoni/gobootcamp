@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "120 lb",
+                     "54 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Teen Titans/Legion Special #1",
+              "full-name": "Ayla Ranzz",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Legion of Super-Heroes, formerly the Wanderers",
+              "relatives": "Unnamd parents, Garth Ranzz (Lightning Lad, twin brother); Mekt Ranzz (older brother)"
+       },
+       "id": "406",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1178.jpg"
+       },
+       "name": "Light Lass",
+       "powerstats": {
+              "combat": "42",
+              "durability": "28",
+              "intelligence": "38",
+              "power": "67",
+              "speed": "35",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "United Planets",
+              "occupation": "-"
+       }
+}

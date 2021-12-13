@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Yellow",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "Cyborg",
+              "weight": [
+                     "300 lb",
+                     "135 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Lord Vader"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Star Wars: Episode IV - A New Hope (1977)",
+              "full-name": "Anakin Skywalker",
+              "place-of-birth": "Tatooine",
+              "publisher": "George Lucas"
+       },
+       "connections": {
+              "group-affiliation": "Sith, Galactic Empire",
+              "relatives": "Luke Skywalker (Son), Princess Leia (Daughter)"
+       },
+       "id": "208",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10444.jpg"
+       },
+       "name": "Darth Vader",
+       "powerstats": {
+              "combat": "100",
+              "durability": "35",
+              "intelligence": "69",
+              "power": "100",
+              "speed": "33",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "Death Star",
+              "occupation": "Sith Lord, Supreme Commander of the Imperial Fleet"
+       }
+}

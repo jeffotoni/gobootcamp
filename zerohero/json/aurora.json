@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "140 lb",
+                     "63 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Sister Beaubier"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men #121 (1979)",
+              "full-name": "Jeanne-Marie Beaubier",
+              "place-of-birth": "Montreal, Quebec, Canada",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Alpha Flight, Alpha Flight (Space Program), Royal Canadian Mounted Police; formerly Weapon X, ally of the Havok's Brotherhood, Headbangers , Children of the Vault, X-Men (interim member)",
+              "relatives": "Jean-Baptiste Beaubier (father, deceased), unidentified mother (deceased), Jean-Paul Beaubier (Northstar, twin brother) Joanna Beaubier (adopted niece, deceased); Lois and Genevieve Martin (first cousins once removed/adopted parents, deceased)"
+       },
+       "id": "56",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1289.jpg"
+       },
+       "name": "Aurora",
+       "powerstats": {
+              "combat": "56",
+              "durability": "60",
+              "intelligence": "63",
+              "power": "74",
+              "speed": "96",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Laval, Quebec, Canada",
+              "occupation": "Adventurer; former terrorist, nun, history/geography teacher"
+       }
+}

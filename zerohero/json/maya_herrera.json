@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Female",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Maya Herrera",
+              "place-of-birth": "Dominican Republic",
+              "publisher": "NBC - Heroes"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Alejandro (twin brother)"
+       },
+       "id": "440",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/944.jpg"
+       },
+       "name": "Maya Herrera",
+       "powerstats": {
+              "combat": "14",
+              "durability": "14",
+              "intelligence": "50",
+              "power": "60",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

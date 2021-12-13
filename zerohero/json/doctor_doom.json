@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'7",
+                     "201 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "415 lb",
+                     "187 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Master",
+                     "Invincible Man"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #5 (July 1962)",
+              "full-name": "Victor von Doom",
+              "place-of-birth": "Haasenstadt, Latveria",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Future Foundation; Formerly Cabal, Knights of the Atomic Table, Acts of Vengeance Prime Movers, partner of Namor, employer of the Terrible Trio, Fantastic Four (leader)",
+              "relatives": "Werner von Doom (father, deceased), Cynthia von Doom (mother, deceased); Kang the Conqueror, his counterparts, and offspring (alleged descendants), Kristoff Vernard (Doctor Doom II, adopted son), Dr Bob Doom (distant cousin), Boris (unofficially adoptive father/guardian), Valeria von Doom (daughter from alternate universe; became baby of Susan Richards and is now called Valeria Richards)"
+       },
+       "id": "222",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/189.jpg"
+       },
+       "name": "Doctor Doom",
+       "powerstats": {
+              "combat": "84",
+              "durability": "100",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "20",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "Castle Doom, Doomstadt, Latveria",
+              "occupation": "Monarch"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Android",
+              "weight": [
+                     "325 lb",
+                     "146 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "T-1001",
+                     "T-1002"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Terminator 2: Judgment Day",
+              "full-name": "Cyberdyne Systems Series 1000 Terminator",
+              "place-of-birth": "-",
+              "publisher": "Dark Horse Comics"
+       },
+       "connections": {
+              "group-affiliation": "Skynet",
+              "relatives": "-"
+       },
+       "id": "649",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10411.jpg"
+       },
+       "name": "T-1000",
+       "powerstats": {
+              "combat": "75",
+              "durability": "100",
+              "intelligence": "75",
+              "power": "100",
+              "speed": "33",
+              "strength": "34"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

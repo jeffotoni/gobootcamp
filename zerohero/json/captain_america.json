@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "blue",
+              "gender": "Male",
+              "hair-color": "blond",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "240 lb",
+                     "108 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Nomad",
+                     "The Captain"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Captain America Comics #1 (March 1941)",
+              "full-name": "Steve Rogers",
+              "place-of-birth": "Manhattan, New York City, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Secret Avengers (Black OPS Unit Formerly,The Avengers, Secret Avengers (Civil War), New Avengers, formerly The Invaders, Secret Defenders The Redeemers; formerly partner of Bucky, Golden Girl, Rick Jones, Falcon, Demolition-Man and Nomad (Jack Monroe)",
+              "relatives": "Joseph (father, deceased), Sara (mother, deceased), Ian Zola (Nomad) (adopted son)"
+       },
+       "id": "149",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/274.jpg"
+       },
+       "name": "Captain America",
+       "powerstats": {
+              "combat": "100",
+              "durability": "55",
+              "intelligence": "69",
+              "power": "60",
+              "speed": "38",
+              "strength": "19"
+       },
+       "response": "success",
+       "work": {
+              "base": "New York City",
+              "occupation": "Adventurer, federal official, intelligence operative; former soldier, Hydra agent, liaison between S.H.I.E.L.D. and the Avengers, police officer, teacher, sparring partner."
+       }
+}

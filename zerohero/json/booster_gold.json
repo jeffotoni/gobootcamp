@@ -1,0 +1,67 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'5",
+                     "196 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "215 lb",
+                     "97 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Bharjwarj",
+                     "Bloodspot",
+                     "Boosteroo",
+                     "Booster",
+                     "the Boy Wonder",
+                     "Buster",
+                     "Deathstroke",
+                     "Goldstar",
+                     "Greatest Hero You've Never Heard Of",
+                     "Guardian of the Multiverse",
+                     "Jesus Alvarez",
+                     "Kid",
+                     "Killer Moth",
+                     "The King",
+                     "Loser Gold",
+                     "Major Idiot",
+                     "Man of Gold",
+                     "Michael Carter",
+                     "Blac"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Booster Gold #1",
+              "full-name": "Michael Jon Carter",
+              "place-of-birth": "Gotham City, 25th Century",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice League International, Time Masters; formerly Conglomerate, Extreme Justice, Super Buddies",
+              "relatives": "Jonar Carter (father), Ellen Carter (mother, deceased), Michelle Carter (aka Goldstar) (twin sister), Rip Hunter (son) · Rani (adopted daughter), Daniel Carter (21st century ancestor), Rose Levin (ancestor)"
+       },
+       "id": "132",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/647.jpg"
+       },
+       "name": "Booster Gold",
+       "powerstats": {
+              "combat": "40",
+              "durability": "70",
+              "intelligence": "69",
+              "power": "100",
+              "speed": "42",
+              "strength": "85"
+       },
+       "response": "success",
+       "work": {
+              "base": "Metropolis, Earth, 21st Century, formerly Gotham City, 25th Century",
+              "occupation": "Superhero, Founder, C.E.O \u0026 Chairman of Booster Gold International"
+       }
+}

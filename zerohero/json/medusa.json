@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Inhuman",
+              "weight": [
+                     "130 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Madam Medusa",
+                     "Queen Medusa"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four Vol. 1 #36 (1965)",
+              "full-name": "Medusalith Amaquelin Boltagon",
+              "place-of-birth": "Island of Attilan, Atlantic Ocean",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Inhumans, Fantastic Four",
+              "relatives": "Kobar, La (maternal grandparents), Azur (maternal aunt), Mander (maternal uncle-by-marriage), Quelin (father), Ambur (mother), Crystal (sister), Black Bolt (husband, second cousin), Ahura (son), Karnak (cousin), Triton (cousin), Psynapse (second cousin), Maximus (brother-in-law, second cousin), Ronan the Accuser (brother-in-law), Quicksilver (ex-brother-in-law), Luna (niece)"
+       },
+       "id": "441",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/96.jpg"
+       },
+       "name": "Medusa",
+       "powerstats": {
+              "combat": "56",
+              "durability": "70",
+              "intelligence": "75",
+              "power": "37",
+              "speed": "35",
+              "strength": "34"
+       },
+       "response": "success",
+       "work": {
+              "base": "Attilan",
+              "occupation": "Queen, Royal interpreter"
+       }
+}

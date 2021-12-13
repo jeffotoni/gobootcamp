@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "270 lb",
+                     "122 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Greithoth",
+                     "\"Crusher\" Creel",
+                     "Rocky Davis",
+                     "Dynamite Davis",
+                     "Lightningbolt",
+                     "Prisoner #24957"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Daredevil #1 (April, 1964) (As Rocky Davis)",
+              "full-name": "Carl Creel",
+              "place-of-birth": "New York City, New York",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Masters of Evil, Lethal Legion; formerly Worthy, Frightful Four: former agent of Loki and They Who Wield Power",
+              "relatives": "Mary MacPherran (Titania) (wife); Jerry Sledge (son); Rockwell \"Rocky\" Davis (Hi-Llite) (cousin)"
+       },
+       "id": "6",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1448.jpg"
+       },
+       "name": "Absorbing Man",
+       "powerstats": {
+              "combat": "64",
+              "durability": "100",
+              "intelligence": "38",
+              "power": "98",
+              "speed": "25",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Professional criminal; former professional boxer"
+       }
+}

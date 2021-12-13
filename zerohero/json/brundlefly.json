@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Fly"
+              ],
+              "alignment": "-",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Fly (1986)",
+              "full-name": "Seth Brundle",
+              "place-of-birth": "-",
+              "publisher": ""
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "139",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10642.jpg"
+       },
+       "name": "Brundlefly",
+       "powerstats": {
+              "combat": "15",
+              "durability": "40",
+              "intelligence": "69",
+              "power": "27",
+              "speed": "25",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Scientist"
+       }
+}

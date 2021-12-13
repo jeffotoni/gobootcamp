@@ -1,0 +1,60 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'5",
+                     "196 cm"
+              ],
+              "race": "Human / Altered",
+              "weight": [
+                     "285 lb",
+                     "128 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Sinister",
+                     "Robert Windsor",
+                     "Arnold Bocklin",
+                     "Mike Milbury",
+                     "Apocalypse",
+                     "Steven Shaffran",
+                     "Edmond Atkinson",
+                     "Nate",
+                     "Administrator Pearson",
+                     "Nosferatu",
+                     "Nathan Milbury",
+                     "Pale Man"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Uncanny X-Men #221 (September, 1987)",
+              "full-name": "Nathaniel Essex",
+              "place-of-birth": "London, England",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Marauders (founder), Nasty Boys (founder); formerly Weapon X, Third Reich",
+              "relatives": "Rebecca Essex (wife, deceased), Adam Stanislaus Essex (son, deceased), N2 (creation, deceased), Madelyne Pryor (creation, deceased), Claudine Renko (clone \"daughter\")"
+       },
+       "id": "460",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/856.jpg"
+       },
+       "name": "Mister Sinister",
+       "powerstats": {
+              "combat": "50",
+              "durability": "90",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "46",
+              "strength": "48"
+       },
+       "response": "success",
+       "work": {
+              "base": "Many bases throughout the world including his State Home for Foundlings and the Center for Homo Superior Medical Care.",
+              "occupation": "Geneticist, Criminal, biologist and mutant-supremacist"
+       }
+}

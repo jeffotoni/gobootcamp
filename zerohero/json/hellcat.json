@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'8",
+                     "173 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "135 lb",
+                     "61 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Patsy Walker",
+                     "Patricia Hellstrom",
+                     "The Cat"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Avengers #144 (February, 1976)",
+              "full-name": "Patricia Walker",
+              "place-of-birth": "Centerville, CA USA",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Alaskan-based Initiative agent, Lady Liberators, Avengers, Defenders, Legion of the Unliving",
+              "relatives": "Joshua Walker (father), Dorothy Walker (mother, deceased), Sophia (maternal aunt), Bea (step-mother), Mickey Walker (brother), Robert \"Buzz\" Baxter (aka Mad-Dog, ex-husband), Daimon Hellstrom (aka Hellstorm, ex-husband), Percy Walker"
+       },
+       "id": "323",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/79.jpg"
+       },
+       "name": "Hellcat",
+       "powerstats": {
+              "combat": "70",
+              "durability": "45",
+              "intelligence": "63",
+              "power": "46",
+              "speed": "33",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "San Francisco, CA USA",
+              "occupation": "Housemaker, model, adventurer, supernatural investigator"
+       }
+}

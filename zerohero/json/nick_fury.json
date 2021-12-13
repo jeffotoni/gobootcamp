@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown / White",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "221 lb",
+                     "99 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Doyle",
+                     "The Mystery in the Mask",
+                     "Patch",
+                     "Scorpio"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Sgt. Fury and His Howling Commandos #1 (1963)",
+              "full-name": "Nicholas Joseph Fury",
+              "place-of-birth": "New York City",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Secret Avengers, SHIELD (both incarnations); formerly Team Valkyrie, C.I.A., liaison to MI-5, O.S.S., Howling Commandos, U.S. Army",
+              "relatives": "Jack Fury (father, deceased);\nunnamed mother;\nunnamed stepmother (deceased);\nDawn Fury (half-sister);\nJake Fury (half-brother);\nMikel Fury (son, deceased);\nJerry Sapristi (cousin);\nTina Sapristi (cousin by marriage);\nErnesto, Pietro, Giovanni, Maria, Rosa and Gabriella (1st cousins once removed);"
+       },
+       "id": "489",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/326.jpg"
+       },
+       "name": "Nick Fury",
+       "powerstats": {
+              "combat": "100",
+              "durability": "42",
+              "intelligence": "75",
+              "power": "25",
+              "speed": "23",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "S.H.I.E.L.D. director; former S.H.I.E.L.D. agent, intelligence agent, soldier and commando leader, parachuting instructor, stunt flyer"
+       }
+}

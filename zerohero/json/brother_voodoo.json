@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown / White",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "220 lb",
+                     "99 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Doctor Voodoo",
+                     "Sorcerer Supreme"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Strange Tales #169 (September, 1973)",
+              "full-name": "Jericho Drumm",
+              "place-of-birth": "Port-au-Prince, Haiti",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Daniel Drumm (brother deceased), Matilda Drumm (aunt)"
+       },
+       "id": "138",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/39.jpg"
+       },
+       "name": "Brother Voodoo",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "65"
+       },
+       "response": "success",
+       "work": {
+              "base": "Port-au-Prince, Haiti",
+              "occupation": "Psychologist Houngan (voodoo priest)"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "127 lb",
+                     "57 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Hawkman #4",
+              "full-name": "Zatanna Zatara",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Misty Kilgore, Seven Soldiers of Victory, Justice League, Sentinels of Magic",
+              "relatives": "Giovanni \"John\" Zatara (father, deceased), Sindella (mother, deceased), Leonardo da Vinci (paternal ancestor, deceased)"
+       },
+       "id": "730",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/809.jpg"
+       },
+       "name": "Zatanna",
+       "powerstats": {
+              "combat": "56",
+              "durability": "28",
+              "intelligence": "81",
+              "power": "100",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

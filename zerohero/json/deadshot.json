@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "202 lb",
+                     "91 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Man Who Never Misses",
+                     "Worlds Finest Assassin",
+                     "Orlando Furioso"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman #59 (June, 1950)",
+              "full-name": "Floyd Lawton",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "214",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/670.jpg"
+       },
+       "name": "Deadshot",
+       "powerstats": {
+              "combat": "80",
+              "durability": "28",
+              "intelligence": "50",
+              "power": "55",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

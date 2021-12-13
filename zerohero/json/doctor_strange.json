@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Grey",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Sorcerer Supreme",
+                     "Master of the Mystic Arts",
+                     "Stephen Sanders",
+                     "Captain Universe",
+                     "Vincent Stevens"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Strange Tales #110 (July, 1963)",
+              "full-name": "Stephen Strange",
+              "place-of-birth": "Philadelphia, Pennsylvania",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Defenders, underground Avengers; formerly the Order, Midnight Sons; former disciple of the Ancient One",
+              "relatives": "Eugene (father, deceased), Beverly (mother, deceased), Victor (Khiron, brother, apparently deceased), Donna (sister, deceased), Clea (wife, estranged), Umar (mother-in-law), Orini (father-in-law), Dormammu (uncle-in-law)"
+       },
+       "id": "226",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/55.jpg"
+       },
+       "name": "Doctor Strange",
+       "powerstats": {
+              "combat": "60",
+              "durability": "84",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Sorcerer Supreme, retired neurosurgeon"
+       }
+}

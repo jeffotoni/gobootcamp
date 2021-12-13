@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'1",
+                     "185 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "600 lb",
+                     "270 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "God of War",
+                     "Mister Talon",
+                     "Mars",
+                     "Warhawk"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Thor #129",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Avengers, Mighty Avengers, Olympic Pantheon; Warhawks",
+              "relatives": "Zeus (father), Hera (mother), Enyo (wife), Deimos, Phobos, Alexander (sons), Neptune, Pluto (uncles), Demeter, Hestia (aunts), Hephaestus (brother), Apollo, Dionysus, Hercules, Hermes(half-brothers), Artemis, Pallas Athena, Venus, (half-sisters)"
+       },
+       "id": "43",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1118.jpg"
+       },
+       "name": "Ares",
+       "powerstats": {
+              "combat": "101",
+              "durability": "80",
+              "intelligence": "75",
+              "power": "84",
+              "speed": "35",
+              "strength": "82"
+       },
+       "response": "success",
+       "work": {
+              "base": "Avengers Tower, formerly Olympus",
+              "occupation": "-"
+       }
+}

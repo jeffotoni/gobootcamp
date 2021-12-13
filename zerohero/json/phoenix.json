@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "115 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Redd Dayspring",
+                     "Marvel Girl"
+              ],
+              "alignment": "good",
+              "alter-egos": "Jean Grey, White Phoenix of The Crown",
+              "first-appearance": "X-Men #1 (September, 1963)",
+              "full-name": "Jean Grey",
+              "place-of-birth": "-",
+              "publisher": "Jean Grey"
+       },
+       "connections": {
+              "group-affiliation": "Formerly X-Men (founding member); Clan Rebellion, Muir Island X-Men; X-Factor/X-Terminators (founding member); Brides of Set",
+              "relatives": "Rachel Summers (daughter from an alternate universe), X-Man (son from an alternate universe), Cyclops (ex-husband), Havok (former brother-in-law), Corsair (former father-in-law), Madelyne Pryor (clone), Cable (adoptive/biological son), Stryfe (cloned biological son), Genesis (grandson)"
+       },
+       "id": "517",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/828.jpg"
+       },
+       "name": "Phoenix",
+       "powerstats": {
+              "combat": "80",
+              "durability": "100",
+              "intelligence": "100",
+              "power": "100",
+              "speed": "83",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier Institute of Higher Learning, Westchester County, New York",
+              "occupation": "Adventurer"
+       }
+}

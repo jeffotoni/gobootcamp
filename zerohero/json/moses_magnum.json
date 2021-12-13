@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "159 lb",
+                     "72 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Magnum Force,"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Giant-Size Spider-Man #4 (1975)",
+              "full-name": "Moses Magnum",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Magnum Force (leader), agent of Apocalypse; former agent of They Who Wield Power",
+              "relatives": "-"
+       },
+       "id": "474",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1020.jpg"
+       },
+       "name": "Moses Magnum",
+       "powerstats": {
+              "combat": "56",
+              "durability": "42",
+              "intelligence": "75",
+              "power": "55",
+              "speed": "12",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Terrorist, president of Magnum Munitions; former ruler of Canaan"
+       }
+}

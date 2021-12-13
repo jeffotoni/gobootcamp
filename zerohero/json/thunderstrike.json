@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "640 lb",
+                     "288 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Thor"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "(as Masterson) Thor #391; (as Thor) Thor #432; (as Thunderstrike) Thunderstrike #1",
+              "full-name": "Eric Kevin Masterson",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "(At time of death) Avengers; (Formerly) Legion of the Unliving, Thor Corps",
+              "relatives": "Marcy Masterson Steele (wife, divorced), Kevin Masterson (son)"
+       },
+       "id": "664",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/177.jpg"
+       },
+       "name": "Thunderstrike",
+       "powerstats": {
+              "combat": "72",
+              "durability": "84",
+              "intelligence": "63",
+              "power": "42",
+              "speed": "70",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "(as Thunderstrike) Adventurer, crimefighter, (as Masterson) Architect"
+       }
+}

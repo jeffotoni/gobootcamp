@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "-",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "God / Eternal",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Guardian of Eternity",
+                     "The Avenging Angel",
+                     "The Hero That Could Be You"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Micronauts #8 (August, 1979)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "161",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/855.jpg"
+       },
+       "name": "Captain Universe",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "92"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

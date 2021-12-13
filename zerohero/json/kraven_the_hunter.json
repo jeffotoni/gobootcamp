@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "235 lb",
+                     "106 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Kraven the Hunter",
+                     "World's Greatest Hunter",
+                     "the Grim Hunter"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "The Amazing Spider-Man #15 (1964)",
+              "full-name": "Sergei Kravinoff",
+              "place-of-birth": "Volgograd (formerly Stalingrad), Russia",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "(formerly) The Sinister Six",
+              "relatives": "Nikolai \u0026 Anna Makarova Kravinoff (parents, deceased), Dmitri Smerdyakov (Chameleon, half-brother), Vladimir Kravinoff (Grim Hunter, son, deceased), Aloysha \"Al\" Kravinoff (Kraven II, son), Ned Tannengarden (son, deceased)"
+       },
+       "id": "395",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1033.jpg"
+       },
+       "name": "Kraven the Hunter",
+       "powerstats": {
+              "combat": "85",
+              "durability": "42",
+              "intelligence": "63",
+              "power": "25",
+              "speed": "35",
+              "strength": "32"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Professional game hunter, mercenary"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "165 lb",
+                     "74 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men #36 (1994)",
+              "full-name": "Everett Thomas",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Generation X",
+              "relatives": "Stan Thomas (father), Ida Thomas (mother), Kim Ho Twae (adopted sister)"
+       },
+       "id": "648",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/175.jpg"
+       },
+       "name": "Synch",
+       "powerstats": {
+              "combat": "56",
+              "durability": "28",
+              "intelligence": "75",
+              "power": "74",
+              "speed": "23",
+              "strength": "67"
+       },
+       "response": "success",
+       "work": {
+              "base": "Massachusetts Academy",
+              "occupation": "Student"
+       }
+}

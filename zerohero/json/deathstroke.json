@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "White",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "225 lb",
+                     "101 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Slade Wilson",
+                     "Deathstroke the Terminator",
+                     "Batman"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "New Teen Titans #2 (December, 1980)",
+              "full-name": "Slade Joseph Wilson",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "The Society, Titans; Formerly Tartarus, The Injustice League",
+              "relatives": "Wade LaFarge (Ravager III, half-brother, deceased), Adeline Kane (ex-wife, deceased), Grant Wilson (Ravager I, son, deceased), Joseph Wilson (Jericho, son), Rose Wilson (Ravager IV, daughter)"
+       },
+       "id": "216",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/672.jpg"
+       },
+       "name": "Deathstroke",
+       "powerstats": {
+              "combat": "90",
+              "durability": "100",
+              "intelligence": "75",
+              "power": "47",
+              "speed": "35",
+              "strength": "30"
+       },
+       "response": "success",
+       "work": {
+              "base": "The Labyrinth (exact location is currently unknown)",
+              "occupation": "Mercenary; Former Soldier, Big-Game Hunter"
+       }
+}

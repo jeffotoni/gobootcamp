@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "4230 lb",
+                     "2 tons"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Obadiah Stane",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Stane International",
+              "relatives": "Zebediah (father, deceased), unnamed mother (deceased), Ezekiel Stane (son)"
+       },
+       "id": "347",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/886.jpg"
+       },
+       "name": "Iron Monger",
+       "powerstats": {
+              "combat": "56",
+              "durability": "90",
+              "intelligence": "88",
+              "power": "57",
+              "speed": "25",
+              "strength": "63"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "CEO Stane International"
+       }
+}

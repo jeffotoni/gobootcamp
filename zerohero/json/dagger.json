@@ -1,0 +1,48 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "Shaker Heights, Ohio"
+              ],
+              "race": "null",
+              "weight": [
+                     "116 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Lady Light"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Spectacular Spiderman #64",
+              "full-name": "Tandy Bowen",
+              "place-of-birth": "Shaker Heights, Ohio",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Cloak and Dagger, Defenders, League of Losers, Marvel Knights, New Warriors, Secret Avengers",
+              "relatives": "Melissa Bowen (mother), unnamed father, Phillip Carlisle (stepfather), Father Michael Bowen (uncle)"
+       },
+       "id": "198",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/51.jpg"
+       },
+       "name": "Dagger",
+       "powerstats": {
+              "combat": "70",
+              "durability": "42",
+              "intelligence": "63",
+              "power": "52",
+              "speed": "35",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Holy Ghost Church, 42nd Street, New York City",
+              "occupation": "Vigilante"
+       }
+}

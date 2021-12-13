@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "White",
+              "gender": "Female",
+              "hair-color": "Red",
+              "height": [
+                     "5'4",
+                     "163 cm"
+              ],
+              "race": "Human / Cosmic",
+              "weight": [
+                     "130 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Frances Hyatt",
+                     "Human Torch"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Fantastic Four #164 (November, 1975)",
+              "full-name": "Frankie Raye",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Defenders (Valkyrior), formerly Heralds of Galactus, Fantastic Four",
+              "relatives": "\"Thomas Raye\" (Phineas T. Horton, stepfather, deceased), Thomas Raymond (Toro, possible biological father); Lanette Raye (mother)"
+       },
+       "id": "497",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10313.jpg"
+       },
+       "name": "Nova",
+       "powerstats": {
+              "combat": "35",
+              "durability": "100",
+              "intelligence": "63",
+              "power": "100",
+              "speed": "100",
+              "strength": "60"
+       },
+       "response": "success",
+       "work": {
+              "base": "World-ship of Galactus",
+              "occupation": "-"
+       }
+}

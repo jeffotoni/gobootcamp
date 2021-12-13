@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "Green",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "God / Eternal",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "The Captain",
+                     "CP",
+                     "Planet"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Captain Planet and the Planeteers (TV Series)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "The Planeteers",
+              "relatives": "-"
+       },
+       "id": "160",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1285.jpg"
+       },
+       "name": "Captain Planet",
+       "powerstats": {
+              "combat": "60",
+              "durability": "80",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "75",
+              "strength": "88"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

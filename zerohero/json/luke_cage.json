@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'6",
+                     "198 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "425 lb",
+                     "191 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Carl Lucas",
+                     "Power Man",
+                     "Mark Lucas",
+                     "Hero for Hire",
+                     "Ace of Spades"
+              ],
+              "alignment": "good",
+              "alter-egos": "Power Man",
+              "first-appearance": "Hero for Hire #1 (1972)",
+              "full-name": "Luke Cage",
+              "place-of-birth": "Harlem, New York City",
+              "publisher": "Power Man"
+       },
+       "connections": {
+              "group-affiliation": "Underground Avengers (formerly Daredevil's Unnamed Super-Hero Team), Secret Defenders, Heroes for Hire, Nightwing Restorations, Fantastic Four, Defenders, Bloods",
+              "relatives": "Jessica Jones (wife), James Leonard Lucas (father), Esther (mother, deceased), James Jr. (Coldfire, brother), unnamed daughter"
+       },
+       "id": "416",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/269.jpg"
+       },
+       "name": "Luke Cage",
+       "powerstats": {
+              "combat": "70",
+              "durability": "95",
+              "intelligence": "50",
+              "power": "44",
+              "speed": "29",
+              "strength": "63"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, bar owner, bodyguard, mercenary; formerly theater owner, private investigator, various odd jobs"
+       }
+}

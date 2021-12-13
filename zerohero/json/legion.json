@@ -1,0 +1,61 @@
+{
+       "appearance": {
+              "eye-color": "Green / Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "130 lb",
+                     "59 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Jack Wayne",
+                     "Cyndi",
+                     "Jemail Karami",
+                     "Daniel Lucas Haller",
+                     "Daniel Haller",
+                     "Rodney",
+                     "Ian",
+                     "Lucas",
+                     "Fanya",
+                     "Boris",
+                     "Zachary",
+                     "Sylvester",
+                     "God-Mutant"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "New Mutants #25 (March, 1985)",
+              "full-name": "David Haller",
+              "place-of-birth": "Israel",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly X-Men, Muir Island X-Men",
+              "relatives": "Charles Graymalkin (paternal collateral ancestor), Marcia Graymalkin (paternal collateral ancestor), Jonas Graymalkin (paternal collateral ancestor), Brian Xavier (paternal grandfather), Sharon Xavier (paternal grandmother), Kurt Marko (paternal step-grandfather), Cain Marko (paternal step-uncle), Cassandra Nova Xavier (paternal aunt), Charles Xavier (father), Gabrielle Haller (mother), Daniel Shomron (stepfather), Xavier Family (paternal relatives), Ruth Aldine (lover/current body)"
+       },
+       "id": "403",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10651.jpg"
+       },
+       "name": "Legion",
+       "powerstats": {
+              "combat": "75",
+              "durability": "30",
+              "intelligence": "50",
+              "power": "100",
+              "speed": "42",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "formerly Ruth Aldine's mind, Utopia, San Francisco Bay, California; Westcliffe, Colorado; \"No-Time\"; Moira MacTaggart's Mutant Research Center, Muir Island, off the coast of Scotland; Haifa; Paris, France",
+              "occupation": "Adventurer, Student"
+       }
+}

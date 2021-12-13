@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Ethan Hunt",
+              "place-of-birth": "Madison, Wisconsin, United States of America",
+              "publisher": "null"
+       },
+       "connections": {
+              "group-affiliation": "Formerly: United States Army",
+              "relatives": "Nathan Hunt (Father), Margaret Hunt (Mother), Donald Hunt (Uncle)"
+       },
+       "id": "245",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10476.jpg"
+       },
+       "name": "Ethan Hunt",
+       "powerstats": {
+              "combat": "95",
+              "durability": "30",
+              "intelligence": "75",
+              "power": "26",
+              "speed": "29",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "IMF Agent, Training Officer (former), Field Agent, Field Team Leader"
+       }
+}

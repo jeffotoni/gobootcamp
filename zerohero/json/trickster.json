@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "179 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "James Jesse"
+              ],
+              "alignment": "-",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Flash #113 (July, 1960)",
+              "full-name": "Giovanni Giuseppe",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "674",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1468.jpg"
+       },
+       "name": "Trickster",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "null"
+       },
+       "response": "success",
+       "work": {
+              "base": "Keystone City",
+              "occupation": "Special effects designer, con artist"
+       }
+}

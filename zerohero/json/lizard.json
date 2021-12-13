@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'8",
+                     "203 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "510 lb",
+                     "230 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #6",
+              "full-name": "Curtis Connors",
+              "place-of-birth": "Coral Gables, Florida",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Martha (wife, deceased), Billy (son), unnamed sister"
+       },
+       "id": "412",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/11.jpg"
+       },
+       "name": "Lizard",
+       "powerstats": {
+              "combat": "56",
+              "durability": "70",
+              "intelligence": "50",
+              "power": "63",
+              "speed": "27",
+              "strength": "51"
+       },
+       "response": "success",
+       "work": {
+              "base": "Florida",
+              "occupation": "Research biologist"
+       }
+}

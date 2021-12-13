@@ -1,0 +1,55 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Blond",
+              "height": [
+                     "6'11",
+                     "211 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "270 lb",
+                     "122 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Hank Pym",
+                     "Doctor Pym",
+                     "Ant-Man",
+                     "Goliath",
+                     "Yellowjacket",
+                     "Wasp",
+                     "Earth's Scientist Supreme"
+              ],
+              "alignment": "good",
+              "alter-egos": "Giant-Man, Goliath, Wasp II, Yellowjacket",
+              "first-appearance": "Tales to Astonish #27 (January, 1962) (as Hank Pym)  Tales to Astonish #35 (September, 1962) (as Ant-Man)",
+              "full-name": "Hank Pym",
+              "place-of-birth": "Elmsford, New York",
+              "publisher": "Giant-Man"
+       },
+       "connections": {
+              "group-affiliation": "Avengers Academy, Secret Avengers; formerly Mighty Avengers, Avengers (founding member), Defenders, Future Iron Man's Team",
+              "relatives": "-"
+       },
+       "id": "30",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/857.jpg"
+       },
+       "name": "Ant-Man",
+       "powerstats": {
+              "combat": "32",
+              "durability": "28",
+              "intelligence": "100",
+              "power": "32",
+              "speed": "23",
+              "strength": "18"
+       },
+       "response": "success",
+       "work": {
+              "base": "Avengers Compound, Los Angeles; formerly Infinite Avengers Mansion; Captive aboard a Skrull ship; Avengers Mansion, New York City, New York",
+              "occupation": "Adventurer, Biochemist, former manager of Avengers Compound"
+       }
+}

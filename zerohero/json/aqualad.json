@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "Atlantean",
+              "weight": [
+                     "235 lb",
+                     "106 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Adventure Comics #269 (February, 1960)",
+              "full-name": "Garth",
+              "place-of-birth": "Poseidonis, Atlantis",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Aquaman Family; formerly Black Lantern Corps, Sentinels of Magic, Teen Titans",
+              "relatives": "Cerdian (son), Dolphin (wife), Berra (mother), Thar (father), Slizzath (uncle) Donna (grand-daughter)"
+       },
+       "id": "37",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1395.jpg"
+       },
+       "name": "Aqualad",
+       "powerstats": {
+              "combat": "60",
+              "durability": "75",
+              "intelligence": "63",
+              "power": "89",
+              "speed": "42",
+              "strength": "44"
+       },
+       "response": "success",
+       "work": {
+              "base": "Atlantis",
+              "occupation": "Adventurer; Magician, former Sidekick"
+       }
+}

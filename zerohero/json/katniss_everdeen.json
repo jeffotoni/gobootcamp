@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Female",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "-",
+              "full-name": "Katniss Everdeen",
+              "place-of-birth": "-",
+              "publisher": ""
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "-"
+       },
+       "id": "381",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10484.jpg"
+       },
+       "name": "Katniss Everdeen",
+       "powerstats": {
+              "combat": "55",
+              "durability": "25",
+              "intelligence": "56",
+              "power": "24",
+              "speed": "21",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "-",
+                     "0 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "- lb",
+                     "0 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Nephut-Sha",
+                     "Hassan Kareem"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Incredible Hulk #257 (1981)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Sinister Six",
+              "relatives": "Seth (creator), Magog (\"brother\")"
+       },
+       "id": "288",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/693.jpg"
+       },
+       "name": "Gog",
+       "powerstats": {
+              "combat": "56",
+              "durability": "72",
+              "intelligence": "50",
+              "power": "39",
+              "speed": "47",
+              "strength": "34"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

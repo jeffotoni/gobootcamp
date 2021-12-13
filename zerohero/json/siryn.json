@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Strawberry Blond",
+              "height": [
+                     "5'6",
+                     "168 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "115 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Theresa Rourke"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Spider-Woman (first series) #37",
+              "full-name": "Theresa Rourke Cassidy",
+              "place-of-birth": "Cassidy Keep, County Mayo, Ireland",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "(Current) X-Factor (former) Ally of Black Tom and the Juggernaut, Fallen Angels, X-Force",
+              "relatives": "Sean Cassidy (Banshee, father), Maeve Rourke (mother, deceased), Black Tom Cassidy (cousin)"
+       },
+       "id": "604",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/833.jpg"
+       },
+       "name": "Siryn",
+       "powerstats": {
+              "combat": "42",
+              "durability": "28",
+              "intelligence": "38",
+              "power": "50",
+              "speed": "47",
+              "strength": "8"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "(current) Adventurer (former) Professional Criminal"
+       }
+}

@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Young X-Men #1 (May, 2008)",
+              "full-name": "Eric Gitter",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly X-Men, Young X-Men",
+              "relatives": "-"
+       },
+       "id": "343",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10337.jpg"
+       },
+       "name": "Ink",
+       "powerstats": {
+              "combat": "50",
+              "durability": "40",
+              "intelligence": "38",
+              "power": "73",
+              "speed": "17",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

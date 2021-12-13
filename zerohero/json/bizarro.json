@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Black",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "Bizarro",
+              "weight": [
+                     "345 lb",
+                     "155 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "neutral",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Superboy Vol. 1 #68 (1958)",
+              "full-name": "Bizarro",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Superman Revenge Squad; Bizarros of Bizarro World; former associate of the Secret Society of Super-Villains; Joker League of Anarchy; former partner of Batzarro",
+              "relatives": "Bizarro-Lois No. 1 (wife, Pre-Crisis only), Bizarro, Jr. (son, Pre-Crisis only), Bizarro-Lois, Jr. (daughter, Pre-Crisis only)"
+       },
+       "id": "93",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/642.jpg"
+       },
+       "name": "Bizarro",
+       "powerstats": {
+              "combat": "85",
+              "durability": "100",
+              "intelligence": "38",
+              "power": "100",
+              "speed": "100",
+              "strength": "95"
+       },
+       "response": "success",
+       "work": {
+              "base": "Bizarro World",
+              "occupation": "-"
+       }
+}

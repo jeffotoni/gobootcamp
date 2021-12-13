@@ -1,0 +1,51 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'2",
+                     "188 cm"
+              ],
+              "race": "Vampire",
+              "weight": [
+                     "215 lb",
+                     "97 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Switchblade",
+                     "Frank Blade",
+                     "Daywalker"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Tomb of Dracula Vol. 1 #10 (1973)",
+              "full-name": "Eric Brooks",
+              "place-of-birth": "Soho, London,England",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Noah van Helsing's vampire hunters, Nightstalkers, Midnight Sons, the Nine, Quincy Harker's vampire hunters, Ogun Strong's vampire hunters, Bloodshadows gang",
+              "relatives": "Tara Brooks (mother)"
+       },
+       "id": "112",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/33.jpg"
+       },
+       "name": "Blade",
+       "powerstats": {
+              "combat": "90",
+              "durability": "50",
+              "intelligence": "63",
+              "power": "40",
+              "speed": "38",
+              "strength": "28"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile",
+              "occupation": "Vampire hunter, former private investigator."
+       }
+}

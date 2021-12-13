@@ -1,0 +1,55 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Female",
+              "hair-color": "Blond",
+              "height": [
+                     "5'5",
+                     "165 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "122 lb",
+                     "55 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Time Bomb",
+                     "Boomer",
+                     "Meltdown",
+                     "Tabby",
+                     "Firecracker",
+                     "Mutate #35",
+                     "Nancy Forrester"
+              ],
+              "alignment": "good",
+              "alter-egos": "Meltdown",
+              "first-appearance": "Secret Wars II #5",
+              "full-name": "Tabitha Smith",
+              "place-of-birth": "-",
+              "publisher": "Meltdown"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Utopians, X-Men (New Charles Xavier School member), X-Force, X-Men, Nextwave, The Underground, Genoshan Mutates, New Mutants, X-Terminators (founding member), X-Factor (trainee), Fallen Angels, Beyonder (associate)",
+              "relatives": "-"
+       },
+       "id": "130",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/400.jpg"
+       },
+       "name": "Boom-Boom",
+       "powerstats": {
+              "combat": "64",
+              "durability": "42",
+              "intelligence": "38",
+              "power": "57",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, former student, thief"
+       }
+}

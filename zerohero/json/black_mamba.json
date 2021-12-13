@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Green",
+              "gender": "Female",
+              "hair-color": "Black",
+              "height": [
+                     "5'7",
+                     "170 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "115 lb",
+                     "52 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Tanya Sweet"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Marvel Two-In-One #64",
+              "full-name": "Tanya Sealy",
+              "place-of-birth": "Chicago, Illinois",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Serpent Squad, Serpent Society, BAD Girls",
+              "relatives": "-"
+       },
+       "id": "104",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1106.jpg"
+       },
+       "name": "Black Mamba",
+       "powerstats": {
+              "combat": "65",
+              "durability": "42",
+              "intelligence": "75",
+              "power": "88",
+              "speed": "35",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Mobile, formerly Serpent Citadel",
+              "occupation": "Mercenary, professional criminal, former call girl"
+       }
+}

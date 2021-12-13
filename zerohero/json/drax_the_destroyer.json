@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "Human / Altered",
+              "weight": [
+                     "680 lb",
+                     "306 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Iron Man #55 (February, 1973)",
+              "full-name": "Arthur Sampson Douglas",
+              "place-of-birth": "Burbank, California",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Guardians of the Galaxy; formerly Infinity Watch, Secret Defenders, United Front, Selects of the Phalanx",
+              "relatives": "Yvette Steckley Douglas (wife, deceased), Heather Douglas (aka Moondragon, daughter), Pamela Douglas (aka Sundragon, niece), Cammille Benally (foster daughter), Venom (former symbiote)"
+       },
+       "id": "234",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/10016.jpg"
+       },
+       "name": "Drax the Destroyer",
+       "powerstats": {
+              "combat": "65",
+              "durability": "85",
+              "intelligence": "56",
+              "power": "46",
+              "speed": "25",
+              "strength": "80"
+       },
+       "response": "success",
+       "work": {
+              "base": "C.I.T.T.; formerly Monster Isle and Titan",
+              "occupation": "-"
+       }
+}

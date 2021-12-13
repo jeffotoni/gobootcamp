@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Red",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "8'9",
+                     "267 cm"
+              ],
+              "race": "New God",
+              "weight": [
+                     "1815 lb",
+                     "817 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Dark God"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Superman's Pal Jimmy Olsen #134 (November 1970)",
+              "full-name": "Uxas",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "New Gods of Apokolips(ruler), Secret Society of Supervillains",
+              "relatives": "Zonuz (father), Izaya (brother), Avia (sister, deceased), Grail (daughter), Kalibak (son), Orion (son), Deathspawn (son), Scot (nephew/adopted son)"
+       },
+       "id": "204",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/668.jpg"
+       },
+       "name": "Darkseid",
+       "powerstats": {
+              "combat": "95",
+              "durability": "100",
+              "intelligence": "88",
+              "power": "100",
+              "speed": "83",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Dictator of Apokolips"
+       }
+}

@@ -1,0 +1,57 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'3",
+                     "191 cm"
+              ],
+              "race": "Mutant",
+              "weight": [
+                     "195 lb",
+                     "88 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Scotty",
+                     "Cyke",
+                     "Slim",
+                     "Fearless Leader",
+                     "One-Eye",
+                     "Erik the Red",
+                     "Slym Dayspring",
+                     "Mutate 007",
+                     "Apocalypse"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "X-Men #1 (September, 1963)",
+              "full-name": "Scott Summers",
+              "place-of-birth": "Anchorage, Alaska",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "X-Men (leader, founding member); formerly X-Force (founder); Corsairs (squad leader); The Twelve; X-Factor/X-Terminators (founding member); 198",
+              "relatives": "Oscar Summers (adoptive paternal distant ancestor, deceased); Daniel Summers (paternal distant ancestor, deceased); Amanda Mueller (Black Womb) (paternal distant ancestor); unnamed great-grandfather, deceased; Gloria Dayne (Fontanelle) (paternal distant ancestor); Philip Summers (paternal grandfather); Deborah Summers (paternal grandmother); Christopher Summers (Corsair) (father, deceased); Katherine Ann Summers (mother, deceased); Jack Winters (Jack O'Diamonds) (former foster father); Alexander Summers (Havok) (brother); Gabriel Summers (Vulcan) (brother, deceased); Madelyne Pryor-Summers (Red Queen) (first wife/second wife's clone, deceased); Jean Grey-Summers (Phoenix) (second wife, deceased); Nathan Summers (Cable) (son, deceased); Gailyn Bailey (niece, deceased); Joseph Bailey (nephew, deceased); Adam Neramani (X-Treme) (nephew, alleged half-brother); Hope Summers (adoptive granddaughter); Stryfe (son's clone); Summers and Grey Family Tree (more relatives)"
+       },
+       "id": "196",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/50.jpg"
+       },
+       "name": "Cyclops",
+       "powerstats": {
+              "combat": "80",
+              "durability": "42",
+              "intelligence": "75",
+              "power": "76",
+              "speed": "23",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Xavier Institute, Salem Center, Westchester County, New York",
+              "occupation": "Leader of mutant race, adventurer, headmaster, former student, radio announcer"
+       }
+}

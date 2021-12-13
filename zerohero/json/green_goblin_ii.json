@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Auburn",
+              "height": [
+                     "5'10",
+                     "178 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "170 lb",
+                     "77 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amzing Spide-Man #31",
+              "full-name": "Harold Osborn",
+              "place-of-birth": "New York City",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "-",
+              "relatives": "Liz Allen-Osborn (Wife,) Norman III (son,)Norman Osborn II - Green Goblin (father)"
+       },
+       "id": "300",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/25.jpg"
+       },
+       "name": "Green Goblin II",
+       "powerstats": {
+              "combat": "26",
+              "durability": "50",
+              "intelligence": "75",
+              "power": "44",
+              "speed": "37",
+              "strength": "55"
+       },
+       "response": "success",
+       "work": {
+              "base": "Formerly New York City",
+              "occupation": "-"
+       }
+}

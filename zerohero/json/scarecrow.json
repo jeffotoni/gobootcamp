@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Brown",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "140 lb",
+                     "63 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "WORLD'S FINEST COMICS #3 (Fall, 1941)",
+              "full-name": "Jonathan Crane",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Injustice Gang",
+              "relatives": "-"
+       },
+       "id": "576",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/819.jpg"
+       },
+       "name": "Scarecrow",
+       "powerstats": {
+              "combat": "50",
+              "durability": "14",
+              "intelligence": "81",
+              "power": "48",
+              "speed": "12",
+              "strength": "10"
+       },
+       "response": "success",
+       "work": {
+              "base": "Gotham City",
+              "occupation": "Special Professional Criminal"
+       }
+}

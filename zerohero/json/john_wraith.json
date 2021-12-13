@@ -1,0 +1,53 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "195 lb",
+                     "88 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Wraith-Man",
+                     "Kestrel",
+                     "Expediter",
+                     "Guardian",
+                     "Vindicator"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Wolverine Vol 2 #60 (September, 1992)",
+              "full-name": "John Wraith",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Weapon X Program, Team X, C.I.A.",
+              "relatives": "-"
+       },
+       "id": "369",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1314.jpg"
+       },
+       "name": "John Wraith",
+       "powerstats": {
+              "combat": "80",
+              "durability": "28",
+              "intelligence": "75",
+              "power": "87",
+              "speed": "35",
+              "strength": "12"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Former Spy, Government Operative, Mercenary, Soldier"
+       }
+}

@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "blue",
+              "gender": "Female",
+              "hair-color": "blond",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Kryptonian",
+              "weight": [
+                     "180 lb",
+                     "81 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Karen Starr",
+                     "Nightwing"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "All-Star Comics #58 (January/February 1976)",
+              "full-name": "Kara Zor-L",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Justice Society of America, Justice League Europe, Infinity, Inc., Sovereign Seven",
+              "relatives": "Zor-L (father, deceased), Allura (mother, deceased), Jor-L (uncle, deceased), Lora (aunt, deceased), Kal-L (Earth-Two Superman, cousin and adopted father, deceased), Earth-Two Lois Lane (adopted mother, deceased), Equinox (son, deceased), Kara Zor-El (alternate universe version)"
+       },
+       "id": "524",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/758.jpg"
+       },
+       "name": "Power Girl",
+       "powerstats": {
+              "combat": "75",
+              "durability": "100",
+              "intelligence": "94",
+              "power": "100",
+              "speed": "100",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "-"
+       }
+}

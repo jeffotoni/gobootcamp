@@ -1,0 +1,52 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "White",
+              "height": [
+                     "6'4",
+                     "193 cm"
+              ],
+              "race": "null",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Monarch",
+                     "Allen Adam",
+                     "Cameron Scott",
+                     "Captain Atom"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Captain Atom #1 (D.C., March, 1987)",
+              "full-name": "Nathaniel Christopher Adam",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "formally Justice League, Extreme Justice, Super Buddies, L.A.W., United States Air Force",
+              "relatives": "Angela Adams (wife, deceased), Margaret Eiling (daughter), Randall Eiling (son)"
+       },
+       "id": "468",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1006.jpg"
+       },
+       "name": "Monarch",
+       "powerstats": {
+              "combat": "null",
+              "durability": "null",
+              "intelligence": "null",
+              "power": "null",
+              "speed": "null",
+              "strength": "100"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Adventurer, former U.S. Special Agent, former U.S. Air Force Captain"
+       }
+}

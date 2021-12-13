@@ -1,0 +1,50 @@
+{
+       "appearance": {
+              "eye-color": "Blue",
+              "gender": "Male",
+              "hair-color": "Black",
+              "height": [
+                     "5'9",
+                     "175 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "165 lb",
+                     "74 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Captain Marvel Jr.",
+                     "CM3"
+              ],
+              "alignment": "good",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Current incarnation: (As Freddy Freeman) The Power of Shazam #3 (May, 1995)",
+              "full-name": "Frederick Christopher Freeman",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Marvel Family, formerly Outsiders and Teen Titans.",
+              "relatives": "parents, deceased, Jacob Freeman (granfather, deceased), Timothy Karnes (Sabbac, foster brother, deceased)"
+       },
+       "id": "158",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/279.jpg"
+       },
+       "name": "Captain Marvel II",
+       "powerstats": {
+              "combat": "56",
+              "durability": "90",
+              "intelligence": "75",
+              "power": "34",
+              "speed": "27",
+              "strength": "81"
+       },
+       "response": "success",
+       "work": {
+              "base": "Primarily Fawcett City.",
+              "occupation": "Adventurer"
+       }
+}

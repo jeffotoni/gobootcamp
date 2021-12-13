@@ -1,0 +1,54 @@
+{
+       "appearance": {
+              "eye-color": "blue",
+              "gender": "Male",
+              "hair-color": "blond",
+              "height": [
+                     "6'0",
+                     "183 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "200 lb",
+                     "90 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "Benjamin Poindexter",
+                     "Daredevil",
+                     "Punisher",
+                     "Bullseye",
+                     "Hawkeye",
+                     "pitcher"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Daredevil #131 (March, 1976)",
+              "full-name": "Lester",
+              "place-of-birth": "-",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Dark Avengers, Thunderbolts, employee of Kingpin, Purple Man, Eric Slaughter, Mysterio; formerly US Army",
+              "relatives": "Kingmaker (father)"
+       },
+       "id": "141",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/624.jpg"
+       },
+       "name": "Bullseye",
+       "powerstats": {
+              "combat": "70",
+              "durability": "70",
+              "intelligence": "50",
+              "power": "20",
+              "speed": "25",
+              "strength": "11"
+       },
+       "response": "success",
+       "work": {
+              "base": "Formerly Avengers Tower; Thunderbolts Mountain",
+              "occupation": "Assassin, professional criminal, former mercenary"
+       }
+}

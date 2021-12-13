@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "-",
+              "gender": "Male",
+              "hair-color": "-",
+              "height": [
+                     "6'8",
+                     "203 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "400 lb",
+                     "180 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Batman: Vengeance of Bane #1 (January, 1993)",
+              "full-name": "",
+              "place-of-birth": "-",
+              "publisher": "DC Comics"
+       },
+       "connections": {
+              "group-affiliation": "Suicide Squad, The Secret Society of Super Villains",
+              "relatives": "King Snake (father)"
+       },
+       "id": "60",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/637.jpg"
+       },
+       "name": "Bane",
+       "powerstats": {
+              "combat": "95",
+              "durability": "56",
+              "intelligence": "88",
+              "power": "51",
+              "speed": "23",
+              "strength": "38"
+       },
+       "response": "success",
+       "work": {
+              "base": "Santa Prisca",
+              "occupation": "-"
+       }
+}

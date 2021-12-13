@@ -1,0 +1,49 @@
+{
+       "appearance": {
+              "eye-color": "Brown",
+              "gender": "Male",
+              "hair-color": "No Hair",
+              "height": [
+                     "5'11",
+                     "180 cm"
+              ],
+              "race": "Human",
+              "weight": [
+                     "175 lb",
+                     "79 kg"
+              ]
+       },
+       "biography": {
+              "aliases": [
+                     "-"
+              ],
+              "alignment": "bad",
+              "alter-egos": "No alter egos found.",
+              "first-appearance": "Amazing Spider-Man #2",
+              "full-name": "Adrian Toomes",
+              "place-of-birth": "Staten Island, New York City",
+              "publisher": "Marvel Comics"
+       },
+       "connections": {
+              "group-affiliation": "Formerly Sinister Twelve, Sinister Six",
+              "relatives": "Marcus (brother, possibly deceased), Malachi Toomes (nephew, deceased), Valeria Toomes (daughter), unnamed son, Ramona (daughter-in-law), unnamed grandson"
+       },
+       "id": "701",
+       "image": {
+              "url": "https://www.superherodb.com/pictures2/portraits/10/100/1031.jpg"
+       },
+       "name": "Vulture",
+       "powerstats": {
+              "combat": "30",
+              "durability": "25",
+              "intelligence": "75",
+              "power": "26",
+              "speed": "42",
+              "strength": "22"
+       },
+       "response": "success",
+       "work": {
+              "base": "-",
+              "occupation": "Professional criminal; formerly electronics engineer"
+       }
+}
