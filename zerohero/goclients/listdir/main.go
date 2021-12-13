@@ -87,8 +87,8 @@ func Process(file string, chann chan string, wg *sync.WaitGroup) {
             log.Println("error:", err)
             return
         }
-        //insertOne(file, dat)
-        InsertOnePkg(file, dat)
+        insertOne(file, dat)
+        //InsertOnePkg(file, dat)
         chann <- file
     }
 }
@@ -112,6 +112,7 @@ func insertOne(name string, dat []byte) {
     defer resp.Body.Close()
 
     if resp.StatusCode != 201 {
+        //log.Println("error status diferente 200:", resp.StatusCode)
         log.Println("error status diferente 200:", resp.StatusCode)
         return
     }
@@ -125,6 +126,17 @@ func InsertOnePkg(file string, dat []byte) {
         log.Println(err)
         return
     }
+
+    var config = mgo.Config{
+        Srv:     "mongodb+srv",
+        DB:      "zerohero",
+        Host:    "cluster0.nefud.mongodb.net",
+        User:    "zerohero",
+        Pass:    "5fc163c1838815444b2c1d67",
+        Options: "retryWrites=true&w=majority",
+    }
+
+    config.Connect()
     err = zh.InsertOne("heros")
     if err != nil {
         log.Println(err)

@@ -4,8 +4,6 @@ import (
 	"context"
 	"errors"
 	"log"
-	"os"
-	"runtime"
 	"strings"
 	"time"
 
@@ -84,18 +82,29 @@ var (
 	connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
 )
 
-func init() {
-	println("version:", ambiente)
-	runtime.GOMAXPROCS(runtime.NumCPU())
-	if ambiente == "cloudrun" {
-		user = os.Getenv("MGO_USER")
-		senha = os.Getenv("MGO_PASSWORD")
-		mgoUri = os.Getenv("MGO_HOST")
-		mgoSrv = os.Getenv("MGO_SRV")
-		mgoOptions = os.Getenv("MGO_OPTS")
-		connectStr = mgoSrv + "://" + user + ":" + senha + "@" + mgoUri + "/" + MgoDb + "?" + mgoOptions
+type Config struct {
+	Srv     string
+	DB      string
+	Host    string
+	User    string
+	Pass    string
+	Options string
+}
+
+func New(srv, host, db, user, pass, options string) Config {
+	return Config{
+		Srv:     srv,
+		Host:    host,
+		DB:      db,
+		User:    user,
+		Pass:    pass,
+		Options: options,
 	}
-	session, err = mongo.NewClient(options.Client().ApplyURI(connectStr))
+}
+
+func (c Config) Connect() {
+	connstr := c.Srv + "://" + c.User + ":" + c.Pass + "@" + c.Host + "/" + c.DB + "?" + c.Options
+	session, err = mongo.NewClient(options.Client().ApplyURI(connstr))
 	if err != nil {
 		log.Println("error connect:", err)
 		return
