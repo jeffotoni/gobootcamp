@@ -11,23 +11,21 @@ import (
     "os"
     "sync"
     "time"
-
-    mgo "github.com/jeffotoni/gobootcamp/zerohero/core/mongo"
+    // mgo "github.com/jeffotoni/gobootcamp/zerohero/core/mongo"
 )
 
 var dir string = "../../json"
+var c Config
 
 func init() {
-    var c = mgo.Config{
+    c = Config{
         Srv:     os.Getenv("MGO_SRV"),
         DB:      os.Getenv("MGO_DB"),
         Host:    os.Getenv("MGO_HOST"),
         User:    os.Getenv("MGO_USER"),
-        Pass:    os.Getenv("MGO_PASS"),
+        Pass:    os.Getenv("MGO_PASSWORD"),
         Options: os.Getenv("MGO_OPTS"),
     }
-
-    c.Connect()
 }
 
 func main() {
@@ -65,7 +63,7 @@ readloop:
     for {
         select {
         case res := <-chann:
-            fmt.Printf("result=%#v\n", res)
+            fmt.Println("hero:", res)
         case _ = <-readDone:
             close(chann)
             end = time.Since(start).String()
@@ -94,14 +92,17 @@ func isDir(path string) (b bool) {
 func Process(file string, chann chan string, wg *sync.WaitGroup) {
     defer wg.Done()
     if file != "populate" {
+        time.Sleep(time.Millisecond * 300)
         namefile := dir + "/" + file
         dat, err := os.ReadFile(namefile)
         if err != nil {
             log.Println("error:", err)
             return
         }
-        //insertOne(file, dat)
-        InsertOnePkg(file, dat)
+        insertOne(file, dat)
+        // InsertOnePkg(file, dat)
+        // ZeroHeroGet(file)
+        // ZeroHeroGetPkg(file)
         chann <- file
     }
 }
@@ -133,15 +134,42 @@ func insertOne(name string, dat []byte) {
 }
 
 func InsertOnePkg(file string, dat []byte) {
-    var zh mgo.ZeroHero
+    var zh ZeroHero
     err := json.Unmarshal(dat, &zh)
     if err != nil {
         log.Println(err)
         return
     }
-    err = zh.InsertOne("heros")
+    err = zh.InsertOne(c)
     if err != nil {
         log.Println(err)
         return
     }
+}
+
+func ZeroHeroGetPkg(name string) {
+    i, err := FindOne("hulk", "", c)
+    fmt.Println(err)
+    fmt.Println(i)
+}
+
+func ZeroHeroGet(name string) {
+    tr := &http.Transport{
+        MaxIdleConns:       10,
+        IdleConnTimeout:    30 * time.Second,
+        DisableCompression: true,
+    }
+    client := &http.Client{Transport: tr}
+    resp, err := client.Get("https://zerohero.s3apis.com/api/loki/work")
+    if err != nil {
+        log.Println("error:", err.Error())
+        return
+    }
+
+    b, err := ioutil.ReadAll(resp.Body)
+    if err != nil {
+        log.Printf("Error %s", err.Error())
+        return
+    }
+    println(string(b))
 }

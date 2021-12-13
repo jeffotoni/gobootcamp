@@ -5,6 +5,8 @@ import (
 	"errors"
 	"log"
 	"strings"
+	"sync"
+	"sync/atomic"
 	"time"
 
 	"github.com/google/uuid"
@@ -63,7 +65,11 @@ type Image struct {
 }
 
 var (
+	sc   count32
+	once sync.Once
+
 	ambiente   string
+	pool       = 80
 	session    *mongo.Client
 	collection *mongo.Collection
 	err        error
@@ -91,6 +97,29 @@ type Config struct {
 	Options string
 }
 
+type count32 int32
+
+func (c *count32) Increment() int32 {
+	return atomic.AddInt32((*int32)(c), 1)
+}
+
+func (c *count32) Get() int32 {
+	return atomic.LoadInt32((*int32)(c))
+}
+
+func (c *count32) Zerar() int32 {
+	return atomic.AddInt32((*int32)(c), -80)
+}
+
+func timePoolLimit() {
+	sc.Increment()
+	count := sc.Get()
+	if int(count) == pool {
+		sc.Zerar()
+		time.Sleep(time.Second * 15)
+	}
+}
+
 func New(srv, host, db, user, pass, options string) Config {
 	return Config{
 		Srv:     srv,
@@ -102,38 +131,46 @@ func New(srv, host, db, user, pass, options string) Config {
 	}
 }
 
-func (c Config) Connect() {
-	connstr := c.Srv + "://" + c.User + ":" + c.Pass + "@" + c.Host + "/" + c.DB + "?" + c.Options
-	session, err = mongo.NewClient(options.Client().ApplyURI(connstr))
-	if err != nil {
-		log.Println("error connect:", err)
-		return
-	}
-
-	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*10))
+func (c Config) Connect() (*mongo.Collection, context.Context) {
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*8))
 	defer cancel()
 
-	err := session.Connect(ctx)
-	if err != nil {
-		log.Println("Error client.Connect:", err)
-		return
-	}
+	once.Do(func() {
+		if session == nil {
+			//if session == nil {
+			connstr := c.Srv + "://" + c.User + ":" + c.Pass + "@" + c.Host + "/" + c.DB + "?" + c.Options
+			optcli := options.Client().ApplyURI(connstr)
+			//optcli.SetMaxPoolSize(80)
+			session, err = mongo.NewClient(optcli)
+			if err != nil {
+				log.Println("error connect:", err)
+				return
+			}
+
+			err = session.Connect(ctx)
+			if err != nil {
+				log.Println("Error client.Connect:", err)
+				return
+			}
+			collection = session.Database(c.DB).Collection(CollHeros)
+		}
+	})
+	return collection, ctx
 }
 
 // InsertOne criar doc em mongodb
 // criar o index para deixar unique o campo no banco
 // db.heros.createIndex( { "name": 1 }, { unique: true } )
-func (zh ZeroHero) InsertOne(collname string) (err error) {
-	collection = session.Database(MgoDb).Collection(collname)
-
-	ctx, cancel2 := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
-	defer cancel2()
+func (zh ZeroHero) InsertOne(c Config) (err error) {
+	collectionx, _ := c.Connect()
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*10))
+	defer cancel()
+	timePoolLimit()
 
 	zh.UUID = uuid.New().String()
 	zh.Name = strings.ToLower(zh.Name)
 	zh.Name = strings.ReplaceAll(zh.Name, " ", "")
-
-	result, err := collection.InsertOne(ctx, zh, options.InsertOne())
+	result, err := collectionx.InsertOne(ctx, zh, options.InsertOne())
 	if err != nil {
 		return
 	}
@@ -146,13 +183,15 @@ func (zh ZeroHero) InsertOne(collname string) (err error) {
 
 // FindOne responsavel por buscar nosso do heros
 func FindOne(name, fatia string, collname string) (mzh interface{}, err error) {
-	mzh = nil
-	collection = session.Database(MgoDb).Collection(collname)
-	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
+	collectionx, _ := c.Connect()
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*10))
 	defer cancel()
+	timePoolLimit()
+
+	mzh = nil
 	name = strings.ToLower(name)
 	var zh ZeroHero
-	err = collection.FindOne(ctx, bson.M{"name": name}).Decode(&zh)
+	err = collectionx.FindOne(ctx, bson.M{"name": name}).Decode(&zh)
 	if err != nil {
 		if err == mongo.ErrNoDocuments {
 			return
@@ -181,11 +220,13 @@ func FindOne(name, fatia string, collname string) (mzh interface{}, err error) {
 
 // DeleteOne responsavel por deletar nosso do heros
 func DeleteOne(name string, collname string) (err error) {
-	collection = session.Database(MgoDb).Collection(collname)
-	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
+	collectionx, _ := c.Connect()
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*10))
 	defer cancel()
+	timePoolLimit()
+
 	name = strings.ToLower(name)
-	res, err := collection.DeleteOne(ctx, bson.M{"name": name})
+	res, err := collectionx.DeleteOne(ctx, bson.M{"name": name})
 	if err != nil {
 		return
 	}
@@ -198,14 +239,15 @@ func DeleteOne(name string, collname string) (err error) {
 
 // UpdateOne responsavel por atualizar nosso do heros
 func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
-	collection = session.Database(MgoDb).Collection(collname)
-	ctx, cancel2 := context.WithTimeout(context.Background(), time.Duration(time.Second*6))
-	defer cancel2()
+	collectionx, _ := c.Connect()
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Minute*10))
+	defer cancel()
+	timePoolLimit()
 
 	name = strings.ToLower(name)
 
 	var zht ZeroHero
-	err = collection.FindOne(
+	err = collectionx.FindOne(
 		ctx,
 		bson.M{"name": bson.M{"$eq": name}},
 	).Decode(&zht)
@@ -218,7 +260,7 @@ func (zh ZeroHero) UpdateOne(name string, collname string) (err error) {
 	zh.Name = zht.Name
 	filter := bson.M{"_id": zh.UUID}
 	update := bson.M{"$set": zh}
-	res, err := collection.UpdateOne(ctx, filter, update, options.Update().SetUpsert(true))
+	res, err := collectionx.UpdateOne(ctx, filter, update, options.Update().SetUpsert(true))
 	if err != nil {
 		return
 	}

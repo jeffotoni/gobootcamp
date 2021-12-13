@@ -35,6 +35,17 @@ func openFileBuffer(file string) (*bytes.Buffer, error) {
 	return bytes.NewBuffer(dat), nil
 }
 
+func init() {
+	c = Config{
+		Srv:     "mongodb",
+		DB:      "zerohero",
+		Host:    "localhost:27017",
+		User:    "root",
+		Pass:    "senha123",
+		Options: "authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false",
+	}
+}
+
 // TestZeroHeroHandlers
 func TestZeroHeroHandlers(t *testing.T) {
 	type args struct {
@@ -356,7 +367,7 @@ func TestInsertOne(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			zh := tt.args.zerohero()
-			if err := zh.InsertOne(tt.args.collname); (err != nil) != tt.wantErr {
+			if err := zh.InsertOne(c); (err != nil) != tt.wantErr {
 				t.Errorf("ZeroHero.InsertOne() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})
@@ -391,7 +402,7 @@ func TestFindOne(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			gotMzh, err := FindOne(tt.args.name, tt.args.fatia, tt.args.collname)
+			gotMzh, err := FindOne(tt.args.name, tt.args.fatia, c)
 			if (err != nil) != tt.wantErr {
 				t.Errorf("FindOne() error = %v, wantErr %v", err, tt.wantErr)
 				return
@@ -439,7 +450,7 @@ func TestUpdateOne(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			zh := tt.args.zerohero()
-			if err := zh.UpdateOne(tt.args.name, tt.args.collname); (err != nil) != tt.wantErr {
+			if err := zh.UpdateOne(tt.args.name, c); (err != nil) != tt.wantErr {
 				t.Errorf("ZeroHero.UpdateOne() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})
@@ -469,7 +480,7 @@ func TestDeleteOne(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if err := DeleteOne(tt.args.name, tt.args.collname); (err != nil) != tt.wantErr {
+			if err := DeleteOne(tt.args.name, c); (err != nil) != tt.wantErr {
 				t.Errorf("DeleteOne() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})

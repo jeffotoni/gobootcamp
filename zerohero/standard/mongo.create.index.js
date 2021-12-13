@@ -1,0 +1,1 @@
+db.heros.createIndex({"name":1},{unique:true,sparse:true});
