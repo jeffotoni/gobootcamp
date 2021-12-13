@@ -177,11 +177,14 @@ func main() {
 	})
 
 	//mux.HandleFunc("/", Use(Service, Logger()))
-  mux.HandleFunc("/", Service)
+	mux.HandleFunc("/", Service)
 
 	s := &http.Server{
-		Addr:    "0.0.0.0:8080",
-		Handler: mux,
+		Addr:           "0.0.0.0:8080",
+		Handler:        mux,
+		ReadTimeout:    10 * time.Second,
+		WriteTimeout:   10 * time.Second,
+		MaxHeaderBytes: 1 << 20, // 1MB
 	}
 	log.Println("\033[1;44mRunning on http://0.0.0.0:8080 (Press CTRL+C to quit)\033[0m")
 	log.Fatal(s.ListenAndServe())
