@@ -347,7 +347,8 @@ func init() {
 
 func main() {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+	mux.HandleFunc("/ping", func(w http.ResponseWriter,
+		r *http.Request) {
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("pong😍"))
 	})
@@ -415,6 +416,20 @@ func Service(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+const (
+	_  = 1 << (iota * 10)
+	Kb // decimal 1024
+	Mb // decimal 104857
+
+	Red int = iota
+	Orange
+	Yellow
+	Green
+	Blue
+	Indigo
+	Violet
+)
+
 func Post(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	defer r.Body.Close()
@@ -425,6 +440,7 @@ func Post(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	r.Body = http.MaxBytesReader(w, r.Body, Kb)
 	var zh ZeroHero
 	err = json.NewDecoder(r.Body).Decode(&zh)
 	if err != nil {

@@ -132,6 +132,8 @@ func main() {
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("pong😍"))
 	})
+	//r.HandleFunc("/ping", Ping).Methods("POST")
+
 	r.HandleFunc("/api/{name}", Get).Methods("GET")
 	r.HandleFunc("/api/{name}/{fatia}", Get).Methods("GET")
 	r.HandleFunc("/api", Post).Methods("POST")
