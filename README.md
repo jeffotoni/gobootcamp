@@ -19,6 +19,19 @@ Criamos um roadmap Go para facilitar a visão macro quando formos aprender Go.
 Todo manual foi baseado nestas referências apresetados acima, ele encontra-se aqui: 
 * **[gobootcamp](https://gobootcamp.jeffotoni.com/)**
 
+Criamos esta página manual
+* **[manual Go](https://github.com/jeffotoni/gobootcamp/tree/main/gomanual)**
+
+Criamos nosso front para nossa api rEST Zerohero
+* **[Zerohero Front](https://zerohero.web.s3apis.com)**
+
+Nosso repo do Zerohero backend versão standard library
+* **[Zerohero backend source](https://github.com/jeffotoni/gzerohero)**
+
+Nosso repo do Zerohero front
+* **[Zerohero front source](https://github.com/jeffotoni/gzerohero.web)**
+- ![zerohero front](img/zerohero-front.png?raw=true "zerohero front")
+
 ## Instalar com Docker
 
 Você pode instalar gobootcampmanual com docker.

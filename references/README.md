@@ -82,7 +82,7 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 ***
 
 ## Materias Interessantes
-* **[Usegolang](https://www.usegolang.com/#sample)
+* **[Usegolang](https://www.usegolang.com/#sample)**
 * **[Github - gopherconbr](https://github.com/gopherconbr/gopherconbr.org)**
 * **[SliceTricks](https://github.com/golang/go/wiki/SliceTricks)**
 ***
