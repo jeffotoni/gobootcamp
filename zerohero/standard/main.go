@@ -440,7 +440,7 @@ func Post(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	r.Body = http.MaxBytesReader(w, r.Body, Kb)
+	r.Body = http.MaxBytesReader(w, r.Body, MB)
 	var zh ZeroHero
 	err = json.NewDecoder(r.Body).Decode(&zh)
 	if err != nil {

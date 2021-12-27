@@ -4,17 +4,64 @@ package main
 // segundo momento
 import (
   "encoding/json"
-  "fmt"
   "log"
   "net/http"
   "strings"
   "time"
 )
 
-// RECEBER O JSON - hero
+const (
+  _ = 1 << (iota * 10)
+  KB
+  MB
+)
+
 type ZeroHero struct {
-  Name string
-  // vamos fazer aqui..
+  Name        string      `json:"name"`
+  ID          string      `json:"id"`
+  Appearance  Appearance  `json:"appearance"`
+  Biography   Biography   `json:"biography"`
+  Connections Connections `json:"connections"`
+  Image       Image       `json:"image"`
+  Powerstats  Powerstats  `json:"powerstats"`
+  Response    string      `json:"response"`
+  Work        Work        `json:"work"`
+}
+type Appearance struct {
+  EyeColor  string   `json:"eye-color"`
+  Gender    string   `json:"gender"`
+  HairColor string   `json:"hair-color"`
+  Height    []string `json:"height"`
+  Race      string   `json:"race"`
+  Weight    []string `json:"weight"`
+}
+type Biography struct {
+  Aliases         []string `json:"aliases"`
+  Alignment       string   `json:"alignment"`
+  AlterEgos       string   `json:"alter-egos"`
+  FirstAppearance string   `json:"first-appearance"`
+  FullName        string   `json:"full-name"`
+  PlaceOfBirth    string   `json:"place-of-birth"`
+  Publisher       string   `json:"publisher"`
+}
+type Connections struct {
+  GroupAffiliation string `json:"group-affiliation"`
+  Relatives        string `json:"relatives"`
+}
+type Image struct {
+  URL string `json:"url"`
+}
+type Powerstats struct {
+  Combat       string `json:"combat"`
+  Durability   string `json:"durability"`
+  Intelligence string `json:"intelligence"`
+  Power        string `json:"power"`
+  Speed        string `json:"speed"`
+  Strength     string `json:"strength"`
+}
+type Work struct {
+  Base       string `json:"base"`
+  Occupation string `json:"occupation"`
 }
 
 // main - api rEST
@@ -117,17 +164,6 @@ func Service(w http.ResponseWriter, r *http.Request) {
   }
 }
 
-const (
-  _ = 1 << (iota * 10)
-  KB
-  MB
-
-  Red int = iota
-  Orage
-  Yellow
-  Green
-)
-
 // Post - receber json com HERO
 // Post(w http.ResponseWriter, r *http.Request) {
 func Post(w http.ResponseWriter, r *http.Request) {
@@ -143,6 +179,7 @@ func Post(w http.ResponseWriter, r *http.Request) {
     return
   }
 
+  ioutil.Readfile
   // FIBER => FASTHTTP => OUTRA FORMA IMPLENTAR != net/http
   // gin => net/http
 
@@ -152,8 +189,9 @@ func Post(w http.ResponseWriter, r *http.Request) {
   // var m map[string]interface{}
   //println(Red)
   // limit no JSON Body...
-  r.Body = http.MaxBytesReader(w, r.Body, KB)
+  r.Body = http.MaxBytesReader(w, r.Body, MB)
   var zh ZeroHero
+
   err := json.NewDecoder(r.Body).Decode(&zh)
   if err != nil {
     log.Println("log:", err) // retorna no meu server
@@ -161,9 +199,28 @@ func Post(w http.ResponseWriter, r *http.Request) {
     w.Write([]byte(`{"msg":"Error=>` + err.Error() + `"}`)) // para o client
     return
   }
-  fmt.Println(zh)
+
+  if len(zh.ID) == 0 {
+    w.WriteHeader(http.StatusBadRequest)
+    w.Write([]byte(`{"msg":"field ID required!"}`))
+    return
+  }
+
+  if len(zh.Name) == 0 {
+    w.WriteHeader(http.StatusBadRequest)
+    w.Write([]byte(`{"msg":"field name required!"}`))
+    return
+  }
+
+  b, err := json.Marshal(&zh)
+  if err != nil {
+    w.WriteHeader(http.StatusBadRequest)
+    w.Write([]byte(`{"msg":"field name required!"}`))
+    return
+  }
+
   w.WriteHeader(http.StatusOK)
-  w.Write([]byte("post😍"))
+  w.Write(b)
 }
 
 func Put(w http.ResponseWriter, r *http.Request) {
