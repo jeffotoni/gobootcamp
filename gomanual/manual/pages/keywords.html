@@ -58,30 +58,37 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Hello World</div>
+                    <div class="main-title">Palavras reservadas</div>
                     <!--- Page title Fim --->
 
 
-                    <div class="content-height">
-                        <p>xxxxxxxxxxxxxx</p>
+                    <div class="fixed-content-height overflow-y-scroll">
+                        <p>
+                            As seguintes palavras são reservadas e <b>não devem</b> ser
+                            usadas como identificadores:
+                        </p>
 
-                        <pre><code class="language-go"> xxxxxx </code></pre>
-
-                        <p>xxxxxxx</p>
+                        <pre><code class="language-go">
+break        default      func         interface    select
+case         defer        go           map          struct
+chan         else         goto         package      switch
+const        fallthrough  if           range        type
+continue     for          import       return       var
+                        </code></pre>
 
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Equivalent Binary Trees</span>
+                        <a class="pages-menu-link link-back" href="helloworld.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Hello, World!</span>
                         </a>
 
                         <img src="../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="page-2.html">
-                            <span>Web Crawler</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="operators.html">
+                            <span>Operadores e pontuação</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -92,18 +99,18 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">goroutines.go</div>
+                    <div class="code-filename">helloworld.go</div>
 
                     <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main
 
-import (
-    "fmt"
-)
+import "fmt"
 
 func main() {
-    fmt.Println("Hello World!!!")
-}					</textarea>
+    go := "Gopher" // Isto irá gerar um erro de sintaxe
+    fmt.Println(go)
+}					
+                    </textarea>
 
                     <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
 

@@ -163,6 +163,14 @@ html, body {
 	min-height: calc(100vh - 280px);
 }
 
+.fixed-content-height {
+	height: calc(100vh - 280px);
+}
+
+.overflow-y-scroll {
+	overflow-y: scroll;
+}
+
 .pages-menu {
 	text-align: center;
 }

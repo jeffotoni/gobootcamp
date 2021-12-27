@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Goroutines 200 - Go Bootcamp</title>
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../index.html">
+                    <img class="main-header-logo" src="../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Hello World</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="fixed-content-height overflow-y-scroll">
+                        <p>
+                            Vamos aprender como imprimir dados na tela - que na verdade 
+                            é a saída padrão stdout, queremos mais adiante com detalhes 
+                            sobre - usando as funções <i>print, println e fmt.Println.</i>
+                        </p>
+                        <p>
+                            As implementações atuais fornecem várias funções integradas 
+                            úteis durante a inicialização. Essas funções são documentadas 
+                            para integridade, mas não têm garantia de permanência no idioma. 
+                            Eles não retornam um resultado.
+                        </p>
+                        <p>
+                            Restrição de implementação: <i>print</i> e <i>println</i> não precisam aceitar 
+                            tipos de argumentos arbitrários, mas a impressão de tipos booleanos, 
+                            numéricos e de string deve ser suportada.
+                        </p>
+                        <p>
+                            <i>println</i> é uma função embutida (no tempo de execução) que pode 
+                            eventualmente ser removida, enquanto o pacote fmt está na biblioteca padrão, 
+                            que irá persistir.
+                        </p>
+
+                        <pre><code class="language-go">
+Function   Behavior
+
+print      prints all arguments; formatting of arguments is implementation-specific
+println    like print but prints spaces between arguments and a newline at the end
+                        </code></pre>
+
+                        <p>Usando <i>print:</i></p>
+
+                        <pre><code class="language-go">
+package main
+
+func main() {
+    print("Hello", "World")
+    print("Using print")
+    // Output: HelloWorldUsing print
+}
+
+// Implementação da função print()
+                        </code></pre>
+
+                        <p>Usando <i>println:</i></p>
+
+                        <pre><code class="language-go">
+package main
+
+func main() {
+    println("Hello", "World")
+    println("Using println")
+    // Output: Hello World
+    //         Using println
+}
+
+// Implementação da função println()
+                        </code></pre>
+
+                        <p>Usando <i>fmt.Println:</i></p>
+
+                        <pre><code class="language-go">
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello", "World")
+    fmt.Println("Using fmtPrintln")
+    // Output: Hello World
+    //         Using println
+}
+                        </code></pre>
+
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="../index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Equivalent Binary Trees</span>
+                        </a>
+
+                        <img src="../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="keywords.html">
+                            <span>Palavras reservadas</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">helloworld.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello", "World")
+}					
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../js/go-playground/codemirror.js"></script>
+    <script src="../js/go-playground/codemirror-go.js"></script>
+    <script src="../js/go-playground/playground.js"></script>
+    <script src="../js/go-playground/snippets.js"></script>
+    <script src="../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

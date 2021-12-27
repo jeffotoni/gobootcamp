@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Goroutines 200 - Go Bootcamp</title>
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../index.html">
+                    <img class="main-header-logo" src="../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Constantes</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="fixed-content-height overflow-y-scroll">
+                        <p>
+                            Constantes são permitidas para os tipos: <i>boolean, rune, integer, 
+                            floating-point, complex, e string. 
+                            Rune, integer, floating-point, e complex constants</i> são coletivamente 
+                            chamadas <i>numeric constants</i>.
+                        </p>
+                        <p>
+                            Um valor constante é representado por uma runa, número inteiro, ponto flutuante, 
+                            imaginário ou literal de string, um identificador que denota uma constante, 
+                            uma expressão constante, uma conversão com um resultado que é uma constante 
+                            ou o valor de resultado de algum funções como <i>unsafe.Sizeof</i> aplicadas a 
+                            qualquer valor, <i>cap</i> ou <i>len</i> aplicado a algumas expressões, <i>real</i> e <i>imag</i> aplicado 
+                            a uma constante complexa e <i>complex</i> aplicado a constantes numéricas. 
+                            Os valores verdadeiros booleanos são representados pelas constantes 
+                            pré-declaradas <i>true</i> e <i>false</i>. O identificador pré-declarado <i>iota</i> denota uma 
+                            constante inteira.
+                        </p>
+                        <p>
+                            Em geral, constantes complexas são uma forma de expressões constantes, 
+                            assunto discutido em sua respectiva seção.
+                        </p>
+
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="string_literals.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Strings</span>
+                        </a>
+
+                        <img src="../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="iota.html">
+                            <span>Iota</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">helloworld.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
+package main
+
+import "fmt"
+
+const (
+  PATH        = "/myhome/app"
+  KB     int  = 1 << (10 * iota) // 1Kb
+  MB     int  = 1 << (10 * iota) // 1MB
+  GB     int  = 1 << (10 * iota) // 1G
+  MALE   bool = true
+  FEMALE      = true
+  DOLLAR      = 3.99
+)
+
+// EXPRESSIONS PERMITTED
+const a = 2 + 3.0        // a == 5.0   (untyped floating-point constant)
+const b = 15 / 4         // b == 3     (untyped integer constant)
+const c = 15 / 4.0       // c == 3.75  (untyped floating-point constant)
+const Θ float64 = 3 / 2  // Θ == 1.0   (type float64, 3/2 is integer division)
+const Π float64 = 3 / 2. // Π == 1.5   (type float64, 3/2. is float division)
+const d = 1 << 3.0       // d == 8     (untyped integer constant)
+const e = 1.0 << 3       // e == 8     (untyped integer constant)
+//const f = int32(1) << 33 // illegal    (constant 8589934592 overflows int32)
+//const g = float64(2) >> 1 // illegal    (float64(2) is a typed floating-point constant)
+const h = "foo" > "bar" // h == true  (untyped boolean constant)
+const j = true          // j == true  (untyped boolean constant)
+const k = 'w' + 1       // k == 'x'   (untyped rune constant)
+const l = "hi"          // l == "hi"  (untyped string constant)
+const m = string(k)     // m == "x"   (type string)
+
+const Σ = 1 - 0.707i     //            (untyped complex constant)
+const Δ = Σ + 2.0e-4     //            (untyped complex constant)
+const Φ = iota*1i - 1/1i //            (untyped complex constant)
+const (
+  Sunday = iota
+  Monday
+  Tuesday
+  Wednesday
+  Thursday
+  Friday
+  Partyday
+  numberOfDays // this constant is not exported
+)
+
+const Pi float64 = 3.14159265358979323846
+const zero = 0.0 // untyped floating-point constant
+const (
+  size int64 = 1024
+  eof        = -1 // untyped integer constant
+)
+const xa, xb, xc = 3, 4, "foo" // a = 3, b = 4, c = "foo", untyped integer and string constants
+const xu, xv float32 = 0, 3    // u = 0.0, v = 3.0
+
+func main() {
+
+  fmt.Println("###############")
+  fmt.Println(Sunday)
+  fmt.Println(Monday)
+  fmt.Println(Tuesday)
+  fmt.Println(Wednesday)
+  fmt.Println(Thursday)
+  fmt.Println(Friday)
+  fmt.Println(Partyday)
+  fmt.Println(numberOfDays)
+  fmt.Println(PATH)
+  fmt.Println(KB)
+  fmt.Println(MB)
+  fmt.Println(GB)
+  fmt.Println(MALE)
+  fmt.Println(FEMALE)
+  fmt.Println(DOLLAR)
+  fmt.Println("###############")
+  fmt.Println("")
+  fmt.Println(a)
+  fmt.Println(b)
+  fmt.Println(c)
+  fmt.Println(d)
+  fmt.Println(e)
+  fmt.Println(h)
+  fmt.Println(j)
+  fmt.Println(k)
+  fmt.Println(l)
+  fmt.Println(m)
+  fmt.Println(Σ)
+  fmt.Println(Δ)
+  fmt.Println(Φ)
+  fmt.Println("###############")
+}				
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../js/go-playground/codemirror.js"></script>
+    <script src="../js/go-playground/codemirror-go.js"></script>
+    <script src="../js/go-playground/playground.js"></script>
+    <script src="../js/go-playground/snippets.js"></script>
+    <script src="../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

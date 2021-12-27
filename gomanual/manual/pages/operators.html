@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Web Crawler - Go Bootcamp</title>
+    <title>Goroutines 200 - Go Bootcamp</title>
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -35,7 +35,7 @@
     <![endif]-->
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column">
 
     <!-- Cabecalho -->
     <header>
@@ -58,28 +58,37 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Web Crawler</div>
+                    <div class="main-title">Operadores e pontuação</div>
                     <!--- Page title Fim --->
 
 
-                    <div class="content-height">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="fixed-content-height overflow-y-scroll">
+                        <p>
+                            As seguintes sequências de caracteres representam operadores e pontuação:
+                        </p>
 
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <pre><code class="language-go">
++    &     +=    &=     &&    ==    !=    (    )
+-    |     -=    |=     ||    <     <=    [    ]
+*    ^     *=    ^=     <-    >     >=    {    }
+/    <<    /=    <<=    ++    =     :=    ,    ;
+%    >>    %=    >>=    --    !     ...   .    :
+     &^          &^=
+                        </code></pre>
 
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Equivalent Binary Trees</span>
+                        <a class="pages-menu-link link-back" href="keywords.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Palavras reservadas</span>
                         </a>
 
                         <img src="../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="page-1.html">
-                            <span>Web Crawler</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="rune_literals.html">
+                            <span>Runas</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -88,30 +97,26 @@
                 <!--- Coluna Esquerda Fim --->
 
                 <!--- Coluna Direita --->
-                <div class="col-12 col-lg-6 column-code px-0">
+                <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">goroutines.go</div>
+                    <div class="code-filename">helloworld.go</div>
 
                     <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main
 
-import (
-	"fmt"
-	"time"
-)
-
-func say(s string) {
-	for i := 0; i < 5; i++ {
-		time.Sleep(100 * time.Millisecond)
-		fmt.Println(s)
-	}
-}
+import "fmt"
 
 func main() {
-	go say("world")
-	say("hello")
-}
-					</textarea>
+    x := 1
+    y := 2
+
+    if x <= y {
+        fmt.Println("X é menor ou igual a Y")
+    } else {
+        fmt.Println("X é maior que Y")
+    }
+}					
+                    </textarea>
 
                     <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
 

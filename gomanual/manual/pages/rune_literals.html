@@ -58,39 +58,77 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Goroutines 200</div>
+                    <div class="main-title">Runas</div>
                     <!--- Page title Fim --->
 
 
-                    <div class="content-height">
-                        <p>A goroutine is a lightweight thread managed by the Go runtime.</p>
+                    <div class="fixed-content-height overflow-y-scroll">
+                        <p>
+                            Um literal rúnico representa uma constante rúnica, um valor 
+                            inteiro que identifica um ponto de código Unicode. Um literal 
+                            rúnico é expresso como um ou mais caracteres entre aspas simples, 
+                            como em 'x' ou '\ n'. Entre as aspas, qualquer caractere pode aparecer, 
+                            exceto nova linha e aspas simples sem escape. Um único caractere entre 
+                            aspas representa o valor Unicode do próprio caractere, enquanto as 
+                            sequências de vários caracteres que começam com uma barra invertida 
+                            codificam os valores em vários formatos.
+                        </p>
+                        <p>
+                            A forma mais simples representa o único caractere entre aspas; como o 
+                            texto de origem do Go são caracteres Unicode codificados em UTF-8, 
+                            vários bytes codificados em UTF-8 podem representar um único valor 
+                            inteiro. Por exemplo, o literal 'a' contém um único byte que representa 
+                            um literal a, Unicode U + 0061, valor 0x61, enquanto 'ä' contém dois 
+                            bytes (0xc3 0xa4) que representa uma a-diérese literal, U + 00E4, valor 0xe4.
+                        </p>
+                        <p>
+                            Vários escapes de barra invertida permitem que valores arbitrários 
+                            sejam codificados como texto ASCII. Existem quatro maneiras de representar 
+                            o valor inteiro como uma constante numérica: <i>\x</i> seguido por exatamente dois 
+                            dígitos hexadecimais; <i>\u</i> seguido por exatamente quatro dígitos hexadecimais; 
+                            <i>\U</i> seguido por exatamente oito dígitos hexadecimais e uma barra invertida 
+                            simples <i>\</i> seguida por exatamente três dígitos octais. Em cada caso, o valor 
+                            do literal é o valor representado pelos dígitos na base correspondente.
+                        </p>
+                        <p>
+                            Embora todas essas representações resultem em um número inteiro, 
+                            elas têm intervalos válidos diferentes. Os escapes octais devem 
+                            representar um valor entre 0 e 255 inclusive. Escapes hexadecimais 
+                            satisfazem essa condição por construção. Os escapes <i>\u</i> e <i>\U</i> 
+                            representam pontos de código Unicode, portanto, dentro deles alguns valores 
+                            são ilegais, em particular aqueles acima de 0x10FFFF e metades substitutas.
+                        </p>
+                        <p>
+                            Após uma barra invertida, certos escapes de caractere único representam 
+                            valores especiais:
+                        </p>
 
-                        <pre><code class="language-go">go f(x, y, z)
-// println("...")
-go f(x, y, z)
-</code></pre>
-
-                        <p>starts a new goroutine running</p>
-
-                        <pre><code class="language-go">f(x, y, z)</code></pre>
-
-                        <p>The evaluation of f, x, y, and z happens in the current goroutine and the execution of f happens in the new goroutine.</p>
-
-                        <p>Goroutines run in the same address space, so access to shared memory must be synchronized. The sync package provides useful primitives, although you won't need them much in Go as there are other primitives. (See the next slide.)</p>
+                        <pre><code class="language-go">
+\a   U+0007 alert or bell
+\b   U+0008 backspace
+\f   U+000C form feed
+\n   U+000A line feed or newline
+\r   U+000D carriage return
+\t   U+0009 horizontal tab
+\v   U+000b vertical tab
+\\   U+005c backslash
+\'   U+0027 single quote  (valid escape only within rune literals)
+\"   U+0022 double quote  (valid escape only within string literals)
+                        </code></pre>
 
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Equivalent Binary Trees</span>
+                        <a class="pages-menu-link link-back" href="operators.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Operadores e pontuação</span>
                         </a>
 
                         <img src="../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="page-2.html">
-                            <span>Web Crawler</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="string_literals.html">
+                            <span>Strings</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -101,28 +139,17 @@ go f(x, y, z)
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">goroutines.go</div>
+                    <div class="code-filename">helloworld.go</div>
 
                     <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main
 
-import (
-	"fmt"
-	"time"
-)
-
-func say(s string) {
-	for i := 0; i < 5; i++ {
-		time.Sleep(100 * time.Millisecond)
-		fmt.Println(s)
-	}
-}
+import "fmt"
 
 func main() {
-	go say("world")
-	say("hello")
-}
-					</textarea>
+    fmt.Println([]byte("\a"))
+}					
+                    </textarea>
 
                     <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
 
