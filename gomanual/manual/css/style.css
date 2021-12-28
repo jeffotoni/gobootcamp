@@ -16,7 +16,7 @@ a {
 /* HEADER */
 
 .main-header {
-	background-color: #007d9c;
+	background-color: #41b6d3;
 	padding: .1rem 0;
 	position: relative;
 }
@@ -90,8 +90,8 @@ a {
 	font-size: 22px;
 	font-weight: 500;
 	display: block;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+	margin-top: 0;
+	margin-bottom: 0;
 	color: #3b454e;
 }
 
@@ -107,7 +107,7 @@ a {
 }
 
 .main-page ul > li {
-	margin: 0.8rem 0;
+	margin: 0.7rem 0;
 }
 
 .main-page ul > li > a {
@@ -166,6 +166,18 @@ a {
 	min-height: calc(100vh - 280px);
 }
 
+<<<<<<< HEAD
+=======
+.fixed-content-height {
+	height: calc(100vh - 280px);
+	height: auto;
+}
+
+.overflow-y-scroll {
+	overflow-y: scroll;
+}
+
+>>>>>>> 7f99c2896a1cbf6a56b287ba7bc5854ec02e5374
 .pages-menu {
 	text-align: center;
 }
@@ -197,7 +209,7 @@ a {
 }
 
 .pages-menu img {
-	width: 30px;
+	width: 23px;
 	margin: 0 12px;
 }
 
