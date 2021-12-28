@@ -62,16 +62,15 @@
                     <!--- Page title Fim --->
 
 
-                    <div class="fixed-content-height overflow-y-scroll">
+                    <div class="fixed-content-height">
                         <p>
                             Vamos aprender como imprimir dados na tela - que na verdade 
-                            é a saída padrão stdout, queremos mais adiante com detalhes 
-                            sobre - usando as funções <i>print, println e fmt.Println.</i>
+                            é a saída padrão stdout, usando as funções <i>print, println e fmt.Println.</i>
                         </p>
                         <p>
                             As implementações atuais fornecem várias funções integradas 
                             úteis durante a inicialização. Essas funções são documentadas 
-                            para integridade, mas não têm garantia de permanência no idioma. 
+                            para integridade, <b>mas não têm garantia de permanência no idioma.</b> 
                             Eles não retornam um resultado.
                         </p>
                         <p>
@@ -85,11 +84,24 @@
                             que irá persistir.
                         </p>
 
+                        <p>
+                            <i>fmt.Println</i> é uma função da lib <b>"fmt"</b> uma biblioteca padrão Go, ela é bem completa e bem extensa.
+                            Ela irá possuir diversas funcionalidades para saída.
+                        </p>
+
                         <pre><code class="language-go">
 Função     Comportamento
 
-print      Imprime todos os argumetos; a formatação dos argumentos é específica de cada implementação.
-println    Parecido com <i>print</i>, mas separa os argumentos com um espaço e adiciona uma quebra de linha no final.
+print          Imprime todos os argumetos; a formatação dos argumentos é específica 
+de cada implementação.
+
+println        Parecido com <i>print</i>, mas separa os argumentos com um espaço 
+e adiciona uma quebra de linha no final.
+
+fmt.Println    É uma lib mais completa, irá possuir diversas funções para manipulação
+de saída e seus respectivos tratamentos. Algumas delas: fmt.Print, fmt.Printf, fmt.Println, 
+fmt.Sprintln, fmt.Sprintf, fmt.Fprint etc...
+
                         </code></pre>
 
                     </div>
@@ -117,15 +129,21 @@ println    Parecido com <i>print</i>, mas separa os argumentos com um espaço e 
 
                     <div class="code-filename">helloworld.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="helloworld">
 package main
 
 import "fmt"
 
 func main() {
-    print("Hello", "World")
-    println("Hello", "World")
-    fmt.Println("Hello", "World")
+    print("\nHello ", "World ", 2021, " Go!")
+    println("Hello", "World ", 2021, " Go!")
+
+    ///////////////////lib fmt////////////////////////
+    fmt.Println("Hello", "World ", 2021, " Go!")
+    s := fmt.Sprintf("%s", "string-here")
+    fmt.Printf("%s%s", s, "\n")
+    f := fmt.Sprintf("%0.2f", 34.56756)
+    fmt.Println("float:", f)
 }					
                     </textarea>
 

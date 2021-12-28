@@ -62,20 +62,13 @@
                     <!--- Page title Fim --->
 
 
-                    <div class="fixed-content-height overflow-y-scroll">
+                    <div class="fixed-content-height">
                         <p>
                             Uma <i>rune literal</i> representa uma <i>rune constant</i>, um valor 
-                            inteiro que identifica um ponto de código Unicode. Uma <i>rune literal</i> 
-                            é expresso como um ou mais caracteres entre aspas simples, 
-                            como em 'x' ou '\ n'. Entre as aspas, qualquer caractere pode aparecer, 
-                            exceto nova linha e aspas simples sem escape. Um único caractere entre 
-                            aspas representa o valor Unicode do próprio caractere, enquanto as 
-                            sequências de vários caracteres que começam com uma barra invertida 
-                            codificam os valores em vários formatos.
+                            inteiro que identifica um ponto de código Unicode.
                         </p>
                         <p>
-                            Como o 
-                            texto de origem do Go são caracteres Unicode codificados em UTF-8, 
+                            Como o texto de origem do Go são caracteres Unicode codificados em UTF-8, 
                             vários bytes codificados em UTF-8 podem representar um único valor 
                             inteiro. Por exemplo, o literal 'a' contém um único byte que representa 
                             um literal a, Unicode U + 0061, valor 0x61, enquanto 'ä' contém dois 
@@ -141,14 +134,18 @@
 
                     <div class="code-filename">rune_literals.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="Rune literals">
 package main
 
 import "fmt"
 
 func main() {
     fmt.Println([]byte("\a"))
-}					
+    fmt.Println("\u65e5本\U00008a9e")
+    fmt.Println("\xff\u00FF")
+    fmt.Println("=>","\xe6\x97\xa5\xe6\x9c\xac\xe8\xaa\x9e")
+}
+                                        
                     </textarea>
 
                     <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />

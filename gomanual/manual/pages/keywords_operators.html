@@ -62,13 +62,13 @@
                     <!--- Page title Fim --->
 
 
-                    <div class="fixed-content-height overflow-y-scroll">
+                    <div class="fixed-content-height">
                         <p>
-                            As seguintes palavras são reservadas e <b>não devem</b> ser
-                            usadas como identificadores:
+                            As 25 palavras chaves abaixo são reservadas e <b>não devem</b> ser
+                            usadas como identificadores em seu código Go.
                         </p>
 
-                        <pre><code class="language-go">
+                        <pre><code class="language-go" style="font-size:1.1em;">
 break        default      func         interface    select
 case         defer        go           map          struct
 chan         else         goto         package      switch
@@ -80,7 +80,7 @@ continue     for          import       return       var
                             As seguintes sequências de caracteres representam operadores e pontuação:
                         </p>
 
-                        <pre><code class="language-go">
+                        <pre><code class="language-go" style="font-size:1.1em;">
 +    &     +=    &=     &&    ==    !=    (    )
 -    |     -=    |=     ||    <     <=    [    ]
 *    ^     *=    ^=     <-    >     >=    {    }
@@ -114,24 +114,24 @@ continue     for          import       return       var
 
                     <div class="code-filename">keywords_operators.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="keywords">
 package main
 
 import "fmt"
 
 func main() {
-    go := "Gopher" // Isto irá gerar um erro de sintaxe,
-                   // substitua por um identificador válido
+    // Isto irá gerar um erro de sintaxe,
+    // substitua por um identificador válido
+    go := "Gopher, irá gerar um erro!" 
     fmt.Println(go)
-
-    x := 1
-    y := 2
-
-    if x <= y {
-        fmt.Println("X é menor ou igual a Y")
-    } else {
-        fmt.Println("X é maior que Y")
-    }
+    
+    // x := 1
+    // y := 2
+    // if x <= y {
+    //    fmt.Println("X é menor ou igual a Y")
+    // } else {
+    //    fmt.Println("X é maior que Y")
+    // }
 }					
                     </textarea>
 
