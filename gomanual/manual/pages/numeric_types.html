@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Tipos</title>
+    <title>Go Bootcamp - Tipos Numéricos</title>
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -58,42 +58,64 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Tipos</div>
+                    <div class="main-title">Tipos Numéricos</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um tipo determina um conjunto de valores junto com operações e 
-                            métodos específicos para esses valores. Um tipo pode ser denotado 
-                            pelo nome de um tipo, se tiver um, ou especificado usando <i>literal type</i>, 
-                            que compõe um tipo a partir de tipos existentes.
+                            Um tipo numérico representa um conjuntos de valores inteiros ou de ponto 
+                            flutuante. Os tipos numéricos independentes de arquitetura pré-declarados são:
                         </p>
+                        <pre><code class="language-go">
+uint8       conjunto dos inteiros sem sinal de 8-bits  (0 to 255)
+uint16      conjunto dos inteiros sem sinal de 16-bits (0 to 65535)
+uint32      conjunto dos inteiros sem sinal de 32-bits (0 to 4294967295)
+uint64      conjunto dos inteiros sem sinal de 64-bits (0 to 18446744073709551615)
+
+int8        conjunto dos inteiros com sinal de 8-bits  (-128 to 127)
+int16       conjunto dos inteiros com sinal de 16-bits (-32768 to 32767)
+int32       conjunto dos inteiros com sinal de 32-bits (-2147483648 to 2147483647)
+int64       conjunto dos inteiros com sinal de 64-bits (-9223372036854775808 to 9223372036854775807)
+
+float32     conjunto dos números com ponto-flutuante IEEE-754 de 32-bits
+float64     conjunto dos números com ponto-flutuante IEEE-754 de 64-bits
+
+complex64   conjunto dos números com plexos com parte real float32 e parte imaginária
+complex128  conjunto dos números com plexos com parte real float64 e parte imaginária
+
+byte        apelido para uint8
+rune        apelido para int32
+                        </code></pre>
                         <p>
-                            A linguagem pré-declara certos nomes de tipo. Outros são introduzidos 
-                            com declarações de tipo. Tipos compostos - <i>array, struct, pointer, 
-                            func, interface, slice, map e chan</i> - podem ser construídos 
-                            usando <i>type literals</i>.
+                            Há também um conjunto de tipos numéricos pré-declarados com tamanhos 
+                            específicos de implementação:
                         </p>
+                        <pre><code class="language-go">
+uint     32 ou 64 bits, dependendo da arquitetura do sistema operacional
+int      mesmo tamanho que uint
+uintptr  um inteiro sem sinal largo o bastante para guardar os bits não interpretados do valor de um ponteiro
+                        </code></pre>
                         <p>
-                            Cada tipo T tem um tipo subjacente: Se T for um dos tipos <i>booleano, 
-                            numérico ou string</i> pré-declarados, ou um <i>literal type</i>, o tipo subjacente 
-                            correspondente é o próprio T. Caso contrário, o tipo subjacente de T é o 
-                            tipo subjacente do tipo ao qual T se refere em sua declaração de tipo. 
+                            Para evitar problemas de portabilidade, todos os tipos numéricos são tipos definidos
+                            e, portanto, distintos, exceto <i>byte</i>, que é um apelido para <i>uint8</i>, e <i>rune</i>, que 
+                            é um apelido para <i>int32</i>. As conversões são necessárias quando diferentes tipos 
+                            numéricos são misturados em uma expressão ou atribuição. Por exemplo, <i>int32</i> e 
+                            <i>int</i> não são do mesmo tipo, embora possam ter o mesmo tamanho em uma arquitetura 
+                            específica.
                         </p>
+
                     </div>
-
-
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="short_variable_declaration.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Declaração Curta de Variáveis</span>
+                        <a class="pages-menu-link link-back" href="boolean_types.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipos Booleanos</span>
                         </a>
 
                         <img src="../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="boolean_types.html">
-                            <span>Tipos Booleanos</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../index.html">
+                            <span>Homepage</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -104,35 +126,19 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">types.go</div>
+                    <div class="code-filename">numeric_types.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="types.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="numeric_types.go">
 package main
 
-import (
-    "fmt"
-)
-
-type (
-    A1 = int
-    A2 = A1
-)
-
-type (
-    B1 string
-    B2 B1
-    B3 []B1
-    B4 B3
-)
-
 func main() {
-    var x A1 = 10
-    var y A2 = 20
-    fmt.Println(x + y)
+    var ui8 uint8
+    var i8 int8
+    var i int
 
-    var a, b B1 = "Olá", "Pessoinha"
-    c := B3{a, b}
-    fmt.Println(c)
+    ui8 = -10 // isto gerará um erro, pois uint8 só aceita valores entre 0 e 255
+    i8 = 128  // isto também gerará um erro, pois int8 só aceita valores entre -128 e 127
+    i = 31415
 }
                     </textarea>
 
