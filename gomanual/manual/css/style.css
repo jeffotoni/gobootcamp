@@ -16,7 +16,7 @@ a {
 /* HEADER */
 
 .main-header {
-	background-color: #007d9c;
+	background-color: #41b6d3;
 	padding: .1rem 0;
 	position: relative;
 }
@@ -90,8 +90,8 @@ a {
 	font-size: 22px;
 	font-weight: 500;
 	display: block;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+	margin-top: 0;
+	margin-bottom: 0;
 	color: #3b454e;
 }
 
@@ -107,7 +107,7 @@ a {
 }
 
 .main-page ul > li {
-	margin: 0.8rem 0;
+	margin: 0.7rem 0;
 }
 
 .main-page ul > li > a {
