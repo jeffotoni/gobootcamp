@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Declaração de Variáveis</title>
+    <title>Go Bootcamp - Declaração Curta de Variáveis</title>
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -58,45 +58,46 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Declaração de Variáveis</div>
+                    <div class="main-title">Declaração Curta de Variáveis</div>
                     <!--- Page title Fim --->
 
 
                     <div class="fixed-content-height overflow-y-scroll">
                         <p>
-                            A declaração de uma variável cria uma ou mais variáveis, ataxando identificadores
-                            correspondentes a elas, e atribuindo a cada uma um tipo e um valor inicial.
+                            A declaração curta de variáveis usa a seguinte sintaxe:
+                        </p>
+
+                        <pre><code class="language-go">
+ShortVarDecl = IdentifierList := ExpressionList
+                        </code></pre>
+
+                        <p>
+                            Ao contrário das declarações de variáveis regulares, uma declaração curta
+                            de variável pode redeclarar variáveis desde que tenham sido 
+                            declaradas originalmente no mesmo bloco (ou as listas de parâmetros 
+                            se o bloco for o corpo da função) com o mesmo tipo e pelo menos uma 
+                            das variáveis não em branco é nova. Como consequência, a redeclaração 
+                            só pode aparecer em uma declaração curta multivariável. A redeclaração 
+                            não introduz uma nova variável; apenas atribui um novo valor ao original.
                         </p>
                         <p>
-                            Se uma lista de expressões é fornecida, as variáveis são inicializadas com as 
-                            expressões seguindo as regras para atribuições. Caso contrário, cada variável 
-                            é inicializada com seu valor zero.
-                        </p>
-                        <p>
-                            Se um tipo estiver presente, cada variável receberá esse tipo. Caso contrário, 
-                            cada variável recebe o tipo do valor de inicialização correspondente na 
-                            atribuição. Se esse valor for uma constante sem tipo, ele será primeiro 
-                            convertido para seu tipo padrão; se for um valor booleano sem tipo, primeiro 
-                            será convertido para o tipo bool. O valor pré-declarado nil não pode ser usado 
-                            para inicializar uma variável sem tipo explícito. 
-                        </p>
-                        <p>
-                            Restrição de implementação: Um compilador pode tornar ilegal declarar 
-                            uma variável dentro do corpo de uma função se a variável nunca for usada.
+                            Declarações de variáveis curtas podem aparecer apenas dentro de funções. 
+                            Em alguns contextos, como os inicializadores "if", "for" 
+                            ou "switch", eles podem ser usados para declarar variáveis temporárias locais.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="variables.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Variáveis</span>
+                        <a class="pages-menu-link link-back" href="variable_declaration.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Declaração de Variáveis</span>
                         </a>
 
                         <img src="../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="short_variable_declaration.html">
-                            <span>Declaração Curta de Variáveis</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="types.html">
+                            <span>Tipos</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -107,26 +108,21 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">variable_declaration.go</div>
+                    <div class="code-filename">short_variable_declaration.go</div>
 
                     <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main
 
 import (
     "fmt"
-    "math"
 )
 
-var d = math.Sin(0.5)  // d é do tipo float64
-var i = 42             // i é do tipo int
-//var n = nil          // Declaração ilegal
-
 func main() {
-    a := "Go"
-
-    fmt.Println(d)
-    fmt.Println(i)
-    fmt.Println(a)
+    a, b := 1, "Go"
+    fmt.Println(a, b)
+    
+    b, c := "Is Good", true
+    fmt.Println(b, c)
 }
                     </textarea>
 

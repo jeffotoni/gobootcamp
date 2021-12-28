@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Declaração de Variáveis</title>
+    <title>Go Bootcamp - Tipos</title>
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -58,45 +58,42 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Declaração de Variáveis</div>
+                    <div class="main-title">Tipos</div>
                     <!--- Page title Fim --->
 
 
                     <div class="fixed-content-height overflow-y-scroll">
                         <p>
-                            A declaração de uma variável cria uma ou mais variáveis, ataxando identificadores
-                            correspondentes a elas, e atribuindo a cada uma um tipo e um valor inicial.
+                            Um tipo determina um conjunto de valores junto com operações e 
+                            métodos específicos para esses valores. Um tipo pode ser denotado 
+                            pelo nome de um tipo, se tiver um, ou especificado usando <i>literal type</i>, 
+                            que compõe um tipo a partir de tipos existentes.
                         </p>
                         <p>
-                            Se uma lista de expressões é fornecida, as variáveis são inicializadas com as 
-                            expressões seguindo as regras para atribuições. Caso contrário, cada variável 
-                            é inicializada com seu valor zero.
+                            A linguagem pré-declara certos nomes de tipo. Outros são introduzidos 
+                            com declarações de tipo. Tipos compostos - <i>array, struct, pointer, 
+                            func, interface, slice, map e chan</i> - podem ser construídos 
+                            usando <i>type literals</i>.
                         </p>
                         <p>
-                            Se um tipo estiver presente, cada variável receberá esse tipo. Caso contrário, 
-                            cada variável recebe o tipo do valor de inicialização correspondente na 
-                            atribuição. Se esse valor for uma constante sem tipo, ele será primeiro 
-                            convertido para seu tipo padrão; se for um valor booleano sem tipo, primeiro 
-                            será convertido para o tipo bool. O valor pré-declarado nil não pode ser usado 
-                            para inicializar uma variável sem tipo explícito. 
-                        </p>
-                        <p>
-                            Restrição de implementação: Um compilador pode tornar ilegal declarar 
-                            uma variável dentro do corpo de uma função se a variável nunca for usada.
+                            Cada tipo T tem um tipo subjacente: Se T for um dos tipos <i>booleano, 
+                            numérico ou string</i> pré-declarados, ou um <i>literal type</i>, o tipo subjacente 
+                            correspondente é o próprio T. Caso contrário, o tipo subjacente de T é o 
+                            tipo subjacente do tipo ao qual T se refere em sua declaração de tipo. 
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="variables.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Variáveis</span>
+                        <a class="pages-menu-link link-back" href="short_variable_declaration.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Declaração Curta de Variáveis</span>
                         </a>
 
                         <img src="../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="short_variable_declaration.html">
-                            <span>Declaração Curta de Variáveis</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../index.html">
+                            <span>Homepage</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -107,26 +104,35 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">variable_declaration.go</div>
+                    <div class="code-filename">types.go</div>
 
                     <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main
 
 import (
     "fmt"
-    "math"
 )
 
-var d = math.Sin(0.5)  // d é do tipo float64
-var i = 42             // i é do tipo int
-//var n = nil          // Declaração ilegal
+type (
+    A1 = int
+    A2 = A1
+)
+
+type (
+    B1 string
+    B2 B1
+    B3 []B1
+    B4 B3
+)
 
 func main() {
-    a := "Go"
+    var x A1 = 10
+    var y A2 = 20
+    fmt.Println(x + y)
 
-    fmt.Println(d)
-    fmt.Println(i)
-    fmt.Println(a)
+    var a, b B1 = "Olá", "Pessoinha"
+    c := B3{a, b}
+    fmt.Println(c)
 }
                     </textarea>
 
