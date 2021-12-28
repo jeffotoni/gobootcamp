@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Tipos Booleanos</title>
+    <title>Go Bootcamp - Introdução</title>
 
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap5.min.css" rel="stylesheet">
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../plugins/prism/prism.css" rel="stylesheet">
-    <link href="../css/go-playground/codemirror.css" rel="stylesheet">
-    <link href="../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,8 +41,8 @@
     <header>
         <div class="main-header">
             <div class="container text-center">
-                <a href="../index.html">
-                    <img class="main-header-logo" src="../img/go-logo-white.png" alt="" />
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
                     <span class="main-header-title">Bootcamp</span>
                 </a>
             </div>
@@ -58,29 +58,37 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Tipos Booleanos</div>
+                    <div class="main-title">Introdução à Linguagem Go</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um tipo booleano representa o conjunto de valores booleanos 
-                            denotados pelas constantes pré-declaradas <i>true</i> e <i>false</i>. O tipo booleano 
-                            pré-declarado é <i>bool</i>.
+                            Go é uma linguagem de propósito geral projetada com a 
+                            programação de sistemas em mente. É fortemente tipada 
+                            e tem suporte explícito para programação 
+                            simultânea. Os programas são construídos a partir de pacotes, 
+                            cujas propriedades permitem um gerenciamento eficiente das 
+                            dependências.
+                        </p>
+                        <p>
+                            A gramática é compacta e regular, permitindo fácil análise 
+                            por ferramentas automáticas, como ambientes de desenvolvimento 
+                            integrados. 
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="types.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipos</span>
+                        <a class="pages-menu-link link-back" href="../../../index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Homepage</span>
                         </a>
 
-                        <img src="../img/gopher-docker.png" alt="" />
+                        <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="numeric_types.html">
-                            <span>Tipos Numéricos</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="helloworld.html">
+                            <span>Hello, World!</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -91,24 +99,17 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">boolean_types.go</div>
+                    <div class="code-filename">introduction.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="boolean_types.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="iota.go">
 package main
 
-import "fmt"
-
 func main() {
-
-  var Bool bool
-  fmt.Println(Bool)
-
-  Bool2 := true
-  fmt.Println(Bool2)
-}
+    // Esta é a estrutura básica de um código em Go
+}	
                     </textarea>
 
-                    <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
 
                 </div>
                 <!--- Coluna Direita Fim --->
@@ -136,23 +137,23 @@ func main() {
 
 
     <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+    <script src="../../../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
 
     <!-- Custom js -->
-    <script src="../js/custom.js"></script>
+    <script src="../../../js/custom.js"></script>
 
     <!-- Go Playground -->
-    <script src="../js/go-playground/codemirror.js"></script>
-    <script src="../js/go-playground/codemirror-go.js"></script>
-    <script src="../js/go-playground/playground.js"></script>
-    <script src="../js/go-playground/snippets.js"></script>
-    <script src="../js/go-playground/jquery-linedtextarea.js"></script>
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
 
     <!-- Prism Syntax Highlighting -->
-    <script src="../plugins/prism/prism.js"></script>
+    <script src="../../../plugins/prism/prism.js"></script>
 
 </body>
 

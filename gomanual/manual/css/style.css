@@ -166,18 +166,6 @@ a {
 	min-height: calc(100vh - 280px);
 }
 
-<<<<<<< HEAD
-=======
-.fixed-content-height {
-	height: calc(100vh - 280px);
-	height: auto;
-}
-
-.overflow-y-scroll {
-	overflow-y: scroll;
-}
-
->>>>>>> 7f99c2896a1cbf6a56b287ba7bc5854ec02e5374
 .pages-menu {
 	text-align: center;
 }
