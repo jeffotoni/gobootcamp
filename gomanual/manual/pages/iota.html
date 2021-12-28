@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Goroutines 200 - Go Bootcamp</title>
+    <title>Go Bootcamp - Iota</title>
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -64,11 +64,11 @@
 
                     <div class="fixed-content-height overflow-y-scroll">
                         <p>
-                            Em uma declaração de constante, o identificador pré-declarado iota 
+                            Em uma declaração de constante, o identificador pré-declarado <i>iota</i> 
                             representa constantes inteiras sucessivas não digitadas. 
                             Seu valor é o índice do respectivo ConstSpec nessa declaração de 
                             constante, começando em zero. Ele pode ser usado para construir um 
-                            conjunto de constantes relacionadas:
+                            conjunto de constantes relacionadas, como apresentado no exemplo.
                         </p>
                     </div>
 
@@ -81,8 +81,8 @@
 
                         <img src="../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="iota.html">
-                            <span>Iota</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="variables.html">
+                            <span>Variáveis</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -93,7 +93,7 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">helloworld.go</div>
+                    <div class="code-filename">iota.go</div>
 
                     <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main
@@ -102,21 +102,14 @@ import "fmt"
 
 const (
   c0 = iota  // c0 == 0
-  c1 = iota  // c1 == 1
-  c2 = iota  // c2 == 2
+  c1         // c1 == 1
+  c2         // c2 == 2
 )
 
 const (
-  a = 1 << iota  // a == 1  (iota == 0)
-  b = 1 << iota  // b == 2  (iota == 1)
-  c = 3          // c == 3  (iota == 2, unused)
-  d = 1 << iota  // d == 8  (iota == 3)
-)
-
-const (
-  u         = iota * 42  // u == 0     (untyped integer constant)
-  v float64 = iota * 42  // v == 42.0  (float64 constant)
-  w         = iota * 42  // w == 84    (untyped integer constant)
+  u float64 = iota * 42  // u == 0.0   (float64 constant)
+  v                      // v == 42.0  (float64 constant)
+  w                      // w == 84.0  (float64 constant)
 )
 
 const x = iota  // x == 0
@@ -124,6 +117,8 @@ const y = iota  // y == 0
 
 func main() {
     fmt.Println(c0, c1, c2)
+    fmt.Println(u, v, w)
+    fmt.Println(x, y)
 }
                     </textarea>
 

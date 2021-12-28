@@ -3,6 +3,10 @@ html, body {
 	min-height: 100vh;
 }
 
+a {
+	text-decoration: underline;
+}
+
 .content-page,
 .content-page .container-fluid,
 .content-page .container-fluid .row {
@@ -89,7 +93,6 @@ html, body {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: #3b454e;
-	text-decoration: none;
 }
 
 .main-page a:hover,

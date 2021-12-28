@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Goroutines 200 - Go Bootcamp</title>
+    <title>Go Bootcamp - String Literals</title>
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -58,7 +58,7 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Strings</div>
+                    <div class="main-title">String Literals</div>
                     <!--- Page title Fim --->
 
 
@@ -69,24 +69,24 @@
                             literais de string brutos e literais de string interpretados.
                         </p>
                         <p>
-                            Literais de string brutas são sequências de caracteres entre aspas.
+                            <i>String literals</i> brutos são sequências de caracteres entre aspas.
                             Entre as aspas, qualquer caractere pode aparecer, exceto outras aspas. 
-                            O valor de um literal de string bruto é a string composta de caracteres 
+                            O valor de um <i>string literal</i> bruto é a string composta de caracteres 
                             não interpretados (implicitamente codificados em UTF-8) entre as aspas; 
                             em particular, as barras invertidas não têm nenhum significado especial 
                             e a string pode conter novas linhas. Os caracteres de retorno
                             '\r' dentro de uma string bruta são descartados.
                         </p>
                         <p>
-                            Literais de string interpretados são sequências de caracteres entre aspas 
+                            <i>String literal</i> interpretados são sequências de caracteres entre aspas 
                             duplas, como em "bar". Entre as aspas, qualquer caractere pode aparecer, 
                             exceto nova linha e aspas duplas sem escape. O texto entre aspas forma o 
                             valor do literal, com escapes de barra invertida interpretados como se 
-                            estivessem em literais rúnicos (exceto que aspas simples é ilegal e aspas duplas é legal), com as 
+                            estivessem em <i>rune literals</i> (exceto que aspas simples é ilegal e aspas duplas é legal), com as 
                             mesmas restrições. O octal de três dígitos (\nnn) e dois escapes hexadecimais 
                             (\xnn) de dígitos representam bytes individuais da string resultante; todos 
                             os outros escapes representam a codificação UTF-8 (possivelmente multibyte) 
-                            de caracteres individuais. Assim, dentro de uma string literal <i>\377</i> e <i>\xFF</i> 
+                            de caracteres individuais. Assim, dentro de um <i>string literal</i> <i>\377</i> e <i>\xFF</i> 
                             representam um único byte de valor 0xFF = 255, enquanto <i>ÿ</i>, <i>\u00FF</i>, <i>\U000000FF</i> 
                             e <i>\xc3</i> <i>\xbf</i> representam os dois bytes 0xc3 0xbf da codificação UTF-8 do 
                             caractere U + 00FF.
@@ -102,18 +102,16 @@
 "日本語"
 "\u65e5本\U00008a9e"
 "\xff\u00FF"
-"\uD800"             // ilegal: surrogate half
-"\U00110000"         // ilegal: invalid Unicode code point
                         </code></pre>
 
                         <p>Todos estes exemplos representam a mesma string:</p>
 
                         <pre><code class="language-go">
-"日本語"                                 // UTF-8 input text
-`日本語`                                 // UTF-8 input text as a raw literal
-"\u65e5\u672c\u8a9e"                    // the explicit Unicode code points
-"\U000065e5\U0000672c\U00008a9e"        // the explicit Unicode code points
-"\xe6\x97\xa5\xe6\x9c\xac\xe8\xaa\x9e"  // the explicit UTF-8 bytes
+"日本語"                                 // UTF-8
+`日本語`                                 // UTF-8 na forma de literal bruto
+"\u65e5\u672c\u8a9e"                    // Unicode explícito
+"\U000065e5\U0000672c\U00008a9e"        // Unicode explícito
+"\xe6\x97\xa5\xe6\x9c\xac\xe8\xaa\x9e"  // bytes UTF-8 explícitos
                         </code></pre>
 
                     </div>
@@ -122,7 +120,7 @@
                     <div class="pages-menu">
 
                         <a class="pages-menu-link link-back" href="rune_literals.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Runas</span>
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Rune Literals</span>
                         </a>
 
                         <img src="../img/gopher-docker.png" alt="" />
@@ -139,7 +137,7 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">helloworld.go</div>
+                    <div class="code-filename">string_literals.go</div>
 
                     <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main

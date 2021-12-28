@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Goroutines 200 - Go Bootcamp</title>
+    <title>Go Bootcamp - Declaração de Variáveis</title>
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -58,37 +58,45 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Operadores e pontuação</div>
+                    <div class="main-title">Declaração de Variáveis</div>
                     <!--- Page title Fim --->
 
 
                     <div class="fixed-content-height overflow-y-scroll">
                         <p>
-                            As seguintes sequências de caracteres representam operadores e pontuação:
+                            A declaração de uma variável cria uma ou mais variáveis, ataxando identificadores
+                            correspondentes a elas, e atribuindo a cada uma um tipo e um valor inicial.
                         </p>
-
-                        <pre><code class="language-go">
-+    &     +=    &=     &&    ==    !=    (    )
--    |     -=    |=     ||    <     <=    [    ]
-*    ^     *=    ^=     <-    >     >=    {    }
-/    <<    /=    <<=    ++    =     :=    ,    ;
-%    >>    %=    >>=    --    !     ...   .    :
-     &^          &^=
-                        </code></pre>
-
+                        <p>
+                            Se uma lista de expressões é fornecida, as variáveis são inicializadas com as 
+                            expressões seguindo as regras para atribuições. Caso contrário, cada variável 
+                            é inicializada com seu valor zero.
+                        </p>
+                        <p>
+                            Se um tipo estiver presente, cada variável receberá esse tipo. Caso contrário, 
+                            cada variável recebe o tipo do valor de inicialização correspondente na 
+                            atribuição. Se esse valor for uma constante sem tipo, ele será primeiro 
+                            convertido para seu tipo padrão; se for um valor booleano sem tipo, primeiro 
+                            será convertido para o tipo bool. O valor pré-declarado nil não pode ser usado 
+                            para inicializar uma variável sem tipo explícito. 
+                        </p>
+                        <p>
+                            Restrição de implementação: Um compilador pode tornar ilegal declarar 
+                            uma variável dentro do corpo de uma função se a variável nunca for usada.
+                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="keywords.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Palavras reservadas</span>
+                        <a class="pages-menu-link link-back" href="variables.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Variáveis</span>
                         </a>
 
                         <img src="../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="rune_literals.html">
-                            <span>Runas</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../index.html">
+                            <span>Homepage</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -99,23 +107,27 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">helloworld.go</div>
+                    <div class="code-filename">variable_declaration.go</div>
 
                     <textarea class="go-playground-snippet" data-expanded="1" data-title="Goroutines">
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "math"
+)
+
+var d = math.Sin(0.5)  // d é do tipo float64
+var i = 42             // i é do tipo int
+//var n = nil          // Declaração ilegal
 
 func main() {
-    x := 1
-    y := 2
+    a := "Go"
 
-    if x <= y {
-        fmt.Println("X é menor ou igual a Y")
-    } else {
-        fmt.Println("X é maior que Y")
-    }
-}					
+    fmt.Println(d)
+    fmt.Println(i)
+    fmt.Println(a)
+}
                     </textarea>
 
                     <img class="gopher-column-code" src="../img/gopher-docker-cut.png" alt="" />
