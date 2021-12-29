@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Ponteiro</title>
+    <title>Go Bootcamp - Função</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,63 +58,51 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Ponteiro</div>
+                    <div class="main-title">Função</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Os campos de estrutura podem ser acessados por meio de um ponteiro de <i>struct</i>. 
-                            Para acessar o campo X de uma <i>struct</i>, quando temos o ponteiro de <i>struct</i> p, 
-                            podemos escrever (*p).X. No entanto, essa notação é complicada, então a 
-                            linguagem nos permite escrever apenas p.X, sem a referenciação explícita.
+                            Um tipo de função denota o conjunto de todas as funções com o mesmo parâmetro 
+                            e tipos de resultado. O valor de uma variável não inicializada do tipo de 
+                            função é <i>nil</i>.
                         </p>
                         <p>
-                            Um tipo de ponteiro denota o conjunto de todos os ponteiros para variáveis 
-                            de um determinado tipo, chamado de tipo base do ponteiro. O valor de um 
-                            ponteiro não inicializado é <i>nil</i>. 
+                            Em uma lista de parâmetros ou resultados, os nomes (IdentifierList) devem estar 
+                            todos presentes ou ausentes. Se presente, cada nome representa um item 
+                            (parâmetro ou resultado) do tipo especificado e todos os nomes não em branco na 
+                            assinatura devem ser exclusivos. Se ausente, cada tipo representa um item desse tipo. 
+                            As listas de parâmetros e resultados estão sempre entre parênteses, exceto que se 
+                            houver exatamente um resultado sem nome, ele pode ser escrito como um tipo sem parênteses.
                         </p>
                         <p>
-                            Para cada tipo declarado, por você ou pela própria linguagem, você obtém 
-                            um tipo de ponteiro de complemento que pode ser usado para 
-                            compartilhamento. Já existe um tipo integrado denominado <i>int</i>, portanto, 
-                            existe um tipo de ponteiro de complemento denominado <i>*int</i>.
+                            O parâmetro de entrada final em uma assinatura de função pode ter um tipo prefixado 
+                            com .... Uma função com tal parâmetro é chamada de variadic e pode ser chamada com 
+                            zero ou mais argumentos para aquele parâmetro.
                         </p>
-                        <p>
-                            Todos os tipos de ponteiro têm as mesmas duas características. Primeiro, 
-                            eles começam com o caractere *. Em segundo lugar, todos eles têm o mesmo 
-                            tamanho de memória e representação, que são 4 ou 8 bytes que representam 
-                            um endereço. Em arquiteturas de 32 bits (como o playground), os ponteiros 
-                            requerem 4 bytes de memória e em arquiteturas de 64 bits (como sua máquina), 
-                            eles requerem 8 bytes de memória.
-                        </p>
-                        <p>
-                            Para um operando x do tipo T, a operação de endereço &x gera um ponteiro do 
-                            tipo *T para x. O operando deve ser endereçável, ou seja, uma variável, 
-                            indireção de ponteiro ou operação de indexação de slice; ou um seletor de 
-                            campo de um operando de estrutura endereçável; ou uma operação de indexação 
-                            de array de um array endereçável. Como uma exceção ao requisito de 
-                            endereçabilidade, x também pode ser um literal composto (possivelmente entre 
-                            parênteses). Se a avaliação de x causaria um pânico em tempo de execução, a 
-                            avaliação de &x também causa.
-                        </p>
-                        <p>
-                            Para um operando x do tipo de ponteiro *T, a indireção do ponteiro *x denota 
-                            a variável do tipo T apontada por x. Se x for nulo, uma tentativa de avaliar *x 
-                            causará um pânico em tempo de execução.
-                        </p>
+                        <pre><code class="language-go">
+func()
+func(x int) int
+func(a, _ int, z float32) bool
+func(a, b int, z float32) (bool)
+func(prefix string, values ...int)
+func(a, b int, z float64, opt ...interface{}) (success bool)
+func(int, int, float64) (float64, *[]int)
+func(n int) func(p *T)
+                        </code></pre>
 
                     </div>
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="struct_type.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Struct</span>
+                        <a class="pages-menu-link link-back" href="pointer_type.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiro</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="function_type.html">
-                            <span>Função</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="interface_type.html">
+                            <span>Interface</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -125,31 +113,34 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">pointer.go</div>
+                    <div class="code-filename">function.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="pointer.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="function.go">
 package main
 
-import "fmt"
-
-type Pessoa struct {
-    Nome string
-    Idade int
-}
-
-type Trabalhador struct {
-    Cargo string
-
-    Pessoa
-}
+import (
+  "fmt"
+  "math"
+)
 
 func main() {
-  t := Trabalhador{"Encanador", Pessoa{"Mario", 32}}
-  u := &t
+  hypot := func(x, y float64) float64 {
+    return math.Sqrt(x*x + y*y)
+  }
+  fmt.Println(hypot(4, 10))
 
-  t.Idade = 98
-  fmt.Println(t)
-  fmt.Println(u, *u)
+  fmt.Println(Compute(hypot))
+  fmt.Println(Compute(math.Pow))
+
+  FaaS("Fim")
+}
+
+func FaaS(n string) {
+    fmt.Println(n)
+}
+
+func Compute(fn func(float64, float64) float64) float64 {
+    return fn(2, 3)
 }
                     </textarea>
 
