@@ -7,6 +7,14 @@ a {
 	text-decoration: underline;
 }
 
+
+/*Temporário, somente para marcação de páginas não implementadas*/
+.disabled-link {
+	text-decoration: none;
+	pointer-events: none;
+}
+
+
 .content-page,
 .content-page .container-fluid,
 .content-page .container-fluid .row {
