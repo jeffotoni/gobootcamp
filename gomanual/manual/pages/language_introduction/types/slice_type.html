@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Tipos Numéricos</title>
+    <title>Go Bootcamp - Slice</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,64 +58,66 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Tipos Numéricos</div>
+                    <div class="main-title">Slice</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um tipo numérico representa um conjuntos de valores inteiros ou de ponto 
-                            flutuante. Os tipos numéricos independentes de arquitetura pré-declarados são:
+                            Um <i>slice</i> é um descritor para um segmento contíguo de um <i>array</i> subjacente 
+                            e fornece acesso a uma sequência numerada de elementos desse <i>array</i>. Um tipo 
+                            de <i>slice</i> denota o conjunto de todas as fatias de <i>arrays</i> de seu tipo de elemento. 
+                            O valor de um <i>slice</i> não inicializada é <i>nil</i>.
+                        </p>
+                        <p>
+                            Um <i>array</i> tem um tamanho fixo. Um <i>slice</i>, por outro lado, é uma visão 
+                            flexível e de tamanho dinâmico dos elementos de um <i>array</i>. Na prática, os 
+                            <i>slices</i> são muito mais comuns do que os <i>arrays</i>.
+                        </p>
+                        <p>
+                            Um <i>slice</i> é formad especificando dois índices, um limite inferior e um 
+                            limite superior, separados por dois pontos:
+                        </p>
+                        <p>
+                            O tipo []T é um <i>slice</i> com elementos do tipo T.
                         </p>
                         <pre><code class="language-go">
-uint8       conjunto dos inteiros sem sinal de 8-bits  (0 to 255)
-uint16      conjunto dos inteiros sem sinal de 16-bits (0 to 65535)
-uint32      conjunto dos inteiros sem sinal de 32-bits (0 to 4294967295)
-uint64      conjunto dos inteiros sem sinal de 64-bits (0 to 18446744073709551615)
-
-int8        conjunto dos inteiros com sinal de 8-bits  (-128 to 127)
-int16       conjunto dos inteiros com sinal de 16-bits (-32768 to 32767)
-int32       conjunto dos inteiros com sinal de 32-bits (-2147483648 to 2147483647)
-int64       conjunto dos inteiros com sinal de 64-bits (-9223372036854775808 to 9223372036854775807)
-
-float32     conjunto dos números com ponto-flutuante IEEE-754 de 32-bits
-float64     conjunto dos números com ponto-flutuante IEEE-754 de 64-bits
-
-complex64   conjunto dos números com plexos com parte real float32 e parte imaginária
-complex128  conjunto dos números com plexos com parte real float64 e parte imaginária
-
-byte        apelido para uint8
-rune        apelido para int32
+a[primeiro:último]
                         </code></pre>
                         <p>
-                            Há também um conjunto de tipos numéricos pré-declarados com tamanhos 
-                            específicos de implementação:
+                            Isso seleciona um intervalo semi-aberto que inclui o primeiro elemento, 
+                            mas exclui o último.
+                        </p>
+                        <p>
+                            Um novo valor de <i>slice</i> inicializado para um determinado tipo de elemento T é 
+                            feito usando a função embutida make, que pega um tipo de <i>slice</i> e parâmetros 
+                            especificando o comprimento e, opcionalmente, a capacidade. Um <i>slice</i> criado 
+                            com make sempre aloca um novo <i>array</i> oculto ao qual o valor do <i>slice</i> retornado 
+                            se refere.
                         </p>
                         <pre><code class="language-go">
-uint     32 ou 64 bits, dependendo da arquitetura do sistema operacional
-int      mesmo tamanho que uint
-uintptr  um inteiro sem sinal largo o bastante para guardar os bits não interpretados do valor de um ponteiro
+make([]T, length, capacity)
                         </code></pre>
                         <p>
-                            Para evitar problemas de portabilidade, todos os tipos numéricos são tipos definidos
-                            e, portanto, distintos, exceto <i>byte</i>, que é um apelido para <i>uint8</i>, e <i>rune</i>, que 
-                            é um apelido para <i>int32</i>. As conversões são necessárias quando diferentes tipos 
-                            numéricos são misturados em uma expressão ou atribuição. Por exemplo, <i>int32</i> e 
-                            <i>int</i> não são do mesmo tipo, embora possam ter o mesmo tamanho em uma arquitetura 
-                            específica.
+                            Como os <i>arrays</i>, os <i>slices</i> são sempre unidimensionais, mas podem ser 
+                            compostos para construir objetos de dimensões superiores. Com <i>arrays</i> de 
+                            <i>arrays</i>, os <i>arrays</i> internos são, por construção, sempre do mesmo comprimento; 
+                            no entanto, com <i>slices</i> de <i>slices</i> (ou <i>arrays</i> de <i>slices</i>), os comprimentos 
+                            internos podem variar dinamicamente. Além disso, os <i>slices</i> interns devem ser 
+                            inicializados individualmente.
                         </p>
 
                     </div>
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="boolean_type.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipo Booleano</span>
+                        <a class="pages-menu-link link-back" href="array_type.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Array</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="string_type.html">
-                            <span>String</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="struct_type.html">
+                            <span>Struct</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -126,19 +128,28 @@ uintptr  um inteiro sem sinal largo o bastante para guardar os bits não interpr
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">numeric_types.go</div>
+                    <div class="code-filename">slice.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="numeric_types.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="slice.go">
 package main
 
-func main() {
-    var ui8 uint8
-    var i8 int8
-    var i int
+import "fmt"
 
-    ui8 = -10 // isto gerará um erro, pois uint8 só aceita valores entre 0 e 255
-    i8 = 128  // isto também gerará um erro, pois int8 só aceita valores entre -128 e 127
-    i = 31415
+func main() {
+  primos := [7]int{2, 3, 5, 7, 11, 13, 17}
+  
+  var p []int = primos[2:5]
+  fmt.Println(p)
+
+  a := make([]int,4)
+  a[0]=12
+  fmt.Println("a", a)
+
+  b := make([]int, 0, 5)
+  fmt.Println("b", b)
+  
+  c := b[:2]
+  fmt.Println("c", c)
 }
                     </textarea>
 

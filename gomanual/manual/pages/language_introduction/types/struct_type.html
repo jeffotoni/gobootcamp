@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Tipos Numéricos</title>
+    <title>Go Bootcamp - Struct</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,64 +58,37 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Tipos Numéricos</div>
+                    <div class="main-title">Struct</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um tipo numérico representa um conjuntos de valores inteiros ou de ponto 
-                            flutuante. Os tipos numéricos independentes de arquitetura pré-declarados são:
+                            Uma <i>struct</i> é uma sequência de elementos nomeados, chamados campos, 
+                            cada um dos quais possui um nome e um tipo. Os nomes dos campos podem ser 
+                            especificados explicitamente (IdentifierList) ou implicitamente (EmbeddedField). 
+                            Em uma <i>struct</i>, os nomes de campo que não estão em branco devem ser 
+                            exclusivos.
                         </p>
-                        <pre><code class="language-go">
-uint8       conjunto dos inteiros sem sinal de 8-bits  (0 to 255)
-uint16      conjunto dos inteiros sem sinal de 16-bits (0 to 65535)
-uint32      conjunto dos inteiros sem sinal de 32-bits (0 to 4294967295)
-uint64      conjunto dos inteiros sem sinal de 64-bits (0 to 18446744073709551615)
-
-int8        conjunto dos inteiros com sinal de 8-bits  (-128 to 127)
-int16       conjunto dos inteiros com sinal de 16-bits (-32768 to 32767)
-int32       conjunto dos inteiros com sinal de 32-bits (-2147483648 to 2147483647)
-int64       conjunto dos inteiros com sinal de 64-bits (-9223372036854775808 to 9223372036854775807)
-
-float32     conjunto dos números com ponto-flutuante IEEE-754 de 32-bits
-float64     conjunto dos números com ponto-flutuante IEEE-754 de 64-bits
-
-complex64   conjunto dos números com plexos com parte real float32 e parte imaginária
-complex128  conjunto dos números com plexos com parte real float64 e parte imaginária
-
-byte        apelido para uint8
-rune        apelido para int32
-                        </code></pre>
                         <p>
-                            Há também um conjunto de tipos numéricos pré-declarados com tamanhos 
-                            específicos de implementação:
-                        </p>
-                        <pre><code class="language-go">
-uint     32 ou 64 bits, dependendo da arquitetura do sistema operacional
-int      mesmo tamanho que uint
-uintptr  um inteiro sem sinal largo o bastante para guardar os bits não interpretados do valor de um ponteiro
-                        </code></pre>
-                        <p>
-                            Para evitar problemas de portabilidade, todos os tipos numéricos são tipos definidos
-                            e, portanto, distintos, exceto <i>byte</i>, que é um apelido para <i>uint8</i>, e <i>rune</i>, que 
-                            é um apelido para <i>int32</i>. As conversões são necessárias quando diferentes tipos 
-                            numéricos são misturados em uma expressão ou atribuição. Por exemplo, <i>int32</i> e 
-                            <i>int</i> não são do mesmo tipo, embora possam ter o mesmo tamanho em uma arquitetura 
-                            específica.
+                            Um campo declarado com um tipo, mas nenhum nome de campo explícito, é chamado 
+                            de campo incorporado. Um campo incorporado deve ser especificado como um nome 
+                            de tipo T ou como um ponteiro para um nome de tipo não-interface *T, e o 
+                            próprio T pode não ser um tipo de ponteiro. O nome do tipo não qualificado 
+                            atua como o nome do campo.
                         </p>
 
                     </div>
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="boolean_type.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipo Booleano</span>
+                        <a class="pages-menu-link link-back" href="slice_type.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Slice</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="string_type.html">
-                            <span>String</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="pointer_type.html">
+                            <span>Ponteiro</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -126,19 +99,28 @@ uintptr  um inteiro sem sinal largo o bastante para guardar os bits não interpr
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">numeric_types.go</div>
+                    <div class="code-filename">struct.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="numeric_types.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="struct.go">
 package main
 
-func main() {
-    var ui8 uint8
-    var i8 int8
-    var i int
+import "fmt"
 
-    ui8 = -10 // isto gerará um erro, pois uint8 só aceita valores entre 0 e 255
-    i8 = 128  // isto também gerará um erro, pois int8 só aceita valores entre -128 e 127
-    i = 31415
+type Pessoa struct {
+    Nome string
+    Idade int
+}
+
+type Trabalhador struct {
+    Cargo string
+
+    Pessoa
+}
+
+func main() {
+  t := Trabalhador{"Encanador", Pessoa{"Mario", 32}}
+  t.Idade = 98
+  fmt.Println(t)
 }
                     </textarea>
 
