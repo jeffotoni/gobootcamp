@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Função</title>
+    <title>Go Bootcamp - Identificador Nulo</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,51 +58,28 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Função</div>
+                    <div class="main-title">Identificador Nulo</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um tipo de função denota o conjunto de todas as funções com o mesmo parâmetro 
-                            e tipos de resultado. O valor de uma variável não inicializada do tipo de 
-                            função é <i>nil</i>.
+                            O identificador em branco é representado pelo caractere sublinhado _. 
+                            Ele serve como um marcador anônimo em vez de um identificador regular (não em branco) 
+                            e tem um significado especial em declarações, como um operando e em atribuições.
                         </p>
-                        <p>
-                            Em uma lista de parâmetros ou resultados, os nomes (IdentifierList) devem estar 
-                            todos presentes ou ausentes. Se presente, cada nome representa um item 
-                            (parâmetro ou resultado) do tipo especificado e todos os nomes não em branco na 
-                            assinatura devem ser exclusivos. Se ausente, cada tipo representa um item desse tipo. 
-                            As listas de parâmetros e resultados estão sempre entre parênteses, exceto que se 
-                            houver exatamente um resultado sem nome, ele pode ser escrito como um tipo sem parênteses.
-                        </p>
-                        <p>
-                            O parâmetro de entrada final em uma assinatura de função pode ter um tipo prefixado 
-                            com .... Uma função com tal parâmetro é chamada de variadic e pode ser chamada com 
-                            zero ou mais argumentos para aquele parâmetro.
-                        </p>
-                        <pre><code class="language-go">
-func()
-func(x int) int
-func(a, _ int, z float32) bool
-func(a, b int, z float32) (bool)
-func(prefix string, values ...int)
-func(a, b int, z float64, opt ...interface{}) (success bool)
-func(int, int, float64) (float64, *[]int)
-func(n int) func(p *T)
-                        </code></pre>
 
                     </div>
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="pointer_type.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiro</span>
+                        <a class="pages-menu-link link-back" href="label_scope.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Escopo de Labels</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="interface.html">
-                            <span>Interface</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../../../index.html">
+                            <span>Homepage</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -113,34 +90,16 @@ func(n int) func(p *T)
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">function.go</div>
+                    <div class="code-filename">blank_identifier.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="function.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="blank_identifier.go">
 package main
 
-import (
-  "fmt"
-  "math"
-)
+import "fmt"
 
 func main() {
-  hypot := func(x, y float64) float64 {
-    return math.Sqrt(x*x + y*y)
-  }
-  fmt.Println(hypot(4, 10))
-
-  fmt.Println(Compute(hypot))
-  fmt.Println(Compute(math.Pow))
-
-  FaaS("Fim")
-}
-
-func FaaS(n string) {
-    fmt.Println(n)
-}
-
-func Compute(fn func(float64, float64) float64) float64 {
-    return fn(2, 3)
+    x, _ := 10, 20
+    fmt.Println(x + _) // Erro, pois o identificador nulo é descartado
 }
                     </textarea>
 

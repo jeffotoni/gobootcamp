@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Interface</title>
+    <title>Go Bootcamp - Tipo de Interface</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,40 +58,28 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Interface</div>
+                    <div class="main-title">Tipo de Interface</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Uma interface é duas coisas:
-                        </p>
-                        <ul>
-                            <li>é um conjunto de métodos</li>
-                            <li>mas também é um tipo</li>
-                        </ul>
-                        <p>
-                            O tipo de interface{}, a interface vazia é a interface que não possui métodos. 
-                        </p>
-                        <p>
-                            Como não há a palavra-chave implements, todos os tipos implementam pelo menos 
-                            zero métodos, e o atendimento a uma interface é feito automaticamente, todos 
-                            os tipos satisfazem a interface vazia. Isso significa que, se você escrever 
-                            uma função que tenha um valor de interface{} como parâmetro, poderá fornecer 
-                            a essa função qualquer valor.
+                            Interfaces como interface{} significa que você pode colocar valor 
+                            de qualquer tipo, incluindo seu próprio tipo personalizado. Todos os tipos 
+                            em Go satisfazem uma interface vazia (interface{} é uma interface vazia). 
                         </p>
 
                     </div>
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="function_type.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Função</span>
+                        <a class="pages-menu-link link-back" href="interface_method.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Método de Interface</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="interface_method.html">
-                            <span>Método de Interface</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="map_type.html">
+                            <span>Map</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -102,21 +90,32 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">interface.go</div>
+                    <div class="code-filename">interface_type.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="interface.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="interface_type.go">
 package main
 
-import "fmt"
+import (
+  "fmt"
+)
 
-func Printar(...v interface{}) {
-    fmt.Println(v...)
+type MyStruct struct {
+  Msg interface{}
 }
 
-var Msg interface{}
-
 func main() {
-    Printar(18.4, "Golang")
+  b := MyStruct{}
+  // string
+  b.Msg = "5"
+  fmt.Printf("%#v %T \n", b.Msg, b.Msg) // Output: "5" string
+
+  // int
+  b.Msg = 5
+  fmt.Printf("%#v %T", b.Msg, b.Msg) //Output:  5 int
+
+  // map
+  b.Msg = map[string]string{"population": "500000", "language": "sueco"}
+  fmt.Printf("%#v %T", b.Msg, b.Msg) //Output:  5 int
 }
                     </textarea>
 

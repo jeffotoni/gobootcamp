@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Método de Interface</title>
+    <title>Go Bootcamp - Channel</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,83 +58,68 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Método de Interface</div>
+                    <div class="main-title">Channel</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um tipo de interface especifica um conjunto de métodos denominado sua interface. 
-                            Uma variável de tipo de interface pode armazenar um valor de qualquer tipo com 
-                            um conjunto de métodos que é qualquer superconjunto da interface. Diz-se que 
-                            esse tipo implementa a interface. O valor de uma variável não inicializada do 
-                            tipo de interface é <i>nil</i>.
+                            Um <i>channel</i> fornece um mecanismo para funções de execução simultânea para se comunicar, enviando 
+                            e recebendo valores de um tipo de elemento especificado. O valor de um <i>channel</i> não inicializado é <i>nil</i>.
                         </p>
                         <p>
-                            Como acontece com todos os conjuntos de métodos, em um tipo de interface, 
-                            cada método deve ter um nome exclusivo que não esteja em branco. 
+                            O operador opcional <- especifica a direção do <i>channel</i>, envio ou recebimento. Se nenhuma 
+                            direção for fornecida, o <i>channel</i> é bidirecional. Um <i>channel</i> pode ser restringido apenas 
+                            para enviar ou apenas para receber por conversão ou atribuição.
                         </p>
                         <pre><code class="language-go">
-// Interface de um arquivo
-interface {
-  Read(b Buffer) bool
-  Write(b Buffer) bool
-  Close()
-}
+chan T          // pode ser usado para enviar e receber valores do tipo T
+chan<- float64  // só pode ser usado para enviar float64
+<-chan int      // só pode ser usado para receber int
                         </code></pre>
                         <p>
-                            Mais de um tipo pode implementar uma interface. Por exemplo, se dois 
-                            tipos S1 e S2 têm o método definido.
+                            O operador <- associa-se ao <i>channel</i> mais à esquerda possível:
                         </p>
                         <pre><code class="language-go">
-func (p T) Read(b Buffer) bool { return … }
-func (p T) Write(b Buffer) bool { return … }
-func (p T) Close() { … }
+chan<- chan int    // mesmo que chan<- (chan int)
+chan<- <-chan int  // mesmo que chan<- (<-chan int)
+<-chan <-chan int  // mesmo que <-chan (<-chan int)
                         </code></pre>
                         <p>
-                            (onde T significa S1 ou S2), então a interface de arquivo é implementada 
-                            por S1 e S2, independentemente de quais outros métodos S1 e S2 possam ter ou compartilhar.
-                        </p>
-                        <p>
-                            Um tipo implementa qualquer interface que compreende qualquer subconjunto de seus 
-                            métodos e pode, portanto, implementar várias interfaces distintas. Por exemplo, 
-                            todos os tipos implementam a interface vazia <i>interface{}</i>.
-                        </p>
-                        <p>
-                            Uma interface T pode usar um nome de tipo de interface (possivelmente qualificado) 
-                            no lugar de uma especificação de método. Isso é chamado de interface de incorporação 
-                            E em T; ele adiciona todos os métodos (exportados e não exportados) de E à interface T.
+                            Um novo valor de <i>channel</i> inicializado pode ser criado usando a função integrada <i>make()</i>, que leva o 
+                            tipo de <i>channel</i> e uma capacidade opcional como argumentos:
                         </p>
                         <pre><code class="language-go">
-type ReadWriter interface {
-  Read(b Buffer) bool
-  Write(b Buffer) bool
-}
-
-type File interface {
-  ReadWriter  // mesmo que adicionar os métodos de ReadWriter
-  Locker      // mesmo que adicionar os métodos de LockedFile
-  Close()
-}
-
-type LockedFile interface {
-  Locker
-  File        // ilegal: Lock, Unlock não únicos
-  Lock()      // ilegal: Lock não único
-}
+make(chan int, 100)
                         </code></pre>
-
+                        <p>
+                            A capacidade, em número de elementos, define o tamanho do buffer no <i>channel</i>. Se a capacidade 
+                            for zero ou ausente, o <i>channel</i> está sem buffer e a comunicação é bem-sucedida apenas quando 
+                            o emissor e o receptor estão prontos. Caso contrário, o <i>channel</i> é armazenado em buffer e a 
+                            comunicação é bem-sucedida sem bloqueio se o buffer não estiver cheio (enviar) ou não estiver 
+                            vazio (receber). Um <i>channel</i> nulo nunca está pronto para comunicação.
+                        </p>
+                        <p>
+                            Um <i>channel</i> pode ser fechado com a função embutida <i>close()</i>. A forma de atribuição de vários valores do 
+                            operador de recepção relata se um valor recebido foi enviado antes de o <i>channel</i> ser fechado.
+                        </p>
+                        <p>
+                            Um único <i>channel</i> pode ser usado em instruções de envio, operações de recebimento e chamadas para as 
+                            funções integradas <i>cap()</i> e <i>len()</i> por qualquer número de goroutines sem sincronização adicional. 
+                            Os canais atuam como filas primeiro a entrar, primeiro a sair. Por exemplo, se um goroutine 
+                            envia valores em um <i>channel</i> e um segundo goroutine os recebe, os valores são recebidos na ordem de envio.
+                        </p>
                     </div>
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="interface.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Interface</span>
+                        <a class="pages-menu-link link-back" href="map_type.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Map</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="interface_type.html">
-                            <span>Tipo de Interface</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="types_properties.html">
+                            <span>Propriedades dos Tipos</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -145,44 +130,68 @@ type LockedFile interface {
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">interface_method.go</div>
+                    <div class="code-filename">channel.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="interface_method.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="channel.go">
+
 package main
 
 import (
   "fmt"
+  "os"
+  "time"
 )
 
-type R struct {
-  R string
+type Promise struct {
+  Result chan string
+  Error  chan error
 }
 
-type Iread interface {
-  Read() string
-}
-
-func (r *R) Read() string {
-  return fmt.Sprintf("Only: call Read")
-}
-
-func Call(ir Iread) string {
-  return fmt.Sprintf("Read: %s", ir.Read())
-}
+var (
+  ch1  = make(chan *Promise)  // recebe um ponteiro para a struct
+  ch2  = make(chan string, 1) // permite somente 1 canal
+  ch3  = make(chan int, 2)    // permite somente 2 canais
+  ch4  = make(chan float64)   // pode receber livremente
+  ch5  = make(chan []byte)    // por padrão, capacidade de 0
+  ch6  = make(chan bool, 1)   // capacidade não-zero
+  ch7  = make(chan time.Time, 2)
+  ch8  = make(chan struct{}, 2)
+  ch9  = make(chan struct{})
+  ch10 = make(map[string](chan int)) // map channel
+  ch11 = make(chan error)
+  ch12 = make(chan error, 2)
+  // receives a zero struct
+  ch14 <-chan struct{}
+  ch15 = make(<-chan bool)          // só pode ler
+  ch16 = make(chan<- []os.FileInfo) // só pode escrever
+  // holds another channel as its value
+  ch17 = make(chan<- chan bool) // pode ler e escrever
+)
 
 func main() {
-  var iread Iread
-  r := R{"hello interface"}
 
-  // uma forma de usar interfaces
-  iread = &r
+  ch2 <- "okay"
+  defer close(ch2)
+  fmt.Println(ch2, &ch2, <-ch2)
 
-  fmt.Println(iread, r)
-  fmt.Println(iread.Read())
+  ch7 <- time.Now()
+  ch7 <- time.Now()
+  fmt.Println(ch7, &ch7, <-ch7)
+  fmt.Println(ch7, &ch7, <-ch7)
+  defer close(ch7)
 
-  // Outra forma de usar interfaces
-  r2 := R{"hello interface call"}
-  fmt.Println(Call(&r2))
+  ch3 <- 1 // okay
+  ch3 <- 2 // okay
+  // deadlock
+  // ch3 <- 3 // aqui, não aceita mais valores
+  defer close(ch3)
+  fmt.Println(ch3, &ch3, <-ch3)
+  fmt.Println(ch3, &ch3, <-ch3)
+
+  ch10["lambda"] = make(chan int, 2)
+  ch10["lambda"] <- 100
+  defer close(ch10["lambda"])
+  fmt.Println(<-ch10["lambda"])
 }
                     </textarea>
 

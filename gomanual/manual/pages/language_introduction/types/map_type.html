@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Função</title>
+    <title>Go Bootcamp - Map</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,51 +58,58 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Função</div>
+                    <div class="main-title">Map</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um tipo de função denota o conjunto de todas as funções com o mesmo parâmetro 
-                            e tipos de resultado. O valor de uma variável não inicializada do tipo de 
-                            função é <i>nil</i>.
+                            Um <i>map</i> é um grupo não ordenado de elementos de um tipo, denominado tipo de elemento, 
+                            indexado por um conjunto de chaves exclusivas de outro tipo, denominado tipo de chave. 
+                            O valor de um <i>map</i> não inicializado é <i>nil</i>.
                         </p>
                         <p>
-                            Em uma lista de parâmetros ou resultados, os nomes (IdentifierList) devem estar 
-                            todos presentes ou ausentes. Se presente, cada nome representa um item 
-                            (parâmetro ou resultado) do tipo especificado e todos os nomes não em branco na 
-                            assinatura devem ser exclusivos. Se ausente, cada tipo representa um item desse tipo. 
-                            As listas de parâmetros e resultados estão sempre entre parênteses, exceto que se 
-                            houver exatamente um resultado sem nome, ele pode ser escrito como um tipo sem parênteses.
-                        </p>
-                        <p>
-                            O parâmetro de entrada final em uma assinatura de função pode ter um tipo prefixado 
-                            com .... Uma função com tal parâmetro é chamada de variadic e pode ser chamada com 
-                            zero ou mais argumentos para aquele parâmetro.
+                            Os operadores de comparação == e != devem ser totalmente definidos para operandos do tipo 
+                            de chave; portanto, o tipo de chave não deve ser uma função, <i>map</i> ou <i>slice</i>. Se o tipo de 
+                            chave for um tipo de interface, esses operadores de comparação devem ser definidos para os 
+                            valores de chave dinâmicos; a falha causará um pânico em tempo de execução.
                         </p>
                         <pre><code class="language-go">
-func()
-func(x int) int
-func(a, _ int, z float32) bool
-func(a, b int, z float32) (bool)
-func(prefix string, values ...int)
-func(a, b int, z float64, opt ...interface{}) (success bool)
-func(int, int, float64) (float64, *[]int)
-func(n int) func(p *T)
+map[string]int
+map[*T]struct{ x, y float64 }
+map[string]interface{}
                         </code></pre>
+                        <p>
+                            O número de elementos do mapa é chamado de comprimento. Para um mapa M, ele pode ser 
+                            descoberto usando a função interna <i>len()</i> e pode mudar durante a execução. Os elementos 
+                            podem ser adicionados durante a execução usando atribuições e recuperados com expressões 
+                            de índice; eles podem ser removidos com a função interna de exclusão.
+                        </p>
+                        <p>
+                            Um novo valor de <i>map</i> vazio é criado usando a função integrada <i>make</i>, que leva o tipo de 
+                            <i>map</i> e uma dica de capacidade opcional como argumentos:
+                        </p>
+                        <pre><code class="language-go">
+make(map[string]int)
+make(map[string]int, 100)
+                        </code></pre>
+                        <p>
+                            A capacidade inicial não limita seu tamanho: os <i>maps</i> aumentam para acomodar o número de itens 
+                            armazenados neles, com exceção dos <i>maps</i> nulos. Um <i>map</i> nulo é equivalente a um <i>map</i> vazio, 
+                            exceto que nenhum elemento pode ser adicionado.
+                        </p>
 
                     </div>
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="pointer_type.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiro</span>
+                        <a class="pages-menu-link link-back" href="interface_type.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipo de Interface</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="interface.html">
-                            <span>Interface</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="channel_type.html">
+                            <span>Channel</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -113,34 +120,23 @@ func(n int) func(p *T)
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">function.go</div>
+                    <div class="code-filename">map.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="function.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="map.go">
 package main
 
-import (
-  "fmt"
-  "math"
-)
+import "fmt"
 
 func main() {
-  hypot := func(x, y float64) float64 {
-    return math.Sqrt(x*x + y*y)
-  }
-  fmt.Println(hypot(4, 10))
-
-  fmt.Println(Compute(hypot))
-  fmt.Println(Compute(math.Pow))
-
-  FaaS("Fim")
-}
-
-func FaaS(n string) {
-    fmt.Println(n)
-}
-
-func Compute(fn func(float64, float64) float64) float64 {
-    return fn(2, 3)
+  var m1 map[string]int
+  var m2 = make(map[string]int)
+  var m3 = map[string]int{"population": 500000}
+  var m4 = m3
+  
+  var m5 map[string]string
+  m5 = make(map[string]string)
+  
+  fmt.Println(m1, m2, m3, m4, m5)
 }
                     </textarea>
 

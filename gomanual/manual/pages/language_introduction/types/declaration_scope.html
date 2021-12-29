@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Função</title>
+    <title>Go Bootcamp - Declaração e Escopo</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,51 +58,56 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Função</div>
+                    <div class="main-title">Declaração e Escopo</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um tipo de função denota o conjunto de todas as funções com o mesmo parâmetro 
-                            e tipos de resultado. O valor de uma variável não inicializada do tipo de 
-                            função é <i>nil</i>.
+                            Uma declaração associa um identificador não vazio a uma constante, tipo, variável, 
+                            função, label ou pacote. Cada identificador em um programa deve ser declarado. 
+                            Nenhum identificador pode ser declarado duas vezes no mesmo bloco e nenhum identificador 
+                            pode ser declarado no bloco de arquivo e pacote.
                         </p>
                         <p>
-                            Em uma lista de parâmetros ou resultados, os nomes (IdentifierList) devem estar 
-                            todos presentes ou ausentes. Se presente, cada nome representa um item 
-                            (parâmetro ou resultado) do tipo especificado e todos os nomes não em branco na 
-                            assinatura devem ser exclusivos. Se ausente, cada tipo representa um item desse tipo. 
-                            As listas de parâmetros e resultados estão sempre entre parênteses, exceto que se 
-                            houver exatamente um resultado sem nome, ele pode ser escrito como um tipo sem parênteses.
+                            O identificador em branco pode ser usado como qualquer outro identificador em uma 
+                            declaração, mas não introduz uma vinculação e, portanto, não é declarado. No bloco de 
+                            pacote, o identificador init só pode ser usado para declarações de função init e, como 
+                            o identificador em branco, não introduz uma nova ligação.
                         </p>
                         <p>
-                            O parâmetro de entrada final em uma assinatura de função pode ter um tipo prefixado 
-                            com .... Uma função com tal parâmetro é chamada de variadic e pode ser chamada com 
-                            zero ou mais argumentos para aquele parâmetro.
+                            Go tem um escopo léxico usando blocos:
                         </p>
                         <pre><code class="language-go">
-func()
-func(x int) int
-func(a, _ int, z float32) bool
-func(a, b int, z float32) (bool)
-func(prefix string, values ...int)
-func(a, b int, z float64, opt ...interface{}) (success bool)
-func(int, int, float64) (float64, *[]int)
-func(n int) func(p *T)
+O escopo de um identificador pre-declarado é o bloco global.
+O escopo de um identificador denotando uma constane, tipo, variavel ou função (mas não método) declarado fora de qualquer função é o bloco do pacote.
+O escopo do nome do pacote de um pacote importado é o bloco do arquivo contendo a declaração de import.
+O escopo de um identificador denotando um método receptor, parãmetro de função variável resultante é o bloco da função.
+O escopo de uma constante ou de um identificador de uma variável declarado dentro de uma função começa no final do ConstSpec ou VarSpec (ShortVarDecl) e termina do final do bloco mais íntimo.
+O escopo de um identificador de tipo declarado dentro de uma função começa no identificador no TypeSpec e termina no final do bloco mais íntimo.
                         </code></pre>
+                        <p>
+                            Um identificador declarado em um bloco pode ser declarado novamente em um bloco interno. 
+                            Embora o identificador da declaração interna esteja no escopo, ele denota a entidade 
+                            declarada pela declaração interna.
+                        </p>
+                        <p>
+                            A cláusula do pacote não é uma declaração; o nome do pacote não aparece em nenhum escopo. 
+                            Seu objetivo é identificar os arquivos pertencentes ao mesmo pacote e especificar o nome 
+                            do pacote padrão para declarações de importação.
+                        </p>
 
                     </div>
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="pointer_type.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiro</span>
+                        <a class="pages-menu-link link-back" href="types_properties.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Propriedades dos Tipos</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="interface.html">
-                            <span>Interface</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="label_scope.html">
+                            <span>Escopo de Labels</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -113,34 +118,25 @@ func(n int) func(p *T)
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">function.go</div>
+                    <div class="code-filename">declaration_scopego</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="function.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="declaration_scope.go">
 package main
 
-import (
-  "fmt"
-  "math"
-)
+import "fmt"
 
 func main() {
-  hypot := func(x, y float64) float64 {
-    return math.Sqrt(x*x + y*y)
-  }
-  fmt.Println(hypot(4, 10))
+    var a bool
+    for {
+        if a {
+            break
+        } else {
+            b := 1
+            a = true
+        }
+    }
 
-  fmt.Println(Compute(hypot))
-  fmt.Println(Compute(math.Pow))
-
-  FaaS("Fim")
-}
-
-func FaaS(n string) {
-    fmt.Println(n)
-}
-
-func Compute(fn func(float64, float64) float64) float64 {
-    return fn(2, 3)
+    fmt.Println(b) // Variável b não foi declarada no escopo atual nem nos escopos superiores
 }
                     </textarea>
 
