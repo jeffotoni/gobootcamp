@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - $GOPATH</title>
+    <title>Go Bootcamp - Testando</title>
 
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
@@ -58,50 +58,43 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">$GOPATH</div>
+                    <div class="main-title">Testando</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            $GOPATH é o golang em seu $HOME, isso é necessário para que seus projetos 
-                            usem o pacote e construam corretamente. Isso era obrigatório para todas as 
-                            versões anteriores à 1.11. O legal é que a partir de agora não teremos mais 
-                            que criar projetos em $GOPATH, podemos criar em qualquer outro diretório 
-                            que não esteja em $GOPATH.
-                        </p>
-                        <p>
-                            Aqui está o link para a proposta da versão: 
-                            <a href="https://go.googlesource.com/proposal/+/master/design/24301-versioned-go.md/">
-                                Versioned Go Modules
-                            </a>
-                            ou
-                            <a href="https://github.com/golang/go/wiki/Modules/">
-                                Go 1.11 Modules
-                            </a>
-                        </p>
-                        <p>
-                            Comandos para Linux:
+                            Vamos rodar a versão go para ver se está tudo correto:
                         </p>
                         <pre><code class="language-go">
-$ sudo rm -rf /usr/local/go
-$ wget https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz
-$ sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+$ go version
+go version go1.11.4 linux/amd64
                         </code></pre>
-
+                        <p>
+                            Verifique se o Go está instalado corretamente configurando um espaço de trabalho e 
+                            criando um programa simples, como segue.
+                        </p>
+                        <p>
+                            Crie o diretório do seu espaço de trabalho, $HOME/go. 
+                            (Se desejar usar um diretório diferente, você precisará definir a variável de ambiente $GOPATH.)
+                        </p>
+                        <p>
+                            Em seguida, crie o diretório src/hello dentro de sua área de trabalho e, nesse diretório, 
+                            crie um arquivo chamado hello.go que se pareça com: 
+                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Instalação</span>
+                        <a class="pages-menu-link link-back" href="go_path.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>$GOPATH</span>
                         </a>
 
                         <img src="../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="test.html">
-                            <span>Testando</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="workspace.html">
+                            <span>Workspace</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -112,9 +105,25 @@ $ sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">go_path</div>
+                    <div class="code-filename">helloworld.go</div>
 
-                    <img src="../../gif/gopher-2.gif" alt="Golang" style="width: 100%">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="helloworld.go">
+package main
+
+import "fmt"
+
+func main() {
+    print("\nHello ", "World ", 2021, " Go!")
+    println("Hello", "World ", 2021, " Go!")
+
+    ///////////////////lib fmt////////////////////////
+    fmt.Println("Hello", "World ", 2021, " Go!")
+    s := fmt.Sprintf("%s", "string-here")
+    fmt.Printf("%s%s", s, "\n")
+    f := fmt.Sprintf("%0.2f", 34.56756)
+    fmt.Println("float:", f)
+}					
+                    </textarea>
 
                     <img class="gopher-column-code" src="../../img/gopher-docker-cut.png" alt="" />
 
@@ -151,6 +160,13 @@ $ sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 
     <!-- Custom js -->
     <script src="../../js/custom.js"></script>
+
+     <!-- Go Playground -->
+     <script src="../../../js/go-playground/codemirror.js"></script>
+     <script src="../../../js/go-playground/codemirror-go.js"></script>
+     <script src="../../../js/go-playground/playground.js"></script>
+     <script src="../../../js/go-playground/snippets.js"></script>
+     <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
 
     <!-- Prism Syntax Highlighting -->
     <script src="../../plugins/prism/prism.js"></script>
