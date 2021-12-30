@@ -7,7 +7,6 @@ a {
 	text-decoration: underline;
 }
 
-
 /*Temporário, somente para marcação de páginas não implementadas*/
 .disabled-link {
 	text-decoration: none;
@@ -62,7 +61,7 @@ a {
     top: 100%;
     right: 10%;
     transform: rotate(180deg);
-    width: 110px;
+    width: 90px;
 }
 
 @media (max-width: 460px) {
@@ -75,7 +74,7 @@ a {
 
 .main-page {
 	color: #3b454e;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 400;
 	width: 500px;
 	margin: 2rem auto;
@@ -89,13 +88,13 @@ a {
 }
 
 .main-page h1 {
-	font-size: 35px;
+	font-size: 24px;
 	font-weight: 700;
 	margin-bottom: 1.2rem;
 }
 
 .main-page a {
-	font-size: 22px;
+	font-size: 15px;
 	font-weight: 500;
 	display: block;
 	margin-top: 0;
@@ -110,21 +109,21 @@ a {
 }
 
 .main-page ul {
-	margin-bottom: 2rem;
+	margin-bottom: .6rem;
 	margin-left: 1.5rem;
 }
 
 .main-page ul > li {
-	margin: 0.7rem 0;
+	margin: 0.4rem 0;
 }
 
 .main-page ul > li > a {
-	font-size: 18px;
+	font-size: 13px;
 	font-weight: 400;
 }
 
 .content-page .main-title {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #3b454e;
 	border-bottom: 1px solid #f1f1f1;
@@ -133,9 +132,12 @@ a {
 	padding: .5rem 0 .3rem .15rem;
 }
 
-.content-page p {
-	font-size: 16px;
+.content-page {
+	font-size: 13px;
 	color: #3b454e;
+}
+
+.content-page p {
 	padding: 0 1.5rem;
 	margin-bottom: 1rem;
 }
@@ -144,6 +146,16 @@ a {
 	border-left: 2px solid #ebebeb;
 	padding-left: 0;
 	position: relative;
+}
+
+.column-code img {
+	display: block;
+	width: 90% !important;
+	margin: 0 auto;
+}
+
+.column-code .gopher-column-code {
+	width: 70px !important;
 }
 
 .content-page .buttons {
@@ -158,6 +170,7 @@ a {
 	padding: 3px 16px;
 	margin: 8px;
 	margin-left: 20px;
+	text-align: left;
 	display: inline-block;
 }
 
@@ -175,7 +188,9 @@ a {
 }
 
 .pages-menu {
+	margin: 15px auto;
 	text-align: center;
+	font-size: 15px !important;
 }
 
 .pages-menu-link {
