@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Comandos</title>
+    <title>Go Bootcamp - go build mode</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,50 +58,71 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Comandos</div>
+                    <div class="main-title">go buildmode</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
-                        <p>
-                            Em golang, temos um arsenal para nos ajudar quando se trata de compilar, testar, 
-                            documentar, gerenciar perfis, etc.
-                        </p>
                         <pre><code class="language-go">
-bug         start a bug report
-build       compile packages and dependencies
-clean       remove object files and cached files
-doc         show documentation for package or symbol
-env         print Go environment information
-fix         update packages to use new APIs
-fmt         gofmt (reformat) package sources
-generate    generate Go files by processing source
-get         download and install packages and dependencies
-install     compile and install packages and dependencies
-list        list packages or modules
-mod         module maintenance
-run         compile and run Go program
-test        test packages
-tool        run specified go tool
-version     print Go version
-vet         report likely mistakes in packages
+$ go help buildmode
                         </code></pre>
                         <p>
-                            Use <i>go help <comando> para mais informações sobre um comando</i>
+                            Os comandos 'go build' e 'go install' usam um argumento -buildmode que indica que tipo 
+                            de arquivo objeto deve ser construído. Os valores atualmente suportados são:
                         </p>
+                        <pre><code class="language-go">
+-buildmode=archive
+  Build the listed non-main packages into .a files. Packages named
+  main are ignored.
+
+-buildmode=c-archive
+  Build the listed main package, plus all packages it imports,
+  into a C archive file. The only callable symbols will be those
+  functions exported using a cgo //export comment. Requires
+  exactly one main package to be listed.
+
+-buildmode=c-shared
+  Build the listed main package, plus all packages it imports,
+  into a C shared library. The only callable symbols will
+  be those functions exported using a cgo //export comment.
+  Requires exactly one main package to be listed.
+
+-buildmode=default
+  Listed main packages are built into executables and listed
+  non-main packages are built into .a files (the default
+  behavior).
+
+-buildmode=shared
+  Combine all the listed non-main packages into a single shared
+  library that will be used when building with the -linkshared
+  option. Packages named main are ignored.
+
+-buildmode=exe
+  Build the listed main packages and everything they import into
+  executables. Packages not named main are ignored.
+
+-buildmode=pie
+  Build the listed main packages and everything they import into
+  position independent executables (PIE). Packages not named
+  main are ignored.
+
+-buildmode=plugin
+  Build the listed main packages, plus all packages that they
+  import, into a Go plugin. Packages not named main are ignored.
+                        </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Homepage</span>
+                        <a class="pages-menu-link link-back" href="go_build_samples.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Exemplos go build</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="gc_gccgo.html">
-                            <span>GC e GCCGO</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="go_build_plugin.html">
+                            <span>go build Plugins</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -112,7 +133,7 @@ vet         report likely mistakes in packages
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">commands</div>
+                    <div class="code-filename">buildmode.go</div>
 
                     <img src="../../../gif/jumping.webp" alt="Golang" style="width: 100%">
 
@@ -151,6 +172,13 @@ vet         report likely mistakes in packages
 
     <!-- Custom js -->
     <script src="../../../js/custom.js"></script>
+
+        <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
 
     <!-- Prism Syntax Highlighting -->
     <script src="../../../plugins/prism/prism.js"></script>

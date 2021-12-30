@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - go mod</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">go mod</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Um módulo é uma coleção de pacotes Go relacionados. Módulos são a unidade de intercâmbio e 
+                            controle de versão do código-fonte. O comando go tem suporte direto para trabalhar com módulos, 
+                            incluindo gravação e resolução de dependências em outros módulos. Os módulos substituem a antiga 
+                            abordagem baseada em GOPATH para especificar quais arquivos de origem são usados em uma determinada construção.
+                        </p>
+                        <pre><code class="language-go">
+go mod <command> [arguments]
+                        </code></pre>
+                        <p>
+                            Um módulo é definido por uma árvore de arquivos de origem Go com um arquivo go.mod no diretório 
+                            raiz da árvore. O diretório que contém o arquivo go.mod é chamado de raiz do módulo. Normalmente, 
+                            a raiz do módulo também corresponderá a uma raiz do repositório de código-fonte 
+                            (mas em geral não é necessário). O módulo é o conjunto de todos os pacotes Go na raiz do 
+                            módulo e seus subdiretórios, mas excluindo subárvores com seus próprios arquivos go.mod.
+                        </p>
+                        <p>
+                            O "caminho do módulo" é o prefixo do caminho de importação correspondente à raiz do módulo. 
+                            O arquivo go.mod define o caminho do módulo e lista as versões específicas de outros módulos 
+                            que devem ser usados ao resolver importações durante uma compilação, fornecendo seus caminhos 
+                            e versões de módulo.
+                        </p>
+                        <p>
+                            Por exemplo, este go.mod declara que o diretório que o contém é a raiz do módulo com o caminho 
+                            example.com/m e também declara que o módulo depende de versões específicas de golang.org/x/text e 
+                            gopkg.in /yaml.v2:
+                        </p>
+                        <pre><code class="language-go">
+go mod init github.com/user/gomyproject
+
+require (
+  golang.org/x/text v0.3.0
+  gopkg.in/yaml.v2 v2.1.0
+)
+                        </code></pre>
+                        <p>
+                            O arquivo go.mod também pode especificar substituições e versões excluídas que se aplicam apenas 
+                            ao construir o módulo diretamente; eles são ignorados quando o módulo é incorporado a uma 
+                            construção maior. Para obter mais informações sobre o arquivo go.mod, consulte 'go help go.mod'.
+                        </p>
+                        <p>
+                            Para iniciar um novo módulo, basta criar um arquivo go.mod na raiz da árvore de diretórios do módulo, 
+                            contendo apenas uma instrução do módulo. O comando 'go mod init' pode ser usado para fazer isso:
+                        </p>
+                        <pre><code class="language-go">
+go mod init github.com/user/gomyproject
+                        </code></pre>
+                        <p>
+                            Em um projeto que já usa uma ferramenta de gerenciamento de dependência existente como godep, 
+                            glide ou dep, 'go mod init' também adicionará instruções de requerimento correspondentes à 
+                            configuração existente.
+
+                            Uma vez que o arquivo go.mod existe, nenhuma etapa adicional é necessária: 
+                            comandos go como 'go build', 'go test' ou mesmo 'go list' irão adicionar automaticamente 
+                            novas dependências conforme necessário para satisfazer as importações.
+                        </p>
+                        <p>
+                            Os comandos são:
+                        </p>
+                        <pre><code class="language-go">
+download    download modules to local cache
+edit        edit go.mod from tools or scripts
+graph       print module requirement graph
+init        initialize new module in current directory
+tidy        add missing and remove unused modules
+vendor      make vendored copy of dependencies
+verify      verify dependencies have expected content
+why         explain why packages or modules are needed
+                        </code></pre>
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="go_doc.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>go doc</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="go_test.html">
+                            <span>go test</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">go doc</div>
+
+                    <img src="../../../gif/jumping.webp" alt="Golang" style="width: 100%">
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Comandos</title>
+    <title>Go Bootcamp - go build</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,50 +58,80 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Comandos</div>
+                    <div class="main-title">go build</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Em golang, temos um arsenal para nos ajudar quando se trata de compilar, testar, 
-                            documentar, gerenciar perfis, etc.
+                            O comando <i>build</i> compila os pacotes nomeados pelos caminhos de importação, junto com suas dependências, 
+                            mas não instala os resultados.
+                            Ao compilar pacotes, o build ignora os arquivos que terminam em '_test.go'.
+                            O sinalizador -o, permitido apenas ao compilar um único pacote, força o build a gravar o executável 
+                            ou objeto resultante no arquivo de saída nomeado, em vez do comportamento padrão descrito nos dois últimos 
+                            parágrafos.
+                            O sinalizador -i instala os pacotes que são dependências do destino.
                         </p>
                         <pre><code class="language-go">
-bug         start a bug report
-build       compile packages and dependencies
-clean       remove object files and cached files
-doc         show documentation for package or symbol
-env         print Go environment information
-fix         update packages to use new APIs
-fmt         gofmt (reformat) package sources
-generate    generate Go files by processing source
-get         download and install packages and dependencies
-install     compile and install packages and dependencies
-list        list packages or modules
-mod         module maintenance
-run         compile and run Go program
-test        test packages
-tool        run specified go tool
-version     print Go version
-vet         report likely mistakes in packages
+$ go build [-o output] [-i] [build flags] [packages]
                         </code></pre>
                         <p>
-                            Use <i>go help <comando> para mais informações sobre um comando</i>
+                            Os sinalizadores de compilação são compartilhados pelos comandos build, clean, get, install, list, run e test:
                         </p>
+                        <pre><code class="language-go">
+- a
+  force rebuilding of packages that are already up-to-date.
+  
+-race
+  enable data race detection.
+  Supported only on linux/amd64, freebsd/amd64, darwin/amd64 and windows/amd64.
+  
+-work
+  print the name of the temporary work directory and
+  do not delete it when exiting.
+  
+-buildmode mode
+  build mode to use. See 'go help buildmode' for more.
+  
+-compiler name
+  name of compiler to use, as in runtime.Compiler (gccgo or gc).
+  
+-gccgoflags '[pattern=]arg list'
+  arguments to pass on each gccgo compiler/linker invocation.
+
+-gcflags '[pattern=]arg list'
+  arguments to pass on each go tool compile invocation.
+
+-ldflags '[pattern=]arg list'
+  arguments to pass on each go tool link invocation.
+
+-linkshared
+  link against shared libraries previously created with
+  -buildmode=shared.
+
+-mod mode
+  module download mode to use: readonly or vendor.
+  See 'go help modules' for more.
+
+-tags 'tag list'
+  a space-separated list of build tags to consider satisfied during the
+  build. For more information about build tags, see the description of
+  build constraints in the documentation for the go/build package.
+ 
+                        </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Homepage</span>
+                        <a class="pages-menu-link link-back" href="go_run.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>go run</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="gc_gccgo.html">
-                            <span>GC e GCCGO</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="go_build_samples.html">
+                            <span>Exemplos go build</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -112,7 +142,7 @@ vet         report likely mistakes in packages
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">commands</div>
+                    <div class="code-filename">main.go</div>
 
                     <img src="../../../gif/jumping.webp" alt="Golang" style="width: 100%">
 
@@ -151,6 +181,13 @@ vet         report likely mistakes in packages
 
     <!-- Custom js -->
     <script src="../../../js/custom.js"></script>
+
+        <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
 
     <!-- Prism Syntax Highlighting -->
     <script src="../../../plugins/prism/prism.js"></script>

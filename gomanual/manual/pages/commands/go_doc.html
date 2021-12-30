@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Comandos</title>
+    <title>Go Bootcamp - go doc</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,50 +58,65 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Comandos</div>
+                    <div class="main-title">go doc</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
-                        <p>
-                            Em golang, temos um arsenal para nos ajudar quando se trata de compilar, testar, 
-                            documentar, gerenciar perfis, etc.
-                        </p>
                         <pre><code class="language-go">
-bug         start a bug report
-build       compile packages and dependencies
-clean       remove object files and cached files
-doc         show documentation for package or symbol
-env         print Go environment information
-fix         update packages to use new APIs
-fmt         gofmt (reformat) package sources
-generate    generate Go files by processing source
-get         download and install packages and dependencies
-install     compile and install packages and dependencies
-list        list packages or modules
-mod         module maintenance
-run         compile and run Go program
-test        test packages
-tool        run specified go tool
-version     print Go version
-vet         report likely mistakes in packages
+go doc [-u] [-c] [package|[package.]symbol[.methodOrField]]
                         </code></pre>
                         <p>
-                            Use <i>go help <comando> para mais informações sobre um comando</i>
+                            Doc imprime os comentários de documentação associados ao item identificado por seus argumentos (um pacote, const, func, tipo, var, método ou campo de estrutura) seguido por um resumo de uma linha de cada um dos itens de primeiro nível "sob" aquele item (declarações em nível de pacote para um pacote, métodos para um tipo, etc.).
+
+                            Doc aceita zero, um ou dois argumentos.
+
+                            Sem argumentos, isto é, quando executado como:
+                        </p>
+                        <pre><code class="language-go">
+go doc
+                        </code></pre>
+                        <p>
+                            Ele imprime a documentação do pacote para o pacote no diretório atual. Se o pacote for 
+                            um comando (pacote principal), os símbolos exportados do pacote são omitidos da apresentação, 
+                            a menos que o sinalizador -cmd seja fornecido.
+
+                            Quando executado com um argumento, o argumento é tratado como uma representação semelhante à 
+                            sintaxe Go do item a ser documentado. O que o argumento seleciona depende do que está instalado 
+                            em GOROOT e GOPATH, bem como da forma do argumento, que é esquematicamente um destes:
+                        </p>
+                        <pre><code class="language-go">
+go doc <pkg>
+go doc <sym>[.<methodOrField>]
+go doc [<pkg>.]<sym>[.<methodOrField>]
+go doc [<pkg>.][<sym>.]<methodOrField>
+                        </code></pre>
+                        <p>
+                            O primeiro item nesta lista correspondido pelo argumento é aquele cuja documentação é impressa. 
+                            (Veja os exemplos abaixo.) No entanto, se o argumento começar com uma letra maiúscula, presume-se que 
+                            ele identifique um símbolo ou método no diretório atual.
+
+                            Para pacotes, a ordem de varredura é determinada lexicamente na ordem de amplitude. 
+                            Ou seja, o pacote apresentado é aquele que corresponde à pesquisa e está mais próximo 
+                            da raiz e lexicamente primeiro em seu nível de hierarquia. A árvore GOROOT é sempre verificada 
+                            em sua totalidade antes de GOPATH.
+
+                            Se não houver nenhum pacote especificado ou correspondente, o pacote no diretório atual é selecionado, 
+                            então "go doc Foo" mostra a documentação para o símbolo Foo no pacote atual.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Homepage</span>
+                        <a class="pages-menu-link link-back" href="go_tool.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>go tool</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="gc_gccgo.html">
-                            <span>GC e GCCGO</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="go_mod.html">
+                            <span>go mod</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -112,7 +127,7 @@ vet         report likely mistakes in packages
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">commands</div>
+                    <div class="code-filename">go doc</div>
 
                     <img src="../../../gif/jumping.webp" alt="Golang" style="width: 100%">
 

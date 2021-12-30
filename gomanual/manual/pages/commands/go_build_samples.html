@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Exemplos go build</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Exemplos go build</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Compilando para rodar na plataforma AWS, lambda.
+                            Código ao lado ->
+                        </p>
+                        <pre><code class="language-go">
+$ GOOS=linux GOARCH=amd64 go build -o lambda lambda.go
+                        </code></pre>
+                        <p>
+                            Compilando para Webassembly
+                        </p>
+                        <pre><code class="language-go">
+$ go build GOARCH=wasm GOOS=js go build -o test.wasm hello.go
+                        </code></pre>
+                        <p>
+                            Compilando e gerando um arquivo .o, ele gera o assembly
+                        </p>
+                        <pre><code class="language-go">
+$ GOOS=linux GOARCH=amd64 go tool compile -S hello.go
+$ go tool compile -S hello.go > hello.S
+$ go build -gcflags -S hello.go
+                        </code></pre>
+                        <p>
+                            A ferramenta objdump mostra referências aos números de linha do código original para o que está sendo executado.
+                        </p>
+                        <pre><code class="language-go">
+$ go tool objdump hello > ref-assembly
+                        </code></pre>
+                        <p>
+                            Isso está no código para quando o compilarmos para diferenciar e compilar apenas aqueles que contêm essas tags.
+                        </p>
+                        <pre><code class="language-go">
+// +build dev
+                        </code></pre>
+                        <p>
+                            Ao compilar basta informar a tag que você colocou em seu código
+                        </p>
+                        <pre><code class="language-g">
+$ go build -tags dev -o hello hello.go
+                        </code></pre>
+                        <p>
+                            Passando parâmetro, passando valores para variáveis no código:
+                        </p>
+                        <pre><code class="language-go">
+package main
+
+import "fmt"
+
+var (
+  version string
+  date    string
+)
+
+func main() {
+  fmt.Printf("version=%s, date=%s", version, date)
+}
+                        </code></pre>
+                        <pre><code class="language-go">
+$ go build -ldflags "-X main.version=0.0.1 -X main.date=2019-01-18" version.go
+                        </code></pre>
+                        <p>
+                            Você pode omitir as informações de depuração passando o sinalizador '-w' para o vinculador e 
+                            pode omitir a tabela de símbolos passando '-s'
+                        </p>
+                        <pre><code class="language-go">
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Println("vim-go, hello.")
+}
+                        </code></pre>
+                        <p>
+                            Compilação com ldflags:
+                        </p>
+                        <pre><code class="language-go">
+go build -ldflags="-s -w" hello.go
+
+$ ls -lh 
+-rwxrwxr-x 1 root root 1,3M jan 18 12:42 hello
+-rw-rw-r-- 1 root root   75 jan 17 12:04 hello.go
+                        </code></pre>
+                        <p>
+                            Compilação normal:
+                        </p>
+                        <pre><code class="language-go">
+go build -o hello hello.go
+
+$ ls -lh 
+-rwxrwxr-x 1 root root 1,9M jan 18 12:42 hello
+-rw-rw-r-- 1 root root   75 jan 17 12:04 hello.go
+                        </code></pre>
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="go_build.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>go build</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="go_build_modes.html">
+                            <span>go buildmode</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">lambda.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="lambda.go">
+package main
+                    
+// @jeffotoni
+// aws lambda
+import (
+  "github.com/aws/aws-lambda-go/lambda"
+)
+
+type MyResponse struct {
+  Body string `json:"body"`
+}
+
+type MyEvent struct {
+  Name string `json:"name"`
+}
+
+func HandleRequest(event MyEvent) (*MyResponse, error) {
+
+  return &MyResponse{Body: event.Name}, nil
+}
+
+func main() {
+
+  lambda.Start(HandleRequest)
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+        <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>
