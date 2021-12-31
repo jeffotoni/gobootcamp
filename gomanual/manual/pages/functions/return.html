@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - GO111MODULE</title>
+    <title>Go Bootcamp - Return</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,51 +58,30 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">GO111MODULE</div>
+                    <div class="main-title">Return</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Go 1.11 inclui suporte preliminar para módulos Go, incluindo um novo comando 'go get' com reconhecimento 
-                            de módulo. Pretendemos continuar revisando este suporte, preservando a compatibilidade, até que ele possa 
-                            ser declarado oficial (não mais preliminar), e então, em um ponto posterior, podemos remover o suporte 
-                            para trabalho no GOPATH e o antigo comando 'go get'.
+                            Funções precisam retornar valores quando isso é especificado em sua declaração:
                         </p>
-                        <p>
-                            A maneira mais rápida de aproveitar as vantagens do novo suporte do módulo Go 1.11 é verificar seu 
-                            repositório em um diretório fora de GOPATH/src, criar um arquivo go.mod (descrito na próxima seção) 
-                            e executar comandos go de dentro desse arquivo árvore.
-                        </p>
-                        <p>
-                            Para um controle mais refinado, o suporte do módulo no Go 1.11 respeita uma variável de ambiente temporária, 
-                            GO111MODULE, que pode ser definida como um dos três valores de string: off, on ou auto (o padrão). Se 
-                            GO111MODULE = off, o comando go nunca usa o novo suporte do módulo. Em vez disso, ele procura nos 
-                            diretórios do fornecedor e no GOPATH para encontrar dependências; agora nos referimos a isso como 
-                            "modo GOPATH". Se GO111MODULE = ativado, o comando go requer o uso de módulos, nunca consultando GOPATH. 
-                            Referimo-nos a isso como o comando que reconhece o módulo ou é executado no "modo ciente do módulo". Se 
-                            GO111MODULE = auto ou não estiver definido, o comando go habilita ou desabilita o suporte do módulo com 
-                            base no diretório atual. O suporte ao módulo é habilitado apenas quando o diretório atual está fora de 
-                            GOPATH/src e contém um arquivo go.mod ou está abaixo de um diretório contendo um arquivo go.mod.
-                        </p>
-                        <p>
-                            No modo de reconhecimento de módulo, GOPATH não define mais o significado das importações durante uma 
-                            construção, mas ainda armazena dependências baixadas (em GOPATH/pkg/mod) e comandos instalados 
-                            (em GOPATH/bin, a menos que GOBIN esteja definido).
-                        </p>
+                        <pre><code class="language-go">
+func identificador([argumentos]) [tipos dos retornos]
+                        </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="go_mod.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>go mod</span>
+                        <a class="pages-menu-link link-back" href="index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Funções</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="go_mod_init.html">
-                            <span>go mod init</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="defer.html">
+                            <span>Defer</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -113,9 +92,23 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">GO111MODULE</div>
+                    <div class="code-filename">return.go</div>
 
-                    <img src="../../../gif/jumping.webp" alt="Golang" style="width: 100%">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="return.go">
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println(somar(2, 36))
+}
+
+func somar(x, y int) int {
+    // x e y sao parâmetros do tipo 'int'
+    // a função precisa retornar um valor do tipo 'int'
+    return x + y
+}
+                    </textarea>
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
 
@@ -152,6 +145,13 @@
 
     <!-- Custom js -->
     <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
 
     <!-- Prism Syntax Highlighting -->
     <script src="../../../plugins/prism/prism.js"></script>

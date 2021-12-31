@@ -4,7 +4,7 @@ html, body {
 }
 
 a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /*Temporário, somente para marcação de páginas não implementadas*/
@@ -61,7 +61,7 @@ a {
     top: 100%;
     right: 10%;
     transform: rotate(180deg);
-    width: 90px;
+    width: 60px;
 }
 
 @media (max-width: 460px) {
@@ -133,7 +133,7 @@ a {
 }
 
 .content-page {
-	font-size: 14px;
+	font-size: 15px;
 	color: #3b454e;
 }
 
@@ -190,7 +190,7 @@ a {
 .pages-menu {
 	margin: 15px auto;
 	text-align: center;
-	font-size: 15px !important;
+	font-size: 13.5px !important;
 }
 
 .pages-menu-link {
