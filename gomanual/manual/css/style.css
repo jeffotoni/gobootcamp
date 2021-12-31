@@ -94,7 +94,7 @@ a {
 }
 
 .main-page a {
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 500;
 	display: block;
 	margin-top: 0;
@@ -109,7 +109,7 @@ a {
 }
 
 .main-page ul {
-	margin-bottom: .6rem;
+	margin-bottom: .9rem;
 	margin-left: 1.5rem;
 }
 
@@ -118,7 +118,7 @@ a {
 }
 
 .main-page ul > li > a {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 400;
 }
 
@@ -133,7 +133,7 @@ a {
 }
 
 .content-page {
-	font-size: 13px;
+	font-size: 14px;
 	color: #3b454e;
 }
 
