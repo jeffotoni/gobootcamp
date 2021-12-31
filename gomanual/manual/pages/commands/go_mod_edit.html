@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Declaração Curta de Variáveis</title>
+    <title>Go Bootcamp - go mod edit</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,46 +58,27 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Declaração Curta de Variáveis</div>
+                    <div class="main-title">go mod edit</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
-                        <p>
-                            A declaração curta de variáveis usa a seguinte sintaxe:
-                        </p>
-
                         <pre><code class="language-go">
-ShortVarDecl = IdentifierList := ExpressionList
+go mod edit [editing flags] [go.mod]
                         </code></pre>
-
-                        <p>
-                            Ao contrário das declarações de variáveis regulares, uma declaração curta
-                            de variável pode redeclarar variáveis desde que tenham sido 
-                            declaradas originalmente no mesmo bloco (ou as listas de parâmetros 
-                            se o bloco for o corpo da função) com o mesmo tipo e pelo menos uma 
-                            das variáveis não em branco é nova. Como consequência, a redeclaração 
-                            só pode aparecer em uma declaração curta multivariável. A redeclaração 
-                            não introduz uma nova variável; apenas atribui um novo valor ao original.
-                        </p>
-                        <p>
-                            Declarações de variáveis curtas podem aparecer apenas dentro de funções. 
-                            Em alguns contextos, como os inicializadores "if", "for" 
-                            ou "switch", eles podem ser usados para declarar variáveis temporárias locais.
-                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="variable_declaration.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Declaração de Variáveis</span>
+                        <a class="pages-menu-link link-back" href="go_mod_init.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>go mod init</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="env_vars.html">
-                            <span>Variáveis de Ambiente</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="go_mod_download_modules.html">
+                            <span>Baixar Módulos para o Cache Local</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -108,23 +89,9 @@ ShortVarDecl = IdentifierList := ExpressionList
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">short_variable_declaration.go</div>
+                    <div class="code-filename">go mod edit</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="short_variable_declaration.go">
-package main
-
-import (
-    "fmt"
-)
-
-func main() {
-    a, b := 1, "Go"
-    fmt.Println(a, b)
-    
-    b, c := "Is Good", true
-    fmt.Println(b, c)
-}
-                    </textarea>
+                    <img src="../../../gif/jumping.webp" alt="Golang" style="width: 100%">
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
 
@@ -161,13 +128,6 @@ func main() {
 
     <!-- Custom js -->
     <script src="../../../js/custom.js"></script>
-
-    <!-- Go Playground -->
-    <script src="../../../js/go-playground/codemirror.js"></script>
-    <script src="../../../js/go-playground/codemirror-go.js"></script>
-    <script src="../../../js/go-playground/playground.js"></script>
-    <script src="../../../js/go-playground/snippets.js"></script>
-    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
 
     <!-- Prism Syntax Highlighting -->
     <script src="../../../plugins/prism/prism.js"></script>

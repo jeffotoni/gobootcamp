@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Declaração Curta de Variáveis</title>
+    <title>Go Bootcamp - Variáveis de Ambiente</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,46 +58,87 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Declaração Curta de Variáveis</div>
+                    <div class="main-title">Variáveis de Ambiente</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            A declaração curta de variáveis usa a seguinte sintaxe:
+                            O comando go e as ferramentas que ele invoca examinam algumas variáveis de ambiente diferentes. 
+                            Para muitos deles, você pode ver o valor padrão de em seu sistema executando 'go env NAME', onde NAME 
+                            é o nome da variável.
                         </p>
-
+                        <p>
+                            Variáveis de ambiente de uso geral:
+                        </p>
                         <pre><code class="language-go">
-ShortVarDecl = IdentifierList := ExpressionList
+GCCGO
+  The gccgo command to run for 'go build -compiler=gccgo'.
+GOARCH
+  The architecture, or processor, for which to compile code.
+  Examples are amd64, 386, arm, ppc64.
+GOBIN
+  The directory where 'go install' will install a command.
+GOCACHE
+  The directory where the go command will store cached
+  information for reuse in future builds.
+GOFLAGS
+  A space-separated list of -flag=value settings to apply
+  to go commands by default, when the given flag is known by
+  the current command. Flags listed on the command-line
+  are applied after this list and therefore override it.
+GOOS
+  The operating system for which to compile code.
+  Examples are linux, darwin, windows, netbsd.
+GOPATH
+  For more details see: 'go help gopath'.
+GOPROXY
+  URL of Go module proxy. See 'go help goproxy'.
+GORACE
+  Options for the race detector.
+  See https://golang.org/doc/articles/race_detector.html.
+GOROOT
+  The root of the go tree.
+GOTMPDIR
+  The directory where the go command will write
+  temporary source files, packages, and binaries.
                         </code></pre>
-
                         <p>
-                            Ao contrário das declarações de variáveis regulares, uma declaração curta
-                            de variável pode redeclarar variáveis desde que tenham sido 
-                            declaradas originalmente no mesmo bloco (ou as listas de parâmetros 
-                            se o bloco for o corpo da função) com o mesmo tipo e pelo menos uma 
-                            das variáveis não em branco é nova. Como consequência, a redeclaração 
-                            só pode aparecer em uma declaração curta multivariável. A redeclaração 
-                            não introduz uma nova variável; apenas atribui um novo valor ao original.
+                            Cada entrada na lista GOFLAGS deve ser um sinalizador independente. Como as entradas são separadas 
+                            por espaço, os valores dos sinalizadores não devem conter espaços. Em alguns casos, você pode 
+                            fornecer vários valores de sinalizador: por exemplo, para definir '-ldflags = -s -w', você pode usar 
+                            'GOFLAGS = -ldflags = -s -ldflags = -w'.
                         </p>
                         <p>
-                            Declarações de variáveis curtas podem aparecer apenas dentro de funções. 
-                            Em alguns contextos, como os inicializadores "if", "for" 
-                            ou "switch", eles podem ser usados para declarar variáveis temporárias locais.
+                            Variáveis de ambiente específicas da arquitetura:
                         </p>
+                        <pre><code class="language-go">
+GOARM
+  For GOARCH=arm, the ARM architecture for which to compile.
+  Valid values are 5, 6, 7.
+GO386
+  For GOARCH=386, the floating point instruction set.
+  Valid values are 387, sse2.
+GOMIPS
+  For GOARCH=mips{,le}, whether to use floating point instructions.
+  Valid values are hardfloat (default), softfloat.
+GOMIPS64
+  For GOARCH=mips64{,le}, whether to use floating point instructions.
+  Valid values are hardfloat (default), softfloat.
+                        </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="variable_declaration.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Declaração de Variáveis</span>
+                        <a class="pages-menu-link link-back" href="short_variable_declaration.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Declaração Curta de Variáveis</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="env_vars.html">
-                            <span>Variáveis de Ambiente</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../types/index.html">
+                            <span>Tipos</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -108,23 +149,9 @@ ShortVarDecl = IdentifierList := ExpressionList
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">short_variable_declaration.go</div>
+                    <div class="code-filename">env_variables</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="short_variable_declaration.go">
-package main
-
-import (
-    "fmt"
-)
-
-func main() {
-    a, b := 1, "Go"
-    fmt.Println(a, b)
-    
-    b, c := "Is Good", true
-    fmt.Println(b, c)
-}
-                    </textarea>
+                    <img src="../../../gif/jumping.webp" alt="Golang" style="width: 100%">
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
 
@@ -161,13 +188,6 @@ func main() {
 
     <!-- Custom js -->
     <script src="../../../js/custom.js"></script>
-
-    <!-- Go Playground -->
-    <script src="../../../js/go-playground/codemirror.js"></script>
-    <script src="../../../js/go-playground/codemirror-go.js"></script>
-    <script src="../../../js/go-playground/playground.js"></script>
-    <script src="../../../js/go-playground/snippets.js"></script>
-    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
 
     <!-- Prism Syntax Highlighting -->
     <script src="../../../plugins/prism/prism.js"></script>
