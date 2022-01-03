@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Arrays</title>
+    <title>Go Bootcamp - Acessando Elementos</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,30 +58,42 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Arrays - Introdução</div>
+                    <div class="main-title">Arrays - Acessando Elementos</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Arrays são listas enumeradas de comprimento fixo e que armazenam um determinado tipo de dado.
+                            Para acessar um elemento específico dentro de um array, use a seguinte sintaxe:
                         </p>
                         <pre><code class="language-go">
-var i [3]int // Array de largura fixa 3 que armazena dados do tipo int
+nome[index]
                         </code></pre>
+                        <p>
+                            Onde index representa a posição do elemento, sabendo que as posições se iniciam em 0.
+                        </p>
+                        <p>
+                            Para alterar o valor de um elemento, use a seguinte sintaxe:
+                        </p>
+                        <pre><code class="language-go">
+nome[index] = valor
+                        </code></pre>
+                        <p>
+                            O valor precisa ser do mesmo tipo que o especificado na declaração do array.
+                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../functions/async_functions.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Funções Assíncronas</span>
+                        <a class="pages-menu-link link-back" href="initialization.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Inicialização</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="declaration.html">
-                            <span>Declaração</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="resize.html">
+                            <span>Redimensionar</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -92,15 +104,21 @@ var i [3]int // Array de largura fixa 3 que armazena dados do tipo int
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">arrays.go</div>
+                    <div class="code-filename">accessing_elements.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="arrays.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="accessing_elements.go">
 package main
 
 import "fmt"
 
 func main() {
-    a := [3]int{3, 2, 1}
+    a := [5]int{0, 10, 20, 30, 40}
+
+    fmt.Println(a)
+    fmt.Println(a[1])
+
+    a[1] = 100
+
     fmt.Println(a)
 }
                     </textarea>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Arrays</title>
+    <title>Go Bootcamp - Declaração</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,30 +58,33 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Arrays - Introdução</div>
+                    <div class="main-title">Arrays - Declaração</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Arrays são listas enumeradas de comprimento fixo e que armazenam um determinado tipo de dado.
+                            Para declarar um array em Go, use a seguinte sintaxe:
                         </p>
                         <pre><code class="language-go">
-var i [3]int // Array de largura fixa 3 que armazena dados do tipo int
+var nome [tamanho]tipo
                         </code></pre>
+                        <p>
+                            O tamanho indica o número de elementos que o array deve armazenar, e o tipo indica o tipo dos elementos do array.
+                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../functions/async_functions.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Funções Assíncronas</span>
+                        <a class="pages-menu-link link-back" href="index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Introdução</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="declaration.html">
-                            <span>Declaração</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="initialization.html">
+                            <span>Inicialização</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -92,16 +95,19 @@ var i [3]int // Array de largura fixa 3 que armazena dados do tipo int
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">arrays.go</div>
+                    <div class="code-filename">declaration.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="arrays.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="declaration.go">
 package main
 
 import "fmt"
 
 func main() {
-    a := [3]int{3, 2, 1}
+    var a []int
+    var b [5]string
+
     fmt.Println(a)
+    fmt.Println(b)
 }
                     </textarea>
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Arrays</title>
+    <title>Go Bootcamp - Slices</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,30 +58,34 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Arrays - Introdução</div>
+                    <div class="main-title">Slices - Introdução</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Arrays são listas enumeradas de comprimento fixo e que armazenam um determinado tipo de dado.
+                            Ao contrário dos arrays, os slices são tipados apenas pelos elementos que contêm (não pelo número de elementos).
+                            Eles são listas de elementos de um mesmo tipo que pode ser redimensionada.
+                        </p>
+                        <p>
+                            Inicialização de um slice vazio:
                         </p>
                         <pre><code class="language-go">
-var i [3]int // Array de largura fixa 3 que armazena dados do tipo int
+a := []int{}
                         </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../functions/async_functions.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Funções Assíncronas</span>
+                        <a class="pages-menu-link link-back" href="../arrays/resize.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Array - Redimensionar</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="declaration.html">
-                            <span>Declaração</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="make.html">
+                            <span>Make</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -92,15 +96,18 @@ var i [3]int // Array de largura fixa 3 que armazena dados do tipo int
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">arrays.go</div>
+                    <div class="code-filename">slices.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="arrays.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="slices.go">
 package main
 
 import "fmt"
 
 func main() {
-    a := [3]int{3, 2, 1}
+    // a := []int{} // Inicialização de um slice vazio
+    var a []int
+    a = append(a, 10, 20, 30)
+
     fmt.Println(a)
 }
                     </textarea>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Arrays</title>
+    <title>Go Bootcamp - Append</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,30 +58,35 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Arrays - Introdução</div>
+                    <div class="main-title">Slices - Append</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Arrays são listas enumeradas de comprimento fixo e que armazenam um determinado tipo de dado.
+                            Go fornece a função <i>append()</i> que pode ser usada para elementos ao final de um slice.
                         </p>
                         <pre><code class="language-go">
-var i [3]int // Array de largura fixa 3 que armazena dados do tipo int
+func append(slice []Type, elems ...Type) []Type
                         </code></pre>
+                        <p>
+                            O primeiro argumento é o próprio slice, e <i>elemens</i> é um parâmetro que aceita n valores que serão
+                            adicionados sequecialmente no final do slice.
+                            Essa função retorna um slice, não um ponteiro, pois ela não altera o valor do slice original.
+                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../functions/async_functions.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Funções Assíncronas</span>
+                        <a class="pages-menu-link link-back" href="make.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Make</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="declaration.html">
-                            <span>Declaração</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="range.html">
+                            <span>Range</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -92,15 +97,21 @@ var i [3]int // Array de largura fixa 3 que armazena dados do tipo int
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">arrays.go</div>
+                    <div class="code-filename">append.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="arrays.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="append.go">
 package main
 
 import "fmt"
 
 func main() {
-    a := [3]int{3, 2, 1}
+    a := make([]int, 5)
+    fmt.Println(a)
+    a = append(a, 10, 20, 30)
+    fmt.Println(a)
+    a[0] = 10
+    a[1] = 20
+    a[2] = 30
     fmt.Println(a)
 }
                     </textarea>
