@@ -64,10 +64,10 @@
 
                     <div class="content-height">
                         <p>
-                            Defer é uma declaração que faz com que você consiga agendar o retorno de uma função:
+                            Defer faz com que uma função seja programada para ser executada antes do retorno ou do fim da função em que fora chamada.
                         </p>
                         <pre><code class="language-go">
-defer [valor]
+defer [função]([parâmetros])
                         </code></pre>
                     </div>
 
@@ -80,8 +80,8 @@ defer [valor]
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="return.html">
-                            <span>Return</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="variadic_functions.html">
+                            <span>Funções Variádicas</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -100,13 +100,8 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println(somar(2, 36))
-}
-
-func somar(x, y int) int {
-    // x e y sao parâmetros do tipo 'int'
-    // a função precisa retornar um valor do tipo 'int'
-    return x + y
+    defer fmt.Println("World") // Será executado no final da função main()
+    fmt.Println("Hello")
 }
                     </textarea>
 

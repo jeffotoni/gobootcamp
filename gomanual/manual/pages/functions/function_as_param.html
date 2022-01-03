@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Comentários e C-Style</title>
+    <title>Go Bootcamp - Passando Funções como Parâmetros</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,28 +58,32 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Comentários e C-Style</div>
+                    <div class="main-title">Passando Funções como Parâmetros</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Go fornece comentários de bloco / * * / estilo C e comentários de linha // estilo C ++. 
-                            Comentários de linha são a norma; os comentários do bloco aparecem principalmente como 
-                            comentários do pacote, mas são úteis dentro de uma expressão ou para desabilitar grandes faixas de código.
+                            Em GO, a função também é um tipo. Duas funções são do mesmo tipo se tiverem os mesmos argumentos 
+                            e os mesmos valores de retorno. Ao passar uma função como um argumento para outra função, a 
+                            assinatura exata da função deve ser especificada na lista de argumentos.
                         </p>
-
+                        <pre><code class="language-go">
+func (int, int) int
+                        </code></pre>
                     </div>
+
+
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="helloworld.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Hello, World!</span>
+                        <a class="pages-menu-link link-back" href="variadic_functions.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Funções Variádicas</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="keywords_operators.html">
-                            <span>Keywords e Operadores</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="closures.html">
+                            <span>Closures</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -90,33 +94,41 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">comments.go</div>
+                    <div class="code-filename">function_as_param.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="blank_identifier.go">
-// Go in action
-// @jeffotoni
-// 2019-01-16
-
-/**
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="function_as_param.go">
 package main
 
-import (
-  "flag"
-  "fmt"
-  "os"
+import "fmt"
 
-  "github.com/aws/aws-sdk-go/aws"
-  "github.com/aws/aws-sdk-go/aws/awserr"
-  "github.com/aws/aws-sdk-go/aws/session"
-  "github.com/aws/aws-sdk-go/service/ec2"
-)
+func main() {
+    fmt.Println(executarOperacao(somar, 10, 20, 30, 40))
+    fmt.Println(executarOperacao(multiplicar, 10, 20, 30, 40))
+}
 
-// define flags
-var (
-  flagRegion   = flag.String("region", "", "example: us-east-1")
-  flagInstance = flag.String("instance", "", "example: i-05bef719c14d68d10")
-)
-*/
+func somar(a, b int, c ...int) int {
+    total := a + b
+
+    for _, x := range c {
+        total += x
+    }
+    
+    return total
+}
+
+func multiplicar(a, b int, c ...int) int {
+    total := a * b
+
+    for _, x := range c {
+        total *= x
+    }
+    
+    return total
+}
+
+func executarOperacao(f func(int, int, ...int) int, a, b int, c ...int) int{
+    return f(a, b, c...)
+}
                     </textarea>
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
