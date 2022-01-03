@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Closures</title>
+    <title>Go Bootcamp - Recursão</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,29 +58,32 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Closures</div>
+                    <div class="main-title">Recursão</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Uma <i>closure</i> ocorre quando uma função anônima em Go tem acesso aos seus arredores. 
-                            Então, ele pode manter um estado único e próprio. O estado então fica isolado à medida 
-                            que criamos novas instâncias da função.
+                            Uma função é classificada como recursiva quando ela chama a si mesma.
+                            Existem alguns tipos de funções recursivas, entre eles: finita e infinita
+                        </p>
+                        <p>
+                            Uma função recursiva é classificada como finita se ela possuir uma condição de parada. Se não, é
+                            classificada como infinita.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="function_as_param.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Passando Funções como Parâmetros</span>
+                        <a class="pages-menu-link link-back" href="closures.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Closures</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="recursion.html">
-                            <span>Recursão</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="async_functions.html">
+                            <span>Funções Assíncronas</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -91,30 +94,25 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">closures.go</div>
+                    <div class="code-filename">recursion.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="closures.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="recursion.go">
 package main
 
 import "fmt"
 
 func main() {
-    contador := contar()
-
-    fmt.Println(contador())
-    fmt.Println(contador())
-    fmt.Println(contador())
-    fmt.Println(contador())
-    fmt.Println(contador())
+    contagemRegressiva(10)
 }
 
-func contar() func() int{
-    var i int
-
-    return func() int {
-        i++
-        return i
+func contagemRegressiva(v int) {
+    fmt.Println(v)
+    
+    if v == 0 {
+        return
     }
+
+    contagemRegressiva(v-1)
 }
                     </textarea>
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Closures</title>
+    <title>Go Bootcamp - Funções Assíncronas</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,29 +58,35 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Closures</div>
+                    <div class="main-title">Funções Assíncronas</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Uma <i>closure</i> ocorre quando uma função anônima em Go tem acesso aos seus arredores. 
-                            Então, ele pode manter um estado único e próprio. O estado então fica isolado à medida 
-                            que criamos novas instâncias da função.
+                            Uma função pode ser executada de forma assíncrona quando é precedida pelo statement <i>go</i>,
+                            que indica que uma função é executada como uma goroutine.
+                        </p>
+                        <p>
+                            A função <i>main()</i> é executada como uma goroutine por padrão, portanto, todo programa possui ao menos
+                            uma goroutine rodando.
+                        </p>
+                        <p>
+                            Goroutines são apresentadas em tópicos futuros. 
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="function_as_param.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Passando Funções como Parâmetros</span>
+                        <a class="pages-menu-link link-back" href="recursion.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Recursão</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="recursion.html">
-                            <span>Recursão</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../arrays/index.html">
+                            <span>Arrays - Introdução</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -91,30 +97,24 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">closures.go</div>
+                    <div class="code-filename">async_functions.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="closures.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="async_functions.go">
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "time"
+)
 
 func main() {
-    contador := contar()
-
-    fmt.Println(contador())
-    fmt.Println(contador())
-    fmt.Println(contador())
-    fmt.Println(contador())
-    fmt.Println(contador())
+    go dizer("Olá") // Cria uma nova goroutine
+    dizer("Mundo") // Função executada na goroutine atual
 }
 
-func contar() func() int{
-    var i int
-
-    return func() int {
-        i++
-        return i
-    }
+func dizer(texto string) {
+    time.Sleep(time.Second * 2)
+    fmt.Println(texto)
 }
                     </textarea>
 
