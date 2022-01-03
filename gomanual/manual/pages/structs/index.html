@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Len e Cap</title>
+    <title>Go Bootcamp - Structs</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,31 +58,35 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Slices - Len e Cap</div>
+                    <div class="main-title">Structs</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um slice é uma abstração que usa um array nos bastidores.
+                            Struct é uma coleção de campos de dados com tipos de dados declarados. 
+                            Golang tem a capacidade de declarar e criar seus próprios tipos de dados combinando 
+                            um ou mais tipos, incluindo tipos internos e definidos pelo usuário. Cada campo de 
+                            dados em uma estrutura é declarado com um tipo conhecido, que pode ser um tipo interno 
+                            ou outro tipo definido pelo usuário.
                         </p>
                         <p>
-                            A função <i>cap()</i> informa a capacidade do array subjacente. 
-                            <i>len()</i> informa quantos itens estão no array.
+                            As estruturas são a única maneira de criar tipos definidos pelo usuário. 
+                            Os tipos de estrutura são declarados compondo um conjunto fixo de campos.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="slices_of_slices.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Slices Multidimensionais</span>
+                        <a class="pages-menu-link link-back" href="../slices/len_cap.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Slices - Len e Cap</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../structs/index.html">
-                            <span>Structs - Introdução</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="new.html">
+                            <span>New</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -93,29 +97,20 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">len_cap.go</div>
+                    <div class="code-filename">structs.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="len_cap.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="structs.go">
 package main
 
 import "fmt"
 
+type Pessoa struct {
+    Nome string
+}
+
 func main() {
-    a := make([]int, 5, 10)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
-    a = append(a, 10, 20, 30, 40, 50)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
-    a = append(a, 60)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
+    carlos := Pessoa{"Carlos"}
+    fmt.Println(carlos)
 }
                     </textarea>
 
