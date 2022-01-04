@@ -151,7 +151,7 @@ a {
 .column-code img {
 	display: block;
 	width: 90% !important;
-	margin: 0 auto;
+	margin: 40px auto 0 auto;
 }
 
 .column-code .gopher-column-code {
@@ -185,6 +185,13 @@ a {
 
 .content-height {
 	min-height: calc(100vh - 280px);
+	text-align: justify;
+}
+
+.content-height li {
+	position: relative;
+	left: 6px;
+	padding-left: 15px;
 }
 
 .pages-menu {
