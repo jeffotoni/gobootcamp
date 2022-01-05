@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Slices - Len e Cap</title>
+    <title>Go Bootcamp - Métodos - Interfaces</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,31 +58,32 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Slices - Len e Cap</div>
+                    <div class="main-title">Métodos - Interfaces</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um slice é uma abstração que usa um array nos bastidores.
-                        </p>
-                        <p>
-                            A função <i>cap()</i> informa a capacidade do array subjacente. 
-                            <i>len()</i> informa quantos itens estão no array.
+                            interface é um tipo personalizado usado para especificar um conjunto de uma ou mais 
+                            assinaturas de método e a interface é abstrata, portanto, você não tem permissão para 
+                            criar uma instância da interface. Mas você tem permissão para criar uma variável de um 
+                            tipo de interface e essa variável pode ser atribuída com um valor de tipo concreto que 
+                            possui os métodos que a interface requer. Ou, em outras palavras, a interface é uma 
+                            coleção de métodos, além de ser um tipo personalizado.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="slices_of_slices.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Slices - Multidimensionais</span>
+                        <a class="pages-menu-link link-back" href="index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Métodos - Introdução</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="sorting.html">
-                            <span>Slices - Sorting</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../maps/index.html">
+                            <span>Maps - Introdução</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -93,29 +94,42 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">len_cap.go</div>
+                    <div class="code-filename">interface_methods.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="len_cap.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="interface_methods.go">
 package main
+  
+import (
+    "fmt"
+)
 
-import "fmt"
+type Falador interface {
+    Falar(...interface{})
+}
+
+type Pessoa struct {
+    Nome string
+    Idade int
+}
+
+func (Pessoa) Falar(frases ...interface{}) {
+    fmt.Println(frases...)
+}
+
+func (p *Pessoa) FazerAniversario() {
+    p.Idade++
+}
+
+func falar(falador Falador, frases ...interface{}) {
+    falador.Falar(frases...)
+}
 
 func main() {
-    a := make([]int, 5, 10)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
+	carlos := &Pessoa{"Carlos", 23}
+    carlos.Falar("Minha idade é:", carlos.Idade)
 
-    a = append(a, 10, 20, 30, 40, 50)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
-    a = append(a, 60)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
+    carlos.FazerAniversario()
+    falar(*carlos, "Minha idade é:", carlos.Idade) // Nenhum erro pois Pessoa implementa a interface Falador
 }
                     </textarea>
 

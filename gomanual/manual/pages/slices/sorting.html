@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Slices - Len e Cap</title>
+    <title>Go Bootcamp - Slices - Sorting</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,31 +58,49 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Slices - Len e Cap</div>
+                    <div class="main-title">Slices - Sorting</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um slice é uma abstração que usa um array nos bastidores.
+                            Você pode classificar um slice com a ajuda da função Slice(). Esta função classifica 
+                            o slice especificado de acordo com a função less fornecida. O resultado desta função 
+                            não é estável. Portanto, para classificação estável, você pode usar SliceStable. E 
+                            essa função entra em pânico se a interface especificada não for do tipo slice. É 
+                            definido no pacote de classificação, portanto, você deve importar o pacote de 
+                            classificação em seu programa para acessar a função Slice.
                         </p>
+                        <pre><code class="language-go">
+func Slice(a_slice interface{}, less func(p, q int) bool)
+                        </code></pre>
                         <p>
-                            A função <i>cap()</i> informa a capacidade do array subjacente. 
-                            <i>len()</i> informa quantos itens estão no array.
+                            Além disso, podemos usar o pacote de sort embutido para classificar um slice ao
+                            invés de escrever manualmente quaisquer algoritmos de classificação como classificação 
+                            por mesclagem ou classificação rápida, etc.
                         </p>
+                        <pre><code class="language-go">
+sort.Strings // Organiza slice do tipo []string em ordem alfabética
+sort.Sort(sort.Reverse(sort.String(slice))) // Organiza slice do tipo []string em ordem alfabética invertida
+sort.Inst(slice) // Organiza slice do tipo []int em ordem crescente
+sort.Sort(sort.Reverse(sort.IntSlice(slice))) // Organiza slice do tipo []int em ordem decrescente
+sort.Float64s(slice) // Organiza slice do tipo []float64 em ordem crescente
+sort.Sort(sort.Reverse(sort.Float64Slice(arrSlice))) // Organiza slice do tipo []float64 em ordem decrescente
+
+                        </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="slices_of_slices.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Slices - Multidimensionais</span>
+                        <a class="pages-menu-link link-back" href="len_cap.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Slices - Len e Cap</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="sorting.html">
-                            <span>Slices - Sorting</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../structs/index.html">
+                            <span>Structs - Introdução</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -93,29 +111,44 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">len_cap.go</div>
+                    <div class="code-filename">sorting.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="len_cap.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="sorting.go">
 package main
-
-import "fmt"
+  
+import (
+    "fmt"
+    "sort"
+)
 
 func main() {
-    a := make([]int, 5, 10)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
+  
+    Autor := []struct {
+        a_name    string
+        a_article int
+        a_id      int
+    }{
+        {"Mina", 304, 1098},
+        {"Cina", 634, 102},
+        {"Tina", 104, 105},
+        {"Rina", 10, 108},
+        {"Sina", 234, 103},
+        {"Vina", 237, 106},
+        {"Rohit", 56, 107},
+        {"Mohit", 300, 104},
+        {"Riya", 4, 101},
+        {"Sohit", 20, 110},
+    }
 
-    a = append(a, 10, 20, 30, 40, 50)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
-    a = append(a, 60)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
+    sort.Slice(Autor, func(p, q int) bool { 
+      return Autor[p].a_name < Autor[q].a_name })
+      
+    fmt.Println("Sort Autor de acordo com o campo nome:")
+    fmt.Println(Autor)
+    
+    numeros := []int{10, 50, 1908, 1, 13, 66, 32}
+    sort.Ints(numeros)
+    fmt.Println(numeros)
 }
                     </textarea>
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Slices - Len e Cap</title>
+    <title>Go Bootcamp - Data e Hora - Parse</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,31 +58,32 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Slices - Len e Cap</div>
+                    <div class="main-title">Data e Hora - Parse</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Um slice é uma abstração que usa um array nos bastidores.
+                            O pacote 'time' fornece funções para determinar o tempo de visualização. 
+                            A função Parse() é usada para analisar uma string formatada e, em 
+                            seguida, encontrar o valor de hora que ela forma.
                         </p>
-                        <p>
-                            A função <i>cap()</i> informa a capacidade do array subjacente. 
-                            <i>len()</i> informa quantos itens estão no array.
-                        </p>
+                        <pre><code class="language-go">
+func Parse(layout, value string) (Time, error)
+                        </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="slices_of_slices.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Slices - Multidimensionais</span>
+                        <a class="pages-menu-link link-back" href="time.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Data e Hora - Time</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="sorting.html">
-                            <span>Slices - Sorting</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="format.html">
+                            <span>Data e Hora - Format</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -93,29 +94,23 @@
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">len_cap.go</div>
+                    <div class="code-filename">parse.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="len_cap.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="parse.go">
 package main
-
-import "fmt"
+  
+import (
+    "fmt"
+    "time"
+)  
 
 func main() {
-    a := make([]int, 5, 10)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
+  
+    const layout = "Jan 2, 2006 at 3:04pm (MST)"
+  
+    tm, _ := time.Parse(layout, "Feb 4, 2014 at 6:05pm (PST)")
 
-    a = append(a, 10, 20, 30, 40, 50)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
-    a = append(a, 60)
-    fmt.Println(a)
-    fmt.Println(len(a))
-    fmt.Println(cap(a))
-
+    fmt.Println(tm)
 }
                     </textarea>
 
