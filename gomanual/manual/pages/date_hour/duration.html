@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Structs - Anônimas</title>
+    <title>Go Bootcamp - Data e Hora - Duration</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,33 +58,48 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Structs - Anônimas</div>
+                    <div class="main-title">Data e Hora - Duration</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Uma estrutura anônima é uma estrutura que não contém um nome. É útil quando você deseja criar 
-                            uma estrutura utilizável uma única vez. Você pode criar uma estrutura anônima usando a seguinte sintaxe:
+                            Duração é o tempo decorrido entre dois instantes de tempo. É representado como uma 
+                            contagem de int64 nanosegundos. Portanto, a duração é apenas um número 
+                            que representa o tempo em nanossegundos em Go.
+                        </p>
+                        <p>
+                            Isso é representado da seguinte forma no pacote 'time':
                         </p>
                         <pre><code class="language-go">
-nome_variavel := struct{
-// campos
-}{// valor dos campos}
+type Duration int64
+                        </code></pre>
+                        <p>
+                            Abaixo estão algumas das durações comuns no pacote:
+                        </p>
+                        <pre><code class="language-go">
+const (
+    Nanosecond  Duration = 1
+    Microsecond          = 1000 * Nanosecond
+    Millisecond          = 1000 * Microsecond
+    Second               = 1000 * Millisecond
+    Minute               = 60 * Second
+    Hour                 = 60 * Minute
+)
                         </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="new.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Structs - New</span>
+                        <a class="pages-menu-link link-back" href="date.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Data e Hora - Date</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../date_hour/date.html">
-                            <span>Data e Hora - Date</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="ticker.html">
+                            <span>Data e Hora - Ticker</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -95,20 +110,30 @@ nome_variavel := struct{
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">anonymous_struct.go</div>
+                    <div class="code-filename">duration.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="anonymous_struct.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="duration.go">
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "time"
+)
 
 func main() {
-    roberto := struct{
-        Nome string
-        Idade int
-    }{"Roberto", 42}
+    now := time.Now()
+    oldTime := time.Date(2020, 1, 2, 0, 0, 0, 0, time.UTC)
+    diff := now.Sub(oldTime)
+    //diff é do tipo Duration
+    
+    //Em horas
+    fmt.Printf("Hours: %f\n", diff.Hours())
 
-    fmt.Println(roberto)
+    //Em minutos
+    fmt.Printf("Minutes: %f\n", diff.Minutes())
+
+    //Em segundos
+    fmt.Printf("Seconds: %f\n", diff.Seconds())
 }
                     </textarea>
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Structs - Anônimas</title>
+    <title>Go Bootcamp - Data e Hora - Sleep</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,33 +58,29 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Structs - Anônimas</div>
+                    <div class="main-title">Data e Hora - Sleep</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Uma estrutura anônima é uma estrutura que não contém um nome. É útil quando você deseja criar 
-                            uma estrutura utilizável uma única vez. Você pode criar uma estrutura anônima usando a seguinte sintaxe:
+                            A função sleep é essencial nos casos em que desejamos interromper a execução do 
+                            thread atual temporariamente. Isso é muito útil quando queremos bloquear o thread 
+                            atual para permitir que outros threads façam o trabalho.
                         </p>
-                        <pre><code class="language-go">
-nome_variavel := struct{
-// campos
-}{// valor dos campos}
-                        </code></pre>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="new.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Structs - New</span>
+                        <a class="pages-menu-link link-back" href="ticker.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Data e Hora - Ticker</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../date_hour/date.html">
-                            <span>Data e Hora - Date</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="time.html">
+                            <span>Data e Hora - Time</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -95,20 +91,20 @@ nome_variavel := struct{
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">anonymous_struct.go</div>
+                    <div class="code-filename">sleep.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="anonymous_struct.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="sleep.go">
 package main
-
-import "fmt"
-
+ 
+import (
+    "fmt"
+    "time"
+)
+ 
 func main() {
-    roberto := struct{
-        Nome string
-        Idade int
-    }{"Roberto", 42}
-
-    fmt.Println(roberto)
+    fmt.Println("Antes:", time.Now().Unix())
+    time.Sleep(2 * time.Second) // Pausa a execução por 2 segundos
+    fmt.Println("Depois:", time.Now().Unix())
 }
                     </textarea>
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Structs - Anônimas</title>
+    <title>Go Bootcamp - Data e Hora - Ticker</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,33 +58,36 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Structs - Anônimas</div>
+                    <div class="main-title">Data e Hora - Ticker</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Uma estrutura anônima é uma estrutura que não contém um nome. É útil quando você deseja criar 
-                            uma estrutura utilizável uma única vez. Você pode criar uma estrutura anônima usando a seguinte sintaxe:
+                            Frequentemente, há casos em que desejamos realizar repetidamente uma determinada 
+                            tarefa após um determinado intervalo de tempo. Em Golang, conseguimos isso com a ajuda de tickers.
                         </p>
-                        <pre><code class="language-go">
-nome_variavel := struct{
-// campos
-}{// valor dos campos}
-                        </code></pre>
+                        <p>
+                            Podemos usá-los com goroutines também para que possamos executar essas tarefas no segundo 
+                            plano de nosso aplicativo sem interromper o fluxo do aplicativo.
+                        </p>
+                        <p>
+                            A função que usamos em tickers é a função NewTicker() que leva tempo como um argumento 
+                            e podemos fornecer segundos e até milissegundos nela.
+                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="new.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Structs - New</span>
+                        <a class="pages-menu-link link-back" href="duration.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Data e Hora - Duration</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../date_hour/date.html">
-                            <span>Data e Hora - Date</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="sleep.html">
+                            <span>Data e Hora - Sleep</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -95,20 +98,21 @@ nome_variavel := struct{
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">anonymous_struct.go</div>
+                    <div class="code-filename">ticker.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="anonymous_struct.go">
-package main
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="ticker.go">
+package main 
+import ( 
+    "fmt" 
+    "time" 
+) 
 
-import "fmt"
-
-func main() {
-    roberto := struct{
-        Nome string
-        Idade int
-    }{"Roberto", 42}
-
-    fmt.Println(roberto)
+func main() { 
+    fmt.Println("Starting the ticker") 
+    ticker := time.NewTicker(1 * time.Second) 
+    for _ = range ticker.C { 
+        fmt.Println("Ticking..") 
+    } 
 }
                     </textarea>
 

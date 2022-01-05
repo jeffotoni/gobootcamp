@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Structs - Anônimas</title>
+    <title>Go Bootcamp - Data e Hora - Time</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,33 +58,37 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Structs - Anônimas</div>
+                    <div class="main-title">Data e Hora - Time</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Uma estrutura anônima é uma estrutura que não contém um nome. É útil quando você deseja criar 
-                            uma estrutura utilizável uma única vez. Você pode criar uma estrutura anônima usando a seguinte sintaxe:
+                            O tipo Time representa um instante no tempo com precisão de nanossegundos.
                         </p>
-                        <pre><code class="language-go">
-nome_variavel := struct{
-// campos
-}{// valor dos campos}
-                        </code></pre>
+                        <p>
+                            Os instantes de tempo podem ser comparados usando os métodos Before, After e Equal. 
+                            O método Sub subtrai dois instantes, produzindo uma Duration. O método Add adiciona um 
+                            Time e um Duration, produzindo um Time.
+                        </p>
+                        <p>
+                            O valor zero do tipo Time é 1º de janeiro, ano 1, 00: 00: 00.000000000 UTC. 
+                            Como é improvável que esse tempo aconteça na prática, o método IsZero fornece uma 
+                            maneira simples de detectar um tempo que não foi inicializado explicitamente.
+                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="new.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Structs - New</span>
+                        <a class="pages-menu-link link-back" href="sleep.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Data e Hora - Sleep</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../date_hour/date.html">
-                            <span>Data e Hora - Date</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="anonymous_struct.html">
+                            <span>Data e Hora - Anônimas</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -95,20 +99,20 @@ nome_variavel := struct{
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">anonymous_struct.go</div>
+                    <div class="code-filename">time.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="anonymous_struct.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="time.go">
 package main
-
-import "fmt"
-
+ 
+import (
+    "fmt"
+    "time"
+)
+ 
 func main() {
-    roberto := struct{
-        Nome string
-        Idade int
-    }{"Roberto", 42}
-
-    fmt.Println(roberto)
+    fmt.Println("Antes:", time.Now().Unix()) // Instante
+    time.Sleep(5 * time.Second)
+    fmt.Println("Depois:", time.Now().Unix()) // Outro instante
 }
                     </textarea>
 
