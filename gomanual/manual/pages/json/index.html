@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Ponteiros - Quando Usar?</title>
+    <title>Go Bootcamp - JSON - Introdução</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,65 +58,39 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Ponteiros - Quando Usar?</div>
+                    <div class="main-title">JSON - Introdução</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Aqui estão algumas das situações comuns em que você precisará usar um ponteiro em vez de um valor:
+                            JSON é a abreviação de JavaScript Object Notation, um formato de intercâmbio de dados 
+                            amplamente usado. JSON é um formato de dados extremamente útil e é usado em quase todos 
+                            os lugares hoje.
                         </p>
                         <p>
-                            Alterar o estado de um objeto:
-
-                            Digamos que você tenha uma estrutura como esta 
+                            Abaixo estão alguns tipos de dados com suporte em JSON por padrão no Go. 
+                            Os tipos padrão codificados são:
                         </p>
                         <pre><code class="language-go">
-type Person struct {
-    name     string
-    age      int
-    gender   string
-
-}
+bool para dados booleanos.
+string para strings.
+float64 para números.
+nil para valores nulos. 
                         </code></pre>
-                        <p>
-                            Agora, você quer um método que permita alterar o nome de uma pessoa:
-                            Para isso, um ponteiro é necessário, pois ele da acesso à instância original, não a uma copia dela:
-                        </p>
-                        <pre><code class="language-go">
-func (p *Person) changeName(name string){
-    p.name = name
-}
-                        </code></pre>
-                        <p>
-                            Permitindo que as variáveis tenham valores nil:
-                            Essa é uma pegadinha que leva muitos iniciantes em Go a criar bugs. Uma variável que é 
-                            definida, mas não tem um valor atribuído, não é avaliada como nulo, mas sim com seu valor
-                             padrão. Para booleanos, false, para inteiros é 0, para strings é uma string vazia. 
-                             Mas e se você precisar que seja nulo? Então, você usa um ponteiro!
-                        </p>
-                        <p>
-                            Copiar estrutura com valores muito grandes:
-                            Embora a memória não seja um problema tão grande hoje, você ainda pode querer usar uma 
-                            referência se o valor do objeto for ridiculamente grande e não houver realmente necessidade 
-                            de repassá-lo o tempo todo. Isso provavelmente melhorará o desempenho e o uso de memória de 
-                            seu aplicativo (embora provavelmente não significativamente). Há uma troca, porque agora o 
-                            coletor de lixo tem mais trabalho a fazer, mas em casos de estruturas muito grandes e complexas, 
-                            usar ponteiros faz mais sentido.
-                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiros - Introdução</span>
+                        <a class="pages-menu-link link-back" href="../maps/types.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Maps - Tipos</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../methods/index.html">
-                            <span>Métodos - Comparação com Funções</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="marshal.html">
+                            <span>JSON - Marshal</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -127,36 +101,30 @@ func (p *Person) changeName(name string){
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">when_use.go</div>
+                    <div class="code-filename">json.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="when_use.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="json.go">
 package main
-  
+ 
 import (
     "fmt"
+    "encoding/json"
 )
-
-type Pessoa struct {
-    Nome string
-    Idade int
+ 
+type Livro struct {
+    Name string
+    Author string
 }
-
-func (p *Pessoa) FazerAniversario() {
-    p.Idade++
-}
-
+ 
 func main() {
-    carlos := Pessoa{"Carlos", 23}
-    fmt.Println(carlos.Idade)
-
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-    
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
+    domQuixote := Livro{"Dom Quixote", "Miguel de Cervantes"}
+    res, err := json.Marshal(domQuixote)
+     
+    if err != nil {
+        fmt.Println(err)
+    }
+     
+    fmt.Println(string(res))
 }
                     </textarea>
 

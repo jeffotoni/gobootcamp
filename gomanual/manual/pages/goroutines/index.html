@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Ponteiros - Quando Usar?</title>
+    <title>Go Bootcamp - Goroutines - Introdução</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,65 +58,38 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Ponteiros - Quando Usar?</div>
+                    <div class="main-title">Goroutines - Introdução</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Aqui estão algumas das situações comuns em que você precisará usar um ponteiro em vez de um valor:
+                            Go é uma linguagem especializada em concorrência e não paralelismo.
                         </p>
                         <p>
-                            Alterar o estado de um objeto:
-
-                            Digamos que você tenha uma estrutura como esta 
-                        </p>
-                        <pre><code class="language-go">
-type Person struct {
-    name     string
-    age      int
-    gender   string
-
-}
-                        </code></pre>
-                        <p>
-                            Agora, você quer um método que permita alterar o nome de uma pessoa:
-                            Para isso, um ponteiro é necessário, pois ele da acesso à instância original, não a uma copia dela:
-                        </p>
-                        <pre><code class="language-go">
-func (p *Person) changeName(name string){
-    p.name = name
-}
-                        </code></pre>
-                        <p>
-                            Permitindo que as variáveis tenham valores nil:
-                            Essa é uma pegadinha que leva muitos iniciantes em Go a criar bugs. Uma variável que é 
-                            definida, mas não tem um valor atribuído, não é avaliada como nulo, mas sim com seu valor
-                             padrão. Para booleanos, false, para inteiros é 0, para strings é uma string vazia. 
-                             Mas e se você precisar que seja nulo? Então, você usa um ponteiro!
+                            Concorrência é a capacidade de lidar com muitas coisas ao mesmo tempo. 
+                            É melhor explicado com um exemplo.
                         </p>
                         <p>
-                            Copiar estrutura com valores muito grandes:
-                            Embora a memória não seja um problema tão grande hoje, você ainda pode querer usar uma 
-                            referência se o valor do objeto for ridiculamente grande e não houver realmente necessidade 
-                            de repassá-lo o tempo todo. Isso provavelmente melhorará o desempenho e o uso de memória de 
-                            seu aplicativo (embora provavelmente não significativamente). Há uma troca, porque agora o 
-                            coletor de lixo tem mais trabalho a fazer, mas em casos de estruturas muito grandes e complexas, 
-                            usar ponteiros faz mais sentido.
+                            Vamos considerar uma pessoa correndo. Durante sua corrida matinal, digamos que os 
+                            cadarços dos sapatos sejam desamarrados. Agora a pessoa para de correr, amarra o 
+                            cadarço e começa a correr novamente. Este é um exemplo clássico de concorrência. 
+                            A pessoa é capaz de correr e amarrar cadarços, ou seja, é capaz de lidar com muitas 
+                            coisas ao mesmo tempo.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiros - Introdução</span>
+                        <a class="pages-menu-link link-back" href="../json/unmarshal.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>JSON - Unmarshal</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../methods/index.html">
-                            <span>Métodos - Comparação com Funções</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="what_is.html">
+                            <span>Goroutines - O que são?</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -125,46 +98,28 @@ func (p *Person) changeName(name string){
                 <!--- Coluna Esquerda Fim --->
 
                 <!--- Coluna Direita --->
-                <div class="col-12 col-lg-6 column-code">
+                <div class="col-12 col-lg-6 column-text px-0">
 
-                    <div class="code-filename">when_use.go</div>
+                    <div class="code-filename">main.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="when_use.go">
-package main
-  
-import (
-    "fmt"
-)
-
-type Pessoa struct {
-    Nome string
-    Idade int
-}
-
-func (p *Pessoa) FazerAniversario() {
-    p.Idade++
-}
-
-func main() {
-    carlos := Pessoa{"Carlos", 23}
-    fmt.Println(carlos.Idade)
-
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-    
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-}
-                    </textarea>
-
-                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
-
+                    <div class="content-height">
+                        <p>
+                            O que é paralelismo e como ele difere da concorrência?
+                        </p>
+                        <p>
+                            O paralelismo está faz muitas coisas ao mesmo tempo. Pode parecer 
+                            semelhante à concorrência, mas na verdade é diferente.
+                        </p>
+                        <p>
+                            Vamos entender melhor com o mesmo exemplo de corrida. Nesse caso, vamos supor 
+                            que a pessoa está correndo e também ouvindo música em seu iPod. Nesse caso, a 
+                            pessoa está correndo e ouvindo música ao mesmo tempo, ou seja, está fazendo 
+                            várias coisas ao mesmo tempo. Isso é chamado de paralelismo. 
+                        </p>
+                        <img src="../../img/concurrency-parallelism.png" alt="Concorrência VS Paralelismo" style="width: 100%">
+                    </div>
                 </div>
                 <!--- Coluna Direita Fim --->
-
             </div>
         </div>
     </main>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Ponteiros - Quando Usar?</title>
+    <title>Go Bootcamp - JSON - Unmarshal</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,65 +58,31 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Ponteiros - Quando Usar?</div>
+                    <div class="main-title">JSON - Unmarshal</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Aqui estão algumas das situações comuns em que você precisará usar um ponteiro em vez de um valor:
-                        </p>
-                        <p>
-                            Alterar o estado de um objeto:
-
-                            Digamos que você tenha uma estrutura como esta 
+                            a função json.Unmarshal() pega alguns dados JSON codificados e um ponteiro para um 
+                            valor onde o JSON codificado deve ser escrito e retorna um erro se algo der errado.
                         </p>
                         <pre><code class="language-go">
-type Person struct {
-    name     string
-    age      int
-    gender   string
-
-}
+func Unmarshal(data []byte, v interface{}) error
                         </code></pre>
-                        <p>
-                            Agora, você quer um método que permita alterar o nome de uma pessoa:
-                            Para isso, um ponteiro é necessário, pois ele da acesso à instância original, não a uma copia dela:
-                        </p>
-                        <pre><code class="language-go">
-func (p *Person) changeName(name string){
-    p.name = name
-}
-                        </code></pre>
-                        <p>
-                            Permitindo que as variáveis tenham valores nil:
-                            Essa é uma pegadinha que leva muitos iniciantes em Go a criar bugs. Uma variável que é 
-                            definida, mas não tem um valor atribuído, não é avaliada como nulo, mas sim com seu valor
-                             padrão. Para booleanos, false, para inteiros é 0, para strings é uma string vazia. 
-                             Mas e se você precisar que seja nulo? Então, você usa um ponteiro!
-                        </p>
-                        <p>
-                            Copiar estrutura com valores muito grandes:
-                            Embora a memória não seja um problema tão grande hoje, você ainda pode querer usar uma 
-                            referência se o valor do objeto for ridiculamente grande e não houver realmente necessidade 
-                            de repassá-lo o tempo todo. Isso provavelmente melhorará o desempenho e o uso de memória de 
-                            seu aplicativo (embora provavelmente não significativamente). Há uma troca, porque agora o 
-                            coletor de lixo tem mais trabalho a fazer, mas em casos de estruturas muito grandes e complexas, 
-                            usar ponteiros faz mais sentido.
-                        </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiros - Introdução</span>
+                        <a class="pages-menu-link link-back" href="marshal.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>JSON - Marshal</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../methods/index.html">
-                            <span>Métodos - Comparação com Funções</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../goroutines/index.html">
+                            <span>Goroutines - Introdução</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -127,13 +93,14 @@ func (p *Person) changeName(name string){
                 <!--- Coluna Direita --->
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">when_use.go</div>
+                    <div class="code-filename">unmarshal.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="when_use.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="unmarshal.go">
 package main
-  
+ 
 import (
     "fmt"
+    "encoding/json"
 )
 
 type Pessoa struct {
@@ -141,22 +108,29 @@ type Pessoa struct {
     Idade int
 }
 
-func (p *Pessoa) FazerAniversario() {
-    p.Idade++
+type Livro struct {
+    Nome string
+    Autor Pessoa
 }
-
+ 
 func main() {
-    carlos := Pessoa{"Carlos", 23}
-    fmt.Println(carlos.Idade)
+    // Marshal
+    domQuixote := Livro{"Dom Quixote", Pessoa{"Miguel de Cervantes", 44}}
+    res, err := json.Marshal(domQuixote)
+     
+    if err != nil {
+        fmt.Println(err)
+    }
+     
+    fmt.Println("Marshal", string(res))
 
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-    
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
+    // Unmarshal
+    outroLivro := Livro{}
+    err = json.Unmarshal(res, &outroLivro)
+    if err != nil {
+        fmt.Println(err)
+    }
+    fmt.Println("Unmarshal", outroLivro)
 }
                     </textarea>
 

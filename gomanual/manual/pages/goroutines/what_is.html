@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Ponteiros - Quando Usar?</title>
+    <title>Go Bootcamp - Goroutines - O que são?</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,51 +58,42 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Ponteiros - Quando Usar?</div>
+                    <div class="main-title">Goroutines - O que são?</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Aqui estão algumas das situações comuns em que você precisará usar um ponteiro em vez de um valor:
+                            Goroutines são funções ou métodos executados simultaneamente com outras funções ou métodos. 
+                            Goroutines podem ser considerados threads leves. O custo de criação de um Goroutine é mínimo 
+                            quando comparado a um thread. Portanto, é comum que aplicativos Go tenham milhares de 
+                            Goroutines em execução simultaneamente.
                         </p>
                         <p>
-                            Alterar o estado de um objeto:
-
-                            Digamos que você tenha uma estrutura como esta 
+                            Como iniciar um Goroutine?
                         </p>
-                        <pre><code class="language-go">
-type Person struct {
-    name     string
-    age      int
-    gender   string
-
-}
-                        </code></pre>
                         <p>
-                            Agora, você quer um método que permita alterar o nome de uma pessoa:
-                            Para isso, um ponteiro é necessário, pois ele da acesso à instância original, não a uma copia dela:
+                            Coloque o prefixo da chamada de função ou método com a palavra-chave <i>go</i> e 
+                            você terá um novo Goroutine rodando simultaneamente. 
                         </p>
                         <pre><code class="language-go">
-func (p *Person) changeName(name string){
-    p.name = name
+package main
+
+import (  
+    "fmt"
+)
+
+func hello() {  
+    fmt.Println("Hello world goroutine")
 }
+func main() {  
+    go hello()
+    fmt.Println("main function")
                         </code></pre>
                         <p>
-                            Permitindo que as variáveis tenham valores nil:
-                            Essa é uma pegadinha que leva muitos iniciantes em Go a criar bugs. Uma variável que é 
-                            definida, mas não tem um valor atribuído, não é avaliada como nulo, mas sim com seu valor
-                             padrão. Para booleanos, false, para inteiros é 0, para strings é uma string vazia. 
-                             Mas e se você precisar que seja nulo? Então, você usa um ponteiro!
-                        </p>
-                        <p>
-                            Copiar estrutura com valores muito grandes:
-                            Embora a memória não seja um problema tão grande hoje, você ainda pode querer usar uma 
-                            referência se o valor do objeto for ridiculamente grande e não houver realmente necessidade 
-                            de repassá-lo o tempo todo. Isso provavelmente melhorará o desempenho e o uso de memória de 
-                            seu aplicativo (embora provavelmente não significativamente). Há uma troca, porque agora o 
-                            coletor de lixo tem mais trabalho a fazer, mas em casos de estruturas muito grandes e complexas, 
-                            usar ponteiros faz mais sentido.
+                            Este programa produz apenas a função principal de texto. O que aconteceu com o Goroutine 
+                            que começamos? Precisamos entender as duas propriedades principais das goroutines para 
+                            entender por que isso acontece.
                         </p>
                     </div>
 
@@ -110,13 +101,13 @@ func (p *Person) changeName(name string){
                     <div class="pages-menu">
 
                         <a class="pages-menu-link link-back" href="index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiros - Introdução</span>
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Introdução</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../methods/index.html">
-                            <span>Métodos - Comparação com Funções</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="channels.html">
+                            <span>Goroutines - Channels</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -125,46 +116,50 @@ func (p *Person) changeName(name string){
                 <!--- Coluna Esquerda Fim --->
 
                 <!--- Coluna Direita --->
-                <div class="col-12 col-lg-6 column-code">
+                <div class="col-12 col-lg-6 column-text px-0">
 
-                    <div class="code-filename">when_use.go</div>
+                    <div class="code-filename">main.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="when_use.go">
-package main
-  
-import (
-    "fmt"
-)
-
-type Pessoa struct {
-    Nome string
-    Idade int
-}
-
-func (p *Pessoa) FazerAniversario() {
-    p.Idade++
-}
-
-func main() {
-    carlos := Pessoa{"Carlos", 23}
-    fmt.Println(carlos.Idade)
-
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-    
-    carlos.FazerAniversario()
-    fmt.Println(carlos.Idade)
-}
-                    </textarea>
-
-                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
-
+                    <div class="content-height">
+                        <p>
+                            Vantagens de Goroutines sobre threads
+                        </p>
+                        <p>
+                            Goroutines são extremamente baratos quando comparados aos threads. Eles têm apenas 
+                            alguns kb de tamanho de pilha e a pilha pode aumentar e diminuir de acordo com as 
+                            necessidades da aplicação, enquanto no caso de threads o tamanho da pilha deve ser 
+                            especificado e é fixo.
+                        </p>
+                        <p>
+                            Os Goroutines são multiplexados para um número menor de threads de sistema operacional. 
+                            Pode haver apenas um thread em um programa com milhares de Goroutines. Se qualquer 
+                            Goroutine nesses blocos de thread disser que está aguardando a entrada do usuário, 
+                            outro thread do sistema operacional será criado e os Goroutines restantes serão movidos 
+                            para o novo thread do sistema operacional. Tudo isso é cuidado pelo tempo de execução e 
+                            nós, como programadores, somos abstraídos desses detalhes intrincados e recebemos uma API 
+                            limpa para trabalhar com simultaneidade.
+                        </p>
+                        <p>
+                            Goroutines se comunicam usando canais. Os canais, por design, evitam que as condições 
+                            de corrida aconteçam ao acessar a memória compartilhada usando Goroutines. Os canais 
+                            podem ser vistos como um tubo através do qual Goroutines se comunicam. Discutiremos os 
+                            canais em detalhes na próxima página. 
+                        </p>
+                        <ul>
+                            <li>
+                                Quando um novo Goroutine é iniciado, a chamada de goroutine retorna imediatamente. 
+                                Ao contrário das funções, o controle não espera que o Goroutine termine de executar. 
+                                O controle retorna imediatamente para a próxima linha de código após a chamada do 
+                                Goroutine e quaisquer valores de retorno do Goroutine são ignorados.
+                            </li>
+                            <li>
+                                O Goroutine principal deve estar em execução para qualquer outro Goroutine. Se o 
+                                Goroutine principal terminar, o programa será encerrado e nenhum outro Goroutine será executado. 
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!--- Coluna Direita Fim --->
-
             </div>
         </div>
     </main>
