@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Goroutines - Channel Direction</title>
+    <title>Go Bootcamp - Goroutines - Channel Syncronization</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,45 +58,37 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Goroutines - Channel Direction</div>
+                    <div class="main-title">Goroutines - Channel Syncronization</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            A sintaxe para enviar e receber dados de um canal é fornecida abaixo:
-                        </p>
-                        <pre><code class="language-go">
-data := <- a // lê conteúdo do canal a  
-a <- data // escreve no canal a  
-                        </code></pre>
-                        <p>
-                            A direção da seta em relação ao canal especifica se os dados são enviados ou recebidos.
+                            Podemos fazer uso de canais se quisermos sincronizar goroutines. Ao sincronizar, 
+                            queremos fazer com que as goroutines funcionem de uma maneira definida, por exemplo, 
+                            não iniciando a próxima goroutine até que a anterior tenha finalizado sua execução.
                         </p>
                         <p>
-                            Envios e recebimentos em um canal são bloqueados por padrão. O que isto significa? 
-                            Quando os dados são enviados para um canal, o controle é bloqueado na instrução de 
-                            envio até que algum outro Goroutine leia daquele canal. Da mesma forma, quando os 
-                            dados são lidos de um canal, a leitura é bloqueada até que algum Goroutine grave dados nesse canal.
+                            Os canais ajudam a fazer isso, pois podem ser usados para bloquear o processo e, em seguida, 
+                            também podem ser usados para notificar a segunda goroutine de que a anterior terminou seu trabalho. 
                         </p>
                         <p>
-                            Esta propriedade de canais é o que ajuda Goroutines a se comunicarem efetivamente sem o uso de 
-                            bloqueios explícitos ou variáveis condicionais que são bastante comuns em outras linguagens de 
-                            programação. 
+                            Vamos considerar um exemplo muito básico de sincronização de canais, onde veremos como podemos 
+                            fazer isso com a ajuda de um canal em buffer.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="channels.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Channels</span>
+                        <a class="pages-menu-link link-back" href="channel_buffering.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Channel Buffering</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="channel_buffering.html">
-                            <span>Goroutines - Channel Buffering</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="select.html">
+                            <span>Goroutines - Select</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -104,29 +96,40 @@ a <- data // escreve no canal a
                 </div>
                 <!--- Coluna Esquerda Fim --->
 
-                <!--- Coluna Direita --->
-                <div class="col-12 col-lg-6 column-text px-0">
+                <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">channel_direction.go</div>
+                    <div class="code-filename">syncronization.go</div>
 
-                    <div class="content-height">
-                        <p>
-                            Canal Unidirecional
-                        </p>
-                        <p>
-                            Um canal que só pode receber dados ou um canal que só pode enviar dados é o 
-                            canal unidirecional. O canal unidirecional também pode criar com a ajuda da 
-                            função make () conforme mostrado abaixo:
-                        </p>
-                        <pre><code class="language-go">
-// Só permite ler dados
-c1:= make(<- chan bool)
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="syncronization.go">
+package main 
+import ( 
+    "fmt" 
+    "time" 
+) 
 
-// Só permite escrever dados
-c2:= make(chan<-bool
-                        </code></pre>
-                        <img src="../../img/channels.jpg" alt="Channels" style="width: 100%">
-                    </div>
+func check(done chan bool) { 
+    fmt.Print("Welcome to...") 
+    time.Sleep(time.Second) 
+    fmt.Println("TutorialsPoint") 
+    done <- true 
+} 
+
+func check2() { 
+    fmt.Println("Learn Go from here!") 
+}
+
+func main() { 
+    done := make(chan bool, 1) 
+    go check(done) 
+    if <-done { 
+        go check2() 
+        time.Sleep(time.Second) 
+    } 
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
                 </div>
                 <!--- Coluna Direita Fim --->
             </div>

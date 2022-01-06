@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Goroutines - Channel Direction</title>
+    <title>Go Bootcamp - Goroutines - Worker Pools</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,45 +58,52 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Goroutines - Channel Direction</div>
+                    <div class="main-title">Goroutines - Worker Pools</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            A sintaxe para enviar e receber dados de um canal é fornecida abaixo:
-                        </p>
-                        <pre><code class="language-go">
-data := <- a // lê conteúdo do canal a  
-a <- data // escreve no canal a  
-                        </code></pre>
-                        <p>
-                            A direção da seta em relação ao canal especifica se os dados são enviados ou recebidos.
+                            Em geral, um worker pool é uma coleção de threads que aguardam que tarefas sejam 
+                            atribuídas a eles. Assim que concluem a tarefa atribuída, eles se colocam novamente 
+                            à disposição para a próxima tarefa.
                         </p>
                         <p>
-                            Envios e recebimentos em um canal são bloqueados por padrão. O que isto significa? 
-                            Quando os dados são enviados para um canal, o controle é bloqueado na instrução de 
-                            envio até que algum outro Goroutine leia daquele canal. Da mesma forma, quando os 
-                            dados são lidos de um canal, a leitura é bloqueada até que algum Goroutine grave dados nesse canal.
+                            Implementaremos um worker pool usando canais em buffer. Nosso worker pool 
+                            realizará a tarefa de encontrar a soma de alguns dígitos do número de entrada. Por 
+                            exemplo, se 234 for passado, a saída será 9.
                         </p>
                         <p>
-                            Esta propriedade de canais é o que ajuda Goroutines a se comunicarem efetivamente sem o uso de 
-                            bloqueios explícitos ou variáveis condicionais que são bastante comuns em outras linguagens de 
-                            programação. 
+                            A seguir estão as principais funcionalidades do nosso workers pool:
                         </p>
+                        <ul>
+                            <li>
+                                Criação de um pool de Goroutines que escutam em um canal com buffer de 
+                                entrada esperando que as tarefas sejam atribuídas
+                            </li>
+                            <li>
+                                Adição de trabalhos ao canal com buffer de entrada
+                            </li>
+                            <li>
+                                Gravar resultados em um canal com buffer de saída após a conclusão do trabalho
+                            </li>
+                            <li>
+                                Leia e imprima os resultados do canal com buffer de saída 
+                            </li>
+                        </ul>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="channels.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Channels</span>
+                        <a class="pages-menu-link link-back" href="tickers.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Tickers</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="channel_buffering.html">
-                            <span>Goroutines - Channel Buffering</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="wait_groups.html">
+                            <span>Goroutines - Wait Groups</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -104,29 +111,90 @@ a <- data // escreve no canal a
                 </div>
                 <!--- Coluna Esquerda Fim --->
 
-                <!--- Coluna Direita --->
-                <div class="col-12 col-lg-6 column-text px-0">
+                <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">channel_direction.go</div>
+                    <div class="code-filename">worker_pools.go</div>
 
-                    <div class="content-height">
-                        <p>
-                            Canal Unidirecional
-                        </p>
-                        <p>
-                            Um canal que só pode receber dados ou um canal que só pode enviar dados é o 
-                            canal unidirecional. O canal unidirecional também pode criar com a ajuda da 
-                            função make () conforme mostrado abaixo:
-                        </p>
-                        <pre><code class="language-go">
-// Só permite ler dados
-c1:= make(<- chan bool)
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="worker_pools.go">
+package main
 
-// Só permite escrever dados
-c2:= make(chan<-bool
-                        </code></pre>
-                        <img src="../../img/channels.jpg" alt="Channels" style="width: 100%">
-                    </div>
+import (  
+    "fmt"
+    "math/rand"
+    "sync"
+    "time"
+)
+
+type Job struct {  
+    id       int
+    randomno int
+}
+type Result struct {  
+    job         Job
+    sumofdigits int
+}
+
+var jobs = make(chan Job, 10)  
+var results = make(chan Result, 10)
+
+func digits(number int) int {  
+    sum := 0
+    no := number
+    for no != 0 {
+        digit := no % 10
+        sum += digit
+        no /= 10
+    }
+    time.Sleep(2 * time.Second)
+    return sum
+}
+func worker(wg *sync.WaitGroup) {  
+    for job := range jobs {
+        output := Result{job, digits(job.randomno)}
+        results <- output
+    }
+    wg.Done()
+}
+func createWorkerPool(noOfWorkers int) {  
+    var wg sync.WaitGroup
+    for i := 0; i < noOfWorkers; i++ {
+        wg.Add(1)
+        go worker(&wg)
+    }
+    wg.Wait()
+    close(results)
+}
+func allocate(noOfJobs int) {  
+    for i := 0; i < noOfJobs; i++ {
+        randomno := rand.Intn(999)
+        job := Job{i, randomno}
+        jobs <- job
+    }
+    close(jobs)
+}
+func result(done chan bool) {  
+    for result := range results {
+        fmt.Printf("Job id %d, input random no %d , sum of digits %d\n", result.job.id, result.job.randomno, result.sumofdigits)
+    }
+    done <- true
+}
+func main() {  
+    startTime := time.Now()
+    noOfJobs := 100
+    go allocate(noOfJobs)
+    done := make(chan bool)
+    go result(done)
+    noOfWorkers := 10
+    createWorkerPool(noOfWorkers)
+    <-done
+    endTime := time.Now()
+    diff := endTime.Sub(startTime)
+    fmt.Println("total time taken ", diff.Seconds(), "seconds")
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
                 </div>
                 <!--- Coluna Direita Fim --->
             </div>

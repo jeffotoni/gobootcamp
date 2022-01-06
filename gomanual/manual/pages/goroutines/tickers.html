@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Goroutines - Channel Direction</title>
+    <title>Go Bootcamp - Goroutines - Tickers</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,45 +58,35 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Goroutines - Channel Direction</div>
+                    <div class="main-title">Goroutines - Tickers</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            A sintaxe para enviar e receber dados de um canal é fornecida abaixo:
-                        </p>
-                        <pre><code class="language-go">
-data := <- a // lê conteúdo do canal a  
-a <- data // escreve no canal a  
-                        </code></pre>
-                        <p>
-                            A direção da seta em relação ao canal especifica se os dados são enviados ou recebidos.
+                            Os timers são para quando você deseja fazer algo uma vez no futuro - os 
+                            tickers são para quando você deseja fazer algo repetidamente em intervalos regulares.
                         </p>
                         <p>
-                            Envios e recebimentos em um canal são bloqueados por padrão. O que isto significa? 
-                            Quando os dados são enviados para um canal, o controle é bloqueado na instrução de 
-                            envio até que algum outro Goroutine leia daquele canal. Da mesma forma, quando os 
-                            dados são lidos de um canal, a leitura é bloqueada até que algum Goroutine grave dados nesse canal.
+                            Os tickers usam um mecanismo semelhante aos timers: um canal que envia valores.
                         </p>
                         <p>
-                            Esta propriedade de canais é o que ajuda Goroutines a se comunicarem efetivamente sem o uso de 
-                            bloqueios explícitos ou variáveis condicionais que são bastante comuns em outras linguagens de 
-                            programação. 
+                            Os tickers podem ser interrompidos como temporizadores. Uma vez que um ticker é interrompido, 
+                            ele não receberá mais nenhum valor em seu canal.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="channels.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Channels</span>
+                        <a class="pages-menu-link link-back" href="timers.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Timers</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="channel_buffering.html">
-                            <span>Goroutines - Channel Buffering</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="worker_pools.html">
+                            <span>Goroutines - Worker Pools</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -104,29 +94,43 @@ a <- data // escreve no canal a
                 </div>
                 <!--- Coluna Esquerda Fim --->
 
-                <!--- Coluna Direita --->
-                <div class="col-12 col-lg-6 column-text px-0">
+                <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">channel_direction.go</div>
+                    <div class="code-filename">tickers.go</div>
 
-                    <div class="content-height">
-                        <p>
-                            Canal Unidirecional
-                        </p>
-                        <p>
-                            Um canal que só pode receber dados ou um canal que só pode enviar dados é o 
-                            canal unidirecional. O canal unidirecional também pode criar com a ajuda da 
-                            função make () conforme mostrado abaixo:
-                        </p>
-                        <pre><code class="language-go">
-// Só permite ler dados
-c1:= make(<- chan bool)
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="tickers.go">
+package main
 
-// Só permite escrever dados
-c2:= make(chan<-bool
-                        </code></pre>
-                        <img src="../../img/channels.jpg" alt="Channels" style="width: 100%">
-                    </div>
+import (
+    "fmt"
+    "time"
+)
+
+func main() {
+
+    ticker := time.NewTicker(500 * time.Millisecond)
+    done := make(chan bool)
+
+    go func() {
+        for {
+            select {
+            case <-done:
+                return
+            case t := <-ticker.C:
+                fmt.Println("Tick at", t)
+            }
+        }
+    }()
+
+    time.Sleep(1600 * time.Millisecond)
+    ticker.Stop()
+    done <- true
+    fmt.Println("Ticker parado")
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
                 </div>
                 <!--- Coluna Direita Fim --->
             </div>
