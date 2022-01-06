@@ -80,8 +80,8 @@ type Person struct {
 }
                         </code></pre>
                         <p>
-                            Agora, você quer um método que permita alterar o nome de uma pessoa:
-                            Para isso, um ponteiro é necessário, pois ele da acesso à instância original, não a uma copia dela:
+                            Agora, você quer um método permita alterar o nome de uma pessoa:
+                            Para isso, um ponteiro é necessário, pois ele da acesso à instância original, não a uma cópia dela:
                         </p>
                         <pre><code class="language-go">
 func (p *Person) changeName(name string){
