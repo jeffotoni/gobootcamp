@@ -77,12 +77,12 @@ a {
 	color: #3b454e;
 	font-size: 17px;
 	font-weight: 400;
-	width: 650px;
+	width: 800px;
 	margin: 2rem auto;
 	padding: .2rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 	.main-page {
 		width: 100%;
 	}
@@ -128,7 +128,7 @@ a {
 
 .main-page ul {
 	margin-bottom: .9rem;
-	padding-left: 20px !important;
+	padding-left: 0px !important;
 }
 
 .main-page ul > li {
