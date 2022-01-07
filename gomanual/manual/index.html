@@ -57,16 +57,21 @@
     <main class="main-page">
         <div class="container">
 
-            <h1>Conteúdo</h1>
+            <h1>Go Bootcamp</h1>
 
-            <a title="Sobre o Bootcamp">Sobre o Bootcamp</a>
-            <ul>
-                <li>
-                    <a href="pages/index.html" class="disabled-link">Overview</a>
-                </li>
-            </ul>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                dolore eu fugiat nulla pariatur.
+            </p>
+            <a href="pages/index.html">Overview</a>
 
-            <a title="Instalação">Instalação</a>
+            <hr>
+
+            <h2>Conteúdos</h2>
+
+            <h3><a title="Instalação">Instalação</a></h3>
 
             <ul>
                 <li>
@@ -89,7 +94,7 @@
                 </li>
             </ul>
 
-            <a title="Editores">Editores</a>
+            <h3><a title="Editores">Editores</a></h3>
 
             <ul>
                 <li>
@@ -109,7 +114,7 @@
                 </li>
             </ul>
 
-            <a title="Comandos">Comandos</a>
+            <h3><a title="Comandos">Comandos</a></h3>
 
             <ul>
                 <li>
@@ -141,13 +146,9 @@
                 </li>
             </ul>
 
-            <a title="Introdu&ccedil;&atilde;o à linguagem Go">Introdução à linguagem Go</a>
+            <h3><a title="Introdu&ccedil;&atilde;o à linguagem Go">Introdução à linguagem Go</a></h3>
 
             <ul>
-                <!--Sub-tópico Introdução-->
-                <li>
-                    <a href="pages/language_introduction/introduction/index.html" title="Introdução">Introdução</a>
-                </li>
                 <ul>
                     <li>
                         <a href="pages/language_introduction/introduction/helloworld.html" title="Hello, World!">Hello, World!</a>
@@ -164,16 +165,12 @@
                     <li>
                         <a href="pages/language_introduction/introduction/string_literals.html" title="String Literals">String Literals</a>
                     </li>
-
-                    <!--Agrupamento Constantes-->
                     <li>
                         <a href="pages/language_introduction/introduction/constants.html" title="Constantes">Constantes</a>
                     </li>
                     <li>
                         <a href="pages/language_introduction/introduction/iota.html" title="Iota">Iota</a>
                     </li>
-
-                    <!--Agrupamento Variáveis-->
                     <li>
                         <a href="pages/language_introduction/introduction/variables.html" title="Variáveis">Variáveis</a>
                     </li>
@@ -190,7 +187,7 @@
 
                 <!--Sub-tópico Tipos-->
                 <li>
-                    <a href="pages/language_introduction/types/index.html" title="Tipos">Tipos</a>
+                    <h3><a href="pages/language_introduction/types/index.html" title="Tipos">Tipos</a></h3>
                 </li>
                 <ul>
                     <li>
@@ -199,8 +196,6 @@
                     <li>
                         <a href="pages/language_introduction/types/numeric_types.html" title="Numéricos">Numéricos</a>
                     </li>
-
-                    <!--Not implemented yet-->
                     <li>
                         <a href="pages/language_introduction/types/string_type.html" title="String">String</a>
                     </li>
@@ -219,8 +214,6 @@
                     <li>
                         <a href="pages/language_introduction/types/function_type.html" title="Função">Função</a>
                     </li>
-
-                    <!--Agrupamento Interface-->
                     <li>
                         <a href="pages/language_introduction/types/interface.html" title="Interfaces">Interfaces</a>
                     </li>
@@ -230,7 +223,6 @@
                     <li>
                         <a href="pages/language_introduction/types/interface_type.html" title="Interface Vazia">Interface Vazia</a>
                     </li>
-
                     <li>
                         <a href="pages/language_introduction/types/map_type.html" title="Map">Map</a>
                     </li>
@@ -252,7 +244,7 @@
                 </ul>
             </ul>
 
-            <a title="Controladores de estruturas">Controladores de estruturas</a>
+            <h3><a title="Controladores de estruturas">Controladores de estruturas</a></h3>
 
             <ul>
                 <li>
@@ -441,12 +433,6 @@
                 <li>
                     <a href="pages/json/unmarshal.html" title="Unmarshal">Unmarshal</a>
                 </li>
-                <li>
-                    <a href="pages/json/encode.html" title="Encode" class="disabled-link">Encode - REMOVER?</a>
-                </li>
-                <li>
-                    <a href="pages/json/decode.html" title="Decode" class="disabled-link">Decode - REMOVER?</a>
-                </li>
             </ul>
 
             <a title="Goroutines">Goroutines</a>
@@ -479,9 +465,6 @@
                     <a href="pages/goroutines/timeouts.html" title="Timeouts">Timeouts</a>
                 </li>
                 <li>
-                    <a href="pages/goroutines/non-block-operations.html" title="Operações não Bloqueantes" class="disabled-link">Operações não Bloqueantes - EXCLUIR?</a>
-                </li>
-                <li>
                     <a href="pages/goroutines/closing.html" title="Close">Close</a>
                 </li>
                 <li>
@@ -494,42 +477,10 @@
                     <a href="pages/goroutines/tickers.html" title="Tickers">Tickers</a>
                 </li>
                 <li>
-                    <a href="pages/goroutines/worker_pools.html" title="Worker Pools">Worker Pools</a>
-                </li>
-                <li>
                     <a href="pages/goroutines/wait_groups.html" title="WaitGroups">Wait Groups</a>
                 </li>
                 <li>
-                    <a href="pages/goroutines/rate_limiting.html" title="Rate Limiting">Rate Limiting</a>
-                </li>
-                <li>
-                    <a href="pages/goroutines/atomic_counter.html" title="Contadores Atõmicos" class="disabled-link">Contadores Atõmicos - EXCLUIR?</a>
-                </li>
-                <li>
-                    <a href="pages/goroutines/stateful.html" title="Stateful Goroutines" class="disabled-link">Stateful Goroutines - EXCLUIR?</a>
-                </li>
-
-                <!--Sub-tópico Sync-->
-                <li>
-                    sync
-                </li>
-                <ul>
-                    <li>
-                        <a href="pages/goroutines/mutex.html" title="sync.Mutex" class="disabled-link">sync.Mutex</a>
-                    </li>
-                    <li>
-                        <a href="pages/goroutines/map.html" title="sync.Map" class="disabled-link">sync.Map</a>
-                    </li>
-                    <li>
-                        <a href="pages/goroutines/once.html" title="sync.Once" class="disabled-link">sync.Once</a>
-                    </li>
-                    <li>
-                        <a href="pages/goroutines/pool.html" title="sync.Pool" class="disabled-link">sync.Pool</a>
-                    </li>
-                </ul>
-
-                <li>
-                    <a href="pages/goroutines/web_crawler.html" title="Web Crawler" class="disabled-link">Web Crawler</a>
+                    <a href="pages/goroutines/web_crawler.html" title="Web Crawler">Web Crawler</a>
                 </li>
             </ul>
 
@@ -558,9 +509,6 @@
                 </li>
                 <li>
                     <a href="pages/crypto/MD5.html" title="MD5" class="disabled-link">MD5</a>
-                </li>
-                <li>
-                    <a href="pages/crypto/blowfish.html" title="Blowfish" class="disabled-link">Blowfish</a>
                 </li>
                 <li>
                     <a href="pages/crypto/crc32.html" title="CRC32" class="disabled-link">CRC32</a>

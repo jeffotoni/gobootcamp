@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Goroutines - Mutex</title>
+    <title>Go Bootcamp - Overview</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,47 +58,49 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Goroutines - Mutex</div>
+                    <div class="main-title">Goroutines - Overview</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Vimos como os canais são ótimos para a comunicação entre as goroutines.
+                            A linguagem Go foi lançada em 2009 com propósito de facilitar a resolução de problemas 
+                            quando o assunto é desenvolvimento em camadas de rede, escalabilidade, desempenho, 
+                            produtividade e o mais importante concorrência. Os criadores Rob Pike, Ken Thompson 
+                            e Robert Griesemer e mantiveram a sintaxe de Go semelhante ao C. No final de 2008 Russ 
+                            Cox juntou-se a equipe e ajudou a mudar a linguagem e as bibliotecas de protótipo para realidade.
                         </p>
                         <p>
-                            Mas e se não precisarmos de comunicação? E se quisermos apenas ter certeza de que apenas 
-                            uma goroutine pode acessar uma variável por vez para evitar conflitos?
+                            Go teve influências de diversas linguagens de programação e paradigmas diferentes dentre elas 
+                            Occam,Oberon,Erlang,Newsqueak,ConcurrentML,Alef, Limbo e é claro C, se sobressaiu ao juntar o 
+                            que tinham de melhor nestas linguagens e criou algo novo e enxuto.
                         </p>
                         <p>
-                            Esse conceito é chamado de exclusão mútua e o nome convencional para a 
-                            estrutura de dados que o fornece é mutex.
+                            Um dos pontos mais relevantes e importantes é o trabalho com concorrência, ele inovou ao 
+                            quebrar o modelo tradicional de threads e sua forma de utilização ao criar um novo modelo, 
+                            as goroutines. As goroutines são responsáveis por realizar execuções em Go de forma assíncrona. 
+                            São muito poderosas e uma simples máquina de 1G de Ram poderá subir milhares delas.
                         </p>
                         <p>
-                            A biblioteca padrão de Go fornece exclusão mútua com sync.Mutex e seus dois métodos:
+                            Outro ponto lindo em Go que até o momento as versões disponibilizadas para os desenvolvedores 
+                            Go possuem retro compatibilidade isto significa que não teremos deprecated.
                         </p>
-                        <pre><code class="language-go">
-Lock()
-Unlock()
-                        </code></pre>
                         <p>
-                            Podemos definir um bloco de código a ser executado em exclusão mútua circundando-o 
-                            com uma chamada para Lock and Unlock.
-
+                            Go é uma linguagem compilada, um like de C, muito focada na produtividade.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="rate_limiting.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Rate Limiting</span>
+                        <a class="pages-menu-link link-back" href="../index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Homepage</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="map.html">
-                            <span>Goroutines - Map</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="./instalation/index.html">
+                            <span>Instalação - Instalando Go</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -108,44 +110,37 @@ Unlock()
 
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">mutex.go</div>
+                    <div class="code-filename">overview.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="mutex.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="overview.go">
 package main
 
 import (
-	"fmt"
-	"sync"
-	"time"
+    "fmt"
+    "log"
+    "net/http"
 )
 
-type SafeCounter struct {
-	mu sync.Mutex
-	v  map[string]int
-}
-
-func (c *SafeCounter) Inc(key string) {
-	c.mu.Lock()
-	
-	c.v[key]++
-	c.mu.Unlock()
-}
-
-func (c *SafeCounter) Value(key string) int {
-	c.mu.Lock()
-	
-	defer c.mu.Unlock()
-	return c.v[key]
+func Hello(w http.ResponseWriter, r *http.Request) {
+    w.WriteHeader(http.StatusOK)
+    w.Write([]byte("Hello, welcome to the world, Go!"))
 }
 
 func main() {
-	c := SafeCounter{v: make(map[string]int)}
-	for i := 0; i < 1000; i++ {
-		go c.Inc("somekey")
-	}
 
-	time.Sleep(time.Second)
-	fmt.Println(c.Value("somekey"))
+    mux := http.NewServeMux()
+    mux.Handle("/api/hello", http.HandlerFunc(Hello))
+
+    server :=
+        &http.Server{
+            Addr:    ":8080",
+            Handler: mux,
+        }
+
+    fmt.Printf("Server Run port: 8080\n")
+    if err := server.ListenAndServe(); err != nil {
+        log.Printf("Eror while serving metrics: %s", err)
+    }
 }
                     </textarea>
 

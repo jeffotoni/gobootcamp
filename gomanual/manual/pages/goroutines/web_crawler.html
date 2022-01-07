@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Goroutines - Mutex</title>
+    <title>Go Bootcamp - Goroutines - Web Crawler</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,47 +58,30 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Goroutines - Mutex</div>
+                    <div class="main-title">Goroutines - Web Crawler</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Vimos como os canais são ótimos para a comunicação entre as goroutines.
-                        </p>
-                        <p>
-                            Mas e se não precisarmos de comunicação? E se quisermos apenas ter certeza de que apenas 
-                            uma goroutine pode acessar uma variável por vez para evitar conflitos?
-                        </p>
-                        <p>
-                            Esse conceito é chamado de exclusão mútua e o nome convencional para a 
-                            estrutura de dados que o fornece é mutex.
-                        </p>
-                        <p>
-                            A biblioteca padrão de Go fornece exclusão mútua com sync.Mutex e seus dois métodos:
-                        </p>
-                        <pre><code class="language-go">
-Lock()
-Unlock()
-                        </code></pre>
-                        <p>
-                            Podemos definir um bloco de código a ser executado em exclusão mútua circundando-o 
-                            com uma chamada para Lock and Unlock.
-
+                            Web scraping é uma técnica que permite inspecionar, analisar e extrair dados de sites que, 
+                            de outra forma, seriam difíceis de acessar devido à falta de uma API dedicada. O rastreamento 
+                            da Web envolve navegar sistematicamente na Internet, começando com uma URL “semente” e visitando 
+                            recursivamente os links que o rastreador encontra em cada página visitada.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="rate_limiting.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Rate Limiting</span>
+                        <a class="pages-menu-link link-back" href="pool.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Pool</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="map.html">
-                            <span>Goroutines - Map</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="select.html">
+                            <span>Goroutines - Select</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -108,45 +91,95 @@ Unlock()
 
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">mutex.go</div>
+                    <div class="code-filename">web_crawler.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="mutex.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="web_crawler.go">
 package main
 
 import (
 	"fmt"
-	"sync"
-	"time"
 )
 
-type SafeCounter struct {
-	mu sync.Mutex
-	v  map[string]int
+type Fetcher interface {
+	// Fetch returns the body of URL and
+	// a slice of URLs found on that page.
+	Fetch(url string) (body string, urls []string, err error)
 }
 
-func (c *SafeCounter) Inc(key string) {
-	c.mu.Lock()
-	
-	c.v[key]++
-	c.mu.Unlock()
-}
-
-func (c *SafeCounter) Value(key string) int {
-	c.mu.Lock()
-	
-	defer c.mu.Unlock()
-	return c.v[key]
+// Crawl uses fetcher to recursively crawl
+// pages starting with url, to a maximum of depth.
+func Crawl(url string, depth int, fetcher Fetcher) {
+	// TODO: Fetch URLs in parallel.
+	// TODO: Don't fetch the same URL twice.
+	// This implementation doesn't do either:
+	if depth <= 0 {
+		return
+	}
+	body, urls, err := fetcher.Fetch(url)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Printf("found: %s %q\n", url, body)
+	for _, u := range urls {
+		Crawl(u, depth-1, fetcher)
+	}
+	return
 }
 
 func main() {
-	c := SafeCounter{v: make(map[string]int)}
-	for i := 0; i < 1000; i++ {
-		go c.Inc("somekey")
-	}
-
-	time.Sleep(time.Second)
-	fmt.Println(c.Value("somekey"))
+	Crawl("https://golang.org/", 4, fetcher)
 }
+
+// fakeFetcher is Fetcher that returns canned results.
+type fakeFetcher map[string]*fakeResult
+
+type fakeResult struct {
+	body string
+	urls []string
+}
+
+func (f fakeFetcher) Fetch(url string) (string, []string, error) {
+	if res, ok := f[url]; ok {
+		return res.body, res.urls, nil
+	}
+	return "", nil, fmt.Errorf("not found: %s", url)
+}
+
+// fetcher is a populated fakeFetcher.
+var fetcher = fakeFetcher{
+	"https://golang.org/": &fakeResult{
+		"The Go Programming Language",
+		[]string{
+			"https://golang.org/pkg/",
+			"https://golang.org/cmd/",
+		},
+	},
+	"https://golang.org/pkg/": &fakeResult{
+		"Packages",
+		[]string{
+			"https://golang.org/",
+			"https://golang.org/cmd/",
+			"https://golang.org/pkg/fmt/",
+			"https://golang.org/pkg/os/",
+		},
+	},
+	"https://golang.org/pkg/fmt/": &fakeResult{
+		"Package fmt",
+		[]string{
+			"https://golang.org/",
+			"https://golang.org/pkg/",
+		},
+	},
+	"https://golang.org/pkg/os/": &fakeResult{
+		"Package os",
+		[]string{
+			"https://golang.org/",
+			"https://golang.org/pkg/",
+		},
+	},
+}
+
                     </textarea>
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />

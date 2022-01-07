@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Goroutines - Mutex</title>
+    <title>Go Bootcamp - Goroutines - Pool</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,47 +58,41 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Goroutines - Mutex</div>
+                    <div class="main-title">Goroutines - Pool</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Vimos como os canais são ótimos para a comunicação entre as goroutines.
+                            Sync.Pool pode ser usado para armazenar objetos em cache, pois o uso frequente de 
+                            memória heap pode causar muito trabalho para o GC.
                         </p>
                         <p>
-                            Mas e se não precisarmos de comunicação? E se quisermos apenas ter certeza de que apenas 
-                            uma goroutine pode acessar uma variável por vez para evitar conflitos?
+                            sync.Pool pode ser recuperado sem aviso prévio para aliviar a pressão do GC.
                         </p>
                         <p>
-                            Esse conceito é chamado de exclusão mútua e o nome convencional para a 
-                            estrutura de dados que o fornece é mutex.
+                            Para inicializar o pool, a única coisa que você precisa é configurar a função New 
+                            para que quando o método Get for chamado, se o pool tiver um objeto em cache, ele 
+                            retorne o objeto em cache diretamente e, se não tiver, a função New é chamado para 
+                            criar um novo objeto. 
                         </p>
                         <p>
-                            A biblioteca padrão de Go fornece exclusão mútua com sync.Mutex e seus dois métodos:
-                        </p>
-                        <pre><code class="language-go">
-Lock()
-Unlock()
-                        </code></pre>
-                        <p>
-                            Podemos definir um bloco de código a ser executado em exclusão mútua circundando-o 
-                            com uma chamada para Lock and Unlock.
-
+                            Os pools são adequados para cenários em que há muita memória e muita simultaneidade, 
+                            mas quando há pouca memória e pouca simultaneidade, o uso de pools é contraproducente.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="rate_limiting.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Rate Limiting</span>
+                        <a class="pages-menu-link link-back" href="once.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Once</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="map.html">
-                            <span>Goroutines - Map</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="web_crawler.html">
+                            <span>Goroutines - Web Crawler</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -108,44 +102,35 @@ Unlock()
 
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">mutex.go</div>
+                    <div class="code-filename">pool.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="mutex.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="pool.go">
 package main
 
-import (
-	"fmt"
-	"sync"
-	"time"
-)
+import "sync"
 
-type SafeCounter struct {
-	mu sync.Mutex
-	v  map[string]int
+var intPool *sync.Pool = &sync.Pool {
+    New: func() interface{} {
+        var b []int = make([]int, 8)
+        return &b
+    },
 }
 
-func (c *SafeCounter) Inc(key string) {
-	c.mu.Lock()
-	
-	c.v[key]++
-	c.mu.Unlock()
-}
-
-func (c *SafeCounter) Value(key string) int {
-	c.mu.Lock()
-	
-	defer c.mu.Unlock()
-	return c.v[key]
-}
-
-func main() {
-	c := SafeCounter{v: make(map[string]int)}
-	for i := 0; i < 1000; i++ {
-		go c.Inc("somekey")
-	}
-
-	time.Sleep(time.Second)
-	fmt.Println(c.Value("somekey"))
+func main() {    // get the obj and do not put it back
+    for i := 1; i < 4; i = i + 1 {
+        var obj *[]int = intPool.Get().(*[]int)
+        (*obj)[i] = i
+        println(obj)
+    }    
+    
+    println("=======")    // get the obj and put it back
+    
+    for i := 1; i < 4; i = i + 1 {
+        var obj *[]int = intPool.Get().(*[]int)
+        (*obj)[i] = i
+        println(obj)
+        intPool.Put(obj)
+    }
 }
                     </textarea>
 

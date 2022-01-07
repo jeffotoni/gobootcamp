@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Goroutines - Mutex</title>
+    <title>Go Bootcamp - Goroutines - Map</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,47 +58,71 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Goroutines - Mutex</div>
+                    <div class="main-title">Goroutines - Map</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Vimos como os canais são ótimos para a comunicação entre as goroutines.
-                        </p>
-                        <p>
-                            Mas e se não precisarmos de comunicação? E se quisermos apenas ter certeza de que apenas 
-                            uma goroutine pode acessar uma variável por vez para evitar conflitos?
-                        </p>
-                        <p>
-                            Esse conceito é chamado de exclusão mútua e o nome convencional para a 
-                            estrutura de dados que o fornece é mutex.
-                        </p>
-                        <p>
-                            A biblioteca padrão de Go fornece exclusão mútua com sync.Mutex e seus dois métodos:
+                            Os seguintes métodos estão disponíveis para trabalhar com sync.Map:
                         </p>
                         <pre><code class="language-go">
-Lock()
-Unlock()
+Load(key interface{}) (value interface{}, ok bool)
+Store(key, value interface{})
+Delete(key interface{})
+Range(f func(key, value interface{}) bool)
+LoadOrStore(key, value interface{}) (actual interface{}, loaded bool)
                         </code></pre>
                         <p>
-                            Podemos definir um bloco de código a ser executado em exclusão mútua circundando-o 
-                            com uma chamada para Lock and Unlock.
+                            Isso cobre todos os casos de uso de mapas - inserir, ler, excluir, iterar. Também existe o 
+                            método de bônus LoadOrStore, que permite definir o valor por chave se o valor não for definido antes.
+                        </p>
+                        <p>
+                            Para executar a iteração, existe uma função de recebimento de intervalo que é chamada em cada 
+                            elemento do mapa. Se essa função retornar falso, a iteração será interrompida.
+                        </p>
+                        <p>
+                            Ao ver o nome sync.Map, pode-se imaginar que sync.Map é um map simples com alguns recursos 
+                            do pacote de sincronização. Mas, na verdade, sync.Map é muito mais complexo. 
+                        </p>
+                        <p>
+                            A estrutura sync.Map tem a seguinte aparência:
+                        </p>
+                        <pre><code class="language-go">
+type Map struct {
+	mu sync.Mutex
 
+	read atomic.Value
+	dirty map[interface{}]*entry
+	misses int
+}
+
+type readOnly struct {
+	m       map[interface{}]*entry
+	amended bool 
+}
+                        </code></pre>
+                        <p>
+                            sync.Map é uma estrutura complexa, geralmente composta por dois mapas - um para leitura e outro 
+                            para novos elementos. sync.Map não está apenas perto de map + sync.RWMutex nas métricas de 
+                            velocidade, mas também pode ser o melhor no caso de leitura. Quando houver leitura e atualização, 
+                            o sync.Map terá o elemento read e dirty. Nesse caso, sync.Map tem desempenho pior do que 
+                            map + sync.RWMutex devido à leitura de dois mapas internos. Também existe um contador 
+                            que precisa ser atualizado ao acessar o dirty.
                         </p>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="rate_limiting.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Rate Limiting</span>
+                        <a class="pages-menu-link link-back" href="mutex.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Mutex</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="map.html">
-                            <span>Goroutines - Map</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="once.html">
+                            <span>Goroutines - Once</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -108,45 +132,10 @@ Unlock()
 
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">mutex.go</div>
+                    <div class="code-filename">map.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="mutex.go">
-package main
-
-import (
-	"fmt"
-	"sync"
-	"time"
-)
-
-type SafeCounter struct {
-	mu sync.Mutex
-	v  map[string]int
-}
-
-func (c *SafeCounter) Inc(key string) {
-	c.mu.Lock()
-	
-	c.v[key]++
-	c.mu.Unlock()
-}
-
-func (c *SafeCounter) Value(key string) int {
-	c.mu.Lock()
-	
-	defer c.mu.Unlock()
-	return c.v[key]
-}
-
-func main() {
-	c := SafeCounter{v: make(map[string]int)}
-	for i := 0; i < 1000; i++ {
-		go c.Inc("somekey")
-	}
-
-	time.Sleep(time.Second)
-	fmt.Println(c.Value("somekey"))
-}
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="map.go">
+// Adicionar exemplo
                     </textarea>
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
