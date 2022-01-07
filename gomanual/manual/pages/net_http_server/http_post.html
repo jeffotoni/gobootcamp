@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Overview Go</title>
+    <title>Go Bootcamp - net/http Client - Post</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,56 +58,36 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Go Bootcamp - Overview Go</div>
+                    <div class="main-title">net/http Client - Post</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
+                        <pre><code class="language-go">
+func (c *Client) Post(url, contentType string, body io.Reader) (resp *Response, err error)
+                        </code></pre>
                         <p>
-                            A linguagem Go foi lançada em 2009 com propósito de facilitar a resolução de problemas 
-                            quando o assunto é desenvolvimento em camadas de rede, escalabilidade, desempenho, 
-                            produtividade e o mais importante concorrência. Os criadores Rob Pike, Ken Thompson 
-                            e Robert Griesemer e mantiveram a sintaxe de Go semelhante ao C. No final de 2008 Russ 
-                            Cox juntou-se a equipe e ajudou a mudar a linguagem e as bibliotecas de protótipo para realidade.
+                            Post emite um POST para o URL especificado.
+
+                            O chamador deve fechar o resp.Body quando terminar de ler.
+
+                            Se o corpo fornecido for um io.Closer, ele será fechado após a solicitação.
+
+                            Para definir cabeçalhos personalizados, use NewRequest e Client.Do.
                         </p>
-                        <p>
-                            Go teve influências de diversas linguagens de programação e paradigmas diferentes dentre elas 
-                            Occam,Oberon,Erlang,Newsqueak,ConcurrentML,Alef, Limbo e é claro C, se sobressaiu ao juntar o 
-                            que tinham de melhor nestas linguagens e criou algo novo e enxuto.
-                        </p>
-                        <p>
-                            Um dos pontos mais relevantes e importantes é o trabalho com concorrência, ele inovou ao 
-                            quebrar o modelo tradicional de threads e sua forma de utilização ao criar um novo modelo, 
-                            as goroutines. As goroutines são responsáveis por realizar execuções em Go de forma assíncrona. 
-                            São muito poderosas e uma simples máquina de 1G de Ram poderá subir milhares delas.
-                        </p>
-                        <p>
-                            Outro ponto lindo em Go que até o momento as versões disponibilizadas para os desenvolvedores 
-                            Go possuem retro compatibilidade isto significa que não teremos deprecated.
-                        </p>
-                        <p>
-                            Go é uma linguagem compilada, um like de C, muito focada na produtividade.
-                        </p>
-                        <p>Introduções mais detalhadas sobre a linguagem:</p>
-                        <ul>
-                            <li><a href="https://github.com/jeffotoni/go-overview" target="_blank">Github</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=cb8IQulLCJM" target="_blank">Youtube</a></li>
-                            <li><a href="https://speakerdeck.com/jeffotoni/devops-fest" target="_blank">SpeakerDeck</a></li>
-                            <li><a href="https://jeffotoni.medium.com/golang-simplificando-a-complexidade-o-inicio-145371d67711" target="_blank">Medium</a></li>
-                        </ul>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Homepage</span>
+                        <a class="pages-menu-link link-back" href="http_get.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>net/http Client - Get</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="./instalation/index.html">
-                            <span>Instalação - Instalando Go</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="http_new_request.html">
+                            <span>http/net Client - NewRequest</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -117,38 +97,10 @@
 
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">overview.go - CORRIGIR EXEMPLO! BUG</div>
+                    <div class="code-filename">post.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="overview.go">
-package main
-
-import (
-    "fmt"
-    "log"
-    "net/http"
-)
-
-func Hello(w http.ResponseWriter, r *http.Request) {
-    w.WriteHeader(http.StatusOK)
-    w.Write([]byte("Hello, welcome to the world, Go!"))
-}
-
-func main() {
-
-    mux := http.NewServeMux()
-    mux.Handle("/api/hello", http.HandlerFunc(Hello))
-
-    server :=
-        &http.Server{
-            Addr:    ":8080",
-            Handler: mux,
-        }
-
-    fmt.Printf("Server Run port: 8080\n")
-    if err := server.ListenAndServe(); err != nil {
-        log.Printf("Eror while serving metrics: %s", err)
-    }
-}
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="post.go">
+// Adicionar exemplo
                     </textarea>
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />

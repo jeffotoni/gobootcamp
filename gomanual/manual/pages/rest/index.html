@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Overview Go</title>
+    <title>Go Bootcamp - API REST - Introdução</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,56 +58,35 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Go Bootcamp - Overview Go</div>
+                    <div class="main-title">API REST - Introdução</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            A linguagem Go foi lançada em 2009 com propósito de facilitar a resolução de problemas 
-                            quando o assunto é desenvolvimento em camadas de rede, escalabilidade, desempenho, 
-                            produtividade e o mais importante concorrência. Os criadores Rob Pike, Ken Thompson 
-                            e Robert Griesemer e mantiveram a sintaxe de Go semelhante ao C. No final de 2008 Russ 
-                            Cox juntou-se a equipe e ajudou a mudar a linguagem e as bibliotecas de protótipo para realidade.
+                            API REST, também chamada de API RESTful, é uma interface de programação de aplicações 
+                            (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, 
+                            permitindo a interação com serviços web RESTful. REST é a sigla em inglês para 
+                            "Representational State Transfer", que em português significa tansferência de estado 
+                            representacional. Essa arquitetura foi criada pelo cientista da computação Roy Fielding.
                         </p>
                         <p>
-                            Go teve influências de diversas linguagens de programação e paradigmas diferentes dentre elas 
-                            Occam,Oberon,Erlang,Newsqueak,ConcurrentML,Alef, Limbo e é claro C, se sobressaiu ao juntar o 
-                            que tinham de melhor nestas linguagens e criou algo novo e enxuto.
+                            REST não é um protocolo ou padrão, mas sim um conjunto de restrições de arquitetura. Os 
+                            desenvolvedores de API podem implementar a arquitetura REST de maneiras variadas.
                         </p>
-                        <p>
-                            Um dos pontos mais relevantes e importantes é o trabalho com concorrência, ele inovou ao 
-                            quebrar o modelo tradicional de threads e sua forma de utilização ao criar um novo modelo, 
-                            as goroutines. As goroutines são responsáveis por realizar execuções em Go de forma assíncrona. 
-                            São muito poderosas e uma simples máquina de 1G de Ram poderá subir milhares delas.
-                        </p>
-                        <p>
-                            Outro ponto lindo em Go que até o momento as versões disponibilizadas para os desenvolvedores 
-                            Go possuem retro compatibilidade isto significa que não teremos deprecated.
-                        </p>
-                        <p>
-                            Go é uma linguagem compilada, um like de C, muito focada na produtividade.
-                        </p>
-                        <p>Introduções mais detalhadas sobre a linguagem:</p>
-                        <ul>
-                            <li><a href="https://github.com/jeffotoni/go-overview" target="_blank">Github</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=cb8IQulLCJM" target="_blank">Youtube</a></li>
-                            <li><a href="https://speakerdeck.com/jeffotoni/devops-fest" target="_blank">SpeakerDeck</a></li>
-                            <li><a href="https://jeffotoni.medium.com/golang-simplificando-a-complexidade-o-inicio-145371d67711" target="_blank">Medium</a></li>
-                        </ul>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Homepage</span>
+                        <a class="pages-menu-link link-back" href="../net_http_server/http_new_request.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>net/http Client - NewRequest</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="./instalation/index.html">
-                            <span>Instalação - Instalando Go</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../rest/index.html">
+                            <span>API REST - Introdução</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -115,41 +94,27 @@
                 </div>
                 <!--- Coluna Esquerda Fim --->
 
-                <div class="col-12 col-lg-6 column-code">
+                <div class="col-12 col-lg-6 column-text px-0">
 
-                    <div class="code-filename">overview.go - CORRIGIR EXEMPLO! BUG</div>
+                    <div class="code-filename">rest_api</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="overview.go">
-package main
-
-import (
-    "fmt"
-    "log"
-    "net/http"
-)
-
-func Hello(w http.ResponseWriter, r *http.Request) {
-    w.WriteHeader(http.StatusOK)
-    w.Write([]byte("Hello, welcome to the world, Go!"))
-}
-
-func main() {
-
-    mux := http.NewServeMux()
-    mux.Handle("/api/hello", http.HandlerFunc(Hello))
-
-    server :=
-        &http.Server{
-            Addr:    ":8080",
-            Handler: mux,
-        }
-
-    fmt.Printf("Server Run port: 8080\n")
-    if err := server.ListenAndServe(); err != nil {
-        log.Printf("Eror while serving metrics: %s", err)
-    }
-}
-                    </textarea>
+                    <div class="content-height">
+                        <p>
+                            Quando um cliente faz uma solicitação usando uma API RESTful, essa API transfere uma 
+                            representação do estado do recurso ao solicitante ou endpoint. Essa informação 
+                            (ou representação) é entregue via HTTP utilizando um dos vários formatos possíveis: 
+                            Javascript Object Notation (JSON), HTML, XLT, Python, PHP ou texto sem formatação. O 
+                            formato JSON é a linguagem de programação mais usada porque, apesar de seu nome, é 
+                            independente de qualquer outra linguagem e pode ser lido por máquinas e humanos. 
+                        </p>
+                        <p>
+                            Lembre-se também de que cabeçalhos e parâmetros são importantes nos métodos HTTP de uma 
+                            solicitação HTTP de API RESTful porque contêm informações relevantes sobre o identificador, 
+                            bem como metadados, autorização, Uniform Resource Identifier (URI), cache, cookies e outras 
+                            informações da solicitação. Há os cabeçalhos da solicitação e os cabeçalhos da resposta, cada 
+                            um contendo as informações de suas respectivas conexões HTTP e códigos de status.
+                        </p>
+                    </div>
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - Overview Go</title>
+    <title>Go Bootcamp - Criptografia - SHA1</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,56 +58,33 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">Go Bootcamp - Overview Go</div>
+                    <div class="main-title">Criptografia - SHA1</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            A linguagem Go foi lançada em 2009 com propósito de facilitar a resolução de problemas 
-                            quando o assunto é desenvolvimento em camadas de rede, escalabilidade, desempenho, 
-                            produtividade e o mais importante concorrência. Os criadores Rob Pike, Ken Thompson 
-                            e Robert Griesemer e mantiveram a sintaxe de Go semelhante ao C. No final de 2008 Russ 
-                            Cox juntou-se a equipe e ajudou a mudar a linguagem e as bibliotecas de protótipo para realidade.
+                            Hashes SHA1 são freqüentemente usados para calcular identidades curtas para blobs 
+                            binários ou de texto. Por exemplo, o sistema de controle de revisão git usa SHA1s 
+                            extensivamente para identificar arquivos e diretórios com versão.
                         </p>
                         <p>
-                            Go teve influências de diversas linguagens de programação e paradigmas diferentes dentre elas 
-                            Occam,Oberon,Erlang,Newsqueak,ConcurrentML,Alef, Limbo e é claro C, se sobressaiu ao juntar o 
-                            que tinham de melhor nestas linguagens e criou algo novo e enxuto.
+                            O padrão para gerar um hash é sha1.New (), sha1.Write (bytes) e, em seguida, 
+                            sha1.Sum ([] byte {}).
                         </p>
-                        <p>
-                            Um dos pontos mais relevantes e importantes é o trabalho com concorrência, ele inovou ao 
-                            quebrar o modelo tradicional de threads e sua forma de utilização ao criar um novo modelo, 
-                            as goroutines. As goroutines são responsáveis por realizar execuções em Go de forma assíncrona. 
-                            São muito poderosas e uma simples máquina de 1G de Ram poderá subir milhares delas.
-                        </p>
-                        <p>
-                            Outro ponto lindo em Go que até o momento as versões disponibilizadas para os desenvolvedores 
-                            Go possuem retro compatibilidade isto significa que não teremos deprecated.
-                        </p>
-                        <p>
-                            Go é uma linguagem compilada, um like de C, muito focada na produtividade.
-                        </p>
-                        <p>Introduções mais detalhadas sobre a linguagem:</p>
-                        <ul>
-                            <li><a href="https://github.com/jeffotoni/go-overview" target="_blank">Github</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=cb8IQulLCJM" target="_blank">Youtube</a></li>
-                            <li><a href="https://speakerdeck.com/jeffotoni/devops-fest" target="_blank">SpeakerDeck</a></li>
-                            <li><a href="https://jeffotoni.medium.com/golang-simplificando-a-complexidade-o-inicio-145371d67711" target="_blank">Medium</a></li>
-                        </ul>
                     </div>
 
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../index.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Homepage</span>
+                        <a class="pages-menu-link link-back" href="../file/deleting.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>File - Deletando</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="./instalation/index.html">
-                            <span>Instalação - Instalando Go</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="md5.html">
+                            <span>Criptografia - MD5</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -117,37 +94,27 @@
 
                 <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">overview.go - CORRIGIR EXEMPLO! BUG</div>
+                    <div class="code-filename">sha1.go</div>
 
-                    <textarea class="go-playground-snippet" data-expanded="1" data-title="overview.go">
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="sha1.go">
 package main
 
 import (
+    "crypto/sha1"
     "fmt"
-    "log"
-    "net/http"
 )
 
-func Hello(w http.ResponseWriter, r *http.Request) {
-    w.WriteHeader(http.StatusOK)
-    w.Write([]byte("Hello, welcome to the world, Go!"))
-}
-
 func main() {
+    s := "texto maneiro"
 
-    mux := http.NewServeMux()
-    mux.Handle("/api/hello", http.HandlerFunc(Hello))
+    h := sha1.New()
 
-    server :=
-        &http.Server{
-            Addr:    ":8080",
-            Handler: mux,
-        }
+    h.Write([]byte(s))
 
-    fmt.Printf("Server Run port: 8080\n")
-    if err := server.ListenAndServe(); err != nil {
-        log.Printf("Eror while serving metrics: %s", err)
-    }
+    bs := h.Sum(nil)
+
+    fmt.Println(s)
+    fmt.Printf("%x\n", bs)
 }
                     </textarea>
 
