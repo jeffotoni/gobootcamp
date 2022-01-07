@@ -123,7 +123,8 @@ a {
 .main-page a:hover,
 .main-page a:focus,
 .main-page a:active {
-	color: #3b454e;
+	color: rgb(24, 24, 24);
+	text-decoration: underline;
 }
 
 .main-page ul {
