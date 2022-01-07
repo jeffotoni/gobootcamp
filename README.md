@@ -1,4 +1,4 @@
-## Go BootCamp
+## Go Bootcamp
 
 Este material tem o objetivo de contribuir para o aprendizado da linguagem de programação Go😍 colaborando com a comunidade como uma fonte de aprendizado na linguagem Go. Um material que aborda o que precisamos saber para iniciarmos a programação na linguagem Go 😍.
 
