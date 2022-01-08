@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - API REST - Introdução</title>
+    <title>Go Bootcamp - API REST - ZeroHero - Standard Library</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,39 +58,49 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">API REST - Introdução</div>
+                    <div class="main-title">ZeroHero Standard Library</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            A história da APIs é um pouco antiga. O termo aparece pela primeira vez no artigo de Ira W. Cotton “Estruturas e técnicas de dados para computação remota” publicado em 1968. Dá para imaginar a quantidade de tipos e formas de APIs existentes que foram
-                            surgindo ao longo destas décadas.</p>
-
-                        <p>Nosso contexto para discussão são APIs utilizando protocolo HTTP (Hypertext Transfer Protocol) e utilizando o famigerado REST "Transferência de Estado Representacional" (Representational State Transfer) que é o design de arquitetura
-                            de software construído para servir aplicações em rede.</p>
-
-                        <p>A aplicação mais comum de REST é a própria World Wide Web, que utilizou REST como base para o desenvolvimento do HTTP 1.1. REST foi mencionado pela primeira vez no ano 2000 por Roy Fielding em sua tese de doutoramento na qual ele
-                            descreve um design de arquitetura de software construído para servir aplicações em rede. </p>
-                        <pre><code class="language-go">
-http.Handle("/one", fooHandler)
-
-http.HandleFunc("/two", func(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
-})
-log.Fatal(http.ListenAndServe(":8080", nil))
-                        </code></pre>
-                        <p>Meados de 2000 ao ano de 2014 podemos dizer que tivemos a primeira geração de APIs sendo aplicadas em grande escala em diversos cenários e setores da tecnologia. Em 2009 estava nascendo uma das mais populares ferramentas para organização
-                            e gerenciamento de APIs, nasceu como um Hub unificado e em 2015 finalmente foi lançado o projeto de código aberto chamado Kong e em 2019 ela adquiriu nada mais e nada menos que a plataforma de testes de APIs Insomnia.
+                            Em Go temos a possibilidade de criar APIs rEST utilizando:
                         </p>
-                        <p>Com a evolução do protocolo HTTP/1.1 para HTTP/2.0 e HTTP/3.0 temos hoje uma diversidade muito grande quando o assunto é APIs para Web.
+                        <ul><strong>
+                            Standard Library net/http
+                        </strong>
+                        </ul>
+                        <ul><strong>
+                            Frameworks restFull
+                        </strong>
+                        </ul>
 
-                        </p>
                         <p>
-                            REST não é um protocolo ou padrão, mas sim um conjunto de restrições de arquitetura. Os desenvolvedores de API podem implementar a arquitetura REST de maneiras variadas.
+                            Go criou uma lib nativa completa para que possamos desfrutar do seu poder 😍 na criação de apis rEST.
+                        </p>
+
+                        <div class="main-title">Standard Library net/http</div>
+                        <p>
+                            Quando construíos apis rEST utilizando <strong>Standard Library Go</strong> estamos simplismente implementando de forma nativa nossa api utilizando o pkg
+                            <a href="https://pkg.go.dev/net/http" target="_blank">net/http</a>😍.
+                        </p>
+
+                        <p>Exemplo standard_library:</p>
+                        <pre>
+<code class="language-go">.....
+mux := http.NewServeMux()
+
+mux.HandleFunc("/v1/api/ping", Ping)
+
+mux.Handle("/v2/api/ping", http.HandlerFunc(Ping2))
+
+log.Fatal(http.ListenAndServe(":8080",nil))
+.....</code>
+                        </pre>
+                        <p>
+                            Standard Library Go é muito poderosa é tão poderosa que a maioria dos Frameworks rESTFull são desenvolvidas usando net/http.
                         </p>
                     </div>
-
 
                     <div class="pages-menu">
 
@@ -110,43 +120,42 @@ log.Fatal(http.ListenAndServe(":8080", nil))
                 <!--- Coluna Esquerda Fim --->
 
                 <div class="col-12 col-lg-6 column-text px-0">
-
-                    <div class="code-filename">Exemplo Server Go: apirest.go</div>
-
                     <div class="content-height">
-                        <p>
-                            <pre><code class="language-go">
+                        <pre>
+                            <code class="language-go">.....
 func main() {
-    mux := http.NewServeMux() // server mux
-
-    mux.HandleFunc("/ping",
-        func(w http.ResponseWriter, r *http.Request) {
-            // middleware
-            log.Println("ping [success]")
-            w.WriteHeader(http.StatusOK)
-            w.Write([]byte("pong😍"))
-        })  // route ping
-
-    // rotas Methods => PUT,POST,GET,DELETE
-    mux.HandleFunc("/", 
-        func (w http.ResponseWriter, r *http.Request){
-            w.WriteHeader(http.StatusNotFound)
-        })
-    mux.HandleFunc("/api/one", One)
-    mux.HandleFunc("/api/two", Two)
-    mux.HandleFunc("/api/three", Three)
-
-    s := &http.Server{
-        Addr:         "0.0.0.0:8080",
-        Handler:      mux,
-        ReadTimeout:  10 * time.Second,
-        WriteTimeout: 1 * time.Second,
-        MaxHeaderBytes: 1024,
-    }
-    s.ListenAndServe()
+    log.Printf("\nServer run 8080\n")
+    err := http.ListenAndServe(":8080",
+        http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+            w.Write([]byte("DevopsBH for Golang simple" + r.URL.Path))
+        }))
+    log.Fatal(err)
 }
-</pre></code>
-                        </p>
+....</code></pre>
+
+                        <pre>
+    <code class="language-go">.....
+tr := &http.Transport{
+	MaxIdleConns:       10,
+	IdleConnTimeout:    30 * time.Second,
+	DisableCompression: true,
+}
+client := &http.Client{Transport: tr}
+resp, err := client.Get("https://example.com")
+....</code></pre>
+
+                        <pre>
+    <code class="language-go">.....
+s := &http.Server{
+	Addr:           ":8080",
+	Handler:        myHandler,
+	ReadTimeout:    10 * time.Second,
+	WriteTimeout:   10 * time.Second,
+	MaxHeaderBytes: 1 << 20,
+}
+log.Fatal(s.ListenAndServe())
+....</code></pre>
+
                     </div>
 
                     <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
