@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - API REST - Frameworks RESTfull</title>
+    <title>Go Bootcamp - API REST - Docker</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,80 +58,95 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">API REST - Frameworks RESTfull</div>
+                    <div class="main-title">API REST - Docker</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Quando nos referiamos a frameworks RESTfull em Go estamos nos referindo a um conjunto de 
-                            libs externas construídas para nos ajudar na construção de apis REST.
-                        </p>
-                        <p>
-                            Temos diversos <b>Frameworks RESTFull usando pkg net/http</b> dentre eles:
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="" target="_blank">gin</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">echo</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">Beego</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">Macaron</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">chi</a>
-                            </li>
-                        </ul>
-                        <p>Frameworks RestFull usando pkg fasthttp</p>
-                        <ul>
-                            <li>
-                                <a href="" target="_blank">fiber</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">gramework</a>
-                            </li>
-                        </ul>
-                        <p>
-                            No universo de aplicações web utilizando api rEST temos de tudo um pouco, conforme a 
-                            necessidade, ou seja temos uma gama de possiblidades quando o assunto é Web.
-                        </p>
-                        <p>
-                            Se está iniciando na linguagem Go é sempre mais indicado iniciar desenvolvendo de forma mais 
-                            explícita e nativa possível. Isto irá ajuda-lo a entender ainda mais o ecossistema Go 😍.
-                        </p>
-                        <p>
-                            Existem ainda os frameworks para microservices para resolver problemas específicos para este 
-                            universo.
-                        </p>
-                        <p>
-                            <b>Frameworks para microservices:</b>
+                            Docker é um conjunto de produtos de plataformas como serviço (PaaS) que usam a visualização 
+                            em nível de sistema operacional para entregar software em pacotes chamados contêineres. Os 
+                            contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e 
+                            arquivos de configuração; eles podem se comunicar uns com os outros por meio de canais bem 
+                            definidos. Todos os contêineres são executados por um único kernel do sistema operacional e, 
+                            portanto, usam menos recursos do que uma máquina virtual.
                         </p>
                         <ul>
                             <li>
-                                <a href="https://gokit.io/" target="_blank">go-kit</a>
+                                Os Docker Containers contêm binários, bibliotecas e arquivos de configuração junto com 
+                                o próprio aplicativo.
                             </li>
                             <li>
-                                <a href="https://micro.mu/" target="_blank">go micro</a>
+                                Eles não contêm um sistema operacional convidado para cada contêiner e dependem do 
+                                kernel do sistema operacional subjacente, o que torna os contêineres leves.
+                            </li>
+                            <li>
+                                Os contêineres compartilham recursos com outros contêineres no mesmo sistema 
+                                operacional host e fornecem isolamento de processo no nível do sistema operacional. 
                             </li>
                         </ul>
-
+                        <p>
+                            Intalando Docker Engine:
+                        </p>
+                        <pre><code class="language-go">
+sudo apt-get update
+$ sudo apt-get install \
+   apt-transport-https \
+   ca-certificates \
+   curl \
+   gnupg-agent \
+   software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+$ sudo add-apt-repository \
+  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) \
+  stable nightly test"
+$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+                        </code></pre>
+                        <p>
+                            Verifique se a intalação foi feita com sucesso:
+                        </p>
+                        <pre><code class="language-go">
+sudo docker run hello-world
+                        </code></pre>
+                        <p>
+                            Crie um arquivo chamado Dockerfile, copie o código ao lado para ele e cria uma imagem docker:
+                        </p>
+                        <pre><code class="language-go">
+docker build --no-cache -f Dockerfile -t growth/<lang>:latest .
+                        </code></pre>
+                        <p>
+                            Agora, execute-a com este comando:
+                        </p>
+                        <pre><code class="language">
+                            docker run --rm -it -p 8080:8080 growth/<lang>
+                        </code></pre>
+                        <p>
+                            Isso fará com que a imagem docker que você criou seja executada.
+                        </p>
+                        <p>
+                            Também é possível baixar uma imagem pronta pelo site docker.hub com o comando:
+                        </p>
+                        <pre><code class="language-go">
+docker pull jeffotoni/zeroherost
+                        </code></pre>
+                        <p>
+                            Link da imagem: <a href="https://hub.docker.com/r/jeffotoni/zeroherost">jeffotoni/zeroherost</a>
+                        </p>
                     </div>
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="standard_library.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - ZeroHero - Standard Library</span>
+                        <a class="pages-menu-link link-back" href="echo.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Echo</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="fiber.html">
-                            <span>API REST - Fiber</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../../index.html">
+                            <span>Homepage</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -142,41 +157,31 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <div class="code-filename">Exemplo Server Go: apirest.go</div>
-                    
+
                     <div class="content-height">
                         <pre><code class="language-go">
-.....
-func main() {
-    e := echo.New()
-    e.GET("/ping", Ping)
-    e.POST("/api", Post)  
-    e.Logger.SetLevel(log.INFO)
-    e.Start("0.0.0.0:8080")
-}
+#################################################
+# Go + Strach + Muiltistage
+#################################################
+FROM golang:1.17.0 AS builder
+WORKDIR /go/src/main
+COPY . .
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w -X main.ambiente=cloudrun" -o zerohero
 
-.....
-func main() {
-    app := fiber.New(
-        fiber.Config{
-        BodyLimit: 10 * 1024 * 1024,
-        })
-    app.Get("/ping", h.Ping)
-    app.Post("/api", h.Post)
-    app.Get("/api/:name", h.Get)
-    app.Listen("0.0.0.0:8080")
-}
+FROM alpine:latest as builder2
+RUN apk add --no-cache upx
+COPY --from=builder /go/src/main /go/src/main
+WORKDIR /go/src/main
+RUN upx zerohero
 
-.....
-func main() {
-    router := gin.Default()
-    router.GET("/ping", Ping)
-    router.POST("/api", Post)
-    router.PUT("/api/:name", Put)
-    router.DELETE("/api/:name", Delete)
-    router.GET("/api/:name", Get)
-    router.Run("0.0.0.0:8080")
-}
-.....
+FROM alpine:latest AS final
+RUN apk update
+RUN apk add --no-cache tzdata
+RUN apk add --no-cache ca-certificates
+ENV TZ="America/Sao_Paulo"
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+COPY --from=builder2 /go/src/main /
+CMD ["/zerohero"]
                         </code></pre>
                     </div>
                 </div>

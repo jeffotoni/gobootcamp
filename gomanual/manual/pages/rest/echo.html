@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - API REST - Frameworks RESTfull</title>
+    <title>Go Bootcamp - API REST - Echo</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,80 +58,30 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">API REST - Frameworks RESTfull</div>
+                    <div class="main-title">API REST - Echo</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Quando nos referiamos a frameworks RESTfull em Go estamos nos referindo a um conjunto de 
-                            libs externas construídas para nos ajudar na construção de apis REST.
+                            Echo é uma microestrutura PHP semelhante ao Lumen. Ele tem muitos recursos e está bem 
+                            documentado para criar aplicativos da web rápidos e fáceis com o GO. Você pode criar 
+                            uma API restful sem usar uma estrutura. no entanto, as estruturas têm seu próprio conjunto 
+                            de recursos que tornam o desenvolvimento da web mais seguro e rápido.
                         </p>
-                        <p>
-                            Temos diversos <b>Frameworks RESTFull usando pkg net/http</b> dentre eles:
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="" target="_blank">gin</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">echo</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">Beego</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">Macaron</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">chi</a>
-                            </li>
-                        </ul>
-                        <p>Frameworks RestFull usando pkg fasthttp</p>
-                        <ul>
-                            <li>
-                                <a href="" target="_blank">fiber</a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">gramework</a>
-                            </li>
-                        </ul>
-                        <p>
-                            No universo de aplicações web utilizando api rEST temos de tudo um pouco, conforme a 
-                            necessidade, ou seja temos uma gama de possiblidades quando o assunto é Web.
-                        </p>
-                        <p>
-                            Se está iniciando na linguagem Go é sempre mais indicado iniciar desenvolvendo de forma mais 
-                            explícita e nativa possível. Isto irá ajuda-lo a entender ainda mais o ecossistema Go 😍.
-                        </p>
-                        <p>
-                            Existem ainda os frameworks para microservices para resolver problemas específicos para este 
-                            universo.
-                        </p>
-                        <p>
-                            <b>Frameworks para microservices:</b>
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="https://gokit.io/" target="_blank">go-kit</a>
-                            </li>
-                            <li>
-                                <a href="https://micro.mu/" target="_blank">go micro</a>
-                            </li>
-                        </ul>
 
                     </div>
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="standard_library.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - ZeroHero - Standard Library</span>
+                        <a class="pages-menu-link link-back" href="gin.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Gin</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="fiber.html">
-                            <span>API REST - Fiber</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="gin.html">
+                            <span>API REST - Gin</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -145,38 +95,116 @@
                     
                     <div class="content-height">
                         <pre><code class="language-go">
-.....
-func main() {
-    e := echo.New()
-    e.GET("/ping", Ping)
-    e.POST("/api", Post)  
-    e.Logger.SetLevel(log.INFO)
-    e.Start("0.0.0.0:8080")
+package main
+
+import (
+	"net/http"
+
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/gommon/log"
+)
+
+type Response struct {
+	Msg string `json:"msg"`
 }
 
-.....
-func main() {
-    app := fiber.New(
-        fiber.Config{
-        BodyLimit: 10 * 1024 * 1024,
-        })
-    app.Get("/ping", h.Ping)
-    app.Post("/api", h.Post)
-    app.Get("/api/:name", h.Get)
-    app.Listen("0.0.0.0:8080")
+type ZeroHero struct {
+	Response    string      `json:"response"`
+	ID          string      `json:"id"`
+	UUID        string      `json:"uuid,omitempty" bson:"_id"`
+	Name        string      `json:"name"`
+	Powerstats  Powerstats  `json:"powerstats"`
+	Biography   Biography   `json:"biography"`
+	Appearance  Appearance  `json:"appearance"`
+	Work        Work        `json:"work"`
+	Connections Connections `json:"connections"`
+	Image       Image       `json:"image"`
+}
+type Powerstats struct {
+	Intelligence string `json:"intelligence"`
+	Strength     string `json:"strength"`
+	Speed        string `json:"speed"`
+	Durability   string `json:"durability"`
+	Power        string `json:"power"`
+	Combat       string `json:"combat"`
+}
+type Biography struct {
+	FullName        string   `json:"full-name"`
+	AlterEgos       string   `json:"alter-egos"`
+	Aliases         []string `json:"aliases"`
+	PlaceOfBirth    string   `json:"place-of-birth"`
+	FirstAppearance string   `json:"first-appearance"`
+	Publisher       string   `json:"publisher"`
+	Alignment       string   `json:"alignment"`
+}
+type Appearance struct {
+	Gender    string   `json:"gender"`
+	Race      string   `json:"race"`
+	Height    []string `json:"height"`
+	Weight    []string `json:"weight"`
+	EyeColor  string   `json:"eye-color"`
+	HairColor string   `json:"hair-color"`
+}
+type Work struct {
+	Occupation string `json:"occupation"`
+	Base       string `json:"base"`
+}
+type Connections struct {
+	GroupAffiliation string `json:"group-affiliation"`
+	Relatives        string `json:"relatives"`
+}
+type Image struct {
+	URL string `json:"url"`
 }
 
-.....
 func main() {
-    router := gin.Default()
-    router.GET("/ping", Ping)
-    router.POST("/api", Post)
-    router.PUT("/api/:name", Put)
-    router.DELETE("/api/:name", Delete)
-    router.GET("/api/:name", Get)
-    router.Run("0.0.0.0:8080")
+	e := echo.New()
+	e.GET("/ping", Ping)
+	e.POST("/api", Post)
+	e.PUT("/api/:name", Put)
+	e.DELETE("/api/:name", Delete)
+	e.GET("/api/:name", Get)
+	e.GET("/api/:name/:fatia", Get)
+
+	e.Logger.SetLevel(log.INFO)
+	e.Start("0.0.0.0:8080")
 }
-.....
+
+func Ping(c echo.Context) (err error) {
+	return c.JSON(http.StatusCreated, Response{
+		Msg: `ping😍`,
+	})
+
+}
+
+func Post(c echo.Context) (err error) {
+	var zh ZeroHero
+	if err := c.Bind(&zh); err != nil {
+		return err
+	}
+	return c.JSON(http.StatusCreated, &zh)
+}
+
+func Put(c echo.Context) (err error) {
+	return c.JSON(http.StatusCreated, Response{
+		Msg: `put`,
+	})
+}
+
+func Delete(c echo.Context) (err error) {
+	return c.JSON(http.StatusCreated, Response{
+		Msg: `delete`,
+	})
+}
+
+func Get(c echo.Context) (err error) {
+	name := c.Param("name")
+	fatia := c.Param("fatia")
+	println("name:", name, " fatia:", fatia)
+	return c.JSON(http.StatusCreated, Response{
+		Msg: `get`,
+	})
+}
                         </code></pre>
                     </div>
                 </div>

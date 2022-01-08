@@ -58,27 +58,29 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">ZeroHero</div>
+                    <div class="main-title">API REST - ZeroHero</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Este é um simples exemplo que fizemos em um evento online para comunidade de desenvolvedores.</p>
-                        <p>Foi criado uma <strong>API rEST</strong> do zero ao vivo 😍. Legal não é ? 🤗</p>
-                        <p>
-                            Todo trabalho encontra-se em: </p>
-                        <p>
-                            <ul>
-                                . <a href="https://github.com/jeffotoni/gobootcamp/tree/main/zerohero" target="_blank">github/zerohero</a>
-                            </ul>
-                            <ul>
-                                . <a href="https://zerohero.web.s3apis.com/" target="_blank">zerohero.web.s3apis</a>
-                            </ul>
-                            <ul>
-                                . <a href="https://www.youtube.com/watch?v=7HCwOBvp6jA&t=3s" target="_blank">Youtube Live</a>
-                            </ul>
+                            Este é um simples exemplo que fizemos em um evento online para comunidade de desenvolvedores.
+                            Foi criado uma <strong>API rEST</strong> do zero ao vivo 😍. Legal não é ? 🤗
                         </p>
+                        <p>
+                            Todo trabalho encontra-se em: 
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/jeffotoni/gobootcamp/tree/main/zerohero" target="_blank">github/zerohero</a>
+                            </li>
+                            <li>
+                                <a href="https://zerohero.web.s3apis.com/" target="_blank">zerohero.web.s3apis</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=7HCwOBvp6jA&t=3s" target="_blank">Youtube Live</a>
+                            </li>
+                        </ul>
                         <p>
                             Este projeto é meramente didático e prático e foi desenvolvido para o evento do Bootcamp, fiquem a vontade em enviar Pull Request 😍.
                         </p>
@@ -91,8 +93,7 @@
                             ZeroHero é uma api que carrega uma base com os supereróis e permite pesquisas por biography, powerstats, connections , image, work e appearance.
                         </p>
 
-                        <pre>
-<code class="language-go">
+                        <pre><code class="language-go">
 mux := http.NewServeMux()
 mux.HandleFunc("/", Service)
 
@@ -104,20 +105,19 @@ s := &http.Server{
 }
 log.Fatal(s.ListenAndServe())
 .....
-                            </code>
-                        </pre>
+                        </code></pre>
                     </div>
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="../net_http_server/http_new_request.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>net/http Client - NewRequest</span>
+                        <a class="pages-menu-link link-back" href="index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Introdução</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../rest/index.html">
-                            <span>API REST - Introdução</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="standard_library.html">
+                            <span>API REST - Standard Library</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -165,8 +165,6 @@ $ curl -i -XGET -H "Content-Type:application/json" https://zerohero.s3apis.com/a
 </pre></code>
                         </p>
                     </div>
-
-                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
 
                 </div>
                 <!--- Coluna Direita Fim --->
