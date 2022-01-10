@@ -72,28 +72,28 @@
                         </p>
                         <ul>
                             <li>
-                                <a href="" target="_blank">gin</a>
+                                <a href="gin.html" target="_blank">gin</a>
                             </li>
                             <li>
-                                <a href="" target="_blank">echo</a>
+                                <a href="echo.html" target="_blank">echo</a>
                             </li>
                             <li>
-                                <a href="" target="_blank">Beego</a>
+                                <a href="beego.html" target="_blank">Beego</a>
                             </li>
                             <li>
-                                <a href="" target="_blank">Macaron</a>
+                                <a href="macaron.html" target="_blank">Macaron</a>
                             </li>
                             <li>
-                                <a href="" target="_blank">chi</a>
+                                <a href="chi.html" target="_blank">chi</a>
                             </li>
                         </ul>
                         <p>Frameworks RestFull usando pkg fasthttp</p>
                         <ul>
                             <li>
-                                <a href="" target="_blank">fiber</a>
+                                <a href="fiber.html" target="_blank">fiber</a>
                             </li>
                             <li>
-                                <a href="" target="_blank">gramework</a>
+                                <a href="gramework.html" target="_blank">gramework</a>
                             </li>
                         </ul>
                         <p>
@@ -109,17 +109,17 @@
                             universo.
                         </p>
                         <p>
-                            <a href="https://github.com/smallnest/go-web-framework-benchmark">Benchmarks comparandos as frameworks web</a>
+                            <a href="https://github.com/smallnest/go-web-framework-benchmark" target="_blank">Benchmarks comparandos as frameworks web</a>
                         </p>
                         <p>
                             <b>Frameworks para microservices:</b>
                         </p>
                         <ul>
                             <li>
-                                <a href="https://gokit.io/" target="_blank">go-kit</a>
+                                go-kit
                             </li>
                             <li>
-                                <a href="https://micro.mu/" target="_blank">go micro</a>
+                                go micro
                             </li>
                         </ul>
 
@@ -148,32 +148,32 @@
                     
                     <div class="content-height">
                         <pre><code class="language-go">
-web.Router("/", &MainController{})
-web.Run() // Beego
-
-app := gramework.New()
-app.GET("/", "hello, grameworld")
-app.ListenAndServe() // Gramework
-
-r := chi.NewRouter()
-r.Get("/", func)
-http.ListenAndServe(":3333", r) // Chi
-
+r := gin.Default()
+r.GET("zerohero/", func)
+r.Run() // Gin
+           
 e := echo.New()
-e.GET("/", func)
+e.GET("zerohero/", func)
 e.Logger.Fatal(e.Start(":1323")) // Echo
 
-app := fiber.New()
-app.Get("/", func)
-log.Fatal(app.Listen(":3000")) // Fiber
-
-r := gin.Default()
-r.GET("/ping", func)
-r.Run() // Gin
+web.Router("zerohero/", &MainController{})
+web.Run() // Beego
 
 m := macaron.Classic()
-m.Get("/", func)
+m.Get("zerohero/", func)
 m.Run() // Macaron
+
+r := chi.NewRouter()
+r.Get("zerohero/", func)
+http.ListenAndServe(":3333", r) // Chi
+
+app := fiber.New()
+app.Get("zerohero/", func)
+log.Fatal(app.Listen(":3000")) // Fiber
+
+app := gramework.New()
+app.GET("zerohero/", "hello, grameworld")
+app.ListenAndServe() // Gramework
                         </code></pre>
                     </div>
                 </div>

@@ -94,8 +94,8 @@ func main() {
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="gin.html">
-                            <span>API REST - Gin</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="../../index.html">
+                            <span>Homepage</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -108,32 +108,24 @@ func main() {
                     <div class="code-filename">gorilla.mux.go</div>
                     
                     <div class="content-height">
-                        <p>
-                            Aqui, registramos três rotas de mapeamento de caminhos de URL para manipuladores. 
-                            Isso é equivalente a como funciona http.HandleFunc (): se um URL de solicitação de 
-                            entrada corresponder a um dos caminhos, o manipulador correspondente é chamado de 
-                            passagem (http.ResponseWriter, * http.Request) como parâmetros.
-                        </p>
-                        <p>
-                            Os caminhos podem ter variáveis. Eles são definidos usando o formato {nome} ou 
-                            {nome: padrão}. Se um padrão de expressão regular não for definido, a variável 
-                            correspondida será qualquer coisa até a próxima barra. Por exemplo:
-                        </p>
                         <pre><code class="language-go">
-r := mux.NewRouter()
-r.HandleFunc("/products/{key}", ProductHandler)
-r.HandleFunc("/articles/{category}/", ArticlesCategoryHandler)
-r.HandleFunc("/articles/{category}/{id:[0-9]+}", ArticleHandler)
-                        </code></pre>
-                        <p>
-                            Os nomes são usados para criar um mapa de variáveis de rota que podem ser recuperadas 
-                            chamando mux.Vars ():
-                        </p>
-                        <pre><code class="language-go">
-func ArticlesCategoryHandler(w http.ResponseWriter, r *http.Request) {
-    vars := mux.Vars(r)
-    w.WriteHeader(http.StatusOK)
-    fmt.Fprintf(w, "Category: %v\n", vars["category"])
+package main
+
+import (
+    "fmt"
+    "net/http"
+
+    "github.com/gorilla/mux"
+)
+
+func main() {
+    r := mux.NewRouter()
+
+    r.HandleFunc("/zerohero/", func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "Hello")
+    })
+
+    http.ListenAndServe(":8000", r)
 }
                         </code></pre>
                     </div>
