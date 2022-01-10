@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - API REST - Gramework</title>
+    <title>Go Bootcamp - Router - Gorilla.Mux</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,28 +58,44 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">API REST - Gramework</div>
+                    <div class="main-title">Router - Gorilla.Mux</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Gramework é um framework da web rápido, altamente eficaz, confiável, com foco em SPA, 
-                            feito por um mantenedor fasthttp. Você obtém a API simples, mas poderosa, nós lidamos 
-                            com otimizações internamente. Ficamos sempre contentes em ver suas solicitações de recursos e PRs.
+                            O pacote gorilla / mux implementa um roteador e despachante de solicitação para 
+                            corresponder as solicitações de entrada ao seu respectivo manipulador.
                         </p>
+                        <p>
+                            O nome mux significa "multiplexador de solicitação HTTP". Como o http.ServeMux padrão, 
+                            mux.Router compara solicitações de entrada com uma lista de rotas registradas e chama 
+                            um manipulador para a rota que corresponde à URL ou outras condições. 
+                        </p>
+                        <p>
+                            Vamos começar a registrar alguns caminhos e manipuladores de URL:
+                        </p>
+                        <pre><code class="language-go">
+func main() {
+    r := mux.NewRouter()
+    r.HandleFunc("/", HomeHandler)
+    r.HandleFunc("/products", ProductsHandler)
+    r.HandleFunc("/articles", ArticlesHandler)
+    http.Handle("/", r)
+}
+                        </code></pre>
                     </div>
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="chi.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Chi</span>
+                        <a class="pages-menu-link link-back" href="../rest/gramework.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Gramework</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="../router/gorilla.html">
-                            <span>Router - Gorilla.Mux</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="gin.html">
+                            <span>API REST - Gin</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -89,22 +105,35 @@
 
                 <div class="col-12 col-lg-6 column-text px-0">
 
-                    <div class="code-filename">gramework.go</div>
+                    <div class="code-filename">gorilla.mux.go</div>
                     
                     <div class="content-height">
+                        <p>
+                            Aqui, registramos três rotas de mapeamento de caminhos de URL para manipuladores. 
+                            Isso é equivalente a como funciona http.HandleFunc (): se um URL de solicitação de 
+                            entrada corresponder a um dos caminhos, o manipulador correspondente é chamado de 
+                            passagem (http.ResponseWriter, * http.Request) como parâmetros.
+                        </p>
+                        <p>
+                            Os caminhos podem ter variáveis. Eles são definidos usando o formato {nome} ou 
+                            {nome: padrão}. Se um padrão de expressão regular não for definido, a variável 
+                            correspondida será qualquer coisa até a próxima barra. Por exemplo:
+                        </p>
                         <pre><code class="language-go">
-package main
-
-import (
-	"github.com/gramework/gramework"
-)
-
-func main() {
-	app := gramework.New()
-
-	app.GET("/", "hello, grameworld")
-
-	app.ListenAndServe()
+r := mux.NewRouter()
+r.HandleFunc("/products/{key}", ProductHandler)
+r.HandleFunc("/articles/{category}/", ArticlesCategoryHandler)
+r.HandleFunc("/articles/{category}/{id:[0-9]+}", ArticleHandler)
+                        </code></pre>
+                        <p>
+                            Os nomes são usados para criar um mapa de variáveis de rota que podem ser recuperadas 
+                            chamando mux.Vars ():
+                        </p>
+                        <pre><code class="language-go">
+func ArticlesCategoryHandler(w http.ResponseWriter, r *http.Request) {
+    vars := mux.Vars(r)
+    w.WriteHeader(http.StatusOK)
+    fmt.Fprintf(w, "Category: %v\n", vars["category"])
 }
                         </code></pre>
                     </div>

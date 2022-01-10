@@ -142,11 +142,40 @@
                 </div>
                 <!--- Coluna Esquerda Fim --->
 
-                <div class="col-12 col-lg-6 column-code">
+                <div class="col-12 col-lg-6 column-text px-0">
 
                     <div class="code-filename">frameworks_restfull.go</div>
                     
-                    <img src="../../img/benchmark.png" alt="Editor Vim" style="width: 80%">
+                    <div class="content-height">
+                        <pre><code class="language-go">
+web.Router("/", &MainController{})
+web.Run() // Beego
+
+app := gramework.New()
+app.GET("/", "hello, grameworld")
+app.ListenAndServe() // Gramework
+
+r := chi.NewRouter()
+r.Get("/", func)
+http.ListenAndServe(":3333", r) // Chi
+
+e := echo.New()
+e.GET("/", func)
+e.Logger.Fatal(e.Start(":1323")) // Echo
+
+app := fiber.New()
+app.Get("/", func)
+log.Fatal(app.Listen(":3000")) // Fiber
+
+r := gin.Default()
+r.GET("/ping", func)
+r.Run() // Gin
+
+m := macaron.Classic()
+m.Get("/", func)
+m.Run() // Macaron
+                        </code></pre>
+                    </div>
                 </div>
                 <!--- Coluna Direita Fim --->
             </div>
