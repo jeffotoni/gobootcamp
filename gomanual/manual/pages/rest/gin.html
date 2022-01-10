@@ -100,12 +100,32 @@ import "github.com/gin-gonic/gin"
 
 func main() {
 	r := gin.Default()
-	r.GET("zerohero/", func(c *gin.Context) {
+
+	r.GET("/v1/api/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "pong",
+			"message": "GETTING...",
 		})
 	})
-	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+
+    r.POST("/v1/api/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "POSTING...",
+		})
+	})
+
+    r.PUT("/v1/api/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "PUTTING...",
+		})
+	})
+
+    r.DELETE("/v1/api/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "DELETING...",
+		})
+	})
+
+	r.Run("localhost:8000")
 }
                         </code></pre>
                     </div>

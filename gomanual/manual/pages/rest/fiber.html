@@ -106,11 +106,20 @@ import (
 func main() {
     app := fiber.New()
 
-    app.Get("zerohero/", func (c *fiber.Ctx) error {
-        return c.SendString("Hello, World!")
+    app.Get("/v1/api/", func (c *fiber.Ctx) error {
+        return c.SendString("GETTING...")
+    })
+    app.Post("/v1/api/", func (c *fiber.Ctx) error {
+        return c.SendString("POSTING...")
+    })
+    app.Delete("/v1/api/", func (c *fiber.Ctx) error {
+        return c.SendString("DELETING...")
+    })
+    app.Put("/v1/api/", func (c *fiber.Ctx) error {
+        return c.SendString("PUTTING...")
     })
 
-    log.Fatal(app.Listen(":3000"))
+    log.Fatal(app.Listen(":8000"))
 }
                         </code></pre>
                     </div>
