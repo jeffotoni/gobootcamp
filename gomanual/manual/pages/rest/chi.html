@@ -110,11 +110,23 @@ func main() {
 	r.Use(middleware.Logger)
 	r.Use(middleware.Recoverer)
 
-	r.Get("/zerohero/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("hello world"))
+	r.Get("/v1/api", func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("GETTING..."))
 	})
 
-	http.ListenAndServe(":3333", r)
+    r.Post("/v1/api", func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("POSTING..."))
+	})
+
+    r.Put("/v1/api", func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("PUTTING..."))
+	})
+
+    r.Delete("/v1/api", func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("DELETING..."))
+	})
+
+	http.ListenAndServe(":8000", r)
 }
                         </code></pre>
                     </div>

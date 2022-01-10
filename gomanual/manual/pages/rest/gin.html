@@ -101,28 +101,20 @@ import "github.com/gin-gonic/gin"
 func main() {
 	r := gin.Default()
 
-	r.GET("/v1/api/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "GETTING...",
-		})
+	r.GET("/v1/api", func(c *gin.Context) {
+		c.JSON(200, gin.H{"message": "GETTING..."})
 	})
 
-    r.POST("/v1/api/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "POSTING...",
-		})
+    r.POST("/v1/api", func(c *gin.Context) {
+		c.JSON(200, gin.H{"message": "POSTING..."})
 	})
 
-    r.PUT("/v1/api/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "PUTTING...",
-		})
+    r.PUT("/v1/api", func(c *gin.Context) {
+		c.JSON(200, gin.H{"message": "PUTTING..."})
 	})
 
-    r.DELETE("/v1/api/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "DELETING...",
-		})
+    r.DELETE("/v1/api", func(c *gin.Context) {
+		c.JSON(200, gin.H{"message": "DELETING..."})
 	})
 
 	r.Run("localhost:8000")

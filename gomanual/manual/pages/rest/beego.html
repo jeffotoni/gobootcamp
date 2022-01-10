@@ -130,12 +130,24 @@ type MainController struct {
 }
 
 func (this *MainController) Get() {
-    this.Ctx.WriteString("hello world")
+    this.Ctx.WriteString("GETTING...")
+}
+
+func (this *MainController) Post() {
+    this.Ctx.WriteString("POSTING...")
+}
+
+func (this *MainController) Put() {
+    this.Ctx.WriteString("PUTTING...")
+}
+
+func (this *MainController) Delete() {
+    this.Ctx.WriteString("DELETING...")
 }
 
 func main() {
-    web.Router("zerohero/", &MainController{})
-    web.Run()
+    web.Router("/v1/api", &MainController{})
+    web.Run("localhost:8000")
 }
                         </code></pre>
                     </div>

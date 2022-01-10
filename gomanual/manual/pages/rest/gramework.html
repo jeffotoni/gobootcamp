@@ -102,9 +102,12 @@ import (
 func main() {
 	app := gramework.New()
 
-	app.GET("/zerohero/", "hello, grameworld")
+	app.GET("/v1/api", "GETTING...")
+    app.POST("/v1/api", "POSTING...")
+    app.PUT("/v1/api", "PUTTING...")
+    app.DELETE("/v1/api", "DELETING...")
 
-	app.ListenAndServe()
+	app.ListenAndServe("localhost:8000")
 }
                         </code></pre>
                     </div>

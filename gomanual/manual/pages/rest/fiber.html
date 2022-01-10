@@ -106,16 +106,16 @@ import (
 func main() {
     app := fiber.New()
 
-    app.Get("/v1/api/", func (c *fiber.Ctx) error {
+    app.Get("/v1/api", func (c *fiber.Ctx) error {
         return c.SendString("GETTING...")
     })
-    app.Post("/v1/api/", func (c *fiber.Ctx) error {
+    app.Post("/v1/api", func (c *fiber.Ctx) error {
         return c.SendString("POSTING...")
     })
-    app.Delete("/v1/api/", func (c *fiber.Ctx) error {
+    app.Delete("/v1/api", func (c *fiber.Ctx) error {
         return c.SendString("DELETING...")
     })
-    app.Put("/v1/api/", func (c *fiber.Ctx) error {
+    app.Put("/v1/api", func (c *fiber.Ctx) error {
         return c.SendString("PUTTING...")
     })
 

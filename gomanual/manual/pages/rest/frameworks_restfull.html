@@ -149,31 +149,40 @@
                     <div class="content-height">
                         <pre><code class="language-go">
 r := gin.Default()
-r.GET("zerohero/", func)
-r.Run() // Gin
+r.GET("/v1/api", func)
+r.Run("localhost:8000") // Gin
            
 e := echo.New()
-e.GET("zerohero/", func)
-e.Logger.Fatal(e.Start(":1323")) // Echo
+e.GET("/v1/api", func)
+e.Logger.Fatal(e.Start(":8000")) // Echo
 
-web.Router("zerohero/", &MainController{})
-web.Run() // Beego
+web.Router("/v1/api", func)
+web.Run("localhost:8000") // Beego
 
 m := macaron.Classic()
-m.Get("zerohero/", func)
-m.Run() // Macaron
+m.Get("/v1/api", func)
+m.Run("localhost:8000") // Macaron
 
 r := chi.NewRouter()
-r.Get("zerohero/", func)
-http.ListenAndServe(":3333", r) // Chi
+r.Get("/v1/api", func)
+http.ListenAndServe(":8000", r) // Chi
 
 app := fiber.New()
-app.Get("zerohero/", func)
-log.Fatal(app.Listen(":3000")) // Fiber
+app.Get("/v1/api", func)
+log.Fatal(app.Listen(":8000")) // Fiber
 
 app := gramework.New()
-app.GET("zerohero/", "hello, grameworld")
-app.ListenAndServe() // Gramework
+app.GET("/v1/api", func
+app.ListenAndServe("localhost:8000") // Gramework
+                        </code></pre>
+                        <p>
+                            Testar endpoints:
+                        </p>
+                        <pre><code class="language-go">
+curl -i -XGET "http://localhost:8000/v1/api"     // Esperado: GETTING...
+curl -i -XPOST "http://localhost:8000/v1/api"    // Esperado: POSTING...
+curl -i -XPUT "http://localhost:8000/v1/api"     // Esperado: PUTTING...
+curl -i -XDELETE "http://localhost:8000/v1/api"  // Esperado: DELETING...
                         </code></pre>
                     </div>
                 </div>

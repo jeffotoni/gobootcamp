@@ -123,10 +123,22 @@ import "gopkg.in/macaron.v1"
 
 func main() {
     m := macaron.Classic()
-    m.Get("zerohero/", func() string {
-        return "Hello world!"
+    m.Get("/v1/api", func() string {
+        return "GETTING..."
     })
-    m.Run()
+
+    m.Post("/v1/api", func() string {
+        return "POSTING..."
+    })
+
+    m.Put("/v1/api", func() string {
+        return "PUTTING..."
+    })
+
+    m.Delete("/v1/api", func() string {
+        return "DELETING..."
+    })
+    m.Run("localhost:8000")
 }
                         </code></pre>
                     </div>

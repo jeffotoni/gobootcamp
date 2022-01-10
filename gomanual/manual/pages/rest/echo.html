@@ -131,10 +131,22 @@ import (
 
 func main() {
 	e := echo.New()
-	e.GET("zerohero/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
+	e.GET("/v1/api", func(c echo.Context) error {
+		return c.String(http.StatusOK, "GETTING...")
 	})
-	e.Logger.Fatal(e.Start(":1323"))
+
+    e.POST("/v1/api", func(c echo.Context) error {
+		return c.String(http.StatusOK, "POSTING...")
+	})
+
+    e.PUT("/v1/api", func(c echo.Context) error {
+		return c.String(http.StatusOK, "PUTTING...")
+	})
+
+    e.DELETE("/v1/api", func(c echo.Context) error {
+		return c.String(http.StatusOK, "DELETING...")
+	})
+	e.Logger.Fatal(e.Start(":8000"))
 }
 
                         </code></pre>
