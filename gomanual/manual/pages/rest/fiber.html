@@ -91,27 +91,26 @@
 
                 <div class="col-12 col-lg-6 column-text px-0">
 
-                    <div class="code-filename">Exemplo Server Go: apirest.go</div>
+                    <div class="code-filename">fiber.go</div>
                     
                     <div class="content-height">
                         <pre><code class="language-go">
 package main
 
 import (
-  "github.com/gofiber/fiber/v2"
+    "log"
+
+    "github.com/gofiber/fiber/v2"
 )
 
 func main() {
-  app := fiber.New(
-    fiber.Config{
-      BodyLimit: 10 * 1024 * 1024,
+    app := fiber.New()
+
+    app.Get("/", func (c *fiber.Ctx) error {
+        return c.SendString("Hello, World!")
     })
 
-  app.Get("/ping", func(c *fiber.Ctx) error {
-        return c.Status(200).SendString("pong")
-  })
-
-  app.Listen("0.0.0.0:8080")
+    log.Fatal(app.Listen(":3000"))
 }
                         </code></pre>
                     </div>

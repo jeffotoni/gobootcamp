@@ -109,6 +109,9 @@
                             universo.
                         </p>
                         <p>
+                            <a href="https://github.com/smallnest/go-web-framework-benchmark">Benchmarks comparandos as frameworks web</a>
+                        </p>
+                        <p>
                             <b>Frameworks para microservices:</b>
                         </p>
                         <ul>
@@ -139,46 +142,11 @@
                 </div>
                 <!--- Coluna Esquerda Fim --->
 
-                <div class="col-12 col-lg-6 column-text px-0">
+                <div class="col-12 col-lg-6 column-code">
 
-                    <div class="code-filename">Exemplo Server Go: apirest.go</div>
+                    <div class="code-filename">frameworks_restfull.go</div>
                     
-                    <div class="content-height">
-                        <pre><code class="language-go">
-.....
-func main() {
-    e := echo.New()
-    e.GET("/ping", Ping)
-    e.POST("/api", Post)  
-    e.Logger.SetLevel(log.INFO)
-    e.Start("0.0.0.0:8080")
-}
-
-.....
-func main() {
-    app := fiber.New(
-        fiber.Config{
-        BodyLimit: 10 * 1024 * 1024,
-        })
-    app.Get("/ping", h.Ping)
-    app.Post("/api", h.Post)
-    app.Get("/api/:name", h.Get)
-    app.Listen("0.0.0.0:8080")
-}
-
-.....
-func main() {
-    router := gin.Default()
-    router.GET("/ping", Ping)
-    router.POST("/api", Post)
-    router.PUT("/api/:name", Put)
-    router.DELETE("/api/:name", Delete)
-    router.GET("/api/:name", Get)
-    router.Run("0.0.0.0:8080")
-}
-.....
-                        </code></pre>
-                    </div>
+                    <img src="../../img/benchmark.png" alt="Editor Vim" style="width: 80%">
                 </div>
                 <!--- Coluna Direita Fim --->
             </div>

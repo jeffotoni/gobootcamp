@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - API REST - ZeroHero - Standard Library</title>
+    <title>Go Bootcamp - API REST - Standard Library</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,7 +58,7 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">API REST - ZeroHero - Standard Library</div>
+                    <div class="main-title">API REST - Standard Library</div>
                     <!--- Page title Fim --->
 
 
@@ -121,7 +121,7 @@ log.Fatal(http.ListenAndServe(":8080",nil))
 
                 <div class="col-12 col-lg-6 column-text px-0">
 
-                    <div class="code-filename">Exemplo Server Go: apirest.go</div>
+                    <div class="code-filename">standard_library.go</div>
 
                     <div class="content-height">
                         <pre><code class="language-go">
@@ -136,7 +136,7 @@ func main() {
 }
 ....
                         </code></pre>
-                        <br>
+                        
                         <pre><code class="language-go">
 .....
 tr := &http.Transport{
@@ -148,7 +148,7 @@ client := &http.Client{Transport: tr}
 resp, err := client.Get("https://example.com")
 ....
                         </code></pre>
-                        <br>
+                        
                         <pre><code class="language-go">
 .....
 s := &http.Server{

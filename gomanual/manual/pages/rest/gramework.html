@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - API REST - Echo</title>
+    <title>Go Bootcamp - API REST - Gramework</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,56 +58,28 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">API REST - Echo</div>
+                    <div class="main-title">API REST - Gramework</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Echo é uma microestrutura PHP semelhante ao Lumen. Ele tem muitos recursos e está bem 
-                            documentado para criar aplicativos da web rápidos e fáceis com o GO. Você pode criar 
-                            uma API restful sem usar uma estrutura. no entanto, as estruturas têm seu próprio conjunto 
-                            de recursos que tornam o desenvolvimento da web mais seguro e rápido.
+                            Gramework é um framework da web rápido, altamente eficaz, confiável, com foco em SPA, 
+                            feito por um mantenedor fasthttp. Você obtém a API simples, mas poderosa, nós lidamos 
+                            com otimizações internamente. Ficamos sempre contentes em ver suas solicitações de recursos e PRs.
                         </p>
-                        <ul>
-                            <li>
-                                Roteador HTTP altamente otimizado com zero alocação de memória dinâmica que prioriza 
-                                rotas de forma inteligente.
-                            </li>
-                            <li>
-                                Construa uma API RESTful robusta e escalonável, facilmente organizada em grupos.
-                            </li>
-                            <li>
-                                Instalar automaticamente certificados TLS do Let's Encrypt.
-                            </li>
-                            <li>
-                                O suporte HTTP / 2 melhora a velocidade e fornece uma melhor experiência do usuário.
-                            </li>
-                            <li>
-                                Muitos middleware embutido para usar ou definir o seu próprio. O middleware pode ser 
-                                definido em nível de raiz, grupo ou rota.
-                            </li>
-                            <li>
-                                Vinculação de dados para carga útil de solicitação HTTP, incluindo JSON, XML ou 
-                                dados de formulário.
-                            </li>
-                            <li>
-                                API para enviar uma variedade de respostas HTTP, incluindo JSON, XML, HTML, 
-                                Arquivo, Anexo, Inline, Fluxo ou Blob.
-                            </li>
-                        </ul>
                     </div>
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="gin.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Gin</span>
+                        <a class="pages-menu-link link-back" href="chi.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Chi</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="beego.html">
-                            <span>API REST - Beego</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="gin.html">
+                            <span>API REST - Gin</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -117,26 +89,23 @@
 
                 <div class="col-12 col-lg-6 column-text px-0">
 
-                    <div class="code-filename">echo.go</div>
+                    <div class="code-filename">gramework.go</div>
                     
                     <div class="content-height">
                         <pre><code class="language-go">
 package main
 
 import (
-	"net/http"
-	
-	"github.com/labstack/echo/v4"
+	"github.com/gramework/gramework"
 )
 
 func main() {
-	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
-	})
-	e.Logger.Fatal(e.Start(":1323"))
-}
+	app := gramework.New()
 
+	app.GET("/", "hello, grameworld")
+
+	app.ListenAndServe()
+}
                         </code></pre>
                     </div>
                 </div>

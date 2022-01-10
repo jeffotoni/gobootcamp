@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
     <meta name="author" content="jeffotoni">
-    <title>Go Bootcamp - API REST - Echo</title>
+    <title>Go Bootcamp - API REST - Beego</title>
 
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
@@ -58,56 +58,54 @@
                 <div class="col-12 col-lg-6 column-text px-0">
 
                     <!--- Page title --->
-                    <div class="main-title">API REST - Echo</div>
+                    <div class="main-title">API REST - Beego</div>
                     <!--- Page title Fim --->
 
 
                     <div class="content-height">
                         <p>
-                            Echo é uma microestrutura PHP semelhante ao Lumen. Ele tem muitos recursos e está bem 
-                            documentado para criar aplicativos da web rápidos e fáceis com o GO. Você pode criar 
-                            uma API restful sem usar uma estrutura. no entanto, as estruturas têm seu próprio conjunto 
-                            de recursos que tornam o desenvolvimento da web mais seguro e rápido.
+                            FÁCIL DE USAR
                         </p>
-                        <ul>
-                            <li>
-                                Roteador HTTP altamente otimizado com zero alocação de memória dinâmica que prioriza 
-                                rotas de forma inteligente.
-                            </li>
-                            <li>
-                                Construa uma API RESTful robusta e escalonável, facilmente organizada em grupos.
-                            </li>
-                            <li>
-                                Instalar automaticamente certificados TLS do Let's Encrypt.
-                            </li>
-                            <li>
-                                O suporte HTTP / 2 melhora a velocidade e fornece uma melhor experiência do usuário.
-                            </li>
-                            <li>
-                                Muitos middleware embutido para usar ou definir o seu próprio. O middleware pode ser 
-                                definido em nível de raiz, grupo ou rota.
-                            </li>
-                            <li>
-                                Vinculação de dados para carga útil de solicitação HTTP, incluindo JSON, XML ou 
-                                dados de formulário.
-                            </li>
-                            <li>
-                                API para enviar uma variedade de respostas HTTP, incluindo JSON, XML, HTML, 
-                                Arquivo, Anexo, Inline, Fluxo ou Blob.
-                            </li>
-                        </ul>
+                        <p>
+                            Com suporte RESTful, modelo MVC e uso de ferramenta Bee para construir seus aplicativos 
+                            rapidamente com recursos que incluem compilação a quente de código, teste automatizado e 
+                            empacotamento e implantação automatizados.
+                        </p>
+                        <p>
+                            INTELIGENTE
+                        </p>
+                        <p>
+                            Com roteamento e monitoramento inteligentes, é capaz de monitorar seu QPS, uso de memória 
+                            e CPU e status de goroutine. Ele fornece a você controle total de seus aplicativos online.
+                        </p>
+                        <p>
+                            MODULAR
+                        </p>
+                        <p>
+                            Com poderosos módulos integrados, incluindo controle de sessão, armazenamento em cache, 
+                            registro, análise de configuração, supervisão de desempenho, manipulação de contexto, 
+                            suporte ORM e simulação de solicitações. Você obtém a base poderosa para qualquer tipo de aplicativo.
+                        </p>
+                        <p>
+                            ALTA PERFORMANCE
+                        </p>
+                        <p>
+                            Com pacote nativo Go http para lidar com as solicitações e a concorrência eficiente de goroutine. 
+                            Seus aplicativos do beego podem lidar com o tráfego massivo, como o beego está fazendo em muitas 
+                            produções. 
+                        </p>
                     </div>
 
                     <div class="pages-menu">
 
-                        <a class="pages-menu-link link-back" href="gin.html">
-                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Gin</span>
+                        <a class="pages-menu-link link-back" href="echo.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Echo</span>
                         </a>
 
                         <img src="../../../img/gopher-docker.png" alt="" />
 
-                        <a class="pages-menu-link link-forward" href="beego.html">
-                            <span>API REST - Beego</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        <a class="pages-menu-link link-forward" href="macaron.html">
+                            <span>API REST - Macaron</span> &nbsp; <i class="fa fa-chevron-right"></i>
                         </a>
 
                     </div>
@@ -117,26 +115,28 @@
 
                 <div class="col-12 col-lg-6 column-text px-0">
 
-                    <div class="code-filename">echo.go</div>
+                    <div class="code-filename">beego.go</div>
                     
                     <div class="content-height">
                         <pre><code class="language-go">
 package main
 
 import (
-	"net/http"
-	
-	"github.com/labstack/echo/v4"
+    "github.com/beego/beego/v2/server/web"
 )
 
-func main() {
-	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
-	})
-	e.Logger.Fatal(e.Start(":1323"))
+type MainController struct {
+    web.Controller
 }
 
+func (this *MainController) Get() {
+    this.Ctx.WriteString("hello world")
+}
+
+func main() {
+    web.Router("/", &MainController{})
+    web.Run()
+}
                         </code></pre>
                     </div>
                 </div>
