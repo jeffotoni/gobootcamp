@@ -109,12 +109,15 @@ func main() {
     app.Get("/v1/api", func (c *fiber.Ctx) error {
         return c.SendString("GETTING...")
     })
+
     app.Post("/v1/api", func (c *fiber.Ctx) error {
         return c.SendString("POSTING...")
     })
+
     app.Delete("/v1/api", func (c *fiber.Ctx) error {
         return c.SendString("DELETING...")
     })
+
     app.Put("/v1/api", func (c *fiber.Ctx) error {
         return c.SendString("PUTTING...")
     })

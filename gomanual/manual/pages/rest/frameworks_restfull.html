@@ -175,15 +175,6 @@ app := gramework.New()
 app.GET("/v1/api", func
 app.ListenAndServe("localhost:8000") // Gramework
                         </code></pre>
-                        <p>
-                            Testar endpoints:
-                        </p>
-                        <pre><code class="language-go">
-curl -i -XGET "http://localhost:8000/v1/api"     // Esperado: GETTING...
-curl -i -XPOST "http://localhost:8000/v1/api"    // Esperado: POSTING...
-curl -i -XPUT "http://localhost:8000/v1/api"     // Esperado: PUTTING...
-curl -i -XDELETE "http://localhost:8000/v1/api"  // Esperado: DELETING...
-                        </code></pre>
                     </div>
                 </div>
                 <!--- Coluna Direita Fim --->
