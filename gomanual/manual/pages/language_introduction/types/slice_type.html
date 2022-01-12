@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Tipos - Slice</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Tipos - Slice</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Um <i>slice</i> é um descritor para um segmento contíguo de um <i>array</i> subjacente 
+                            e fornece acesso a uma sequência numerada de elementos desse <i>array</i>. Um tipo 
+                            de <i>slice</i> denota o conjunto de todas as fatias de <i>arrays</i> de seu tipo de elemento. 
+                            O valor de um <i>slice</i> não inicializada é <i>nil</i>.
+                        </p>
+                        <p>
+                            Um <i>array</i> tem um tamanho fixo. Um <i>slice</i>, por outro lado, é uma visão 
+                            flexível e de tamanho dinâmico dos elementos de um <i>array</i>. Na prática, os 
+                            <i>slices</i> são muito mais comuns do que os <i>arrays</i>.
+                        </p>
+                        <p>
+                            Um <i>slice</i> é formad especificando dois índices, um limite inferior e um 
+                            limite superior, separados por dois pontos:
+                        </p>
+                        <p>
+                            O tipo []T é um <i>slice</i> com elementos do tipo T.
+                        </p>
+                        <pre><code class="language-go">
+a[primeiro:último]
+                        </code></pre>
+                        <p>
+                            Isso seleciona um intervalo semi-aberto que inclui o primeiro elemento, 
+                            mas exclui o último.
+                        </p>
+                        <p>
+                            Um novo valor de <i>slice</i> inicializado para um determinado tipo de elemento T é 
+                            feito usando a função embutida make, que pega um tipo de <i>slice</i> e parâmetros 
+                            especificando o comprimento e, opcionalmente, a capacidade. Um <i>slice</i> criado 
+                            com make sempre aloca um novo <i>array</i> oculto ao qual o valor do <i>slice</i> retornado 
+                            se refere.
+                        </p>
+                        <pre><code class="language-go">
+make([]T, length, capacity)
+                        </code></pre>
+                        <p>
+                            Como os <i>arrays</i>, os <i>slices</i> são sempre unidimensionais, mas podem ser 
+                            compostos para construir objetos de dimensões superiores. Com <i>arrays</i> de 
+                            <i>arrays</i>, os <i>arrays</i> internos são, por construção, sempre do mesmo comprimento; 
+                            no entanto, com <i>slices</i> de <i>slices</i> (ou <i>arrays</i> de <i>slices</i>), os comprimentos 
+                            internos podem variar dinamicamente. Além disso, os <i>slices</i> interns devem ser 
+                            inicializados individualmente.
+                        </p>
+
+                    </div>
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="array_type.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipos - Array</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="struct_type.html">
+                            <span>Tipos - Struct</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">slice.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="slice.go">
+package main
+
+import "fmt"
+
+func main() {
+  primos := [7]int{2, 3, 5, 7, 11, 13, 17}
+  
+  var p []int = primos[2:5]
+  fmt.Println(p)
+
+  a := make([]int,4)
+  a[0]=12
+  fmt.Println("a", a)
+
+  b := make([]int, 0, 5)
+  fmt.Println("b", b)
+  
+  c := b[:2]
+  fmt.Println("c", c)
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>
