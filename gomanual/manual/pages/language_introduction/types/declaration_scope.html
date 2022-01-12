@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Tipos - Declaração e Escopo</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Tipos - Declaração e Escopo</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Uma declaração associa um identificador não vazio a uma constante, tipo, variável, 
+                            função, label ou pacote. Cada identificador em um programa deve ser declarado. 
+                            Nenhum identificador pode ser declarado duas vezes no mesmo bloco e nenhum identificador 
+                            pode ser declarado no bloco de arquivo e pacote.
+                        </p>
+                        <p>
+                            O identificador em branco pode ser usado como qualquer outro identificador em uma 
+                            declaração, mas não introduz uma vinculação e, portanto, não é declarado. No bloco de 
+                            pacote, o identificador init só pode ser usado para declarações de função init e, como 
+                            o identificador em branco, não introduz uma nova ligação.
+                        </p>
+                        <p>
+                            Go tem um escopo léxico usando blocos:
+                        </p>
+                        <pre><code class="language-go">
+O escopo de um identificador pre-declarado é o bloco global.
+O escopo de um identificador denotando uma constane, tipo, variavel ou função (mas não método) declarado fora de qualquer função é o bloco do pacote.
+O escopo do nome do pacote de um pacote importado é o bloco do arquivo contendo a declaração de import.
+O escopo de um identificador denotando um método receptor, parãmetro de função variável resultante é o bloco da função.
+O escopo de uma constante ou de um identificador de uma variável declarado dentro de uma função começa no final do ConstSpec ou VarSpec (ShortVarDecl) e termina do final do bloco mais íntimo.
+O escopo de um identificador de tipo declarado dentro de uma função começa no identificador no TypeSpec e termina no final do bloco mais íntimo.
+                        </code></pre>
+                        <p>
+                            Um identificador declarado em um bloco pode ser declarado novamente em um bloco interno. 
+                            Embora o identificador da declaração interna esteja no escopo, ele denota a entidade 
+                            declarada pela declaração interna.
+                        </p>
+                        <p>
+                            A cláusula do pacote não é uma declaração; o nome do pacote não aparece em nenhum escopo. 
+                            Seu objetivo é identificar os arquivos pertencentes ao mesmo pacote e especificar o nome 
+                            do pacote padrão para declarações de importação.
+                        </p>
+
+                    </div>
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="types_properties.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipos - Propriedades</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="label_scope.html">
+                            <span>Tipos - Escopo de Labels</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">declaration_scopego</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="declaration_scope.go">
+package main
+
+import "fmt"
+
+func main() {
+    var a bool
+    for {
+        if a {
+            break
+        } else {
+            b := 1
+            a = true
+        }
+    }
+
+    fmt.Println(b) // Variável b não foi declarada no escopo atual nem nos escopos superiores
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

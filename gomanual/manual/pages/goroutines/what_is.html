@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Goroutines - O que são?</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Goroutines - O que são?</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Goroutines são funções ou métodos executados simultaneamente com outras funções ou métodos. 
+                            Goroutines podem ser considerados threads leves. O custo de criação de um Goroutine é mínimo 
+                            quando comparado a um thread. Portanto, é comum que aplicativos Go tenham milhares de 
+                            Goroutines em execução simultaneamente.
+                        </p>
+                        <p>
+                            Como iniciar um Goroutine?
+                        </p>
+                        <p>
+                            Coloque o prefixo da chamada de função ou método com a palavra-chave <i>go</i> e 
+                            você terá um novo Goroutine rodando simultaneamente. 
+                        </p>
+                        <pre><code class="language-go">
+package main
+
+import (  
+    "fmt"
+)
+
+func hello() {  
+    fmt.Println("Hello world goroutine")
+}
+func main() {  
+    go hello()
+    fmt.Println("main function")
+                        </code></pre>
+                        <p>
+                            Este programa produz apenas a função principal de texto. O que aconteceu com o Goroutine 
+                            que começamos? Precisamos entender as duas propriedades principais das goroutines para 
+                            entender por que isso acontece.
+                        </p>
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Goroutines - Introdução</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="channels.html">
+                            <span>Goroutines - Channels</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <div class="code-filename">main.go</div>
+
+                    <div class="content-height">
+                        <p>
+                            Vantagens de Goroutines sobre threads
+                        </p>
+                        <p>
+                            Goroutines são extremamente baratos quando comparados aos threads. Eles têm apenas 
+                            alguns kb de tamanho de pilha e a pilha pode aumentar e diminuir de acordo com as 
+                            necessidades da aplicação, enquanto no caso de threads o tamanho da pilha deve ser 
+                            especificado e é fixo.
+                        </p>
+                        <p>
+                            Os Goroutines são multiplexados para um número menor de threads de sistema operacional. 
+                            Pode haver apenas um thread em um programa com milhares de Goroutines. Se qualquer 
+                            Goroutine nesses blocos de thread disser que está aguardando a entrada do usuário, 
+                            outro thread do sistema operacional será criado e os Goroutines restantes serão movidos 
+                            para o novo thread do sistema operacional. Tudo isso é cuidado pelo tempo de execução e 
+                            nós, como programadores, somos abstraídos desses detalhes intrincados e recebemos uma API 
+                            limpa para trabalhar com simultaneidade.
+                        </p>
+                        <p>
+                            Goroutines se comunicam usando canais. Os canais, por design, evitam que as condições 
+                            de corrida aconteçam ao acessar a memória compartilhada usando Goroutines. Os canais 
+                            podem ser vistos como um tubo através do qual Goroutines se comunicam. Discutiremos os 
+                            canais em detalhes na próxima página. 
+                        </p>
+                        <ul>
+                            <li>
+                                Quando um novo Goroutine é iniciado, a chamada de goroutine retorna imediatamente. 
+                                Ao contrário das funções, o controle não espera que o Goroutine termine de executar. 
+                                O controle retorna imediatamente para a próxima linha de código após a chamada do 
+                                Goroutine e quaisquer valores de retorno do Goroutine são ignorados.
+                            </li>
+                            <li>
+                                O Goroutine principal deve estar em execução para qualquer outro Goroutine. Se o 
+                                Goroutine principal terminar, o programa será encerrado e nenhum outro Goroutine será executado. 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--- Coluna Direita Fim --->
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

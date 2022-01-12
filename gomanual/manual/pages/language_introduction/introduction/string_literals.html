@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Introdução à Linguagem - String Literals</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Introdução à Linguagem - String Literals</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Um <i>string literal</i> representa uma <i>string constant</i> obtida da 
+                            concatenação de uma sequência de caracteres. Existem duas formas: 
+                            literais de string brutos e literais de string interpretados.
+                        </p>
+                        <p>
+                            <i>String literals</i> brutos são sequências de caracteres entre aspas.
+                            Entre as aspas, qualquer caractere pode aparecer, exceto outras aspas. 
+                            O valor de um <i>string literal</i> bruto é a string composta de caracteres 
+                            não interpretados (implicitamente codificados em UTF-8) entre as aspas; 
+                            em particular, as barras invertidas não têm nenhum significado especial 
+                            e a string pode conter novas linhas. Os caracteres de retorno
+                            '\r' dentro de uma string bruta são descartados.
+                        </p>
+                        <p>
+                            <i>String literal</i> interpretados são sequências de caracteres entre aspas 
+                            duplas, como em "bar". Entre as aspas, qualquer caractere pode aparecer, 
+                            exceto nova linha e aspas duplas sem escape. O texto entre aspas forma o 
+                            valor do literal, com escapes de barra invertida interpretados como se 
+                            estivessem em <i>rune literals</i> (exceto que aspas simples é ilegal e aspas duplas é legal), com as 
+                            mesmas restrições. O octal de três dígitos (\nnn) e dois escapes hexadecimais 
+                            (\xnn) de dígitos representam bytes individuais da string resultante; todos 
+                            os outros escapes representam a codificação UTF-8 (possivelmente multibyte) 
+                            de caracteres individuais. Assim, dentro de um <i>string literal</i> <i>\377</i> e <i>\xFF</i> 
+                            representam um único byte de valor 0xFF = 255, enquanto <i>ÿ</i>, <i>\u00FF</i>, <i>\U000000FF</i> 
+                            e <i>\xc3</i> <i>\xbf</i> representam os dois bytes 0xc3 0xbf da codificação UTF-8 do 
+                            caractere U + 00FF.
+                        </p>
+
+                        <pre><code class="language-go">
+`abc`                // mesmo que "abc"
+`\n
+\n`                  // mesmo que "\\n\n\\n"
+"\n"
+"\""                 // mesmo que `"`
+"Hello, world!\n"
+"日本語"
+"\u65e5本\U00008a9e"
+"\xff\u00FF"
+                        </code></pre>
+
+                        <p>Todos estes exemplos representam a mesma string:</p>
+
+                        <pre><code class="language-go">
+"日本語"                                 // UTF-8
+`日本語`                                 // UTF-8 na forma de literal bruto
+"\u65e5\u672c\u8a9e"                    // Unicode explícito
+"\U000065e5\U0000672c\U00008a9e"        // Unicode explícito
+"\xe6\x97\xa5\xe6\x9c\xac\xe8\xaa\x9e"  // bytes UTF-8 explícitos
+                        </code></pre>
+
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="rune_literals.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Introdução - Rune Literals</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="constants.html">
+                            <span>Introdução - Constantes</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">string_literals.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="string_literals.go">
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("日本語", []byte("日本語"))
+    fmt.Println(`日本語`, []byte(`日本語`))
+    fmt.Println("\u65e5\u672c\u8a9e", []byte("\u65e5\u672c\u8a9e"))
+}					
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

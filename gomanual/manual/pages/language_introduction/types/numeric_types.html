@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Tipos - Numéricos</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Tipos - Numéricos</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Um tipo numérico representa um conjuntos de valores inteiros ou de ponto 
+                            flutuante. Os tipos numéricos independentes de arquitetura pré-declarados são:
+                        </p>
+                        <pre><code class="language-go">
+uint8       conjunto dos inteiros sem sinal de 8-bits  (0 to 255)
+uint16      conjunto dos inteiros sem sinal de 16-bits (0 to 65535)
+uint32      conjunto dos inteiros sem sinal de 32-bits (0 to 4294967295)
+uint64      conjunto dos inteiros sem sinal de 64-bits (0 to 18446744073709551615)
+
+int8        conjunto dos inteiros com sinal de 8-bits  (-128 to 127)
+int16       conjunto dos inteiros com sinal de 16-bits (-32768 to 32767)
+int32       conjunto dos inteiros com sinal de 32-bits (-2147483648 to 2147483647)
+int64       conjunto dos inteiros com sinal de 64-bits (-9223372036854775808 to 9223372036854775807)
+
+float32     conjunto dos números com ponto-flutuante IEEE-754 de 32-bits
+float64     conjunto dos números com ponto-flutuante IEEE-754 de 64-bits
+
+complex64   conjunto dos números com plexos com parte real float32 e parte imaginária
+complex128  conjunto dos números com plexos com parte real float64 e parte imaginária
+
+byte        apelido para uint8
+rune        apelido para int32
+                        </code></pre>
+                        <p>
+                            Há também um conjunto de tipos numéricos pré-declarados com tamanhos 
+                            específicos de implementação:
+                        </p>
+                        <pre><code class="language-go">
+uint     32 ou 64 bits, dependendo da arquitetura do sistema operacional
+int      mesmo tamanho que uint
+uintptr  um inteiro sem sinal largo o bastante para guardar os bits não interpretados do valor de um ponteiro
+                        </code></pre>
+                        <p>
+                            Para evitar problemas de portabilidade, todos os tipos numéricos são tipos definidos
+                            e, portanto, distintos, exceto <i>byte</i>, que é um apelido para <i>uint8</i>, e <i>rune</i>, que 
+                            é um apelido para <i>int32</i>. As conversões são necessárias quando diferentes tipos 
+                            numéricos são misturados em uma expressão ou atribuição. Por exemplo, <i>int32</i> e 
+                            <i>int</i> não são do mesmo tipo, embora possam ter o mesmo tamanho em uma arquitetura 
+                            específica.
+                        </p>
+
+                    </div>
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="boolean_type.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipos - Booleano</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="string_type.html">
+                            <span>Tipos - String</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">numeric_types.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="numeric_types.go">
+package main
+
+func main() {
+    var ui8 uint8
+    var i8 int8
+    var i int
+
+    ui8 = -10 // isto gerará um erro, pois uint8 só aceita valores entre 0 e 255
+    i8 = 128  // isto também gerará um erro, pois int8 só aceita valores entre -128 e 127
+    i = 31415
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>
