@@ -69,21 +69,21 @@ go run [build flags] [-exec xprog] package [arguments...]
                         <p>
                             <i>run</i> compila e executa o pacote Go principal nomeado. Normalmente, o pacote é especificado 
                             como uma lista de arquivos de origem .go, mas também pode ser um caminho de importação, caminho do 
-                            sistema de arquivos ou padrão que corresponda a um único pacote conhecido, como em 'go run'. ou 
+                            sistema de arquivos ou padrão que corresponda a um único pacote conhecido, como em <b>go run</b>. ou 
                             'go run meu/cmd'.
                         </p>
                         <p>
-                            Por padrão, 'go run' executa o binário compilado diretamente: 
-                            'a.out arguments ...'. Se o sinalizador -exec for fornecido, 'go run' invoca o binário usando xprog:
+                            Por padrão, <b>go run</b> executa o binário compilado diretamente: 
+                            'a.out arguments ...'. Se o sinalizador <i>-exec</i> for fornecido, <b>go run</b> invoca o binário usando xprog:
                         </p>
                         <p>
-                            Se o sinalizador -exec não for fornecido, GOOS ou GOARCH é diferente do padrão do sistema, e um programa 
-                            chamado go_ $ GOOS_ $ GOARCH_exec pode ser encontrado no caminho de pesquisa atual, 'go run' invoca o 
+                            Se o sinalizador <i>-exec</i> não for fornecido, <b>GOOS</b> ou <b>GOARCH</b> é diferente do padrão do sistema, e um programa 
+                            chamado <i>go_ $ GOOS_ $ GOARCH_exec</i> pode ser encontrado no caminho de pesquisa atual, <b>go run</b> invoca o 
                             binário usando esse programa, por exemplo 'go_nacl_386_exec a.out argumentos ...'. Isso permite a execução 
                             de programas compilados quando um simulador ou outro método de execução está disponível.
                         </p>
                         <p>
-                            O status de saída de <i>run</i> não é o status de saída do binário compilado.
+                            O status de saída de <b>run</b> não é o status de saída do binário compilado.
                             Para mais informações sobre sinalizadores de construção, consulte 'go help build'. Para obter mais 
                             informações sobre como especificar pacotes, consulte 'go help packages'.
                         </p>

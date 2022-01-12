@@ -80,7 +80,7 @@ go mod <command> [arguments]
                             módulo e seus subdiretórios, mas excluindo subárvores com seus próprios arquivos go.mod.
                         </p>
                         <p>
-                            O "caminho do módulo" é o prefixo do caminho de importação correspondente à raiz do módulo. 
+                            O <b>caminho do módulo</b> é o prefixo do caminho de importação correspondente à raiz do módulo. 
                             O arquivo go.mod define o caminho do módulo e lista as versões específicas de outros módulos 
                             que deverão ser usados ao resolver importações durante uma compilação, fornecendo seus caminhos 
                             e versões de módulo.
@@ -143,21 +143,21 @@ go mod init github.com/user/gomyproject
                             configuração existente.
 
                             Uma vez que o arquivo go.mod existe, nenhuma etapa adicional é necessária: 
-                            comandos go como 'go build', 'go test' ou mesmo 'go list' irão adicionar automaticamente 
+                            comandos go como <b>go build</b>, <b>go test</b> ou mesmo <b>go list</b> irão adicionar automaticamente 
                             novas dependências conforme necessário para satisfazer as importações.
                         </p>
                         <p>
                             Os comandos são:
                         </p>
                         <pre><code class="language-go">
-download    download modules to local cache
-edit        edit go.mod from tools or scripts
-graph       print module requirement graph
-init        initialize new module in current directory
-tidy        add missing and remove unused modules
-vendor      make vendored copy of dependencies
-verify      verify dependencies have expected content
-why         explain why packages or modules are needed
+download    baixar módulos para o cache local
+edit        edite go.mod a partir de ferramentas ou scripts
+graph       gráfico de requisitos do módulo de impressão
+init        inicializar novo módulo no diretório atual
+tidy        adicionar módulos ausentes e remover módulos não utilizados
+vendor      fazer cópia de dependências vendidas
+verify      verifique se as dependências têm conteúdo esperado
+why         explicar porque os pacotes ou módulos são necessários
                         </code></pre>
                     </div>
                 <!--- Coluna Direita Fim --->

@@ -67,16 +67,17 @@
                             O comando <i>build</i> compila os pacotes nomeados pelos caminhos de importação, junto com suas dependências, 
                             mas não instala os resultados.
                             Ao compilar pacotes, o build ignora os arquivos que terminam em '_test.go'.
-                            O sinalizador -o, permitido apenas ao compilar um único pacote, força o build a gravar o executável 
+                            O sinalizador <b>-o</b>, permitido apenas ao compilar um único pacote, força o build a gravar o executável 
                             ou objeto resultante no arquivo de saída nomeado, em vez do comportamento padrão descrito nos dois últimos 
                             parágrafos.
-                            O sinalizador -i instala os pacotes que são dependências do destino.
+                            O sinalizador <b>-i</b> instala os pacotes que são dependências do destino.
                         </p>
                         <pre><code class="language-go">
 $ go build [-o output] [-i] [build flags] [packages]
                         </code></pre>
                         <p>
-                            Os sinalizadores de compilação são compartilhados pelos comandos build, clean, get, install, list, run e test:
+                            Os sinalizadores de compilação são compartilhados pelos comandos <i>build</i>, <i>clean</i>, <i>get</i>, <i>install</i>, <i>list</i>,
+                            <i>run</i> e <i>test</i>.
                         </p>
                         <pre><code class="language-go">
 - a
