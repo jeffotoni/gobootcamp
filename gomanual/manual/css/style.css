@@ -14,7 +14,6 @@ a {
 	pointer-events: none;
 }
 
-
 .content-page,
 .content-page .container-fluid,
 .content-page .container-fluid .row {
@@ -73,6 +72,23 @@ a {
 
 /* MAIN PAGE */
 
+.icone-youtube,
+.icone-github {
+	font-size: 30px;
+}
+
+.main-page a.links-externos{
+	display:inline-block;
+	margin-right: 5px;
+}
+
+.main-page a.links-externos:hover{
+	color:#41b6d3;
+}
+
+.subtitulo {
+	font-weight: 500;
+}
 .main-page {
 	color: #3b454e;
 	font-size: 17px;
