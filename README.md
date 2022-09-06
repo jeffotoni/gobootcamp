@@ -8,7 +8,7 @@ Se você conhece pouco e quase nada a programação não será problema, todo o 
 
 Espero que gostem e possam servir de base para aprendizado e ajudar vários Gophers possíveis.
 
-Aqui está a live com mais de 7 horas de conteúdo: [Bootcamp ZeroHero](https://www.youtube.com/watch?v=XVE3hHW7Wvs)
+Aqui está a live com mais de 7 horas de conteúdo: [Bootcamp ZeroHero](https://www.youtube.com/watch?v=XVE3hHW7Wvs) ❤️
 
 Existem milhares de referências hoje em relação ao Golang, vamos começar do início e não podíamos deixar de falar do [Golang Tour](https://go.dev/tour/welcome/1), [Play Golang](https://go.dev/play) ou [Play Go Space](https://goplay.space/) são formas online de brincarmos com a linguagem Go, lindo não é ? 😊
 
