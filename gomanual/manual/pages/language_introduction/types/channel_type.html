@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Tipos - Channel</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Tipos - Channel</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Um <i>channel</i> fornece um mecanismo para funções de execução simultânea para se comunicar, enviando 
+                            e recebendo valores de um tipo de elemento especificado. O valor de um <i>channel</i> não inicializado é <i>nil</i>.
+                        </p>
+                        <p>
+                            O operador opcional <- especifica a direção do <i>channel</i>, envio ou recebimento. Se nenhuma 
+                            direção for fornecida, o <i>channel</i> é bidirecional. Um <i>channel</i> pode ser restringido apenas 
+                            para enviar ou apenas para receber por conversão ou atribuição.
+                        </p>
+                        <pre><code class="language-go">
+chan T          // pode ser usado para enviar e receber valores do tipo T
+chan<- float64  // só pode ser usado para enviar float64
+<-chan int      // só pode ser usado para receber int
+                        </code></pre>
+                        <p>
+                            O operador <- associa-se ao <i>channel</i> mais à esquerda possível:
+                        </p>
+                        <pre><code class="language-go">
+chan<- chan int    // mesmo que chan<- (chan int)
+chan<- <-chan int  // mesmo que chan<- (<-chan int)
+<-chan <-chan int  // mesmo que <-chan (<-chan int)
+                        </code></pre>
+                        <p>
+                            Um novo valor de <i>channel</i> inicializado pode ser criado usando a função integrada <i>make()</i>, que leva o 
+                            tipo de <i>channel</i> e uma capacidade opcional como argumentos:
+                        </p>
+                        <pre><code class="language-go">
+make(chan int, 100)
+                        </code></pre>
+                        <p>
+                            A capacidade, em número de elementos, define o tamanho do buffer no <i>channel</i>. Se a capacidade 
+                            for zero ou ausente, o <i>channel</i> está sem buffer e a comunicação é bem-sucedida apenas quando 
+                            o emissor e o receptor estão prontos. Caso contrário, o <i>channel</i> é armazenado em buffer e a 
+                            comunicação é bem-sucedida sem bloqueio se o buffer não estiver cheio (enviar) ou não estiver 
+                            vazio (receber). Um <i>channel</i> nulo nunca está pronto para comunicação.
+                        </p>
+                        <p>
+                            Um <i>channel</i> pode ser fechado com a função embutida <i>close()</i>. A forma de atribuição de vários valores do 
+                            operador de recepção relata se um valor recebido foi enviado antes de o <i>channel</i> ser fechado.
+                        </p>
+                        <p>
+                            Um único <i>channel</i> pode ser usado em instruções de envio, operações de recebimento e chamadas para as 
+                            funções integradas <i>cap()</i> e <i>len()</i> por qualquer número de goroutines sem sincronização adicional. 
+                            Os canais atuam como filas primeiro a entrar, primeiro a sair. Por exemplo, se um goroutine 
+                            envia valores em um <i>channel</i> e um segundo goroutine os recebe, os valores são recebidos na ordem de envio.
+                        </p>
+                    </div>
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="map_type.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipos - Map</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="types_properties.html">
+                            <span>Tipos - Propriedades</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">channel.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="channel.go">
+
+package main
+
+import (
+  "fmt"
+  "os"
+  "time"
+)
+
+type Promise struct {
+  Result chan string
+  Error  chan error
+}
+
+var (
+  ch1  = make(chan *Promise)  // recebe um ponteiro para a struct
+  ch2  = make(chan string, 1) // permite somente 1 canal
+  ch3  = make(chan int, 2)    // permite somente 2 canais
+  ch4  = make(chan float64)   // pode receber livremente
+  ch5  = make(chan []byte)    // por padrão, capacidade de 0
+  ch6  = make(chan bool, 1)   // capacidade não-zero
+  ch7  = make(chan time.Time, 2)
+  ch8  = make(chan struct{}, 2)
+  ch9  = make(chan struct{})
+  ch10 = make(map[string](chan int)) // map channel
+  ch11 = make(chan error)
+  ch12 = make(chan error, 2)
+  // receives a zero struct
+  ch14 <-chan struct{}
+  ch15 = make(<-chan bool)          // só pode ler
+  ch16 = make(chan<- []os.FileInfo) // só pode escrever
+  // holds another channel as its value
+  ch17 = make(chan<- chan bool) // pode ler e escrever
+)
+
+func main() {
+
+  ch2 <- "okay"
+  defer close(ch2)
+  fmt.Println(ch2, &ch2, <-ch2)
+
+  ch7 <- time.Now()
+  ch7 <- time.Now()
+  fmt.Println(ch7, &ch7, <-ch7)
+  fmt.Println(ch7, &ch7, <-ch7)
+  defer close(ch7)
+
+  ch3 <- 1 // okay
+  ch3 <- 2 // okay
+  // deadlock
+  // ch3 <- 3 // aqui, não aceita mais valores
+  defer close(ch3)
+  fmt.Println(ch3, &ch3, <-ch3)
+  fmt.Println(ch3, &ch3, <-ch3)
+
+  ch10["lambda"] = make(chan int, 2)
+  ch10["lambda"] <- 100
+  defer close(ch10["lambda"])
+  fmt.Println(<-ch10["lambda"])
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

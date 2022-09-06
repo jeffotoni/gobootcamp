@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Ponteiros - Quando Usar?</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Ponteiros - Quando Usar?</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Aqui estão algumas das situações comuns em que você precisará usar um ponteiro em vez de um valor:
+                        </p>
+                        <p>
+                            Alterar o estado de um objeto:
+
+                            Digamos que você tenha uma estrutura como esta 
+                        </p>
+                        <pre><code class="language-go">
+type Person struct {
+    name     string
+    age      int
+    gender   string
+
+}
+                        </code></pre>
+                        <p>
+                            Agora, você quer um método permita alterar o nome de uma pessoa:
+                            Para isso, um ponteiro é necessário, pois ele da acesso à instância original, não a uma cópia dela:
+                        </p>
+                        <pre><code class="language-go">
+func (p *Person) changeName(name string){
+    p.name = name
+}
+                        </code></pre>
+                        <p>
+                            Permitindo que as variáveis tenham valores nil:
+                            Essa é uma pegadinha que leva muitos iniciantes em Go a criar bugs. Uma variável que é 
+                            definida, mas não tem um valor atribuído, não é avaliada como nulo, mas sim com seu valor
+                             padrão. Para booleanos, false, para inteiros é 0, para strings é uma string vazia. 
+                             Mas e se você precisar que seja nulo? Então, você usa um ponteiro!
+                        </p>
+                        <p>
+                            Copiar estrutura com valores muito grandes:
+                            Embora a memória não seja um problema tão grande hoje, você ainda pode querer usar uma 
+                            referência se o valor do objeto for ridiculamente grande e não houver realmente necessidade 
+                            de repassá-lo o tempo todo. Isso provavelmente melhorará o desempenho e o uso de memória de 
+                            seu aplicativo (embora provavelmente não significativamente). Há uma troca, porque agora o 
+                            coletor de lixo tem mais trabalho a fazer, mas em casos de estruturas muito grandes e complexas, 
+                            usar ponteiros faz mais sentido.
+                        </p>
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Ponteiros - Introdução</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="../methods/index.html">
+                            <span>Métodos - Comparação com Funções</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">when_use.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="when_use.go">
+package main
+  
+import (
+    "fmt"
+)
+
+type Pessoa struct {
+    Nome string
+    Idade int
+}
+
+func (p *Pessoa) FazerAniversario() {
+    p.Idade++
+}
+
+func main() {
+    carlos := Pessoa{"Carlos", 23}
+    fmt.Println(carlos.Idade)
+
+    carlos.FazerAniversario()
+    fmt.Println(carlos.Idade)
+
+    carlos.FazerAniversario()
+    fmt.Println(carlos.Idade)
+    
+    carlos.FazerAniversario()
+    fmt.Println(carlos.Idade)
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

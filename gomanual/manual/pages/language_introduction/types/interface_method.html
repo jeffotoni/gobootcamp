@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Tipos - Método de Interface</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Tipos - Método de Interface</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Um tipo de interface especifica um conjunto de métodos denominado sua interface. 
+                            Uma variável de tipo de interface pode armazenar um valor de qualquer tipo com 
+                            um conjunto de métodos que é qualquer superconjunto da interface. Diz-se que 
+                            esse tipo implementa a interface. O valor de uma variável não inicializada do 
+                            tipo de interface é <i>nil</i>.
+                        </p>
+                        <p>
+                            Como acontece com todos os conjuntos de métodos, em um tipo de interface, 
+                            cada método deve ter um nome exclusivo que não esteja em branco. 
+                        </p>
+                        <pre><code class="language-go">
+// Interface de um arquivo
+interface {
+  Read(b Buffer) bool
+  Write(b Buffer) bool
+  Close()
+}
+                        </code></pre>
+                        <p>
+                            Mais de um tipo pode implementar uma interface. Por exemplo, se dois 
+                            tipos S1 e S2 têm o método definido.
+                        </p>
+                        <pre><code class="language-go">
+func (p T) Read(b Buffer) bool { return … }
+func (p T) Write(b Buffer) bool { return … }
+func (p T) Close() { … }
+                        </code></pre>
+                        <p>
+                            (onde T significa S1 ou S2), então a interface de arquivo é implementada 
+                            por S1 e S2, independentemente de quais outros métodos S1 e S2 possam ter ou compartilhar.
+                        </p>
+                        <p>
+                            Um tipo implementa qualquer interface que compreende qualquer subconjunto de seus 
+                            métodos e pode, portanto, implementar várias interfaces distintas. Por exemplo, 
+                            todos os tipos implementam a interface vazia <i>interface{}</i>.
+                        </p>
+                        <p>
+                            Uma interface T pode usar um nome de tipo de interface (possivelmente qualificado) 
+                            no lugar de uma especificação de método. Isso é chamado de interface de incorporação 
+                            E em T; ele adiciona todos os métodos (exportados e não exportados) de E à interface T.
+                        </p>
+                        <pre><code class="language-go">
+type ReadWriter interface {
+  Read(b Buffer) bool
+  Write(b Buffer) bool
+}
+
+type File interface {
+  ReadWriter  // mesmo que adicionar os métodos de ReadWriter
+  Locker      // mesmo que adicionar os métodos de LockedFile
+  Close()
+}
+
+type LockedFile interface {
+  Locker
+  File        // ilegal: Lock, Unlock não únicos
+  Lock()      // ilegal: Lock não único
+}
+                        </code></pre>
+
+                    </div>
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="interface.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Tipos - Sobre as Interfaces</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="interface_type.html">
+                            <span>Tipos - Interface Vazia</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">interface_method.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="interface_method.go">
+package main
+
+import (
+  "fmt"
+)
+
+type R struct {
+  R string
+}
+
+type Iread interface {
+  Read() string
+}
+
+func (r *R) Read() string {
+  return fmt.Sprintf("Only: call Read")
+}
+
+func Call(ir Iread) string {
+  return fmt.Sprintf("Read: %s", ir.Read())
+}
+
+func main() {
+  var iread Iread
+  r := R{"hello interface"}
+
+  // uma forma de usar interfaces
+  iread = &r
+
+  fmt.Println(iread, r)
+  fmt.Println(iread.Read())
+
+  // Outra forma de usar interfaces
+  r2 := R{"hello interface call"}
+  fmt.Println(Call(&r2))
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

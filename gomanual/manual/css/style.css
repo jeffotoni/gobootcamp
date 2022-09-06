@@ -1,6 +1,17 @@
 
 html, body {
 	min-height: 100vh;
+	text-align: justify;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Temporário, somente para marcação de páginas não implementadas*/
+.disabled-link {
+	text-decoration: none;
+	pointer-events: none;
 }
 
 .content-page,
@@ -12,7 +23,7 @@ html, body {
 /* HEADER */
 
 .main-header {
-	background-color: #007d9c;
+	background-color: #41b6d3;
 	padding: .1rem 0;
 	position: relative;
 }
@@ -50,7 +61,7 @@ html, body {
     top: 100%;
     right: 10%;
     transform: rotate(180deg);
-    width: 110px;
+    width: 60px;
 }
 
 @media (max-width: 460px) {
@@ -61,50 +72,85 @@ html, body {
 
 /* MAIN PAGE */
 
+.icone-youtube,
+.icone-github {
+	font-size: 30px;
+}
+
+.main-page a.links-externos{
+	display:inline-block;
+	margin-right: 5px;
+}
+
+.main-page a.links-externos:hover{
+	color:#41b6d3;
+}
+
+.subtitulo {
+	font-weight: 500;
+}
 .main-page {
 	color: #3b454e;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 400;
-	width: 500px;
+	width: 800px;
 	margin: 2rem auto;
 	padding: .2rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 	.main-page {
 		width: 100%;
 	}
 }
 
 .main-page h1 {
-	font-size: 35px;
+	font-size: 32px;
 	font-weight: 700;
-	margin-bottom: 1.2rem;
+	margin: 1.2rem 0;
+}
+
+.main-page h2 {
+	font-size: 30px;
+	font-weight: 700;
+	margin: 1.2rem 0;
+}
+
+.main-page h3,
+.main-page h3 * {
+	font-size: 24px !important;
+	font-weight: 500;
+	margin: 1.7rem 0 .8rem;
 }
 
 .main-page a {
-	font-size: 22px;
+	font-size: 19px;
 	font-weight: 500;
 	display: block;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+	margin-top: 0;
+	margin-bottom: 0;
 	color: #3b454e;
-	text-decoration: none;
+}
+
+.main-page p {
+	font-size: 18px;
 }
 
 .main-page a:hover,
 .main-page a:focus,
 .main-page a:active {
-	color: #3b454e;
+	color: rgb(24, 24, 24);
+	text-decoration: underline;
 }
 
 .main-page ul {
-	margin-bottom: 2rem;
-	margin-left: 1.5rem;
+	margin-bottom: .9rem;
+	padding-left: 0px !important;
 }
 
 .main-page ul > li {
-	margin: 0.8rem 0;
+	list-style-type: none;
+	margin: 0.4rem 0;
 }
 
 .main-page ul > li > a {
@@ -113,7 +159,7 @@ html, body {
 }
 
 .content-page .main-title {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #3b454e;
 	border-bottom: 1px solid #f1f1f1;
@@ -122,9 +168,12 @@ html, body {
 	padding: .5rem 0 .3rem .15rem;
 }
 
-.content-page p {
+.content-page {
 	font-size: 16px;
 	color: #3b454e;
+}
+
+.content-page p {
 	padding: 0 1.5rem;
 	margin-bottom: 1rem;
 }
@@ -133,6 +182,16 @@ html, body {
 	border-left: 2px solid #ebebeb;
 	padding-left: 0;
 	position: relative;
+}
+
+.column-code img {
+	display: block;
+	width: 90% !important;
+	margin: 40px auto 0 auto;
+}
+
+.column-code .gopher-column-code {
+	width: 70px !important;
 }
 
 .content-page .buttons {
@@ -147,6 +206,7 @@ html, body {
 	padding: 3px 16px;
 	margin: 8px;
 	margin-left: 20px;
+	text-align: left;
 	display: inline-block;
 }
 
@@ -161,10 +221,19 @@ html, body {
 
 .content-height {
 	min-height: calc(100vh - 280px);
+	text-align: justify;
+}
+
+.content-height li {
+	position: relative;
+	left: 6px;
+	padding-left: 15px;
 }
 
 .pages-menu {
+	margin: 15px auto;
 	text-align: center;
+	font-size: 13.5px !important;
 }
 
 .pages-menu-link {
@@ -194,7 +263,7 @@ html, body {
 }
 
 .pages-menu img {
-	width: 30px;
+	width: 23px;
 	margin: 0 12px;
 }
 

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Instalação - Fora do $GOPATH</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Instalação - Fora do $GOPATH</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Agora podemos fazer nossos projetos sem estar em $GOPATH, podemos, por exemplo, fazer em qualquer diretório.
+                        </p>
+                        <pre><code class="language-go">
+$ export GOPATH=$HOME/go
+$ mkdir $HOME/2019/project1
+$ mkdir $HOME/2019/project1/my-pkg
+$ mkdir $HOME/2019/project1/my-cmd
+$ mkdir $HOME/2019/project1/my-logs
+$ mkdir $HOME/2019/project1/my-models
+$ mkdir $HOME/2019/project1/my-repo
+$ mkdir $HOME/2019/project1/my-handler
+
+$HOME/
+  |-2019
+    |-github.com/user/project1/
+      |-cmd
+        |-main.go
+      |-vendor
+      |-logs
+      |-models
+      |-repo
+      |-handler
+                        </code></pre>
+                        <p>
+                            Podemos colocar nosso projeto em qualquer diretório agora.
+                        </p>
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="workspace.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Instalação - Workspace</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="func_main.html">
+                            <span>Instalação - Função Main</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <div class="code-filename">without_gopath</div>
+
+                    <div class="content-height">
+                        <pre><code class="language-go">
+$HOME/
+  |-any-directory
+    |-github.com/user/project1/
+      |-cmd
+        |-main.go
+      |-vendor
+      |-logs
+      |-models
+      |-repo
+      |-handler
+                        </code></pre>
+                        <p>
+                            Para o cenário acima, teremos que usar o go mod em nosso projeto para que todos os 
+                            pacotes externos possam funcionar corretamente, desta forma poderemos gerenciá-los 
+                            corretamente e sua versão. Mais informações podem ser encontradas aqui: 
+                            <a href="https://github.com/golang/go/wiki/Modules" target="_blank">Wiki Go Modules</a>
+                        </p>
+                        <pre><code class="language-go">
+$ go mod init github.com/user/project1
+                        </code></pre>
+                        <p>
+                            Nota: Quando usarmos o mod go em $GOPATH, teremos que habilitar o uso de 
+                            GO111MODULE=on, para que ele possa funcionar dentro da estrutura $GOPATH. 
+                            Portanto, nosso programa pode ser compilado com sucesso.
+                        </p>
+                        <pre><code class="language-go">
+$ GO111MODULE=on go run cmd/main.go
+$ GO111MODULE=on go build -o project1 cmd/main.go
+                        </code></pre>
+                    </div>
+                <!--- Coluna Direita Fim --->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

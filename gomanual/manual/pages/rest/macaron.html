@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - API REST - Macaron</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">API REST - Macaron</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Pacote macaron é um framework web modular e altamente produtivo em Go.
+                        </p>
+                        <ul>
+                            <li>
+                                Roteamento poderoso com suburl;
+                            </li>
+                            <li>
+                                Combinações de rotas flexíveis;
+                            </li>
+                            <li>
+                                Roteadores de grupo aninhados ilimitados;
+                            </li>
+                            <li>
+                                Integre-se diretamente com os serviços existentes;
+                            </li>
+                            <li>
+                                Altere dinamicamente os arquivos de modelo no tempo de execução;
+                            </li>
+                            <li>
+                                Permitir o uso de modelos na memória e arquivos estáticos;
+                            </li>
+                            <li>
+                                Recursos fáceis de conectar/desconectar com design modular;
+                            </li>
+                            <li>
+                                Melhor camada de roteador e menos reflexão tornam a velocidade mais rápida.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="beego.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Beego</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="chi.html">
+                            <span>API REST - Chi</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <div class="code-filename">macaron.go</div>
+                    
+                    <div class="content-height">
+                        <pre><code class="language-go">
+package main
+
+import "gopkg.in/macaron.v1"
+
+func main() {
+    m := macaron.Classic()
+    m.Get("/v1/api", func() string {
+        return "GETTING..."
+    })
+
+    m.Post("/v1/api", func() string {
+        return "POSTING..."
+    })
+
+    m.Put("/v1/api", func() string {
+        return "PUTTING..."
+    })
+
+    m.Delete("/v1/api", func() string {
+        return "DELETING..."
+    })
+    m.Run("localhost:8000")
+}
+                        </code></pre>
+                    </div>
+                </div>
+                <!--- Coluna Direita Fim --->
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Slices - Sorting</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Slices - Sorting</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Você pode classificar um slice com a ajuda da função Slice(). Esta função classifica 
+                            o slice especificado de acordo com a função less fornecida. O resultado desta função 
+                            não é estável. Portanto, para classificação estável, você pode usar SliceStable. E 
+                            essa função entra em pânico se a interface especificada não for do tipo slice. É 
+                            definido no pacote de classificação, portanto, você deve importar o pacote de 
+                            classificação em seu programa para acessar a função Slice.
+                        </p>
+                        <pre><code class="language-go">
+func Slice(a_slice interface{}, less func(p, q int) bool)
+                        </code></pre>
+                        <p>
+                            Além disso, podemos usar o pacote de sort embutido para classificar um slice ao
+                            invés de escrever manualmente quaisquer algoritmos de classificação como classificação 
+                            por mesclagem ou classificação rápida, etc.
+                        </p>
+                        <pre><code class="language-go">
+sort.Strings // Organiza slice do tipo []string em ordem alfabética
+sort.Sort(sort.Reverse(sort.String(slice))) // Organiza slice do tipo []string em ordem alfabética invertida
+sort.Inst(slice) // Organiza slice do tipo []int em ordem crescente
+sort.Sort(sort.Reverse(sort.IntSlice(slice))) // Organiza slice do tipo []int em ordem decrescente
+sort.Float64s(slice) // Organiza slice do tipo []float64 em ordem crescente
+sort.Sort(sort.Reverse(sort.Float64Slice(arrSlice))) // Organiza slice do tipo []float64 em ordem decrescente
+
+                        </code></pre>
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="len_cap.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Slices - Len e Cap</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="../structs/index.html">
+                            <span>Structs - Introdução</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-code">
+
+                    <div class="code-filename">sorting.go</div>
+
+                    <textarea class="go-playground-snippet" data-expanded="1" data-title="sorting.go">
+package main
+  
+import (
+    "fmt"
+    "sort"
+)
+
+func main() {
+  
+    Autor := []struct {
+        a_name    string
+        a_article int
+        a_id      int
+    }{
+        {"Mina", 304, 1098},
+        {"Cina", 634, 102},
+        {"Tina", 104, 105},
+        {"Rina", 10, 108},
+        {"Sina", 234, 103},
+        {"Vina", 237, 106},
+        {"Rohit", 56, 107},
+        {"Mohit", 300, 104},
+        {"Riya", 4, 101},
+        {"Sohit", 20, 110},
+    }
+
+    sort.Slice(Autor, func(p, q int) bool { 
+      return Autor[p].a_name < Autor[q].a_name })
+      
+    fmt.Println("Sort Autor de acordo com o campo nome:")
+    fmt.Println(Autor)
+    
+    numeros := []int{10, 50, 1908, 1, 13, 66, 32}
+    sort.Ints(numeros)
+    fmt.Println(numeros)
+}
+                    </textarea>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+
+                </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

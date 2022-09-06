@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="pt-BR" class="h-100">
 
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=1" rel="stylesheet">
     <link href="plugins/prism/prism.css" rel="stylesheet">
     <link href="css/go-playground/codemirror.css" rel="stylesheet">
     <link href="css/go-playground/codemirror-material.css" rel="stylesheet">
@@ -57,60 +57,582 @@
     <main class="main-page">
         <div class="container">
 
-            <h1>Contents</h1>
+            <h1>Go Bootcamp</h1>
 
-            <a href="pages/page-1.html" title="Introdu&ccedil;&atilde;o">Introdu&ccedil;&atilde;o</a>
+            <p>
+                Este material tem o objetivo de contribuir para o aprendizado da linguagem de programação Go, colaborando com a comunidade como uma fonte de aprendizado da linguagem. O material aborda o que precisamos saber para iniciarmos a programação na linguagem
+                Go.
+            </p>
+            <p>
+                O conteúdo visa tornar a vida de quem está iniciando na linguagem mais fácil.
+            </p>
+            <p>
+                Se você conhece pouco ou quase nada da programação não será problema, todo o manual foi feito para entusiastas do nível inicial ao intermediário.
+            </p>
+            <p>
+                Uma boa leitura.
+            </p>
+            </p>
 
-            <ul>
-                <li>
-                    <a href="pages/page-1.html" title="Instalando Go">Instalando Go</a>
-                </li>
-                <li>Packages</li>
-                <li>Imports</li>
-            </ul>
+            <p class="subtitulo">
+            Mais conteúdos do Bootcamp:
+            </p>
 
-            <a href="pages/page-1.html" title="Introdu&ccedil;&atilde;o">Editores</a>
+         
+            <a class="links-externos" target="_blank" href="https://www.youtube.com/watch?v=XVE3hHW7Wvs" title="LIVE PROJETO ZEROHERO | BOOTCAMP">
+                <i class="fa fa-youtube-play icone-youtube"></i>    
+            </a>
+            
+            <a class="links-externos" target="_blank" href="https://github.com/jeffotoni/gobootcamp/" title="GOBOOTCAMP">
+                <i class="fa fa-github icone-github"></i>
+            
+            </a>
 
-            <ul>
-                <li>vim</li>
-                <li>nvim</li>
-                <li>Goland</li>
-                <li>Vscode</li>
-                <li>Sublime</li>
-            </ul>
+            <hr>
 
-            <a href="pages/page-1.html" title="Introdu&ccedil;&atilde;o">Compilando e entendendo sobre</a>
+            <div class="topics">
+                <h3><a href="pages/index.html">Overview Go</a></h3>
 
-            <ul>
-                <li>go build</li>
-                <li>go run</li>
-                <li>go test</li>
-            </ul>
+                <h3><a title="Instalação">Instalação</a></h3>
 
-            <a href="pages/page-1.html" title="Introdu&ccedil;&atilde;o">Iniciando em Go</a>
+                <ul>
+                    <li>
+                        <a href="pages/instalation/index.html" title="Instalando Go">Instalando Go</a>
+                    </li>
+                    <li>
+                        <a href="pages/instalation/go_path.html" title="GOPATH">$GOPATH</a>
+                    </li>
+                    <li>
+                        <a href="pages/instalation/test.html" title="Testando a Instalação">Testando a Instalação</a>
+                    </li>
+                    <li>
+                        <a href="pages/instalation/workspace.html" title="Workspace">Workspace</a>
+                    </li>
+                    <li>
+                        <a href="pages/instalation/outside_go_path.html" title="Fora do GOPATH">Fora do $GOPATH</a>
+                    </li>
+                    <li>
+                        <a href="pages/instalation/func_main.html" title="Função main">Função Main</a>
+                    </li>
+                </ul>
 
-            <ul>
-                <li>
-                    <a href="pages/page-helloworld.html" title="Hello World">Hello World xxx</a>
-                </li>
+                <h3><a title="Editores">Editores</a></h3>
 
-                <li>Values</li>
-                <li>Variables</li>
-                <li>Variables with initializers</li>
-                <li>Short variable declarations</li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="pages/editors/vim.html" title="Vim">Vim</a>
+                    </li>
+                    <li>
+                        <a href="pages/editors/neovim.html">NeoVim</a>
+                    </li>
+                    <li>
+                        <a href="pages/editors/goland.html">GoLand</a>
+                    </li>
+                    <li>
+                        <a href="pages/editors/vscode.html">VSCode</a>
+                    </li>
+                    <li>
+                        <a href="pages/editors/sublime.html">Sublime</a>
+                    </li>
+                </ul>
 
+                <h3><a title="Comandos">Comandos</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/commands/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/commands/go_run.html" title="go run">go run</a>
+                    </li>
+
+                    <!--Agrupamento go build-->
+                    <li>
+                        <a href="pages/commands/go_build.html" title="go build">go build</a>
+                    </li>
+
+                    <li>
+                        <a href="pages/commands/go_install.html" title="go install">go install</a>
+                    </li>
+                    <li>
+                        <a href="pages/commands/go_test.html" title="go test">go test</a>
+                    </li>
+                    <li>
+                        <a href="pages/commands/go_clean.html" title="go clean" class="disabled-link">go clean</a>
+                    </li>
+                    <li>
+                        <a href="pages/commands/go_mod.html" title="go mod">go mod</a>
+                    </li>
+                    <li>
+                        <a href="pages/commands/go_env.html" title="go env">go env</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Introdu&ccedil;&atilde;o à linguagem Go">Introdução à linguagem Go</a></h3>
+
+                <ul>
+                    <ul>
+                        <li>
+                            <a href="pages/language_introduction/introduction/helloworld.html" title="Hello, World!">Hello, World!</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/comments_cstyle.html" title="Comentários e C-Style">Comentários e C-Style</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/keywords_operators.html" title="Keywords e Operadores">Keywords e Operadores</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/rune_literals.html" title="Rune Literals">Rune Literals</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/string_literals.html" title="String Literals">String Literals</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/constants.html" title="Constantes">Constantes</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/iota.html" title="Iota">Iota</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/variables.html" title="Variáveis">Variáveis</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/variable_declaration.html" title="Declaração de Variáveis">Declaração de Variáveis</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/short_variable_declaration.html" title="Declaração Curta de Variáveis">Declaração Curta de Variáveis</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/introduction/env_vars.html" title="Variáveis de Ambiente">Variáveis de Ambiente</a>
+                        </li>
+                    </ul>
+
+                    <!--Sub-tópico Tipos-->
+                    <li>
+                        <h3><a href="pages/language_introduction/types/index.html" title="Tipos">Tipos</a></h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="pages/language_introduction/types/boolean_type.html" title="Booleano">Booleano</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/numeric_types.html" title="Numéricos">Numéricos</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/string_type.html" title="String">String</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/array_type.html" title="Array">Array</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/slice_type.html" title="Slice">Slice</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/struct_type.html" title="Struct">Struct</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/pointer_type.html" title="Ponteiro">Ponteiro</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/function_type.html" title="Função">Função</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/interface.html" title="Interfaces">Interfaces</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/interface_method.html" title="Método de Interface">Método de Interface</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/interface_type.html" title="Interface Vazia">Interface Vazia</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/map_type.html" title="Map">Map</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/channel_type.html" title="Channel">Channel</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/types_properties.html" title="Propriedades">Propriedades dos Tipos</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/declaration_scope.html" title="Declaração e escopo">Declaração e escopo</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/label_scope.html" title="Escopo de Label">Escopo de Label</a>
+                        </li>
+                        <li>
+                            <a href="pages/language_introduction/types/blank_identifier.html" title="Identificador Vazio">Identificador Vazio</a>
+                        </li>
+                    </ul>
+                </ul>
+
+                <h3><a title="Controladores de estruturas">Controladores de estruturas</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/structures_controlers/return.html" title="Return">Return</a>
+                    </li>
+                    <li>
+                        <a href="pages/structures_controlers/goto.html" title="GOTO">GOTO</a>
+                    </li>
+                    <li>
+                        <a href="pages/structures_controlers/if_else.html" title="If Else">If Else</a>
+                    </li>
+                    <li>
+                        <a href="pages/structures_controlers/for.html" title="For loop">For loop</a>
+                    </li>
+                    <li>
+                        <a href="pages/structures_controlers/switch.html" title="Switch">Switch</a>
+                    </li>
+                    <li>
+                        <a href="pages/structures_controlers/label.html" title="Label">Label</a>
+                    </li>
+                    <li>
+                        <a href="pages/structures_controlers/range.html" title="Range">Range</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Funções">Funções</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/functions/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/functions/return.html" title="Return">Return</a>
+                    </li>
+                    <li>
+                        <a href="pages/functions/defer.html" title="Defer">Defer</a>
+                    </li>
+                    <li>
+                        <a href="pages/functions/variadic_functions.html" title="Funções Variádicas">Funções Variádicas</a>
+                    </li>
+                    <li>
+                        <a href="pages/functions/function_as_param.html" title="Passando Funções como Parâmetros">Passando Funções como Parâmetros</a>
+                    </li>
+                    <li>
+                        <a href="pages/functions/closures.html" title="Closures">Closures</a>
+                    </li>
+                    <li>
+                        <a href="pages/functions/recursion.html" title="Recursão">Recursão</a>
+                    </li>
+                    <li>
+                        <a href="pages/functions/async_functions.html" title="Funções Assíncronas">Funções Assíncronas</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Arrays">Arrays</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/arrays/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/arrays/declaration.html" title="Declaração">Declaração</a>
+                    </li>
+                    <li>
+                        <a href="pages/arrays/initialization.html" title="Inicialização">Inicialização</a>
+                    </li>
+                    <li>
+                        <a href="pages/arrays/accessing_elements.html" title="Acessando Elementos">Acessando Elementos</a>
+                    </li>
+                    <li>
+                        <a href="pages/arrays/resize.html" title="Redimensionar">Redimensionar</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Slices">Slices</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/slices/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/slices/make.html" title="Make">Make</a>
+                    </li>
+                    <li>
+                        <a href="pages/slices/append.html" title="Append">Append</a>
+                    </li>
+                    <li>
+                        <a href="pages/slices/range.html" title="Range">Range</a>
+                    </li>
+                    <li>
+                        <a href="pages/slices/slices_of_slices.html" title="Slices Multidimensionais">Slices Multidimensionais</a>
+                    </li>
+                    <li>
+                        <a href="pages/slices/len_cap.html" title="Len e Cap">Len e Cap</a>
+                    </li>
+                    <li>
+                        <a href="pages/slices/sorting.html" title="Sorting">Sorting</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Structs">Structs</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/structs/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/structs/new.html" title="New">New</a>
+                    </li>
+                    <li>
+                        <a href="pages/structs/anonymous_struct.html" title="Struct Anônima">Struct Anônima</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Data e Hora">Data e Hora</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/date_hour/date.html" title="Date">Date</a>
+                    </li>
+                    <li>
+                        <a href="pages/date_hour/duration.html" title="Duration">Duration</a>
+                    </li>
+                    <li>
+                        <a href="pages/date_hour/ticker.html" title="Ticker">Ticker</a>
+                    </li>
+                    <li>
+                        <a href="pages/date_hour/sleep.html" title="Sleep">Sleep</a>
+                    </li>
+                    <li>
+                        <a href="pages/date_hour/time.html" title="Time">Time</a>
+                    </li>
+                    <li>
+                        <a href="pages/date_hour/parse.html" title="Parse">Parse</a>
+                    </li>
+                    <li>
+                        <a href="pages/date_hour/format.html" title="Format">Format</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Ponteiros">Ponteiros</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/pointers/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/pointers/when_use.html" title="Quando Usar">Quando Usar</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Métodos">Métodos</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/methods/index.html" title="Comparação com Funções">Comparação com Funções</a>
+                    </li>
+                    <li>
+                        <a href="pages/methods/interfaces.html" title="Interfaces">Interfaces</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Maps">Maps</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/maps/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/maps/make.html" title="Make">Make</a>
+                    </li>
+                    <li>
+                        <a href="pages/maps/types.html" title="Tipos">Tipos</a>
+                    </li>
+                </ul>
+
+                <h3><a title="JSON">JSON</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/json/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/json/marshal.html" title="Marshal">Marshal</a>
+                    </li>
+                    <li>
+                        <a href="pages/json/unmarshal.html" title="Unmarshal">Unmarshal</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Goroutines">Goroutines</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/goroutines/index.html" title="Introdução">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/channels.html" title="Channels">Channels</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/channel_direction.html" title="Channel Direction">Direction</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/channel_buffering.html" title="Channel Buffering">Buffering</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/channel_syncronization.html" title="Channel Syncronization">Syncronization</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/select.html" title="Select">Select</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/timeouts.html" title="Timeouts">Timeouts</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/closing.html" title="Close">Close</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/range.html" title="Range">Range</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/timers.html" title="Timers">Timers</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/tickers.html" title="Tickers">Tickers</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/wait_groups.html" title="WaitGroups">Wait Groups</a>
+                    </li>
+                    <li>
+                        <a href="pages/goroutines/web_crawler.html" title="Web Crawler">Web Crawler</a>
+                    </li>
+                </ul>
+
+                <h3><a title="File">File</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/file/base64.html" title="Base64">Base64</a>
+                    </li>
+                    <li>
+                        <a href="pages/file/reading.html" title="Lendo">Lendo</a>
+                    </li>
+                    <li>
+                        <a href="pages/file/writting.html" title="Escrevendo">Escrevendo</a>
+                    </li>
+                    <li>
+                        <a href="pages/file/deleting.html" title="Deletando">Deletando</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Criptografia">Criptografia</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/crypto/sha1.html" title="SHA1">SHA1</a>
+                    </li>
+                    <li>
+                        <a href="pages/crypto/md5.html" title="MD5">MD5</a>
+                    </li>
+                    <li>
+                        <a href="pages/crypto/crc32.html" title="CRC32">CRC32</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <!--Sub-tópico Server-->
+                    <li>
+                        <h3><a href="pages/net_http_server/index.html" title="Server">net/http Server</a></h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="pages/net_http_server/http_handle.html" title="http.Handle">http.Handle</a>
+                        </li>
+                        <li>
+                            <a href="pages/net_http_server/http_handle_func.html" title="http.HandleFunc">http.HandleFunc</a>
+                        </li>
+                        <li>
+                            <a href="pages/net_http_server/http_handler.html" title="http.Handler">http.Handler</a>
+                        </li>
+                        <li>
+                            <a href="pages/net_http_server/http_handler_func.html" title="http.HandlerFunc">http.HandlerFunc</a>
+                        </li>
+                        <li>
+                            <a href="pages/net_http_server/listen_and_serve.html" title="ListenAndServe">ListenAndServe</a>
+                        </li>
+                        <li>
+                            <a href="pages/net_http_server/file_server.html" title="http.FileServer">http.FileServer</a>
+                        </li>
+                    </ul>
+
+                    <!--Sub-tópico Client-->
+                    <li>
+                        <h3><a href="pages/net_http_server/client.html" title="Client">net/http Client</a></h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="pages/net_http_server/http_get.html" title="http.Get">http.Get</a>
+                        </li>
+                        <li>
+                            <a href="pages/net_http_server/http_post.html" title="http.Post">http.Post</a>
+                        </li>
+                        <li>
+                            <a href="pages/net_http_server/http_new_request.html" title="http.NewRequest">http.NewRequest</a>
+                        </li>
+                    </ul>
+                </ul>
+
+                <h3><a title="API REST">API REST</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/rest/index.html" title="Introdução">Introdu&ccedil;&atilde;o</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/crud_zerohero.html" title="API ZeroHero">API ZeroHero</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/standard_library.html" title="Standard Library">Standard Library</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/frameworks_restfull.html" title="Frameworks RestFull">Frameworks RestFull</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/fiber.html" title="Fiber">Fiber</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/gin.html" title="Gin">Gin</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/echo.html" title="Echo">Echo</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/beego.html" title="Beego">Beego</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/macaron.html" title="Macaron">Macaron</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/chi.html" title="Chi">Chi</a>
+                    </li>
+                    <li>
+                        <a href="pages/rest/gramework.html" title="Gramework">Gramework</a>
+                    </li>
+                </ul>
+
+                <h3><a title="Router">Router</a></h3>
+
+                <ul>
+                    <li>
+                        <a href="pages/router/gorilla.html" title="Gorilla.Mux">Gorilla.Mux</a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </main>
     <!-- Conteudo pagina Fim -->
 
     <!-- Rodape -->
-    <footer class="footer mt-auto">
-        <div class="main-footer">
-            <div class="container text-center">
+    <footer class="footer mt-auto ">
+        <div class="main-footer ">
+            <div class="container text-center ">
 
-                <span>by <a href="https://jeffotoni.com/" target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" target="_blank">license</a>
+                <span>by <a href="https://jeffotoni.com/ " target="_blank ">@jeffotoni</a> ❤️ &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp " target="_blank ">source</a> &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE
+                            " target="_blank ">license</a>
 
 			</div>
 		</div>	
@@ -119,23 +641,23 @@
 
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.js "></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
 
     <!-- Custom js -->
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js "></script>
 
     <!-- Go Playground -->
-    <script src="js/go-playground/codemirror.js"></script>
-    <script src="js/go-playground/codemirror-go.js"></script>
-    <script src="js/go-playground/playground.js"></script>
-    <script src="js/go-playground/snippets.js"></script>
-    <script src="js/go-playground/jquery-linedtextarea.js"></script>
+    <script src="js/go-playground/codemirror.js "></script>
+    <script src="js/go-playground/codemirror-go.js "></script>
+    <script src="js/go-playground/playground.js "></script>
+    <script src="js/go-playground/snippets.js "></script>
+    <script src="js/go-playground/jquery-linedtextarea.js "></script>
 
     <!-- Prism Syntax Highlighting -->
-    <script src="plugins/prism/prism.js"></script>
+    <script src="plugins/prism/prism.js "></script>
 
 </body>
 </html>

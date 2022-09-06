@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - API REST - Docker</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">API REST - Docker</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Docker é um conjunto de produtos de plataformas como serviço (PaaS) que usam a visualização 
+                            em nível de sistema operacional para entregar software em pacotes chamados contêineres. Os 
+                            contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e 
+                            arquivos de configuração; eles podem se comunicar uns com os outros por meio de canais bem 
+                            definidos. Todos os contêineres são executados por um único kernel do sistema operacional e, 
+                            portanto, usam menos recursos do que uma máquina virtual.
+                        </p>
+                        <ul>
+                            <li>
+                                Os Docker Containers contêm binários, bibliotecas e arquivos de configuração junto com 
+                                o próprio aplicativo.
+                            </li>
+                            <li>
+                                Eles não contêm um sistema operacional convidado para cada contêiner e dependem do 
+                                kernel do sistema operacional subjacente, o que torna os contêineres leves.
+                            </li>
+                            <li>
+                                Os contêineres compartilham recursos com outros contêineres no mesmo sistema 
+                                operacional host e fornecem isolamento de processo no nível do sistema operacional. 
+                            </li>
+                        </ul>
+                        <p>
+                            Intalando Docker Engine:
+                        </p>
+                        <pre><code class="language-go">
+sudo apt-get update
+$ sudo apt-get install \
+   apt-transport-https \
+   ca-certificates \
+   curl \
+   gnupg-agent \
+   software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+$ sudo add-apt-repository \
+  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) \
+  stable nightly test"
+$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+                        </code></pre>
+                        <p>
+                            Verifique se a intalação foi feita com sucesso:
+                        </p>
+                        <pre><code class="language-go">
+sudo docker run hello-world
+                        </code></pre>
+                        <p>
+                            Crie um arquivo chamado Dockerfile, copie o código ao lado para ele e cria uma imagem docker:
+                        </p>
+                        <pre><code class="language-go">
+docker build --no-cache -f Dockerfile -t growth/<lang>:latest .
+                        </code></pre>
+                        <p>
+                            Agora, execute-a com este comando:
+                        </p>
+                        <pre><code class="language">
+                            docker run --rm -it -p 8080:8080 growth/<lang>
+                        </code></pre>
+                        <p>
+                            Isso fará com que a imagem docker que você criou seja executada.
+                        </p>
+                        <p>
+                            Também é possível baixar uma imagem pronta pelo site docker.hub com o comando:
+                        </p>
+                        <pre><code class="language-go">
+docker pull jeffotoni/zeroherost
+                        </code></pre>
+                        <p>
+                            Link da imagem: <a href="https://hub.docker.com/r/jeffotoni/zeroherost">jeffotoni/zeroherost</a>
+                        </p>
+                    </div>
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="echo.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Echo</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="../../index.html">
+                            <span>Homepage</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <div class="code-filename">docker.go</div>
+
+                    <div class="content-height">
+                        <pre><code class="language-go">
+#################################################
+# Go + Strach + Muiltistage
+#################################################
+FROM golang:1.17.0 AS builder
+WORKDIR /go/src/main
+COPY . .
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w -X main.ambiente=cloudrun" -o zerohero
+
+FROM alpine:latest as builder2
+RUN apk add --no-cache upx
+COPY --from=builder /go/src/main /go/src/main
+WORKDIR /go/src/main
+RUN upx zerohero
+
+FROM alpine:latest AS final
+RUN apk update
+RUN apk add --no-cache tzdata
+RUN apk add --no-cache ca-certificates
+ENV TZ="America/Sao_Paulo"
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+COPY --from=builder2 /go/src/main /
+CMD ["/zerohero"]
+                        </code></pre>
+                    </div>
+
+                    <img class="gopher-column-code" src="../../../img/gopher-docker-cut.png" alt="" />
+                </div>
+                <!--- Coluna Direita Fim --->
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

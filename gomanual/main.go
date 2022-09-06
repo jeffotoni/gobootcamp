@@ -27,7 +27,6 @@ var (
 var res embed.FS
 
 func main() {
-
 	// usamos go build -ldflags="-X main.version=docker"
 	// aqui pegamos o valor passado na compilacao
 	// para escolhermos qual forma iremos servir

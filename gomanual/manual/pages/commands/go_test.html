@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - Comandos - Go test</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">Comandos - Go test</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Pacotes de teste:
+                        </p>
+                        <pre><code class="language-go">
+$ go test [build/test flags] [packages] [build/test flags & test binary flags]
+                        </code></pre>
+                        <p>
+                            O teste Go automatiza o teste dos pacotes nomeados pelos caminhos de importação. 
+                            Ele imprime um resumo dos resultados do teste no formato:
+                        </p>
+                        <pre><code class="language-go">
+ok   archive/tar   0.011s
+FAIL archive/zip   0.022s
+ok   compress/gzip 0.033s
+                        </code></pre>
+                        <p>
+                            Seguido por uma saída detalhada para cada pacote com falha.
+                        </p>
+                        <p>
+                            'Go test' recompila cada pacote junto com quaisquer arquivos com nomes que correspondam ao 
+                            padrão de arquivo "* test.go". Esses arquivos adicionais podem conter funções de teste, 
+                            funções de benchmark e funções de exemplo. Veja 'go help testfunc' para mais informações. 
+                            Cada pacote listado causa a execução de um binário de teste separado. Arquivos cujos nomes 
+                            começam com "_" (incluindo "_test.go") ou "." são ignorados.
+                        </p>
+                        <p>
+                            Os arquivos de teste que declaram um pacote com o sufixo "_test" serão compilados como um 
+                            pacote separado e, em seguida, vinculados e executados com o binário de teste principal.
+                        </p>
+                        <p>
+                            A ferramenta go irá ignorar um diretório chamado "testdata", tornando-o disponível para 
+                            conter os dados auxiliares necessários para os testes.
+                        </p>
+                        <p>
+                            Como parte da construção de um binário de teste, go test executa go vet no pacote e seus 
+                            arquivos de origem de teste para identificar problemas significativos. Se go vet encontrar 
+                            algum problema, vá testá-los e não executará o binário de teste. Apenas um subconjunto de 
+                            alta confiança das verificações de veterinário padrão é usado. Esse subconjunto é: 'atomic', 
+                            'bool', 'buildtags', 'nilfunc' e 'printf'. Você pode ver a documentação desses e de outros 
+                            testes veterinários em "go doc cmd / vet". Para desativar a execução do go vet, use a sinalização -vet = off.
+                        </p>
+                        <p>
+                            Todas as saídas de teste e linhas de resumo são impressas na saída padrão do comando go, 
+                            mesmo se o teste as imprimiu com seu próprio erro padrão. (O erro padrão do comando go é 
+                            reservado para erros de impressão na construção dos testes.)
+                        </p>
+                        <p>
+                            O teste Go é executado em dois modos diferentes:
+                        </p>
+                        <p>
+                            O primeiro, denominado modo de diretório local, ocorre quando go test é invocado sem argumentos 
+                            de pacote (por exemplo, 'go test' ou 'go test -v'). Nesse modo, go test compila as fontes e testes 
+                            do pacote encontrados no diretório atual e, em seguida, executa o binário de teste resultante. 
+                            Neste modo, o armazenamento em cache (discutido abaixo) é desabilitado. Após a conclusão do teste 
+                            do pacote, go test imprime uma linha de resumo mostrando o status do teste ('ok' ou 'FAIL'), o nome 
+                            do pacote e o tempo decorrido.
+                        </p>
+                    </div>
+
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="go_install.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>Comandos - go install</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="go_clean.html">
+                            <span>Comandos - go clean</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <!--- Coluna Direita --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <div class="code-filename">go test</div>
+
+
+                    <div class="content-height">
+                        <p>
+                            O segundo, chamado modo de lista de pacotes, ocorre quando go test é invocado com argumentos de 
+                            pacote explícitos (por exemplo 'go test math', 'go test. /...' e até mesmo 'go test.'). Neste modo, 
+                            faça um teste de compilação e teste cada um dos pacotes listados na linha de comando. Se um teste de 
+                            pacote for aprovado, go test imprime apenas a linha de resumo final 'ok'. Se um teste de pacote 
+                            falhar, go test imprime a saída de teste completa. Se chamado com o sinalizador -bench ou -v, go test 
+                            imprime a saída completa mesmo para passar nos testes de pacote, a fim de exibir os resultados de 
+                            benchmark solicitados ou registro detalhado.
+
+                            Além dos sinalizadores de construção, os sinalizadores controlados pelo próprio 'go test' são:
+                        </p>
+                        <pre><code class="language-go">
+-args
+    Pass the remainder of the command line (everything after -args)
+    to the test binary, uninterpreted and unchanged.
+    Because this flag consumes the remainder of the command line,
+    the package list (if present) must appear before this flag.
+
+-c
+    Compile the test binary to pkg.test but do not run it
+    (where pkg is the last element of the package's import path).
+    The file name can be changed with the -o flag.
+
+-exec xprog
+    Run the test binary using xprog. The behavior is the same as
+    in 'go run'. See 'go help run' for details.
+
+-i
+    Install packages that are dependencies of the test.
+    Do not run the test.
+
+-json
+    Convert test output to JSON suitable for automated processing.
+    See 'go doc test2json' for the encoding details.
+
+-o file
+    Compile the test binary to the named file.
+    The test still runs (unless -c or -i is specified).
+                        </code></pre>
+                        <p>
+                            Para mais informações sobre sinalizadores de construção, consulte 'go help build'. 
+                            Para obter mais informações sobre como especificar pacotes, consulte 'go help packages'.
+                        </p>
+                        <p>
+                            O pacote de teste é executado lado a lado com o comando go test. O teste do pacote 
+                            deve ter o sufixo "_test.go". Podemos dividir os testes em vários arquivos seguindo esta 
+                            convenção. Por exemplo: "myprog1_test.go" e "myprog2_test.go". Devemos colocar nossas 
+                            funções de teste nesses arquivos de teste.
+                        </p>
+                        <p>
+                            Cada função de teste é uma função pública exportada cujo nome começa com "Teste", aceita 
+                            um ponteiro para um objeto testing.T e não retorna nada. Como isso:
+
+                            Exemplo one/myprog1_test:
+                        </p>
+                    </div>
+                <!--- Coluna Direita Fim --->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>

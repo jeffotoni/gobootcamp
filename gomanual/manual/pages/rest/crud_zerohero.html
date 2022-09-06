@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="go, golang, Engineering, jeffotoni golang, lambda">
+    <meta name="author" content="jeffotoni">
+    <title>Go Bootcamp - API REST - ZeroHero</title>
+
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../css/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../plugins/prism/prism.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror.css" rel="stylesheet">
+    <link href="../../../css/go-playground/codemirror-juejin.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Cabecalho -->
+    <header>
+        <div class="main-header">
+            <div class="container text-center">
+                <a href="../../../index.html">
+                    <img class="main-header-logo" src="../../../img/go-logo-white.png" alt="" />
+                    <span class="main-header-title">Bootcamp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecalho Fim -->
+
+    <main class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--- Coluna Esquerda --->
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <!--- Page title --->
+                    <div class="main-title">API REST - ZeroHero</div>
+                    <!--- Page title Fim --->
+
+
+                    <div class="content-height">
+                        <p>
+                            Este é um simples exemplo que fizemos em um evento online para comunidade de desenvolvedores.
+                            Foi criado uma <strong>API rEST</strong> do zero ao vivo 😍. Legal não é ? 🤗
+                        </p>
+                        <p>
+                            Todo trabalho encontra-se em: 
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/jeffotoni/gobootcamp/tree/main/zerohero" target="_blank">github/zerohero</a>
+                            </li>
+                            <li>
+                                <a href="https://zerohero.web.s3apis.com/" target="_blank">zerohero.web.s3apis</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=7HCwOBvp6jA&t=3s" target="_blank">Youtube Live</a>
+                            </li>
+                        </ul>
+                        <p>
+                            Este projeto é meramente didático e prático e foi desenvolvido para o evento do Bootcamp, fiquem a vontade em enviar Pull Request 😍.
+                        </p>
+
+                        <!-- <p>
+                            legal não é 😍?. O objetivo é entender a construção de uma API Go usando somente a strand library. Na pasta json temos alguns supererois para que possamos brincar em nossa base. Exemplo de Json do Odin.
+                        </p> -->
+
+                        <p>
+                            ZeroHero é uma api que carrega uma base com os supereróis e permite pesquisas por biography, powerstats, connections , image, work e appearance.
+                        </p>
+
+                        <pre><code class="language-go">
+mux := http.NewServeMux()
+mux.HandleFunc("/", Service)
+
+handler := cors.Default().Handler(mux)
+
+s := &http.Server{
+    Addr:           "0.0.0.0:8080",
+    Handler:        handler,
+}
+log.Fatal(s.ListenAndServe())
+.....
+                        </code></pre>
+                    </div>
+
+                    <div class="pages-menu">
+
+                        <a class="pages-menu-link link-back" href="index.html">
+                            <i class="fa fa-chevron-left"></i> &nbsp; <span>API REST - Introdução</span>
+                        </a>
+
+                        <img src="../../../img/gopher-docker.png" alt="" />
+
+                        <a class="pages-menu-link link-forward" href="standard_library.html">
+                            <span>API REST - Standard Library</span> &nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!--- Coluna Esquerda Fim --->
+
+                <div class="col-12 col-lg-6 column-text px-0">
+
+                    <div class="code-filename">crud_zerohero.go</div>
+
+                    <div class="content-height">
+                        <p>
+                            <pre><code class="language-go">
+$ curl -i -XGET -H "Content-Type:application/json" https://zerohero.s3apis.com/api/loki
+{
+    "response":"success",
+    "id":"414",
+    "uuid":"bbd34698-925d-4191-b60c-068926b0b9a2",
+    "name":"loki",
+    "powerstats":{
+       "intelligence":"88",
+       "strength":"63",
+       "speed":"46",
+       "durability":"85",
+       "power":"100",
+       "combat":"60"
+    },
+    "biography":{
+       "full-name":"Loki Laufeyson",
+       "aliases":[
+          "God of Mischief",
+          "Gem-Keeper",
+          "Walter Lawson",
+          "Lester",
+          "Loren Olsen",
+       ],
+       "publisher":"Marvel Comics",
+       "alignment":"bad"
+    },
+    "image":{
+       "url":"https://www.superherodb.com/pictures2/portraits/10/100/928.jpg"
+    }
+ }
+</pre></code>
+                        </p>
+                    </div>
+
+                </div>
+                <!--- Coluna Direita Fim --->
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="container text-center">
+
+                <span>by <a href="https://jeffotoni.com/" 
+                    target="_blank">@jeffotoni</a> ❤️ &nbsp; | &nbsp; 
+                    <a href="https://github.com/jeffotoni/gobootcamp" target="_blank">source</a> 
+                    &nbsp; | &nbsp; <a href="https://github.com/jeffotoni/gobootcamp/blob/main/LICENSE" 
+                    target="_blank">license</a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape Fim -->
+
+
+    <!-- jQuery -->
+    <script src="../../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../../../js/custom.js"></script>
+
+    <!-- Go Playground -->
+    <script src="../../../js/go-playground/codemirror.js"></script>
+    <script src="../../../js/go-playground/codemirror-go.js"></script>
+    <script src="../../../js/go-playground/playground.js"></script>
+    <script src="../../../js/go-playground/snippets.js"></script>
+    <script src="../../../js/go-playground/jquery-linedtextarea.js"></script>
+
+    <!-- Prism Syntax Highlighting -->
+    <script src="../../../plugins/prism/prism.js"></script>
+
+</body>
+
+</html>
