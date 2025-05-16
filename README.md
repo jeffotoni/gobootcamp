@@ -1,65 +1,59 @@
 ## Go Bootcamp
+This material aims to contribute to the learning of the Go programming language😍 by collaborating with the community as a source of learning in the Go language. A material that covers what we need to know to start programming in the Go language 😍.
+The content is aimed at the basic level of the student, many practical examples were made with rich details to make life easier for those who are starting in the language.
+If you know little or almost nothing about programming, it won't be a problem, the entire manual was made for beginners to advanced levels.
+I hope you like it and that it can serve as a basis for learning and help many possible Gophers.
 
-Este material tem o objetivo de contribuir para o aprendizado da linguagem de programação Go😍 colaborando com a comunidade como uma fonte de aprendizado na linguagem Go. Um material que aborda o que precisamos saber para iniciarmos a programação na linguagem Go 😍.
+Here is the live stream with over 7 hours of content: [ZeroHero Bootcamp](https://www.youtube.com/watch?v=XVE3hHW7Wvs) ❤️
 
-O conteúdo visa o nível básico do aluno muitos exemplos práticos foram feitos com riqueza de detalhes para tornar a vida mais fácil de quem está iniciando na linguagem.
+There are thousands of references today regarding Golang, let's start from the beginning and we couldn't fail to mention the [Golang Tour](https://go.dev/tour/welcome/1), [Play Golang](https://go.dev/play) or [Play Go Space](https://goplay.space/) are online ways to play with the Go language, isn't it beautiful? 😊
 
-Se você conhece pouco e quase nada a programação não será problema, todo o manual foi feito para o nível inicial ao avançado.
+We created this page to help you find some links that we believe are essential for learning the Go language more easily:
+* **[Go references](https://github.com/jeffotoni/gobootcamp/tree/main/references)**
 
-Espero que gostem e possam servir de base para aprendizado e ajudar vários Gophers possíveis.
+We created a Go roadmap to make it easier to have a macro view when learning Go.
+* **[Go roadmap](roadmap/goroadmap.png)**
 
-Aqui está a live com mais de 7 horas de conteúdo: [Bootcamp ZeroHero](https://www.youtube.com/watch?v=XVE3hHW7Wvs) ❤️
-
-Existem milhares de referências hoje em relação ao Golang, vamos começar do início e não podíamos deixar de falar do [Golang Tour](https://go.dev/tour/welcome/1), [Play Golang](https://go.dev/play) ou [Play Go Space](https://goplay.space/) são formas online de brincarmos com a linguagem Go, lindo não é ? 😊
-
-Criamos esta página para ajuda-lo a encontrar com mais facilidade alguns links que acreditamos ser essenciais para o aprendizado da linguagem Go: 
-* **[referencias Go](https://github.com/jeffotoni/gobootcamp/tree/main/references)**
-
-Criamos um roadmap Go para facilitar a visão macro quando formos aprender Go.
-* **[roadmap Go](roadmap/goroadmap.png)**
-
-Todo manual foi baseado nestas referências apresetados acima, ele encontra-se aqui: 
+The entire manual was based on the references presented above, and can be found here:
 * **[gobootcamp](https://gobootcamp.jeffotoni.com/)**
 
-Criamos esta página manual
-* **[manual Go](https://github.com/jeffotoni/gobootcamp/tree/main/gomanual)**
+We created this manual page
+* **[Go manual](https://github.com/jeffotoni/gobootcamp/tree/main/gomanual)**
 
-Criamos nosso front para nossa api rEST Zerohero
+We created our frontend for our rEST Zerohero API
 * **[Zerohero Front](https://zerohero.web.s3apis.com)**
 
-Nosso repo do Zerohero backend versão standard library
+Our Zerohero backend standard library repo
 * **[Zerohero backend source](https://github.com/jeffotoni/gzerohero)**
 
-Nosso repo do Zerohero front
+Our Zerohero front repo
 * **[Zerohero front source](https://github.com/jeffotoni/gzerohero.web)**
 - ![zerohero front](img/zerohero-front.png?raw=true "zerohero front")
 
-## Instalar com Docker
-
-Você pode instalar gobootcampmanual com docker.
+## Install with Docker
+You can install gobootcampmanual with docker.
 
 ```bash
 $  docker run --rm --name gobootcampmanual -it \
 -p 8080:8080 jeffotoni/gobootcampmanual:latest
 ```
 
-## Instalar o manual localmente
+## Install the manual locally
 
-Para instalar o manual e executar localmente basta rodar o script abaixo. Seu $GOPATH tem que está configurado.
+To install the manual and run it locally, simply run the script below. Your $GOPATH must be configured.
 
-_Observação_ 
-_É necessário $GOPATH está configurado._
+_Note_
+_$GOPATH must be configured._
 
 ```bash
 $ sh -c "$(wget https://raw.githubusercontent.com/jeffotoni/gobootcamp/main/install/v1/install.sh -O -)"
 ```
 
-## Executar o manual localmente
+## Run the manual locally
+You can install the manual on your local machine, we will clone the project and run it locally.
 
-Você poderá instalar o manual em sua máquina local, vamos fazer clone do projeto e executá-lo localmente. 
-
-_Observação_ 
-_É necessário o Go instalado na máquina._
+_Note_
+_Go must be installed on the machine._
 
 ```bash
 $ git clone https://github.com/jeffotoni/gobootcamp
@@ -67,7 +61,7 @@ $ cd gomanual
 $ go run .
 Run Server: http://localhost:8181
 ```
-Agora basta acessar o link para acessar o manual localmente, desta forma você consegue alterar o manual seja para colaborar enviando um PR (Pull request) com melhorias ou novos temas como fazer um fork para seu uso pessoal 😊.
+Now just access the link to access the manual locally, this way you can change the manual either to collaborate by sending a PR (Pull request) with improvements or new topics or to make a fork for your personal use 😊.
 
 - ![gobootcamp](img/gobootcamp1.jpg?raw=true "gobootcamp")
 

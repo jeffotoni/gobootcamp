@@ -1,44 +1,44 @@
-## Referências
+## References
 
-Alguns dos conteúdos que consideramos que seria interessante para os amantes da *Linguagem Go* e para os que estão iniciando neste universo apaixonante de *Golang* ❤️. 
+Some content we consider interesting for *Go language* enthusiasts and those just beginning their journey in this exciting world of *Golang* ❤️.  
 ***
 
-## Personalize seu Go
-* **[Personalize seu Go](https://gopherize.me/)**
+## Customize your Go
+* **[Customize your Go](https://gopherize.me/)**
 
-## Json to Struct and Json to  Map Go
+## Json to Struct and Json to Map Go
 
-* **[json para struct](https://mholt.github.io/json-to-go/)**
-* * **[json para map](https://rodrigo-brito.github.io/json-to-go-map/)**
-  
-## Grupos no Linkedin
+* **[json to struct](https://mholt.github.io/json-to-go/)**
+* **[json to map](https://rodrigo-brito.github.io/json-to-go-map/)**
+
+## LinkedIn Groups
 
 ![go-br](https://user-images.githubusercontent.com/31008900/145086015-0c73488a-33e0-47b1-af7a-a218e788b9c5.png)
 * **[Golang Nuts](https://www.linkedin.com/groups/3712244/)**
 
 ![go-linke](https://user-images.githubusercontent.com/31008900/145089344-8eb54445-9909-44eb-910c-e2a54445b3e3.png)
-* **[GO - GoLang Brasil](https://www.linkedin.com/groups/12444017/)**
+* **[GO - GoLang Brazil](https://www.linkedin.com/groups/12444017/)**
 ***
 
-## Grupos Telegram
+## Telegram Groups
 
 ![go](https://user-images.githubusercontent.com/31008900/145082563-9dbfe808-ee4e-460a-8334-cba36deb5220.png)
 * **[Let's Gophers](https://t.me/letsgophers)**
 
 ![go-br](https://user-images.githubusercontent.com/31008900/145082658-cfb3ed7a-38c3-4def-9668-5e6ce17b8019.png)
-* **[Go Brasil](https://t.me/go_br)**
+* **[Go Brazil](https://t.me/go_br)**
 
 ![go-bh](https://user-images.githubusercontent.com/31008900/145082708-267eb39f-1f22-47c7-b124-d16d8d949e61.png)
 * **[Go BH](https://t.me/go_bh)**
 ***
 
-## Grupos no Slack
+## Slack Groups
 
 ![slack](https://user-images.githubusercontent.com/31008900/145082751-d624dca7-0261-48cb-a0d6-7dc9eeebfc6f.png)
 * **[Slack Gophers](https://gophers.slack.com/)**
 ***
 
-## Grupos no Discord
+## Discord Groups
 
 ![discord](https://user-images.githubusercontent.com/31008900/145082782-af7cbb5a-dbcb-42a7-b030-945ec7e7e2dd.png)
 * **[Discord Gophers](https://discord.gg/wGdtwgAK)**
@@ -50,38 +50,38 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 * **[Go Fiber](https://discord.com/invite/bSnH7db)**
 ***
 
-## Cursos Online Gratuitos
+## Free Online Courses
 
-* **[Grupo de estudos de golang - Cesar Gimenes](https://www.youtube.com/channel/UCxRoRvJi7NbC2boKAV70t_g)**
-* **[Aprenda Go - Ellen Korbes](https://www.youtube.com/channel/UCxD5EE0H7qOhRr0tIVsOZPQ)**
+* **[Golang Study Group - Cesar Gimenes](https://www.youtube.com/channel/UCxRoRvJi7NbC2boKAV70t_g)**
+* **[Learn Go - Ellen Korbes](https://www.youtube.com/channel/UCxD5EE0H7qOhRr0tIVsOZPQ)**
 * **[Justforfunc: Programming in Go - Francesc Campoy](https://www.youtube.com/c/JustForFunc/videos)**
 ***
 
-## Eventos Go
+## Go Events
 * **[GopherCon 2021](https://www.youtube.com/watch?v=35eIxI_n5ZM)** 
-* **[GopherCon Brasil 2022](https://gopherconbr.org/)**
+* **[GopherCon Brazil 2022](https://gopherconbr.org/)**
 ***
 
-## Books, exercícios e Tours
+## Books, Exercises and Tours
 
 * **[Go tour list](https://go.dev/tour/list)**
 * **[Go tour welcome](https://go.dev/tour/welcome/1)**
 * **[Talks Go](https://github.com/gobelohorizonte/gotalks)**
 * **[Exercism](https://exercism.org/tracks/go)**
-* **[Go Examplos](https://github.com/jeffotoni/goexample)**
+* **[Go Examples](https://github.com/jeffotoni/goexample)**
 * **[Go Compilation](https://github.com/jeffotoni/gocompilation)**
 * **[Workshop DevOps Go](https://github.com/jeffotoni/goworkshopdevops)**
-* **[Curso Go](https://github.com/jeffotoni/codenation.dev)**
+* **[Go Course](https://github.com/jeffotoni/codenation.dev)**
 * **[Wiki Books](https://github.com/golang/go/wiki/Books)**
-* **[Go bootcamp](https://www.golangbootcamp.com/book/)**
-* **[Essencial Go](https://www.programming-books.io/essential/go/)**
+* **[Go Bootcamp](https://www.golangbootcamp.com/book/)**
+* **[Essential Go](https://www.programming-books.io/essential/go/)**
 * **[Golang Book](https://www.golang-book.com/)**
 * **[Astaxie Book](https://astaxie.gitbooks.io/build-web-application-with-golang/content/pt-br/)**
 * **[Go by Example](https://gobyexample.com/)**
 * **[Go Web Example](https://gowebexamples.com/templates)**
 ***
 
-## Materias Interessantes
+## Interesting Materials
 * **[Usegolang](https://www.usegolang.com/#sample)**
 * **[Github - gopherconbr](https://github.com/gopherconbr/gopherconbr.org)**
 * **[SliceTricks](https://github.com/golang/go/wiki/SliceTricks)**
@@ -89,8 +89,8 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 
 ## Patterns
 
-* **[design-patterns adapter](https://refactoring.guru/pt-br/design-patterns/adapter/go/example)**
-* **[design-patterns Factory Method](https://refactoring.guru/pt-br/design-patterns/factory-method/go/example)**
+* **[Design Patterns: Adapter](https://refactoring.guru/pt-br/design-patterns/adapter/go/example)**
+* **[Design Patterns: Factory Method](https://refactoring.guru/pt-br/design-patterns/factory-method/go/example)**
 * **[Bridge](https://refactoring.guru/pt-br/design-patterns/bridge/go/example)**
 * **[Builder](https://refactoring.guru/pt-br/design-patterns/builder/go/example)**
 ***
@@ -101,78 +101,55 @@ Alguns dos conteúdos que consideramos que seria interessante para os amantes da
 * **[Awesome Go Fork](https://ma124.github.io/awesome-go-fork/)**
 * **[Awesome Go - Nouney](https://github.com/nouney/awesome-go)**
 * **[Golang Libraries - Dreadl0ck](https://github.com/dreadl0ck/golang-libs)**
-* **[Awesome Go avelino](https://github.com/avelino/awesome-go)**
-* **[Awesome Go Site](https://awesome-go.com/)**
+* **[Awesome Go - Avelino](https://github.com/avelino/awesome-go)**
+* **[Awesome Go Website](https://awesome-go.com/)**
 ***
 
 ## Podcast
 
-* **[Go além do "Hello World"](https://open.spotify.com/episode/4ftCLrN0Zf8TVVRKEqhAdF?go=1&sp_cid=6537e811b177994ef3969d14520b7d74&utm_source=embed_player_p&utm_medium=desktop&nd=1)**
-* **[Go! O que mudou durante um ano?](https://open.spotify.com/episode/7gW4c94bV8ZWlDxM5bqeRp?go=1&sp_cid=6537e811b177994ef3969d14520b7d74&utm_source=embed_player_p&utm_medium=desktop&nd=1)**
-* **[Como melhorar a produtividade com Golang para microsserviços - Engcast](https://open.spotify.com/episode/0utzxhGX9fF72PPDzMK23Q?go=1&sp_cid=6537e811b177994ef3969d14520b7d74&utm_source=embed_player_p&utm_medium=desktop&nd=1)**
-* **[API - Princípios, conceitos e como criar - Engcast](https://open.spotify.com/episode/7xMeFs3KjbYcXksm2gZmfB?go=1&sp_cid=6537e811b177994ef3969d14520b7d74&utm_source=embed_player_p&utm_medium=desktop&nd=1)**
+* **[Beyond "Hello World"](https://open.spotify.com/episode/4ftCLrN0Zf8TVVRKEqhAdF?go=1&sp_cid=6537e811b177994ef3969d14520b7d74&utm_source=embed_player_p&utm_medium=desktop&nd=1)**
+* **[Go! What changed in a year?](https://open.spotify.com/episode/7gW4c94bV8ZWlDxM5bqeRp?go=1&sp_cid=6537e811b177994ef3969d14520b7d74&utm_source=embed_player_p&utm_medium=desktop&nd=1)**
+* **[How to improve productivity with Golang for microservices - Engcast](https://open.spotify.com/episode/0utzxhGX9fF72PPDzMK23Q?go=1&sp_cid=6537e811b177994ef3969d14520b7d74&utm_source=embed_player_p&utm_medium=desktop&nd=1)**
+* **[API - Principles, concepts and how to build - Engcast](https://open.spotify.com/episode/7xMeFs3KjbYcXksm2gZmfB?go=1&sp_cid=6537e811b177994ef3969d14520b7d74&utm_source=embed_player_p&utm_medium=desktop&nd=1)**
 ***
 
-## Artigos
+## Articles
 
-* **[Posts Go Calhoun](https://www.calhoun.io/)**
-* **[Primeiros passos em Go](https://jeffotoni.medium.com/primeiros-passos-em-go-e1e28b7ff5d3)**
-```
-Um pouco do porque a linguagem Go surgiu, sua sintaxe e algumas áreas onde Go é mais aplicado... 
-```
-* **[Go é orientado a objetos?](https://jeffotoni.medium.com/go-%C3%A9-orientada-a-objetos-f600d226b1f6)**
-```
-Um assunto que tornou-se recorrente em listas de discussões, MeetUp, grupos etc... 
-```
-* **[Porque amamos Go! ❤️](https://jeffotoni.medium.com/porque-amamos-go-ea27ec919c53)**
-```
-Go foi projetado pelo Google em 2007 para melhorar a produtividade de programação em uma era de multicore... 
-```
-* **[GoLang - Simplificando a complexidade “O Inicio”](https://jeffotoni.medium.com/golang-simplificando-a-complexidade-o-inicio-145371d67711)**
-```
-Existem inúmeras linguagens de programação e cada uma nasceu com um propósito... 
-```
-* **[Um Pouco Sobre Goroutines em Go!](https://www.linkedin.com/pulse/goroutines-e-concorr%C3%AAncia-jefferson-otoni-lima/)**
-```
-Go é uma linguagem multiparadigma e dentre os mais relevantes é o paradigma concorrente.... 
-```
-* **[Tipos de aplicações usando Go](https://www.linkedin.com/pulse/tipos-de-aplica%C3%A7%C3%B5es-usando-go-jefferson-otoni-lima/)**
-```
-Go é uma linguagem de uso geral, com propósito de facilitar a resolução de problemas.... 
-```
-* **[Para quem curte DigitalOcean](https://www.linkedin.com/pulse/para-quem-curte-digital-ocean-jefferson-otoni-lima/)**
-```
-O Docker é uma ferramenta de containerização utilizada para fornecer às aplicações um sistema de arquivos.... 
-```
-* **[No caminho para o Go 2.0](https://www.linkedin.com/pulse/caminho-para-o-go-20-jefferson-otoni-lima/)**
-```
-Go está na versão 1.12.7 e caminhando para versão 2.0, este post é para apresentar um pouco deste caminho.... 
-```
+* **[Go Posts - Calhoun](https://www.calhoun.io/)**
+* **[First steps in Go](https://jeffotoni.medium.com/primeiros-passos-em-go-e1e28b7ff5d3)**
+* **[Is Go object-oriented?](https://jeffotoni.medium.com/go-%C3%A9-orientada-a-objetos-f600d226b1f6)**
+* **[Why we love Go! ❤️](https://jeffotoni.medium.com/porque-amamos-go-ea27ec919c53)**
+* **[GoLang - Simplifying complexity “The Beginning”](https://jeffotoni.medium.com/golang-simplificando-a-complexidade-o-inicio-145371d67711)**
+* **[A bit about Goroutines in Go!](https://www.linkedin.com/pulse/goroutines-e-concorr%C3%AAncia-jefferson-otoni-lima/)**
+* **[Types of applications using Go](https://www.linkedin.com/pulse/tipos-de-aplica%C3%A7%C3%B5es-usando-go-jefferson-otoni-lima/)**
+* **[For DigitalOcean fans](https://www.linkedin.com/pulse/para-quem-curte-digital-ocean-jefferson-otoni-lima/)**
+* **[On the road to Go 2.0](https://www.linkedin.com/pulse/caminho-para-o-go-20-jefferson-otoni-lima/)**
+
 ***
 
 ## Slides
 
-* **[REST, Sockets em Golang -  Xml-RPC e WebSocket](https://go-talks.appspot.com/github.com/gobelohorizonte/gotalks/restful.slide#1)**
-* **[Do Zero ao Deploy](https://go-talks.appspot.com/github.com/gobelohorizonte/gotalks/restful.slide#1)**
-* **[Organizando seu projeto Go](https://speakerdeck.com/jeffotoni/organizando-seu-projeto-go)**
-* **[Primeiros passos em Go](https://speakerdeck.com/jeffotoni/primeiros-passos-em-go)**
-* **[Go - Iniciando e porque usar](https://speakerdeck.com/jeffotoni/go-iniciando-e-por-que-usar)**
-* **[Explorando Kafka e Go](https://speakerdeck.com/jeffotoni/kafka-e-go)**
-* **[Escalando um app Go usando Serveless e kafka](https://speakerdeck.com/jeffotoni/escalando-um-app-go-usando-serverless-e-kafka)**
-* **[gRPC e Go - Um passo antes](https://speakerdeck.com/jeffotoni/grpc-e-go-um-passo-antes)**
-* **[gRPC e Go - Porque e quando usar](https://speakerdeck.com/jeffotoni/grpc-e-go-porque-e-quando-usar)**
-* **[Porque usar Go](https://speakerdeck.com/jeffotoni/porque-usar-go)**
-* **[Construindo APIs RPC e gRPC](https://speakerdeck.com/jeffotoni/construindo-apis-rpc-e-grpc)**
-* **[Performance em Go](https://speakerdeck.com/jeffotoni/performance-em-go)**
+* **[REST, Sockets in Golang - Xml-RPC and WebSocket](https://go-talks.appspot.com/github.com/gobelohorizonte/gotalks/restful.slide#1)**
+* **[From Zero to Deploy](https://go-talks.appspot.com/github.com/gobelohorizonte/gotalks/restful.slide#1)**
+* **[Organizing your Go project](https://speakerdeck.com/jeffotoni/organizando-seu-projeto-go)**
+* **[First steps in Go](https://speakerdeck.com/jeffotoni/primeiros-passos-em-go)**
+* **[Go - Getting started and why to use it](https://speakerdeck.com/jeffotoni/go-iniciando-e-por-que-usar)**
+* **[Exploring Kafka and Go](https://speakerdeck.com/jeffotoni/kafka-e-go)**
+* **[Scaling a Go app with Serverless and Kafka](https://speakerdeck.com/jeffotoni/escalando-um-app-go-usando-serverless-e-kafka)**
+* **[gRPC and Go - One step before](https://speakerdeck.com/jeffotoni/grpc-e-go-um-passo-antes)**
+* **[gRPC and Go - Why and when to use it](https://speakerdeck.com/jeffotoni/grpc-e-go-porque-e-quando-usar)**
+* **[Why use Go](https://speakerdeck.com/jeffotoni/porque-usar-go)**
+* **[Building RPC and gRPC APIs](https://speakerdeck.com/jeffotoni/construindo-apis-rpc-e-grpc)**
+* **[Performance in Go](https://speakerdeck.com/jeffotoni/performance-em-go)**
 * **[Overview on Go](https://speakerdeck.com/jeffotoni/overview-on-go)**
-* **[Performance em Go](https://speakerdeck.com/jeffotoni/performance-em-go)**
-* **[OpenFaaS vc AWS Lambda](https://speakerdeck.com/jeffotoni/openfaas-vs-aws-lambda)**
+* **[Performance in Go](https://speakerdeck.com/jeffotoni/performance-em-go)**
+* **[OpenFaaS vs AWS Lambda](https://speakerdeck.com/jeffotoni/openfaas-vs-aws-lambda)**
 * **[Go for DevOps - TDC 2019](https://speakerdeck.com/jeffotoni/tdc-2019-bh)**
-* **[Desktop e Go](https://speakerdeck.com/jeffotoni/desktop-e-go)**
-* **[Godo e DigitalOcean](https://speakerdeck.com/jeffotoni/godo-e-digitalocean)**
+* **[Desktop and Go](https://speakerdeck.com/jeffotoni/desktop-e-go)**
+* **[Godo and DigitalOcean](https://speakerdeck.com/jeffotoni/godo-e-digitalocean)**
 * **[Lambda & Golang](https://speakerdeck.com/jeffotoni/lambda-and-golang)**
-* **[Golang além do Hello World](https://speakerdeck.com/jeffotoni/golang-alem-do-hello-world)**
-* **[Serveless & Go](https://speakerdeck.com/jeffotoni/serverless-and-go)**
+* **[Golang beyond Hello World](https://speakerdeck.com/jeffotoni/golang-alem-do-hello-world)**
+* **[Serverless & Go](https://speakerdeck.com/jeffotoni/serverless-and-go)**
 * **[Rest, Sockets & Golang](https://speakerdeck.com/jeffotoni/rest-sockets-and-golang)**
-* **[API Rest & uploads escritos em Go](https://speakerdeck.com/jeffotoni/api-rest-and-uploads-escrito-em-go)**
+* **[API Rest & uploads written in Go](https://speakerdeck.com/jeffotoni/api-rest-and-uploads-escrito-em-go)**
 ***

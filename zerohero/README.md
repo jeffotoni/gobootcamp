@@ -1,17 +1,13 @@
 # API zerohero 🐿️ 
+A simple example of a zerohero API inspired by the [superheroapi](https://superheroapi.com/) API.
+This service is just starting and will be used in the Bootcamp and Hand-on at DevOpsFest.
+Feel free to comment and collaborate by opening an [issue](https://github.com/jeffotoni/gzerohero/issues) and leaving your comments.
 
-Um simples exemplo de uma API zerohero inspirada na api [superheroapi](https://superheroapi.com/).
-Este serviço está bem no inicio e será usado no Bootcamp e Hand-on no DevOpsFest.
+ZeroHero is an API that carries a database with superheroes and allows searches by biography, powerstats, connections, image, work and appearance.
 
-Fique a vontade em comentar e colaborar abra um [issue](https://github.com/jeffotoni/gzerohero/issues) e deixe seus comentários.
-
-ZeroHero é uma api que carrega uma base com os supereróis e permite pesquisas por biography, powerstats, connections , image, work e appearance.
-
-legal não é 😍?. O objetivo é entender a construção de uma API Go usando somente a strand library. 
-
-Na pasta json temos alguns supererois para que possamos brincar em nossa base.
-
-Exemplo de Json do Odin, eles são encontrados no diretório "json/"
+Cool, isn't it 😍?. The goal is to understand the construction of a Go API using only the strand library.
+In the json folder we have some superheroes so we can play around in our database.
+Example of Odin JSON, they are found in the "json/" directory
 ```bash
 {
    "response":"success",
@@ -73,32 +69,29 @@ Exemplo de Json do Odin, eles são encontrados no diretório "json/"
 ```
 
 #### Docker Compose
-
-Podemos usar o docker-compose para subir o mongodb e a api zerohero, e também pdoerá rodar local.
-Geralmente comento as linhas do serviço zerohero para debugar e testar tudo antes localmente o serviço e deixe o mongo no docker-compose.
+We can use docker-compose to upload mongodb and the zerohero api, and it can also be run locally.
+I usually comment out the lines of the zerohero service to debug and test everything before running the service locally and leave mongo in docker-compose.
 
 ```bash
 $ docker-compose up -d 
 ```
 
 #### Go run
-
-Faça clone do zerohero e rode localmente a api
+Clone zerohero and run the api locally
 
 ```bash
 $ git clone https://github.com/jeffotoni/gzerohero.git
 $ cd gzerohero
 $ go run .
 ```
-saída:
+output:
 ```bash
 2021/12/13 00:45:35 Running on http://0.0.0.0:8080 (Press CTRL+C to quit)
 ```
 
-Agora vamos testar nossa API 🦾
+Now let's test our API 🦾
 
 #### GET ping
-
 ```bash
 $ curl -i -XGET \
 -H "Content-Type:application/json" \
@@ -106,7 +99,7 @@ http://localhost:8080/ping
 
 ```
 
-saída:
+output:
 ```bash
 HTTP/1.1 200 OK
 Date: Mon, 13 Dec 2021 03:57:20 GMT
@@ -125,7 +118,7 @@ $ curl -i -XPOST \
 http://localhost:8080/api -d @json/hulk.json
 
 ```
-saída:
+output:
 ```bash
 $ HTTP/2 201
 ```
@@ -138,7 +131,7 @@ $ curl -i -XPUT \
 http://localhost:8080/api/hulk -d @json/hulk.json
 
 ```
-saída:
+output:
 ```bash
 $ HTTP/2 200
 ```
@@ -151,7 +144,7 @@ $ curl -i -XDELETE \
 http://localhost:8080/api/hulk
 
 ```
-saída:
+output:
 ```bash
 $ HTTP/2 204
 ```
@@ -164,7 +157,7 @@ $ curl -i -XGET \
 http://localhost:8080/api/hulk
 ```
 
-saída:
+output:
 ```bash
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -182,7 +175,7 @@ $ curl -i -XGET \
 http://localhost:8080/api/hulk/work
 ```
 
-saída:
+output:
 ```bash
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -199,7 +192,7 @@ $ curl -i -XGET \
 http://localhost:8080/api/hulk/image
 ```
 
-saída:
+output:
 ```bash
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -215,7 +208,7 @@ $ curl -i -XGET \
 http://localhost:8080/api/hulk/powerstats
 ```
 
-saída:
+output:
 ```bash
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -231,7 +224,7 @@ $ curl -i -XGET \
 http://localhost:8080/api/hulk/biography
 ```
 
-saída:
+output:
 ```bash
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -247,7 +240,7 @@ $ curl -i -XGET \
 http://localhost:8080/api/hulk/appearance
 ```
 
-saída:
+output:
 ```bash
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -263,7 +256,7 @@ $ curl -i -XGET \
 http://localhost:8080/api/hulk/Connections
 ```
 
-saída:
+output:
 ```bash
 HTTP/1.1 200 OK
 Content-Type: application/json
