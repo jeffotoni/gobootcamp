@@ -4,10 +4,10 @@ The content is aimed at the basic level of the student, many practical examples 
 If you know little or almost nothing about programming, it won't be a problem, the entire manual was made for beginners to advanced levels.
 I hope you like it and that it can serve as a basis for learning and help many possible Gophers.
 
-<span style="display: inline-flex; align-items: center;">
-  <img src="img/youtube.png?raw=true" alt="youtube" title="youtube" width="5%" style="margin-right: 10px;" />
+<p>
+  <img src="img/youtube.png?raw=true" alt="youtube" title="youtube" width="5%" style="vertical-align: middle; margin-right: 8px;" />
   Here is the live stream with over 7 hours of content: <a href="https://www.youtube.com/watch?v=XVE3hHW7Wvs">ZeroHero Bootcamp</a> ❤️
-</span>
+</p>
 
 There are thousands of references today regarding Golang, let's start from the beginning and we couldn't fail to mention the [Golang Tour](https://go.dev/tour/welcome/1), [Play Golang](https://go.dev/play) or [Play Go Space](https://goplay.space/) are online ways to play with the Go language, isn't it beautiful? 😊
 
