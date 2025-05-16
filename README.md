@@ -5,7 +5,7 @@ If you know little or almost nothing about programming, it won't be a problem, t
 I hope you like it and that it can serve as a basis for learning and help many possible Gophers.
 
 <p>
-  <img src="img/youtube.png?raw=true" alt="youtube" title="youtube" width="5%" style="vertical-align: middle; margin-right: 8px;" />
+  <img src="img/youtube.png" alt="youtube" title="youtube" width="10%" style="vertical-align: middle; margin-right: 8px;" />
   Here is the live stream with over 7 hours of content: <a href="https://www.youtube.com/watch?v=XVE3hHW7Wvs">ZeroHero Bootcamp</a> ❤️
 </p>
 
